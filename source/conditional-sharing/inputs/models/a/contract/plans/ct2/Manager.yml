@@ -1,0 +1,3 @@
+role: Manager
+subscribe:
+- (rule (fact (RobotStatus $robot $battery $zone)) (= $robot "wheel1") (<= $battery 50) --> (notify (RobotStatus $robot $battery $zone)))

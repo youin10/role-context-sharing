@@ -1,0 +1,1458 @@
+{
+ "root": "live/runs/final-9ec4e836cb48/a2",
+ "runs": 66,
+ "pass": 66,
+ "nc_ok": 66,
+ "core_snapshots": [
+  "9ec4e836cb48fc2744a2b65496c042b8942e8d6e1f387c7247006ed6fa138973"
+ ],
+ "live_snapshots": [
+  "3519caba6fdd51cdfd7b6202f0d3067c3e1f1cc8e7ae77db5e65c6411fe71cce"
+ ],
+ "environments": [
+  [
+   "sha256:c99b70591300f28b63b8ed3f77f753039def35d1b0e13f705ece01166ffa4498",
+   "rmw_fastrtps_cpp",
+   [
+    "3.12.3 6.0.1",
+    "ros-jazzy-fastrtps\t2.14.7-1noble.20260911.035410",
+    "ros-jazzy-rclpy\t7.1.12-1noble.20260911.111116",
+    "ros-jazzy-rmw-fastrtps-cpp\t8.4.4-1noble.20260911.054759",
+    "RMW=rmw_fastrtps_cpp"
+   ]
+  ]
+ ],
+ "disk_kib": 15040,
+ "rows": [
+  {
+   "scenario": "K",
+   "arm": "a",
+   "runs": 3,
+   "pass": 3,
+   "nc_ok": 3,
+   "nc_detected": [
+    "10/10",
+    "10/10",
+    "10/10"
+   ],
+   "exit_all_zero": true,
+   "reps_identical_observation": true,
+   "same_inputs": true,
+   "expected_positive_calls": 7,
+   "observed_calls": [
+    7,
+    7,
+    7
+   ],
+   "by_kind": {
+    "assert": 5,
+    "update": 0,
+    "retract": 2
+   },
+   "decisions": [
+    0,
+    0,
+    0
+   ],
+   "rejected": [
+    0,
+    0,
+    0
+   ],
+   "messages_sent": [
+    65,
+    65,
+    65
+   ],
+   "missing_dup_unsent": [
+    [
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0
+    ]
+   ],
+   "settle_dt_s_median": 0.1184,
+   "settle_dt_s_max": 0.1276,
+   "wall_s": [
+    4.96,
+    4.95,
+    4.98
+   ]
+  },
+  {
+   "scenario": "K",
+   "arm": "d",
+   "runs": 3,
+   "pass": 3,
+   "nc_ok": 3,
+   "nc_detected": [
+    "10/10",
+    "10/10",
+    "10/10"
+   ],
+   "exit_all_zero": true,
+   "reps_identical_observation": true,
+   "same_inputs": true,
+   "expected_positive_calls": 7,
+   "observed_calls": [
+    7,
+    7,
+    7
+   ],
+   "by_kind": {
+    "assert": 5,
+    "update": 0,
+    "retract": 2
+   },
+   "decisions": [
+    0,
+    0,
+    0
+   ],
+   "rejected": [
+    0,
+    0,
+    0
+   ],
+   "messages_sent": [
+    16,
+    16,
+    16
+   ],
+   "missing_dup_unsent": [
+    [
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0
+    ]
+   ],
+   "settle_dt_s_median": 0.11635,
+   "settle_dt_s_max": 0.1284,
+   "wall_s": [
+    4.83,
+    4.93,
+    4.9
+   ]
+  },
+  {
+   "scenario": "P1",
+   "arm": "a",
+   "runs": 3,
+   "pass": 3,
+   "nc_ok": 3,
+   "nc_detected": [
+    "10/10",
+    "10/10",
+    "10/10"
+   ],
+   "exit_all_zero": true,
+   "reps_identical_observation": true,
+   "same_inputs": true,
+   "expected_positive_calls": 7,
+   "observed_calls": [
+    7,
+    7,
+    7
+   ],
+   "by_kind": {
+    "assert": 4,
+    "update": 0,
+    "retract": 3
+   },
+   "decisions": [
+    5,
+    5,
+    5
+   ],
+   "rejected": [
+    0,
+    0,
+    0
+   ],
+   "messages_sent": [
+    91,
+    91,
+    91
+   ],
+   "missing_dup_unsent": [
+    [
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0
+    ]
+   ],
+   "settle_dt_s_median": 0.1148,
+   "settle_dt_s_max": 0.1268,
+   "wall_s": [
+    5.21,
+    5.26,
+    5.25
+   ]
+  },
+  {
+   "scenario": "P1",
+   "arm": "d",
+   "runs": 3,
+   "pass": 3,
+   "nc_ok": 3,
+   "nc_detected": [
+    "10/10",
+    "10/10",
+    "10/10"
+   ],
+   "exit_all_zero": true,
+   "reps_identical_observation": true,
+   "same_inputs": true,
+   "expected_positive_calls": 7,
+   "observed_calls": [
+    7,
+    7,
+    7
+   ],
+   "by_kind": {
+    "assert": 4,
+    "update": 0,
+    "retract": 3
+   },
+   "decisions": [
+    5,
+    5,
+    5
+   ],
+   "rejected": [
+    0,
+    0,
+    0
+   ],
+   "messages_sent": [
+    44,
+    44,
+    44
+   ],
+   "missing_dup_unsent": [
+    [
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0
+    ]
+   ],
+   "settle_dt_s_median": 0.1128,
+   "settle_dt_s_max": 0.1223,
+   "wall_s": [
+    5.2,
+    5.04,
+    5.09
+   ]
+  },
+  {
+   "scenario": "T",
+   "arm": "a",
+   "runs": 3,
+   "pass": 3,
+   "nc_ok": 3,
+   "nc_detected": [
+    "10/10",
+    "10/10",
+    "10/10"
+   ],
+   "exit_all_zero": true,
+   "reps_identical_observation": true,
+   "same_inputs": true,
+   "expected_positive_calls": 2,
+   "observed_calls": [
+    2,
+    2,
+    2
+   ],
+   "by_kind": {
+    "assert": 1,
+    "update": 1,
+    "retract": 0
+   },
+   "decisions": [
+    0,
+    0,
+    0
+   ],
+   "rejected": [
+    5,
+    5,
+    5
+   ],
+   "messages_sent": [
+    51,
+    51,
+    51
+   ],
+   "missing_dup_unsent": [
+    [
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0
+    ]
+   ],
+   "settle_dt_s_median": 0.11725,
+   "settle_dt_s_max": 0.123,
+   "wall_s": [
+    4.44,
+    4.53,
+    4.56
+   ]
+  },
+  {
+   "scenario": "T",
+   "arm": "d",
+   "runs": 3,
+   "pass": 3,
+   "nc_ok": 3,
+   "nc_detected": [
+    "10/10",
+    "10/10",
+    "10/10"
+   ],
+   "exit_all_zero": true,
+   "reps_identical_observation": true,
+   "same_inputs": true,
+   "expected_positive_calls": 2,
+   "observed_calls": [
+    2,
+    2,
+    2
+   ],
+   "by_kind": {
+    "assert": 1,
+    "update": 1,
+    "retract": 0
+   },
+   "decisions": [
+    0,
+    0,
+    0
+   ],
+   "rejected": [
+    5,
+    5,
+    5
+   ],
+   "messages_sent": [
+    11,
+    11,
+    11
+   ],
+   "missing_dup_unsent": [
+    [
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0
+    ]
+   ],
+   "settle_dt_s_median": 0.1169,
+   "settle_dt_s_max": 0.1347,
+   "wall_s": [
+    4.49,
+    4.52,
+    4.43
+   ]
+  },
+  {
+   "scenario": "contract/CT1",
+   "arm": "a",
+   "runs": 3,
+   "pass": 3,
+   "nc_ok": 3,
+   "nc_detected": [
+    "10/10",
+    "10/10",
+    "10/10"
+   ],
+   "exit_all_zero": true,
+   "reps_identical_observation": true,
+   "same_inputs": true,
+   "expected_positive_calls": 3,
+   "observed_calls": [
+    3,
+    3,
+    3
+   ],
+   "by_kind": {
+    "assert": 3,
+    "update": 0,
+    "retract": 0
+   },
+   "decisions": [
+    0,
+    0,
+    0
+   ],
+   "rejected": [
+    0,
+    0,
+    0
+   ],
+   "messages_sent": [
+    32,
+    32,
+    32
+   ],
+   "missing_dup_unsent": [
+    [
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0
+    ]
+   ],
+   "settle_dt_s_median": 0.1147,
+   "settle_dt_s_max": 0.1193,
+   "wall_s": [
+    4.14,
+    4.17,
+    4.1
+   ]
+  },
+  {
+   "scenario": "contract/CT1",
+   "arm": "d",
+   "runs": 3,
+   "pass": 3,
+   "nc_ok": 3,
+   "nc_detected": [
+    "10/10",
+    "10/10",
+    "10/10"
+   ],
+   "exit_all_zero": true,
+   "reps_identical_observation": true,
+   "same_inputs": true,
+   "expected_positive_calls": 3,
+   "observed_calls": [
+    3,
+    3,
+    3
+   ],
+   "by_kind": {
+    "assert": 3,
+    "update": 0,
+    "retract": 0
+   },
+   "decisions": [
+    0,
+    0,
+    0
+   ],
+   "rejected": [
+    0,
+    0,
+    0
+   ],
+   "messages_sent": [
+    8,
+    8,
+    8
+   ],
+   "missing_dup_unsent": [
+    [
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0
+    ]
+   ],
+   "settle_dt_s_median": 0.11485000000000001,
+   "settle_dt_s_max": 0.1226,
+   "wall_s": [
+    4.09,
+    4.06,
+    4.05
+   ]
+  },
+  {
+   "scenario": "contract/CT2",
+   "arm": "a",
+   "runs": 3,
+   "pass": 3,
+   "nc_ok": 3,
+   "nc_detected": [
+    "10/10",
+    "10/10",
+    "10/10"
+   ],
+   "exit_all_zero": true,
+   "reps_identical_observation": true,
+   "same_inputs": true,
+   "expected_positive_calls": 2,
+   "observed_calls": [
+    2,
+    2,
+    2
+   ],
+   "by_kind": {
+    "assert": 1,
+    "update": 0,
+    "retract": 1
+   },
+   "decisions": [
+    0,
+    0,
+    0
+   ],
+   "rejected": [
+    0,
+    0,
+    0
+   ],
+   "messages_sent": [
+    13,
+    13,
+    13
+   ],
+   "missing_dup_unsent": [
+    [
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0
+    ]
+   ],
+   "settle_dt_s_median": 0.11055000000000001,
+   "settle_dt_s_max": 0.1178,
+   "wall_s": [
+    3.88,
+    3.92,
+    3.82
+   ]
+  },
+  {
+   "scenario": "contract/CT2",
+   "arm": "d",
+   "runs": 3,
+   "pass": 3,
+   "nc_ok": 3,
+   "nc_detected": [
+    "10/10",
+    "10/10",
+    "10/10"
+   ],
+   "exit_all_zero": true,
+   "reps_identical_observation": true,
+   "same_inputs": true,
+   "expected_positive_calls": 2,
+   "observed_calls": [
+    2,
+    2,
+    2
+   ],
+   "by_kind": {
+    "assert": 1,
+    "update": 0,
+    "retract": 1
+   },
+   "decisions": [
+    0,
+    0,
+    0
+   ],
+   "rejected": [
+    0,
+    0,
+    0
+   ],
+   "messages_sent": [
+    5,
+    5,
+    5
+   ],
+   "missing_dup_unsent": [
+    [
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0
+    ]
+   ],
+   "settle_dt_s_median": 0.10994999999999999,
+   "settle_dt_s_max": 0.1209,
+   "wall_s": [
+    3.97,
+    3.82,
+    3.8
+   ]
+  },
+  {
+   "scenario": "contract/CT3",
+   "arm": "a",
+   "runs": 3,
+   "pass": 3,
+   "nc_ok": 3,
+   "nc_detected": [
+    "10/10",
+    "10/10",
+    "10/10"
+   ],
+   "exit_all_zero": true,
+   "reps_identical_observation": true,
+   "same_inputs": true,
+   "expected_positive_calls": 5,
+   "observed_calls": [
+    5,
+    5,
+    5
+   ],
+   "by_kind": {
+    "assert": 2,
+    "update": 1,
+    "retract": 2
+   },
+   "decisions": [
+    0,
+    0,
+    0
+   ],
+   "rejected": [
+    0,
+    0,
+    0
+   ],
+   "messages_sent": [
+    37,
+    37,
+    37
+   ],
+   "missing_dup_unsent": [
+    [
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0
+    ]
+   ],
+   "settle_dt_s_median": 0.11295,
+   "settle_dt_s_max": 0.1221,
+   "wall_s": [
+    4.48,
+    4.38,
+    4.35
+   ]
+  },
+  {
+   "scenario": "contract/CT3",
+   "arm": "d",
+   "runs": 3,
+   "pass": 3,
+   "nc_ok": 3,
+   "nc_detected": [
+    "10/10",
+    "10/10",
+    "10/10"
+   ],
+   "exit_all_zero": true,
+   "reps_identical_observation": true,
+   "same_inputs": true,
+   "expected_positive_calls": 5,
+   "observed_calls": [
+    5,
+    5,
+    5
+   ],
+   "by_kind": {
+    "assert": 2,
+    "update": 1,
+    "retract": 2
+   },
+   "decisions": [
+    0,
+    0,
+    0
+   ],
+   "rejected": [
+    0,
+    0,
+    0
+   ],
+   "messages_sent": [
+    12,
+    12,
+    12
+   ],
+   "missing_dup_unsent": [
+    [
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0
+    ]
+   ],
+   "settle_dt_s_median": 0.1123,
+   "settle_dt_s_max": 0.1265,
+   "wall_s": [
+    4.32,
+    4.39,
+    4.26
+   ]
+  },
+  {
+   "scenario": "contract/CT4",
+   "arm": "a",
+   "runs": 3,
+   "pass": 3,
+   "nc_ok": 3,
+   "nc_detected": [
+    "10/10",
+    "10/10",
+    "10/10"
+   ],
+   "exit_all_zero": true,
+   "reps_identical_observation": true,
+   "same_inputs": true,
+   "expected_positive_calls": 2,
+   "observed_calls": [
+    2,
+    2,
+    2
+   ],
+   "by_kind": {
+    "assert": 1,
+    "update": 0,
+    "retract": 1
+   },
+   "decisions": [
+    0,
+    0,
+    0
+   ],
+   "rejected": [
+    0,
+    0,
+    0
+   ],
+   "messages_sent": [
+    30,
+    30,
+    30
+   ],
+   "missing_dup_unsent": [
+    [
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0
+    ]
+   ],
+   "settle_dt_s_median": 0.1141,
+   "settle_dt_s_max": 0.1208,
+   "wall_s": [
+    4.06,
+    4.04,
+    3.98
+   ]
+  },
+  {
+   "scenario": "contract/CT4",
+   "arm": "d",
+   "runs": 3,
+   "pass": 3,
+   "nc_ok": 3,
+   "nc_detected": [
+    "10/10",
+    "10/10",
+    "10/10"
+   ],
+   "exit_all_zero": true,
+   "reps_identical_observation": true,
+   "same_inputs": true,
+   "expected_positive_calls": 2,
+   "observed_calls": [
+    2,
+    2,
+    2
+   ],
+   "by_kind": {
+    "assert": 1,
+    "update": 0,
+    "retract": 1
+   },
+   "decisions": [
+    0,
+    0,
+    0
+   ],
+   "rejected": [
+    0,
+    0,
+    0
+   ],
+   "messages_sent": [
+    26,
+    26,
+    26
+   ],
+   "missing_dup_unsent": [
+    [
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0
+    ]
+   ],
+   "settle_dt_s_median": 0.109,
+   "settle_dt_s_max": 0.1174,
+   "wall_s": [
+    4.04,
+    4.04,
+    3.99
+   ]
+  },
+  {
+   "scenario": "contract/CT5",
+   "arm": "a",
+   "runs": 3,
+   "pass": 3,
+   "nc_ok": 3,
+   "nc_detected": [
+    "10/10",
+    "10/10",
+    "10/10"
+   ],
+   "exit_all_zero": true,
+   "reps_identical_observation": true,
+   "same_inputs": true,
+   "expected_positive_calls": 2,
+   "observed_calls": [
+    2,
+    2,
+    2
+   ],
+   "by_kind": {
+    "assert": 1,
+    "update": 0,
+    "retract": 1
+   },
+   "decisions": [
+    0,
+    0,
+    0
+   ],
+   "rejected": [
+    0,
+    0,
+    0
+   ],
+   "messages_sent": [
+    37,
+    37,
+    37
+   ],
+   "missing_dup_unsent": [
+    [
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0
+    ]
+   ],
+   "settle_dt_s_median": 0.1145,
+   "settle_dt_s_max": 0.1192,
+   "wall_s": [
+    3.98,
+    3.94,
+    3.92
+   ]
+  },
+  {
+   "scenario": "contract/CT5",
+   "arm": "d",
+   "runs": 3,
+   "pass": 3,
+   "nc_ok": 3,
+   "nc_detected": [
+    "10/10",
+    "10/10",
+    "10/10"
+   ],
+   "exit_all_zero": true,
+   "reps_identical_observation": true,
+   "same_inputs": true,
+   "expected_positive_calls": 2,
+   "observed_calls": [
+    2,
+    2,
+    2
+   ],
+   "by_kind": {
+    "assert": 1,
+    "update": 0,
+    "retract": 1
+   },
+   "decisions": [
+    0,
+    0,
+    0
+   ],
+   "rejected": [
+    0,
+    0,
+    0
+   ],
+   "messages_sent": [
+    25,
+    25,
+    25
+   ],
+   "missing_dup_unsent": [
+    [
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0
+    ]
+   ],
+   "settle_dt_s_median": 0.11285,
+   "settle_dt_s_max": 0.1205,
+   "wall_s": [
+    3.86,
+    3.89,
+    3.87
+   ]
+  },
+  {
+   "scenario": "contract/CT6",
+   "arm": "a",
+   "runs": 3,
+   "pass": 3,
+   "nc_ok": 3,
+   "nc_detected": [
+    "10/10",
+    "10/10",
+    "10/10"
+   ],
+   "exit_all_zero": true,
+   "reps_identical_observation": true,
+   "same_inputs": true,
+   "expected_positive_calls": 3,
+   "observed_calls": [
+    3,
+    3,
+    3
+   ],
+   "by_kind": {
+    "assert": 1,
+    "update": 1,
+    "retract": 1
+   },
+   "decisions": [
+    0,
+    0,
+    0
+   ],
+   "rejected": [
+    0,
+    0,
+    0
+   ],
+   "messages_sent": [
+    28,
+    28,
+    28
+   ],
+   "missing_dup_unsent": [
+    [
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0
+    ]
+   ],
+   "settle_dt_s_median": 0.11624999999999999,
+   "settle_dt_s_max": 0.1215,
+   "wall_s": [
+    4.36,
+    4.21,
+    4.12
+   ]
+  },
+  {
+   "scenario": "contract/CT6",
+   "arm": "d",
+   "runs": 3,
+   "pass": 3,
+   "nc_ok": 3,
+   "nc_detected": [
+    "10/10",
+    "10/10",
+    "10/10"
+   ],
+   "exit_all_zero": true,
+   "reps_identical_observation": true,
+   "same_inputs": true,
+   "expected_positive_calls": 3,
+   "observed_calls": [
+    3,
+    3,
+    3
+   ],
+   "by_kind": {
+    "assert": 1,
+    "update": 1,
+    "retract": 1
+   },
+   "decisions": [
+    0,
+    0,
+    0
+   ],
+   "rejected": [
+    0,
+    0,
+    0
+   ],
+   "messages_sent": [
+    8,
+    8,
+    8
+   ],
+   "missing_dup_unsent": [
+    [
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0
+    ]
+   ],
+   "settle_dt_s_median": 0.11380000000000001,
+   "settle_dt_s_max": 0.1319,
+   "wall_s": [
+    4.18,
+    4.03,
+    4.03
+   ]
+  },
+  {
+   "scenario": "contract/CT7-cfg0",
+   "arm": "a",
+   "runs": 3,
+   "pass": 3,
+   "nc_ok": 3,
+   "nc_detected": [
+    "5/5",
+    "5/5",
+    "5/5"
+   ],
+   "exit_all_zero": true,
+   "reps_identical_observation": true,
+   "same_inputs": true,
+   "expected_positive_calls": 0,
+   "observed_calls": [
+    0,
+    0,
+    0
+   ],
+   "by_kind": {
+    "assert": 0,
+    "update": 0,
+    "retract": 0
+   },
+   "decisions": [
+    3,
+    3,
+    3
+   ],
+   "rejected": [
+    0,
+    0,
+    0
+   ],
+   "messages_sent": [
+    3,
+    3,
+    3
+   ],
+   "missing_dup_unsent": [
+    [
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0
+    ]
+   ],
+   "settle_dt_s_median": 0.0619,
+   "settle_dt_s_max": 0.1343,
+   "wall_s": [
+    3.98,
+    4.08,
+    4.07
+   ]
+  },
+  {
+   "scenario": "contract/CT7-cfg0",
+   "arm": "d",
+   "runs": 3,
+   "pass": 3,
+   "nc_ok": 3,
+   "nc_detected": [
+    "5/5",
+    "5/5",
+    "5/5"
+   ],
+   "exit_all_zero": true,
+   "reps_identical_observation": true,
+   "same_inputs": true,
+   "expected_positive_calls": 0,
+   "observed_calls": [
+    0,
+    0,
+    0
+   ],
+   "by_kind": {
+    "assert": 0,
+    "update": 0,
+    "retract": 0
+   },
+   "decisions": [
+    3,
+    3,
+    3
+   ],
+   "rejected": [
+    0,
+    0,
+    0
+   ],
+   "messages_sent": [
+    3,
+    3,
+    3
+   ],
+   "missing_dup_unsent": [
+    [
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0
+    ]
+   ],
+   "settle_dt_s_median": 0.0597,
+   "settle_dt_s_max": 0.1197,
+   "wall_s": [
+    4.0,
+    3.98,
+    3.97
+   ]
+  },
+  {
+   "scenario": "contract/CT7-cfg1",
+   "arm": "a",
+   "runs": 3,
+   "pass": 3,
+   "nc_ok": 3,
+   "nc_detected": [
+    "10/10",
+    "10/10",
+    "10/10"
+   ],
+   "exit_all_zero": true,
+   "reps_identical_observation": true,
+   "same_inputs": true,
+   "expected_positive_calls": 3,
+   "observed_calls": [
+    3,
+    3,
+    3
+   ],
+   "by_kind": {
+    "assert": 2,
+    "update": 0,
+    "retract": 1
+   },
+   "decisions": [
+    3,
+    3,
+    3
+   ],
+   "rejected": [
+    0,
+    0,
+    0
+   ],
+   "messages_sent": [
+    28,
+    28,
+    28
+   ],
+   "missing_dup_unsent": [
+    [
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0
+    ]
+   ],
+   "settle_dt_s_median": 0.1107,
+   "settle_dt_s_max": 0.1213,
+   "wall_s": [
+    4.06,
+    4.08,
+    4.08
+   ]
+  },
+  {
+   "scenario": "contract/CT7-cfg1",
+   "arm": "d",
+   "runs": 3,
+   "pass": 3,
+   "nc_ok": 3,
+   "nc_detected": [
+    "10/10",
+    "10/10",
+    "10/10"
+   ],
+   "exit_all_zero": true,
+   "reps_identical_observation": true,
+   "same_inputs": true,
+   "expected_positive_calls": 3,
+   "observed_calls": [
+    3,
+    3,
+    3
+   ],
+   "by_kind": {
+    "assert": 2,
+    "update": 0,
+    "retract": 1
+   },
+   "decisions": [
+    3,
+    3,
+    3
+   ],
+   "rejected": [
+    0,
+    0,
+    0
+   ],
+   "messages_sent": [
+    6,
+    6,
+    6
+   ],
+   "missing_dup_unsent": [
+    [
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0
+    ]
+   ],
+   "settle_dt_s_median": 0.0609,
+   "settle_dt_s_max": 0.127,
+   "wall_s": [
+    4.01,
+    4.02,
+    4.07
+   ]
+  }
+ ]
+}

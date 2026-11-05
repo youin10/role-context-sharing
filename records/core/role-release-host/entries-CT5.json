@@ -1,0 +1,201 @@
+{
+ "table": "inputs/expected/contract/CT5-entries.yml",
+ "table_sha256": "f8c359ace538f1c9463753fdfb29033063ec24364fb2da6d31d7f85d9d707ad1",
+ "pass": true,
+ "runs": [
+  {
+   "scenario": "CT5",
+   "arm": "D",
+   "agent": "manager1",
+   "pass": true,
+   "rows": [
+    {
+     "step": "init",
+     "what": "entries",
+     "expected": [
+      "RobotStatus"
+     ],
+     "observed": [
+      "RobotStatus"
+     ],
+     "ok": true
+    },
+    {
+     "step": "s1",
+     "what": "entries",
+     "expected": [
+      "RobotStatus"
+     ],
+     "observed": [
+      "RobotStatus"
+     ],
+     "ok": true
+    },
+    {
+     "step": "c1",
+     "what": "entries",
+     "expected": [
+      "RobotStatus"
+     ],
+     "observed": [
+      "RobotStatus"
+     ],
+     "ok": true
+    },
+    {
+     "step": "c2",
+     "what": "entries",
+     "expected": [],
+     "observed": [],
+     "ok": true
+    },
+    {
+     "step": "init",
+     "what": "alternatives",
+     "expected": {
+      "RobotStatus": 2
+     },
+     "observed": {
+      "RobotStatus": 2
+     },
+     "ok": true
+    },
+    {
+     "step": "c1",
+     "what": "alternatives",
+     "expected": {
+      "RobotStatus": 1
+     },
+     "observed": {
+      "RobotStatus": 1
+     },
+     "ok": true
+    },
+    {
+     "step": "c2",
+     "what": "alternatives",
+     "expected": {},
+     "observed": {},
+     "ok": true
+    },
+    {
+     "step": "c2",
+     "what": "agent_kept",
+     "expected": true,
+     "observed": true,
+     "ok": true
+    }
+   ]
+  },
+  {
+   "scenario": "CT5",
+   "arm": "A",
+   "agent": "manager1",
+   "pass": true,
+   "rows": [
+    {
+     "step": "init",
+     "what": "entries",
+     "expected": [
+      "RobotStatus"
+     ],
+     "observed": [
+      "RobotStatus"
+     ],
+     "ok": true
+    },
+    {
+     "step": "s1",
+     "what": "entries",
+     "expected": [
+      "RobotStatus"
+     ],
+     "observed": [
+      "RobotStatus"
+     ],
+     "ok": true
+    },
+    {
+     "step": "c1",
+     "what": "entries",
+     "expected": [
+      "RobotStatus"
+     ],
+     "observed": [
+      "RobotStatus"
+     ],
+     "ok": true
+    },
+    {
+     "step": "c2",
+     "what": "entries",
+     "expected": [],
+     "observed": [],
+     "ok": true
+    },
+    {
+     "step": "c2",
+     "what": "agent_kept",
+     "expected": true,
+     "observed": true,
+     "ok": true
+    }
+   ]
+  },
+  {
+   "scenario": "CT5",
+   "arm": "A-helper",
+   "agent": "manager1",
+   "pass": true,
+   "rows": [
+    {
+     "step": "init",
+     "what": "entries",
+     "expected": [
+      "RobotStatus"
+     ],
+     "observed": [
+      "RobotStatus"
+     ],
+     "ok": true
+    },
+    {
+     "step": "s1",
+     "what": "entries",
+     "expected": [
+      "RobotStatus"
+     ],
+     "observed": [
+      "RobotStatus"
+     ],
+     "ok": true
+    },
+    {
+     "step": "c1",
+     "what": "entries",
+     "expected": [
+      "RobotStatus"
+     ],
+     "observed": [
+      "RobotStatus"
+     ],
+     "ok": true
+    },
+    {
+     "step": "c2",
+     "what": "entries",
+     "expected": [],
+     "observed": [],
+     "ok": true
+    },
+    {
+     "step": "c2",
+     "what": "agent_kept",
+     "expected": true,
+     "observed": true,
+     "ok": true
+    }
+   ]
+  }
+ ]
+}

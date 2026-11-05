@@ -1,0 +1,20 @@
+FAIL - roster-nonempty expected true observed false
+FAIL s02 expected-agent-manager1-in-roster expected true observed false
+FAIL s03 expected-agent-manager1-in-roster expected true observed false
+FAIL s04 expected-agent-manager1-in-roster expected true observed false
+FAIL s06 expected-agent-manager1-in-roster expected true observed false
+FAIL s07 expected-agent-manager1-in-roster expected true observed false
+FAIL s08 expected-agent-manager1-in-roster expected true observed false
+FAIL s09 expected-agent-manager1-in-roster expected true observed false
+FAIL s11 expected-agent-manager1-in-roster expected true observed false
+FAIL s12 expected-agent-manager1-in-roster expected true observed false
+FAIL s13 expected-agent-manager1-in-roster expected true observed false
+FAIL s15 expected-agent-manager1-in-roster expected true observed false
+FAIL s03 expected-agent-manager1-in-roster expected true observed false
+FAIL s04 expected-agent-manager1-in-roster expected true observed false
+FAIL s08 expected-agent-manager1-in-roster expected true observed false
+FAIL s11 expected-agent-manager1-in-roster expected true observed false
+FAIL s13 expected-agent-manager1-in-roster expected true observed false
+FAIL s15 expected-agent-manager1-in-roster expected true observed false
+FAIL - positive-calls-compared expected 11 observed 0
+FAIL 52 rows, 19 failing

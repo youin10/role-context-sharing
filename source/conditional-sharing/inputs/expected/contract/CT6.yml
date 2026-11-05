@@ -1,0 +1,12 @@
+# Expected observations specified in traceability/CONTRACT-SPECIFICATION.md §2,
+# independent of implementation output. Commit markers of the contract are SM wire
+# messages and are not compared at the application level (assert / update / retract, view, decision).
+scenario: CT6
+calls:
+  e1: {}
+  e2: {}
+  e3: {manager1: [[assert, RobotStopped, wheel1, {elapsedSeconds: 300}]]}
+  e4: {manager1: [[update, RobotStopped, wheel1, {elapsedSeconds: 360}]]}
+  e5: {manager1: [[retract, RobotStopped, wheel1, null]]}
+views:
+  e5: {manager1: {}}

@@ -1,0 +1,273 @@
+[
+ {
+  "id": "SB1",
+  "expect": "refuse",
+  "pass": true,
+  "why": [],
+  "observed": {
+   "findings": [
+    {
+     "code": "SOURCELESS",
+     "category": "sourceless",
+     "severity": "error",
+     "where": "roles.Manager.reads.RobotStopped",
+     "message": "no role declares RobotStopped in changes"
+    }
+   ],
+   "errors": [
+    {
+     "code": "SOURCELESS",
+     "category": "sourceless",
+     "severity": "error",
+     "where": "roles.Manager.reads.RobotStopped",
+     "message": "no role declares RobotStopped in changes"
+    }
+   ],
+   "generated": false,
+   "generation_error": "SOURCELESS roles.Manager.reads.RobotStopped: no role declares RobotStopped in changes"
+  }
+ },
+ {
+  "id": "SB1-P",
+  "expect": "accept",
+  "pass": true,
+  "why": [],
+  "observed": {
+   "findings": [],
+   "errors": [],
+   "generated": true,
+   "producers": {
+    "manager1": [],
+    "biped1": [
+     "RobotStatus"
+    ],
+    "cam1": [
+     "RobotStopped"
+    ]
+   },
+   "consumers": {
+    "manager1": [
+     "RobotStatus",
+     "RobotStopped"
+    ]
+   },
+   "consumer_conditions": {
+    "manager1": {
+     "RobotStatus": [
+      [
+       {
+        "field": "battery",
+        "op": "<=",
+        "value": 30
+       }
+      ]
+     ],
+     "RobotStopped": [
+      [
+       {
+        "field": "elapsedSeconds",
+        "op": ">=",
+        "value": 300
+       }
+      ]
+     ]
+    }
+   }
+  }
+ },
+ {
+  "id": "SB2",
+  "expect": "refuse",
+  "pass": true,
+  "why": [],
+  "observed": {
+   "findings": [
+    {
+     "code": "INCOMPLETE_BINDING",
+     "category": "incomplete",
+     "severity": "error",
+     "where": "roles.Manager.reads.RobotStatus",
+     "message": "source roles ['Robot'] of RobotStatus have no bound agent"
+    },
+    {
+     "code": "UNUSED_ROLE",
+     "category": "incomplete",
+     "severity": "warning",
+     "where": "roles.Robot",
+     "message": "role Robot has no bound agent"
+    }
+   ],
+   "errors": [
+    {
+     "code": "INCOMPLETE_BINDING",
+     "category": "incomplete",
+     "severity": "error",
+     "where": "roles.Manager.reads.RobotStatus",
+     "message": "source roles ['Robot'] of RobotStatus have no bound agent"
+    }
+   ],
+   "generated": false,
+   "generation_error": "INCOMPLETE_BINDING roles.Manager.reads.RobotStatus: source roles ['Robot'] of RobotStatus have no bound agent"
+  }
+ },
+ {
+  "id": "SB2-P",
+  "expect": "accept",
+  "pass": true,
+  "why": [],
+  "observed": {
+   "findings": [],
+   "errors": [],
+   "generated": true,
+   "producers": {
+    "manager1": [],
+    "biped1": [
+     "RobotStatus"
+    ]
+   },
+   "consumers": {
+    "manager1": [
+     "RobotStatus"
+    ]
+   },
+   "consumer_conditions": {
+    "manager1": {
+     "RobotStatus": [
+      [
+       {
+        "field": "battery",
+        "op": "<=",
+        "value": 30
+       }
+      ]
+     ]
+    }
+   }
+  }
+ },
+ {
+  "id": "SB3",
+  "expect": "refuse",
+  "pass": true,
+  "why": [],
+  "observed": {
+   "findings": [
+    {
+     "code": "UNKNOWN_ROLE",
+     "category": "identifier",
+     "severity": "error",
+     "where": "binding.insp1",
+     "message": "unknown role Inspector"
+    }
+   ],
+   "errors": [
+    {
+     "code": "UNKNOWN_ROLE",
+     "category": "identifier",
+     "severity": "error",
+     "where": "binding.insp1",
+     "message": "unknown role Inspector"
+    }
+   ],
+   "generated": false,
+   "generation_error": "UNKNOWN_ROLE binding.insp1: unknown role Inspector"
+  }
+ },
+ {
+  "id": "SB3-P",
+  "expect": "accept",
+  "pass": true,
+  "why": [],
+  "observed": {
+   "findings": [],
+   "errors": [],
+   "generated": true,
+   "producers": {
+    "manager1": [],
+    "biped1": [
+     "RobotStatus"
+    ]
+   },
+   "consumers": {
+    "manager1": [
+     "RobotStatus"
+    ]
+   },
+   "consumer_conditions": {
+    "manager1": {
+     "RobotStatus": [
+      [
+       {
+        "field": "battery",
+        "op": "<=",
+        "value": 30
+       }
+      ]
+     ]
+    }
+   }
+  }
+ },
+ {
+  "id": "SB4",
+  "expect": "accept",
+  "pass": true,
+  "why": [],
+  "observed": {
+   "findings": [
+    {
+     "code": "UNUSED_ROLE",
+     "category": "incomplete",
+     "severity": "warning",
+     "where": "roles.Robot",
+     "message": "role Robot has no bound agent"
+    }
+   ],
+   "errors": [],
+   "generated": true,
+   "producers": {
+    "manager1": [],
+    "aud1": [
+     "RobotStatus"
+    ]
+   },
+   "consumers": {
+    "manager1": [
+     "RobotStatus"
+    ]
+   },
+   "consumer_conditions": {
+    "manager1": {
+     "RobotStatus": [
+      [
+       {
+        "field": "battery",
+        "op": "<=",
+        "value": 30
+       }
+      ]
+     ]
+    }
+   }
+  }
+ },
+ {
+  "id": "SB5",
+  "expect": "refuse_revision",
+  "pass": true,
+  "why": [],
+  "observed": {
+   "initial_seq": 0,
+   "initial_cfg": "b-full",
+   "revised_generated": false,
+   "generation_error": "INCOMPLETE_BINDING roles.Manager.reads.RobotStatus: source roles ['Robot'] of RobotStatus have no bound agent",
+   "error_codes": [
+    "INCOMPLETE_BINDING"
+   ],
+   "active_seq": 0,
+   "active_cfg": "b-full",
+   "messages_sent": 0,
+   "staged": []
+  }
+ }
+]

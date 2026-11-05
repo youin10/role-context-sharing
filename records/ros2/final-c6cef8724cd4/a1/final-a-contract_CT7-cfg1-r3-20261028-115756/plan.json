@@ -1,0 +1,33 @@
+{
+ "arm": "a",
+ "a_variant": null,
+ "scenario": "CT7-cfg1",
+ "scenario_path": "/cs/inputs/scenarios/contract/CT7-cfg1.yml",
+ "observed": [
+  "manager1"
+ ],
+ "agents": [
+  "biped1",
+  "hum1",
+  "manager1",
+  "observer1",
+  "wheel1"
+ ],
+ "producers": [
+  "biped1",
+  "observer1"
+ ],
+ "procs": {
+  "driver": [],
+  "a-producer": [
+   "biped1",
+   "hum1",
+   "observer1",
+   "wheel1"
+  ],
+  "a-ltm": [],
+  "a-agent-manager1": [
+   "manager1"
+  ]
+ }
+}

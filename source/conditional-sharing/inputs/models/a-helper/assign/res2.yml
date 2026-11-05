@@ -1,0 +1,6 @@
+manager1: [Manager, SafetyOfficer, Dispatcher]
+biped1: [Robot]
+humanoid1: [Robot]
+wheeled1: [Robot]
+diff1: [Robot]
+cam1: [Observer]

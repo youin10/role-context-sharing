@@ -1,0 +1,12 @@
+id: S1
+title: RobotStopped(robot, elapsedSeconds) produced by the observer, threshold 300 s (provisional)
+d: {model: M1, binding: b-main}
+a: {initial: initial-main-v1}
+observe: [manager1]
+steps:
+- {id: p01, report: [cam1, RobotStopped, biped1, {elapsedSeconds: 299}]}
+- {id: p02, report: [cam1, RobotStopped, biped1, {elapsedSeconds: 300}]}
+- {id: p03, report: [cam1, RobotStopped, biped1, {elapsedSeconds: 301}]}
+- {id: p04, delete: [cam1, RobotStopped, biped1]}
+- {id: p05, report: [cam1, RobotStopped, wheeled1, {elapsedSeconds: 299}]}
+- {id: p06, delete: [cam1, RobotStopped, wheeled1]}

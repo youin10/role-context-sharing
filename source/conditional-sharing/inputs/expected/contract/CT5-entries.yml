@@ -1,0 +1,17 @@
+# Consumer entries of manager1 after each CT5 step, from T5 (cfg0 two roles, cfg1 FleetMonitor,
+# cfg2 no role), independent of implementation output. An entry is a context for which the agent is
+# registered as a consumer: D = context keys of the agent in the active generated configuration;
+# A / A-helper = contexts of the agent's subscriptions held by the LTM (condition, tombstone and
+# exit-watch rules). `alternatives` = D condition alternatives of the entry (one per reading role).
+scenario: CT5
+agent: manager1
+entries:
+  init: [RobotStatus]
+  s1: [RobotStatus]
+  c1: [RobotStatus]
+  c2: []
+alternatives:
+  init: {RobotStatus: 2}
+  c1: {RobotStatus: 1}
+  c2: {}
+agent_kept: true

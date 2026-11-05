@@ -1,0 +1,74 @@
+{
+ "snapshot": "cs-core-9ec4e836cb48",
+ "command": "inline: tools/check_entries.run('CT5', arm, {**variant, 'skip_changes': True}, table)",
+ "runs": [
+  {
+   "nc": "stale-model",
+   "arm": "D",
+   "pass": false,
+   "failing": [
+    {
+     "step": "c2",
+     "what": "entries",
+     "expected": [],
+     "observed": [
+      "RobotStatus"
+     ],
+     "ok": false
+    },
+    {
+     "step": "c1",
+     "what": "alternatives",
+     "expected": {
+      "RobotStatus": 1
+     },
+     "observed": {
+      "RobotStatus": 2
+     },
+     "ok": false
+    },
+    {
+     "step": "c2",
+     "what": "alternatives",
+     "expected": {},
+     "observed": {
+      "RobotStatus": 2
+     },
+     "ok": false
+    }
+   ]
+  },
+  {
+   "nc": "stale-model",
+   "arm": "A",
+   "pass": false,
+   "failing": [
+    {
+     "step": "c2",
+     "what": "entries",
+     "expected": [],
+     "observed": [
+      "RobotStatus"
+     ],
+     "ok": false
+    }
+   ]
+  },
+  {
+   "nc": "stale-model",
+   "arm": "A-helper",
+   "pass": false,
+   "failing": [
+    {
+     "step": "c2",
+     "what": "entries",
+     "expected": [],
+     "observed": [
+      "RobotStatus"
+     ],
+     "ok": false
+    }
+   ]
+  }
+ ]
+}

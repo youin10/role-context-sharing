@@ -1,0 +1,17 @@
+# Expected observations specified in traceability/CONTRACT-SPECIFICATION.md §2,
+# independent of implementation output. Commit markers of the contract are SM wire
+# messages and are not compared at the application level (assert / update / retract, view, decision).
+# T5 roles: BipedMonitor (Biped <= 30), FleetMonitor (Robot <= 40); c2 assigns manager1 no role ([]).
+# The reported fact stays stored after the last role is released.
+scenario: CT5
+calls:
+  s1: {manager1: [[assert, RobotStatus, biped1, {battery: 28, zone: storage}]]}
+  c1: {}
+  c2: {manager1: [[retract, RobotStatus, biped1, null]]}
+views:
+  c1: {manager1: {RobotStatus/biped1: {battery: 28, zone: storage}}}
+  c2: {manager1: {}}
+store:
+  s1: {RobotStatus/biped1: {battery: 28, zone: storage}}
+  c1: {RobotStatus/biped1: {battery: 28, zone: storage}}
+  c2: {RobotStatus/biped1: {battery: 28, zone: storage}}

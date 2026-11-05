@@ -1,0 +1,111 @@
+id: B1
+title: same model, data changes (entry / update / exit / deletion), typed OR condition,
+  subclasses
+d:
+  model: M1
+  binding: b-main
+a:
+  initial: initial-main-v1
+observe: []
+steps:
+- id: s01
+  report:
+  - biped1
+  - RobotStatus
+  - biped1
+  - battery: 31
+    zone: storage
+- id: s02
+  report:
+  - biped1
+  - RobotStatus
+  - biped1
+  - battery: 30
+    zone: storage
+- id: s03
+  report:
+  - biped1
+  - RobotStatus
+  - biped1
+  - battery: 29
+    zone: storage
+- id: s04
+  report:
+  - biped1
+  - RobotStatus
+  - biped1
+  - battery: 31
+    zone: storage
+- id: s05
+  report:
+  - wheeled1
+  - RobotStatus
+  - wheeled1
+  - battery: 21
+    zone: storage
+- id: s06
+  report:
+  - wheeled1
+  - RobotStatus
+  - wheeled1
+  - battery: 20
+    zone: storage
+- id: s07
+  report:
+  - wheeled1
+  - RobotStatus
+  - wheeled1
+  - battery: 19
+    zone: storage
+- id: s08
+  report:
+  - wheeled1
+  - RobotStatus
+  - wheeled1
+  - battery: 21
+    zone: storage
+- id: s09
+  report:
+  - humanoid1
+  - RobotStatus
+  - humanoid1
+  - battery: 30
+    zone: storage
+- id: s10
+  report:
+  - diff1
+  - RobotStatus
+  - diff1
+  - battery: 25
+    zone: storage
+- id: s11
+  report:
+  - diff1
+  - RobotStatus
+  - diff1
+  - battery: 20
+    zone: storage
+- id: s12
+  report:
+  - biped1
+  - RobotStatus
+  - biped1
+  - battery: 29
+    zone: storage
+- id: s13
+  delete:
+  - biped1
+  - RobotStatus
+  - biped1
+- id: s14
+  delete:
+  - wheeled1
+  - RobotStatus
+  - wheeled1
+- id: s15
+  report:
+  - diff1
+  - RobotStatus
+  - diff1
+  - battery: 21
+    zone: storage

@@ -1,0 +1,5 @@
+--- a-helper/assign/res1.yml
++++ a-helper/assign/res0.yml
+@@ -1 +1 @@
+-manager1: [Manager, Dispatcher]
++manager1: [Dispatcher]

@@ -1,0 +1,519 @@
+prefix logistics: <http://ai.uos.ac.kr/logistics-ontology#>;
+
+role Mgr0 {
+  reads {
+    logistics:RobotStatus($robot, $battery, $zone) {
+      $robot == logistics:Biped && $battery <= 30 || $robot == logistics:Wheeled && $battery <= 30;
+    }
+  }
+}
+
+role Mgr1 {
+  reads {
+    logistics:RobotStatus($robot, $battery, $zone) {
+      $robot == logistics:Biped && $battery <= 29 || $robot == logistics:Wheeled && $battery <= 29;
+    }
+  }
+}
+
+role Mgr2 {
+  reads {
+    logistics:RobotStatus($robot, $battery, $zone) {
+      $robot == logistics:Biped && $battery <= 28 || $robot == logistics:Wheeled && $battery <= 28;
+    }
+  }
+}
+
+role Mgr3 {
+  reads {
+    logistics:RobotStatus($robot, $battery, $zone) {
+      $robot == logistics:Biped && $battery <= 27 || $robot == logistics:Wheeled && $battery <= 27;
+    }
+  }
+}
+
+role Mgr4 {
+  reads {
+    logistics:RobotStatus($robot, $battery, $zone) {
+      $robot == logistics:Biped && $battery <= 26 || $robot == logistics:Wheeled && $battery <= 26;
+    }
+  }
+}
+
+role Mgr5 {
+  reads {
+    logistics:RobotStatus($robot, $battery, $zone) {
+      $robot == logistics:Biped && $battery <= 25 || $robot == logistics:Wheeled && $battery <= 25;
+    }
+  }
+}
+
+role Mgr6 {
+  reads {
+    logistics:RobotStatus($robot, $battery, $zone) {
+      $robot == logistics:Biped && $battery <= 24 || $robot == logistics:Wheeled && $battery <= 24;
+    }
+  }
+}
+
+role Mgr7 {
+  reads {
+    logistics:RobotStatus($robot, $battery, $zone) {
+      $robot == logistics:Biped && $battery <= 23 || $robot == logistics:Wheeled && $battery <= 23;
+    }
+  }
+}
+
+role Mgr8 {
+  reads {
+    logistics:RobotStatus($robot, $battery, $zone) {
+      $robot == logistics:Biped && $battery <= 22 || $robot == logistics:Wheeled && $battery <= 22;
+    }
+  }
+}
+
+role Mgr9 {
+  reads {
+    logistics:RobotStatus($robot, $battery, $zone) {
+      $robot == logistics:Biped && $battery <= 21 || $robot == logistics:Wheeled && $battery <= 21;
+    }
+  }
+}
+
+role Mgr10 {
+  reads {
+    logistics:RobotStatus($robot, $battery, $zone) {
+      $robot == logistics:Biped && $battery <= 20 || $robot == logistics:Wheeled && $battery <= 20;
+    }
+  }
+}
+
+role Mgr11 {
+  reads {
+    logistics:RobotStatus($robot, $battery, $zone) {
+      $robot == logistics:Biped && $battery <= 19 || $robot == logistics:Wheeled && $battery <= 19;
+    }
+  }
+}
+
+role Mgr12 {
+  reads {
+    logistics:RobotStatus($robot, $battery, $zone) {
+      $robot == logistics:Biped && $battery <= 18 || $robot == logistics:Wheeled && $battery <= 18;
+    }
+  }
+}
+
+role Mgr13 {
+  reads {
+    logistics:RobotStatus($robot, $battery, $zone) {
+      $robot == logistics:Biped && $battery <= 17 || $robot == logistics:Wheeled && $battery <= 17;
+    }
+  }
+}
+
+role Mgr14 {
+  reads {
+    logistics:RobotStatus($robot, $battery, $zone) {
+      $robot == logistics:Biped && $battery <= 16 || $robot == logistics:Wheeled && $battery <= 16;
+    }
+  }
+}
+
+role Mgr15 {
+  reads {
+    logistics:RobotStatus($robot, $battery, $zone) {
+      $robot == logistics:Biped && $battery <= 15 || $robot == logistics:Wheeled && $battery <= 15;
+    }
+  }
+}
+
+role Mgr16 {
+  reads {
+    logistics:RobotStatus($robot, $battery, $zone) {
+      $robot == logistics:Biped && $battery <= 14 || $robot == logistics:Wheeled && $battery <= 14;
+    }
+  }
+}
+
+role Mgr17 {
+  reads {
+    logistics:RobotStatus($robot, $battery, $zone) {
+      $robot == logistics:Biped && $battery <= 13 || $robot == logistics:Wheeled && $battery <= 13;
+    }
+  }
+}
+
+role Mgr18 {
+  reads {
+    logistics:RobotStatus($robot, $battery, $zone) {
+      $robot == logistics:Biped && $battery <= 12 || $robot == logistics:Wheeled && $battery <= 12;
+    }
+  }
+}
+
+role Mgr19 {
+  reads {
+    logistics:RobotStatus($robot, $battery, $zone) {
+      $robot == logistics:Biped && $battery <= 11 || $robot == logistics:Wheeled && $battery <= 11;
+    }
+  }
+}
+
+role Mgr20 {
+  reads {
+    logistics:RobotStatus($robot, $battery, $zone) {
+      $robot == logistics:Biped && $battery <= 10 || $robot == logistics:Wheeled && $battery <= 10;
+    }
+  }
+}
+
+role Mgr21 {
+  reads {
+    logistics:RobotStatus($robot, $battery, $zone) {
+      $robot == logistics:Biped && $battery <= 9 || $robot == logistics:Wheeled && $battery <= 9;
+    }
+  }
+}
+
+role Mgr22 {
+  reads {
+    logistics:RobotStatus($robot, $battery, $zone) {
+      $robot == logistics:Biped && $battery <= 8 || $robot == logistics:Wheeled && $battery <= 8;
+    }
+  }
+}
+
+role Mgr23 {
+  reads {
+    logistics:RobotStatus($robot, $battery, $zone) {
+      $robot == logistics:Biped && $battery <= 7 || $robot == logistics:Wheeled && $battery <= 7;
+    }
+  }
+}
+
+role Mgr24 {
+  reads {
+    logistics:RobotStatus($robot, $battery, $zone) {
+      $robot == logistics:Biped && $battery <= 6 || $robot == logistics:Wheeled && $battery <= 6;
+    }
+  }
+}
+
+role Mgr25 {
+  reads {
+    logistics:RobotStatus($robot, $battery, $zone) {
+      $robot == logistics:Biped && $battery <= 5 || $robot == logistics:Wheeled && $battery <= 5;
+    }
+  }
+}
+
+role Mgr26 {
+  reads {
+    logistics:RobotStatus($robot, $battery, $zone) {
+      $robot == logistics:Biped && $battery <= 4 || $robot == logistics:Wheeled && $battery <= 4;
+    }
+  }
+}
+
+role Mgr27 {
+  reads {
+    logistics:RobotStatus($robot, $battery, $zone) {
+      $robot == logistics:Biped && $battery <= 3 || $robot == logistics:Wheeled && $battery <= 3;
+    }
+  }
+}
+
+role Mgr28 {
+  reads {
+    logistics:RobotStatus($robot, $battery, $zone) {
+      $robot == logistics:Biped && $battery <= 2 || $robot == logistics:Wheeled && $battery <= 2;
+    }
+  }
+}
+
+role Mgr29 {
+  reads {
+    logistics:RobotStatus($robot, $battery, $zone) {
+      $robot == logistics:Biped && $battery <= 1 || $robot == logistics:Wheeled && $battery <= 1;
+    }
+  }
+}
+
+role Mgr30 {
+  reads {
+    logistics:RobotStatus($robot, $battery, $zone) {
+      $robot == logistics:Biped && $battery <= 0 || $robot == logistics:Wheeled && $battery <= 0;
+    }
+  }
+}
+
+role Mgr31 {
+  reads {
+    logistics:RobotStatus($robot, $battery, $zone) {
+      $robot == logistics:Biped && $battery <= -1 || $robot == logistics:Wheeled && $battery <= -1;
+    }
+  }
+}
+
+role Mgr32 {
+  reads {
+    logistics:RobotStatus($robot, $battery, $zone) {
+      $robot == logistics:Biped && $battery <= -2 || $robot == logistics:Wheeled && $battery <= -2;
+    }
+  }
+}
+
+role Mgr33 {
+  reads {
+    logistics:RobotStatus($robot, $battery, $zone) {
+      $robot == logistics:Biped && $battery <= -3 || $robot == logistics:Wheeled && $battery <= -3;
+    }
+  }
+}
+
+role Mgr34 {
+  reads {
+    logistics:RobotStatus($robot, $battery, $zone) {
+      $robot == logistics:Biped && $battery <= -4 || $robot == logistics:Wheeled && $battery <= -4;
+    }
+  }
+}
+
+role Mgr35 {
+  reads {
+    logistics:RobotStatus($robot, $battery, $zone) {
+      $robot == logistics:Biped && $battery <= -5 || $robot == logistics:Wheeled && $battery <= -5;
+    }
+  }
+}
+
+role Mgr36 {
+  reads {
+    logistics:RobotStatus($robot, $battery, $zone) {
+      $robot == logistics:Biped && $battery <= -6 || $robot == logistics:Wheeled && $battery <= -6;
+    }
+  }
+}
+
+role Mgr37 {
+  reads {
+    logistics:RobotStatus($robot, $battery, $zone) {
+      $robot == logistics:Biped && $battery <= -7 || $robot == logistics:Wheeled && $battery <= -7;
+    }
+  }
+}
+
+role Mgr38 {
+  reads {
+    logistics:RobotStatus($robot, $battery, $zone) {
+      $robot == logistics:Biped && $battery <= -8 || $robot == logistics:Wheeled && $battery <= -8;
+    }
+  }
+}
+
+role Mgr39 {
+  reads {
+    logistics:RobotStatus($robot, $battery, $zone) {
+      $robot == logistics:Biped && $battery <= -9 || $robot == logistics:Wheeled && $battery <= -9;
+    }
+  }
+}
+
+role Mgr40 {
+  reads {
+    logistics:RobotStatus($robot, $battery, $zone) {
+      $robot == logistics:Biped && $battery <= -10 || $robot == logistics:Wheeled && $battery <= -10;
+    }
+  }
+}
+
+role Mgr41 {
+  reads {
+    logistics:RobotStatus($robot, $battery, $zone) {
+      $robot == logistics:Biped && $battery <= -11 || $robot == logistics:Wheeled && $battery <= -11;
+    }
+  }
+}
+
+role Mgr42 {
+  reads {
+    logistics:RobotStatus($robot, $battery, $zone) {
+      $robot == logistics:Biped && $battery <= -12 || $robot == logistics:Wheeled && $battery <= -12;
+    }
+  }
+}
+
+role Mgr43 {
+  reads {
+    logistics:RobotStatus($robot, $battery, $zone) {
+      $robot == logistics:Biped && $battery <= -13 || $robot == logistics:Wheeled && $battery <= -13;
+    }
+  }
+}
+
+role Mgr44 {
+  reads {
+    logistics:RobotStatus($robot, $battery, $zone) {
+      $robot == logistics:Biped && $battery <= -14 || $robot == logistics:Wheeled && $battery <= -14;
+    }
+  }
+}
+
+role Mgr45 {
+  reads {
+    logistics:RobotStatus($robot, $battery, $zone) {
+      $robot == logistics:Biped && $battery <= -15 || $robot == logistics:Wheeled && $battery <= -15;
+    }
+  }
+}
+
+role Mgr46 {
+  reads {
+    logistics:RobotStatus($robot, $battery, $zone) {
+      $robot == logistics:Biped && $battery <= -16 || $robot == logistics:Wheeled && $battery <= -16;
+    }
+  }
+}
+
+role Mgr47 {
+  reads {
+    logistics:RobotStatus($robot, $battery, $zone) {
+      $robot == logistics:Biped && $battery <= -17 || $robot == logistics:Wheeled && $battery <= -17;
+    }
+  }
+}
+
+role Mgr48 {
+  reads {
+    logistics:RobotStatus($robot, $battery, $zone) {
+      $robot == logistics:Biped && $battery <= -18 || $robot == logistics:Wheeled && $battery <= -18;
+    }
+  }
+}
+
+role Mgr49 {
+  reads {
+    logistics:RobotStatus($robot, $battery, $zone) {
+      $robot == logistics:Biped && $battery <= -19 || $robot == logistics:Wheeled && $battery <= -19;
+    }
+  }
+}
+
+role Mgr50 {
+  reads {
+    logistics:RobotStatus($robot, $battery, $zone) {
+      $robot == logistics:Biped && $battery <= -20 || $robot == logistics:Wheeled && $battery <= -20;
+    }
+  }
+}
+
+role Mgr51 {
+  reads {
+    logistics:RobotStatus($robot, $battery, $zone) {
+      $robot == logistics:Biped && $battery <= -21 || $robot == logistics:Wheeled && $battery <= -21;
+    }
+  }
+}
+
+role Mgr52 {
+  reads {
+    logistics:RobotStatus($robot, $battery, $zone) {
+      $robot == logistics:Biped && $battery <= -22 || $robot == logistics:Wheeled && $battery <= -22;
+    }
+  }
+}
+
+role Mgr53 {
+  reads {
+    logistics:RobotStatus($robot, $battery, $zone) {
+      $robot == logistics:Biped && $battery <= -23 || $robot == logistics:Wheeled && $battery <= -23;
+    }
+  }
+}
+
+role Mgr54 {
+  reads {
+    logistics:RobotStatus($robot, $battery, $zone) {
+      $robot == logistics:Biped && $battery <= -24 || $robot == logistics:Wheeled && $battery <= -24;
+    }
+  }
+}
+
+role Mgr55 {
+  reads {
+    logistics:RobotStatus($robot, $battery, $zone) {
+      $robot == logistics:Biped && $battery <= -25 || $robot == logistics:Wheeled && $battery <= -25;
+    }
+  }
+}
+
+role Mgr56 {
+  reads {
+    logistics:RobotStatus($robot, $battery, $zone) {
+      $robot == logistics:Biped && $battery <= -26 || $robot == logistics:Wheeled && $battery <= -26;
+    }
+  }
+}
+
+role Mgr57 {
+  reads {
+    logistics:RobotStatus($robot, $battery, $zone) {
+      $robot == logistics:Biped && $battery <= -27 || $robot == logistics:Wheeled && $battery <= -27;
+    }
+  }
+}
+
+role Mgr58 {
+  reads {
+    logistics:RobotStatus($robot, $battery, $zone) {
+      $robot == logistics:Biped && $battery <= -28 || $robot == logistics:Wheeled && $battery <= -28;
+    }
+  }
+}
+
+role Mgr59 {
+  reads {
+    logistics:RobotStatus($robot, $battery, $zone) {
+      $robot == logistics:Biped && $battery <= -29 || $robot == logistics:Wheeled && $battery <= -29;
+    }
+  }
+}
+
+role Mgr60 {
+  reads {
+    logistics:RobotStatus($robot, $battery, $zone) {
+      $robot == logistics:Biped && $battery <= -30 || $robot == logistics:Wheeled && $battery <= -30;
+    }
+  }
+}
+
+role Mgr61 {
+  reads {
+    logistics:RobotStatus($robot, $battery, $zone) {
+      $robot == logistics:Biped && $battery <= -31 || $robot == logistics:Wheeled && $battery <= -31;
+    }
+  }
+}
+
+role Mgr62 {
+  reads {
+    logistics:RobotStatus($robot, $battery, $zone) {
+      $robot == logistics:Biped && $battery <= -32 || $robot == logistics:Wheeled && $battery <= -32;
+    }
+  }
+}
+
+role Mgr63 {
+  reads {
+    logistics:RobotStatus($robot, $battery, $zone) {
+      $robot == logistics:Biped && $battery <= -33 || $robot == logistics:Wheeled && $battery <= -33;
+    }
+  }
+}
+
+role Robot {
+  changes {
+    logistics:RobotStatus($robot, $battery, $zone);
+  }
+}

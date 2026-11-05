@@ -1,0 +1,11 @@
+--- a/plans/v2/Manager.yml
++++ a/plans/v1/Manager.yml
+@@ -10,4 +10,4 @@
+-- (rule (fact (RobotStatus $robot $battery $zone)) (= $robot "wheeled1") (<= $battery 30) --> (notify (RobotStatus $robot $battery $zone)))
+-- (rule (fact (RobotStatus $robot $battery $zone)) (= $robot "diff1") (<= $battery 30) --> (notify (RobotStatus $robot $battery $zone)))
+-- (rule (fact (RobotStatus $robot $battery $zone)) (= $robot "hybrid1") (<= $battery 30) --> (notify (RobotStatus $robot $battery $zone)))
+-- (rule (fact (RobotStatus $robot $battery $zone)) (= $robot "wheel1") (<= $battery 30) --> (notify (RobotStatus $robot $battery $zone)))
++- (rule (fact (RobotStatus $robot $battery $zone)) (= $robot "wheeled1") (<= $battery 20) --> (notify (RobotStatus $robot $battery $zone)))
++- (rule (fact (RobotStatus $robot $battery $zone)) (= $robot "diff1") (<= $battery 20) --> (notify (RobotStatus $robot $battery $zone)))
++- (rule (fact (RobotStatus $robot $battery $zone)) (= $robot "hybrid1") (<= $battery 20) --> (notify (RobotStatus $robot $battery $zone)))
++- (rule (fact (RobotStatus $robot $battery $zone)) (= $robot "wheel1") (<= $battery 20) --> (notify (RobotStatus $robot $battery $zone)))

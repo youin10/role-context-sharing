@@ -1,0 +1,2 @@
+FAIL s01 rejected expected [] observed ["TYPE_MISMATCH"]
+FAIL 50 rows, 1 failing

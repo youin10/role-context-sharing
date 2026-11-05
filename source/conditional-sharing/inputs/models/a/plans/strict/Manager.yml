@@ -1,0 +1,14 @@
+role: Manager
+# Requirement: Biped robots (incl. subclasses) at battery <= 30, Wheeled robots (incl. subclasses)
+# at battery <= 20; stopped for >= 300 s. Per-ID rules written from the fixed ontology types:
+# Biped = biped1 humanoid1 hybrid1 hum1; Wheeled = wheeled1 diff1 hybrid1 wheel1 (hybrid1 is both).
+subscribe:
+- (rule (fact (RobotStatus $robot $battery $zone)) (= $robot "biped1") (< $battery 30) --> (notify (RobotStatus $robot $battery $zone)))
+- (rule (fact (RobotStatus $robot $battery $zone)) (= $robot "humanoid1") (< $battery 30) --> (notify (RobotStatus $robot $battery $zone)))
+- (rule (fact (RobotStatus $robot $battery $zone)) (= $robot "hybrid1") (< $battery 30) --> (notify (RobotStatus $robot $battery $zone)))
+- (rule (fact (RobotStatus $robot $battery $zone)) (= $robot "hum1") (< $battery 30) --> (notify (RobotStatus $robot $battery $zone)))
+- (rule (fact (RobotStatus $robot $battery $zone)) (= $robot "wheeled1") (< $battery 20) --> (notify (RobotStatus $robot $battery $zone)))
+- (rule (fact (RobotStatus $robot $battery $zone)) (= $robot "diff1") (< $battery 20) --> (notify (RobotStatus $robot $battery $zone)))
+- (rule (fact (RobotStatus $robot $battery $zone)) (= $robot "hybrid1") (< $battery 20) --> (notify (RobotStatus $robot $battery $zone)))
+- (rule (fact (RobotStatus $robot $battery $zone)) (= $robot "wheel1") (< $battery 20) --> (notify (RobotStatus $robot $battery $zone)))
+- (rule (fact (RobotStopped $robot $elapsed)) (>= $elapsed 300) --> (notify (RobotStopped $robot $elapsed)))

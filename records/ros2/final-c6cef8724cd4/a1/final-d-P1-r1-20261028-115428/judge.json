@@ -1,0 +1,466 @@
+{
+ "schema": "cslive-judge/2",
+ "verdict": "PASS",
+ "arm": "d",
+ "scenario": "P1",
+ "roster": [
+  "driver",
+  "d-sm",
+  "d-producer",
+  "d-agent-manager1"
+ ],
+ "hosts": {
+  "driver": "driver",
+  "d-sm": "d-sm",
+  "d-producer": "d-producer",
+  "d-agent-manager1": "d-agent-manager1"
+ },
+ "problems": [],
+ "compared": 16,
+ "mismatches": [],
+ "rows": [
+  {
+   "item": "calls",
+   "step": "q01",
+   "agent": "manager1",
+   "ok": true,
+   "want": [],
+   "got": []
+  },
+  {
+   "item": "calls",
+   "step": "q02",
+   "agent": "manager1",
+   "ok": true,
+   "want": [],
+   "got": []
+  },
+  {
+   "item": "calls",
+   "step": "q03",
+   "agent": "manager1",
+   "ok": true,
+   "want": [
+    [
+     "deliver",
+     "RobotStatus",
+     "diff1",
+     {
+      "battery": 19,
+      "zone": "storage"
+     }
+    ]
+   ],
+   "got": [
+    [
+     "deliver",
+     "RobotStatus",
+     "diff1",
+     {
+      "battery": 19,
+      "zone": "storage"
+     }
+    ]
+   ]
+  },
+  {
+   "item": "calls",
+   "step": "q04",
+   "agent": "manager1",
+   "ok": true,
+   "want": [],
+   "got": []
+  },
+  {
+   "item": "calls",
+   "step": "q05",
+   "agent": "manager1",
+   "ok": true,
+   "want": [
+    [
+     "deliver",
+     "RobotStatus",
+     "biped1",
+     {
+      "battery": 30,
+      "zone": "storage"
+     }
+    ]
+   ],
+   "got": [
+    [
+     "deliver",
+     "RobotStatus",
+     "biped1",
+     {
+      "battery": 30,
+      "zone": "storage"
+     }
+    ]
+   ]
+  },
+  {
+   "item": "calls",
+   "step": "q06",
+   "agent": "manager1",
+   "ok": true,
+   "want": [],
+   "got": []
+  },
+  {
+   "item": "calls",
+   "step": "q07",
+   "agent": "manager1",
+   "ok": true,
+   "want": [
+    [
+     "current",
+     "RobotStatus",
+     "wheeled1",
+     {
+      "battery": 25,
+      "zone": "storage"
+     }
+    ]
+   ],
+   "got": [
+    [
+     "current",
+     "RobotStatus",
+     "wheeled1",
+     {
+      "battery": 25,
+      "zone": "storage"
+     }
+    ]
+   ]
+  },
+  {
+   "item": "calls",
+   "step": "q08",
+   "agent": "manager1",
+   "ok": true,
+   "want": [
+    [
+     "deliver",
+     "RobotStopped",
+     "wheeled1",
+     {
+      "elapsedSeconds": 300
+     }
+    ]
+   ],
+   "got": [
+    [
+     "deliver",
+     "RobotStopped",
+     "wheeled1",
+     {
+      "elapsedSeconds": 300
+     }
+    ]
+   ]
+  },
+  {
+   "item": "calls",
+   "step": "q09",
+   "agent": "manager1",
+   "ok": true,
+   "want": [
+    [
+     "revoke",
+     "RobotStatus",
+     "biped1",
+     null
+    ]
+   ],
+   "got": [
+    [
+     "revoke",
+     "RobotStatus",
+     "biped1",
+     null
+    ]
+   ]
+  },
+  {
+   "item": "calls",
+   "step": "q10",
+   "agent": "manager1",
+   "ok": true,
+   "want": [
+    [
+     "delete",
+     "RobotStopped",
+     "wheeled1",
+     null
+    ]
+   ],
+   "got": [
+    [
+     "delete",
+     "RobotStopped",
+     "wheeled1",
+     null
+    ]
+   ]
+  },
+  {
+   "item": "calls",
+   "step": "q11",
+   "agent": "manager1",
+   "ok": true,
+   "want": [
+    [
+     "revoke",
+     "RobotStatus",
+     "diff1",
+     null
+    ]
+   ],
+   "got": [
+    [
+     "revoke",
+     "RobotStatus",
+     "diff1",
+     null
+    ]
+   ]
+  },
+  {
+   "item": "decision",
+   "step": "D1",
+   "ok": true,
+   "want": {
+    "biped1": [],
+    "humanoid1": [],
+    "wheeled1": [],
+    "diff1": [
+     "low_power_excluded"
+    ]
+   },
+   "got": {
+    "biped1": [],
+    "diff1": [
+     "low_power_excluded"
+    ],
+    "humanoid1": [],
+    "wheeled1": []
+   }
+  },
+  {
+   "item": "decision",
+   "step": "D2",
+   "ok": true,
+   "want": {
+    "biped1": [
+     "low_power_excluded"
+    ],
+    "humanoid1": [],
+    "wheeled1": [],
+    "diff1": [
+     "low_power_excluded"
+    ]
+   },
+   "got": {
+    "biped1": [
+     "low_power_excluded"
+    ],
+    "diff1": [
+     "low_power_excluded"
+    ],
+    "humanoid1": [],
+    "wheeled1": []
+   }
+  },
+  {
+   "item": "decision",
+   "step": "D3",
+   "ok": true,
+   "want": {
+    "biped1": [
+     "low_power_excluded"
+    ],
+    "humanoid1": [],
+    "wheeled1": [
+     "low_power_excluded"
+    ],
+    "diff1": [
+     "low_power_excluded"
+    ]
+   },
+   "got": {
+    "biped1": [
+     "low_power_excluded"
+    ],
+    "diff1": [
+     "low_power_excluded"
+    ],
+    "humanoid1": [],
+    "wheeled1": [
+     "low_power_excluded"
+    ]
+   }
+  },
+  {
+   "item": "decision",
+   "step": "D4",
+   "ok": true,
+   "want": {
+    "biped1": [],
+    "humanoid1": [],
+    "wheeled1": [
+     "low_power_excluded",
+     "stop_suspect"
+    ],
+    "diff1": [
+     "low_power_excluded"
+    ]
+   },
+   "got": {
+    "biped1": [],
+    "diff1": [
+     "low_power_excluded"
+    ],
+    "humanoid1": [],
+    "wheeled1": [
+     "low_power_excluded",
+     "stop_suspect"
+    ]
+   }
+  },
+  {
+   "item": "decision",
+   "step": "D5",
+   "ok": true,
+   "want": {
+    "biped1": [],
+    "humanoid1": [],
+    "wheeled1": [
+     "low_power_excluded"
+    ],
+    "diff1": []
+   },
+   "got": {
+    "biped1": [],
+    "diff1": [],
+    "humanoid1": [],
+    "wheeled1": [
+     "low_power_excluded"
+    ]
+   }
+  }
+ ],
+ "stats": {
+  "expected_positive_calls": 7,
+  "observed_calls": 7,
+  "by_kind": {
+   "deliver": 3,
+   "delete": 1,
+   "current": 1,
+   "revoke": 2
+  },
+  "decisions": 5,
+  "rejected": 0,
+  "messages": {
+   "sent": 44,
+   "missing": 0,
+   "duplicate": 0,
+   "unsent": 0
+  },
+  "causes": {
+   "calls": 7,
+   "rx_ok": 7,
+   "cross_host": 7,
+   "same_step": 7,
+   "version_ok": 7
+  },
+  "settle": [
+   {
+    "step": "init",
+    "dt_s": 0.0595,
+    "probes": 2
+   },
+   {
+    "step": "q01",
+    "dt_s": 0.1143,
+    "probes": 3
+   },
+   {
+    "step": "q02",
+    "dt_s": 0.1193,
+    "probes": 3
+   },
+   {
+    "step": "q03",
+    "dt_s": 0.1204,
+    "probes": 3
+   },
+   {
+    "step": "q04",
+    "dt_s": 0.1194,
+    "probes": 3
+   },
+   {
+    "step": "D1",
+    "dt_s": 0.0583,
+    "probes": 2
+   },
+   {
+    "step": "q05",
+    "dt_s": 0.1156,
+    "probes": 3
+   },
+   {
+    "step": "q06",
+    "dt_s": 0.1149,
+    "probes": 3
+   },
+   {
+    "step": "D2",
+    "dt_s": 0.0569,
+    "probes": 2
+   },
+   {
+    "step": "q07",
+    "dt_s": 0.1113,
+    "probes": 3
+   },
+   {
+    "step": "D3",
+    "dt_s": 0.0599,
+    "probes": 2
+   },
+   {
+    "step": "q08",
+    "dt_s": 0.1188,
+    "probes": 3
+   },
+   {
+    "step": "q09",
+    "dt_s": 0.1141,
+    "probes": 3
+   },
+   {
+    "step": "D4",
+    "dt_s": 0.0599,
+    "probes": 2
+   },
+   {
+    "step": "q10",
+    "dt_s": 0.1193,
+    "probes": 3
+   },
+   {
+    "step": "q11",
+    "dt_s": 0.1151,
+    "probes": 3
+   },
+   {
+    "step": "D5",
+    "dt_s": 0.0593,
+    "probes": 2
+   }
+  ]
+ }
+}

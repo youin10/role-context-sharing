@@ -1,0 +1,5 @@
+--- d/contract/CT4-1.org
++++ d/contract/CT4-2.org
+@@ -6 +6 @@
+-      $robot == logistics:Wheeled && $battery <= 20 || $robot == logistics:Biped && $battery <= 30;
++      $robot == logistics:Wheeled && $battery <= 20 || $robot == logistics:Biped && $battery <= 20;

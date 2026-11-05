@@ -1,0 +1,20 @@
+{
+ "runs": [
+  "results/role-release-host",
+  "results/role-release-docker"
+ ],
+ "files": 166,
+ "pairs": [
+  {
+   "a": "results/role-release-host",
+   "b": "results/role-release-docker",
+   "byte_different": [
+    "raw/negative/T__D__no-validation.jsonl",
+    "raw/negative/X2__D__relation-only-check.jsonl"
+   ],
+   "different_after_trace_normalisation": [],
+   "verdict_differences": [],
+   "missing_in_b": []
+  }
+ ]
+}

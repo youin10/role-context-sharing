@@ -1,0 +1,33 @@
+# Pre-specified from the domain requirement, independent of implementation output.
+# Manager: (Biped incl. Humanoid AND battery <= 30) OR (Wheeled incl. DifferentialDrive AND battery <= 20).
+# Kinds: assert (first supply: entry, or a stored value on a configuration change), update (new
+# value of a supplied fact inside the condition), retract (condition exit, requirement loss, or
+# deletion of a supplied fact; after an exit the fact itself still exists in the store).
+scenario: B1
+calls:
+  s01: {}                                                          # 31: outside
+  s02: {manager1: [[assert, RobotStatus, biped1, {battery: 30, zone: storage}]]}   # boundary 30 included
+  s03: {manager1: [[update, RobotStatus, biped1, {battery: 29, zone: storage}]]}   # update inside
+  s04: {manager1: [[retract, RobotStatus, biped1, null]]}           # exit: notice, not deletion
+  s05: {}                                                          # wheeled 21: outside
+  s06: {manager1: [[assert, RobotStatus, wheeled1, {battery: 20, zone: storage}]]}
+  s07: {manager1: [[update, RobotStatus, wheeled1, {battery: 19, zone: storage}]]}
+  s08: {manager1: [[retract, RobotStatus, wheeled1, null]]}
+  s09: {manager1: [[assert, RobotStatus, humanoid1, {battery: 30, zone: storage}]]}  # Humanoid is a Biped
+  s10: {}                                                          # diff1 is Wheeled: 25 > 20 (a Biped reading would assert)
+  s11: {manager1: [[assert, RobotStatus, diff1, {battery: 20, zone: storage}]]}
+  s12: {manager1: [[assert, RobotStatus, biped1, {battery: 29, zone: storage}]]}
+  s13: {manager1: [[retract, RobotStatus, biped1, null]]}           # deletion of a held fact
+  s14: {}                                                          # deletion of a fact outside the condition
+  s15: {manager1: [[retract, RobotStatus, diff1, null]]}
+views:
+  s03: {manager1: {RobotStatus/biped1: {battery: 29, zone: storage}}}
+  s04: {manager1: {}}
+  s08: {manager1: {}}
+  s11: {manager1: {RobotStatus/humanoid1: {battery: 30, zone: storage}, RobotStatus/diff1: {battery: 20, zone: storage}}}
+  s13: {manager1: {RobotStatus/humanoid1: {battery: 30, zone: storage}, RobotStatus/diff1: {battery: 20, zone: storage}}}
+  s15: {manager1: {RobotStatus/humanoid1: {battery: 30, zone: storage}}}
+store:
+  s04: {RobotStatus/biped1: {battery: 31, zone: storage}}
+  s08: {RobotStatus/wheeled1: {battery: 21, zone: storage}}
+  s15: {RobotStatus/diff1: {battery: 21, zone: storage}}

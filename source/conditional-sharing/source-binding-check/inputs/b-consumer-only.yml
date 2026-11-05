@@ -1,0 +1,4 @@
+schema: rcs-d-binding/1
+cfg: b-consumer-only
+agents:
+  manager1: [Manager]

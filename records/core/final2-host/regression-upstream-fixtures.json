@@ -1,0 +1,447 @@
+{
+ "n": 88,
+ "same": 88,
+ "diff": 0,
+ "rows": [
+  {
+   "org": "arms/d/fixtures/L-AB-C3/cfg0/roles.org",
+   "status": "same",
+   "sha256": "767c599828368c5388b8b5d0c4de7b8b63ca0171bc4bb6465316b3420c99ad81"
+  },
+  {
+   "org": "arms/d/fixtures/L-AB-C3/cfg1/roles.org",
+   "status": "same",
+   "sha256": "67ed4bded6b8228e3380bbff2aa06ca007a6721d35f05e78fb9a5095ed2687b9"
+  },
+  {
+   "org": "arms/d/fixtures/L-AB-C5/cfg0/roles.org",
+   "status": "same",
+   "sha256": "767c599828368c5388b8b5d0c4de7b8b63ca0171bc4bb6465316b3420c99ad81"
+  },
+  {
+   "org": "arms/d/fixtures/L-AB-C5/cfg1/roles.org",
+   "status": "same",
+   "sha256": "dcbee4900600a489297fe58eaae681ac593ce7fd8990293cf4ea54aa1a4e92de"
+  },
+  {
+   "org": "arms/d/fixtures/L-AB-C7b/cfg0/roles.org",
+   "status": "same",
+   "sha256": "767c599828368c5388b8b5d0c4de7b8b63ca0171bc4bb6465316b3420c99ad81"
+  },
+  {
+   "org": "arms/d/fixtures/L-AB-C7b/cfg1/roles.org",
+   "status": "same",
+   "sha256": "250cc30290725982dcc5b788278a05319aa1a12bb6db3f97eaaf92b7823748b8"
+  },
+  {
+   "org": "arms/d/fixtures/L-C1/cfg0/roles.org",
+   "status": "same",
+   "sha256": "767c599828368c5388b8b5d0c4de7b8b63ca0171bc4bb6465316b3420c99ad81"
+  },
+  {
+   "org": "arms/d/fixtures/L-C1/cfg1/roles.org",
+   "status": "same",
+   "sha256": "0e14729c83591a2e55e8bf342992b1f79fcccc8983ccb04b1f06e201c91947fd"
+  },
+  {
+   "org": "arms/d/fixtures/L-C2/cfg0/roles.org",
+   "status": "same",
+   "sha256": "767c599828368c5388b8b5d0c4de7b8b63ca0171bc4bb6465316b3420c99ad81"
+  },
+  {
+   "org": "arms/d/fixtures/L-C2/cfg1/roles.org",
+   "status": "same",
+   "sha256": "10aaab60ac181b78489c5a074b4a0047d900e3674df03494cfb79317bdcfd348"
+  },
+  {
+   "org": "arms/d/fixtures/L-C3/cfg0/roles.org",
+   "status": "same",
+   "sha256": "767c599828368c5388b8b5d0c4de7b8b63ca0171bc4bb6465316b3420c99ad81"
+  },
+  {
+   "org": "arms/d/fixtures/L-C3/cfg1/roles.org",
+   "status": "same",
+   "sha256": "67ed4bded6b8228e3380bbff2aa06ca007a6721d35f05e78fb9a5095ed2687b9"
+  },
+  {
+   "org": "arms/d/fixtures/L-C4/cfg0/roles.org",
+   "status": "same",
+   "sha256": "767c599828368c5388b8b5d0c4de7b8b63ca0171bc4bb6465316b3420c99ad81"
+  },
+  {
+   "org": "arms/d/fixtures/L-C4/cfg1/roles.org",
+   "status": "same",
+   "sha256": "45e0b66e674c247cfc2f47e2550d09c5cf948f099fcbae596ee4f41e74afa015"
+  },
+  {
+   "org": "arms/d/fixtures/L-C4r/cfg0/roles.org",
+   "status": "same",
+   "sha256": "1f37a33221faae01006882b5d0aabe4d53866a6371e094564bd1a3ea6e1ecbba"
+  },
+  {
+   "org": "arms/d/fixtures/L-C4r/cfg1/roles.org",
+   "status": "same",
+   "sha256": "3eb41d9d2350f9f7892370571a13185efbc37577f270305379d70e66a829a875"
+  },
+  {
+   "org": "arms/d/fixtures/L-C5/cfg0/roles.org",
+   "status": "same",
+   "sha256": "767c599828368c5388b8b5d0c4de7b8b63ca0171bc4bb6465316b3420c99ad81"
+  },
+  {
+   "org": "arms/d/fixtures/L-C5/cfg1/roles.org",
+   "status": "same",
+   "sha256": "dcbee4900600a489297fe58eaae681ac593ce7fd8990293cf4ea54aa1a4e92de"
+  },
+  {
+   "org": "arms/d/fixtures/L-C6/cfg0/roles.org",
+   "status": "same",
+   "sha256": "767c599828368c5388b8b5d0c4de7b8b63ca0171bc4bb6465316b3420c99ad81"
+  },
+  {
+   "org": "arms/d/fixtures/L-C6/cfg1/roles.org",
+   "status": "same",
+   "sha256": "cda3cea63d9941c42adc83a942ecdfeb54d8dd6f5c2ab447e51c284ff92c9e2d"
+  },
+  {
+   "org": "arms/d/fixtures/L-C7a-cross/cfg0/roles.org",
+   "status": "same",
+   "sha256": "767c599828368c5388b8b5d0c4de7b8b63ca0171bc4bb6465316b3420c99ad81"
+  },
+  {
+   "org": "arms/d/fixtures/L-C7a-cross/cfg1/roles.org",
+   "status": "same",
+   "sha256": "4fbe19f839bbce488c596e55fc244e01305700e6db9a7ed6f4b70b0cbbd92acd"
+  },
+  {
+   "org": "arms/d/fixtures/L-C7a-fix/cfg0/roles.org",
+   "status": "same",
+   "sha256": "767c599828368c5388b8b5d0c4de7b8b63ca0171bc4bb6465316b3420c99ad81"
+  },
+  {
+   "org": "arms/d/fixtures/L-C7a-fix/cfg1/roles.org",
+   "status": "same",
+   "sha256": "4fbe19f839bbce488c596e55fc244e01305700e6db9a7ed6f4b70b0cbbd92acd"
+  },
+  {
+   "org": "arms/d/fixtures/L-C7a/cfg0/roles.org",
+   "status": "same",
+   "sha256": "767c599828368c5388b8b5d0c4de7b8b63ca0171bc4bb6465316b3420c99ad81"
+  },
+  {
+   "org": "arms/d/fixtures/L-C7a/cfg1/roles.org",
+   "status": "same",
+   "sha256": "4fbe19f839bbce488c596e55fc244e01305700e6db9a7ed6f4b70b0cbbd92acd"
+  },
+  {
+   "org": "arms/d/fixtures/L-C7b-cross/cfg0/roles.org",
+   "status": "same",
+   "sha256": "767c599828368c5388b8b5d0c4de7b8b63ca0171bc4bb6465316b3420c99ad81"
+  },
+  {
+   "org": "arms/d/fixtures/L-C7b-cross/cfg1/roles.org",
+   "status": "same",
+   "sha256": "250cc30290725982dcc5b788278a05319aa1a12bb6db3f97eaaf92b7823748b8"
+  },
+  {
+   "org": "arms/d/fixtures/L-C7b-fix/cfg0/roles.org",
+   "status": "same",
+   "sha256": "767c599828368c5388b8b5d0c4de7b8b63ca0171bc4bb6465316b3420c99ad81"
+  },
+  {
+   "org": "arms/d/fixtures/L-C7b-fix/cfg1/roles.org",
+   "status": "same",
+   "sha256": "250cc30290725982dcc5b788278a05319aa1a12bb6db3f97eaaf92b7823748b8"
+  },
+  {
+   "org": "arms/d/fixtures/L-C7b/cfg0/roles.org",
+   "status": "same",
+   "sha256": "767c599828368c5388b8b5d0c4de7b8b63ca0171bc4bb6465316b3420c99ad81"
+  },
+  {
+   "org": "arms/d/fixtures/L-C7b/cfg1/roles.org",
+   "status": "same",
+   "sha256": "250cc30290725982dcc5b788278a05319aa1a12bb6db3f97eaaf92b7823748b8"
+  },
+  {
+   "org": "arms/d/fixtures/L-C8/cfg0/roles.org",
+   "status": "same",
+   "sha256": "569d26bed3ac4baaa263b1f8b729ccd0ac44530e3d1eef99fb4c5480f8d7388f"
+  },
+  {
+   "org": "arms/d/fixtures/L-C8/cfg1/roles.org",
+   "status": "same",
+   "sha256": "3eb41d9d2350f9f7892370571a13185efbc37577f270305379d70e66a829a875"
+  },
+  {
+   "org": "arms/d/fixtures/L-E3n-cross/cfg0/roles.org",
+   "status": "same",
+   "sha256": "767c599828368c5388b8b5d0c4de7b8b63ca0171bc4bb6465316b3420c99ad81"
+  },
+  {
+   "org": "arms/d/fixtures/L-E3n-fix/cfg0/roles.org",
+   "status": "same",
+   "sha256": "767c599828368c5388b8b5d0c4de7b8b63ca0171bc4bb6465316b3420c99ad81"
+  },
+  {
+   "org": "arms/d/fixtures/L-X1/cfg0/roles.org",
+   "status": "same",
+   "sha256": "767c599828368c5388b8b5d0c4de7b8b63ca0171bc4bb6465316b3420c99ad81"
+  },
+  {
+   "org": "arms/d/fixtures/L-X1/cfg1/roles.org",
+   "status": "same",
+   "sha256": "67ed4bded6b8228e3380bbff2aa06ca007a6721d35f05e78fb9a5095ed2687b9"
+  },
+  {
+   "org": "arms/d/fixtures/L-X1/cfg2/roles.org",
+   "status": "same",
+   "sha256": "629c0bb506338aeeb749dc57d0e29f9d7c594785f051da46a372dff5e4e0ba33"
+  },
+  {
+   "org": "arms/d/fixtures/L-X1o/cfg0/roles.org",
+   "status": "same",
+   "sha256": "767c599828368c5388b8b5d0c4de7b8b63ca0171bc4bb6465316b3420c99ad81"
+  },
+  {
+   "org": "arms/d/fixtures/L-X1o/cfg1/roles.org",
+   "status": "same",
+   "sha256": "67ed4bded6b8228e3380bbff2aa06ca007a6721d35f05e78fb9a5095ed2687b9"
+  },
+  {
+   "org": "arms/d/fixtures/L-X1o/cfg2/roles.org",
+   "status": "same",
+   "sha256": "629c0bb506338aeeb749dc57d0e29f9d7c594785f051da46a372dff5e4e0ba33"
+  },
+  {
+   "org": "arms/d/fixtures/L-X2/cfg0/roles.org",
+   "status": "same",
+   "sha256": "767c599828368c5388b8b5d0c4de7b8b63ca0171bc4bb6465316b3420c99ad81"
+  },
+  {
+   "org": "arms/d/fixtures/L-X2/cfg1/roles.org",
+   "status": "same",
+   "sha256": "67ed4bded6b8228e3380bbff2aa06ca007a6721d35f05e78fb9a5095ed2687b9"
+  },
+  {
+   "org": "arms/d/fixtures/L-X2b/cfg0/roles.org",
+   "status": "same",
+   "sha256": "1f37a33221faae01006882b5d0aabe4d53866a6371e094564bd1a3ea6e1ecbba"
+  },
+  {
+   "org": "arms/d/fixtures/L-X2b/cfg1/roles.org",
+   "status": "same",
+   "sha256": "3eb41d9d2350f9f7892370571a13185efbc37577f270305379d70e66a829a875"
+  },
+  {
+   "org": "arms/d/fixtures/L-X2c/cfg0/roles.org",
+   "status": "same",
+   "sha256": "767c599828368c5388b8b5d0c4de7b8b63ca0171bc4bb6465316b3420c99ad81"
+  },
+  {
+   "org": "arms/d/fixtures/L-X2c/cfg1/roles.org",
+   "status": "same",
+   "sha256": "dcbee4900600a489297fe58eaae681ac593ce7fd8990293cf4ea54aa1a4e92de"
+  },
+  {
+   "org": "arms/d/fixtures/L-X3/cfg0/roles.org",
+   "status": "same",
+   "sha256": "767c599828368c5388b8b5d0c4de7b8b63ca0171bc4bb6465316b3420c99ad81"
+  },
+  {
+   "org": "arms/d/fixtures/L-X3/cfg1/roles.org",
+   "status": "same",
+   "sha256": "dcbee4900600a489297fe58eaae681ac593ce7fd8990293cf4ea54aa1a4e92de"
+  },
+  {
+   "org": "arms/d/fixtures/P-C1/cfg0/roles.org",
+   "status": "same",
+   "sha256": "8202b96efdcc7e02884607ff6f3bc2de4189fa807361aec065589c2188b311ff"
+  },
+  {
+   "org": "arms/d/fixtures/P-C1/cfg1/roles.org",
+   "status": "same",
+   "sha256": "6fa1d7505ed3a5795391af670603f2c330e472eeb3143570b3c127e1645e94df"
+  },
+  {
+   "org": "arms/d/fixtures/P-C3/cfg0/roles.org",
+   "status": "same",
+   "sha256": "8202b96efdcc7e02884607ff6f3bc2de4189fa807361aec065589c2188b311ff"
+  },
+  {
+   "org": "arms/d/fixtures/P-C3/cfg1/roles.org",
+   "status": "same",
+   "sha256": "bb95f13f516f2b32371ed01ce6065574ef0dddd12387ee0ac3096e1d80dd80d7"
+  },
+  {
+   "org": "arms/d/fixtures/P-C4r/cfg0/roles.org",
+   "status": "same",
+   "sha256": "8202b96efdcc7e02884607ff6f3bc2de4189fa807361aec065589c2188b311ff"
+  },
+  {
+   "org": "arms/d/fixtures/P-C4r/cfg1/roles.org",
+   "status": "same",
+   "sha256": "30724bcc02b9eb985c04b544beb6b9a9752cc25591a2e735f5f49febe08b770f"
+  },
+  {
+   "org": "arms/d/fixtures/P-C5/cfg0/roles.org",
+   "status": "same",
+   "sha256": "8202b96efdcc7e02884607ff6f3bc2de4189fa807361aec065589c2188b311ff"
+  },
+  {
+   "org": "arms/d/fixtures/P-C5/cfg1/roles.org",
+   "status": "same",
+   "sha256": "0adaf95d578b1e394ca3725760e53b0e3e9f2e9442091165dee10bd400af89cb"
+  },
+  {
+   "org": "arms/d/fixtures/P-C7a/cfg0/roles.org",
+   "status": "same",
+   "sha256": "8202b96efdcc7e02884607ff6f3bc2de4189fa807361aec065589c2188b311ff"
+  },
+  {
+   "org": "arms/d/fixtures/P-C7a/cfg1/roles.org",
+   "status": "same",
+   "sha256": "fce57b6fe63d9205ddd907ae0c812aedc48633c29d254c6e0c6cbd7cb367df7a"
+  },
+  {
+   "org": "arms/d/fixtures/P-C7b/cfg0/roles.org",
+   "status": "same",
+   "sha256": "8202b96efdcc7e02884607ff6f3bc2de4189fa807361aec065589c2188b311ff"
+  },
+  {
+   "org": "arms/d/fixtures/P-C7b/cfg1/roles.org",
+   "status": "same",
+   "sha256": "d7d90e9eeb401c2fe52db1968d484782b40aa86d9bd74e0db8b0fb60cc6904ad"
+  },
+  {
+   "org": "arms/d/fixtures/SA-n_agents48-C3/cfg0/roles.org",
+   "status": "same",
+   "sha256": "c648878e9b2916dbc52dde489dedffde7d3bfbf55b368e548d0b843177b0700a"
+  },
+  {
+   "org": "arms/d/fixtures/SA-n_agents48-C3/cfg1/roles.org",
+   "status": "same",
+   "sha256": "08359e40b036c501f2f5337dfd99dccaf826b2deec023f289fa3d526ce3498b3"
+  },
+  {
+   "org": "arms/d/fixtures/SB-k4-C3/cfg0/roles.org",
+   "status": "same",
+   "sha256": "2dabc8c0d6ecf07a25d92b218c2dddd33d219afdef6889ce703445ea75b0b31d"
+  },
+  {
+   "org": "arms/d/fixtures/SB-k4-C3/cfg1/roles.org",
+   "status": "same",
+   "sha256": "5f238340645bdc489e1bd4dd186206f791fd061d4328caa08fd4f63d8d042d6d"
+  },
+  {
+   "org": "arms/d/fixtures/SB-k4-C4r/cfg0/roles.org",
+   "status": "same",
+   "sha256": "97ac8c4a5944dedb3a5cf92b4e63a5b26391299487263fbaaea690142bc6783a"
+  },
+  {
+   "org": "arms/d/fixtures/SB-k4-C4r/cfg1/roles.org",
+   "status": "same",
+   "sha256": "7517dcb830981efc75032de0775f23cf7e9442c23ca8a6ee81788b333da87a1a"
+  },
+  {
+   "org": "arms/d/fixtures/SB-k4-C7b/cfg0/roles.org",
+   "status": "same",
+   "sha256": "2dabc8c0d6ecf07a25d92b218c2dddd33d219afdef6889ce703445ea75b0b31d"
+  },
+  {
+   "org": "arms/d/fixtures/SB-k4-C7b/cfg1/roles.org",
+   "status": "same",
+   "sha256": "652365796766ed21723087ad140a94d4738d1ece9ae1f4a0cc5aa87843acbaf5"
+  },
+  {
+   "org": "arms/d/fixtures/SH-C3/cfg0/roles.org",
+   "status": "same",
+   "sha256": "87ac55a75a4e9872f80d00ff1b3c63021183a34321e86bb9c81bbe34e4976886"
+  },
+  {
+   "org": "arms/d/fixtures/SH-C3/cfg1/roles.org",
+   "status": "same",
+   "sha256": "f12a730ccadfe8326d26ec6d970c201065a28e902ae943a9df5a86835335801d"
+  },
+  {
+   "org": "arms/d/fixtures/SH-C5/cfg0/roles.org",
+   "status": "same",
+   "sha256": "87ac55a75a4e9872f80d00ff1b3c63021183a34321e86bb9c81bbe34e4976886"
+  },
+  {
+   "org": "arms/d/fixtures/SH-C5/cfg1/roles.org",
+   "status": "same",
+   "sha256": "7d2b79bfc100a58bcb6e88d156c157ff3b4e4bb89cd6c03d8996d37b63849622"
+  },
+  {
+   "org": "arms/d/fixtures/SH-C7a/cfg0/roles.org",
+   "status": "same",
+   "sha256": "87ac55a75a4e9872f80d00ff1b3c63021183a34321e86bb9c81bbe34e4976886"
+  },
+  {
+   "org": "arms/d/fixtures/SH-C7a/cfg1/roles.org",
+   "status": "same",
+   "sha256": "6560661966e3a05f8fe02fc8e7474b8ce0daf12a7ff5dfe67c1c53304955bbd7"
+  },
+  {
+   "org": "arms/d/fixtures/SM-C3/cfg0/roles.org",
+   "status": "same",
+   "sha256": "f1396b6f4d8f54c8d8a5f1664f1e0c70d9ee72e39ab7ecd13a29c3ac40815bb0"
+  },
+  {
+   "org": "arms/d/fixtures/SM-C3/cfg1/roles.org",
+   "status": "same",
+   "sha256": "66d68921f939035ab1cbdcf1f3ecb791cc97cfcfecce3e4751a6fdd66566f524"
+  },
+  {
+   "org": "arms/d/fixtures/SM-C5/cfg0/roles.org",
+   "status": "same",
+   "sha256": "f1396b6f4d8f54c8d8a5f1664f1e0c70d9ee72e39ab7ecd13a29c3ac40815bb0"
+  },
+  {
+   "org": "arms/d/fixtures/SM-C5/cfg1/roles.org",
+   "status": "same",
+   "sha256": "9f35ab103929493540f3064982302c3eeba0e1a9641c8e37131c69e6b2849974"
+  },
+  {
+   "org": "arms/d/fixtures/SM-C7a/cfg0/roles.org",
+   "status": "same",
+   "sha256": "f1396b6f4d8f54c8d8a5f1664f1e0c70d9ee72e39ab7ecd13a29c3ac40815bb0"
+  },
+  {
+   "org": "arms/d/fixtures/SM-C7a/cfg1/roles.org",
+   "status": "same",
+   "sha256": "f2cbeead41c6c0ec3796aebfb9c33e11268eb82452645a0f9af45a915580c5c4"
+  },
+  {
+   "org": "arms/d/fixtures/SP-C3/cfg0/roles.org",
+   "status": "same",
+   "sha256": "81d616644dddb6d85f6d14229e02d4f5d43df4eb5465db463a7d68da396a99eb"
+  },
+  {
+   "org": "arms/d/fixtures/SP-C3/cfg1/roles.org",
+   "status": "same",
+   "sha256": "946da17acb0231a6fb653fab562fc22762095e50b1ce56d7dd399c441cb1acd7"
+  },
+  {
+   "org": "arms/d/fixtures/SP-C5/cfg0/roles.org",
+   "status": "same",
+   "sha256": "81d616644dddb6d85f6d14229e02d4f5d43df4eb5465db463a7d68da396a99eb"
+  },
+  {
+   "org": "arms/d/fixtures/SP-C5/cfg1/roles.org",
+   "status": "same",
+   "sha256": "1fef5080c3bc7a921f6b966b87b4d9824ded1f1b8b529a99fd5c2e0393f9a6af"
+  },
+  {
+   "org": "arms/d/fixtures/SP-C7a/cfg0/roles.org",
+   "status": "same",
+   "sha256": "81d616644dddb6d85f6d14229e02d4f5d43df4eb5465db463a7d68da396a99eb"
+  },
+  {
+   "org": "arms/d/fixtures/SP-C7a/cfg1/roles.org",
+   "status": "same",
+   "sha256": "ecc16e34a42629d78d465508aeb1093194336128ac6e857d8d97ceb8aa9151fa"
+  }
+ ]
+}

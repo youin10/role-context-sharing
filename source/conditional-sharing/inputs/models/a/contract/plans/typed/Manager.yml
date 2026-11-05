@@ -1,0 +1,11 @@
+role: Manager
+subscribe:
+- (rule (fact (RobotStatus $robot $battery $zone)) (= $robot "biped1") (<= $battery 30) --> (notify (RobotStatus $robot $battery $zone)))
+- (rule (fact (RobotStatus $robot $battery $zone)) (= $robot "humanoid1") (<= $battery 30) --> (notify (RobotStatus $robot $battery $zone)))
+- (rule (fact (RobotStatus $robot $battery $zone)) (= $robot "hybrid1") (<= $battery 30) --> (notify (RobotStatus $robot $battery $zone)))
+- (rule (fact (RobotStatus $robot $battery $zone)) (= $robot "hum1") (<= $battery 30) --> (notify (RobotStatus $robot $battery $zone)))
+- (rule (fact (RobotStatus $robot $battery $zone)) (= $robot "wheeled1") (<= $battery 20) --> (notify (RobotStatus $robot $battery $zone)))
+- (rule (fact (RobotStatus $robot $battery $zone)) (= $robot "diff1") (<= $battery 20) --> (notify (RobotStatus $robot $battery $zone)))
+- (rule (fact (RobotStatus $robot $battery $zone)) (= $robot "hybrid1") (<= $battery 20) --> (notify (RobotStatus $robot $battery $zone)))
+- (rule (fact (RobotStatus $robot $battery $zone)) (= $robot "wheel1") (<= $battery 20) --> (notify (RobotStatus $robot $battery $zone)))
+- (rule (fact (RobotStopped $robot $elapsed)) (>= $elapsed 300) --> (notify (RobotStopped $robot $elapsed)))

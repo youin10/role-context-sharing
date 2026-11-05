@@ -1,0 +1,124 @@
+scenario: B1
+calls:
+  s01: {}
+  s02:
+    manager1:
+    - - assert
+      - RobotStatus
+      - biped1
+      - battery: 30
+        zone: storage
+  s03:
+    manager1:
+    - - update
+      - RobotStatus
+      - biped1
+      - battery: 29
+        zone: storage
+  s04:
+    manager1:
+    - - retract
+      - RobotStatus
+      - biped1
+      - null
+  s05: {}
+  s06:
+    manager1:
+    - - assert
+      - RobotStatus
+      - wheeled1
+      - battery: 20
+        zone: storage
+  s07:
+    manager1:
+    - - update
+      - RobotStatus
+      - wheeled1
+      - battery: 19
+        zone: storage
+  s08:
+    manager1:
+    - - retract
+      - RobotStatus
+      - wheeled1
+      - null
+  s09:
+    manager1:
+    - - assert
+      - RobotStatus
+      - humanoid1
+      - battery: 30
+        zone: storage
+  s10: {}
+  s11:
+    manager1:
+    - - assert
+      - RobotStatus
+      - diff1
+      - battery: 20
+        zone: storage
+  s12:
+    manager1:
+    - - assert
+      - RobotStatus
+      - biped1
+      - battery: 29
+        zone: storage
+  s13:
+    manager1:
+    - - retract
+      - RobotStatus
+      - biped1
+      - null
+  s14: {}
+  s15:
+    manager1:
+    - - retract
+      - RobotStatus
+      - diff1
+      - null
+  s99: {}
+views:
+  s03:
+    manager1:
+      RobotStatus/biped1:
+        battery: 29
+        zone: storage
+  s04:
+    manager1: {}
+  s08:
+    manager1: {}
+  s11:
+    manager1:
+      RobotStatus/humanoid1:
+        battery: 30
+        zone: storage
+      RobotStatus/diff1:
+        battery: 20
+        zone: storage
+  s13:
+    manager1:
+      RobotStatus/humanoid1:
+        battery: 30
+        zone: storage
+      RobotStatus/diff1:
+        battery: 20
+        zone: storage
+  s15:
+    manager1:
+      RobotStatus/humanoid1:
+        battery: 30
+        zone: storage
+store:
+  s04:
+    RobotStatus/biped1:
+      battery: 31
+      zone: storage
+  s08:
+    RobotStatus/wheeled1:
+      battery: 21
+      zone: storage
+  s15:
+    RobotStatus/diff1:
+      battery: 21
+      zone: storage

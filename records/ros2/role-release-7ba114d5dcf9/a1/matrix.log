@@ -1,0 +1,40 @@
+18:23:40 python3 live/run.py --arm d --scenario contract/CT5 --expected contract/CT5 --rep 1 --label role-release --out-root live/runs/role-release-7ba114d5dcf9/a1 --expect-snapshot cs-core-7ba114d5dcf9
+judge.py {"verdict": "PASS", "compared": 8, "mismatches": 0, "problems": [], "stats": {"expected_positive_calls": 2, "observed_calls": 2, "messages": {"sent": 25, "missing": 0, "duplicate": 0, "unsent": 0}, "causes": {"calls": 2, "rx_ok": 2, "cross_host": 2, "same_step": 2, "version_ok": 2}}} 
+nc_raw.py {"original": "PASS", "ok": true, "detected": 9, "applied": 9} 
+{"run_id": "role-release-d-contract_CT5-r1-20261030-182340", "domain": 176, "exit_codes": {"driver": 0, "d-producer": 0, "d-sm": 0, "d-agent-manager1": 0}}
+18:23:45 docker run --rm --network none -v <workspace>/paper-permission-infoflow/experiments/conditional-sharing/live/check_entries.py:/j/check_entries.py:ro -v <workspace>/paper-permission-infoflow/experiments/conditional-sharing/inputs:/inputs:ro -v <workspace>/paper-permission-infoflow/experiments/conditional-sharing/live/runs/role-release-7ba114d5dcf9/a1/role-release-d-contract_CT5-r1-20261030-182340:/run rcs-experiments:jazzy python3 -I /j/check_entries.py /run /inputs/expected/contract/CT5-entries.yml
+role-release-d-contract_CT5-r1-20261030-182340 PASS 5 rows
+18:23:45 python3 live/run.py --arm a --scenario contract/CT5 --expected contract/CT5 --rep 1 --label role-release --out-root live/runs/role-release-7ba114d5dcf9/a1 --expect-snapshot cs-core-7ba114d5dcf9
+judge.py {"verdict": "PASS", "compared": 8, "mismatches": 0, "problems": [], "stats": {"expected_positive_calls": 2, "observed_calls": 2, "messages": {"sent": 37, "missing": 0, "duplicate": 0, "unsent": 0}, "causes": {"calls": 2, "rx_ok": 2, "cross_host": 2, "same_step": 2, "version_ok": 2}}} 
+nc_raw.py {"original": "PASS", "ok": true, "detected": 9, "applied": 9} 
+{"run_id": "role-release-a-contract_CT5-r1-20261030-182345", "domain": 170, "exit_codes": {"driver": 0, "a-producer": 0, "a-ltm": 0, "a-agent-manager1": 0}}
+18:23:51 docker run --rm --network none -v <workspace>/paper-permission-infoflow/experiments/conditional-sharing/live/check_entries.py:/j/check_entries.py:ro -v <workspace>/paper-permission-infoflow/experiments/conditional-sharing/inputs:/inputs:ro -v <workspace>/paper-permission-infoflow/experiments/conditional-sharing/live/runs/role-release-7ba114d5dcf9/a1/role-release-a-contract_CT5-r1-20261030-182345:/run rcs-experiments:jazzy python3 -I /j/check_entries.py /run /inputs/expected/contract/CT5-entries.yml
+role-release-a-contract_CT5-r1-20261030-182345 PASS 5 rows
+18:23:51 python3 live/run.py --arm d --scenario contract/CT5 --expected contract/CT5 --rep 2 --label role-release --out-root live/runs/role-release-7ba114d5dcf9/a1 --expect-snapshot cs-core-7ba114d5dcf9
+judge.py {"verdict": "PASS", "compared": 8, "mismatches": 0, "problems": [], "stats": {"expected_positive_calls": 2, "observed_calls": 2, "messages": {"sent": 25, "missing": 0, "duplicate": 0, "unsent": 0}, "causes": {"calls": 2, "rx_ok": 2, "cross_host": 2, "same_step": 2, "version_ok": 2}}} 
+nc_raw.py {"original": "PASS", "ok": true, "detected": 9, "applied": 9} 
+{"run_id": "role-release-d-contract_CT5-r2-20261030-182351", "domain": 155, "exit_codes": {"driver": 0, "d-producer": 0, "d-sm": 0, "d-agent-manager1": 0}}
+18:23:57 docker run --rm --network none -v <workspace>/paper-permission-infoflow/experiments/conditional-sharing/live/check_entries.py:/j/check_entries.py:ro -v <workspace>/paper-permission-infoflow/experiments/conditional-sharing/inputs:/inputs:ro -v <workspace>/paper-permission-infoflow/experiments/conditional-sharing/live/runs/role-release-7ba114d5dcf9/a1/role-release-d-contract_CT5-r2-20261030-182351:/run rcs-experiments:jazzy python3 -I /j/check_entries.py /run /inputs/expected/contract/CT5-entries.yml
+role-release-d-contract_CT5-r2-20261030-182351 PASS 5 rows
+18:23:57 python3 live/run.py --arm a --scenario contract/CT5 --expected contract/CT5 --rep 2 --label role-release --out-root live/runs/role-release-7ba114d5dcf9/a1 --expect-snapshot cs-core-7ba114d5dcf9
+judge.py {"verdict": "PASS", "compared": 8, "mismatches": 0, "problems": [], "stats": {"expected_positive_calls": 2, "observed_calls": 2, "messages": {"sent": 37, "missing": 0, "duplicate": 0, "unsent": 0}, "causes": {"calls": 2, "rx_ok": 2, "cross_host": 2, "same_step": 2, "version_ok": 2}}} 
+nc_raw.py {"original": "PASS", "ok": true, "detected": 9, "applied": 9} 
+{"run_id": "role-release-a-contract_CT5-r2-20261030-182357", "domain": 195, "exit_codes": {"driver": 0, "a-producer": 0, "a-ltm": 0, "a-agent-manager1": 0}}
+18:24:02 docker run --rm --network none -v <workspace>/paper-permission-infoflow/experiments/conditional-sharing/live/check_entries.py:/j/check_entries.py:ro -v <workspace>/paper-permission-infoflow/experiments/conditional-sharing/inputs:/inputs:ro -v <workspace>/paper-permission-infoflow/experiments/conditional-sharing/live/runs/role-release-7ba114d5dcf9/a1/role-release-a-contract_CT5-r2-20261030-182357:/run rcs-experiments:jazzy python3 -I /j/check_entries.py /run /inputs/expected/contract/CT5-entries.yml
+role-release-a-contract_CT5-r2-20261030-182357 PASS 5 rows
+18:24:02 python3 live/run.py --arm d --scenario contract/CT5 --expected contract/CT5 --rep 3 --label role-release --out-root live/runs/role-release-7ba114d5dcf9/a1 --expect-snapshot cs-core-7ba114d5dcf9
+judge.py {"verdict": "PASS", "compared": 8, "mismatches": 0, "problems": [], "stats": {"expected_positive_calls": 2, "observed_calls": 2, "messages": {"sent": 25, "missing": 0, "duplicate": 0, "unsent": 0}, "causes": {"calls": 2, "rx_ok": 2, "cross_host": 2, "same_step": 2, "version_ok": 2}}} 
+nc_raw.py {"original": "PASS", "ok": true, "detected": 9, "applied": 9} 
+{"run_id": "role-release-d-contract_CT5-r3-20261030-182402", "domain": 163, "exit_codes": {"driver": 0, "d-producer": 0, "d-sm": 0, "d-agent-manager1": 0}}
+18:24:07 docker run --rm --network none -v <workspace>/paper-permission-infoflow/experiments/conditional-sharing/live/check_entries.py:/j/check_entries.py:ro -v <workspace>/paper-permission-infoflow/experiments/conditional-sharing/inputs:/inputs:ro -v <workspace>/paper-permission-infoflow/experiments/conditional-sharing/live/runs/role-release-7ba114d5dcf9/a1/role-release-d-contract_CT5-r3-20261030-182402:/run rcs-experiments:jazzy python3 -I /j/check_entries.py /run /inputs/expected/contract/CT5-entries.yml
+role-release-d-contract_CT5-r3-20261030-182402 PASS 5 rows
+18:24:07 python3 live/run.py --arm a --scenario contract/CT5 --expected contract/CT5 --rep 3 --label role-release --out-root live/runs/role-release-7ba114d5dcf9/a1 --expect-snapshot cs-core-7ba114d5dcf9
+judge.py {"verdict": "PASS", "compared": 8, "mismatches": 0, "problems": [], "stats": {"expected_positive_calls": 2, "observed_calls": 2, "messages": {"sent": 37, "missing": 0, "duplicate": 0, "unsent": 0}, "causes": {"calls": 2, "rx_ok": 2, "cross_host": 2, "same_step": 2, "version_ok": 2}}} 
+nc_raw.py {"original": "PASS", "ok": true, "detected": 9, "applied": 9} 
+{"run_id": "role-release-a-contract_CT5-r3-20261030-182407", "domain": 169, "exit_codes": {"driver": 0, "a-producer": 0, "a-ltm": 0, "a-agent-manager1": 0}}
+18:24:12 docker run --rm --network none -v <workspace>/paper-permission-infoflow/experiments/conditional-sharing/live/check_entries.py:/j/check_entries.py:ro -v <workspace>/paper-permission-infoflow/experiments/conditional-sharing/inputs:/inputs:ro -v <workspace>/paper-permission-infoflow/experiments/conditional-sharing/live/runs/role-release-7ba114d5dcf9/a1/role-release-a-contract_CT5-r3-20261030-182407:/run rcs-experiments:jazzy python3 -I /j/check_entries.py /run /inputs/expected/contract/CT5-entries.yml
+role-release-a-contract_CT5-r3-20261030-182407 PASS 5 rows
+# live runs summary: live/runs/role-release-7ba114d5dcf9/a1
+
+runs 6, judge PASS 6, raw NC ok 6, disk 1052 KiB
+failed runs: 0

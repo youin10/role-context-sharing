@@ -1,0 +1,11 @@
+id: X2
+title: class compatibility beyond the subclass relation - signature Biped, condition == Wheeled (hybrid1)
+d: {model: X2, binding: b-x2}
+a: {initial: initial-x2}
+observe: [watcher1]
+steps:
+- {id: x01, report: [biped1, BipedBalance, biped1, {tilt: 5}]}
+- {id: x02, report: [hybrid1, BipedBalance, hybrid1, {tilt: 7}]}
+- {id: x03, report: [humanoid1, BipedBalance, humanoid1, {tilt: 3}]}
+- {id: x04, report: [wheeled1, BipedBalance, wheeled1, {tilt: 2}]}
+- {id: x05, delete: [hybrid1, BipedBalance, hybrid1]}

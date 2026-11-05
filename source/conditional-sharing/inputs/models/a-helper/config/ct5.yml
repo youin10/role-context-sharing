@@ -1,0 +1,7 @@
+roles:
+  BipedMonitor:
+  - {context: RobotStatus, field: robot, class: Biped, conds: [["<=", battery, 30]]}
+  FleetMonitor:
+  - {context: RobotStatus, field: robot, class: Robot, conds: [["<=", battery, 40]]}
+  Robot: []
+  Observer: []

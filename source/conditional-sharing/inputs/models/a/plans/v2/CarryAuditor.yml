@@ -1,0 +1,7 @@
+role: CarryAuditor
+# Biped carriers (incl. subclasses): biped1 humanoid1 hybrid1 hum1
+subscribe:
+- (rule (fact (CargoCarriedBy $cargo $robot)) (= $robot "biped1") --> (notify (CargoCarriedBy $cargo $robot)))
+- (rule (fact (CargoCarriedBy $cargo $robot)) (= $robot "humanoid1") --> (notify (CargoCarriedBy $cargo $robot)))
+- (rule (fact (CargoCarriedBy $cargo $robot)) (= $robot "hybrid1") --> (notify (CargoCarriedBy $cargo $robot)))
+- (rule (fact (CargoCarriedBy $cargo $robot)) (= $robot "hum1") --> (notify (CargoCarriedBy $cargo $robot)))

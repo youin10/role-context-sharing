@@ -1,0 +1,20 @@
+{
+ "runs": [
+  "results/notif-host",
+  "results/notif-docker"
+ ],
+ "files": 166,
+ "pairs": [
+  {
+   "a": "results/notif-host",
+   "b": "results/notif-docker",
+   "byte_different": [
+    "raw/negative/T__D__no-validation.jsonl",
+    "raw/negative/X2__D__relation-only-check.jsonl"
+   ],
+   "different_after_trace_normalisation": [],
+   "verdict_differences": [],
+   "missing_in_b": []
+  }
+ ]
+}

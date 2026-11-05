@@ -1,0 +1,6 @@
+schema: rcs-d-binding/1
+cfg: b-unknown-role
+agents:
+  manager1: [Manager]
+  biped1: [Robot]
+  insp1: [Inspector]

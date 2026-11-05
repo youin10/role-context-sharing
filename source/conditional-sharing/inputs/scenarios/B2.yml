@@ -1,0 +1,10 @@
+id: B2
+title: model change at fixed data (Wheeled threshold <=20 -> <=30 -> <=20), no new report
+d: {model: M1, binding: b-main}
+a: {initial: initial-main-v1}
+observe: [manager1]
+steps:
+- {id: m01, report: [diff1, RobotStatus, diff1, {battery: 25, zone: storage}]}
+- {id: m02, report: [humanoid1, RobotStatus, humanoid1, {battery: 29, zone: storage}]}
+- {id: m03, change: {id: C1, d: {model: M2, binding: b-main}, a: C1}}
+- {id: m04, change: {id: C2, d: {model: M1, binding: b-main}, a: C2}}

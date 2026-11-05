@@ -1,0 +1,2 @@
+FAIL s03 calls:manager1 expected [["update", "RobotStatus", "biped1", {"battery": 29, "zone": "storage"}]] observed [["update", "RobotStatus", "biped1", {"battery": 28, "zone": "storage"}]]
+FAIL 50 rows, 1 failing

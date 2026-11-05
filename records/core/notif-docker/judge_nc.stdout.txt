@@ -1,0 +1,23 @@
+ok  J00 0 unmutated B1 | PASS 50 rows, 0 failing
+ok  J00b 0 unmutated P1 | PASS 38 rows, 0 failing
+ok  J01 1 step s05 deleted | FAIL 48 rows, 1 failing
+ok  J02 1 step s05 duplicated | FAIL 50 rows, 1 failing
+ok  J03 1 steps s02/s03 reordered | FAIL 50 rows, 1 failing
+ok  J04 1 unexpected step inserted | FAIL 50 rows, 1 failing
+ok  J05 1 start record removed | FAIL 50 rows, 3 failing
+ok  J06 1 end record removed | FAIL 50 rows, 3 failing
+ok  J07 1 end carries an error | FAIL 50 rows, 1 failing
+ok  J08 1 observer manager1 missing from views at s01 (no expected view there) | FAIL 51 rows, 1 failing
+ok  J09 1 empty roster in the scenario | FAIL 52 rows, 19 failing
+ok  J10 1 first positive call removed (s02) | FAIL 50 rows, 1 failing
+ok  J11 1 call value changed (s03 battery 28) | FAIL 50 rows, 1 failing
+ok  J12 1 duplicate assert at s02 | FAIL 50 rows, 1 failing
+ok  J13 0 raw start.observe emptied (judge must not depend on it) | PASS 50 rows, 0 failing
+ok  J14 1 decision changed at P1 D3 | FAIL 38 rows, 1 failing
+ok  J15 1 decision missing at P1 D4 | FAIL 38 rows, 1 failing
+ok  J16 1 unexpected rejection at s01 | FAIL 50 rows, 1 failing
+ok  J17 1 expected names a step not in the scenario | FAIL 51 rows, 1 failing
+ok  J18 1 expected names an agent outside the roster | FAIL 51 rows, 1 failing
+ok  J20 1 update reported as assert (s03) | FAIL 50 rows, 1 failing
+ok  J21 1 retract reported as a second assert (first retract of B1) | FAIL 50 rows, 1 failing
+ok  J19 1 all calls removed (empty observation) | FAIL 50 rows, 11 failing

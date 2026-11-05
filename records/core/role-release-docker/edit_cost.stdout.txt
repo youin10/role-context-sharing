@@ -1,0 +1,6 @@
+C1 D 1 2 A_manual 4 8 A_helper hand 2 3 generated 4 5
+C2 D 1 2 A_manual 4 8 A_helper hand 1 2 generated 4 5
+R1 D 0 3 A_manual 0 4 A_helper hand 2 3 generated 0 6
+R2 D 0 3 A_manual 0 4 A_helper hand 2 3 generated 0 5
+CT4-1 D 1 2 A_manual 4 8 A_helper hand 2 3 generated 4 5
+CT4-2 D 1 2 A_manual 4 8 A_helper hand 2 3 generated 4 5

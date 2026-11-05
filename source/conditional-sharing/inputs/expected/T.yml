@@ -1,0 +1,21 @@
+# Pre-specified. Requirement: unknown / wrongly typed individuals and ill-typed values are detected
+# and never treated as a normal value (no notification, no change of the eligible view or the store).
+scenario: T
+calls:
+  t01: {manager1: [[assert, RobotStatus, biped1, {battery: 29, zone: storage}]]}
+  t02: {}
+  t03: {}
+  t04: {}
+  t05: {}
+  t06: {}
+  t07: {manager1: [[update, RobotStatus, biped1, {battery: 28, zone: storage}]]}
+views:
+  t06: {manager1: {RobotStatus/biped1: {battery: 29, zone: storage}}, auditor1: {}}
+store:
+  t06: {RobotStatus/biped1: {battery: 29, zone: storage}}
+rejected:
+  t02: [UNKNOWN_INDIVIDUAL]
+  t03: [TYPE_MISMATCH]
+  t04: [TYPE_MISMATCH]
+  t05: [BAD_FIELDS]
+  t06: [UNKNOWN_INDIVIDUAL]

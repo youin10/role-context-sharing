@@ -1,0 +1,4 @@
+roles:
+  BalanceWheeledWatch:
+  - {context: BipedBalance, field: robot, class: Wheeled}
+  Gyro: []

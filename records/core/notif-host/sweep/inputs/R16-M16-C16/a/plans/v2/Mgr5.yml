@@ -1,0 +1,18 @@
+role: Mgr5
+subscribe:
+- (rule (fact (RobotStatus $robot $battery $zone)) (= $robot "r001") (<= $battery 25) --> (notify (RobotStatus $robot $battery $zone)))
+- (rule (fact (RobotStatus $robot $battery $zone)) (= $robot "r003") (<= $battery 25) --> (notify (RobotStatus $robot $battery $zone)))
+- (rule (fact (RobotStatus $robot $battery $zone)) (= $robot "r005") (<= $battery 25) --> (notify (RobotStatus $robot $battery $zone)))
+- (rule (fact (RobotStatus $robot $battery $zone)) (= $robot "r007") (<= $battery 25) --> (notify (RobotStatus $robot $battery $zone)))
+- (rule (fact (RobotStatus $robot $battery $zone)) (= $robot "r009") (<= $battery 25) --> (notify (RobotStatus $robot $battery $zone)))
+- (rule (fact (RobotStatus $robot $battery $zone)) (= $robot "r011") (<= $battery 25) --> (notify (RobotStatus $robot $battery $zone)))
+- (rule (fact (RobotStatus $robot $battery $zone)) (= $robot "r013") (<= $battery 25) --> (notify (RobotStatus $robot $battery $zone)))
+- (rule (fact (RobotStatus $robot $battery $zone)) (= $robot "r015") (<= $battery 25) --> (notify (RobotStatus $robot $battery $zone)))
+- (rule (fact (RobotStatus $robot $battery $zone)) (= $robot "r002") (<= $battery 25) --> (notify (RobotStatus $robot $battery $zone)))
+- (rule (fact (RobotStatus $robot $battery $zone)) (= $robot "r004") (<= $battery 25) --> (notify (RobotStatus $robot $battery $zone)))
+- (rule (fact (RobotStatus $robot $battery $zone)) (= $robot "r006") (<= $battery 25) --> (notify (RobotStatus $robot $battery $zone)))
+- (rule (fact (RobotStatus $robot $battery $zone)) (= $robot "r008") (<= $battery 25) --> (notify (RobotStatus $robot $battery $zone)))
+- (rule (fact (RobotStatus $robot $battery $zone)) (= $robot "r010") (<= $battery 25) --> (notify (RobotStatus $robot $battery $zone)))
+- (rule (fact (RobotStatus $robot $battery $zone)) (= $robot "r012") (<= $battery 25) --> (notify (RobotStatus $robot $battery $zone)))
+- (rule (fact (RobotStatus $robot $battery $zone)) (= $robot "r014") (<= $battery 25) --> (notify (RobotStatus $robot $battery $zone)))
+- (rule (fact (RobotStatus $robot $battery $zone)) (= $robot "r016") (<= $battery 25) --> (notify (RobotStatus $robot $battery $zone)))

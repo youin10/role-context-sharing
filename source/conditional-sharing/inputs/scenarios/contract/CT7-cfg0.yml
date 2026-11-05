@@ -1,0 +1,14 @@
+id: CT7-cfg0
+title: contract T7 fixed decision schedule outside the model (cfg0)
+d: {model: contract/CT7-0, binding: contract/b-ct}
+a: {initial: contract/initial-ct7-0}
+observe: [manager1]
+decider: manager1
+robots: [biped1, hum1, wheel1]
+steps:
+- {id: e1, report: [biped1, RobotStatus, biped1, {battery: 25, zone: storage}]}
+- {id: t1, decide: true}
+- {id: e2, report: [biped1, RobotStatus, biped1, {battery: 35, zone: storage}]}
+- {id: t2, decide: true}
+- {id: e3, report: [observer1, RobotStopped, wheel1, {elapsedSeconds: 300}]}
+- {id: t3, decide: true}

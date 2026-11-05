@@ -1,0 +1,36 @@
+{
+ "run_id": "pub-a255-1",
+ "finished": "2026-11-03T00:29:44.937231+09:00",
+ "command": "<workspace>/paper-permission-infoflow/experiments/conditional-sharing/.venv/bin/python -I source-binding-check/check_source_binding.py pub-a255-1",
+ "environment": {
+  "python": "3.14.7 (main, Aug  5 2026, 10:29:49) [Clang 21.0.0 (clang-2100.1.1.101)]",
+  "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+  "pyyaml": "6.0.2"
+ },
+ "core_snapshot_expected": "cs-core-9ec4e836cb48 (verify before and after: see verify-*.txt)",
+ "passed": 8,
+ "cases": 8,
+ "files": {
+  "source-binding-check/check_source_binding.py": "1e6bfc38a4d24cfb4efba4f40c56f7396fbb1c83d15a299691a2cc0fc033c6b1",
+  "source-binding-check/expected.yml": "93cea5e2a74fed48609532729eee1c7d4345581a2a89ea350d1c6032db625efe",
+  "source-binding-check/inputs/b-auditor-only.yml": "5705c8fa3947475a7962b61e27572625a6b1d4a00086bf8456fcd3cfc1389b83",
+  "source-binding-check/inputs/b-consumer-only.yml": "1c8b0a29a52614fc8c82778ccc8a03450f085d25a093830811914d2493bd62cd",
+  "source-binding-check/inputs/b-full.yml": "f28760a16856c5f3ea58fc6b785d5f57639109712d36d55598f13b70b81e3dcb",
+  "source-binding-check/inputs/b-sourceless-paired.yml": "2a2d5e4c261ccbbb1ef5676ecd3d0a9791c1919992df765b45665f5f4126fe15",
+  "source-binding-check/inputs/b-unknown-role.yml": "f882f65dd136c35a08d1fdf21059c7aefbcc0a8e3a23d5161424313e9cd6bf7e",
+  "source-binding-check/inputs/base.org": "50936e7c5c8312efd094d6aed495a5b185c88df06528b21c25b88a29d94822f4",
+  "source-binding-check/inputs/sourceless-paired.org": "7d2496c6107772c6588e7837d17e7d6bc1522c2cd9bd0d73e32ab14340270911",
+  "source-binding-check/inputs/sourceless.org": "92c039e7383605f587306bcd22a1fdae3c8d743267dddaabdfca0cd3df444bd0",
+  "source-binding-check/inputs/two-sources.org": "cb22ff9ecc8fc767c5fe6214477ae58c00c9cc74d2ba65f5d11ec324f03efdd5",
+  "src/arms/d/checker.py": "cc37c02841e635c811454bd265ec225ca9eb4eb7a2511378ef1285310809bb9a",
+  "src/arms/d/generator.py": "0db508405ce0dd92c9373fc67d4538d24fe2eaa4868b66f2939fa84388872e5b",
+  "src/arms/d/smcore.py": "4d49d3e9bd675d62ebc6f54ec5d78e7357b516f17f97e71c15cbc3abb4cca4f3",
+  "src/arms/d/spec.py": "e7daf108b69625c6dc6017c84a0c8c6005fe4fbfa5b2f376346e715b505f46c2",
+  "src/arms/d/ontology.py": "1cc83460ab364ada1222518ddf1fee2ddb5f2cb2a02719e1d03cb5efd9486849",
+  "runner/api.py": "2c438059b76320472dbff2c30a04bde626f3513c0dff75738456f116f059f144",
+  "inputs/ontology/logistics-classes.ttl": "732c63c74accd3214683597b5eb7fcfba94860d29772baf2bda22e53df578b03",
+  "inputs/ontology/logistics-individuals.ttl": "3101c3d6976e2dfadfb53df937140e91311cc27fcbdfa0b89c95c1ee4f9d70f2",
+  "inputs/ontology/predicates/logistics-cs.ttl": "2416eab8408166a1d16c60ed066c55db3107ae59e1716ce753136b0b181eac2d"
+ },
+ "scope": "separate static check; not part of the 25 condition cases, 48 core runs or 66 ROS 2 runs"
+}

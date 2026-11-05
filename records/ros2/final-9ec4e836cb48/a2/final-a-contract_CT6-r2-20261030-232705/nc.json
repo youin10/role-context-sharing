@@ -1,0 +1,143 @@
+{
+ "original": "PASS",
+ "mutations": [
+  {
+   "name": "identity",
+   "applicable": true,
+   "where": "none",
+   "verdict": "PASS",
+   "problems": [],
+   "mismatches": 0
+  },
+  {
+   "name": "drop-observer",
+   "applicable": true,
+   "where": "removed",
+   "verdict": "FAIL",
+   "problems": [
+    "log_missing_or_empty",
+    "message_missing",
+    "message_unsent",
+    "state_missing",
+    "worker_arm_sequence"
+   ],
+   "mismatches": 4
+  },
+  {
+   "name": "empty-observer",
+   "applicable": true,
+   "where": "emptied",
+   "verdict": "FAIL",
+   "problems": [
+    "log_missing_or_empty",
+    "message_missing",
+    "message_unsent",
+    "state_missing",
+    "worker_arm_sequence"
+   ],
+   "mismatches": 4
+  },
+  {
+   "name": "drop-step",
+   "applicable": true,
+   "where": "e3",
+   "verdict": "FAIL",
+   "problems": [
+    "arm_sequence",
+    "state_missing",
+    "step_sequence",
+    "worker_arm_sequence"
+   ],
+   "mismatches": 1
+  },
+  {
+   "name": "dup-call",
+   "applicable": true,
+   "where": [
+    "a-agent-manager1",
+    "e3"
+   ],
+   "verdict": "FAIL",
+   "problems": [],
+   "mismatches": 1
+  },
+  {
+   "name": "dup-rx",
+   "applicable": true,
+   "where": [
+    "a-agent-manager1",
+    "e3"
+   ],
+   "verdict": "FAIL",
+   "problems": [
+    "message_duplicate"
+   ],
+   "mismatches": 0
+  },
+  {
+   "name": "swap-steps",
+   "applicable": true,
+   "where": [
+    38,
+    57
+   ],
+   "verdict": "FAIL",
+   "problems": [
+    "step_sequence"
+   ],
+   "mismatches": 0
+  },
+  {
+   "name": "no-end",
+   "applicable": true,
+   "where": "removed",
+   "verdict": "FAIL",
+   "problems": [
+    "end_control",
+    "lifecycle"
+   ],
+   "mismatches": 0
+  },
+  {
+   "name": "drop-rx",
+   "applicable": true,
+   "where": [
+    "a-agent-manager1",
+    "e3"
+   ],
+   "verdict": "FAIL",
+   "problems": [
+    "call_without_cause_rx",
+    "message_missing"
+   ],
+   "mismatches": 0
+  },
+  {
+   "name": "value",
+   "applicable": true,
+   "where": [
+    "a-agent-manager1",
+    "e3"
+   ],
+   "verdict": "FAIL",
+   "problems": [
+    "view_inconsistent_with_calls"
+   ],
+   "mismatches": 1
+  },
+  {
+   "name": "kind",
+   "applicable": true,
+   "where": [
+    "a-agent-manager1",
+    "e3"
+   ],
+   "verdict": "FAIL",
+   "problems": [],
+   "mismatches": 1
+  }
+ ],
+ "ok": true,
+ "detected": 10,
+ "applied": 10
+}

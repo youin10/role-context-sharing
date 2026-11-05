@@ -1,0 +1,345 @@
+{
+ "action": "read-only re-judgement of records/core/notif-host with the packaged judge and packaged inputs (snapshot cs-core-a255c156de6c); no new run",
+ "main_runs": 48,
+ "rows": 1326,
+ "pass": true,
+ "byte_identical_to_original": true,
+ "runs": [
+  {
+   "scenario": "B1",
+   "arm": "D",
+   "n_rows": 50,
+   "pass": true,
+   "byte_identical_to_original": true
+  },
+  {
+   "scenario": "B1",
+   "arm": "A",
+   "n_rows": 50,
+   "pass": true,
+   "byte_identical_to_original": true
+  },
+  {
+   "scenario": "B1",
+   "arm": "A-helper",
+   "n_rows": 50,
+   "pass": true,
+   "byte_identical_to_original": true
+  },
+  {
+   "scenario": "T",
+   "arm": "D",
+   "n_rows": 35,
+   "pass": true,
+   "byte_identical_to_original": true
+  },
+  {
+   "scenario": "T",
+   "arm": "A",
+   "n_rows": 35,
+   "pass": true,
+   "byte_identical_to_original": true
+  },
+  {
+   "scenario": "T",
+   "arm": "A-helper",
+   "n_rows": 35,
+   "pass": true,
+   "byte_identical_to_original": true
+  },
+  {
+   "scenario": "B2",
+   "arm": "D",
+   "n_rows": 22,
+   "pass": true,
+   "byte_identical_to_original": true
+  },
+  {
+   "scenario": "B2",
+   "arm": "A",
+   "n_rows": 22,
+   "pass": true,
+   "byte_identical_to_original": true
+  },
+  {
+   "scenario": "B2",
+   "arm": "A-helper",
+   "n_rows": 22,
+   "pass": true,
+   "byte_identical_to_original": true
+  },
+  {
+   "scenario": "B3",
+   "arm": "D",
+   "n_rows": 24,
+   "pass": true,
+   "byte_identical_to_original": true
+  },
+  {
+   "scenario": "B3",
+   "arm": "A",
+   "n_rows": 24,
+   "pass": true,
+   "byte_identical_to_original": true
+  },
+  {
+   "scenario": "B3",
+   "arm": "A-helper",
+   "n_rows": 24,
+   "pass": true,
+   "byte_identical_to_original": true
+  },
+  {
+   "scenario": "K",
+   "arm": "D",
+   "n_rows": 51,
+   "pass": true,
+   "byte_identical_to_original": true
+  },
+  {
+   "scenario": "K",
+   "arm": "A",
+   "n_rows": 51,
+   "pass": true,
+   "byte_identical_to_original": true
+  },
+  {
+   "scenario": "K",
+   "arm": "A-helper",
+   "n_rows": 51,
+   "pass": true,
+   "byte_identical_to_original": true
+  },
+  {
+   "scenario": "S1",
+   "arm": "D",
+   "n_rows": 25,
+   "pass": true,
+   "byte_identical_to_original": true
+  },
+  {
+   "scenario": "S1",
+   "arm": "A",
+   "n_rows": 25,
+   "pass": true,
+   "byte_identical_to_original": true
+  },
+  {
+   "scenario": "S1",
+   "arm": "A-helper",
+   "n_rows": 25,
+   "pass": true,
+   "byte_identical_to_original": true
+  },
+  {
+   "scenario": "P1",
+   "arm": "D",
+   "n_rows": 38,
+   "pass": true,
+   "byte_identical_to_original": true
+  },
+  {
+   "scenario": "P1",
+   "arm": "A",
+   "n_rows": 38,
+   "pass": true,
+   "byte_identical_to_original": true
+  },
+  {
+   "scenario": "P1",
+   "arm": "A-helper",
+   "n_rows": 38,
+   "pass": true,
+   "byte_identical_to_original": true
+  },
+  {
+   "scenario": "X2",
+   "arm": "D",
+   "n_rows": 23,
+   "pass": true,
+   "byte_identical_to_original": true
+  },
+  {
+   "scenario": "X2",
+   "arm": "A",
+   "n_rows": 23,
+   "pass": true,
+   "byte_identical_to_original": true
+  },
+  {
+   "scenario": "X2",
+   "arm": "A-helper",
+   "n_rows": 23,
+   "pass": true,
+   "byte_identical_to_original": true
+  },
+  {
+   "scenario": "CT1",
+   "arm": "D",
+   "n_rows": 24,
+   "pass": true,
+   "byte_identical_to_original": true
+  },
+  {
+   "scenario": "CT1",
+   "arm": "A",
+   "n_rows": 24,
+   "pass": true,
+   "byte_identical_to_original": true
+  },
+  {
+   "scenario": "CT1",
+   "arm": "A-helper",
+   "n_rows": 24,
+   "pass": true,
+   "byte_identical_to_original": true
+  },
+  {
+   "scenario": "CT2",
+   "arm": "D",
+   "n_rows": 18,
+   "pass": true,
+   "byte_identical_to_original": true
+  },
+  {
+   "scenario": "CT2",
+   "arm": "A",
+   "n_rows": 18,
+   "pass": true,
+   "byte_identical_to_original": true
+  },
+  {
+   "scenario": "CT2",
+   "arm": "A-helper",
+   "n_rows": 18,
+   "pass": true,
+   "byte_identical_to_original": true
+  },
+  {
+   "scenario": "CT3",
+   "arm": "D",
+   "n_rows": 28,
+   "pass": true,
+   "byte_identical_to_original": true
+  },
+  {
+   "scenario": "CT3",
+   "arm": "A",
+   "n_rows": 28,
+   "pass": true,
+   "byte_identical_to_original": true
+  },
+  {
+   "scenario": "CT3",
+   "arm": "A-helper",
+   "n_rows": 28,
+   "pass": true,
+   "byte_identical_to_original": true
+  },
+  {
+   "scenario": "CT4",
+   "arm": "D",
+   "n_rows": 21,
+   "pass": true,
+   "byte_identical_to_original": true
+  },
+  {
+   "scenario": "CT4",
+   "arm": "A",
+   "n_rows": 21,
+   "pass": true,
+   "byte_identical_to_original": true
+  },
+  {
+   "scenario": "CT4",
+   "arm": "A-helper",
+   "n_rows": 21,
+   "pass": true,
+   "byte_identical_to_original": true
+  },
+  {
+   "scenario": "CT5",
+   "arm": "D",
+   "n_rows": 22,
+   "pass": true,
+   "byte_identical_to_original": true
+  },
+  {
+   "scenario": "CT5",
+   "arm": "A",
+   "n_rows": 22,
+   "pass": true,
+   "byte_identical_to_original": true
+  },
+  {
+   "scenario": "CT5",
+   "arm": "A-helper",
+   "n_rows": 22,
+   "pass": true,
+   "byte_identical_to_original": true
+  },
+  {
+   "scenario": "CT6",
+   "arm": "D",
+   "n_rows": 22,
+   "pass": true,
+   "byte_identical_to_original": true
+  },
+  {
+   "scenario": "CT6",
+   "arm": "A",
+   "n_rows": 22,
+   "pass": true,
+   "byte_identical_to_original": true
+  },
+  {
+   "scenario": "CT6",
+   "arm": "A-helper",
+   "n_rows": 22,
+   "pass": true,
+   "byte_identical_to_original": true
+  },
+  {
+   "scenario": "CT7-cfg1",
+   "arm": "D",
+   "n_rows": 20,
+   "pass": true,
+   "byte_identical_to_original": true
+  },
+  {
+   "scenario": "CT7-cfg1",
+   "arm": "A",
+   "n_rows": 20,
+   "pass": true,
+   "byte_identical_to_original": true
+  },
+  {
+   "scenario": "CT7-cfg1",
+   "arm": "A-helper",
+   "n_rows": 20,
+   "pass": true,
+   "byte_identical_to_original": true
+  },
+  {
+   "scenario": "CT7-cfg0",
+   "arm": "D",
+   "n_rows": 19,
+   "pass": true,
+   "byte_identical_to_original": true
+  },
+  {
+   "scenario": "CT7-cfg0",
+   "arm": "A",
+   "n_rows": 19,
+   "pass": true,
+   "byte_identical_to_original": true
+  },
+  {
+   "scenario": "CT7-cfg0",
+   "arm": "A-helper",
+   "n_rows": 19,
+   "pass": true,
+   "byte_identical_to_original": true
+  }
+ ]
+}

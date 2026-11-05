@@ -1,0 +1,95 @@
+{
+ "original": "PASS",
+ "mutations": [
+  {
+   "name": "identity",
+   "applicable": true,
+   "where": "none",
+   "verdict": "PASS",
+   "problems": [],
+   "mismatches": 0
+  },
+  {
+   "name": "drop-observer",
+   "applicable": true,
+   "where": "removed",
+   "verdict": "FAIL",
+   "problems": [
+    "decision_count",
+    "log_missing_or_empty",
+    "state_missing",
+    "worker_arm_sequence"
+   ],
+   "mismatches": 3
+  },
+  {
+   "name": "empty-observer",
+   "applicable": true,
+   "where": "emptied",
+   "verdict": "FAIL",
+   "problems": [
+    "decision_count",
+    "log_missing_or_empty",
+    "state_missing",
+    "worker_arm_sequence"
+   ],
+   "mismatches": 3
+  },
+  {
+   "name": "drop-step",
+   "applicable": true,
+   "where": "e1",
+   "verdict": "FAIL",
+   "problems": [
+    "arm_sequence",
+    "state_missing",
+    "step_sequence",
+    "worker_arm_sequence"
+   ],
+   "mismatches": 0
+  },
+  {
+   "name": "dup-call",
+   "applicable": false
+  },
+  {
+   "name": "dup-rx",
+   "applicable": false
+  },
+  {
+   "name": "swap-steps",
+   "applicable": true,
+   "where": [
+    19,
+    38
+   ],
+   "verdict": "FAIL",
+   "problems": [
+    "step_sequence"
+   ],
+   "mismatches": 0
+  },
+  {
+   "name": "no-end",
+   "applicable": true,
+   "where": "removed",
+   "verdict": "FAIL",
+   "problems": [
+    "end_control",
+    "lifecycle"
+   ],
+   "mismatches": 0
+  },
+  {
+   "name": "drop-rx",
+   "applicable": false
+  },
+  {
+   "name": "value",
+   "applicable": false
+  }
+ ],
+ "ok": true,
+ "detected": 5,
+ "applied": 5
+}

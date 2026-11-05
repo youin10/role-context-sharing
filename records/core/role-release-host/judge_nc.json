@@ -1,0 +1,170 @@
+[
+ {
+  "id": "J00",
+  "mutation": "unmutated B1",
+  "want_exit": 0,
+  "exit": 0,
+  "ok": true,
+  "last_line": "PASS 50 rows, 0 failing"
+ },
+ {
+  "id": "J00b",
+  "mutation": "unmutated P1",
+  "want_exit": 0,
+  "exit": 0,
+  "ok": true,
+  "last_line": "PASS 38 rows, 0 failing"
+ },
+ {
+  "id": "J01",
+  "mutation": "step s05 deleted",
+  "want_exit": 1,
+  "exit": 1,
+  "ok": true,
+  "last_line": "FAIL 48 rows, 1 failing"
+ },
+ {
+  "id": "J02",
+  "mutation": "step s05 duplicated",
+  "want_exit": 1,
+  "exit": 1,
+  "ok": true,
+  "last_line": "FAIL 50 rows, 1 failing"
+ },
+ {
+  "id": "J03",
+  "mutation": "steps s02/s03 reordered",
+  "want_exit": 1,
+  "exit": 1,
+  "ok": true,
+  "last_line": "FAIL 50 rows, 1 failing"
+ },
+ {
+  "id": "J04",
+  "mutation": "unexpected step inserted",
+  "want_exit": 1,
+  "exit": 1,
+  "ok": true,
+  "last_line": "FAIL 50 rows, 1 failing"
+ },
+ {
+  "id": "J05",
+  "mutation": "start record removed",
+  "want_exit": 1,
+  "exit": 1,
+  "ok": true,
+  "last_line": "FAIL 50 rows, 3 failing"
+ },
+ {
+  "id": "J06",
+  "mutation": "end record removed",
+  "want_exit": 1,
+  "exit": 1,
+  "ok": true,
+  "last_line": "FAIL 50 rows, 3 failing"
+ },
+ {
+  "id": "J07",
+  "mutation": "end carries an error",
+  "want_exit": 1,
+  "exit": 1,
+  "ok": true,
+  "last_line": "FAIL 50 rows, 1 failing"
+ },
+ {
+  "id": "J08",
+  "mutation": "observer manager1 missing from views at s01 (no expected view there)",
+  "want_exit": 1,
+  "exit": 1,
+  "ok": true,
+  "last_line": "FAIL 51 rows, 1 failing"
+ },
+ {
+  "id": "J09",
+  "mutation": "empty roster in the scenario",
+  "want_exit": 1,
+  "exit": 1,
+  "ok": true,
+  "last_line": "FAIL 52 rows, 19 failing"
+ },
+ {
+  "id": "J10",
+  "mutation": "first positive call removed (s02)",
+  "want_exit": 1,
+  "exit": 1,
+  "ok": true,
+  "last_line": "FAIL 50 rows, 1 failing"
+ },
+ {
+  "id": "J11",
+  "mutation": "call value changed (s03 battery 28)",
+  "want_exit": 1,
+  "exit": 1,
+  "ok": true,
+  "last_line": "FAIL 50 rows, 1 failing"
+ },
+ {
+  "id": "J12",
+  "mutation": "duplicate deliver at s02",
+  "want_exit": 1,
+  "exit": 1,
+  "ok": true,
+  "last_line": "FAIL 50 rows, 1 failing"
+ },
+ {
+  "id": "J13",
+  "mutation": "raw start.observe emptied (judge must not depend on it)",
+  "want_exit": 0,
+  "exit": 0,
+  "ok": true,
+  "last_line": "PASS 50 rows, 0 failing"
+ },
+ {
+  "id": "J14",
+  "mutation": "decision changed at P1 D3",
+  "want_exit": 1,
+  "exit": 1,
+  "ok": true,
+  "last_line": "FAIL 38 rows, 1 failing"
+ },
+ {
+  "id": "J15",
+  "mutation": "decision missing at P1 D4",
+  "want_exit": 1,
+  "exit": 1,
+  "ok": true,
+  "last_line": "FAIL 38 rows, 1 failing"
+ },
+ {
+  "id": "J16",
+  "mutation": "unexpected rejection at s01",
+  "want_exit": 1,
+  "exit": 1,
+  "ok": true,
+  "last_line": "FAIL 50 rows, 1 failing"
+ },
+ {
+  "id": "J17",
+  "mutation": "expected names a step not in the scenario",
+  "want_exit": 1,
+  "exit": 1,
+  "ok": true,
+  "last_line": "FAIL 51 rows, 1 failing"
+ },
+ {
+  "id": "J18",
+  "mutation": "expected names an agent outside the roster",
+  "want_exit": 1,
+  "exit": 1,
+  "ok": true,
+  "last_line": "FAIL 51 rows, 1 failing"
+ },
+ {
+  "id": "J19",
+  "mutation": "all calls removed (empty observation)",
+  "want_exit": 1,
+  "exit": 1,
+  "ok": true,
+  "last_line": "FAIL 50 rows, 11 failing"
+ }
+]

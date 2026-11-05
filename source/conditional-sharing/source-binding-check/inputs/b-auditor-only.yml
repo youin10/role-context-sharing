@@ -1,0 +1,5 @@
+schema: rcs-d-binding/1
+cfg: b-auditor-only
+agents:
+  manager1: [Manager]
+  aud1: [Auditor]

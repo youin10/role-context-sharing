@@ -1,0 +1,5 @@
+roles:
+  Manager: []
+  Robot: []
+  Observer: []
+  Idle: []

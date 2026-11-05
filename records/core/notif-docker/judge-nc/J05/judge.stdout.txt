@@ -1,0 +1,4 @@
+FAIL - first-record-is-start expected "start" observed "step"
+FAIL - start-count expected 1 observed 0
+FAIL - start-scenario expected "B1" observed null
+FAIL 50 rows, 3 failing

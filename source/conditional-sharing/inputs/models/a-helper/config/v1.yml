@@ -1,0 +1,18 @@
+# A-owned type threshold configuration (helper baseline). Expanded to per-ID GL rules by arms/a/expand.py.
+roles:
+  Manager:
+  - {context: RobotStatus, field: robot, class: Biped, conds: [["<=", battery, 30]]}
+  - {context: RobotStatus, field: robot, class: Wheeled, conds: [["<=", battery, 20]]}
+  - {context: RobotStopped, conds: [[">=", elapsedSeconds, 300]]}
+  SafetyOfficer:
+  - {context: RobotStatus, conds: [["<=", battery, 40]]}
+  Dispatcher:
+  - {context: CargoCarriedBy}
+  BipedTech:
+  - {context: RobotStatus, field: robot, ids: [biped1]}
+  CarryAuditor:
+  - {context: CargoCarriedBy, field: robot, class: Biped}
+  NonBipedWatch:
+  - {context: RobotStatus, field: robot, not_class: Biped}
+  Robot: []
+  Observer: []

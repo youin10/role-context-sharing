@@ -1,0 +1,10 @@
+# Pre-specified expected result of the A baseline static helper (arms/a/typed.py check_rule) on single rules.
+scenario: A-static
+cases:
+- [AG01, '(rule (fact (RobotStatus $robot $battery $zone)) (= $robot "ghost9") --> (notify (RobotStatus $robot $battery $zone)))', UNKNOWN_INDIVIDUAL]
+- [AG02, '(rule (fact (RobotStatus $robot $battery $zone)) (= $robot "cargo1") --> (notify (RobotStatus $robot $battery $zone)))', TYPE_MISMATCH]
+- [AG03, '(rule (fact (RobotStatus $robot $battery $zone)) (< $robot 3) --> (notify (RobotStatus $robot $battery $zone)))', TYPE_MISMATCH]
+- [AG04, '(rule (fact (RobotStatus $robot $battery $zone)) (<= $battery "30") --> (notify (RobotStatus $robot $battery $zone)))', TYPE_MISMATCH]
+- [AG05, '(rule (fact (RobotStatus $robot $battery)) --> (notify (RobotStatus $robot $battery)))', ARITY]
+- [AG06, '(rule (fact (RobotStatus $robot $battery $zone)) (= $robot "hum1") (<= $battery 30) --> (notify (RobotStatus $robot $battery $zone)))', ok]
+- [AG07, '(rule (fact (CargoCarriedBy $cargo $robot)) (= $robot "ghost9") --> (notify (CargoCarriedBy $cargo $robot)))', UNKNOWN_INDIVIDUAL]

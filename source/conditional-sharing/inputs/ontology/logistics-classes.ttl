@@ -1,0 +1,16 @@
+# Class hierarchy (TBox subset) for the conditional-sharing experiment. Fixed during a run.
+# Only rdfs:Class and rdfs:subClassOf are read; membership includes subclasses (transitive).
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix : <http://ai.uos.ac.kr/logistics-ontology#> .
+
+:Robot a rdfs:Class .
+:Biped a rdfs:Class ; rdfs:subClassOf :Robot .
+:Humanoid a rdfs:Class ; rdfs:subClassOf :Biped .
+:Wheeled a rdfs:Class ; rdfs:subClassOf :Robot .
+:DifferentialDrive a rdfs:Class ; rdfs:subClassOf :Wheeled .
+:Cargo a rdfs:Class .
+:Arm a rdfs:Class .
+:Bay a rdfs:Class .
+:Charger a rdfs:Class .
+:Zone a rdfs:Class .

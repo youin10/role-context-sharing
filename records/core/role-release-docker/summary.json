@@ -1,0 +1,66 @@
+{
+ "a_static": {
+  "cases": 7,
+  "d_models_with_errors": [],
+  "pass": 7,
+  "plan_dirs_with_findings": []
+ },
+ "audit": [
+  {
+   "check": "empty observation fails B1",
+   "ok": true
+  },
+  {
+   "check": "every main expected table has positive calls",
+   "note": "CT7-cfg0 is the removal control and expects no reception",
+   "ok": true
+  },
+  {
+   "check": "every contrast / negative control ran to completion, or crashed with its declared error",
+   "offenders": [],
+   "ok": true
+  },
+  {
+   "check": "judge imports only the standard library and yaml (no arms / rcs / oracle / runner modules)",
+   "imports": [
+    "__future__",
+    "json",
+    "sys",
+    "yaml"
+   ],
+   "ok": true
+  },
+  {
+   "check": "expected tables equal the frozen expected-hashes.json record",
+   "ok": true
+  },
+  {
+   "check": "judge raw-mutation negative controls (tools/judge_mutation_nc.py) all as intended",
+   "ok": true
+  }
+ ],
+ "contrast": {
+  "fail_as_intended": 4,
+  "runs": 4
+ },
+ "grammar": {
+  "cases": 25,
+  "pass": 25
+ },
+ "main": {
+  "pass": 48,
+  "runs": 48
+ },
+ "negative": {
+  "fail_as_intended": 24,
+  "runs": 24
+ },
+ "overall_ok": true,
+ "run_id": "role-release-docker",
+ "x1": {
+  "dup_branch_rows_failing": 2,
+  "main_pass": 60,
+  "main_runs": 60,
+  "rows": 30
+ }
+}

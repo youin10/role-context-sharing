@@ -1,0 +1,39 @@
+[
+ {
+  "mutation": "SB2 flipped to accept",
+  "detected": true,
+  "why": [
+   "refused although acceptance expected: ['INCOMPLETE_BINDING']"
+  ]
+ },
+ {
+  "mutation": "SB1 wrong code",
+  "detected": true,
+  "why": [
+   "missing error INCOMPLETE_BINDING at RobotStopped"
+  ]
+ },
+ {
+  "mutation": "SB2-P wrong entries",
+  "detected": true,
+  "why": [
+   "consumers {'manager1': ['RobotStatus']} != {'manager1': ['RobotStopped']}"
+  ]
+ },
+ {
+  "mutation": "SB4 warning not allowed",
+  "detected": true,
+  "why": [
+   "unexpected warnings ['UNUSED_ROLE']"
+  ]
+ },
+ {
+  "mutation": "SB5 valid revision",
+  "detected": true,
+  "why": [
+   "revised configuration generated although refusal expected",
+   "active_seq=1 expected 0",
+   "messages_sent=2 expected 0"
+  ]
+ }
+]

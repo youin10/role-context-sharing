@@ -1,0 +1,50 @@
+{
+ "a": "results/role-release-host",
+ "b": "results/notif-host",
+ "files": 166,
+ "renamed": {
+  "no-revoke": "no-retract",
+  "per-role-revoke": "per-role-retract"
+ },
+ "calls": 609,
+ "kind_mapping": {
+  "deliver->assert": 324,
+  "deliver->update": 160,
+  "delete->retract": 53,
+  "revoke->retract": 59,
+  "current->assert": 13
+ },
+ "non_kind_differences": [
+  [
+   "raw/negative/T__D__no-validation.jsonl",
+   "error"
+  ]
+ ],
+ "replay_rule_mismatches": [
+  [
+   "raw/negative/B1__D__no-retract.jsonl",
+   "s12",
+   "deliver",
+   "assert"
+  ],
+  [
+   "raw/negative/CT3__D__no-retract.jsonl",
+   "e4",
+   "deliver",
+   "assert"
+  ],
+  [
+   "raw/x1/X1-hybrid1-19__D__dup-branch.jsonl",
+   "x",
+   "deliver",
+   "assert"
+  ],
+  [
+   "raw/x1/X1-hybrid1-20__D__dup-branch.jsonl",
+   "x",
+   "deliver",
+   "assert"
+  ]
+ ],
+ "note": "start/end records hold provenance hashes and statistics keys that change with the version; step records compared field by field. Replay rule: deliver/current -> update if the observer already held the fact in the earlier version's calls, else assert; delete/revoke -> retract. The listed mismatches are inside negative-control mutants (retract omission, duplicate branch)."
+}

@@ -1,0 +1,268 @@
+23:24:08 python3 live/run.py --arm d --scenario contract/CT1 --expected contract/CT1 --rep 1 --label final --out-root live/runs/final-9ec4e836cb48/a2 --expect-snapshot cs-core-9ec4e836cb48
+judge.py {"verdict": "PASS", "compared": 8, "mismatches": 0, "problems": [], "stats": {"expected_positive_calls": 3, "observed_calls": 3, "messages": {"sent": 8, "missing": 0, "duplicate": 0, "unsent": 0}, "causes": {"calls": 3, "rx_ok": 3, "cross_host": 3, "same_step": 3, "version_ok": 3}}} 
+nc_raw.py {"original": "PASS", "ok": true, "detected": 10, "applied": 10} 
+{"run_id": "final-d-contract_CT1-r1-20261030-232408", "domain": 146, "exit_codes": {"driver": 0, "d-producer": 0, "d-sm": 0, "d-agent-manager1": 0}}
+23:24:14 python3 live/run.py --arm a --scenario contract/CT1 --expected contract/CT1 --rep 1 --label final --out-root live/runs/final-9ec4e836cb48/a2 --expect-snapshot cs-core-9ec4e836cb48
+judge.py {"verdict": "PASS", "compared": 8, "mismatches": 0, "problems": [], "stats": {"expected_positive_calls": 3, "observed_calls": 3, "messages": {"sent": 32, "missing": 0, "duplicate": 0, "unsent": 0}, "causes": {"calls": 3, "rx_ok": 3, "cross_host": 3, "same_step": 3, "version_ok": 3}}} 
+nc_raw.py {"original": "PASS", "ok": true, "detected": 10, "applied": 10} 
+{"run_id": "final-a-contract_CT1-r1-20261030-232414", "domain": 187, "exit_codes": {"driver": 0, "a-producer": 0, "a-ltm": 0, "a-agent-manager1": 0}}
+23:24:19 python3 live/run.py --arm d --scenario contract/CT2 --expected contract/CT2 --rep 1 --label final --out-root live/runs/final-9ec4e836cb48/a2 --expect-snapshot cs-core-9ec4e836cb48
+judge.py {"verdict": "PASS", "compared": 4, "mismatches": 0, "problems": [], "stats": {"expected_positive_calls": 2, "observed_calls": 2, "messages": {"sent": 5, "missing": 0, "duplicate": 0, "unsent": 0}, "causes": {"calls": 2, "rx_ok": 2, "cross_host": 2, "same_step": 2, "version_ok": 2}}} 
+nc_raw.py {"original": "PASS", "ok": true, "detected": 10, "applied": 10} 
+{"run_id": "final-d-contract_CT2-r1-20261030-232419", "domain": 137, "exit_codes": {"driver": 0, "d-producer": 0, "d-sm": 0, "d-agent-manager1": 0}}
+23:24:24 python3 live/run.py --arm a --scenario contract/CT2 --expected contract/CT2 --rep 1 --label final --out-root live/runs/final-9ec4e836cb48/a2 --expect-snapshot cs-core-9ec4e836cb48
+judge.py {"verdict": "PASS", "compared": 4, "mismatches": 0, "problems": [], "stats": {"expected_positive_calls": 2, "observed_calls": 2, "messages": {"sent": 13, "missing": 0, "duplicate": 0, "unsent": 0}, "causes": {"calls": 2, "rx_ok": 2, "cross_host": 2, "same_step": 2, "version_ok": 2}}} 
+nc_raw.py {"original": "PASS", "ok": true, "detected": 10, "applied": 10} 
+{"run_id": "final-a-contract_CT2-r1-20261030-232424", "domain": 182, "exit_codes": {"driver": 0, "a-producer": 0, "a-ltm": 0, "a-agent-manager1": 0}}
+23:24:29 python3 live/run.py --arm d --scenario contract/CT3 --expected contract/CT3 --rep 1 --label final --out-root live/runs/final-9ec4e836cb48/a2 --expect-snapshot cs-core-9ec4e836cb48
+judge.py {"verdict": "PASS", "compared": 10, "mismatches": 0, "problems": [], "stats": {"expected_positive_calls": 5, "observed_calls": 5, "messages": {"sent": 12, "missing": 0, "duplicate": 0, "unsent": 0}, "causes": {"calls": 5, "rx_ok": 5, "cross_host": 5, "same_step": 5, "version_ok": 5}}} 
+nc_raw.py {"original": "PASS", "ok": true, "detected": 10, "applied": 10} 
+{"run_id": "final-d-contract_CT3-r1-20261030-232429", "domain": 112, "exit_codes": {"driver": 0, "d-producer": 0, "d-sm": 0, "d-agent-manager1": 0}}
+23:24:35 python3 live/run.py --arm a --scenario contract/CT3 --expected contract/CT3 --rep 1 --label final --out-root live/runs/final-9ec4e836cb48/a2 --expect-snapshot cs-core-9ec4e836cb48
+judge.py {"verdict": "PASS", "compared": 10, "mismatches": 0, "problems": [], "stats": {"expected_positive_calls": 5, "observed_calls": 5, "messages": {"sent": 37, "missing": 0, "duplicate": 0, "unsent": 0}, "causes": {"calls": 5, "rx_ok": 5, "cross_host": 5, "same_step": 5, "version_ok": 5}}} 
+nc_raw.py {"original": "PASS", "ok": true, "detected": 10, "applied": 10} 
+{"run_id": "final-a-contract_CT3-r1-20261030-232435", "domain": 156, "exit_codes": {"driver": 0, "a-producer": 0, "a-ltm": 0, "a-agent-manager1": 0}}
+23:24:41 python3 live/run.py --arm d --scenario contract/CT4 --expected contract/CT4 --rep 1 --label final --out-root live/runs/final-9ec4e836cb48/a2 --expect-snapshot cs-core-9ec4e836cb48
+judge.py {"verdict": "PASS", "compared": 6, "mismatches": 0, "problems": [], "stats": {"expected_positive_calls": 2, "observed_calls": 2, "messages": {"sent": 26, "missing": 0, "duplicate": 0, "unsent": 0}, "causes": {"calls": 2, "rx_ok": 2, "cross_host": 2, "same_step": 2, "version_ok": 2}}} 
+nc_raw.py {"original": "PASS", "ok": true, "detected": 10, "applied": 10} 
+{"run_id": "final-d-contract_CT4-r1-20261030-232441", "domain": 116, "exit_codes": {"driver": 0, "d-producer": 0, "d-sm": 0, "d-agent-manager1": 0}}
+23:24:46 python3 live/run.py --arm a --scenario contract/CT4 --expected contract/CT4 --rep 1 --label final --out-root live/runs/final-9ec4e836cb48/a2 --expect-snapshot cs-core-9ec4e836cb48
+judge.py {"verdict": "PASS", "compared": 6, "mismatches": 0, "problems": [], "stats": {"expected_positive_calls": 2, "observed_calls": 2, "messages": {"sent": 30, "missing": 0, "duplicate": 0, "unsent": 0}, "causes": {"calls": 2, "rx_ok": 2, "cross_host": 2, "same_step": 2, "version_ok": 2}}} 
+nc_raw.py {"original": "PASS", "ok": true, "detected": 10, "applied": 10} 
+{"run_id": "final-a-contract_CT4-r1-20261030-232446", "domain": 152, "exit_codes": {"driver": 0, "a-producer": 0, "a-ltm": 0, "a-agent-manager1": 0}}
+23:24:51 python3 live/run.py --arm d --scenario contract/CT5 --expected contract/CT5 --rep 1 --label final --out-root live/runs/final-9ec4e836cb48/a2 --expect-snapshot cs-core-9ec4e836cb48
+judge.py {"verdict": "PASS", "compared": 8, "mismatches": 0, "problems": [], "stats": {"expected_positive_calls": 2, "observed_calls": 2, "messages": {"sent": 25, "missing": 0, "duplicate": 0, "unsent": 0}, "causes": {"calls": 2, "rx_ok": 2, "cross_host": 2, "same_step": 2, "version_ok": 2}}} 
+nc_raw.py {"original": "PASS", "ok": true, "detected": 10, "applied": 10} 
+{"run_id": "final-d-contract_CT5-r1-20261030-232451", "domain": 166, "exit_codes": {"driver": 0, "d-producer": 0, "d-sm": 0, "d-agent-manager1": 0}}
+23:24:56 python3 live/run.py --arm a --scenario contract/CT5 --expected contract/CT5 --rep 1 --label final --out-root live/runs/final-9ec4e836cb48/a2 --expect-snapshot cs-core-9ec4e836cb48
+judge.py {"verdict": "PASS", "compared": 8, "mismatches": 0, "problems": [], "stats": {"expected_positive_calls": 2, "observed_calls": 2, "messages": {"sent": 37, "missing": 0, "duplicate": 0, "unsent": 0}, "causes": {"calls": 2, "rx_ok": 2, "cross_host": 2, "same_step": 2, "version_ok": 2}}} 
+nc_raw.py {"original": "PASS", "ok": true, "detected": 10, "applied": 10} 
+{"run_id": "final-a-contract_CT5-r1-20261030-232456", "domain": 169, "exit_codes": {"driver": 0, "a-producer": 0, "a-ltm": 0, "a-agent-manager1": 0}}
+23:25:01 python3 live/run.py --arm d --scenario contract/CT6 --expected contract/CT6 --rep 1 --label final --out-root live/runs/final-9ec4e836cb48/a2 --expect-snapshot cs-core-9ec4e836cb48
+judge.py {"verdict": "PASS", "compared": 6, "mismatches": 0, "problems": [], "stats": {"expected_positive_calls": 3, "observed_calls": 3, "messages": {"sent": 8, "missing": 0, "duplicate": 0, "unsent": 0}, "causes": {"calls": 3, "rx_ok": 3, "cross_host": 3, "same_step": 3, "version_ok": 3}}} 
+nc_raw.py {"original": "PASS", "ok": true, "detected": 10, "applied": 10} 
+{"run_id": "final-d-contract_CT6-r1-20261030-232501", "domain": 155, "exit_codes": {"driver": 0, "d-producer": 0, "d-sm": 0, "d-agent-manager1": 0}}
+23:25:07 python3 live/run.py --arm a --scenario contract/CT6 --expected contract/CT6 --rep 1 --label final --out-root live/runs/final-9ec4e836cb48/a2 --expect-snapshot cs-core-9ec4e836cb48
+judge.py {"verdict": "PASS", "compared": 6, "mismatches": 0, "problems": [], "stats": {"expected_positive_calls": 3, "observed_calls": 3, "messages": {"sent": 28, "missing": 0, "duplicate": 0, "unsent": 0}, "causes": {"calls": 3, "rx_ok": 3, "cross_host": 3, "same_step": 3, "version_ok": 3}}} 
+nc_raw.py {"original": "PASS", "ok": true, "detected": 10, "applied": 10} 
+{"run_id": "final-a-contract_CT6-r1-20261030-232507", "domain": 167, "exit_codes": {"driver": 0, "a-producer": 0, "a-ltm": 0, "a-agent-manager1": 0}}
+23:25:12 python3 live/run.py --arm d --scenario contract/CT7-cfg0 --expected contract/CT7-cfg0 --rep 1 --label final --out-root live/runs/final-9ec4e836cb48/a2 --expect-snapshot cs-core-9ec4e836cb48
+judge.py {"verdict": "PASS", "compared": 6, "mismatches": 0, "problems": [], "stats": {"expected_positive_calls": 0, "observed_calls": 0, "messages": {"sent": 3, "missing": 0, "duplicate": 0, "unsent": 0}, "causes": {"calls": 0, "rx_ok": 0, "cross_host": 0, "same_step": 0, "version_ok": 0}}} 
+nc_raw.py {"original": "PASS", "ok": true, "detected": 5, "applied": 5} 
+{"run_id": "final-d-contract_CT7-cfg0-r1-20261030-232512", "domain": 162, "exit_codes": {"driver": 0, "d-producer": 0, "d-sm": 0, "d-agent-manager1": 0}}
+23:25:17 python3 live/run.py --arm a --scenario contract/CT7-cfg0 --expected contract/CT7-cfg0 --rep 1 --label final --out-root live/runs/final-9ec4e836cb48/a2 --expect-snapshot cs-core-9ec4e836cb48
+judge.py {"verdict": "PASS", "compared": 6, "mismatches": 0, "problems": [], "stats": {"expected_positive_calls": 0, "observed_calls": 0, "messages": {"sent": 3, "missing": 0, "duplicate": 0, "unsent": 0}, "causes": {"calls": 0, "rx_ok": 0, "cross_host": 0, "same_step": 0, "version_ok": 0}}} 
+nc_raw.py {"original": "PASS", "ok": true, "detected": 5, "applied": 5} 
+{"run_id": "final-a-contract_CT7-cfg0-r1-20261030-232517", "domain": 180, "exit_codes": {"driver": 0, "a-producer": 0, "a-ltm": 0, "a-agent-manager1": 0}}
+23:25:22 python3 live/run.py --arm d --scenario contract/CT7-cfg1 --expected contract/CT7-cfg1 --rep 1 --label final --out-root live/runs/final-9ec4e836cb48/a2 --expect-snapshot cs-core-9ec4e836cb48
+judge.py {"verdict": "PASS", "compared": 6, "mismatches": 0, "problems": [], "stats": {"expected_positive_calls": 3, "observed_calls": 3, "messages": {"sent": 6, "missing": 0, "duplicate": 0, "unsent": 0}, "causes": {"calls": 3, "rx_ok": 3, "cross_host": 3, "same_step": 3, "version_ok": 3}}} 
+nc_raw.py {"original": "PASS", "ok": true, "detected": 10, "applied": 10} 
+{"run_id": "final-d-contract_CT7-cfg1-r1-20261030-232522", "domain": 189, "exit_codes": {"driver": 0, "d-producer": 0, "d-sm": 0, "d-agent-manager1": 0}}
+23:25:27 python3 live/run.py --arm a --scenario contract/CT7-cfg1 --expected contract/CT7-cfg1 --rep 1 --label final --out-root live/runs/final-9ec4e836cb48/a2 --expect-snapshot cs-core-9ec4e836cb48
+judge.py {"verdict": "PASS", "compared": 6, "mismatches": 0, "problems": [], "stats": {"expected_positive_calls": 3, "observed_calls": 3, "messages": {"sent": 28, "missing": 0, "duplicate": 0, "unsent": 0}, "causes": {"calls": 3, "rx_ok": 3, "cross_host": 3, "same_step": 3, "version_ok": 3}}} 
+nc_raw.py {"original": "PASS", "ok": true, "detected": 10, "applied": 10} 
+{"run_id": "final-a-contract_CT7-cfg1-r1-20261030-232527", "domain": 155, "exit_codes": {"driver": 0, "a-producer": 0, "a-ltm": 0, "a-agent-manager1": 0}}
+23:25:32 python3 live/run.py --arm d --scenario K --expected K --rep 1 --label final --out-root live/runs/final-9ec4e836cb48/a2 --expect-snapshot cs-core-9ec4e836cb48
+judge.py {"verdict": "PASS", "compared": 31, "mismatches": 0, "problems": [], "stats": {"expected_positive_calls": 7, "observed_calls": 7, "messages": {"sent": 16, "missing": 0, "duplicate": 0, "unsent": 0}, "causes": {"calls": 7, "rx_ok": 7, "cross_host": 7, "same_step": 7, "version_ok": 7}}} 
+nc_raw.py {"original": "PASS", "ok": true, "detected": 10, "applied": 10} 
+{"run_id": "final-d-K-r1-20261030-232533", "domain": 192, "exit_codes": {"driver": 0, "d-producer": 0, "d-sm": 0, "d-agent-tech1": 0, "d-agent-watch1": 0, "d-agent-auditor1": 0}}
+23:25:38 python3 live/run.py --arm a --scenario K --expected K --rep 1 --label final --out-root live/runs/final-9ec4e836cb48/a2 --expect-snapshot cs-core-9ec4e836cb48
+judge.py {"verdict": "PASS", "compared": 31, "mismatches": 0, "problems": [], "stats": {"expected_positive_calls": 7, "observed_calls": 7, "messages": {"sent": 65, "missing": 0, "duplicate": 0, "unsent": 0}, "causes": {"calls": 7, "rx_ok": 7, "cross_host": 7, "same_step": 7, "version_ok": 7}}} 
+nc_raw.py {"original": "PASS", "ok": true, "detected": 10, "applied": 10} 
+{"run_id": "final-a-K-r1-20261030-232538", "domain": 186, "exit_codes": {"driver": 0, "a-producer": 0, "a-ltm": 0, "a-agent-tech1": 0, "a-agent-watch1": 0, "a-agent-auditor1": 0}}
+23:25:45 python3 live/run.py --arm d --scenario T --expected T --rep 1 --label final --out-root live/runs/final-9ec4e836cb48/a2 --expect-snapshot cs-core-9ec4e836cb48
+judge.py {"verdict": "PASS", "compared": 24, "mismatches": 0, "problems": [], "stats": {"expected_positive_calls": 2, "observed_calls": 2, "messages": {"sent": 11, "missing": 0, "duplicate": 0, "unsent": 0}, "causes": {"calls": 2, "rx_ok": 2, "cross_host": 2, "same_step": 2, "version_ok": 2}}} 
+nc_raw.py {"original": "PASS", "ok": true, "detected": 10, "applied": 10} 
+{"run_id": "final-d-T-r1-20261030-232545", "domain": 134, "exit_codes": {"driver": 0, "d-producer": 0, "d-sm": 0, "d-agent-manager1": 0, "d-agent-auditor1": 0}}
+23:25:50 python3 live/run.py --arm a --scenario T --expected T --rep 1 --label final --out-root live/runs/final-9ec4e836cb48/a2 --expect-snapshot cs-core-9ec4e836cb48
+judge.py {"verdict": "PASS", "compared": 24, "mismatches": 0, "problems": [], "stats": {"expected_positive_calls": 2, "observed_calls": 2, "messages": {"sent": 51, "missing": 0, "duplicate": 0, "unsent": 0}, "causes": {"calls": 2, "rx_ok": 2, "cross_host": 2, "same_step": 2, "version_ok": 2}}} 
+nc_raw.py {"original": "PASS", "ok": true, "detected": 10, "applied": 10} 
+{"run_id": "final-a-T-r1-20261030-232550", "domain": 120, "exit_codes": {"driver": 0, "a-producer": 0, "a-ltm": 0, "a-agent-manager1": 0, "a-agent-auditor1": 0}}
+23:25:56 python3 live/run.py --arm d --scenario P1 --expected P1 --rep 1 --label final --out-root live/runs/final-9ec4e836cb48/a2 --expect-snapshot cs-core-9ec4e836cb48
+judge.py {"verdict": "PASS", "compared": 16, "mismatches": 0, "problems": [], "stats": {"expected_positive_calls": 7, "observed_calls": 7, "messages": {"sent": 44, "missing": 0, "duplicate": 0, "unsent": 0}, "causes": {"calls": 7, "rx_ok": 7, "cross_host": 7, "same_step": 7, "version_ok": 7}}} 
+nc_raw.py {"original": "PASS", "ok": true, "detected": 10, "applied": 10} 
+{"run_id": "final-d-P1-r1-20261030-232556", "domain": 117, "exit_codes": {"driver": 0, "d-producer": 0, "d-sm": 0, "d-agent-manager1": 0}}
+23:26:02 python3 live/run.py --arm a --scenario P1 --expected P1 --rep 1 --label final --out-root live/runs/final-9ec4e836cb48/a2 --expect-snapshot cs-core-9ec4e836cb48
+judge.py {"verdict": "PASS", "compared": 16, "mismatches": 0, "problems": [], "stats": {"expected_positive_calls": 7, "observed_calls": 7, "messages": {"sent": 91, "missing": 0, "duplicate": 0, "unsent": 0}, "causes": {"calls": 7, "rx_ok": 7, "cross_host": 7, "same_step": 7, "version_ok": 7}}} 
+nc_raw.py {"original": "PASS", "ok": true, "detected": 10, "applied": 10} 
+{"run_id": "final-a-P1-r1-20261030-232602", "domain": 188, "exit_codes": {"driver": 0, "a-producer": 0, "a-ltm": 0, "a-agent-manager1": 0}}
+23:26:08 python3 live/run.py --arm d --scenario contract/CT1 --expected contract/CT1 --rep 2 --label final --out-root live/runs/final-9ec4e836cb48/a2 --expect-snapshot cs-core-9ec4e836cb48
+judge.py {"verdict": "PASS", "compared": 8, "mismatches": 0, "problems": [], "stats": {"expected_positive_calls": 3, "observed_calls": 3, "messages": {"sent": 8, "missing": 0, "duplicate": 0, "unsent": 0}, "causes": {"calls": 3, "rx_ok": 3, "cross_host": 3, "same_step": 3, "version_ok": 3}}} 
+nc_raw.py {"original": "PASS", "ok": true, "detected": 10, "applied": 10} 
+{"run_id": "final-d-contract_CT1-r2-20261030-232608", "domain": 166, "exit_codes": {"driver": 0, "d-producer": 0, "d-sm": 0, "d-agent-manager1": 0}}
+23:26:14 python3 live/run.py --arm a --scenario contract/CT1 --expected contract/CT1 --rep 2 --label final --out-root live/runs/final-9ec4e836cb48/a2 --expect-snapshot cs-core-9ec4e836cb48
+judge.py {"verdict": "PASS", "compared": 8, "mismatches": 0, "problems": [], "stats": {"expected_positive_calls": 3, "observed_calls": 3, "messages": {"sent": 32, "missing": 0, "duplicate": 0, "unsent": 0}, "causes": {"calls": 3, "rx_ok": 3, "cross_host": 3, "same_step": 3, "version_ok": 3}}} 
+nc_raw.py {"original": "PASS", "ok": true, "detected": 10, "applied": 10} 
+{"run_id": "final-a-contract_CT1-r2-20261030-232614", "domain": 199, "exit_codes": {"driver": 0, "a-producer": 0, "a-ltm": 0, "a-agent-manager1": 0}}
+23:26:19 python3 live/run.py --arm d --scenario contract/CT2 --expected contract/CT2 --rep 2 --label final --out-root live/runs/final-9ec4e836cb48/a2 --expect-snapshot cs-core-9ec4e836cb48
+judge.py {"verdict": "PASS", "compared": 4, "mismatches": 0, "problems": [], "stats": {"expected_positive_calls": 2, "observed_calls": 2, "messages": {"sent": 5, "missing": 0, "duplicate": 0, "unsent": 0}, "causes": {"calls": 2, "rx_ok": 2, "cross_host": 2, "same_step": 2, "version_ok": 2}}} 
+nc_raw.py {"original": "PASS", "ok": true, "detected": 10, "applied": 10} 
+{"run_id": "final-d-contract_CT2-r2-20261030-232619", "domain": 121, "exit_codes": {"driver": 0, "d-producer": 0, "d-sm": 0, "d-agent-manager1": 0}}
+23:26:24 python3 live/run.py --arm a --scenario contract/CT2 --expected contract/CT2 --rep 2 --label final --out-root live/runs/final-9ec4e836cb48/a2 --expect-snapshot cs-core-9ec4e836cb48
+judge.py {"verdict": "PASS", "compared": 4, "mismatches": 0, "problems": [], "stats": {"expected_positive_calls": 2, "observed_calls": 2, "messages": {"sent": 13, "missing": 0, "duplicate": 0, "unsent": 0}, "causes": {"calls": 2, "rx_ok": 2, "cross_host": 2, "same_step": 2, "version_ok": 2}}} 
+nc_raw.py {"original": "PASS", "ok": true, "detected": 10, "applied": 10} 
+{"run_id": "final-a-contract_CT2-r2-20261030-232624", "domain": 149, "exit_codes": {"driver": 0, "a-producer": 0, "a-ltm": 0, "a-agent-manager1": 0}}
+23:26:29 python3 live/run.py --arm d --scenario contract/CT3 --expected contract/CT3 --rep 2 --label final --out-root live/runs/final-9ec4e836cb48/a2 --expect-snapshot cs-core-9ec4e836cb48
+judge.py {"verdict": "PASS", "compared": 10, "mismatches": 0, "problems": [], "stats": {"expected_positive_calls": 5, "observed_calls": 5, "messages": {"sent": 12, "missing": 0, "duplicate": 0, "unsent": 0}, "causes": {"calls": 5, "rx_ok": 5, "cross_host": 5, "same_step": 5, "version_ok": 5}}} 
+nc_raw.py {"original": "PASS", "ok": true, "detected": 10, "applied": 10} 
+{"run_id": "final-d-contract_CT3-r2-20261030-232629", "domain": 153, "exit_codes": {"driver": 0, "d-producer": 0, "d-sm": 0, "d-agent-manager1": 0}}
+23:26:34 python3 live/run.py --arm a --scenario contract/CT3 --expected contract/CT3 --rep 2 --label final --out-root live/runs/final-9ec4e836cb48/a2 --expect-snapshot cs-core-9ec4e836cb48
+judge.py {"verdict": "PASS", "compared": 10, "mismatches": 0, "problems": [], "stats": {"expected_positive_calls": 5, "observed_calls": 5, "messages": {"sent": 37, "missing": 0, "duplicate": 0, "unsent": 0}, "causes": {"calls": 5, "rx_ok": 5, "cross_host": 5, "same_step": 5, "version_ok": 5}}} 
+nc_raw.py {"original": "PASS", "ok": true, "detected": 10, "applied": 10} 
+{"run_id": "final-a-contract_CT3-r2-20261030-232634", "domain": 116, "exit_codes": {"driver": 0, "a-producer": 0, "a-ltm": 0, "a-agent-manager1": 0}}
+23:26:40 python3 live/run.py --arm d --scenario contract/CT4 --expected contract/CT4 --rep 2 --label final --out-root live/runs/final-9ec4e836cb48/a2 --expect-snapshot cs-core-9ec4e836cb48
+judge.py {"verdict": "PASS", "compared": 6, "mismatches": 0, "problems": [], "stats": {"expected_positive_calls": 2, "observed_calls": 2, "messages": {"sent": 26, "missing": 0, "duplicate": 0, "unsent": 0}, "causes": {"calls": 2, "rx_ok": 2, "cross_host": 2, "same_step": 2, "version_ok": 2}}} 
+nc_raw.py {"original": "PASS", "ok": true, "detected": 10, "applied": 10} 
+{"run_id": "final-d-contract_CT4-r2-20261030-232640", "domain": 173, "exit_codes": {"driver": 0, "d-producer": 0, "d-sm": 0, "d-agent-manager1": 0}}
+23:26:45 python3 live/run.py --arm a --scenario contract/CT4 --expected contract/CT4 --rep 2 --label final --out-root live/runs/final-9ec4e836cb48/a2 --expect-snapshot cs-core-9ec4e836cb48
+judge.py {"verdict": "PASS", "compared": 6, "mismatches": 0, "problems": [], "stats": {"expected_positive_calls": 2, "observed_calls": 2, "messages": {"sent": 30, "missing": 0, "duplicate": 0, "unsent": 0}, "causes": {"calls": 2, "rx_ok": 2, "cross_host": 2, "same_step": 2, "version_ok": 2}}} 
+nc_raw.py {"original": "PASS", "ok": true, "detected": 10, "applied": 10} 
+{"run_id": "final-a-contract_CT4-r2-20261030-232645", "domain": 176, "exit_codes": {"driver": 0, "a-producer": 0, "a-ltm": 0, "a-agent-manager1": 0}}
+23:26:50 python3 live/run.py --arm d --scenario contract/CT5 --expected contract/CT5 --rep 2 --label final --out-root live/runs/final-9ec4e836cb48/a2 --expect-snapshot cs-core-9ec4e836cb48
+judge.py {"verdict": "PASS", "compared": 8, "mismatches": 0, "problems": [], "stats": {"expected_positive_calls": 2, "observed_calls": 2, "messages": {"sent": 25, "missing": 0, "duplicate": 0, "unsent": 0}, "causes": {"calls": 2, "rx_ok": 2, "cross_host": 2, "same_step": 2, "version_ok": 2}}} 
+nc_raw.py {"original": "PASS", "ok": true, "detected": 10, "applied": 10} 
+{"run_id": "final-d-contract_CT5-r2-20261030-232650", "domain": 194, "exit_codes": {"driver": 0, "d-producer": 0, "d-sm": 0, "d-agent-manager1": 0}}
+23:26:55 python3 live/run.py --arm a --scenario contract/CT5 --expected contract/CT5 --rep 2 --label final --out-root live/runs/final-9ec4e836cb48/a2 --expect-snapshot cs-core-9ec4e836cb48
+judge.py {"verdict": "PASS", "compared": 8, "mismatches": 0, "problems": [], "stats": {"expected_positive_calls": 2, "observed_calls": 2, "messages": {"sent": 37, "missing": 0, "duplicate": 0, "unsent": 0}, "causes": {"calls": 2, "rx_ok": 2, "cross_host": 2, "same_step": 2, "version_ok": 2}}} 
+nc_raw.py {"original": "PASS", "ok": true, "detected": 10, "applied": 10} 
+{"run_id": "final-a-contract_CT5-r2-20261030-232655", "domain": 151, "exit_codes": {"driver": 0, "a-producer": 0, "a-ltm": 0, "a-agent-manager1": 0}}
+23:27:00 python3 live/run.py --arm d --scenario contract/CT6 --expected contract/CT6 --rep 2 --label final --out-root live/runs/final-9ec4e836cb48/a2 --expect-snapshot cs-core-9ec4e836cb48
+judge.py {"verdict": "PASS", "compared": 6, "mismatches": 0, "problems": [], "stats": {"expected_positive_calls": 3, "observed_calls": 3, "messages": {"sent": 8, "missing": 0, "duplicate": 0, "unsent": 0}, "causes": {"calls": 3, "rx_ok": 3, "cross_host": 3, "same_step": 3, "version_ok": 3}}} 
+nc_raw.py {"original": "PASS", "ok": true, "detected": 10, "applied": 10} 
+{"run_id": "final-d-contract_CT6-r2-20261030-232700", "domain": 198, "exit_codes": {"driver": 0, "d-producer": 0, "d-sm": 0, "d-agent-manager1": 0}}
+23:27:05 python3 live/run.py --arm a --scenario contract/CT6 --expected contract/CT6 --rep 2 --label final --out-root live/runs/final-9ec4e836cb48/a2 --expect-snapshot cs-core-9ec4e836cb48
+judge.py {"verdict": "PASS", "compared": 6, "mismatches": 0, "problems": [], "stats": {"expected_positive_calls": 3, "observed_calls": 3, "messages": {"sent": 28, "missing": 0, "duplicate": 0, "unsent": 0}, "causes": {"calls": 3, "rx_ok": 3, "cross_host": 3, "same_step": 3, "version_ok": 3}}} 
+nc_raw.py {"original": "PASS", "ok": true, "detected": 10, "applied": 10} 
+{"run_id": "final-a-contract_CT6-r2-20261030-232705", "domain": 190, "exit_codes": {"driver": 0, "a-producer": 0, "a-ltm": 0, "a-agent-manager1": 0}}
+23:27:11 python3 live/run.py --arm d --scenario contract/CT7-cfg0 --expected contract/CT7-cfg0 --rep 2 --label final --out-root live/runs/final-9ec4e836cb48/a2 --expect-snapshot cs-core-9ec4e836cb48
+judge.py {"verdict": "PASS", "compared": 6, "mismatches": 0, "problems": [], "stats": {"expected_positive_calls": 0, "observed_calls": 0, "messages": {"sent": 3, "missing": 0, "duplicate": 0, "unsent": 0}, "causes": {"calls": 0, "rx_ok": 0, "cross_host": 0, "same_step": 0, "version_ok": 0}}} 
+nc_raw.py {"original": "PASS", "ok": true, "detected": 5, "applied": 5} 
+{"run_id": "final-d-contract_CT7-cfg0-r2-20261030-232711", "domain": 172, "exit_codes": {"driver": 0, "d-producer": 0, "d-sm": 0, "d-agent-manager1": 0}}
+23:27:16 python3 live/run.py --arm a --scenario contract/CT7-cfg0 --expected contract/CT7-cfg0 --rep 2 --label final --out-root live/runs/final-9ec4e836cb48/a2 --expect-snapshot cs-core-9ec4e836cb48
+judge.py {"verdict": "PASS", "compared": 6, "mismatches": 0, "problems": [], "stats": {"expected_positive_calls": 0, "observed_calls": 0, "messages": {"sent": 3, "missing": 0, "duplicate": 0, "unsent": 0}, "causes": {"calls": 0, "rx_ok": 0, "cross_host": 0, "same_step": 0, "version_ok": 0}}} 
+nc_raw.py {"original": "PASS", "ok": true, "detected": 5, "applied": 5} 
+{"run_id": "final-a-contract_CT7-cfg0-r2-20261030-232716", "domain": 133, "exit_codes": {"driver": 0, "a-producer": 0, "a-ltm": 0, "a-agent-manager1": 0}}
+23:27:21 python3 live/run.py --arm d --scenario contract/CT7-cfg1 --expected contract/CT7-cfg1 --rep 2 --label final --out-root live/runs/final-9ec4e836cb48/a2 --expect-snapshot cs-core-9ec4e836cb48
+judge.py {"verdict": "PASS", "compared": 6, "mismatches": 0, "problems": [], "stats": {"expected_positive_calls": 3, "observed_calls": 3, "messages": {"sent": 6, "missing": 0, "duplicate": 0, "unsent": 0}, "causes": {"calls": 3, "rx_ok": 3, "cross_host": 3, "same_step": 3, "version_ok": 3}}} 
+nc_raw.py {"original": "PASS", "ok": true, "detected": 10, "applied": 10} 
+{"run_id": "final-d-contract_CT7-cfg1-r2-20261030-232721", "domain": 179, "exit_codes": {"driver": 0, "d-producer": 0, "d-sm": 0, "d-agent-manager1": 0}}
+23:27:26 python3 live/run.py --arm a --scenario contract/CT7-cfg1 --expected contract/CT7-cfg1 --rep 2 --label final --out-root live/runs/final-9ec4e836cb48/a2 --expect-snapshot cs-core-9ec4e836cb48
+judge.py {"verdict": "PASS", "compared": 6, "mismatches": 0, "problems": [], "stats": {"expected_positive_calls": 3, "observed_calls": 3, "messages": {"sent": 28, "missing": 0, "duplicate": 0, "unsent": 0}, "causes": {"calls": 3, "rx_ok": 3, "cross_host": 3, "same_step": 3, "version_ok": 3}}} 
+nc_raw.py {"original": "PASS", "ok": true, "detected": 10, "applied": 10} 
+{"run_id": "final-a-contract_CT7-cfg1-r2-20261030-232726", "domain": 138, "exit_codes": {"driver": 0, "a-producer": 0, "a-ltm": 0, "a-agent-manager1": 0}}
+23:27:31 python3 live/run.py --arm d --scenario K --expected K --rep 2 --label final --out-root live/runs/final-9ec4e836cb48/a2 --expect-snapshot cs-core-9ec4e836cb48
+judge.py {"verdict": "PASS", "compared": 31, "mismatches": 0, "problems": [], "stats": {"expected_positive_calls": 7, "observed_calls": 7, "messages": {"sent": 16, "missing": 0, "duplicate": 0, "unsent": 0}, "causes": {"calls": 7, "rx_ok": 7, "cross_host": 7, "same_step": 7, "version_ok": 7}}} 
+nc_raw.py {"original": "PASS", "ok": true, "detected": 10, "applied": 10} 
+{"run_id": "final-d-K-r2-20261030-232731", "domain": 142, "exit_codes": {"driver": 0, "d-producer": 0, "d-sm": 0, "d-agent-tech1": 0, "d-agent-watch1": 0, "d-agent-auditor1": 0}}
+23:27:37 python3 live/run.py --arm a --scenario K --expected K --rep 2 --label final --out-root live/runs/final-9ec4e836cb48/a2 --expect-snapshot cs-core-9ec4e836cb48
+judge.py {"verdict": "PASS", "compared": 31, "mismatches": 0, "problems": [], "stats": {"expected_positive_calls": 7, "observed_calls": 7, "messages": {"sent": 65, "missing": 0, "duplicate": 0, "unsent": 0}, "causes": {"calls": 7, "rx_ok": 7, "cross_host": 7, "same_step": 7, "version_ok": 7}}} 
+nc_raw.py {"original": "PASS", "ok": true, "detected": 10, "applied": 10} 
+{"run_id": "final-a-K-r2-20261030-232737", "domain": 198, "exit_codes": {"driver": 0, "a-producer": 0, "a-ltm": 0, "a-agent-tech1": 0, "a-agent-watch1": 0, "a-agent-auditor1": 0}}
+23:27:43 python3 live/run.py --arm d --scenario T --expected T --rep 2 --label final --out-root live/runs/final-9ec4e836cb48/a2 --expect-snapshot cs-core-9ec4e836cb48
+judge.py {"verdict": "PASS", "compared": 24, "mismatches": 0, "problems": [], "stats": {"expected_positive_calls": 2, "observed_calls": 2, "messages": {"sent": 11, "missing": 0, "duplicate": 0, "unsent": 0}, "causes": {"calls": 2, "rx_ok": 2, "cross_host": 2, "same_step": 2, "version_ok": 2}}} 
+nc_raw.py {"original": "PASS", "ok": true, "detected": 10, "applied": 10} 
+{"run_id": "final-d-T-r2-20261030-232743", "domain": 162, "exit_codes": {"driver": 0, "d-producer": 0, "d-sm": 0, "d-agent-manager1": 0, "d-agent-auditor1": 0}}
+23:27:49 python3 live/run.py --arm a --scenario T --expected T --rep 2 --label final --out-root live/runs/final-9ec4e836cb48/a2 --expect-snapshot cs-core-9ec4e836cb48
+judge.py {"verdict": "PASS", "compared": 24, "mismatches": 0, "problems": [], "stats": {"expected_positive_calls": 2, "observed_calls": 2, "messages": {"sent": 51, "missing": 0, "duplicate": 0, "unsent": 0}, "causes": {"calls": 2, "rx_ok": 2, "cross_host": 2, "same_step": 2, "version_ok": 2}}} 
+nc_raw.py {"original": "PASS", "ok": true, "detected": 10, "applied": 10} 
+{"run_id": "final-a-T-r2-20261030-232749", "domain": 172, "exit_codes": {"driver": 0, "a-producer": 0, "a-ltm": 0, "a-agent-manager1": 0, "a-agent-auditor1": 0}}
+23:27:54 python3 live/run.py --arm d --scenario P1 --expected P1 --rep 2 --label final --out-root live/runs/final-9ec4e836cb48/a2 --expect-snapshot cs-core-9ec4e836cb48
+judge.py {"verdict": "PASS", "compared": 16, "mismatches": 0, "problems": [], "stats": {"expected_positive_calls": 7, "observed_calls": 7, "messages": {"sent": 44, "missing": 0, "duplicate": 0, "unsent": 0}, "causes": {"calls": 7, "rx_ok": 7, "cross_host": 7, "same_step": 7, "version_ok": 7}}} 
+nc_raw.py {"original": "PASS", "ok": true, "detected": 10, "applied": 10} 
+{"run_id": "final-d-P1-r2-20261030-232754", "domain": 186, "exit_codes": {"driver": 0, "d-producer": 0, "d-sm": 0, "d-agent-manager1": 0}}
+23:28:01 python3 live/run.py --arm a --scenario P1 --expected P1 --rep 2 --label final --out-root live/runs/final-9ec4e836cb48/a2 --expect-snapshot cs-core-9ec4e836cb48
+judge.py {"verdict": "PASS", "compared": 16, "mismatches": 0, "problems": [], "stats": {"expected_positive_calls": 7, "observed_calls": 7, "messages": {"sent": 91, "missing": 0, "duplicate": 0, "unsent": 0}, "causes": {"calls": 7, "rx_ok": 7, "cross_host": 7, "same_step": 7, "version_ok": 7}}} 
+nc_raw.py {"original": "PASS", "ok": true, "detected": 10, "applied": 10} 
+{"run_id": "final-a-P1-r2-20261030-232801", "domain": 154, "exit_codes": {"driver": 0, "a-producer": 0, "a-ltm": 0, "a-agent-manager1": 0}}
+23:28:07 python3 live/run.py --arm d --scenario contract/CT1 --expected contract/CT1 --rep 3 --label final --out-root live/runs/final-9ec4e836cb48/a2 --expect-snapshot cs-core-9ec4e836cb48
+judge.py {"verdict": "PASS", "compared": 8, "mismatches": 0, "problems": [], "stats": {"expected_positive_calls": 3, "observed_calls": 3, "messages": {"sent": 8, "missing": 0, "duplicate": 0, "unsent": 0}, "causes": {"calls": 3, "rx_ok": 3, "cross_host": 3, "same_step": 3, "version_ok": 3}}} 
+nc_raw.py {"original": "PASS", "ok": true, "detected": 10, "applied": 10} 
+{"run_id": "final-d-contract_CT1-r3-20261030-232807", "domain": 106, "exit_codes": {"driver": 0, "d-producer": 0, "d-sm": 0, "d-agent-manager1": 0}}
+23:28:12 python3 live/run.py --arm a --scenario contract/CT1 --expected contract/CT1 --rep 3 --label final --out-root live/runs/final-9ec4e836cb48/a2 --expect-snapshot cs-core-9ec4e836cb48
+judge.py {"verdict": "PASS", "compared": 8, "mismatches": 0, "problems": [], "stats": {"expected_positive_calls": 3, "observed_calls": 3, "messages": {"sent": 32, "missing": 0, "duplicate": 0, "unsent": 0}, "causes": {"calls": 3, "rx_ok": 3, "cross_host": 3, "same_step": 3, "version_ok": 3}}} 
+nc_raw.py {"original": "PASS", "ok": true, "detected": 10, "applied": 10} 
+{"run_id": "final-a-contract_CT1-r3-20261030-232812", "domain": 113, "exit_codes": {"driver": 0, "a-producer": 0, "a-ltm": 0, "a-agent-manager1": 0}}
+23:28:17 python3 live/run.py --arm d --scenario contract/CT2 --expected contract/CT2 --rep 3 --label final --out-root live/runs/final-9ec4e836cb48/a2 --expect-snapshot cs-core-9ec4e836cb48
+judge.py {"verdict": "PASS", "compared": 4, "mismatches": 0, "problems": [], "stats": {"expected_positive_calls": 2, "observed_calls": 2, "messages": {"sent": 5, "missing": 0, "duplicate": 0, "unsent": 0}, "causes": {"calls": 2, "rx_ok": 2, "cross_host": 2, "same_step": 2, "version_ok": 2}}} 
+nc_raw.py {"original": "PASS", "ok": true, "detected": 10, "applied": 10} 
+{"run_id": "final-d-contract_CT2-r3-20261030-232817", "domain": 196, "exit_codes": {"driver": 0, "d-producer": 0, "d-sm": 0, "d-agent-manager1": 0}}
+23:28:22 python3 live/run.py --arm a --scenario contract/CT2 --expected contract/CT2 --rep 3 --label final --out-root live/runs/final-9ec4e836cb48/a2 --expect-snapshot cs-core-9ec4e836cb48
+judge.py {"verdict": "PASS", "compared": 4, "mismatches": 0, "problems": [], "stats": {"expected_positive_calls": 2, "observed_calls": 2, "messages": {"sent": 13, "missing": 0, "duplicate": 0, "unsent": 0}, "causes": {"calls": 2, "rx_ok": 2, "cross_host": 2, "same_step": 2, "version_ok": 2}}} 
+nc_raw.py {"original": "PASS", "ok": true, "detected": 10, "applied": 10} 
+{"run_id": "final-a-contract_CT2-r3-20261030-232822", "domain": 151, "exit_codes": {"driver": 0, "a-producer": 0, "a-ltm": 0, "a-agent-manager1": 0}}
+23:28:27 python3 live/run.py --arm d --scenario contract/CT3 --expected contract/CT3 --rep 3 --label final --out-root live/runs/final-9ec4e836cb48/a2 --expect-snapshot cs-core-9ec4e836cb48
+judge.py {"verdict": "PASS", "compared": 10, "mismatches": 0, "problems": [], "stats": {"expected_positive_calls": 5, "observed_calls": 5, "messages": {"sent": 12, "missing": 0, "duplicate": 0, "unsent": 0}, "causes": {"calls": 5, "rx_ok": 5, "cross_host": 5, "same_step": 5, "version_ok": 5}}} 
+nc_raw.py {"original": "PASS", "ok": true, "detected": 10, "applied": 10} 
+{"run_id": "final-d-contract_CT3-r3-20261030-232827", "domain": 192, "exit_codes": {"driver": 0, "d-producer": 0, "d-sm": 0, "d-agent-manager1": 0}}
+23:28:33 python3 live/run.py --arm a --scenario contract/CT3 --expected contract/CT3 --rep 3 --label final --out-root live/runs/final-9ec4e836cb48/a2 --expect-snapshot cs-core-9ec4e836cb48
+judge.py {"verdict": "PASS", "compared": 10, "mismatches": 0, "problems": [], "stats": {"expected_positive_calls": 5, "observed_calls": 5, "messages": {"sent": 37, "missing": 0, "duplicate": 0, "unsent": 0}, "causes": {"calls": 5, "rx_ok": 5, "cross_host": 5, "same_step": 5, "version_ok": 5}}} 
+nc_raw.py {"original": "PASS", "ok": true, "detected": 10, "applied": 10} 
+{"run_id": "final-a-contract_CT3-r3-20261030-232833", "domain": 155, "exit_codes": {"driver": 0, "a-producer": 0, "a-ltm": 0, "a-agent-manager1": 0}}
+23:28:38 python3 live/run.py --arm d --scenario contract/CT4 --expected contract/CT4 --rep 3 --label final --out-root live/runs/final-9ec4e836cb48/a2 --expect-snapshot cs-core-9ec4e836cb48
+judge.py {"verdict": "PASS", "compared": 6, "mismatches": 0, "problems": [], "stats": {"expected_positive_calls": 2, "observed_calls": 2, "messages": {"sent": 26, "missing": 0, "duplicate": 0, "unsent": 0}, "causes": {"calls": 2, "rx_ok": 2, "cross_host": 2, "same_step": 2, "version_ok": 2}}} 
+nc_raw.py {"original": "PASS", "ok": true, "detected": 10, "applied": 10} 
+{"run_id": "final-d-contract_CT4-r3-20261030-232838", "domain": 189, "exit_codes": {"driver": 0, "d-producer": 0, "d-sm": 0, "d-agent-manager1": 0}}
+23:28:43 python3 live/run.py --arm a --scenario contract/CT4 --expected contract/CT4 --rep 3 --label final --out-root live/runs/final-9ec4e836cb48/a2 --expect-snapshot cs-core-9ec4e836cb48
+judge.py {"verdict": "PASS", "compared": 6, "mismatches": 0, "problems": [], "stats": {"expected_positive_calls": 2, "observed_calls": 2, "messages": {"sent": 30, "missing": 0, "duplicate": 0, "unsent": 0}, "causes": {"calls": 2, "rx_ok": 2, "cross_host": 2, "same_step": 2, "version_ok": 2}}} 
+nc_raw.py {"original": "PASS", "ok": true, "detected": 10, "applied": 10} 
+{"run_id": "final-a-contract_CT4-r3-20261030-232843", "domain": 115, "exit_codes": {"driver": 0, "a-producer": 0, "a-ltm": 0, "a-agent-manager1": 0}}
+23:28:48 python3 live/run.py --arm d --scenario contract/CT5 --expected contract/CT5 --rep 3 --label final --out-root live/runs/final-9ec4e836cb48/a2 --expect-snapshot cs-core-9ec4e836cb48
+judge.py {"verdict": "PASS", "compared": 8, "mismatches": 0, "problems": [], "stats": {"expected_positive_calls": 2, "observed_calls": 2, "messages": {"sent": 25, "missing": 0, "duplicate": 0, "unsent": 0}, "causes": {"calls": 2, "rx_ok": 2, "cross_host": 2, "same_step": 2, "version_ok": 2}}} 
+nc_raw.py {"original": "PASS", "ok": true, "detected": 10, "applied": 10} 
+{"run_id": "final-d-contract_CT5-r3-20261030-232848", "domain": 159, "exit_codes": {"driver": 0, "d-producer": 0, "d-sm": 0, "d-agent-manager1": 0}}
+23:28:53 python3 live/run.py --arm a --scenario contract/CT5 --expected contract/CT5 --rep 3 --label final --out-root live/runs/final-9ec4e836cb48/a2 --expect-snapshot cs-core-9ec4e836cb48
+judge.py {"verdict": "PASS", "compared": 8, "mismatches": 0, "problems": [], "stats": {"expected_positive_calls": 2, "observed_calls": 2, "messages": {"sent": 37, "missing": 0, "duplicate": 0, "unsent": 0}, "causes": {"calls": 2, "rx_ok": 2, "cross_host": 2, "same_step": 2, "version_ok": 2}}} 
+nc_raw.py {"original": "PASS", "ok": true, "detected": 10, "applied": 10} 
+{"run_id": "final-a-contract_CT5-r3-20261030-232853", "domain": 150, "exit_codes": {"driver": 0, "a-producer": 0, "a-ltm": 0, "a-agent-manager1": 0}}
+23:28:58 python3 live/run.py --arm d --scenario contract/CT6 --expected contract/CT6 --rep 3 --label final --out-root live/runs/final-9ec4e836cb48/a2 --expect-snapshot cs-core-9ec4e836cb48
+judge.py {"verdict": "PASS", "compared": 6, "mismatches": 0, "problems": [], "stats": {"expected_positive_calls": 3, "observed_calls": 3, "messages": {"sent": 8, "missing": 0, "duplicate": 0, "unsent": 0}, "causes": {"calls": 3, "rx_ok": 3, "cross_host": 3, "same_step": 3, "version_ok": 3}}} 
+nc_raw.py {"original": "PASS", "ok": true, "detected": 10, "applied": 10} 
+{"run_id": "final-d-contract_CT6-r3-20261030-232858", "domain": 178, "exit_codes": {"driver": 0, "d-producer": 0, "d-sm": 0, "d-agent-manager1": 0}}
+23:29:03 python3 live/run.py --arm a --scenario contract/CT6 --expected contract/CT6 --rep 3 --label final --out-root live/runs/final-9ec4e836cb48/a2 --expect-snapshot cs-core-9ec4e836cb48
+judge.py {"verdict": "PASS", "compared": 6, "mismatches": 0, "problems": [], "stats": {"expected_positive_calls": 3, "observed_calls": 3, "messages": {"sent": 28, "missing": 0, "duplicate": 0, "unsent": 0}, "causes": {"calls": 3, "rx_ok": 3, "cross_host": 3, "same_step": 3, "version_ok": 3}}} 
+nc_raw.py {"original": "PASS", "ok": true, "detected": 10, "applied": 10} 
+{"run_id": "final-a-contract_CT6-r3-20261030-232903", "domain": 109, "exit_codes": {"driver": 0, "a-producer": 0, "a-ltm": 0, "a-agent-manager1": 0}}
+23:29:08 python3 live/run.py --arm d --scenario contract/CT7-cfg0 --expected contract/CT7-cfg0 --rep 3 --label final --out-root live/runs/final-9ec4e836cb48/a2 --expect-snapshot cs-core-9ec4e836cb48
+judge.py {"verdict": "PASS", "compared": 6, "mismatches": 0, "problems": [], "stats": {"expected_positive_calls": 0, "observed_calls": 0, "messages": {"sent": 3, "missing": 0, "duplicate": 0, "unsent": 0}, "causes": {"calls": 0, "rx_ok": 0, "cross_host": 0, "same_step": 0, "version_ok": 0}}} 
+nc_raw.py {"original": "PASS", "ok": true, "detected": 5, "applied": 5} 
+{"run_id": "final-d-contract_CT7-cfg0-r3-20261030-232909", "domain": 192, "exit_codes": {"driver": 0, "d-producer": 0, "d-sm": 0, "d-agent-manager1": 0}}
+23:29:14 python3 live/run.py --arm a --scenario contract/CT7-cfg0 --expected contract/CT7-cfg0 --rep 3 --label final --out-root live/runs/final-9ec4e836cb48/a2 --expect-snapshot cs-core-9ec4e836cb48
+judge.py {"verdict": "PASS", "compared": 6, "mismatches": 0, "problems": [], "stats": {"expected_positive_calls": 0, "observed_calls": 0, "messages": {"sent": 3, "missing": 0, "duplicate": 0, "unsent": 0}, "causes": {"calls": 0, "rx_ok": 0, "cross_host": 0, "same_step": 0, "version_ok": 0}}} 
+nc_raw.py {"original": "PASS", "ok": true, "detected": 5, "applied": 5} 
+{"run_id": "final-a-contract_CT7-cfg0-r3-20261030-232914", "domain": 195, "exit_codes": {"driver": 0, "a-producer": 0, "a-ltm": 0, "a-agent-manager1": 0}}
+23:29:19 python3 live/run.py --arm d --scenario contract/CT7-cfg1 --expected contract/CT7-cfg1 --rep 3 --label final --out-root live/runs/final-9ec4e836cb48/a2 --expect-snapshot cs-core-9ec4e836cb48
+judge.py {"verdict": "PASS", "compared": 6, "mismatches": 0, "problems": [], "stats": {"expected_positive_calls": 3, "observed_calls": 3, "messages": {"sent": 6, "missing": 0, "duplicate": 0, "unsent": 0}, "causes": {"calls": 3, "rx_ok": 3, "cross_host": 3, "same_step": 3, "version_ok": 3}}} 
+nc_raw.py {"original": "PASS", "ok": true, "detected": 10, "applied": 10} 
+{"run_id": "final-d-contract_CT7-cfg1-r3-20261030-232919", "domain": 191, "exit_codes": {"driver": 0, "d-producer": 0, "d-sm": 0, "d-agent-manager1": 0}}
+23:29:24 python3 live/run.py --arm a --scenario contract/CT7-cfg1 --expected contract/CT7-cfg1 --rep 3 --label final --out-root live/runs/final-9ec4e836cb48/a2 --expect-snapshot cs-core-9ec4e836cb48
+judge.py {"verdict": "PASS", "compared": 6, "mismatches": 0, "problems": [], "stats": {"expected_positive_calls": 3, "observed_calls": 3, "messages": {"sent": 28, "missing": 0, "duplicate": 0, "unsent": 0}, "causes": {"calls": 3, "rx_ok": 3, "cross_host": 3, "same_step": 3, "version_ok": 3}}} 
+nc_raw.py {"original": "PASS", "ok": true, "detected": 10, "applied": 10} 
+{"run_id": "final-a-contract_CT7-cfg1-r3-20261030-232924", "domain": 107, "exit_codes": {"driver": 0, "a-producer": 0, "a-ltm": 0, "a-agent-manager1": 0}}
+23:29:29 python3 live/run.py --arm d --scenario K --expected K --rep 3 --label final --out-root live/runs/final-9ec4e836cb48/a2 --expect-snapshot cs-core-9ec4e836cb48
+judge.py {"verdict": "PASS", "compared": 31, "mismatches": 0, "problems": [], "stats": {"expected_positive_calls": 7, "observed_calls": 7, "messages": {"sent": 16, "missing": 0, "duplicate": 0, "unsent": 0}, "causes": {"calls": 7, "rx_ok": 7, "cross_host": 7, "same_step": 7, "version_ok": 7}}} 
+nc_raw.py {"original": "PASS", "ok": true, "detected": 10, "applied": 10} 
+{"run_id": "final-d-K-r3-20261030-232929", "domain": 126, "exit_codes": {"driver": 0, "d-producer": 0, "d-sm": 0, "d-agent-tech1": 0, "d-agent-watch1": 0, "d-agent-auditor1": 0}}
+23:29:35 python3 live/run.py --arm a --scenario K --expected K --rep 3 --label final --out-root live/runs/final-9ec4e836cb48/a2 --expect-snapshot cs-core-9ec4e836cb48
+judge.py {"verdict": "PASS", "compared": 31, "mismatches": 0, "problems": [], "stats": {"expected_positive_calls": 7, "observed_calls": 7, "messages": {"sent": 65, "missing": 0, "duplicate": 0, "unsent": 0}, "causes": {"calls": 7, "rx_ok": 7, "cross_host": 7, "same_step": 7, "version_ok": 7}}} 
+nc_raw.py {"original": "PASS", "ok": true, "detected": 10, "applied": 10} 
+{"run_id": "final-a-K-r3-20261030-232935", "domain": 146, "exit_codes": {"driver": 0, "a-producer": 0, "a-ltm": 0, "a-agent-tech1": 0, "a-agent-watch1": 0, "a-agent-auditor1": 0}}
+23:29:41 python3 live/run.py --arm d --scenario T --expected T --rep 3 --label final --out-root live/runs/final-9ec4e836cb48/a2 --expect-snapshot cs-core-9ec4e836cb48
+judge.py {"verdict": "PASS", "compared": 24, "mismatches": 0, "problems": [], "stats": {"expected_positive_calls": 2, "observed_calls": 2, "messages": {"sent": 11, "missing": 0, "duplicate": 0, "unsent": 0}, "causes": {"calls": 2, "rx_ok": 2, "cross_host": 2, "same_step": 2, "version_ok": 2}}} 
+nc_raw.py {"original": "PASS", "ok": true, "detected": 10, "applied": 10} 
+{"run_id": "final-d-T-r3-20261030-232941", "domain": 163, "exit_codes": {"driver": 0, "d-producer": 0, "d-sm": 0, "d-agent-manager1": 0, "d-agent-auditor1": 0}}
+23:29:47 python3 live/run.py --arm a --scenario T --expected T --rep 3 --label final --out-root live/runs/final-9ec4e836cb48/a2 --expect-snapshot cs-core-9ec4e836cb48
+judge.py {"verdict": "PASS", "compared": 24, "mismatches": 0, "problems": [], "stats": {"expected_positive_calls": 2, "observed_calls": 2, "messages": {"sent": 51, "missing": 0, "duplicate": 0, "unsent": 0}, "causes": {"calls": 2, "rx_ok": 2, "cross_host": 2, "same_step": 2, "version_ok": 2}}} 
+nc_raw.py {"original": "PASS", "ok": true, "detected": 10, "applied": 10} 
+{"run_id": "final-a-T-r3-20261030-232947", "domain": 113, "exit_codes": {"driver": 0, "a-producer": 0, "a-ltm": 0, "a-agent-manager1": 0, "a-agent-auditor1": 0}}
+23:29:52 python3 live/run.py --arm d --scenario P1 --expected P1 --rep 3 --label final --out-root live/runs/final-9ec4e836cb48/a2 --expect-snapshot cs-core-9ec4e836cb48
+judge.py {"verdict": "PASS", "compared": 16, "mismatches": 0, "problems": [], "stats": {"expected_positive_calls": 7, "observed_calls": 7, "messages": {"sent": 44, "missing": 0, "duplicate": 0, "unsent": 0}, "causes": {"calls": 7, "rx_ok": 7, "cross_host": 7, "same_step": 7, "version_ok": 7}}} 
+nc_raw.py {"original": "PASS", "ok": true, "detected": 10, "applied": 10} 
+{"run_id": "final-d-P1-r3-20261030-232952", "domain": 147, "exit_codes": {"driver": 0, "d-producer": 0, "d-sm": 0, "d-agent-manager1": 0}}
+23:29:59 python3 live/run.py --arm a --scenario P1 --expected P1 --rep 3 --label final --out-root live/runs/final-9ec4e836cb48/a2 --expect-snapshot cs-core-9ec4e836cb48
+judge.py {"verdict": "PASS", "compared": 16, "mismatches": 0, "problems": [], "stats": {"expected_positive_calls": 7, "observed_calls": 7, "messages": {"sent": 91, "missing": 0, "duplicate": 0, "unsent": 0}, "causes": {"calls": 7, "rx_ok": 7, "cross_host": 7, "same_step": 7, "version_ok": 7}}} 
+nc_raw.py {"original": "PASS", "ok": true, "detected": 10, "applied": 10} 
+{"run_id": "final-a-P1-r3-20261030-232959", "domain": 181, "exit_codes": {"driver": 0, "a-producer": 0, "a-ltm": 0, "a-agent-manager1": 0}}
+# live runs summary: live/runs/final-9ec4e836cb48/a2
+
+runs 66, judge PASS 66, raw NC ok 66, disk 15040 KiB
+failed runs: 0

@@ -1,0 +1,15 @@
+prefix logistics: <http://ai.uos.ac.kr/logistics-ontology#>;
+
+role BalanceWheeledWatch {
+  reads {
+    logistics:BipedBalance($robot, $tilt) {
+      $robot == logistics:Wheeled;
+    }
+  }
+}
+
+role Gyro {
+  changes {
+    logistics:BipedBalance($robot, $tilt);
+  }
+}

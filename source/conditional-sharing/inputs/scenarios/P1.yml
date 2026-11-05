@@ -1,0 +1,24 @@
+id: P1
+title: fixed plan validation - independent decision schedule over one event trace and one model change
+d: {model: M1, binding: b-main}
+a: {initial: initial-main-v1}
+observe: [manager1]
+decider: manager1
+robots: [biped1, humanoid1, wheeled1, diff1]
+steps:
+- {id: q01, report: [biped1, RobotStatus, biped1, {battery: 31, zone: storage}]}
+- {id: q02, report: [wheeled1, RobotStatus, wheeled1, {battery: 25, zone: storage}]}
+- {id: q03, report: [diff1, RobotStatus, diff1, {battery: 19, zone: storage}]}
+- {id: q04, report: [humanoid1, RobotStatus, humanoid1, {battery: 45, zone: storage}]}
+- {id: D1, decide: true}
+- {id: q05, report: [biped1, RobotStatus, biped1, {battery: 30, zone: storage}]}
+- {id: q06, report: [cam1, RobotStopped, wheeled1, {elapsedSeconds: 299}]}
+- {id: D2, decide: true}
+- {id: q07, change: {id: C1, d: {model: M2, binding: b-main}, a: C1}}
+- {id: D3, decide: true}
+- {id: q08, report: [cam1, RobotStopped, wheeled1, {elapsedSeconds: 300}]}
+- {id: q09, report: [biped1, RobotStatus, biped1, {battery: 31, zone: storage}]}
+- {id: D4, decide: true}
+- {id: q10, delete: [cam1, RobotStopped, wheeled1]}
+- {id: q11, report: [diff1, RobotStatus, diff1, {battery: 31, zone: storage}]}
+- {id: D5, decide: true}

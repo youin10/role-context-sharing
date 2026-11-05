@@ -1,0 +1,2 @@
+FAIL s04 calls:manager1 expected [["retract", "RobotStatus", "biped1", null]] observed [["assert", "RobotStatus", "biped1", null]]
+FAIL 50 rows, 1 failing

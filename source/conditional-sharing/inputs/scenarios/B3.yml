@@ -1,0 +1,11 @@
+id: B3
+title: role combination, residual support 2 -> 1 -> 0 -> 1
+d: {model: M1, binding: b-res2}
+a: {initial: initial-res}
+observe: [manager1]
+steps:
+- {id: r01, report: [biped1, RobotStatus, biped1, {battery: 25, zone: storage}]}
+- {id: r02, report: [wheeled1, RobotStatus, wheeled1, {battery: 35, zone: storage}]}
+- {id: r03, change: {id: R1, d: {model: M1, binding: b-res1}, a: R1}}
+- {id: r04, change: {id: R2, d: {model: M1, binding: b-res0}, a: R2}}
+- {id: r05, change: {id: R3, d: {model: M1, binding: b-res1}, a: R3}}

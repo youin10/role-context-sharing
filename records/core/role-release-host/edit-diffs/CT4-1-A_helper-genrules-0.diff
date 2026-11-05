@@ -1,0 +1,7 @@
+--- a-helper/contract/plans/ct4-0/Manager.yml
++++ a-helper/contract/plans/ct4-1/Manager.yml
+@@ -7,0 +8,4 @@
++- (rule (fact (RobotStatus $robot $battery $zone)) (= $robot "biped1") (<= $battery 30) --> (notify (RobotStatus $robot $battery $zone)))
++- (rule (fact (RobotStatus $robot $battery $zone)) (= $robot "hum1") (<= $battery 30) --> (notify (RobotStatus $robot $battery $zone)))
++- (rule (fact (RobotStatus $robot $battery $zone)) (= $robot "humanoid1") (<= $battery 30) --> (notify (RobotStatus $robot $battery $zone)))
++- (rule (fact (RobotStatus $robot $battery $zone)) (= $robot "hybrid1") (<= $battery 30) --> (notify (RobotStatus $robot $battery $zone)))

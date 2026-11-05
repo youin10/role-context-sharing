@@ -1,0 +1,166 @@
+{
+ "schema": "cslive-judge/2",
+ "verdict": "PASS",
+ "arm": "a",
+ "scenario": "CT4",
+ "roster": [
+  "driver",
+  "a-ltm",
+  "a-producer",
+  "a-agent-manager1"
+ ],
+ "hosts": {
+  "driver": "driver",
+  "a-ltm": "a-ltm",
+  "a-producer": "a-producer",
+  "a-agent-manager1": "a-agent-manager1"
+ },
+ "problems": [],
+ "compared": 6,
+ "mismatches": [],
+ "rows": [
+  {
+   "item": "calls",
+   "step": "s1",
+   "agent": "manager1",
+   "ok": true,
+   "want": [],
+   "got": []
+  },
+  {
+   "item": "calls",
+   "step": "s2",
+   "agent": "manager1",
+   "ok": true,
+   "want": [],
+   "got": []
+  },
+  {
+   "item": "calls",
+   "step": "c1",
+   "agent": "manager1",
+   "ok": true,
+   "want": [
+    [
+     "assert",
+     "RobotStatus",
+     "biped1",
+     {
+      "battery": 25,
+      "zone": "storage"
+     }
+    ]
+   ],
+   "got": [
+    [
+     "assert",
+     "RobotStatus",
+     "biped1",
+     {
+      "battery": 25,
+      "zone": "storage"
+     }
+    ]
+   ]
+  },
+  {
+   "item": "calls",
+   "step": "c2",
+   "agent": "manager1",
+   "ok": true,
+   "want": [
+    [
+     "retract",
+     "RobotStatus",
+     "biped1",
+     null
+    ]
+   ],
+   "got": [
+    [
+     "retract",
+     "RobotStatus",
+     "biped1",
+     null
+    ]
+   ]
+  },
+  {
+   "item": "view",
+   "step": "c1",
+   "agent": "manager1",
+   "ok": true,
+   "want": {
+    "RobotStatus/biped1": {
+     "battery": 25,
+     "zone": "storage"
+    }
+   },
+   "got": {
+    "RobotStatus/biped1": {
+     "battery": 25,
+     "zone": "storage"
+    }
+   }
+  },
+  {
+   "item": "view",
+   "step": "c2",
+   "agent": "manager1",
+   "ok": true,
+   "want": {},
+   "got": {}
+  }
+ ],
+ "stats": {
+  "expected_positive_calls": 2,
+  "observed_calls": 2,
+  "by_kind": {
+   "assert": 1,
+   "update": 0,
+   "retract": 1
+  },
+  "decisions": 0,
+  "rejected": 0,
+  "messages": {
+   "sent": 30,
+   "missing": 0,
+   "duplicate": 0,
+   "unsent": 0
+  },
+  "causes": {
+   "calls": 2,
+   "rx_ok": 2,
+   "cross_host": 2,
+   "same_step": 2,
+   "version_ok": 2
+  },
+  "settle": [
+   {
+    "step": "init",
+    "dt_s": 0.1141,
+    "probes": 3
+   },
+   {
+    "step": "s1",
+    "dt_s": 0.1093,
+    "probes": 3
+   },
+   {
+    "step": "s2",
+    "dt_s": 0.1135,
+    "probes": 3
+   },
+   {
+    "step": "c1",
+    "dt_s": 0.1105,
+    "probes": 3
+   },
+   {
+    "step": "c2",
+    "dt_s": 0.1198,
+    "probes": 3
+   }
+  ]
+ }
+}

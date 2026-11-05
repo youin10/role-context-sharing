@@ -1,0 +1,4 @@
+FAIL - last-record-is-end expected "end" observed "step"
+FAIL - end-count expected 1 observed 0
+FAIL - end-error expected null observed "missing end"
+FAIL 50 rows, 3 failing

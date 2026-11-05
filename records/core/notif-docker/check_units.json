@@ -1,0 +1,226 @@
+[
+ {
+  "id": "U01 subClassOf cycle refused",
+  "expected": "error:ValueError",
+  "observed": "error:ValueError",
+  "pass": true
+ },
+ {
+  "id": "U02 undeclared class of an individual refused",
+  "expected": "error:ValueError",
+  "observed": "error:ValueError",
+  "pass": true
+ },
+ {
+  "id": "U03 transitive membership",
+  "expected": [
+   "A",
+   "B",
+   "C"
+  ],
+  "observed": [
+   "A",
+   "B",
+   "C"
+  ],
+  "pass": true
+ },
+ {
+  "id": "U04 multiple membership is a union",
+  "expected": [
+   "A",
+   "B"
+  ],
+  "observed": [
+   "A",
+   "B"
+  ],
+  "pass": true
+ },
+ {
+  "id": "U05 oracle holds: humanoid1 30 under Biped<=30 (key visible)",
+  "expected": true,
+  "observed": true,
+  "pass": true
+ },
+ {
+  "id": "U06 oracle holds: diff1 25 under Biped<=30",
+  "expected": false,
+  "observed": false,
+  "pass": true
+ },
+ {
+  "id": "U07 oracle holds: identity on the key",
+  "expected": true,
+  "observed": true,
+  "pass": true
+ },
+ {
+  "id": "U08 oracle holds without key keeps the old value-only behaviour",
+  "expected": true,
+  "observed": true,
+  "pass": true
+ },
+ {
+  "id": "U09 oracle holds: !isa on a registered non-Biped",
+  "expected": true,
+  "observed": true,
+  "pass": true
+ },
+ {
+  "id": "U10 oracle holds: unregistered individual is not treated as a value",
+  "expected": "error:KeyError",
+  "observed": "error:KeyError",
+  "pass": true
+ },
+ {
+  "id": "N01 entry: first supply asserts",
+  "expected": [
+   "assert:biped1"
+  ],
+  "observed": [
+   "assert:biped1"
+  ],
+  "pass": true
+ },
+ {
+  "id": "N02 supplied fact updated inside the condition",
+  "expected": [
+   "update:biped1"
+  ],
+  "observed": [
+   "update:biped1"
+  ],
+  "pass": true
+ },
+ {
+  "id": "N03 duplicate of the last message: no call",
+  "expected": [],
+  "observed": [],
+  "pass": true
+ },
+ {
+  "id": "N04 exit retracts; the stored value stays",
+  "expected": [
+   [
+    "retract:biped1"
+   ],
+   45
+  ],
+  "observed": [
+   [
+    "retract:biped1"
+   ],
+   45
+  ],
+  "pass": true
+ },
+ {
+  "id": "N05 re-entry asserts again",
+  "expected": [
+   "assert:biped1"
+  ],
+  "observed": [
+   "assert:biped1"
+  ],
+  "pass": true
+ },
+ {
+  "id": "N06 report outside the condition for an unsupplied fact: no call",
+  "expected": [],
+  "observed": [],
+  "pass": true
+ },
+ {
+  "id": "N07 redeploy that keeps the requirement (FleetMonitor remains): no call",
+  "expected": [],
+  "observed": [],
+  "pass": true
+ },
+ {
+  "id": "N08 last role released: retract, stored value stays",
+  "expected": [
+   [
+    "retract:biped1"
+   ],
+   38
+  ],
+  "observed": [
+   [
+    "retract:biped1"
+   ],
+   38
+  ],
+  "pass": true
+ },
+ {
+  "id": "N09 retransmitted transition batch after it was applied: no call",
+  "expected": [],
+  "observed": [],
+  "pass": true
+ },
+ {
+  "id": "N10 view after the release is empty",
+  "expected": {},
+  "observed": {},
+  "pass": true
+ },
+ {
+  "id": "N11 restart resync: held fact updated, new eligible fact asserted, deleted held fact retracted",
+  "expected": [
+   "update:biped1",
+   "assert:wheel1",
+   "retract:hum1"
+  ],
+  "observed": [
+   "update:biped1",
+   "assert:wheel1",
+   "retract:hum1"
+  ],
+  "pass": true
+ },
+ {
+  "id": "N12 view after resync",
+  "expected": {
+   "RobotStatus/biped1": {
+    "battery": 28,
+    "zone": "storage"
+   },
+   "RobotStatus/wheel1": {
+    "battery": 20,
+    "zone": "storage"
+   }
+  },
+  "observed": {
+   "RobotStatus/biped1": {
+    "battery": 28,
+    "zone": "storage"
+   },
+   "RobotStatus/wheel1": {
+    "battery": 20,
+    "zone": "storage"
+   }
+  },
+  "pass": true
+ },
+ {
+  "id": "N13 A: duplicate notify of the same report changes nothing",
+  "expected": [
+   [
+    "assert"
+   ],
+   [
+    "assert"
+   ]
+  ],
+  "observed": [
+   [
+    "assert"
+   ],
+   [
+    "assert"
+   ]
+  ],
+  "pass": true
+ }
+]

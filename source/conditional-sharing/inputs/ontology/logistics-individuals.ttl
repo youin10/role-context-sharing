@@ -1,0 +1,14 @@
+# Individual types (rdf:type facts), separate from predicate signatures. Fixed during a run.
+# The individual ID is the local name (e.g. biped1), the value carried in the instance / entity fields.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix : <http://ai.uos.ac.kr/logistics-ontology#> .
+
+:biped1 a :Biped .
+:humanoid1 a :Humanoid .
+:wheeled1 a :Wheeled .
+:diff1 a :DifferentialDrive .
+:cargo1 a :Cargo .
+:hybrid1 a :Biped , :Wheeled .
+# IDs used by the independent contract (traceability/CONTRACT-SPECIFICATION.md §2)
+:hum1 a :Humanoid .
+:wheel1 a :Wheeled .

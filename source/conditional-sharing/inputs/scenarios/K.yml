@@ -1,0 +1,15 @@
+id: K
+title: individual-constant key condition, class negation, entity-valued non-key field
+d: {model: M1, binding: b-main}
+a: {initial: initial-main-v1}
+observe: [tech1, watch1, auditor1]
+steps:
+- {id: k01, report: [biped1, RobotStatus, biped1, {battery: 50, zone: storage}]}
+- {id: k02, report: [wheeled1, RobotStatus, wheeled1, {battery: 50, zone: storage}]}
+- {id: k03, report: [humanoid1, RobotStatus, humanoid1, {battery: 50, zone: storage}]}
+- {id: k04, report: [diff1, RobotStatus, diff1, {battery: 50, zone: storage}]}
+- {id: k05, report: [wheeled1, CargoCarriedBy, cargo1, {robot: wheeled1}]}
+- {id: k06, report: [humanoid1, CargoCarriedBy, cargo1, {robot: humanoid1}]}
+- {id: k07, report: [wheeled1, CargoCarriedBy, cargo1, {robot: wheeled1}]}
+- {id: k08, report: [biped1, CargoCarriedBy, cargo1, {robot: biped1}]}
+- {id: k09, delete: [biped1, CargoCarriedBy, cargo1]}

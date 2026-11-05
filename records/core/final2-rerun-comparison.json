@@ -1,0 +1,20 @@
+{
+ "runs": [
+  "results/final2-host",
+  "results/final2-docker"
+ ],
+ "files": 166,
+ "pairs": [
+  {
+   "a": "results/final2-host",
+   "b": "results/final2-docker",
+   "byte_different": [
+    "raw/negative/T__D__no-validation.jsonl",
+    "raw/negative/X2__D__relation-only-check.jsonl"
+   ],
+   "different_after_trace_normalisation": [],
+   "verdict_differences": [],
+   "missing_in_b": []
+  }
+ ]
+}

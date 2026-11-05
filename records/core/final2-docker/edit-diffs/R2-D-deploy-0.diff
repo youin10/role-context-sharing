@@ -1,0 +1,8 @@
+--- d/b-res1.yml
++++ d/b-res0.yml
+@@ -2 +2 @@
+-cfg: res1
++cfg: res0
+@@ -4 +4 @@
+-  manager1: [Manager, Dispatcher]
++  manager1: [Dispatcher]

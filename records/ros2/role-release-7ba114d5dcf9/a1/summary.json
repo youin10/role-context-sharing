@@ -1,0 +1,160 @@
+{
+ "root": "live/runs/role-release-7ba114d5dcf9/a1",
+ "runs": 6,
+ "pass": 6,
+ "nc_ok": 6,
+ "core_snapshots": [
+  "7ba114d5dcf99d85a05e238b68cbe0dfd307074d44186749ec2c6151c51d8d0d"
+ ],
+ "live_snapshots": [
+  "183d8d3be19008b4d7058759c3a90deab4e3207fdb7f6aa87c59ed8c7f4b8fb4"
+ ],
+ "environments": [
+  [
+   "sha256:c99b70591300f28b63b8ed3f77f753039def35d1b0e13f705ece01166ffa4498",
+   "rmw_fastrtps_cpp",
+   [
+    "3.12.3 6.0.1",
+    "ros-jazzy-fastrtps\t2.14.7-1noble.20260911.035410",
+    "ros-jazzy-rclpy\t7.1.12-1noble.20260911.111116",
+    "ros-jazzy-rmw-fastrtps-cpp\t8.4.4-1noble.20260911.054759",
+    "RMW=rmw_fastrtps_cpp"
+   ]
+  ]
+ ],
+ "disk_kib": 1052,
+ "rows": [
+  {
+   "scenario": "contract/CT5",
+   "arm": "a",
+   "runs": 3,
+   "pass": 3,
+   "nc_ok": 3,
+   "nc_detected": [
+    "9/9",
+    "9/9",
+    "9/9"
+   ],
+   "exit_all_zero": true,
+   "reps_identical_observation": true,
+   "same_inputs": true,
+   "expected_positive_calls": 2,
+   "observed_calls": [
+    2,
+    2,
+    2
+   ],
+   "by_kind": {
+    "deliver": 1,
+    "delete": 0,
+    "current": 0,
+    "revoke": 1
+   },
+   "decisions": [
+    0,
+    0,
+    0
+   ],
+   "rejected": [
+    0,
+    0,
+    0
+   ],
+   "messages_sent": [
+    37,
+    37,
+    37
+   ],
+   "missing_dup_unsent": [
+    [
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0
+    ]
+   ],
+   "settle_dt_s_median": 0.11349999999999999,
+   "settle_dt_s_max": 0.1178,
+   "wall_s": [
+    4.42,
+    3.91,
+    3.98
+   ]
+  },
+  {
+   "scenario": "contract/CT5",
+   "arm": "d",
+   "runs": 3,
+   "pass": 3,
+   "nc_ok": 3,
+   "nc_detected": [
+    "9/9",
+    "9/9",
+    "9/9"
+   ],
+   "exit_all_zero": true,
+   "reps_identical_observation": true,
+   "same_inputs": true,
+   "expected_positive_calls": 2,
+   "observed_calls": [
+    2,
+    2,
+    2
+   ],
+   "by_kind": {
+    "deliver": 1,
+    "delete": 0,
+    "current": 0,
+    "revoke": 1
+   },
+   "decisions": [
+    0,
+    0,
+    0
+   ],
+   "rejected": [
+    0,
+    0,
+    0
+   ],
+   "messages_sent": [
+    25,
+    25,
+    25
+   ],
+   "missing_dup_unsent": [
+    [
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0
+    ]
+   ],
+   "settle_dt_s_median": 0.10894999999999999,
+   "settle_dt_s_max": 0.1149,
+   "wall_s": [
+    3.88,
+    4.63,
+    3.91
+   ]
+  }
+ ]
+}

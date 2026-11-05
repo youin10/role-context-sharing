@@ -1,0 +1,593 @@
+{
+ "environment": {
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "platform": "Linux-7.0.14-linuxkit-aarch64-with-glibc2.39",
+  "reps": 5,
+  "cpu_count": 10,
+  "container": true,
+  "argv": [
+   "tools/sweep.py",
+   "results/role-release-docker/sweep",
+   "5"
+  ],
+  "note": "shared host, other processes not controlled; times are environment-bound exploration"
+ },
+ "configs": [
+  {
+   "config": "R1-M4-C4",
+   "dims": {
+    "R": 1,
+    "M": 4,
+    "C": 4
+   },
+   "expected_calls_per_consumer": 3,
+   "D": {
+    "correct_all_reps": true,
+    "counts": {
+     "events": 4,
+     "sm_messages_events": 12,
+     "sm_messages_redeploy": 5,
+     "consumer_alternatives": 32,
+     "flows": 8,
+     "errors": 0
+    },
+    "median_s": {
+     "parse": 0.00010941700000444143,
+     "check": 3.6958999999114894e-05,
+     "generate": 4.883300000813051e-05,
+     "events": 7.970799998702205e-05,
+     "redeploy_generate": 0.00015029200000071796,
+     "redeploy_stage": 7.266699999775028e-05
+    }
+   },
+   "A": {
+    "correct_all_reps": true,
+    "counts": {
+     "events": 4,
+     "bus_messages_initial": 28,
+     "bus_messages_events": 40,
+     "bus_messages_redeploy": 0,
+     "subscriptions_final": 20,
+     "consumer_rules_final": 16,
+     "ltm_notify": 20,
+     "targets": 0,
+     "rejected": 0
+    },
+    "median_s": {
+     "helper_expand_targets": 0.009483166999999071,
+     "initial_load": 0.0035915410000058046,
+     "events": 0.0003404999999929714,
+     "redeploy_dispatch": 0.00016266599999426035
+    }
+   }
+  },
+  {
+   "config": "R4-M4-C4",
+   "dims": {
+    "R": 4,
+    "M": 4,
+    "C": 4
+   },
+   "expected_calls_per_consumer": 14,
+   "D": {
+    "correct_all_reps": true,
+    "counts": {
+     "events": 16,
+     "sm_messages_events": 48,
+     "sm_messages_redeploy": 16,
+     "consumer_alternatives": 32,
+     "flows": 8,
+     "errors": 0
+    },
+    "median_s": {
+     "parse": 0.00011279100000649578,
+     "check": 3.974999999911688e-05,
+     "generate": 5.187499999692591e-05,
+     "events": 0.00028083300000503186,
+     "redeploy_generate": 0.00015604200000041146,
+     "redeploy_stage": 0.00020679099999654227
+    }
+   },
+   "A": {
+    "correct_all_reps": true,
+    "counts": {
+     "events": 16,
+     "bus_messages_initial": 76,
+     "bus_messages_events": 160,
+     "bus_messages_redeploy": 100,
+     "subscriptions_final": 76,
+     "consumer_rules_final": 64,
+     "ltm_notify": 80,
+     "targets": 4,
+     "rejected": 0
+    },
+    "median_s": {
+     "helper_expand_targets": 0.006884999999996921,
+     "initial_load": 0.008065083000005302,
+     "events": 0.0019804169999986243,
+     "redeploy_dispatch": 0.007359374999992951
+    }
+   }
+  },
+  {
+   "config": "R16-M4-C4",
+   "dims": {
+    "R": 16,
+    "M": 4,
+    "C": 4
+   },
+   "expected_calls_per_consumer": 56,
+   "D": {
+    "correct_all_reps": true,
+    "counts": {
+     "events": 64,
+     "sm_messages_events": 192,
+     "sm_messages_redeploy": 52,
+     "consumer_alternatives": 32,
+     "flows": 8,
+     "errors": 0
+    },
+    "median_s": {
+     "parse": 0.00011233399999355242,
+     "check": 4.0542000007803836e-05,
+     "generate": 5.908400000009806e-05,
+     "events": 0.0010388329999955204,
+     "redeploy_generate": 0.0001660420000035856,
+     "redeploy_stage": 0.00041124999999908596
+    }
+   },
+   "A": {
+    "correct_all_reps": true,
+    "counts": {
+     "events": 64,
+     "bus_messages_initial": 268,
+     "bus_messages_events": 640,
+     "bus_messages_redeploy": 364,
+     "subscriptions_final": 292,
+     "consumer_rules_final": 256,
+     "ltm_notify": 320,
+     "targets": 4,
+     "rejected": 0
+    },
+    "median_s": {
+     "helper_expand_targets": 0.017486750000003326,
+     "initial_load": 0.023402042000000733,
+     "events": 0.0192522909999866,
+     "redeploy_dispatch": 0.022185125000007133
+    }
+   }
+  },
+  {
+   "config": "R64-M4-C4",
+   "dims": {
+    "R": 64,
+    "M": 4,
+    "C": 4
+   },
+   "expected_calls_per_consumer": 224,
+   "D": {
+    "correct_all_reps": true,
+    "counts": {
+     "events": 256,
+     "sm_messages_events": 768,
+     "sm_messages_redeploy": 196,
+     "consumer_alternatives": 32,
+     "flows": 8,
+     "errors": 0
+    },
+    "median_s": {
+     "parse": 0.00011016700000254787,
+     "check": 4.5416999995495644e-05,
+     "generate": 9.450000000299497e-05,
+     "events": 0.00425600000001225,
+     "redeploy_generate": 0.0002156659999883459,
+     "redeploy_stage": 0.0015027500000002192
+    }
+   },
+   "A": {
+    "correct_all_reps": true,
+    "counts": {
+     "events": 256,
+     "bus_messages_initial": 1036,
+     "bus_messages_events": 2560,
+     "bus_messages_redeploy": 1420,
+     "subscriptions_final": 1156,
+     "consumer_rules_final": 1024,
+     "ltm_notify": 1280,
+     "targets": 4,
+     "rejected": 0
+    },
+    "median_s": {
+     "helper_expand_targets": 0.05342887499999449,
+     "initial_load": 0.08542962500000328,
+     "events": 0.2614816669999982,
+     "redeploy_dispatch": 0.10597729099998787
+    }
+   }
+  },
+  {
+   "config": "R4-M1-C4",
+   "dims": {
+    "R": 4,
+    "M": 1,
+    "C": 4
+   },
+   "expected_calls_per_consumer": 14,
+   "D": {
+    "correct_all_reps": true,
+    "counts": {
+     "events": 16,
+     "sm_messages_events": 12,
+     "sm_messages_redeploy": 7,
+     "consumer_alternatives": 8,
+     "flows": 8,
+     "errors": 0
+    },
+    "median_s": {
+     "parse": 0.00010866699999212415,
+     "check": 3.795800000716554e-05,
+     "generate": 4.341700000054516e-05,
+     "events": 0.00010333299999842893,
+     "redeploy_generate": 0.00014733300000102645,
+     "redeploy_stage": 5.258299999866267e-05
+    }
+   },
+   "A": {
+    "correct_all_reps": true,
+    "counts": {
+     "events": 16,
+     "bus_messages_initial": 19,
+     "bus_messages_events": 52,
+     "bus_messages_redeploy": 25,
+     "subscriptions_final": 19,
+     "consumer_rules_final": 16,
+     "ltm_notify": 20,
+     "targets": 1,
+     "rejected": 0
+    },
+    "median_s": {
+     "helper_expand_targets": 0.004955749999993486,
+     "initial_load": 0.002519124999992073,
+     "events": 0.000621374999994373,
+     "redeploy_dispatch": 0.00223545900000488
+    }
+   }
+  },
+  {
+   "config": "R4-M16-C4",
+   "dims": {
+    "R": 4,
+    "M": 16,
+    "C": 4
+   },
+   "expected_calls_per_consumer": 14,
+   "D": {
+    "correct_all_reps": true,
+    "counts": {
+     "events": 16,
+     "sm_messages_events": 192,
+     "sm_messages_redeploy": 52,
+     "consumer_alternatives": 128,
+     "flows": 8,
+     "errors": 0
+    },
+    "median_s": {
+     "parse": 0.00011524999999323882,
+     "check": 4.225000000701584e-05,
+     "generate": 8.499999999855845e-05,
+     "events": 0.0009678750000006175,
+     "redeploy_generate": 0.00019825000001105764,
+     "redeploy_stage": 0.00048325000000204454
+    }
+   },
+   "A": {
+    "correct_all_reps": true,
+    "counts": {
+     "events": 16,
+     "bus_messages_initial": 304,
+     "bus_messages_events": 592,
+     "bus_messages_redeploy": 400,
+     "subscriptions_final": 304,
+     "consumer_rules_final": 256,
+     "ltm_notify": 320,
+     "targets": 16,
+     "rejected": 0
+    },
+    "median_s": {
+     "helper_expand_targets": 0.013927582999997412,
+     "initial_load": 0.02958783300000789,
+     "events": 0.007396249999999327,
+     "redeploy_dispatch": 0.02758604100000639
+    }
+   }
+  },
+  {
+   "config": "R4-M64-C4",
+   "dims": {
+    "R": 4,
+    "M": 64,
+    "C": 4
+   },
+   "expected_calls_per_consumer": 14,
+   "D": {
+    "correct_all_reps": true,
+    "counts": {
+     "events": 16,
+     "sm_messages_events": 768,
+     "sm_messages_redeploy": 196,
+     "consumer_alternatives": 512,
+     "flows": 8,
+     "errors": 0
+    },
+    "median_s": {
+     "parse": 0.00011512500000776527,
+     "check": 5.27500000089276e-05,
+     "generate": 0.0002352919999992764,
+     "events": 0.0037904999999938127,
+     "redeploy_generate": 0.00034033299999691735,
+     "redeploy_stage": 0.0019336249999923893
+    }
+   },
+   "A": {
+    "correct_all_reps": true,
+    "counts": {
+     "events": 16,
+     "bus_messages_initial": 1216,
+     "bus_messages_events": 2320,
+     "bus_messages_redeploy": 1600,
+     "subscriptions_final": 1216,
+     "consumer_rules_final": 1024,
+     "ltm_notify": 1280,
+     "targets": 64,
+     "rejected": 0
+    },
+    "median_s": {
+     "helper_expand_targets": 0.040912583000007885,
+     "initial_load": 0.11172754199999702,
+     "events": 0.029749667000004365,
+     "redeploy_dispatch": 0.11187279199999978
+    }
+   }
+  },
+  {
+   "config": "R4-M4-C1",
+   "dims": {
+    "R": 4,
+    "M": 4,
+    "C": 1
+   },
+   "expected_calls_per_consumer": 14,
+   "D": {
+    "correct_all_reps": true,
+    "counts": {
+     "events": 16,
+     "sm_messages_events": 48,
+     "sm_messages_redeploy": 16,
+     "consumer_alternatives": 8,
+     "flows": 2,
+     "errors": 0
+    },
+    "median_s": {
+     "parse": 5.695900000546317e-05,
+     "check": 2.3708000000510765e-05,
+     "generate": 3.066600000067865e-05,
+     "events": 0.0001830829999960315,
+     "redeploy_generate": 7.558300001164753e-05,
+     "redeploy_stage": 7.487500000991076e-05
+    }
+   },
+   "A": {
+    "correct_all_reps": true,
+    "counts": {
+     "events": 16,
+     "bus_messages_initial": 28,
+     "bus_messages_events": 144,
+     "bus_messages_redeploy": 52,
+     "subscriptions_final": 28,
+     "consumer_rules_final": 16,
+     "ltm_notify": 64,
+     "targets": 4,
+     "rejected": 0
+    },
+    "median_s": {
+     "helper_expand_targets": 0.004626541999996903,
+     "initial_load": 0.0029467500000066593,
+     "events": 0.001344458999994913,
+     "redeploy_dispatch": 0.0024332499999957236
+    }
+   }
+  },
+  {
+   "config": "R4-M4-C16",
+   "dims": {
+    "R": 4,
+    "M": 4,
+    "C": 16
+   },
+   "expected_calls_per_consumer": 14,
+   "D": {
+    "correct_all_reps": true,
+    "counts": {
+     "events": 16,
+     "sm_messages_events": 48,
+     "sm_messages_redeploy": 16,
+     "consumer_alternatives": 128,
+     "flows": 32,
+     "errors": 0
+    },
+    "median_s": {
+     "parse": 0.0003299170000019558,
+     "check": 9.662499999762986e-05,
+     "generate": 0.0001924580000007836,
+     "events": 0.0007014999999910287,
+     "redeploy_generate": 0.0005280829999918524,
+     "redeploy_stage": 0.000404125000002864
+    }
+   },
+   "A": {
+    "correct_all_reps": true,
+    "counts": {
+     "events": 16,
+     "bus_messages_initial": 268,
+     "bus_messages_events": 160,
+     "bus_messages_redeploy": 196,
+     "subscriptions_final": 268,
+     "consumer_rules_final": 256,
+     "ltm_notify": 80,
+     "targets": 4,
+     "rejected": 0
+    },
+    "median_s": {
+     "helper_expand_targets": 0.018264958999992587,
+     "initial_load": 0.029551582999999937,
+     "events": 0.004669792000001394,
+     "redeploy_dispatch": 0.026366583000012156
+    }
+   }
+  },
+  {
+   "config": "R4-M4-C64",
+   "dims": {
+    "R": 4,
+    "M": 4,
+    "C": 64
+   },
+   "expected_calls_per_consumer": 14,
+   "D": {
+    "correct_all_reps": true,
+    "counts": {
+     "events": 16,
+     "sm_messages_events": 48,
+     "sm_messages_redeploy": 16,
+     "consumer_alternatives": 512,
+     "flows": 128,
+     "errors": 0
+    },
+    "median_s": {
+     "parse": 0.0012322919999974147,
+     "check": 0.00031216599998629135,
+     "generate": 0.0015248750000012024,
+     "events": 0.0022054589999953578,
+     "redeploy_generate": 0.002748416999992287,
+     "redeploy_stage": 0.0014963329999915231
+    }
+   },
+   "A": {
+    "correct_all_reps": true,
+    "counts": {
+     "events": 16,
+     "bus_messages_initial": 1036,
+     "bus_messages_events": 160,
+     "bus_messages_redeploy": 196,
+     "subscriptions_final": 1036,
+     "consumer_rules_final": 1024,
+     "ltm_notify": 80,
+     "targets": 4,
+     "rejected": 0
+    },
+    "median_s": {
+     "helper_expand_targets": 0.05168970800001205,
+     "initial_load": 0.11647637499999064,
+     "events": 0.015177624999992645,
+     "redeploy_dispatch": 0.10197795900000983
+    }
+   }
+  },
+  {
+   "config": "R1-M1-C1",
+   "dims": {
+    "R": 1,
+    "M": 1,
+    "C": 1
+   },
+   "expected_calls_per_consumer": 3,
+   "D": {
+    "correct_all_reps": true,
+    "counts": {
+     "events": 4,
+     "sm_messages_events": 3,
+     "sm_messages_redeploy": 2,
+     "consumer_alternatives": 2,
+     "flows": 2,
+     "errors": 0
+    },
+    "median_s": {
+     "parse": 4.5542000009390904e-05,
+     "check": 1.7916999993872196e-05,
+     "generate": 2.166699999861521e-05,
+     "events": 2.2624999999720785e-05,
+     "redeploy_generate": 6.529200000215951e-05,
+     "redeploy_stage": 1.8124999996871338e-05
+    }
+   },
+   "A": {
+    "correct_all_reps": true,
+    "counts": {
+     "events": 4,
+     "bus_messages_initial": 4,
+     "bus_messages_events": 12,
+     "bus_messages_redeploy": 0,
+     "subscriptions_final": 2,
+     "consumer_rules_final": 1,
+     "ltm_notify": 4,
+     "targets": 0,
+     "rejected": 0
+    },
+    "median_s": {
+     "helper_expand_targets": 0.0018467919999949345,
+     "initial_load": 0.0004161250000009886,
+     "events": 0.00011133300000665258,
+     "redeploy_dispatch": 0.00015095800000608506
+    }
+   }
+  },
+  {
+   "config": "R16-M16-C16",
+   "dims": {
+    "R": 16,
+    "M": 16,
+    "C": 16
+   },
+   "expected_calls_per_consumer": 56,
+   "D": {
+    "correct_all_reps": true,
+    "counts": {
+     "events": 64,
+     "sm_messages_events": 768,
+     "sm_messages_redeploy": 160,
+     "consumer_alternatives": 512,
+     "flows": 32,
+     "errors": 0
+    },
+    "median_s": {
+     "parse": 0.00033195800000385134,
+     "check": 0.00010141699999621778,
+     "generate": 0.0004947919999978012,
+     "events": 0.010183333000000516,
+     "redeploy_generate": 0.0008111659999912035,
+     "redeploy_stage": 0.005478957999997647
+    }
+   },
+   "A": {
+    "correct_all_reps": true,
+    "counts": {
+     "events": 64,
+     "bus_messages_initial": 4144,
+     "bus_messages_events": 2368,
+     "bus_messages_redeploy": 2992,
+     "subscriptions_final": 4240,
+     "consumer_rules_final": 4096,
+     "ltm_notify": 1280,
+     "targets": 16,
+     "rejected": 0
+    },
+    "median_s": {
+     "helper_expand_targets": 0.050937374999989515,
+     "initial_load": 0.3606180000000023,
+     "events": 0.24537220800000625,
+     "redeploy_dispatch": 0.3211663750000042
+    }
+   }
+  }
+ ]
+}

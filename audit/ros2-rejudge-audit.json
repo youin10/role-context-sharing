@@ -1,0 +1,405 @@
+{
+ "action": "read-only re-judgement of the stored ROS 2 logs with the packaged live/judge.py and packaged scenario/expected files; output written outside the package; no new run",
+ "date": "2026-10-30",
+ "runs": 66,
+ "pass": 66,
+ "identical_to_stored": 66,
+ "items": [
+  {
+   "run": "final-a-K-r1-20261028-115411",
+   "verdict": "PASS",
+   "compared": 31,
+   "identical_to_stored": true
+  },
+  {
+   "run": "final-a-K-r2-20261028-115609",
+   "verdict": "PASS",
+   "compared": 31,
+   "identical_to_stored": true
+  },
+  {
+   "run": "final-a-K-r3-20261028-115807",
+   "verdict": "PASS",
+   "compared": 31,
+   "identical_to_stored": true
+  },
+  {
+   "run": "final-a-P1-r1-20261028-115435",
+   "verdict": "PASS",
+   "compared": 16,
+   "identical_to_stored": true
+  },
+  {
+   "run": "final-a-P1-r2-20261028-115633",
+   "verdict": "PASS",
+   "compared": 16,
+   "identical_to_stored": true
+  },
+  {
+   "run": "final-a-P1-r3-20261028-115831",
+   "verdict": "PASS",
+   "compared": 16,
+   "identical_to_stored": true
+  },
+  {
+   "run": "final-a-T-r1-20261028-115423",
+   "verdict": "PASS",
+   "compared": 24,
+   "identical_to_stored": true
+  },
+  {
+   "run": "final-a-T-r2-20261028-115621",
+   "verdict": "PASS",
+   "compared": 24,
+   "identical_to_stored": true
+  },
+  {
+   "run": "final-a-T-r3-20261028-115819",
+   "verdict": "PASS",
+   "compared": 24,
+   "identical_to_stored": true
+  },
+  {
+   "run": "final-a-contract_CT1-r1-20261028-115248",
+   "verdict": "PASS",
+   "compared": 8,
+   "identical_to_stored": true
+  },
+  {
+   "run": "final-a-contract_CT1-r2-20261028-115446",
+   "verdict": "PASS",
+   "compared": 8,
+   "identical_to_stored": true
+  },
+  {
+   "run": "final-a-contract_CT1-r3-20261028-115644",
+   "verdict": "PASS",
+   "compared": 8,
+   "identical_to_stored": true
+  },
+  {
+   "run": "final-a-contract_CT2-r1-20261028-115258",
+   "verdict": "PASS",
+   "compared": 4,
+   "identical_to_stored": true
+  },
+  {
+   "run": "final-a-contract_CT2-r2-20261028-115456",
+   "verdict": "PASS",
+   "compared": 4,
+   "identical_to_stored": true
+  },
+  {
+   "run": "final-a-contract_CT2-r3-20261028-115655",
+   "verdict": "PASS",
+   "compared": 4,
+   "identical_to_stored": true
+  },
+  {
+   "run": "final-a-contract_CT3-r1-20261028-115308",
+   "verdict": "PASS",
+   "compared": 10,
+   "identical_to_stored": true
+  },
+  {
+   "run": "final-a-contract_CT3-r2-20261028-115507",
+   "verdict": "PASS",
+   "compared": 10,
+   "identical_to_stored": true
+  },
+  {
+   "run": "final-a-contract_CT3-r3-20261028-115705",
+   "verdict": "PASS",
+   "compared": 10,
+   "identical_to_stored": true
+  },
+  {
+   "run": "final-a-contract_CT4-r1-20261028-115319",
+   "verdict": "PASS",
+   "compared": 6,
+   "identical_to_stored": true
+  },
+  {
+   "run": "final-a-contract_CT4-r2-20261028-115517",
+   "verdict": "PASS",
+   "compared": 6,
+   "identical_to_stored": true
+  },
+  {
+   "run": "final-a-contract_CT4-r3-20261028-115715",
+   "verdict": "PASS",
+   "compared": 6,
+   "identical_to_stored": true
+  },
+  {
+   "run": "final-a-contract_CT5-r1-20261028-115329",
+   "verdict": "PASS",
+   "compared": 5,
+   "identical_to_stored": true
+  },
+  {
+   "run": "final-a-contract_CT5-r2-20261028-115527",
+   "verdict": "PASS",
+   "compared": 5,
+   "identical_to_stored": true
+  },
+  {
+   "run": "final-a-contract_CT5-r3-20261028-115726",
+   "verdict": "PASS",
+   "compared": 5,
+   "identical_to_stored": true
+  },
+  {
+   "run": "final-a-contract_CT6-r1-20261028-115339",
+   "verdict": "PASS",
+   "compared": 6,
+   "identical_to_stored": true
+  },
+  {
+   "run": "final-a-contract_CT6-r2-20261028-115538",
+   "verdict": "PASS",
+   "compared": 6,
+   "identical_to_stored": true
+  },
+  {
+   "run": "final-a-contract_CT6-r3-20261028-115736",
+   "verdict": "PASS",
+   "compared": 6,
+   "identical_to_stored": true
+  },
+  {
+   "run": "final-a-contract_CT7-cfg0-r1-20261028-115350",
+   "verdict": "PASS",
+   "compared": 6,
+   "identical_to_stored": true
+  },
+  {
+   "run": "final-a-contract_CT7-cfg0-r2-20261028-115548",
+   "verdict": "PASS",
+   "compared": 6,
+   "identical_to_stored": true
+  },
+  {
+   "run": "final-a-contract_CT7-cfg0-r3-20261028-115746",
+   "verdict": "PASS",
+   "compared": 6,
+   "identical_to_stored": true
+  },
+  {
+   "run": "final-a-contract_CT7-cfg1-r1-20261028-115400",
+   "verdict": "PASS",
+   "compared": 6,
+   "identical_to_stored": true
+  },
+  {
+   "run": "final-a-contract_CT7-cfg1-r2-20261028-115558",
+   "verdict": "PASS",
+   "compared": 6,
+   "identical_to_stored": true
+  },
+  {
+   "run": "final-a-contract_CT7-cfg1-r3-20261028-115756",
+   "verdict": "PASS",
+   "compared": 6,
+   "identical_to_stored": true
+  },
+  {
+   "run": "final-d-K-r1-20261028-115405",
+   "verdict": "PASS",
+   "compared": 31,
+   "identical_to_stored": true
+  },
+  {
+   "run": "final-d-K-r2-20261028-115603",
+   "verdict": "PASS",
+   "compared": 31,
+   "identical_to_stored": true
+  },
+  {
+   "run": "final-d-K-r3-20261028-115801",
+   "verdict": "PASS",
+   "compared": 31,
+   "identical_to_stored": true
+  },
+  {
+   "run": "final-d-P1-r1-20261028-115428",
+   "verdict": "PASS",
+   "compared": 16,
+   "identical_to_stored": true
+  },
+  {
+   "run": "final-d-P1-r2-20261028-115627",
+   "verdict": "PASS",
+   "compared": 16,
+   "identical_to_stored": true
+  },
+  {
+   "run": "final-d-P1-r3-20261028-115825",
+   "verdict": "PASS",
+   "compared": 16,
+   "identical_to_stored": true
+  },
+  {
+   "run": "final-d-T-r1-20261028-115417",
+   "verdict": "PASS",
+   "compared": 24,
+   "identical_to_stored": true
+  },
+  {
+   "run": "final-d-T-r2-20261028-115615",
+   "verdict": "PASS",
+   "compared": 24,
+   "identical_to_stored": true
+  },
+  {
+   "run": "final-d-T-r3-20261028-115814",
+   "verdict": "PASS",
+   "compared": 24,
+   "identical_to_stored": true
+  },
+  {
+   "run": "final-d-contract_CT1-r1-20261028-115242",
+   "verdict": "PASS",
+   "compared": 8,
+   "identical_to_stored": true
+  },
+  {
+   "run": "final-d-contract_CT1-r2-20261028-115441",
+   "verdict": "PASS",
+   "compared": 8,
+   "identical_to_stored": true
+  },
+  {
+   "run": "final-d-contract_CT1-r3-20261028-115639",
+   "verdict": "PASS",
+   "compared": 8,
+   "identical_to_stored": true
+  },
+  {
+   "run": "final-d-contract_CT2-r1-20261028-115253",
+   "verdict": "PASS",
+   "compared": 4,
+   "identical_to_stored": true
+  },
+  {
+   "run": "final-d-contract_CT2-r2-20261028-115451",
+   "verdict": "PASS",
+   "compared": 4,
+   "identical_to_stored": true
+  },
+  {
+   "run": "final-d-contract_CT2-r3-20261028-115650",
+   "verdict": "PASS",
+   "compared": 4,
+   "identical_to_stored": true
+  },
+  {
+   "run": "final-d-contract_CT3-r1-20261028-115303",
+   "verdict": "PASS",
+   "compared": 10,
+   "identical_to_stored": true
+  },
+  {
+   "run": "final-d-contract_CT3-r2-20261028-115501",
+   "verdict": "PASS",
+   "compared": 10,
+   "identical_to_stored": true
+  },
+  {
+   "run": "final-d-contract_CT3-r3-20261028-115659",
+   "verdict": "PASS",
+   "compared": 10,
+   "identical_to_stored": true
+  },
+  {
+   "run": "final-d-contract_CT4-r1-20261028-115314",
+   "verdict": "PASS",
+   "compared": 6,
+   "identical_to_stored": true
+  },
+  {
+   "run": "final-d-contract_CT4-r2-20261028-115512",
+   "verdict": "PASS",
+   "compared": 6,
+   "identical_to_stored": true
+  },
+  {
+   "run": "final-d-contract_CT4-r3-20261028-115710",
+   "verdict": "PASS",
+   "compared": 6,
+   "identical_to_stored": true
+  },
+  {
+   "run": "final-d-contract_CT5-r1-20261028-115324",
+   "verdict": "PASS",
+   "compared": 5,
+   "identical_to_stored": true
+  },
+  {
+   "run": "final-d-contract_CT5-r2-20261028-115522",
+   "verdict": "PASS",
+   "compared": 5,
+   "identical_to_stored": true
+  },
+  {
+   "run": "final-d-contract_CT5-r3-20261028-115721",
+   "verdict": "PASS",
+   "compared": 5,
+   "identical_to_stored": true
+  },
+  {
+   "run": "final-d-contract_CT6-r1-20261028-115334",
+   "verdict": "PASS",
+   "compared": 6,
+   "identical_to_stored": true
+  },
+  {
+   "run": "final-d-contract_CT6-r2-20261028-115532",
+   "verdict": "PASS",
+   "compared": 6,
+   "identical_to_stored": true
+  },
+  {
+   "run": "final-d-contract_CT6-r3-20261028-115730",
+   "verdict": "PASS",
+   "compared": 6,
+   "identical_to_stored": true
+  },
+  {
+   "run": "final-d-contract_CT7-cfg0-r1-20261028-115344",
+   "verdict": "PASS",
+   "compared": 6,
+   "identical_to_stored": true
+  },
+  {
+   "run": "final-d-contract_CT7-cfg0-r2-20261028-115543",
+   "verdict": "PASS",
+   "compared": 6,
+   "identical_to_stored": true
+  },
+  {
+   "run": "final-d-contract_CT7-cfg0-r3-20261028-115741",
+   "verdict": "PASS",
+   "compared": 6,
+   "identical_to_stored": true
+  },
+  {
+   "run": "final-d-contract_CT7-cfg1-r1-20261028-115355",
+   "verdict": "PASS",
+   "compared": 6,
+   "identical_to_stored": true
+  },
+  {
+   "run": "final-d-contract_CT7-cfg1-r2-20261028-115553",
+   "verdict": "PASS",
+   "compared": 6,
+   "identical_to_stored": true
+  },
+  {
+   "run": "final-d-contract_CT7-cfg1-r3-20261028-115751",
+   "verdict": "PASS",
+   "compared": 6,
+   "identical_to_stored": true
+  }
+ ]
+}

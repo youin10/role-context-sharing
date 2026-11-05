@@ -1,0 +1,9 @@
+id: CT5
+title: contract T5 overlapping role support
+d: {model: contract/CT5, binding: contract/b-ct5-0}
+a: {initial: contract/initial-ct5}
+observe: [manager1]
+steps:
+- {id: s1, report: [biped1, RobotStatus, biped1, {battery: 28, zone: storage}]}
+- {id: c1, change: {id: CT5-1, d: {model: contract/CT5, binding: contract/b-ct5-1}, a: contract/changes/CT5-1}}
+- {id: c2, change: {id: CT5-2, d: {model: contract/CT5, binding: contract/b-ct5-2}, a: contract/changes/CT5-2}}

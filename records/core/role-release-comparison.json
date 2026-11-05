@@ -1,0 +1,27 @@
+{
+ "runs": [
+  "results/final2-host",
+  "results/role-release-host"
+ ],
+ "files": 166,
+ "pairs": [
+  {
+   "a": "results/final2-host",
+   "b": "results/role-release-host",
+   "byte_different": [
+    "raw/main/CT5__A__helper.jsonl",
+    "raw/main/CT5__A__main.jsonl",
+    "raw/main/CT5__D__main.jsonl",
+    "raw/negative/CT5__D__per-role-revoke.jsonl"
+   ],
+   "different_after_trace_normalisation": [
+    "raw/main/CT5__A__helper.jsonl",
+    "raw/main/CT5__A__main.jsonl",
+    "raw/main/CT5__D__main.jsonl",
+    "raw/negative/CT5__D__per-role-revoke.jsonl"
+   ],
+   "verdict_differences": [],
+   "missing_in_b": []
+  }
+ ]
+}

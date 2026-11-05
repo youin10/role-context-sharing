@@ -1,0 +1,2 @@
+FAIL s02 calls:manager1 expected [["assert", "RobotStatus", "biped1", {"battery": 30, "zone": "storage"}]] observed []
+FAIL 50 rows, 1 failing

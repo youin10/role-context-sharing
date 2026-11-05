@@ -1,0 +1,12 @@
+rep1 D main PASS 22 rows, 0 failing
+rep1 A main PASS 22 rows, 0 failing
+rep1 A helper PASS 22 rows, 0 failing
+rep1 entries: D PASS 8 rows A PASS 5 rows A-helper PASS 5 rows 
+rep2 D main PASS 22 rows, 0 failing
+rep2 A main PASS 22 rows, 0 failing
+rep2 A helper PASS 22 rows, 0 failing
+rep2 entries: D PASS 8 rows A PASS 5 rows A-helper PASS 5 rows 
+rep3 D main PASS 22 rows, 0 failing
+rep3 A main PASS 22 rows, 0 failing
+rep3 A helper PASS 22 rows, 0 failing
+rep3 entries: D PASS 8 rows A PASS 5 rows A-helper PASS 5 rows 

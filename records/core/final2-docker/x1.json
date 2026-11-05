@@ -1,0 +1,1760 @@
+[
+ {
+  "arm": "D",
+  "kind": "main",
+  "observed": [
+   [
+    "deliver",
+    "RobotStatus",
+    "biped1",
+    {
+     "battery": 19,
+     "zone": "storage"
+    }
+   ]
+  ],
+  "pass": true,
+  "raw": "raw/x1/X1-biped1-19__D__main.jsonl",
+  "row": [
+   "biped1",
+   19,
+   "yes"
+  ],
+  "variant": "main"
+ },
+ {
+  "arm": "A",
+  "kind": "main",
+  "observed": [
+   [
+    "deliver",
+    "RobotStatus",
+    "biped1",
+    {
+     "battery": 19,
+     "zone": "storage"
+    }
+   ]
+  ],
+  "pass": true,
+  "raw": "raw/x1/X1-biped1-19__A__main.jsonl",
+  "row": [
+   "biped1",
+   19,
+   "yes"
+  ],
+  "variant": "main"
+ },
+ {
+  "arm": "D",
+  "kind": "negative",
+  "observed": [
+   [
+    "deliver",
+    "RobotStatus",
+    "biped1",
+    {
+     "battery": 19,
+     "zone": "storage"
+    }
+   ]
+  ],
+  "pass": true,
+  "raw": "raw/x1/X1-biped1-19__D__dup-branch.jsonl",
+  "row": [
+   "biped1",
+   19,
+   "yes"
+  ],
+  "variant": "dup-branch"
+ },
+ {
+  "arm": "D",
+  "kind": "main",
+  "observed": [
+   [
+    "deliver",
+    "RobotStatus",
+    "biped1",
+    {
+     "battery": 20,
+     "zone": "storage"
+    }
+   ]
+  ],
+  "pass": true,
+  "raw": "raw/x1/X1-biped1-20__D__main.jsonl",
+  "row": [
+   "biped1",
+   20,
+   "yes"
+  ],
+  "variant": "main"
+ },
+ {
+  "arm": "A",
+  "kind": "main",
+  "observed": [
+   [
+    "deliver",
+    "RobotStatus",
+    "biped1",
+    {
+     "battery": 20,
+     "zone": "storage"
+    }
+   ]
+  ],
+  "pass": true,
+  "raw": "raw/x1/X1-biped1-20__A__main.jsonl",
+  "row": [
+   "biped1",
+   20,
+   "yes"
+  ],
+  "variant": "main"
+ },
+ {
+  "arm": "D",
+  "kind": "negative",
+  "observed": [
+   [
+    "deliver",
+    "RobotStatus",
+    "biped1",
+    {
+     "battery": 20,
+     "zone": "storage"
+    }
+   ]
+  ],
+  "pass": true,
+  "raw": "raw/x1/X1-biped1-20__D__dup-branch.jsonl",
+  "row": [
+   "biped1",
+   20,
+   "yes"
+  ],
+  "variant": "dup-branch"
+ },
+ {
+  "arm": "D",
+  "kind": "main",
+  "observed": [
+   [
+    "deliver",
+    "RobotStatus",
+    "biped1",
+    {
+     "battery": 21,
+     "zone": "storage"
+    }
+   ]
+  ],
+  "pass": true,
+  "raw": "raw/x1/X1-biped1-21__D__main.jsonl",
+  "row": [
+   "biped1",
+   21,
+   "yes"
+  ],
+  "variant": "main"
+ },
+ {
+  "arm": "A",
+  "kind": "main",
+  "observed": [
+   [
+    "deliver",
+    "RobotStatus",
+    "biped1",
+    {
+     "battery": 21,
+     "zone": "storage"
+    }
+   ]
+  ],
+  "pass": true,
+  "raw": "raw/x1/X1-biped1-21__A__main.jsonl",
+  "row": [
+   "biped1",
+   21,
+   "yes"
+  ],
+  "variant": "main"
+ },
+ {
+  "arm": "D",
+  "kind": "negative",
+  "observed": [
+   [
+    "deliver",
+    "RobotStatus",
+    "biped1",
+    {
+     "battery": 21,
+     "zone": "storage"
+    }
+   ]
+  ],
+  "pass": true,
+  "raw": "raw/x1/X1-biped1-21__D__dup-branch.jsonl",
+  "row": [
+   "biped1",
+   21,
+   "yes"
+  ],
+  "variant": "dup-branch"
+ },
+ {
+  "arm": "D",
+  "kind": "main",
+  "observed": [
+   [
+    "deliver",
+    "RobotStatus",
+    "biped1",
+    {
+     "battery": 29,
+     "zone": "storage"
+    }
+   ]
+  ],
+  "pass": true,
+  "raw": "raw/x1/X1-biped1-29__D__main.jsonl",
+  "row": [
+   "biped1",
+   29,
+   "yes"
+  ],
+  "variant": "main"
+ },
+ {
+  "arm": "A",
+  "kind": "main",
+  "observed": [
+   [
+    "deliver",
+    "RobotStatus",
+    "biped1",
+    {
+     "battery": 29,
+     "zone": "storage"
+    }
+   ]
+  ],
+  "pass": true,
+  "raw": "raw/x1/X1-biped1-29__A__main.jsonl",
+  "row": [
+   "biped1",
+   29,
+   "yes"
+  ],
+  "variant": "main"
+ },
+ {
+  "arm": "D",
+  "kind": "negative",
+  "observed": [
+   [
+    "deliver",
+    "RobotStatus",
+    "biped1",
+    {
+     "battery": 29,
+     "zone": "storage"
+    }
+   ]
+  ],
+  "pass": true,
+  "raw": "raw/x1/X1-biped1-29__D__dup-branch.jsonl",
+  "row": [
+   "biped1",
+   29,
+   "yes"
+  ],
+  "variant": "dup-branch"
+ },
+ {
+  "arm": "D",
+  "kind": "main",
+  "observed": [
+   [
+    "deliver",
+    "RobotStatus",
+    "biped1",
+    {
+     "battery": 30,
+     "zone": "storage"
+    }
+   ]
+  ],
+  "pass": true,
+  "raw": "raw/x1/X1-biped1-30__D__main.jsonl",
+  "row": [
+   "biped1",
+   30,
+   "yes"
+  ],
+  "variant": "main"
+ },
+ {
+  "arm": "A",
+  "kind": "main",
+  "observed": [
+   [
+    "deliver",
+    "RobotStatus",
+    "biped1",
+    {
+     "battery": 30,
+     "zone": "storage"
+    }
+   ]
+  ],
+  "pass": true,
+  "raw": "raw/x1/X1-biped1-30__A__main.jsonl",
+  "row": [
+   "biped1",
+   30,
+   "yes"
+  ],
+  "variant": "main"
+ },
+ {
+  "arm": "D",
+  "kind": "negative",
+  "observed": [
+   [
+    "deliver",
+    "RobotStatus",
+    "biped1",
+    {
+     "battery": 30,
+     "zone": "storage"
+    }
+   ]
+  ],
+  "pass": true,
+  "raw": "raw/x1/X1-biped1-30__D__dup-branch.jsonl",
+  "row": [
+   "biped1",
+   30,
+   "yes"
+  ],
+  "variant": "dup-branch"
+ },
+ {
+  "arm": "D",
+  "kind": "main",
+  "observed": [],
+  "pass": true,
+  "raw": "raw/x1/X1-biped1-31__D__main.jsonl",
+  "row": [
+   "biped1",
+   31,
+   "no"
+  ],
+  "variant": "main"
+ },
+ {
+  "arm": "A",
+  "kind": "main",
+  "observed": [],
+  "pass": true,
+  "raw": "raw/x1/X1-biped1-31__A__main.jsonl",
+  "row": [
+   "biped1",
+   31,
+   "no"
+  ],
+  "variant": "main"
+ },
+ {
+  "arm": "D",
+  "kind": "negative",
+  "observed": [],
+  "pass": true,
+  "raw": "raw/x1/X1-biped1-31__D__dup-branch.jsonl",
+  "row": [
+   "biped1",
+   31,
+   "no"
+  ],
+  "variant": "dup-branch"
+ },
+ {
+  "arm": "D",
+  "kind": "main",
+  "observed": [
+   [
+    "deliver",
+    "RobotStatus",
+    "humanoid1",
+    {
+     "battery": 19,
+     "zone": "storage"
+    }
+   ]
+  ],
+  "pass": true,
+  "raw": "raw/x1/X1-humanoid1-19__D__main.jsonl",
+  "row": [
+   "humanoid1",
+   19,
+   "yes"
+  ],
+  "variant": "main"
+ },
+ {
+  "arm": "A",
+  "kind": "main",
+  "observed": [
+   [
+    "deliver",
+    "RobotStatus",
+    "humanoid1",
+    {
+     "battery": 19,
+     "zone": "storage"
+    }
+   ]
+  ],
+  "pass": true,
+  "raw": "raw/x1/X1-humanoid1-19__A__main.jsonl",
+  "row": [
+   "humanoid1",
+   19,
+   "yes"
+  ],
+  "variant": "main"
+ },
+ {
+  "arm": "D",
+  "kind": "negative",
+  "observed": [
+   [
+    "deliver",
+    "RobotStatus",
+    "humanoid1",
+    {
+     "battery": 19,
+     "zone": "storage"
+    }
+   ]
+  ],
+  "pass": true,
+  "raw": "raw/x1/X1-humanoid1-19__D__dup-branch.jsonl",
+  "row": [
+   "humanoid1",
+   19,
+   "yes"
+  ],
+  "variant": "dup-branch"
+ },
+ {
+  "arm": "D",
+  "kind": "main",
+  "observed": [
+   [
+    "deliver",
+    "RobotStatus",
+    "humanoid1",
+    {
+     "battery": 20,
+     "zone": "storage"
+    }
+   ]
+  ],
+  "pass": true,
+  "raw": "raw/x1/X1-humanoid1-20__D__main.jsonl",
+  "row": [
+   "humanoid1",
+   20,
+   "yes"
+  ],
+  "variant": "main"
+ },
+ {
+  "arm": "A",
+  "kind": "main",
+  "observed": [
+   [
+    "deliver",
+    "RobotStatus",
+    "humanoid1",
+    {
+     "battery": 20,
+     "zone": "storage"
+    }
+   ]
+  ],
+  "pass": true,
+  "raw": "raw/x1/X1-humanoid1-20__A__main.jsonl",
+  "row": [
+   "humanoid1",
+   20,
+   "yes"
+  ],
+  "variant": "main"
+ },
+ {
+  "arm": "D",
+  "kind": "negative",
+  "observed": [
+   [
+    "deliver",
+    "RobotStatus",
+    "humanoid1",
+    {
+     "battery": 20,
+     "zone": "storage"
+    }
+   ]
+  ],
+  "pass": true,
+  "raw": "raw/x1/X1-humanoid1-20__D__dup-branch.jsonl",
+  "row": [
+   "humanoid1",
+   20,
+   "yes"
+  ],
+  "variant": "dup-branch"
+ },
+ {
+  "arm": "D",
+  "kind": "main",
+  "observed": [
+   [
+    "deliver",
+    "RobotStatus",
+    "humanoid1",
+    {
+     "battery": 21,
+     "zone": "storage"
+    }
+   ]
+  ],
+  "pass": true,
+  "raw": "raw/x1/X1-humanoid1-21__D__main.jsonl",
+  "row": [
+   "humanoid1",
+   21,
+   "yes"
+  ],
+  "variant": "main"
+ },
+ {
+  "arm": "A",
+  "kind": "main",
+  "observed": [
+   [
+    "deliver",
+    "RobotStatus",
+    "humanoid1",
+    {
+     "battery": 21,
+     "zone": "storage"
+    }
+   ]
+  ],
+  "pass": true,
+  "raw": "raw/x1/X1-humanoid1-21__A__main.jsonl",
+  "row": [
+   "humanoid1",
+   21,
+   "yes"
+  ],
+  "variant": "main"
+ },
+ {
+  "arm": "D",
+  "kind": "negative",
+  "observed": [
+   [
+    "deliver",
+    "RobotStatus",
+    "humanoid1",
+    {
+     "battery": 21,
+     "zone": "storage"
+    }
+   ]
+  ],
+  "pass": true,
+  "raw": "raw/x1/X1-humanoid1-21__D__dup-branch.jsonl",
+  "row": [
+   "humanoid1",
+   21,
+   "yes"
+  ],
+  "variant": "dup-branch"
+ },
+ {
+  "arm": "D",
+  "kind": "main",
+  "observed": [
+   [
+    "deliver",
+    "RobotStatus",
+    "humanoid1",
+    {
+     "battery": 29,
+     "zone": "storage"
+    }
+   ]
+  ],
+  "pass": true,
+  "raw": "raw/x1/X1-humanoid1-29__D__main.jsonl",
+  "row": [
+   "humanoid1",
+   29,
+   "yes"
+  ],
+  "variant": "main"
+ },
+ {
+  "arm": "A",
+  "kind": "main",
+  "observed": [
+   [
+    "deliver",
+    "RobotStatus",
+    "humanoid1",
+    {
+     "battery": 29,
+     "zone": "storage"
+    }
+   ]
+  ],
+  "pass": true,
+  "raw": "raw/x1/X1-humanoid1-29__A__main.jsonl",
+  "row": [
+   "humanoid1",
+   29,
+   "yes"
+  ],
+  "variant": "main"
+ },
+ {
+  "arm": "D",
+  "kind": "negative",
+  "observed": [
+   [
+    "deliver",
+    "RobotStatus",
+    "humanoid1",
+    {
+     "battery": 29,
+     "zone": "storage"
+    }
+   ]
+  ],
+  "pass": true,
+  "raw": "raw/x1/X1-humanoid1-29__D__dup-branch.jsonl",
+  "row": [
+   "humanoid1",
+   29,
+   "yes"
+  ],
+  "variant": "dup-branch"
+ },
+ {
+  "arm": "D",
+  "kind": "main",
+  "observed": [
+   [
+    "deliver",
+    "RobotStatus",
+    "humanoid1",
+    {
+     "battery": 30,
+     "zone": "storage"
+    }
+   ]
+  ],
+  "pass": true,
+  "raw": "raw/x1/X1-humanoid1-30__D__main.jsonl",
+  "row": [
+   "humanoid1",
+   30,
+   "yes"
+  ],
+  "variant": "main"
+ },
+ {
+  "arm": "A",
+  "kind": "main",
+  "observed": [
+   [
+    "deliver",
+    "RobotStatus",
+    "humanoid1",
+    {
+     "battery": 30,
+     "zone": "storage"
+    }
+   ]
+  ],
+  "pass": true,
+  "raw": "raw/x1/X1-humanoid1-30__A__main.jsonl",
+  "row": [
+   "humanoid1",
+   30,
+   "yes"
+  ],
+  "variant": "main"
+ },
+ {
+  "arm": "D",
+  "kind": "negative",
+  "observed": [
+   [
+    "deliver",
+    "RobotStatus",
+    "humanoid1",
+    {
+     "battery": 30,
+     "zone": "storage"
+    }
+   ]
+  ],
+  "pass": true,
+  "raw": "raw/x1/X1-humanoid1-30__D__dup-branch.jsonl",
+  "row": [
+   "humanoid1",
+   30,
+   "yes"
+  ],
+  "variant": "dup-branch"
+ },
+ {
+  "arm": "D",
+  "kind": "main",
+  "observed": [],
+  "pass": true,
+  "raw": "raw/x1/X1-humanoid1-31__D__main.jsonl",
+  "row": [
+   "humanoid1",
+   31,
+   "no"
+  ],
+  "variant": "main"
+ },
+ {
+  "arm": "A",
+  "kind": "main",
+  "observed": [],
+  "pass": true,
+  "raw": "raw/x1/X1-humanoid1-31__A__main.jsonl",
+  "row": [
+   "humanoid1",
+   31,
+   "no"
+  ],
+  "variant": "main"
+ },
+ {
+  "arm": "D",
+  "kind": "negative",
+  "observed": [],
+  "pass": true,
+  "raw": "raw/x1/X1-humanoid1-31__D__dup-branch.jsonl",
+  "row": [
+   "humanoid1",
+   31,
+   "no"
+  ],
+  "variant": "dup-branch"
+ },
+ {
+  "arm": "D",
+  "kind": "main",
+  "observed": [
+   [
+    "deliver",
+    "RobotStatus",
+    "wheeled1",
+    {
+     "battery": 19,
+     "zone": "storage"
+    }
+   ]
+  ],
+  "pass": true,
+  "raw": "raw/x1/X1-wheeled1-19__D__main.jsonl",
+  "row": [
+   "wheeled1",
+   19,
+   "yes"
+  ],
+  "variant": "main"
+ },
+ {
+  "arm": "A",
+  "kind": "main",
+  "observed": [
+   [
+    "deliver",
+    "RobotStatus",
+    "wheeled1",
+    {
+     "battery": 19,
+     "zone": "storage"
+    }
+   ]
+  ],
+  "pass": true,
+  "raw": "raw/x1/X1-wheeled1-19__A__main.jsonl",
+  "row": [
+   "wheeled1",
+   19,
+   "yes"
+  ],
+  "variant": "main"
+ },
+ {
+  "arm": "D",
+  "kind": "negative",
+  "observed": [
+   [
+    "deliver",
+    "RobotStatus",
+    "wheeled1",
+    {
+     "battery": 19,
+     "zone": "storage"
+    }
+   ]
+  ],
+  "pass": true,
+  "raw": "raw/x1/X1-wheeled1-19__D__dup-branch.jsonl",
+  "row": [
+   "wheeled1",
+   19,
+   "yes"
+  ],
+  "variant": "dup-branch"
+ },
+ {
+  "arm": "D",
+  "kind": "main",
+  "observed": [
+   [
+    "deliver",
+    "RobotStatus",
+    "wheeled1",
+    {
+     "battery": 20,
+     "zone": "storage"
+    }
+   ]
+  ],
+  "pass": true,
+  "raw": "raw/x1/X1-wheeled1-20__D__main.jsonl",
+  "row": [
+   "wheeled1",
+   20,
+   "yes"
+  ],
+  "variant": "main"
+ },
+ {
+  "arm": "A",
+  "kind": "main",
+  "observed": [
+   [
+    "deliver",
+    "RobotStatus",
+    "wheeled1",
+    {
+     "battery": 20,
+     "zone": "storage"
+    }
+   ]
+  ],
+  "pass": true,
+  "raw": "raw/x1/X1-wheeled1-20__A__main.jsonl",
+  "row": [
+   "wheeled1",
+   20,
+   "yes"
+  ],
+  "variant": "main"
+ },
+ {
+  "arm": "D",
+  "kind": "negative",
+  "observed": [
+   [
+    "deliver",
+    "RobotStatus",
+    "wheeled1",
+    {
+     "battery": 20,
+     "zone": "storage"
+    }
+   ]
+  ],
+  "pass": true,
+  "raw": "raw/x1/X1-wheeled1-20__D__dup-branch.jsonl",
+  "row": [
+   "wheeled1",
+   20,
+   "yes"
+  ],
+  "variant": "dup-branch"
+ },
+ {
+  "arm": "D",
+  "kind": "main",
+  "observed": [],
+  "pass": true,
+  "raw": "raw/x1/X1-wheeled1-21__D__main.jsonl",
+  "row": [
+   "wheeled1",
+   21,
+   "no"
+  ],
+  "variant": "main"
+ },
+ {
+  "arm": "A",
+  "kind": "main",
+  "observed": [],
+  "pass": true,
+  "raw": "raw/x1/X1-wheeled1-21__A__main.jsonl",
+  "row": [
+   "wheeled1",
+   21,
+   "no"
+  ],
+  "variant": "main"
+ },
+ {
+  "arm": "D",
+  "kind": "negative",
+  "observed": [],
+  "pass": true,
+  "raw": "raw/x1/X1-wheeled1-21__D__dup-branch.jsonl",
+  "row": [
+   "wheeled1",
+   21,
+   "no"
+  ],
+  "variant": "dup-branch"
+ },
+ {
+  "arm": "D",
+  "kind": "main",
+  "observed": [],
+  "pass": true,
+  "raw": "raw/x1/X1-wheeled1-29__D__main.jsonl",
+  "row": [
+   "wheeled1",
+   29,
+   "no"
+  ],
+  "variant": "main"
+ },
+ {
+  "arm": "A",
+  "kind": "main",
+  "observed": [],
+  "pass": true,
+  "raw": "raw/x1/X1-wheeled1-29__A__main.jsonl",
+  "row": [
+   "wheeled1",
+   29,
+   "no"
+  ],
+  "variant": "main"
+ },
+ {
+  "arm": "D",
+  "kind": "negative",
+  "observed": [],
+  "pass": true,
+  "raw": "raw/x1/X1-wheeled1-29__D__dup-branch.jsonl",
+  "row": [
+   "wheeled1",
+   29,
+   "no"
+  ],
+  "variant": "dup-branch"
+ },
+ {
+  "arm": "D",
+  "kind": "main",
+  "observed": [],
+  "pass": true,
+  "raw": "raw/x1/X1-wheeled1-30__D__main.jsonl",
+  "row": [
+   "wheeled1",
+   30,
+   "no"
+  ],
+  "variant": "main"
+ },
+ {
+  "arm": "A",
+  "kind": "main",
+  "observed": [],
+  "pass": true,
+  "raw": "raw/x1/X1-wheeled1-30__A__main.jsonl",
+  "row": [
+   "wheeled1",
+   30,
+   "no"
+  ],
+  "variant": "main"
+ },
+ {
+  "arm": "D",
+  "kind": "negative",
+  "observed": [],
+  "pass": true,
+  "raw": "raw/x1/X1-wheeled1-30__D__dup-branch.jsonl",
+  "row": [
+   "wheeled1",
+   30,
+   "no"
+  ],
+  "variant": "dup-branch"
+ },
+ {
+  "arm": "D",
+  "kind": "main",
+  "observed": [],
+  "pass": true,
+  "raw": "raw/x1/X1-wheeled1-31__D__main.jsonl",
+  "row": [
+   "wheeled1",
+   31,
+   "no"
+  ],
+  "variant": "main"
+ },
+ {
+  "arm": "A",
+  "kind": "main",
+  "observed": [],
+  "pass": true,
+  "raw": "raw/x1/X1-wheeled1-31__A__main.jsonl",
+  "row": [
+   "wheeled1",
+   31,
+   "no"
+  ],
+  "variant": "main"
+ },
+ {
+  "arm": "D",
+  "kind": "negative",
+  "observed": [],
+  "pass": true,
+  "raw": "raw/x1/X1-wheeled1-31__D__dup-branch.jsonl",
+  "row": [
+   "wheeled1",
+   31,
+   "no"
+  ],
+  "variant": "dup-branch"
+ },
+ {
+  "arm": "D",
+  "kind": "main",
+  "observed": [
+   [
+    "deliver",
+    "RobotStatus",
+    "diff1",
+    {
+     "battery": 19,
+     "zone": "storage"
+    }
+   ]
+  ],
+  "pass": true,
+  "raw": "raw/x1/X1-diff1-19__D__main.jsonl",
+  "row": [
+   "diff1",
+   19,
+   "yes"
+  ],
+  "variant": "main"
+ },
+ {
+  "arm": "A",
+  "kind": "main",
+  "observed": [
+   [
+    "deliver",
+    "RobotStatus",
+    "diff1",
+    {
+     "battery": 19,
+     "zone": "storage"
+    }
+   ]
+  ],
+  "pass": true,
+  "raw": "raw/x1/X1-diff1-19__A__main.jsonl",
+  "row": [
+   "diff1",
+   19,
+   "yes"
+  ],
+  "variant": "main"
+ },
+ {
+  "arm": "D",
+  "kind": "negative",
+  "observed": [
+   [
+    "deliver",
+    "RobotStatus",
+    "diff1",
+    {
+     "battery": 19,
+     "zone": "storage"
+    }
+   ]
+  ],
+  "pass": true,
+  "raw": "raw/x1/X1-diff1-19__D__dup-branch.jsonl",
+  "row": [
+   "diff1",
+   19,
+   "yes"
+  ],
+  "variant": "dup-branch"
+ },
+ {
+  "arm": "D",
+  "kind": "main",
+  "observed": [
+   [
+    "deliver",
+    "RobotStatus",
+    "diff1",
+    {
+     "battery": 20,
+     "zone": "storage"
+    }
+   ]
+  ],
+  "pass": true,
+  "raw": "raw/x1/X1-diff1-20__D__main.jsonl",
+  "row": [
+   "diff1",
+   20,
+   "yes"
+  ],
+  "variant": "main"
+ },
+ {
+  "arm": "A",
+  "kind": "main",
+  "observed": [
+   [
+    "deliver",
+    "RobotStatus",
+    "diff1",
+    {
+     "battery": 20,
+     "zone": "storage"
+    }
+   ]
+  ],
+  "pass": true,
+  "raw": "raw/x1/X1-diff1-20__A__main.jsonl",
+  "row": [
+   "diff1",
+   20,
+   "yes"
+  ],
+  "variant": "main"
+ },
+ {
+  "arm": "D",
+  "kind": "negative",
+  "observed": [
+   [
+    "deliver",
+    "RobotStatus",
+    "diff1",
+    {
+     "battery": 20,
+     "zone": "storage"
+    }
+   ]
+  ],
+  "pass": true,
+  "raw": "raw/x1/X1-diff1-20__D__dup-branch.jsonl",
+  "row": [
+   "diff1",
+   20,
+   "yes"
+  ],
+  "variant": "dup-branch"
+ },
+ {
+  "arm": "D",
+  "kind": "main",
+  "observed": [],
+  "pass": true,
+  "raw": "raw/x1/X1-diff1-21__D__main.jsonl",
+  "row": [
+   "diff1",
+   21,
+   "no"
+  ],
+  "variant": "main"
+ },
+ {
+  "arm": "A",
+  "kind": "main",
+  "observed": [],
+  "pass": true,
+  "raw": "raw/x1/X1-diff1-21__A__main.jsonl",
+  "row": [
+   "diff1",
+   21,
+   "no"
+  ],
+  "variant": "main"
+ },
+ {
+  "arm": "D",
+  "kind": "negative",
+  "observed": [],
+  "pass": true,
+  "raw": "raw/x1/X1-diff1-21__D__dup-branch.jsonl",
+  "row": [
+   "diff1",
+   21,
+   "no"
+  ],
+  "variant": "dup-branch"
+ },
+ {
+  "arm": "D",
+  "kind": "main",
+  "observed": [],
+  "pass": true,
+  "raw": "raw/x1/X1-diff1-29__D__main.jsonl",
+  "row": [
+   "diff1",
+   29,
+   "no"
+  ],
+  "variant": "main"
+ },
+ {
+  "arm": "A",
+  "kind": "main",
+  "observed": [],
+  "pass": true,
+  "raw": "raw/x1/X1-diff1-29__A__main.jsonl",
+  "row": [
+   "diff1",
+   29,
+   "no"
+  ],
+  "variant": "main"
+ },
+ {
+  "arm": "D",
+  "kind": "negative",
+  "observed": [],
+  "pass": true,
+  "raw": "raw/x1/X1-diff1-29__D__dup-branch.jsonl",
+  "row": [
+   "diff1",
+   29,
+   "no"
+  ],
+  "variant": "dup-branch"
+ },
+ {
+  "arm": "D",
+  "kind": "main",
+  "observed": [],
+  "pass": true,
+  "raw": "raw/x1/X1-diff1-30__D__main.jsonl",
+  "row": [
+   "diff1",
+   30,
+   "no"
+  ],
+  "variant": "main"
+ },
+ {
+  "arm": "A",
+  "kind": "main",
+  "observed": [],
+  "pass": true,
+  "raw": "raw/x1/X1-diff1-30__A__main.jsonl",
+  "row": [
+   "diff1",
+   30,
+   "no"
+  ],
+  "variant": "main"
+ },
+ {
+  "arm": "D",
+  "kind": "negative",
+  "observed": [],
+  "pass": true,
+  "raw": "raw/x1/X1-diff1-30__D__dup-branch.jsonl",
+  "row": [
+   "diff1",
+   30,
+   "no"
+  ],
+  "variant": "dup-branch"
+ },
+ {
+  "arm": "D",
+  "kind": "main",
+  "observed": [],
+  "pass": true,
+  "raw": "raw/x1/X1-diff1-31__D__main.jsonl",
+  "row": [
+   "diff1",
+   31,
+   "no"
+  ],
+  "variant": "main"
+ },
+ {
+  "arm": "A",
+  "kind": "main",
+  "observed": [],
+  "pass": true,
+  "raw": "raw/x1/X1-diff1-31__A__main.jsonl",
+  "row": [
+   "diff1",
+   31,
+   "no"
+  ],
+  "variant": "main"
+ },
+ {
+  "arm": "D",
+  "kind": "negative",
+  "observed": [],
+  "pass": true,
+  "raw": "raw/x1/X1-diff1-31__D__dup-branch.jsonl",
+  "row": [
+   "diff1",
+   31,
+   "no"
+  ],
+  "variant": "dup-branch"
+ },
+ {
+  "arm": "D",
+  "kind": "main",
+  "observed": [
+   [
+    "deliver",
+    "RobotStatus",
+    "hybrid1",
+    {
+     "battery": 19,
+     "zone": "storage"
+    }
+   ]
+  ],
+  "pass": true,
+  "raw": "raw/x1/X1-hybrid1-19__D__main.jsonl",
+  "row": [
+   "hybrid1",
+   19,
+   "yes"
+  ],
+  "variant": "main"
+ },
+ {
+  "arm": "A",
+  "kind": "main",
+  "observed": [
+   [
+    "deliver",
+    "RobotStatus",
+    "hybrid1",
+    {
+     "battery": 19,
+     "zone": "storage"
+    }
+   ]
+  ],
+  "pass": true,
+  "raw": "raw/x1/X1-hybrid1-19__A__main.jsonl",
+  "row": [
+   "hybrid1",
+   19,
+   "yes"
+  ],
+  "variant": "main"
+ },
+ {
+  "arm": "D",
+  "kind": "negative",
+  "observed": [
+   [
+    "deliver",
+    "RobotStatus",
+    "hybrid1",
+    {
+     "battery": 19,
+     "zone": "storage"
+    }
+   ],
+   [
+    "deliver",
+    "RobotStatus",
+    "hybrid1",
+    {
+     "battery": 19,
+     "zone": "storage"
+    }
+   ]
+  ],
+  "pass": false,
+  "raw": "raw/x1/X1-hybrid1-19__D__dup-branch.jsonl",
+  "row": [
+   "hybrid1",
+   19,
+   "yes"
+  ],
+  "variant": "dup-branch"
+ },
+ {
+  "arm": "D",
+  "kind": "main",
+  "observed": [
+   [
+    "deliver",
+    "RobotStatus",
+    "hybrid1",
+    {
+     "battery": 20,
+     "zone": "storage"
+    }
+   ]
+  ],
+  "pass": true,
+  "raw": "raw/x1/X1-hybrid1-20__D__main.jsonl",
+  "row": [
+   "hybrid1",
+   20,
+   "yes"
+  ],
+  "variant": "main"
+ },
+ {
+  "arm": "A",
+  "kind": "main",
+  "observed": [
+   [
+    "deliver",
+    "RobotStatus",
+    "hybrid1",
+    {
+     "battery": 20,
+     "zone": "storage"
+    }
+   ]
+  ],
+  "pass": true,
+  "raw": "raw/x1/X1-hybrid1-20__A__main.jsonl",
+  "row": [
+   "hybrid1",
+   20,
+   "yes"
+  ],
+  "variant": "main"
+ },
+ {
+  "arm": "D",
+  "kind": "negative",
+  "observed": [
+   [
+    "deliver",
+    "RobotStatus",
+    "hybrid1",
+    {
+     "battery": 20,
+     "zone": "storage"
+    }
+   ],
+   [
+    "deliver",
+    "RobotStatus",
+    "hybrid1",
+    {
+     "battery": 20,
+     "zone": "storage"
+    }
+   ]
+  ],
+  "pass": false,
+  "raw": "raw/x1/X1-hybrid1-20__D__dup-branch.jsonl",
+  "row": [
+   "hybrid1",
+   20,
+   "yes"
+  ],
+  "variant": "dup-branch"
+ },
+ {
+  "arm": "D",
+  "kind": "main",
+  "observed": [
+   [
+    "deliver",
+    "RobotStatus",
+    "hybrid1",
+    {
+     "battery": 21,
+     "zone": "storage"
+    }
+   ]
+  ],
+  "pass": true,
+  "raw": "raw/x1/X1-hybrid1-21__D__main.jsonl",
+  "row": [
+   "hybrid1",
+   21,
+   "yes"
+  ],
+  "variant": "main"
+ },
+ {
+  "arm": "A",
+  "kind": "main",
+  "observed": [
+   [
+    "deliver",
+    "RobotStatus",
+    "hybrid1",
+    {
+     "battery": 21,
+     "zone": "storage"
+    }
+   ]
+  ],
+  "pass": true,
+  "raw": "raw/x1/X1-hybrid1-21__A__main.jsonl",
+  "row": [
+   "hybrid1",
+   21,
+   "yes"
+  ],
+  "variant": "main"
+ },
+ {
+  "arm": "D",
+  "kind": "negative",
+  "observed": [
+   [
+    "deliver",
+    "RobotStatus",
+    "hybrid1",
+    {
+     "battery": 21,
+     "zone": "storage"
+    }
+   ]
+  ],
+  "pass": true,
+  "raw": "raw/x1/X1-hybrid1-21__D__dup-branch.jsonl",
+  "row": [
+   "hybrid1",
+   21,
+   "yes"
+  ],
+  "variant": "dup-branch"
+ },
+ {
+  "arm": "D",
+  "kind": "main",
+  "observed": [
+   [
+    "deliver",
+    "RobotStatus",
+    "hybrid1",
+    {
+     "battery": 29,
+     "zone": "storage"
+    }
+   ]
+  ],
+  "pass": true,
+  "raw": "raw/x1/X1-hybrid1-29__D__main.jsonl",
+  "row": [
+   "hybrid1",
+   29,
+   "yes"
+  ],
+  "variant": "main"
+ },
+ {
+  "arm": "A",
+  "kind": "main",
+  "observed": [
+   [
+    "deliver",
+    "RobotStatus",
+    "hybrid1",
+    {
+     "battery": 29,
+     "zone": "storage"
+    }
+   ]
+  ],
+  "pass": true,
+  "raw": "raw/x1/X1-hybrid1-29__A__main.jsonl",
+  "row": [
+   "hybrid1",
+   29,
+   "yes"
+  ],
+  "variant": "main"
+ },
+ {
+  "arm": "D",
+  "kind": "negative",
+  "observed": [
+   [
+    "deliver",
+    "RobotStatus",
+    "hybrid1",
+    {
+     "battery": 29,
+     "zone": "storage"
+    }
+   ]
+  ],
+  "pass": true,
+  "raw": "raw/x1/X1-hybrid1-29__D__dup-branch.jsonl",
+  "row": [
+   "hybrid1",
+   29,
+   "yes"
+  ],
+  "variant": "dup-branch"
+ },
+ {
+  "arm": "D",
+  "kind": "main",
+  "observed": [
+   [
+    "deliver",
+    "RobotStatus",
+    "hybrid1",
+    {
+     "battery": 30,
+     "zone": "storage"
+    }
+   ]
+  ],
+  "pass": true,
+  "raw": "raw/x1/X1-hybrid1-30__D__main.jsonl",
+  "row": [
+   "hybrid1",
+   30,
+   "yes"
+  ],
+  "variant": "main"
+ },
+ {
+  "arm": "A",
+  "kind": "main",
+  "observed": [
+   [
+    "deliver",
+    "RobotStatus",
+    "hybrid1",
+    {
+     "battery": 30,
+     "zone": "storage"
+    }
+   ]
+  ],
+  "pass": true,
+  "raw": "raw/x1/X1-hybrid1-30__A__main.jsonl",
+  "row": [
+   "hybrid1",
+   30,
+   "yes"
+  ],
+  "variant": "main"
+ },
+ {
+  "arm": "D",
+  "kind": "negative",
+  "observed": [
+   [
+    "deliver",
+    "RobotStatus",
+    "hybrid1",
+    {
+     "battery": 30,
+     "zone": "storage"
+    }
+   ]
+  ],
+  "pass": true,
+  "raw": "raw/x1/X1-hybrid1-30__D__dup-branch.jsonl",
+  "row": [
+   "hybrid1",
+   30,
+   "yes"
+  ],
+  "variant": "dup-branch"
+ },
+ {
+  "arm": "D",
+  "kind": "main",
+  "observed": [],
+  "pass": true,
+  "raw": "raw/x1/X1-hybrid1-31__D__main.jsonl",
+  "row": [
+   "hybrid1",
+   31,
+   "no"
+  ],
+  "variant": "main"
+ },
+ {
+  "arm": "A",
+  "kind": "main",
+  "observed": [],
+  "pass": true,
+  "raw": "raw/x1/X1-hybrid1-31__A__main.jsonl",
+  "row": [
+   "hybrid1",
+   31,
+   "no"
+  ],
+  "variant": "main"
+ },
+ {
+  "arm": "D",
+  "kind": "negative",
+  "observed": [],
+  "pass": true,
+  "raw": "raw/x1/X1-hybrid1-31__D__dup-branch.jsonl",
+  "row": [
+   "hybrid1",
+   31,
+   "no"
+  ],
+  "variant": "dup-branch"
+ }
+]

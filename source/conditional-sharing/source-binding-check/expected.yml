@@ -1,0 +1,74 @@
+# Independent expectations for the source/binding static checks (written 2026-11-03 BEFORE running).
+# Basis for accept/refuse: manuscript III-A ("The checks also verify that bound roles exist and that
+# each configured consumer has a declared reporting role with an agent bound to it"), III-A/B
+# ("every context with a nonempty consumer set requires a nonempty source set ... checked before
+# deployment"), Algorithm 1 step 2, and reviewer comments R1-1 / R4-M10 / R5-5.
+# Error-code names are the checker's documented vocabulary (src/arms/d/checker.py docstring);
+# the decision (refuse / accept) and the defect location do not come from implementation output.
+# Expected entries for accepted cases follow Equations (3)-(4) by hand.
+# These cases are a separate static check. They are NOT added to the 25 condition-declaration
+# cases, the 48 core runs, or the 66 ROS 2 runs.
+cases:
+  - id: SB1
+    title: consumer reads a context that no role declares in changes (missing source declaration)
+    reviewer: [R4-M10 "consumer declaration without a valid reporting source", R5-5]
+    model: sourceless.org
+    binding: b-full.yml
+    expect: refuse
+    must_include: [{code: SOURCELESS, where_contains: RobotStopped}]
+    must_not_include_codes: [INCOMPLETE_BINDING, UNKNOWN_ROLE]
+  - id: SB1-P
+    title: paired valid input - Observer declares changes RobotStopped and is bound
+    model: sourceless-paired.org
+    binding: b-sourceless-paired.yml
+    expect: accept
+    producers: {biped1: [RobotStatus], cam1: [RobotStopped], manager1: []}
+    consumers: {manager1: [RobotStatus, RobotStopped]}
+  - id: SB2
+    title: declared but unbound source (R1-1 counterexample) - Robot declares changes, only Manager bound
+    reviewer: [R1-1, R4-M10 "incomplete role-agent bindings"]
+    model: base.org
+    binding: b-consumer-only.yml
+    expect: refuse
+    must_include: [{code: INCOMPLETE_BINDING, where_contains: RobotStatus}]
+    must_not_include_codes: [SOURCELESS, UNKNOWN_ROLE]
+    warnings_allowed: [UNUSED_ROLE]   # Robot has no bound agent (warning, not the refusal reason)
+  - id: SB2-P
+    title: paired valid input - same model, Robot bound to biped1
+    model: base.org
+    binding: b-full.yml
+    expect: accept
+    producers: {biped1: [RobotStatus], manager1: []}
+    consumers: {manager1: [RobotStatus]}
+  - id: SB3
+    title: binding names a role that the model does not define
+    reviewer: [R4-M10 "incomplete role-agent bindings", R5-5 "incorrect declarations"]
+    model: base.org
+    binding: b-unknown-role.yml
+    expect: refuse
+    must_include: [{code: UNKNOWN_ROLE, where_contains: insp1}]
+    must_not_include_codes: [SOURCELESS, INCOMPLETE_BINDING]
+  - id: SB3-P
+    title: paired valid input - the unknown binding removed (same as SB2-P)
+    model: base.org
+    binding: b-full.yml
+    expect: accept
+    producers: {biped1: [RobotStatus], manager1: []}
+    consumers: {manager1: [RobotStatus]}
+  - id: SB4
+    title: boundary - two declared source roles, only one bound; one bound source suffices
+    reviewer: [R1-1 boundary]
+    model: two-sources.org
+    binding: b-auditor-only.yml
+    expect: accept
+    warnings_allowed: [UNUSED_ROLE]   # Robot unbound
+    producers: {aud1: [RobotStatus], manager1: []}
+    consumers: {manager1: [RobotStatus]}
+  - id: SB5
+    title: revision refused before installation - active valid configuration (SB2-P) is kept when the
+           revised input is SB2 (declared-but-unbound source)
+    reviewer: [R1-1, R4-M10 "detected before deployment"]
+    initial: {model: base.org, binding: b-full.yml}
+    revised: {model: base.org, binding: b-consumer-only.yml}
+    expect: refuse_revision
+    after: {active_seq: 0, active_cfg: b-full, messages_sent: 0}

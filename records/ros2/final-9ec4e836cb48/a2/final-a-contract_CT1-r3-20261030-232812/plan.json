@@ -1,0 +1,34 @@
+{
+ "arm": "a",
+ "a_variant": null,
+ "scenario": "CT1",
+ "scenario_path": "/cs/inputs/scenarios/contract/CT1.yml",
+ "observed": [
+  "manager1"
+ ],
+ "agents": [
+  "biped1",
+  "hum1",
+  "manager1",
+  "observer1",
+  "wheel1"
+ ],
+ "producers": [
+  "biped1",
+  "hum1",
+  "wheel1"
+ ],
+ "procs": {
+  "driver": [],
+  "a-producer": [
+   "biped1",
+   "hum1",
+   "observer1",
+   "wheel1"
+  ],
+  "a-ltm": [],
+  "a-agent-manager1": [
+   "manager1"
+  ]
+ }
+}

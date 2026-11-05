@@ -1,0 +1,504 @@
+{
+ "schema": "cslive-judge/2",
+ "verdict": "PASS",
+ "arm": "d",
+ "scenario": "K",
+ "roster": [
+  "driver",
+  "d-sm",
+  "d-producer",
+  "d-agent-tech1",
+  "d-agent-watch1",
+  "d-agent-auditor1"
+ ],
+ "hosts": {
+  "driver": "driver",
+  "d-sm": "d-sm",
+  "d-producer": "d-producer",
+  "d-agent-tech1": "d-agent-tech1",
+  "d-agent-watch1": "d-agent-watch1",
+  "d-agent-auditor1": "d-agent-auditor1"
+ },
+ "problems": [],
+ "compared": 31,
+ "mismatches": [],
+ "rows": [
+  {
+   "item": "calls",
+   "step": "k01",
+   "agent": "tech1",
+   "ok": true,
+   "want": [
+    [
+     "deliver",
+     "RobotStatus",
+     "biped1",
+     {
+      "battery": 50,
+      "zone": "storage"
+     }
+    ]
+   ],
+   "got": [
+    [
+     "deliver",
+     "RobotStatus",
+     "biped1",
+     {
+      "battery": 50,
+      "zone": "storage"
+     }
+    ]
+   ]
+  },
+  {
+   "item": "calls",
+   "step": "k01",
+   "agent": "watch1",
+   "ok": true,
+   "want": [],
+   "got": []
+  },
+  {
+   "item": "calls",
+   "step": "k01",
+   "agent": "auditor1",
+   "ok": true,
+   "want": [],
+   "got": []
+  },
+  {
+   "item": "calls",
+   "step": "k02",
+   "agent": "tech1",
+   "ok": true,
+   "want": [],
+   "got": []
+  },
+  {
+   "item": "calls",
+   "step": "k02",
+   "agent": "watch1",
+   "ok": true,
+   "want": [
+    [
+     "deliver",
+     "RobotStatus",
+     "wheeled1",
+     {
+      "battery": 50,
+      "zone": "storage"
+     }
+    ]
+   ],
+   "got": [
+    [
+     "deliver",
+     "RobotStatus",
+     "wheeled1",
+     {
+      "battery": 50,
+      "zone": "storage"
+     }
+    ]
+   ]
+  },
+  {
+   "item": "calls",
+   "step": "k02",
+   "agent": "auditor1",
+   "ok": true,
+   "want": [],
+   "got": []
+  },
+  {
+   "item": "calls",
+   "step": "k03",
+   "agent": "tech1",
+   "ok": true,
+   "want": [],
+   "got": []
+  },
+  {
+   "item": "calls",
+   "step": "k03",
+   "agent": "watch1",
+   "ok": true,
+   "want": [],
+   "got": []
+  },
+  {
+   "item": "calls",
+   "step": "k03",
+   "agent": "auditor1",
+   "ok": true,
+   "want": [],
+   "got": []
+  },
+  {
+   "item": "calls",
+   "step": "k04",
+   "agent": "tech1",
+   "ok": true,
+   "want": [],
+   "got": []
+  },
+  {
+   "item": "calls",
+   "step": "k04",
+   "agent": "watch1",
+   "ok": true,
+   "want": [
+    [
+     "deliver",
+     "RobotStatus",
+     "diff1",
+     {
+      "battery": 50,
+      "zone": "storage"
+     }
+    ]
+   ],
+   "got": [
+    [
+     "deliver",
+     "RobotStatus",
+     "diff1",
+     {
+      "battery": 50,
+      "zone": "storage"
+     }
+    ]
+   ]
+  },
+  {
+   "item": "calls",
+   "step": "k04",
+   "agent": "auditor1",
+   "ok": true,
+   "want": [],
+   "got": []
+  },
+  {
+   "item": "calls",
+   "step": "k05",
+   "agent": "tech1",
+   "ok": true,
+   "want": [],
+   "got": []
+  },
+  {
+   "item": "calls",
+   "step": "k05",
+   "agent": "watch1",
+   "ok": true,
+   "want": [],
+   "got": []
+  },
+  {
+   "item": "calls",
+   "step": "k05",
+   "agent": "auditor1",
+   "ok": true,
+   "want": [],
+   "got": []
+  },
+  {
+   "item": "calls",
+   "step": "k06",
+   "agent": "tech1",
+   "ok": true,
+   "want": [],
+   "got": []
+  },
+  {
+   "item": "calls",
+   "step": "k06",
+   "agent": "watch1",
+   "ok": true,
+   "want": [],
+   "got": []
+  },
+  {
+   "item": "calls",
+   "step": "k06",
+   "agent": "auditor1",
+   "ok": true,
+   "want": [
+    [
+     "deliver",
+     "CargoCarriedBy",
+     "cargo1",
+     {
+      "robot": "humanoid1"
+     }
+    ]
+   ],
+   "got": [
+    [
+     "deliver",
+     "CargoCarriedBy",
+     "cargo1",
+     {
+      "robot": "humanoid1"
+     }
+    ]
+   ]
+  },
+  {
+   "item": "calls",
+   "step": "k07",
+   "agent": "tech1",
+   "ok": true,
+   "want": [],
+   "got": []
+  },
+  {
+   "item": "calls",
+   "step": "k07",
+   "agent": "watch1",
+   "ok": true,
+   "want": [],
+   "got": []
+  },
+  {
+   "item": "calls",
+   "step": "k07",
+   "agent": "auditor1",
+   "ok": true,
+   "want": [
+    [
+     "revoke",
+     "CargoCarriedBy",
+     "cargo1",
+     null
+    ]
+   ],
+   "got": [
+    [
+     "revoke",
+     "CargoCarriedBy",
+     "cargo1",
+     null
+    ]
+   ]
+  },
+  {
+   "item": "calls",
+   "step": "k08",
+   "agent": "tech1",
+   "ok": true,
+   "want": [],
+   "got": []
+  },
+  {
+   "item": "calls",
+   "step": "k08",
+   "agent": "watch1",
+   "ok": true,
+   "want": [],
+   "got": []
+  },
+  {
+   "item": "calls",
+   "step": "k08",
+   "agent": "auditor1",
+   "ok": true,
+   "want": [
+    [
+     "deliver",
+     "CargoCarriedBy",
+     "cargo1",
+     {
+      "robot": "biped1"
+     }
+    ]
+   ],
+   "got": [
+    [
+     "deliver",
+     "CargoCarriedBy",
+     "cargo1",
+     {
+      "robot": "biped1"
+     }
+    ]
+   ]
+  },
+  {
+   "item": "calls",
+   "step": "k09",
+   "agent": "tech1",
+   "ok": true,
+   "want": [],
+   "got": []
+  },
+  {
+   "item": "calls",
+   "step": "k09",
+   "agent": "watch1",
+   "ok": true,
+   "want": [],
+   "got": []
+  },
+  {
+   "item": "calls",
+   "step": "k09",
+   "agent": "auditor1",
+   "ok": true,
+   "want": [
+    [
+     "delete",
+     "CargoCarriedBy",
+     "cargo1",
+     null
+    ]
+   ],
+   "got": [
+    [
+     "delete",
+     "CargoCarriedBy",
+     "cargo1",
+     null
+    ]
+   ]
+  },
+  {
+   "item": "view",
+   "step": "k04",
+   "agent": "tech1",
+   "ok": true,
+   "want": {
+    "RobotStatus/biped1": {
+     "battery": 50,
+     "zone": "storage"
+    }
+   },
+   "got": {
+    "RobotStatus/biped1": {
+     "battery": 50,
+     "zone": "storage"
+    }
+   }
+  },
+  {
+   "item": "view",
+   "step": "k04",
+   "agent": "watch1",
+   "ok": true,
+   "want": {
+    "RobotStatus/wheeled1": {
+     "battery": 50,
+     "zone": "storage"
+    },
+    "RobotStatus/diff1": {
+     "battery": 50,
+     "zone": "storage"
+    }
+   },
+   "got": {
+    "RobotStatus/diff1": {
+     "battery": 50,
+     "zone": "storage"
+    },
+    "RobotStatus/wheeled1": {
+     "battery": 50,
+     "zone": "storage"
+    }
+   }
+  },
+  {
+   "item": "view",
+   "step": "k07",
+   "agent": "auditor1",
+   "ok": true,
+   "want": {},
+   "got": {}
+  },
+  {
+   "item": "view",
+   "step": "k09",
+   "agent": "auditor1",
+   "ok": true,
+   "want": {},
+   "got": {}
+  }
+ ],
+ "stats": {
+  "expected_positive_calls": 7,
+  "observed_calls": 7,
+  "by_kind": {
+   "deliver": 5,
+   "delete": 1,
+   "current": 0,
+   "revoke": 1
+  },
+  "decisions": 0,
+  "rejected": 0,
+  "messages": {
+   "sent": 16,
+   "missing": 0,
+   "duplicate": 0,
+   "unsent": 0
+  },
+  "causes": {
+   "calls": 7,
+   "rx_ok": 7,
+   "cross_host": 7,
+   "same_step": 7,
+   "version_ok": 7
+  },
+  "settle": [
+   {
+    "step": "init",
+    "dt_s": 0.0577,
+    "probes": 2
+   },
+   {
+    "step": "k01",
+    "dt_s": 0.1133,
+    "probes": 3
+   },
+   {
+    "step": "k02",
+    "dt_s": 0.114,
+    "probes": 3
+   },
+   {
+    "step": "k03",
+    "dt_s": 0.1257,
+    "probes": 3
+   },
+   {
+    "step": "k04",
+    "dt_s": 0.1165,
+    "probes": 3
+   },
+   {
+    "step": "k05",
+    "dt_s": 0.1248,
+    "probes": 3
+   },
+   {
+    "step": "k06",
+    "dt_s": 0.1152,
+    "probes": 3
+   },
+   {
+    "step": "k07",
+    "dt_s": 0.1232,
+    "probes": 3
+   },
+   {
+    "step": "k08",
+    "dt_s": 0.1201,
+    "probes": 3
+   },
+   {
+    "step": "k09",
+    "dt_s": 0.1167,
+    "probes": 3
+   }
+  ]
+ }
+}

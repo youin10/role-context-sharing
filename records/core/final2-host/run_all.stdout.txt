@@ -1,0 +1,66 @@
+{
+ "run_id": "final2-host",
+ "main": {
+  "runs": 48,
+  "pass": 48
+ },
+ "contrast": {
+  "runs": 4,
+  "fail_as_intended": 4
+ },
+ "negative": {
+  "runs": 24,
+  "fail_as_intended": 24
+ },
+ "x1": {
+  "rows": 30,
+  "main_pass": 60,
+  "main_runs": 60,
+  "dup_branch_rows_failing": 2
+ },
+ "grammar": {
+  "cases": 25,
+  "pass": 25
+ },
+ "a_static": {
+  "cases": 7,
+  "pass": 7,
+  "plan_dirs_with_findings": [],
+  "d_models_with_errors": []
+ },
+ "audit": [
+  {
+   "check": "empty observation fails B1",
+   "ok": true
+  },
+  {
+   "check": "every main expected table has positive calls",
+   "ok": true,
+   "note": "CT7-cfg0 is the removal control and expects no reception"
+  },
+  {
+   "check": "every contrast / negative control ran to completion, or crashed with its declared error",
+   "ok": true,
+   "offenders": []
+  },
+  {
+   "check": "judge imports only the standard library and yaml (no arms / rcs / oracle / runner modules)",
+   "ok": true,
+   "imports": [
+    "__future__",
+    "json",
+    "sys",
+    "yaml"
+   ]
+  },
+  {
+   "check": "expected tables equal the frozen expected-hashes.json record",
+   "ok": true
+  },
+  {
+   "check": "judge raw-mutation negative controls (tools/judge_mutation_nc.py) all as intended",
+   "ok": true
+  }
+ ],
+ "overall_ok": true
+}

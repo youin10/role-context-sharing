@@ -1,0 +1,6 @@
+role: NonBipedWatch
+# Registered robots that are not Biped: wheeled1, diff1, wheel1
+subscribe:
+- (rule (fact (RobotStatus $robot $battery $zone)) (= $robot "wheeled1") --> (notify (RobotStatus $robot $battery $zone)))
+- (rule (fact (RobotStatus $robot $battery $zone)) (= $robot "diff1") --> (notify (RobotStatus $robot $battery $zone)))
+- (rule (fact (RobotStatus $robot $battery $zone)) (= $robot "wheel1") --> (notify (RobotStatus $robot $battery $zone)))

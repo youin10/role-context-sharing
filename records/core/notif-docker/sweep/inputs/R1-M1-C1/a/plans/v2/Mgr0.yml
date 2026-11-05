@@ -1,0 +1,3 @@
+role: Mgr0
+subscribe:
+- (rule (fact (RobotStatus $robot $battery $zone)) (= $robot "r001") (<= $battery 30) --> (notify (RobotStatus $robot $battery $zone)))

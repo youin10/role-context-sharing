@@ -1,0 +1,11 @@
+id: CT6
+title: contract T6 RobotStopped elapsed time
+d: {model: contract/CT-typed, binding: contract/b-ct}
+a: {initial: contract/initial-typed}
+observe: [manager1]
+steps:
+- {id: e1, report: [observer1, RobotStopped, wheel1, {elapsedSeconds: 180}]}
+- {id: e2, report: [observer1, RobotStopped, wheel1, {elapsedSeconds: 299}]}
+- {id: e3, report: [observer1, RobotStopped, wheel1, {elapsedSeconds: 300}]}
+- {id: e4, report: [observer1, RobotStopped, wheel1, {elapsedSeconds: 360}]}
+- {id: e5, delete: [observer1, RobotStopped, wheel1]}

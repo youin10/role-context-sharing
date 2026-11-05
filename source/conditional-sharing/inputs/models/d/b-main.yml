@@ -1,0 +1,13 @@
+schema: rcs-d-binding/1
+cfg: main
+agents:
+  manager1: [Manager]
+  biped1: [Robot]
+  humanoid1: [Robot]
+  wheeled1: [Robot]
+  diff1: [Robot]
+  hybrid1: [Robot]
+  cam1: [Observer]
+  tech1: [BipedTech]
+  auditor1: [CarryAuditor]
+  watch1: [NonBipedWatch]

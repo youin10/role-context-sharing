@@ -1,0 +1,5 @@
+schema: rcs-d-binding/1
+cfg: b-full
+agents:
+  manager1: [Manager]
+  biped1: [Robot]

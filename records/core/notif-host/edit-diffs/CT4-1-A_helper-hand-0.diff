@@ -1,0 +1,4 @@
+--- a-helper/config/ct4-0.yml
++++ a-helper/config/ct4-1.yml
+@@ -3,0 +4 @@
++  - {context: RobotStatus, field: robot, class: Biped, conds: [["<=", battery, 30]]}

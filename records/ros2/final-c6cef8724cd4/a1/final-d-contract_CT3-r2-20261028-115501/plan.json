@@ -1,0 +1,33 @@
+{
+ "arm": "d",
+ "a_variant": null,
+ "scenario": "CT3",
+ "scenario_path": "/cs/inputs/scenarios/contract/CT3.yml",
+ "observed": [
+  "manager1"
+ ],
+ "agents": [
+  "biped1",
+  "hum1",
+  "manager1",
+  "observer1",
+  "wheel1"
+ ],
+ "producers": [
+  "biped1",
+  "wheel1"
+ ],
+ "procs": {
+  "driver": [],
+  "d-producer": [
+   "biped1",
+   "hum1",
+   "observer1",
+   "wheel1"
+  ],
+  "d-sm": [],
+  "d-agent-manager1": [
+   "manager1"
+  ]
+ }
+}

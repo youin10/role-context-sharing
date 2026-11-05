@@ -1,0 +1,9 @@
+id: CT2
+title: contract T2 individual ID constant on the first argument
+d: {model: contract/CT2, binding: contract/b-ct}
+a: {initial: contract/initial-ct2}
+observe: [manager1]
+steps:
+- {id: e1, report: [biped1, RobotStatus, biped1, {battery: 20, zone: storage}]}
+- {id: e2, report: [wheel1, RobotStatus, wheel1, {battery: 40, zone: storage}]}
+- {id: e3, report: [wheel1, RobotStatus, wheel1, {battery: 60, zone: storage}]}

@@ -1,0 +1,10 @@
+PASS U01 subClassOf cycle refused error:ValueError
+PASS U02 undeclared class of an individual refused error:ValueError
+PASS U03 transitive membership ['A', 'B', 'C']
+PASS U04 multiple membership is a union ['A', 'B']
+PASS U05 oracle holds: humanoid1 30 under Biped<=30 (key visible) True
+PASS U06 oracle holds: diff1 25 under Biped<=30 False
+PASS U07 oracle holds: identity on the key True
+PASS U08 oracle holds without key keeps the old value-only behaviour True
+PASS U09 oracle holds: !isa on a registered non-Biped True
+PASS U10 oracle holds: unregistered individual is not treated as a value error:KeyError

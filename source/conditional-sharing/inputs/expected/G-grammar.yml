@@ -1,0 +1,123 @@
+# Pre-specified expected outcome of each condition block (inserted into a probe role reading the given
+# predicate, model otherwise M1, binding b-main + probe1). ok -> expected DNF as [[field op value]];
+# class values are local names in the logistics namespace written as ":Name". error -> finding code.
+scenario: G
+cases:
+- id: G01
+  note: typed OR in one line, && binds tighter than ||
+  pred: RobotStatus
+  block: ['$robot == logistics:Biped && $battery <= 30 || $robot == logistics:Wheeled && $battery <= 20;']
+  ok: [[[robot, isa, ":Biped"], [battery, "<=", 30]], [[robot, isa, ":Wheeled"], [battery, "<=", 20]]]
+- id: G02
+  note: two lines are a conjunction
+  pred: RobotStatus
+  block: ['$robot == logistics:Biped;', '$battery <= 30;']
+  ok: [[[robot, isa, ":Biped"], [battery, "<=", 30]]]
+- id: G03
+  note: lines distribute over an OR line (DNF)
+  pred: RobotStatus
+  block: ['$robot == logistics:Biped || $robot == logistics:Wheeled;', '$battery <= 20;']
+  ok: [[[robot, isa, ":Biped"], [battery, "<=", 20]], [[robot, isa, ":Wheeled"], [battery, "<=", 20]]]
+- id: G04
+  note: AND-only alternative - the same predicate twice in one role is refused, so OR is needed in one role
+  pred: RobotStatus
+  twice: ['$robot == logistics:Biped;', '$robot == logistics:Wheeled;']
+  error: DUPLICATE_READ
+- id: G05
+  note: identity of the first argument (individual ID)
+  pred: RobotStatus
+  block: ['$robot == "biped1";']
+  ok: [[[robot, "=", biped1]]]
+- id: G06
+  note: a quoted class name is an ID, not a class
+  pred: RobotStatus
+  block: ['$robot == "Biped";']
+  error: UNKNOWN_INDIVIDUAL
+- id: G07
+  pred: RobotStatus
+  block: ['$robot == logistics:Bipedal;']
+  error: UNKNOWN_CLASS
+- id: G08
+  note: class unrelated to argumentType Robot
+  pred: RobotStatus
+  block: ['$robot == logistics:Cargo;']
+  error: TYPE_MISMATCH
+- id: G09
+  note: numeric comparison on an ID
+  pred: RobotStatus
+  block: ['$robot < 3;']
+  error: TYPE_MISMATCH
+- id: G10
+  note: ordered operator with a class
+  pred: RobotStatus
+  block: ['$robot <= logistics:Biped;']
+  error: TYPE_MISMATCH
+- id: G11
+  note: class condition on a literal (integer) argument
+  pred: RobotStatus
+  block: ['$battery == logistics:Biped;']
+  error: TYPE_MISMATCH
+- id: G12
+  note: registered individual of the wrong class
+  pred: RobotStatus
+  block: ['$robot == "cargo1";']
+  error: TYPE_MISMATCH
+- id: G13
+  pred: RobotStatus
+  block: ['$robot != logistics:Biped;']
+  ok: [[[robot, "!isa", ":Biped"]]]
+- id: G14
+  pred: RobotStatus
+  block: ['$zone == "storage";']
+  ok: [[[zone, "=", storage]]]
+- id: G15
+  note: entity-valued non-key argument
+  pred: CargoCarriedBy
+  block: ['$robot == logistics:Biped;']
+  ok: [[[robot, isa, ":Biped"]]]
+- id: G16
+  pred: CargoCarriedBy
+  block: ['$robot == "ghost9";']
+  error: UNKNOWN_INDIVIDUAL
+- id: G17
+  pred: RobotStatus
+  block: ['$nothere == 1;']
+  error: UNKNOWN_FIELD
+- id: G18
+  pred: RobotStatus
+  block: ['$robot == nope:Biped;']
+  error: UNDECLARED_PREFIX
+- id: G19
+  pred: RobotStatus
+  block: ['$battery <= 30 && $battery > 30;']
+  error: UNSATISFIABLE
+- id: G20
+  note: no parenthesised expressions
+  pred: RobotStatus
+  block: ['($battery <= 30);']
+  error: SYNTAX
+- id: G21
+  note: numeric comparison on a non-key ID argument
+  pred: CargoCarriedBy
+  block: ['$robot >= 1;']
+  error: TYPE_MISMATCH
+# Class compatibility on a narrower signature (BipedBalance robot :Biped)
+- id: G22
+  note: signature Biped, condition Wheeled - valid because hybrid1 is both
+  pred: BipedBalance
+  block: ['$robot == logistics:Wheeled;']
+  ok: [[[robot, isa, ":Wheeled"]]]
+- id: G23
+  note: no subclass and no individual is both Biped and Cargo
+  pred: BipedBalance
+  block: ['$robot == logistics:Cargo;']
+  error: TYPE_MISMATCH
+- id: G24
+  note: no subclass and no individual is both Biped and DifferentialDrive (diff1 is not Biped)
+  pred: BipedBalance
+  block: ['$robot == logistics:DifferentialDrive;']
+  error: TYPE_MISMATCH
+- id: G25
+  pred: BipedBalance
+  block: ['$robot != logistics:Wheeled;']
+  ok: [[[robot, "!isa", ":Wheeled"]]]

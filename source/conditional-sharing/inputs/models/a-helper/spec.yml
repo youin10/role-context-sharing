@@ -1,0 +1,34 @@
+# A-owned build list for the helper baseline: plan revisions (config -> plans dir), initial
+# deployments (assignment + plan revision) and changes (from -> to; targets computed by the helper).
+revisions:
+  plans/v1: config/v1.yml
+  plans/v2: config/v2.yml
+  plans/x2: config/x2.yml
+  plans/strict: config/strict.yml          # negative control input (boundary error)
+  contract/plans/typed: config/ct-typed.yml
+  contract/plans/ct2: config/ct2.yml
+  contract/plans/ct4-0: config/ct4-0.yml
+  contract/plans/ct4-1: config/ct4-1.yml
+  contract/plans/ct4-2: config/ct4-2.yml
+  contract/plans/ct5: config/ct5.yml
+  contract/plans/ct7-0: config/ct7-0.yml
+initials:
+  initial-main-v1: {assign: main, plans: plans/v1}
+  initial-res: {assign: res2, plans: plans/v1}
+  initial-main-strict: {assign: main, plans: plans/strict}
+  initial-x2: {assign: x2, plans: plans/x2}
+  contract/initial-typed: {assign: ct, plans: contract/plans/typed}
+  contract/initial-ct2: {assign: ct, plans: contract/plans/ct2}
+  contract/initial-ct4-0: {assign: ct, plans: contract/plans/ct4-0}
+  contract/initial-ct5: {assign: ct5-0, plans: contract/plans/ct5}
+  contract/initial-ct7-0: {assign: ct, plans: contract/plans/ct7-0}
+changes:
+  changes/C1: {from: [main, plans/v1], to: [main, plans/v2]}
+  changes/C2: {from: [main, plans/v2], to: [main, plans/v1]}
+  changes/R1: {from: [res2, plans/v1], to: [res1, plans/v1]}
+  changes/R2: {from: [res1, plans/v1], to: [res0, plans/v1]}
+  changes/R3: {from: [res0, plans/v1], to: [res1, plans/v1]}
+  contract/changes/CT4-1: {from: [ct, contract/plans/ct4-0], to: [ct, contract/plans/ct4-1]}
+  contract/changes/CT4-2: {from: [ct, contract/plans/ct4-1], to: [ct, contract/plans/ct4-2]}
+  contract/changes/CT5-1: {from: [ct5-0, contract/plans/ct5], to: [ct5-1, contract/plans/ct5]}
+  contract/changes/CT5-2: {from: [ct5-1, contract/plans/ct5], to: [ct5-2, contract/plans/ct5]}

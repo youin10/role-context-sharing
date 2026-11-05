@@ -1,0 +1,2 @@
+FAIL D4 decision expected {"biped1": [], "humanoid1": [], "wheeled1": ["low_power_excluded", "stop_suspect"], "diff1": ["low_power_excluded"]} observed null
+FAIL 38 rows, 1 failing

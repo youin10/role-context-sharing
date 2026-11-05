@@ -1,0 +1,4 @@
+role: BalanceWheeledWatch
+# BipedBalance takes Biped individuals; Wheeled ones among them: hybrid1
+subscribe:
+- (rule (fact (BipedBalance $robot $tilt)) (= $robot "hybrid1") --> (notify (BipedBalance $robot $tilt)))

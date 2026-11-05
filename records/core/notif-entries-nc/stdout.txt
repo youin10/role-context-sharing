@@ -1,0 +1,3 @@
+stale-model D FAIL (as intended)
+stale-model A FAIL (as intended)
+stale-model A-helper FAIL (as intended)

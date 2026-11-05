@@ -1,0 +1,8 @@
+--- d/b-res2.yml
++++ d/b-res1.yml
+@@ -2 +2 @@
+-cfg: res2
++cfg: res1
+@@ -4 +4 @@
+-  manager1: [Manager, SafetyOfficer, Dispatcher]
++  manager1: [Manager, Dispatcher]

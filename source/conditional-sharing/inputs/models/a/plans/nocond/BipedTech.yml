@@ -1,0 +1,3 @@
+role: BipedTech
+subscribe:
+- (rule (fact (RobotStatus $robot $battery $zone)) (= $robot "biped1") --> (notify (RobotStatus $robot $battery $zone)))

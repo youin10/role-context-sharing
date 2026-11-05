@@ -1,0 +1,2 @@
+FAIL s01 view-present:manager1 expected true observed false
+FAIL 51 rows, 1 failing

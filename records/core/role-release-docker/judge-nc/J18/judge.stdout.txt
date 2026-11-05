@@ -1,0 +1,2 @@
+FAIL s01 expected-agent-tech1-in-roster expected true observed false
+FAIL 51 rows, 1 failing

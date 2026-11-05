@@ -1,0 +1,213 @@
+{
+ "schema": "cslive-judge/2",
+ "verdict": "PASS",
+ "arm": "d",
+ "scenario": "CT7-cfg1",
+ "roster": [
+  "driver",
+  "d-sm",
+  "d-producer",
+  "d-agent-manager1"
+ ],
+ "hosts": {
+  "driver": "driver",
+  "d-sm": "d-sm",
+  "d-producer": "d-producer",
+  "d-agent-manager1": "d-agent-manager1"
+ },
+ "problems": [],
+ "compared": 6,
+ "mismatches": [],
+ "rows": [
+  {
+   "item": "calls",
+   "step": "e1",
+   "agent": "manager1",
+   "ok": true,
+   "want": [
+    [
+     "assert",
+     "RobotStatus",
+     "biped1",
+     {
+      "battery": 25,
+      "zone": "storage"
+     }
+    ]
+   ],
+   "got": [
+    [
+     "assert",
+     "RobotStatus",
+     "biped1",
+     {
+      "battery": 25,
+      "zone": "storage"
+     }
+    ]
+   ]
+  },
+  {
+   "item": "calls",
+   "step": "e2",
+   "agent": "manager1",
+   "ok": true,
+   "want": [
+    [
+     "retract",
+     "RobotStatus",
+     "biped1",
+     null
+    ]
+   ],
+   "got": [
+    [
+     "retract",
+     "RobotStatus",
+     "biped1",
+     null
+    ]
+   ]
+  },
+  {
+   "item": "calls",
+   "step": "e3",
+   "agent": "manager1",
+   "ok": true,
+   "want": [
+    [
+     "assert",
+     "RobotStopped",
+     "wheel1",
+     {
+      "elapsedSeconds": 300
+     }
+    ]
+   ],
+   "got": [
+    [
+     "assert",
+     "RobotStopped",
+     "wheel1",
+     {
+      "elapsedSeconds": 300
+     }
+    ]
+   ]
+  },
+  {
+   "item": "decision",
+   "step": "t1",
+   "ok": true,
+   "want": {
+    "biped1": [
+     "low_power_excluded"
+    ],
+    "hum1": [],
+    "wheel1": []
+   },
+   "got": {
+    "biped1": [
+     "low_power_excluded"
+    ],
+    "hum1": [],
+    "wheel1": []
+   }
+  },
+  {
+   "item": "decision",
+   "step": "t2",
+   "ok": true,
+   "want": {
+    "biped1": [],
+    "hum1": [],
+    "wheel1": []
+   },
+   "got": {
+    "biped1": [],
+    "hum1": [],
+    "wheel1": []
+   }
+  },
+  {
+   "item": "decision",
+   "step": "t3",
+   "ok": true,
+   "want": {
+    "biped1": [],
+    "hum1": [],
+    "wheel1": [
+     "stop_suspect"
+    ]
+   },
+   "got": {
+    "biped1": [],
+    "hum1": [],
+    "wheel1": [
+     "stop_suspect"
+    ]
+   }
+  }
+ ],
+ "stats": {
+  "expected_positive_calls": 3,
+  "observed_calls": 3,
+  "by_kind": {
+   "assert": 2,
+   "update": 0,
+   "retract": 1
+  },
+  "decisions": 3,
+  "rejected": 0,
+  "messages": {
+   "sent": 6,
+   "missing": 0,
+   "duplicate": 0,
+   "unsent": 0
+  },
+  "causes": {
+   "calls": 3,
+   "rx_ok": 3,
+   "cross_host": 3,
+   "same_step": 3,
+   "version_ok": 3
+  },
+  "settle": [
+   {
+    "step": "init",
+    "dt_s": 0.0547,
+    "probes": 2
+   },
+   {
+    "step": "e1",
+    "dt_s": 0.1138,
+    "probes": 3
+   },
+   {
+    "step": "t1",
+    "dt_s": 0.0613,
+    "probes": 2
+   },
+   {
+    "step": "e2",
+    "dt_s": 0.1099,
+    "probes": 3
+   },
+   {
+    "step": "t2",
+    "dt_s": 0.0589,
+    "probes": 2
+   },
+   {
+    "step": "e3",
+    "dt_s": 0.1143,
+    "probes": 3
+   },
+   {
+    "step": "t3",
+    "dt_s": 0.0601,
+    "probes": 2
+   }
+  ]
+ }
+}

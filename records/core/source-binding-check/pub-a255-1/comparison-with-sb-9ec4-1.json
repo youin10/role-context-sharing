@@ -1,0 +1,15 @@
+{
+ "compared": [
+  "results/sb-9ec4-1/result.json",
+  "results/pub-a255-1/result.json"
+ ],
+ "sha256": [
+  "14c0b77eb087cf2ebbddd211a099352837265f7ba210d65b995b5c68447200c3",
+  "14c0b77eb087cf2ebbddd211a099352837265f7ba210d65b995b5c68447200c3"
+ ],
+ "identical_observations": true,
+ "passed": [
+  8,
+  8
+ ]
+}

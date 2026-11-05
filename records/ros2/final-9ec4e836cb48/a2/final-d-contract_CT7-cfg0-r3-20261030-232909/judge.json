@@ -1,0 +1,153 @@
+{
+ "schema": "cslive-judge/2",
+ "verdict": "PASS",
+ "arm": "d",
+ "scenario": "CT7-cfg0",
+ "roster": [
+  "driver",
+  "d-sm",
+  "d-producer",
+  "d-agent-manager1"
+ ],
+ "hosts": {
+  "driver": "driver",
+  "d-sm": "d-sm",
+  "d-producer": "d-producer",
+  "d-agent-manager1": "d-agent-manager1"
+ },
+ "problems": [],
+ "compared": 6,
+ "mismatches": [],
+ "rows": [
+  {
+   "item": "calls",
+   "step": "e1",
+   "agent": "manager1",
+   "ok": true,
+   "want": [],
+   "got": []
+  },
+  {
+   "item": "calls",
+   "step": "e2",
+   "agent": "manager1",
+   "ok": true,
+   "want": [],
+   "got": []
+  },
+  {
+   "item": "calls",
+   "step": "e3",
+   "agent": "manager1",
+   "ok": true,
+   "want": [],
+   "got": []
+  },
+  {
+   "item": "decision",
+   "step": "t1",
+   "ok": true,
+   "want": {
+    "biped1": [],
+    "hum1": [],
+    "wheel1": []
+   },
+   "got": {
+    "biped1": [],
+    "hum1": [],
+    "wheel1": []
+   }
+  },
+  {
+   "item": "decision",
+   "step": "t2",
+   "ok": true,
+   "want": {
+    "biped1": [],
+    "hum1": [],
+    "wheel1": []
+   },
+   "got": {
+    "biped1": [],
+    "hum1": [],
+    "wheel1": []
+   }
+  },
+  {
+   "item": "decision",
+   "step": "t3",
+   "ok": true,
+   "want": {
+    "biped1": [],
+    "hum1": [],
+    "wheel1": []
+   },
+   "got": {
+    "biped1": [],
+    "hum1": [],
+    "wheel1": []
+   }
+  }
+ ],
+ "stats": {
+  "expected_positive_calls": 0,
+  "observed_calls": 0,
+  "by_kind": {
+   "assert": 0,
+   "update": 0,
+   "retract": 0
+  },
+  "decisions": 3,
+  "rejected": 0,
+  "messages": {
+   "sent": 3,
+   "missing": 0,
+   "duplicate": 0,
+   "unsent": 0
+  },
+  "causes": {
+   "calls": 0,
+   "rx_ok": 0,
+   "cross_host": 0,
+   "same_step": 0,
+   "version_ok": 0
+  },
+  "settle": [
+   {
+    "step": "init",
+    "dt_s": 0.0599,
+    "probes": 2
+   },
+   {
+    "step": "e1",
+    "dt_s": 0.117,
+    "probes": 3
+   },
+   {
+    "step": "t1",
+    "dt_s": 0.055,
+    "probes": 2
+   },
+   {
+    "step": "e2",
+    "dt_s": 0.0597,
+    "probes": 2
+   },
+   {
+    "step": "t2",
+    "dt_s": 0.0742,
+    "probes": 2
+   },
+   {
+    "step": "e3",
+    "dt_s": 0.115,
+    "probes": 3
+   },
+   {
+    "step": "t3",
+    "dt_s": 0.0595,
+    "probes": 2
+   }
+  ]
+ }
+}

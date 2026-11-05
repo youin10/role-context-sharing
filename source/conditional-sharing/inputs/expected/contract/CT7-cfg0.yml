@@ -1,0 +1,15 @@
+# Expected observations specified in traceability/CONTRACT-SPECIFICATION.md §2,
+# independent of implementation output. Commit markers of the contract are SM wire
+# messages and are not compared at the application level (assert / update / retract, view, decision).
+# cfg0 = removal control (Manager reads nothing): no reception, no flags (no evidence, not safe).
+scenario: CT7-cfg0
+# Declares that this removal control expects no reception, for the judge's positive-call gate.
+no_positive_calls: true
+calls:
+  e1: {}
+  e2: {}
+  e3: {}
+decisions:
+  t1: {biped1: [], hum1: [], wheel1: []}
+  t2: {biped1: [], hum1: [], wheel1: []}
+  t3: {biped1: [], hum1: [], wheel1: []}

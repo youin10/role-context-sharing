@@ -1,0 +1,5 @@
+manager1: [Manager]
+biped1: [Robot]
+hum1: [Robot]
+wheel1: [Robot]
+observer1: [Observer]

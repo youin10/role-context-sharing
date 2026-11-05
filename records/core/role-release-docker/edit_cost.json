@@ -1,0 +1,526 @@
+{
+ "changes": {
+  "C1": {
+   "D": {
+    "rules_only_lines": 1,
+    "with_targets_lines": 1,
+    "with_targets_and_apply_request_lines": 2,
+    "files_rules": [
+     {
+      "from": "d/M1.org",
+      "to": "d/M2.org",
+      "added": 1,
+      "removed": 1,
+      "changed_lines": 1,
+      "diff": "C1-D-rules-0.diff"
+     }
+    ],
+    "files_deploy": []
+   },
+   "A_manual": {
+    "rules_only_lines": 4,
+    "with_targets_lines": 7,
+    "with_targets_and_apply_request_lines": 8,
+    "files_rules": [
+     {
+      "from": "a/plans/v1/Manager.yml",
+      "to": "a/plans/v2/Manager.yml",
+      "added": 4,
+      "removed": 4,
+      "changed_lines": 4,
+      "diff": "C1-A_manual-rules-0.diff"
+     }
+    ],
+    "files_deploy": [
+     {
+      "from": null,
+      "to": "a/changes/C1.yml",
+      "added": 3,
+      "removed": 0,
+      "changed_lines": 3,
+      "diff": "C1-A_manual-deploy-0.diff"
+     }
+    ]
+   },
+   "A_helper": {
+    "hand_lines": 2,
+    "hand_with_apply_request_lines": 3,
+    "generated_rules_lines": 4,
+    "generated_targets_lines": 5,
+    "files_hand": [
+     {
+      "from": "a-helper/config/v1.yml",
+      "to": "a-helper/config/v2.yml",
+      "added": 1,
+      "removed": 1,
+      "changed_lines": 1,
+      "diff": "C1-A_helper-hand-0.diff"
+     }
+    ],
+    "files_generated": [
+     {
+      "from": "a-helper/plans/v1/Manager.yml",
+      "to": "a-helper/plans/v2/Manager.yml",
+      "added": 4,
+      "removed": 4,
+      "changed_lines": 4,
+      "diff": "C1-A_helper-genrules-0.diff"
+     },
+     {
+      "from": null,
+      "to": "a-helper/changes/C1.yml",
+      "added": 6,
+      "removed": 0,
+      "changed_lines": 6,
+      "diff": "C1-A_helper-gendeploy-0.diff"
+     }
+    ],
+    "note": "C2 reuses the existing v1 config (no config edit); hand = config/assign diff + spec entry"
+   }
+  },
+  "C2": {
+   "D": {
+    "rules_only_lines": 1,
+    "with_targets_lines": 1,
+    "with_targets_and_apply_request_lines": 2,
+    "files_rules": [
+     {
+      "from": "d/M2.org",
+      "to": "d/M1.org",
+      "added": 1,
+      "removed": 1,
+      "changed_lines": 1,
+      "diff": "C2-D-rules-0.diff"
+     }
+    ],
+    "files_deploy": []
+   },
+   "A_manual": {
+    "rules_only_lines": 4,
+    "with_targets_lines": 7,
+    "with_targets_and_apply_request_lines": 8,
+    "files_rules": [
+     {
+      "from": "a/plans/v2/Manager.yml",
+      "to": "a/plans/v1/Manager.yml",
+      "added": 4,
+      "removed": 4,
+      "changed_lines": 4,
+      "diff": "C2-A_manual-rules-0.diff"
+     }
+    ],
+    "files_deploy": [
+     {
+      "from": null,
+      "to": "a/changes/C2.yml",
+      "added": 3,
+      "removed": 0,
+      "changed_lines": 3,
+      "diff": "C2-A_manual-deploy-0.diff"
+     }
+    ]
+   },
+   "A_helper": {
+    "hand_lines": 1,
+    "hand_with_apply_request_lines": 2,
+    "generated_rules_lines": 4,
+    "generated_targets_lines": 5,
+    "files_hand": [],
+    "files_generated": [
+     {
+      "from": "a-helper/plans/v2/Manager.yml",
+      "to": "a-helper/plans/v1/Manager.yml",
+      "added": 4,
+      "removed": 4,
+      "changed_lines": 4,
+      "diff": "C2-A_helper-genrules-0.diff"
+     },
+     {
+      "from": null,
+      "to": "a-helper/changes/C2.yml",
+      "added": 6,
+      "removed": 0,
+      "changed_lines": 6,
+      "diff": "C2-A_helper-gendeploy-0.diff"
+     }
+    ],
+    "note": "C2 reuses the existing v1 config (no config edit); hand = config/assign diff + spec entry"
+   }
+  },
+  "R1": {
+   "D": {
+    "rules_only_lines": 0,
+    "with_targets_lines": 2,
+    "with_targets_and_apply_request_lines": 3,
+    "files_rules": [],
+    "files_deploy": [
+     {
+      "from": "d/b-res2.yml",
+      "to": "d/b-res1.yml",
+      "added": 2,
+      "removed": 2,
+      "changed_lines": 2,
+      "diff": "R1-D-deploy-0.diff"
+     }
+    ]
+   },
+   "A_manual": {
+    "rules_only_lines": 0,
+    "with_targets_lines": 3,
+    "with_targets_and_apply_request_lines": 4,
+    "files_rules": [],
+    "files_deploy": [
+     {
+      "from": null,
+      "to": "a/changes/R1.yml",
+      "added": 3,
+      "removed": 0,
+      "changed_lines": 3,
+      "diff": "R1-A_manual-deploy-0.diff"
+     }
+    ]
+   },
+   "A_helper": {
+    "hand_lines": 2,
+    "hand_with_apply_request_lines": 3,
+    "generated_rules_lines": 0,
+    "generated_targets_lines": 6,
+    "files_hand": [
+     {
+      "from": "a-helper/assign/res2.yml",
+      "to": "a-helper/assign/res1.yml",
+      "added": 1,
+      "removed": 1,
+      "changed_lines": 1,
+      "diff": "R1-A_helper-hand-0.diff"
+     }
+    ],
+    "files_generated": [
+     {
+      "from": null,
+      "to": "a-helper/changes/R1.yml",
+      "added": 7,
+      "removed": 0,
+      "changed_lines": 7,
+      "diff": "R1-A_helper-gendeploy-0.diff"
+     }
+    ],
+    "note": "C2 reuses the existing v1 config (no config edit); hand = config/assign diff + spec entry"
+   }
+  },
+  "R2": {
+   "D": {
+    "rules_only_lines": 0,
+    "with_targets_lines": 2,
+    "with_targets_and_apply_request_lines": 3,
+    "files_rules": [],
+    "files_deploy": [
+     {
+      "from": "d/b-res1.yml",
+      "to": "d/b-res0.yml",
+      "added": 2,
+      "removed": 2,
+      "changed_lines": 2,
+      "diff": "R2-D-deploy-0.diff"
+     }
+    ]
+   },
+   "A_manual": {
+    "rules_only_lines": 0,
+    "with_targets_lines": 3,
+    "with_targets_and_apply_request_lines": 4,
+    "files_rules": [],
+    "files_deploy": [
+     {
+      "from": null,
+      "to": "a/changes/R2.yml",
+      "added": 3,
+      "removed": 0,
+      "changed_lines": 3,
+      "diff": "R2-A_manual-deploy-0.diff"
+     }
+    ]
+   },
+   "A_helper": {
+    "hand_lines": 2,
+    "hand_with_apply_request_lines": 3,
+    "generated_rules_lines": 0,
+    "generated_targets_lines": 5,
+    "files_hand": [
+     {
+      "from": "a-helper/assign/res1.yml",
+      "to": "a-helper/assign/res0.yml",
+      "added": 1,
+      "removed": 1,
+      "changed_lines": 1,
+      "diff": "R2-A_helper-hand-0.diff"
+     }
+    ],
+    "files_generated": [
+     {
+      "from": null,
+      "to": "a-helper/changes/R2.yml",
+      "added": 6,
+      "removed": 0,
+      "changed_lines": 6,
+      "diff": "R2-A_helper-gendeploy-0.diff"
+     }
+    ],
+    "note": "C2 reuses the existing v1 config (no config edit); hand = config/assign diff + spec entry"
+   }
+  },
+  "CT4-1": {
+   "D": {
+    "rules_only_lines": 1,
+    "with_targets_lines": 1,
+    "with_targets_and_apply_request_lines": 2,
+    "files_rules": [
+     {
+      "from": "d/contract/CT4-0.org",
+      "to": "d/contract/CT4-1.org",
+      "added": 1,
+      "removed": 1,
+      "changed_lines": 1,
+      "diff": "CT4-1-D-rules-0.diff"
+     }
+    ],
+    "files_deploy": []
+   },
+   "A_manual": {
+    "rules_only_lines": 4,
+    "with_targets_lines": 7,
+    "with_targets_and_apply_request_lines": 8,
+    "files_rules": [
+     {
+      "from": "a/contract/plans/ct4-0/Manager.yml",
+      "to": "a/contract/plans/ct4-1/Manager.yml",
+      "added": 4,
+      "removed": 0,
+      "changed_lines": 4,
+      "diff": "CT4-1-A_manual-rules-0.diff"
+     }
+    ],
+    "files_deploy": [
+     {
+      "from": null,
+      "to": "a/contract/changes/CT4-1.yml",
+      "added": 3,
+      "removed": 0,
+      "changed_lines": 3,
+      "diff": "CT4-1-A_manual-deploy-0.diff"
+     }
+    ]
+   },
+   "A_helper": {
+    "hand_lines": 2,
+    "hand_with_apply_request_lines": 3,
+    "generated_rules_lines": 4,
+    "generated_targets_lines": 5,
+    "files_hand": [
+     {
+      "from": "a-helper/config/ct4-0.yml",
+      "to": "a-helper/config/ct4-1.yml",
+      "added": 1,
+      "removed": 0,
+      "changed_lines": 1,
+      "diff": "CT4-1-A_helper-hand-0.diff"
+     }
+    ],
+    "files_generated": [
+     {
+      "from": "a-helper/contract/plans/ct4-0/Manager.yml",
+      "to": "a-helper/contract/plans/ct4-1/Manager.yml",
+      "added": 4,
+      "removed": 0,
+      "changed_lines": 4,
+      "diff": "CT4-1-A_helper-genrules-0.diff"
+     },
+     {
+      "from": null,
+      "to": "a-helper/contract/changes/CT4-1.yml",
+      "added": 6,
+      "removed": 0,
+      "changed_lines": 6,
+      "diff": "CT4-1-A_helper-gendeploy-0.diff"
+     }
+    ],
+    "note": "C2 reuses the existing v1 config (no config edit); hand = config/assign diff + spec entry"
+   }
+  },
+  "CT4-2": {
+   "D": {
+    "rules_only_lines": 1,
+    "with_targets_lines": 1,
+    "with_targets_and_apply_request_lines": 2,
+    "files_rules": [
+     {
+      "from": "d/contract/CT4-1.org",
+      "to": "d/contract/CT4-2.org",
+      "added": 1,
+      "removed": 1,
+      "changed_lines": 1,
+      "diff": "CT4-2-D-rules-0.diff"
+     }
+    ],
+    "files_deploy": []
+   },
+   "A_manual": {
+    "rules_only_lines": 4,
+    "with_targets_lines": 7,
+    "with_targets_and_apply_request_lines": 8,
+    "files_rules": [
+     {
+      "from": "a/contract/plans/ct4-1/Manager.yml",
+      "to": "a/contract/plans/ct4-2/Manager.yml",
+      "added": 4,
+      "removed": 4,
+      "changed_lines": 4,
+      "diff": "CT4-2-A_manual-rules-0.diff"
+     }
+    ],
+    "files_deploy": [
+     {
+      "from": null,
+      "to": "a/contract/changes/CT4-2.yml",
+      "added": 3,
+      "removed": 0,
+      "changed_lines": 3,
+      "diff": "CT4-2-A_manual-deploy-0.diff"
+     }
+    ]
+   },
+   "A_helper": {
+    "hand_lines": 2,
+    "hand_with_apply_request_lines": 3,
+    "generated_rules_lines": 4,
+    "generated_targets_lines": 5,
+    "files_hand": [
+     {
+      "from": "a-helper/config/ct4-1.yml",
+      "to": "a-helper/config/ct4-2.yml",
+      "added": 1,
+      "removed": 1,
+      "changed_lines": 1,
+      "diff": "CT4-2-A_helper-hand-0.diff"
+     }
+    ],
+    "files_generated": [
+     {
+      "from": "a-helper/contract/plans/ct4-1/Manager.yml",
+      "to": "a-helper/contract/plans/ct4-2/Manager.yml",
+      "added": 4,
+      "removed": 4,
+      "changed_lines": 4,
+      "diff": "CT4-2-A_helper-genrules-0.diff"
+     },
+     {
+      "from": null,
+      "to": "a-helper/contract/changes/CT4-2.yml",
+      "added": 6,
+      "removed": 0,
+      "changed_lines": 6,
+      "diff": "CT4-2-A_helper-gendeploy-0.diff"
+     }
+    ],
+    "note": "C2 reuses the existing v1 config (no config edit); hand = config/assign diff + spec entry"
+   }
+  }
+ },
+ "semantic_units_hand_counted": {
+  "C1": {
+   "requirement": "Wheeled danger threshold 20 -> 30 (Biped unchanged)",
+   "D": {
+    "rules": 1,
+    "deployment": 0,
+    "apply_request": 1,
+    "note": "one comparison constant in roles.org (M1 -> M2); configuration regenerated"
+   },
+   "A": {
+    "rules": 4,
+    "deployment": 1,
+    "apply_request": 1,
+    "note": "constants of the per-ID Wheeled rules (wheeled1, diff1, hybrid1, wheel1) in Manager.yml; changes/C1.yml names manager1 and the plan revision"
+   },
+   "A_helper": {
+    "rules": 1,
+    "deployment": 1,
+    "apply_request": 1,
+    "note": "Wheeled threshold in config/v2.yml; one spec.yml change entry (targets computed by the helper)"
+   }
+  },
+  "C2": {
+   "requirement": "back to 20",
+   "D": {
+    "rules": 1,
+    "deployment": 0,
+    "apply_request": 1
+   },
+   "A": {
+    "rules": 4,
+    "deployment": 1,
+    "apply_request": 1
+   },
+   "A_helper": {
+    "rules": 0,
+    "deployment": 1,
+    "apply_request": 1,
+    "note": "reuses config/v1.yml; one spec.yml change entry"
+   }
+  },
+  "R1": {
+   "requirement": "manager1 drops SafetyOfficer",
+   "D": {
+    "rules": 0,
+    "deployment": 1,
+    "apply_request": 1,
+    "note": "binding role list"
+   },
+   "A": {
+    "rules": 0,
+    "deployment": 1,
+    "apply_request": 1,
+    "note": "changes/R1.yml target role list"
+   },
+   "A_helper": {
+    "rules": 0,
+    "deployment": 2,
+    "apply_request": 1,
+    "note": "assign/res1.yml role list + spec.yml change entry"
+   }
+  },
+  "R2": {
+   "requirement": "manager1 drops Manager",
+   "D": {
+    "rules": 0,
+    "deployment": 1,
+    "apply_request": 1
+   },
+   "A": {
+    "rules": 0,
+    "deployment": 1,
+    "apply_request": 1
+   },
+   "A_helper": {
+    "rules": 0,
+    "deployment": 2,
+    "apply_request": 1
+   }
+  }
+ },
+ "authoring": {
+  "D_model_M1_nonblank_lines": 55,
+  "D_binding_main_lines": 13,
+  "A_plans_v1_nonblank_lines": 35,
+  "A_plans_v1_rules": 19,
+  "A_initial_main_lines": 12,
+  "A_plan_revision_dir_files": 8,
+  "note": "A deploys a plan revision directory; v2 copies the 7 unchanged role files (counted as file copies, not edits)"
+ },
+ "helper_source_nonblank_lines": {
+  "A_core_reimplementation(arms/a/core.py, not an edit cost)": 270,
+  "A_catalogue_helper(arms/a/typed.py, one-time, baseline added function)": 88,
+  "A_expand_target_helper(arms/a/expand.py, one-time)": 76,
+  "A_helper_build_script(tools/build_a_helper.py, one-time)": 45,
+  "A_helper_inputs_one_time(config v1 + assign main + spec.yml, nonblank non-comment)": 59
+ }
+}

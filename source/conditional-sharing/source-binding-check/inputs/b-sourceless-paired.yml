@@ -1,0 +1,6 @@
+schema: rcs-d-binding/1
+cfg: b-sourceless-paired
+agents:
+  manager1: [Manager]
+  biped1: [Robot]
+  cam1: [Observer]

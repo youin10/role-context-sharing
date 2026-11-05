@@ -1,0 +1,13 @@
+# Pre-specified. manager1 roles: {Manager, SafetyOfficer(<=40), Dispatcher} -> -SafetyOfficer -> -Manager -> +Manager.
+# biped1 25 is supported by Manager (Biped <=30) and SafetyOfficer; wheeled1 35 only by SafetyOfficer.
+scenario: B3
+calls:
+  r01: {manager1: [[assert, RobotStatus, biped1, {battery: 25, zone: storage}]]}
+  r02: {manager1: [[assert, RobotStatus, wheeled1, {battery: 35, zone: storage}]]}
+  r03: {manager1: [[retract, RobotStatus, wheeled1, null]]}       # biped1 keeps support 1 (Manager): no message
+  r04: {manager1: [[retract, RobotStatus, biped1, null]]}         # support 0
+  r05: {manager1: [[assert, RobotStatus, biped1, {battery: 25, zone: storage}]]}
+views:
+  r03: {manager1: {RobotStatus/biped1: {battery: 25, zone: storage}}}
+  r04: {manager1: {}}
+  r05: {manager1: {RobotStatus/biped1: {battery: 25, zone: storage}}}

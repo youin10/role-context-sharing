@@ -1,0 +1,24 @@
+# Pre-specified semantic edit units per change (one unit = one decision an author writes down).
+# Diff line counts are computed separately from the versioned files by tools/edit_cost.py.
+# apply_request = naming the new configuration in the change step (every arm, 1 unit).
+changes:
+  C1:
+    requirement: Wheeled danger threshold 20 -> 30 (Biped unchanged)
+    D: {rules: 1, deployment: 0, apply_request: 1, note: "one comparison constant in roles.org (M1 -> M2); configuration regenerated"}
+    A: {rules: 4, deployment: 1, apply_request: 1, note: "constants of the per-ID Wheeled rules (wheeled1, diff1, hybrid1, wheel1) in Manager.yml; changes/C1.yml names manager1 and the plan revision"}
+    A_helper: {rules: 1, deployment: 1, apply_request: 1, note: "Wheeled threshold in config/v2.yml; one spec.yml change entry (targets computed by the helper)"}
+  C2:
+    requirement: back to 20
+    D: {rules: 1, deployment: 0, apply_request: 1}
+    A: {rules: 4, deployment: 1, apply_request: 1}
+    A_helper: {rules: 0, deployment: 1, apply_request: 1, note: "reuses config/v1.yml; one spec.yml change entry"}
+  R1:
+    requirement: manager1 drops SafetyOfficer
+    D: {rules: 0, deployment: 1, apply_request: 1, note: "binding role list"}
+    A: {rules: 0, deployment: 1, apply_request: 1, note: "changes/R1.yml target role list"}
+    A_helper: {rules: 0, deployment: 2, apply_request: 1, note: "assign/res1.yml role list + spec.yml change entry"}
+  R2:
+    requirement: manager1 drops Manager
+    D: {rules: 0, deployment: 1, apply_request: 1}
+    A: {rules: 0, deployment: 1, apply_request: 1}
+    A_helper: {rules: 0, deployment: 2, apply_request: 1}

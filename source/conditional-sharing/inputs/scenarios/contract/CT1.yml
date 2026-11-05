@@ -1,0 +1,11 @@
+id: CT1
+title: contract T1 battery boundary, type and subtype
+d: {model: contract/CT-typed, binding: contract/b-ct}
+a: {initial: contract/initial-typed}
+observe: [manager1]
+steps:
+- {id: e1, report: [biped1, RobotStatus, biped1, {battery: 31, zone: storage}]}
+- {id: e2, report: [biped1, RobotStatus, biped1, {battery: 30, zone: storage}]}
+- {id: e3, report: [hum1, RobotStatus, hum1, {battery: 25, zone: storage}]}
+- {id: e4, report: [wheel1, RobotStatus, wheel1, {battery: 25, zone: storage}]}
+- {id: e5, report: [wheel1, RobotStatus, wheel1, {battery: 20, zone: storage}]}

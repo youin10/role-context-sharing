@@ -1,0 +1,14 @@
+# Pre-specified from the requirement, independent of implementation output: BipedBalance takes Biped
+# individuals; watcher1 wants those that are also Wheeled. hybrid1 is Biped and Wheeled.
+scenario: X2
+calls:
+  x01: {}                                                       # biped1 is not Wheeled
+  x02: {watcher1: [[assert, BipedBalance, hybrid1, {tilt: 7}]]}
+  x03: {}                                                       # humanoid1 is not Wheeled
+  x04: {}                                                       # wheeled1 is not a Biped: refused
+  x05: {watcher1: [[retract, BipedBalance, hybrid1, null]]}
+views:
+  x04: {watcher1: {BipedBalance/hybrid1: {tilt: 7}}}
+  x05: {watcher1: {}}
+rejected:
+  x04: [TYPE_MISMATCH]

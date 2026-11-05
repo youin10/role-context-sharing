@@ -1,0 +1,8 @@
+schema: rcs-d-binding/1
+cfg: ct5-1
+agents:
+  manager1: [FleetMonitor]
+  biped1: [Robot]
+  hum1: [Robot]
+  wheel1: [Robot]
+  observer1: [Observer]

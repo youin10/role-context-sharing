@@ -1,0 +1,18 @@
+# Pre-specified. tech1: robot == "biped1" (identity). watch1: robot != Biped class (registered individuals only).
+# auditor1: CargoCarriedBy robot (non-key, entity-valued) is a Biped (Humanoid included).
+scenario: K
+calls:
+  k01: {tech1: [[assert, RobotStatus, biped1, {battery: 50, zone: storage}]]}
+  k02: {watch1: [[assert, RobotStatus, wheeled1, {battery: 50, zone: storage}]]}
+  k03: {}
+  k04: {watch1: [[assert, RobotStatus, diff1, {battery: 50, zone: storage}]]}
+  k05: {}
+  k06: {auditor1: [[assert, CargoCarriedBy, cargo1, {robot: humanoid1}]]}
+  k07: {auditor1: [[retract, CargoCarriedBy, cargo1, null]]}
+  k08: {auditor1: [[assert, CargoCarriedBy, cargo1, {robot: biped1}]]}
+  k09: {auditor1: [[retract, CargoCarriedBy, cargo1, null]]}
+views:
+  k04: {tech1: {RobotStatus/biped1: {battery: 50, zone: storage}},
+        watch1: {RobotStatus/wheeled1: {battery: 50, zone: storage}, RobotStatus/diff1: {battery: 50, zone: storage}}}
+  k07: {auditor1: {}}
+  k09: {auditor1: {}}

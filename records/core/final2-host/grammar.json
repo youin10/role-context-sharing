@@ -1,0 +1,572 @@
+[
+ {
+  "expected": [
+   [
+    [
+     "robot",
+     "isa",
+     ":Biped"
+    ],
+    [
+     "battery",
+     "<=",
+     30
+    ]
+   ],
+   [
+    [
+     "robot",
+     "isa",
+     ":Wheeled"
+    ],
+    [
+     "battery",
+     "<=",
+     20
+    ]
+   ]
+  ],
+  "id": "G01",
+  "note": "typed OR in one line, && binds tighter than ||",
+  "observed": {
+   "codes": [],
+   "dnf": [
+    [
+     [
+      "robot",
+      "isa",
+      ":Biped"
+     ],
+     [
+      "battery",
+      "<=",
+      30
+     ]
+    ],
+    [
+     [
+      "robot",
+      "isa",
+      ":Wheeled"
+     ],
+     [
+      "battery",
+      "<=",
+      20
+     ]
+    ]
+   ],
+   "stage": "generated"
+  },
+  "pass": true,
+  "text": "prefix logistics: <http://ai.uos.ac.kr/logistics-ontology#>;\n\nrole Probe {\n  reads {\n    logistics:RobotStatus($robot, $battery, $zone) {\n      $robot == logistics:Biped && $battery <= 30 || $robot == logistics:Wheeled && $battery <= 20;\n    }\n  }\n}\n\nrole Robot {\n  changes {\n    logistics:RobotStatus($robot, $battery, $zone);\n    logistics:CargoCarriedBy($cargo, $robot);\n    logistics:BipedBalance($robot, $tilt);\n  }\n}\n"
+ },
+ {
+  "expected": [
+   [
+    [
+     "robot",
+     "isa",
+     ":Biped"
+    ],
+    [
+     "battery",
+     "<=",
+     30
+    ]
+   ]
+  ],
+  "id": "G02",
+  "note": "two lines are a conjunction",
+  "observed": {
+   "codes": [],
+   "dnf": [
+    [
+     [
+      "robot",
+      "isa",
+      ":Biped"
+     ],
+     [
+      "battery",
+      "<=",
+      30
+     ]
+    ]
+   ],
+   "stage": "generated"
+  },
+  "pass": true,
+  "text": "prefix logistics: <http://ai.uos.ac.kr/logistics-ontology#>;\n\nrole Probe {\n  reads {\n    logistics:RobotStatus($robot, $battery, $zone) {\n      $robot == logistics:Biped;\n      $battery <= 30;\n    }\n  }\n}\n\nrole Robot {\n  changes {\n    logistics:RobotStatus($robot, $battery, $zone);\n    logistics:CargoCarriedBy($cargo, $robot);\n    logistics:BipedBalance($robot, $tilt);\n  }\n}\n"
+ },
+ {
+  "expected": [
+   [
+    [
+     "robot",
+     "isa",
+     ":Biped"
+    ],
+    [
+     "battery",
+     "<=",
+     20
+    ]
+   ],
+   [
+    [
+     "robot",
+     "isa",
+     ":Wheeled"
+    ],
+    [
+     "battery",
+     "<=",
+     20
+    ]
+   ]
+  ],
+  "id": "G03",
+  "note": "lines distribute over an OR line (DNF)",
+  "observed": {
+   "codes": [],
+   "dnf": [
+    [
+     [
+      "robot",
+      "isa",
+      ":Biped"
+     ],
+     [
+      "battery",
+      "<=",
+      20
+     ]
+    ],
+    [
+     [
+      "robot",
+      "isa",
+      ":Wheeled"
+     ],
+     [
+      "battery",
+      "<=",
+      20
+     ]
+    ]
+   ],
+   "stage": "generated"
+  },
+  "pass": true,
+  "text": "prefix logistics: <http://ai.uos.ac.kr/logistics-ontology#>;\n\nrole Probe {\n  reads {\n    logistics:RobotStatus($robot, $battery, $zone) {\n      $robot == logistics:Biped || $robot == logistics:Wheeled;\n      $battery <= 20;\n    }\n  }\n}\n\nrole Robot {\n  changes {\n    logistics:RobotStatus($robot, $battery, $zone);\n    logistics:CargoCarriedBy($cargo, $robot);\n    logistics:BipedBalance($robot, $tilt);\n  }\n}\n"
+ },
+ {
+  "expected": "DUPLICATE_READ",
+  "id": "G04",
+  "note": "AND-only alternative - the same predicate twice in one role is refused, so OR is needed in one role",
+  "observed": {
+   "codes": [
+    "DUPLICATE_READ"
+   ],
+   "dnf": null,
+   "message": "DUPLICATE_READ roles.Probe.reads.RobotStatus: Probe declares RobotStatus more than once",
+   "stage": "parsed"
+  },
+  "pass": true,
+  "text": "prefix logistics: <http://ai.uos.ac.kr/logistics-ontology#>;\n\nrole Probe {\n  reads {\n    logistics:RobotStatus($robot, $battery, $zone) {\n      $robot == logistics:Biped;\n    }\n    logistics:RobotStatus($robot, $battery, $zone) {\n      $robot == logistics:Wheeled;\n    }\n  }\n}\n\nrole Robot {\n  changes {\n    logistics:RobotStatus($robot, $battery, $zone);\n    logistics:CargoCarriedBy($cargo, $robot);\n    logistics:BipedBalance($robot, $tilt);\n  }\n}\n"
+ },
+ {
+  "expected": [
+   [
+    [
+     "robot",
+     "=",
+     "biped1"
+    ]
+   ]
+  ],
+  "id": "G05",
+  "note": "identity of the first argument (individual ID)",
+  "observed": {
+   "codes": [],
+   "dnf": [
+    [
+     [
+      "robot",
+      "=",
+      "biped1"
+     ]
+    ]
+   ],
+   "stage": "generated"
+  },
+  "pass": true,
+  "text": "prefix logistics: <http://ai.uos.ac.kr/logistics-ontology#>;\n\nrole Probe {\n  reads {\n    logistics:RobotStatus($robot, $battery, $zone) {\n      $robot == \"biped1\";\n    }\n  }\n}\n\nrole Robot {\n  changes {\n    logistics:RobotStatus($robot, $battery, $zone);\n    logistics:CargoCarriedBy($cargo, $robot);\n    logistics:BipedBalance($robot, $tilt);\n  }\n}\n"
+ },
+ {
+  "expected": "UNKNOWN_INDIVIDUAL",
+  "id": "G06",
+  "note": "a quoted class name is an ID, not a class",
+  "observed": {
+   "codes": [
+    "UNKNOWN_INDIVIDUAL"
+   ],
+   "dnf": null,
+   "message": "UNKNOWN_INDIVIDUAL roles.Probe.reads.RobotStatus: individual 'Biped' is not registered (a class needs a prefixed name)",
+   "stage": "parsed"
+  },
+  "pass": true,
+  "text": "prefix logistics: <http://ai.uos.ac.kr/logistics-ontology#>;\n\nrole Probe {\n  reads {\n    logistics:RobotStatus($robot, $battery, $zone) {\n      $robot == \"Biped\";\n    }\n  }\n}\n\nrole Robot {\n  changes {\n    logistics:RobotStatus($robot, $battery, $zone);\n    logistics:CargoCarriedBy($cargo, $robot);\n    logistics:BipedBalance($robot, $tilt);\n  }\n}\n"
+ },
+ {
+  "expected": "UNKNOWN_CLASS",
+  "id": "G07",
+  "note": null,
+  "observed": {
+   "codes": [
+    "UNKNOWN_CLASS"
+   ],
+   "dnf": null,
+   "message": "UNKNOWN_CLASS roles.Probe.reads.RobotStatus: unknown class http://ai.uos.ac.kr/logistics-ontology#Bipedal in condition on robot",
+   "stage": "parsed"
+  },
+  "pass": true,
+  "text": "prefix logistics: <http://ai.uos.ac.kr/logistics-ontology#>;\n\nrole Probe {\n  reads {\n    logistics:RobotStatus($robot, $battery, $zone) {\n      $robot == logistics:Bipedal;\n    }\n  }\n}\n\nrole Robot {\n  changes {\n    logistics:RobotStatus($robot, $battery, $zone);\n    logistics:CargoCarriedBy($cargo, $robot);\n    logistics:BipedBalance($robot, $tilt);\n  }\n}\n"
+ },
+ {
+  "expected": "TYPE_MISMATCH",
+  "id": "G08",
+  "note": "class unrelated to argumentType Robot",
+  "observed": {
+   "codes": [
+    "TYPE_MISMATCH"
+   ],
+   "dnf": null,
+   "message": "TYPE_MISMATCH roles.Probe.reads.RobotStatus: no declared subclass and no registered individual is both http://ai.uos.ac.kr/logistics-ontology#Cargo and argumentType http://ai.uos.ac.kr/logistics-ontology#Robot of robot (fixed catalogue)",
+   "stage": "parsed"
+  },
+  "pass": true,
+  "text": "prefix logistics: <http://ai.uos.ac.kr/logistics-ontology#>;\n\nrole Probe {\n  reads {\n    logistics:RobotStatus($robot, $battery, $zone) {\n      $robot == logistics:Cargo;\n    }\n  }\n}\n\nrole Robot {\n  changes {\n    logistics:RobotStatus($robot, $battery, $zone);\n    logistics:CargoCarriedBy($cargo, $robot);\n    logistics:BipedBalance($robot, $tilt);\n  }\n}\n"
+ },
+ {
+  "expected": "TYPE_MISMATCH",
+  "id": "G09",
+  "note": "numeric comparison on an ID",
+  "observed": {
+   "codes": [
+    "TYPE_MISMATCH"
+   ],
+   "dnf": null,
+   "message": "TYPE_MISMATCH roles.Probe.reads.RobotStatus: ordered operator < on identifier field robot",
+   "stage": "parsed"
+  },
+  "pass": true,
+  "text": "prefix logistics: <http://ai.uos.ac.kr/logistics-ontology#>;\n\nrole Probe {\n  reads {\n    logistics:RobotStatus($robot, $battery, $zone) {\n      $robot < 3;\n    }\n  }\n}\n\nrole Robot {\n  changes {\n    logistics:RobotStatus($robot, $battery, $zone);\n    logistics:CargoCarriedBy($cargo, $robot);\n    logistics:BipedBalance($robot, $tilt);\n  }\n}\n"
+ },
+ {
+  "expected": "TYPE_MISMATCH",
+  "id": "G10",
+  "note": "ordered operator with a class",
+  "observed": {
+   "codes": [
+    "TYPE_MISMATCH"
+   ],
+   "dnf": null,
+   "message": "TYPE_MISMATCH: ordered operator <= on ontology class logistics:Biped",
+   "stage": null
+  },
+  "pass": true,
+  "text": "prefix logistics: <http://ai.uos.ac.kr/logistics-ontology#>;\n\nrole Probe {\n  reads {\n    logistics:RobotStatus($robot, $battery, $zone) {\n      $robot <= logistics:Biped;\n    }\n  }\n}\n\nrole Robot {\n  changes {\n    logistics:RobotStatus($robot, $battery, $zone);\n    logistics:CargoCarriedBy($cargo, $robot);\n    logistics:BipedBalance($robot, $tilt);\n  }\n}\n"
+ },
+ {
+  "expected": "TYPE_MISMATCH",
+  "id": "G11",
+  "note": "class condition on a literal (integer) argument",
+  "observed": {
+   "codes": [
+    "TYPE_MISMATCH"
+   ],
+   "dnf": null,
+   "message": "TYPE_MISMATCH roles.Probe.reads.RobotStatus: class condition on literal field battery (http://www.w3.org/2001/XMLSchema#integer)",
+   "stage": "parsed"
+  },
+  "pass": true,
+  "text": "prefix logistics: <http://ai.uos.ac.kr/logistics-ontology#>;\n\nrole Probe {\n  reads {\n    logistics:RobotStatus($robot, $battery, $zone) {\n      $battery == logistics:Biped;\n    }\n  }\n}\n\nrole Robot {\n  changes {\n    logistics:RobotStatus($robot, $battery, $zone);\n    logistics:CargoCarriedBy($cargo, $robot);\n    logistics:BipedBalance($robot, $tilt);\n  }\n}\n"
+ },
+ {
+  "expected": "TYPE_MISMATCH",
+  "id": "G12",
+  "note": "registered individual of the wrong class",
+  "observed": {
+   "codes": [
+    "TYPE_MISMATCH"
+   ],
+   "dnf": null,
+   "message": "TYPE_MISMATCH roles.Probe.reads.RobotStatus: individual 'cargo1' is not a http://ai.uos.ac.kr/logistics-ontology#Robot",
+   "stage": "parsed"
+  },
+  "pass": true,
+  "text": "prefix logistics: <http://ai.uos.ac.kr/logistics-ontology#>;\n\nrole Probe {\n  reads {\n    logistics:RobotStatus($robot, $battery, $zone) {\n      $robot == \"cargo1\";\n    }\n  }\n}\n\nrole Robot {\n  changes {\n    logistics:RobotStatus($robot, $battery, $zone);\n    logistics:CargoCarriedBy($cargo, $robot);\n    logistics:BipedBalance($robot, $tilt);\n  }\n}\n"
+ },
+ {
+  "expected": [
+   [
+    [
+     "robot",
+     "!isa",
+     ":Biped"
+    ]
+   ]
+  ],
+  "id": "G13",
+  "note": null,
+  "observed": {
+   "codes": [],
+   "dnf": [
+    [
+     [
+      "robot",
+      "!isa",
+      ":Biped"
+     ]
+    ]
+   ],
+   "stage": "generated"
+  },
+  "pass": true,
+  "text": "prefix logistics: <http://ai.uos.ac.kr/logistics-ontology#>;\n\nrole Probe {\n  reads {\n    logistics:RobotStatus($robot, $battery, $zone) {\n      $robot != logistics:Biped;\n    }\n  }\n}\n\nrole Robot {\n  changes {\n    logistics:RobotStatus($robot, $battery, $zone);\n    logistics:CargoCarriedBy($cargo, $robot);\n    logistics:BipedBalance($robot, $tilt);\n  }\n}\n"
+ },
+ {
+  "expected": [
+   [
+    [
+     "zone",
+     "=",
+     "storage"
+    ]
+   ]
+  ],
+  "id": "G14",
+  "note": null,
+  "observed": {
+   "codes": [],
+   "dnf": [
+    [
+     [
+      "zone",
+      "=",
+      "storage"
+     ]
+    ]
+   ],
+   "stage": "generated"
+  },
+  "pass": true,
+  "text": "prefix logistics: <http://ai.uos.ac.kr/logistics-ontology#>;\n\nrole Probe {\n  reads {\n    logistics:RobotStatus($robot, $battery, $zone) {\n      $zone == \"storage\";\n    }\n  }\n}\n\nrole Robot {\n  changes {\n    logistics:RobotStatus($robot, $battery, $zone);\n    logistics:CargoCarriedBy($cargo, $robot);\n    logistics:BipedBalance($robot, $tilt);\n  }\n}\n"
+ },
+ {
+  "expected": [
+   [
+    [
+     "robot",
+     "isa",
+     ":Biped"
+    ]
+   ]
+  ],
+  "id": "G15",
+  "note": "entity-valued non-key argument",
+  "observed": {
+   "codes": [],
+   "dnf": [
+    [
+     [
+      "robot",
+      "isa",
+      ":Biped"
+     ]
+    ]
+   ],
+   "stage": "generated"
+  },
+  "pass": true,
+  "text": "prefix logistics: <http://ai.uos.ac.kr/logistics-ontology#>;\n\nrole Probe {\n  reads {\n    logistics:CargoCarriedBy($cargo, $robot) {\n      $robot == logistics:Biped;\n    }\n  }\n}\n\nrole Robot {\n  changes {\n    logistics:RobotStatus($robot, $battery, $zone);\n    logistics:CargoCarriedBy($cargo, $robot);\n    logistics:BipedBalance($robot, $tilt);\n  }\n}\n"
+ },
+ {
+  "expected": "UNKNOWN_INDIVIDUAL",
+  "id": "G16",
+  "note": null,
+  "observed": {
+   "codes": [
+    "UNKNOWN_INDIVIDUAL"
+   ],
+   "dnf": null,
+   "message": "UNKNOWN_INDIVIDUAL roles.Probe.reads.CargoCarriedBy: individual 'ghost9' is not registered (a class needs a prefixed name)",
+   "stage": "parsed"
+  },
+  "pass": true,
+  "text": "prefix logistics: <http://ai.uos.ac.kr/logistics-ontology#>;\n\nrole Probe {\n  reads {\n    logistics:CargoCarriedBy($cargo, $robot) {\n      $robot == \"ghost9\";\n    }\n  }\n}\n\nrole Robot {\n  changes {\n    logistics:RobotStatus($robot, $battery, $zone);\n    logistics:CargoCarriedBy($cargo, $robot);\n    logistics:BipedBalance($robot, $tilt);\n  }\n}\n"
+ },
+ {
+  "expected": "UNKNOWN_FIELD",
+  "id": "G17",
+  "note": null,
+  "observed": {
+   "codes": [
+    "UNKNOWN_FIELD"
+   ],
+   "dnf": null,
+   "message": "UNKNOWN_FIELD: unbound condition variable $nothere",
+   "stage": null
+  },
+  "pass": true,
+  "text": "prefix logistics: <http://ai.uos.ac.kr/logistics-ontology#>;\n\nrole Probe {\n  reads {\n    logistics:RobotStatus($robot, $battery, $zone) {\n      $nothere == 1;\n    }\n  }\n}\n\nrole Robot {\n  changes {\n    logistics:RobotStatus($robot, $battery, $zone);\n    logistics:CargoCarriedBy($cargo, $robot);\n    logistics:BipedBalance($robot, $tilt);\n  }\n}\n"
+ },
+ {
+  "expected": "UNDECLARED_PREFIX",
+  "id": "G18",
+  "note": null,
+  "observed": {
+   "codes": [
+    "UNDECLARED_PREFIX"
+   ],
+   "dnf": null,
+   "message": "UNDECLARED_PREFIX: undeclared prefix 'nope'",
+   "stage": null
+  },
+  "pass": true,
+  "text": "prefix logistics: <http://ai.uos.ac.kr/logistics-ontology#>;\n\nrole Probe {\n  reads {\n    logistics:RobotStatus($robot, $battery, $zone) {\n      $robot == nope:Biped;\n    }\n  }\n}\n\nrole Robot {\n  changes {\n    logistics:RobotStatus($robot, $battery, $zone);\n    logistics:CargoCarriedBy($cargo, $robot);\n    logistics:BipedBalance($robot, $tilt);\n  }\n}\n"
+ },
+ {
+  "expected": "UNSATISFIABLE",
+  "id": "G19",
+  "note": null,
+  "observed": {
+   "codes": [
+    "UNSATISFIABLE"
+   ],
+   "dnf": null,
+   "message": "UNSATISFIABLE roles.Probe.reads.RobotStatus: conditions on battery exclude every value",
+   "stage": "parsed"
+  },
+  "pass": true,
+  "text": "prefix logistics: <http://ai.uos.ac.kr/logistics-ontology#>;\n\nrole Probe {\n  reads {\n    logistics:RobotStatus($robot, $battery, $zone) {\n      $battery <= 30 && $battery > 30;\n    }\n  }\n}\n\nrole Robot {\n  changes {\n    logistics:RobotStatus($robot, $battery, $zone);\n    logistics:CargoCarriedBy($cargo, $robot);\n    logistics:BipedBalance($robot, $tilt);\n  }\n}\n"
+ },
+ {
+  "expected": "SYNTAX",
+  "id": "G20",
+  "note": "no parenthesised expressions",
+  "observed": {
+   "codes": [
+    "SYNTAX"
+   ],
+   "dnf": null,
+   "message": "SYNTAX: a comparison starts with a pattern variable, got '(' (no parentheses)",
+   "stage": null
+  },
+  "pass": true,
+  "text": "prefix logistics: <http://ai.uos.ac.kr/logistics-ontology#>;\n\nrole Probe {\n  reads {\n    logistics:RobotStatus($robot, $battery, $zone) {\n      ($battery <= 30);\n    }\n  }\n}\n\nrole Robot {\n  changes {\n    logistics:RobotStatus($robot, $battery, $zone);\n    logistics:CargoCarriedBy($cargo, $robot);\n    logistics:BipedBalance($robot, $tilt);\n  }\n}\n"
+ },
+ {
+  "expected": "TYPE_MISMATCH",
+  "id": "G21",
+  "note": "numeric comparison on a non-key ID argument",
+  "observed": {
+   "codes": [
+    "TYPE_MISMATCH"
+   ],
+   "dnf": null,
+   "message": "TYPE_MISMATCH roles.Probe.reads.CargoCarriedBy: ordered operator >= on identifier field robot",
+   "stage": "parsed"
+  },
+  "pass": true,
+  "text": "prefix logistics: <http://ai.uos.ac.kr/logistics-ontology#>;\n\nrole Probe {\n  reads {\n    logistics:CargoCarriedBy($cargo, $robot) {\n      $robot >= 1;\n    }\n  }\n}\n\nrole Robot {\n  changes {\n    logistics:RobotStatus($robot, $battery, $zone);\n    logistics:CargoCarriedBy($cargo, $robot);\n    logistics:BipedBalance($robot, $tilt);\n  }\n}\n"
+ },
+ {
+  "expected": [
+   [
+    [
+     "robot",
+     "isa",
+     ":Wheeled"
+    ]
+   ]
+  ],
+  "id": "G22",
+  "note": "signature Biped, condition Wheeled - valid because hybrid1 is both",
+  "observed": {
+   "codes": [],
+   "dnf": [
+    [
+     [
+      "robot",
+      "isa",
+      ":Wheeled"
+     ]
+    ]
+   ],
+   "stage": "generated"
+  },
+  "pass": true,
+  "text": "prefix logistics: <http://ai.uos.ac.kr/logistics-ontology#>;\n\nrole Probe {\n  reads {\n    logistics:BipedBalance($robot, $tilt) {\n      $robot == logistics:Wheeled;\n    }\n  }\n}\n\nrole Robot {\n  changes {\n    logistics:RobotStatus($robot, $battery, $zone);\n    logistics:CargoCarriedBy($cargo, $robot);\n    logistics:BipedBalance($robot, $tilt);\n  }\n}\n"
+ },
+ {
+  "expected": "TYPE_MISMATCH",
+  "id": "G23",
+  "note": "no subclass and no individual is both Biped and Cargo",
+  "observed": {
+   "codes": [
+    "TYPE_MISMATCH"
+   ],
+   "dnf": null,
+   "message": "TYPE_MISMATCH roles.Probe.reads.BipedBalance: no declared subclass and no registered individual is both http://ai.uos.ac.kr/logistics-ontology#Cargo and argumentType http://ai.uos.ac.kr/logistics-ontology#Biped of robot (fixed catalogue)",
+   "stage": "parsed"
+  },
+  "pass": true,
+  "text": "prefix logistics: <http://ai.uos.ac.kr/logistics-ontology#>;\n\nrole Probe {\n  reads {\n    logistics:BipedBalance($robot, $tilt) {\n      $robot == logistics:Cargo;\n    }\n  }\n}\n\nrole Robot {\n  changes {\n    logistics:RobotStatus($robot, $battery, $zone);\n    logistics:CargoCarriedBy($cargo, $robot);\n    logistics:BipedBalance($robot, $tilt);\n  }\n}\n"
+ },
+ {
+  "expected": "TYPE_MISMATCH",
+  "id": "G24",
+  "note": "no subclass and no individual is both Biped and DifferentialDrive (diff1 is not Biped)",
+  "observed": {
+   "codes": [
+    "TYPE_MISMATCH"
+   ],
+   "dnf": null,
+   "message": "TYPE_MISMATCH roles.Probe.reads.BipedBalance: no declared subclass and no registered individual is both http://ai.uos.ac.kr/logistics-ontology#DifferentialDrive and argumentType http://ai.uos.ac.kr/logistics-ontology#Biped of robot (fixed catalogue)",
+   "stage": "parsed"
+  },
+  "pass": true,
+  "text": "prefix logistics: <http://ai.uos.ac.kr/logistics-ontology#>;\n\nrole Probe {\n  reads {\n    logistics:BipedBalance($robot, $tilt) {\n      $robot == logistics:DifferentialDrive;\n    }\n  }\n}\n\nrole Robot {\n  changes {\n    logistics:RobotStatus($robot, $battery, $zone);\n    logistics:CargoCarriedBy($cargo, $robot);\n    logistics:BipedBalance($robot, $tilt);\n  }\n}\n"
+ },
+ {
+  "expected": [
+   [
+    [
+     "robot",
+     "!isa",
+     ":Wheeled"
+    ]
+   ]
+  ],
+  "id": "G25",
+  "note": null,
+  "observed": {
+   "codes": [],
+   "dnf": [
+    [
+     [
+      "robot",
+      "!isa",
+      ":Wheeled"
+     ]
+    ]
+   ],
+   "stage": "generated"
+  },
+  "pass": true,
+  "text": "prefix logistics: <http://ai.uos.ac.kr/logistics-ontology#>;\n\nrole Probe {\n  reads {\n    logistics:BipedBalance($robot, $tilt) {\n      $robot != logistics:Wheeled;\n    }\n  }\n}\n\nrole Robot {\n  changes {\n    logistics:RobotStatus($robot, $battery, $zone);\n    logistics:CargoCarriedBy($cargo, $robot);\n    logistics:BipedBalance($robot, $tilt);\n  }\n}\n"
+ }
+]

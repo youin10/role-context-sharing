@@ -1,0 +1,484 @@
+{
+ "action": "read-only re-judgement of the ROS 2 evidence of record with the packaged live/judge.py, live/check_entries.py and packaged inputs; output written outside the package; no new run",
+ "evidence_of_record": "66 runs of records/ros2/final-9ec4e836cb48/a2 (snapshot cs-core-9ec4e836cb48)",
+ "runs": 66,
+ "pass": 66,
+ "identical_to_stored": 66,
+ "ct5_entries_pass": 6,
+ "items": [
+  {
+   "run": "final-a-K-r1-20261030-232538",
+   "core_snapshot_id": "cs-core-9ec4e836cb48",
+   "verdict": "PASS",
+   "compared": 31,
+   "identical_to_stored": true
+  },
+  {
+   "run": "final-a-K-r2-20261030-232737",
+   "core_snapshot_id": "cs-core-9ec4e836cb48",
+   "verdict": "PASS",
+   "compared": 31,
+   "identical_to_stored": true
+  },
+  {
+   "run": "final-a-K-r3-20261030-232935",
+   "core_snapshot_id": "cs-core-9ec4e836cb48",
+   "verdict": "PASS",
+   "compared": 31,
+   "identical_to_stored": true
+  },
+  {
+   "run": "final-a-P1-r1-20261030-232602",
+   "core_snapshot_id": "cs-core-9ec4e836cb48",
+   "verdict": "PASS",
+   "compared": 16,
+   "identical_to_stored": true
+  },
+  {
+   "run": "final-a-P1-r2-20261030-232801",
+   "core_snapshot_id": "cs-core-9ec4e836cb48",
+   "verdict": "PASS",
+   "compared": 16,
+   "identical_to_stored": true
+  },
+  {
+   "run": "final-a-P1-r3-20261030-232959",
+   "core_snapshot_id": "cs-core-9ec4e836cb48",
+   "verdict": "PASS",
+   "compared": 16,
+   "identical_to_stored": true
+  },
+  {
+   "run": "final-a-T-r1-20261030-232550",
+   "core_snapshot_id": "cs-core-9ec4e836cb48",
+   "verdict": "PASS",
+   "compared": 24,
+   "identical_to_stored": true
+  },
+  {
+   "run": "final-a-T-r2-20261030-232749",
+   "core_snapshot_id": "cs-core-9ec4e836cb48",
+   "verdict": "PASS",
+   "compared": 24,
+   "identical_to_stored": true
+  },
+  {
+   "run": "final-a-T-r3-20261030-232947",
+   "core_snapshot_id": "cs-core-9ec4e836cb48",
+   "verdict": "PASS",
+   "compared": 24,
+   "identical_to_stored": true
+  },
+  {
+   "run": "final-a-contract_CT1-r1-20261030-232414",
+   "core_snapshot_id": "cs-core-9ec4e836cb48",
+   "verdict": "PASS",
+   "compared": 8,
+   "identical_to_stored": true
+  },
+  {
+   "run": "final-a-contract_CT1-r2-20261030-232614",
+   "core_snapshot_id": "cs-core-9ec4e836cb48",
+   "verdict": "PASS",
+   "compared": 8,
+   "identical_to_stored": true
+  },
+  {
+   "run": "final-a-contract_CT1-r3-20261030-232812",
+   "core_snapshot_id": "cs-core-9ec4e836cb48",
+   "verdict": "PASS",
+   "compared": 8,
+   "identical_to_stored": true
+  },
+  {
+   "run": "final-a-contract_CT2-r1-20261030-232424",
+   "core_snapshot_id": "cs-core-9ec4e836cb48",
+   "verdict": "PASS",
+   "compared": 4,
+   "identical_to_stored": true
+  },
+  {
+   "run": "final-a-contract_CT2-r2-20261030-232624",
+   "core_snapshot_id": "cs-core-9ec4e836cb48",
+   "verdict": "PASS",
+   "compared": 4,
+   "identical_to_stored": true
+  },
+  {
+   "run": "final-a-contract_CT2-r3-20261030-232822",
+   "core_snapshot_id": "cs-core-9ec4e836cb48",
+   "verdict": "PASS",
+   "compared": 4,
+   "identical_to_stored": true
+  },
+  {
+   "run": "final-a-contract_CT3-r1-20261030-232435",
+   "core_snapshot_id": "cs-core-9ec4e836cb48",
+   "verdict": "PASS",
+   "compared": 10,
+   "identical_to_stored": true
+  },
+  {
+   "run": "final-a-contract_CT3-r2-20261030-232634",
+   "core_snapshot_id": "cs-core-9ec4e836cb48",
+   "verdict": "PASS",
+   "compared": 10,
+   "identical_to_stored": true
+  },
+  {
+   "run": "final-a-contract_CT3-r3-20261030-232833",
+   "core_snapshot_id": "cs-core-9ec4e836cb48",
+   "verdict": "PASS",
+   "compared": 10,
+   "identical_to_stored": true
+  },
+  {
+   "run": "final-a-contract_CT4-r1-20261030-232446",
+   "core_snapshot_id": "cs-core-9ec4e836cb48",
+   "verdict": "PASS",
+   "compared": 6,
+   "identical_to_stored": true
+  },
+  {
+   "run": "final-a-contract_CT4-r2-20261030-232645",
+   "core_snapshot_id": "cs-core-9ec4e836cb48",
+   "verdict": "PASS",
+   "compared": 6,
+   "identical_to_stored": true
+  },
+  {
+   "run": "final-a-contract_CT4-r3-20261030-232843",
+   "core_snapshot_id": "cs-core-9ec4e836cb48",
+   "verdict": "PASS",
+   "compared": 6,
+   "identical_to_stored": true
+  },
+  {
+   "run": "final-a-contract_CT5-r1-20261030-232456",
+   "core_snapshot_id": "cs-core-9ec4e836cb48",
+   "verdict": "PASS",
+   "compared": 8,
+   "identical_to_stored": true,
+   "entries": "PASS",
+   "entries_identical_to_stored": true
+  },
+  {
+   "run": "final-a-contract_CT5-r2-20261030-232655",
+   "core_snapshot_id": "cs-core-9ec4e836cb48",
+   "verdict": "PASS",
+   "compared": 8,
+   "identical_to_stored": true,
+   "entries": "PASS",
+   "entries_identical_to_stored": true
+  },
+  {
+   "run": "final-a-contract_CT5-r3-20261030-232853",
+   "core_snapshot_id": "cs-core-9ec4e836cb48",
+   "verdict": "PASS",
+   "compared": 8,
+   "identical_to_stored": true,
+   "entries": "PASS",
+   "entries_identical_to_stored": true
+  },
+  {
+   "run": "final-a-contract_CT6-r1-20261030-232507",
+   "core_snapshot_id": "cs-core-9ec4e836cb48",
+   "verdict": "PASS",
+   "compared": 6,
+   "identical_to_stored": true
+  },
+  {
+   "run": "final-a-contract_CT6-r2-20261030-232705",
+   "core_snapshot_id": "cs-core-9ec4e836cb48",
+   "verdict": "PASS",
+   "compared": 6,
+   "identical_to_stored": true
+  },
+  {
+   "run": "final-a-contract_CT6-r3-20261030-232903",
+   "core_snapshot_id": "cs-core-9ec4e836cb48",
+   "verdict": "PASS",
+   "compared": 6,
+   "identical_to_stored": true
+  },
+  {
+   "run": "final-a-contract_CT7-cfg0-r1-20261030-232517",
+   "core_snapshot_id": "cs-core-9ec4e836cb48",
+   "verdict": "PASS",
+   "compared": 6,
+   "identical_to_stored": true
+  },
+  {
+   "run": "final-a-contract_CT7-cfg0-r2-20261030-232716",
+   "core_snapshot_id": "cs-core-9ec4e836cb48",
+   "verdict": "PASS",
+   "compared": 6,
+   "identical_to_stored": true
+  },
+  {
+   "run": "final-a-contract_CT7-cfg0-r3-20261030-232914",
+   "core_snapshot_id": "cs-core-9ec4e836cb48",
+   "verdict": "PASS",
+   "compared": 6,
+   "identical_to_stored": true
+  },
+  {
+   "run": "final-a-contract_CT7-cfg1-r1-20261030-232527",
+   "core_snapshot_id": "cs-core-9ec4e836cb48",
+   "verdict": "PASS",
+   "compared": 6,
+   "identical_to_stored": true
+  },
+  {
+   "run": "final-a-contract_CT7-cfg1-r2-20261030-232726",
+   "core_snapshot_id": "cs-core-9ec4e836cb48",
+   "verdict": "PASS",
+   "compared": 6,
+   "identical_to_stored": true
+  },
+  {
+   "run": "final-a-contract_CT7-cfg1-r3-20261030-232924",
+   "core_snapshot_id": "cs-core-9ec4e836cb48",
+   "verdict": "PASS",
+   "compared": 6,
+   "identical_to_stored": true
+  },
+  {
+   "run": "final-d-K-r1-20261030-232533",
+   "core_snapshot_id": "cs-core-9ec4e836cb48",
+   "verdict": "PASS",
+   "compared": 31,
+   "identical_to_stored": true
+  },
+  {
+   "run": "final-d-K-r2-20261030-232731",
+   "core_snapshot_id": "cs-core-9ec4e836cb48",
+   "verdict": "PASS",
+   "compared": 31,
+   "identical_to_stored": true
+  },
+  {
+   "run": "final-d-K-r3-20261030-232929",
+   "core_snapshot_id": "cs-core-9ec4e836cb48",
+   "verdict": "PASS",
+   "compared": 31,
+   "identical_to_stored": true
+  },
+  {
+   "run": "final-d-P1-r1-20261030-232556",
+   "core_snapshot_id": "cs-core-9ec4e836cb48",
+   "verdict": "PASS",
+   "compared": 16,
+   "identical_to_stored": true
+  },
+  {
+   "run": "final-d-P1-r2-20261030-232754",
+   "core_snapshot_id": "cs-core-9ec4e836cb48",
+   "verdict": "PASS",
+   "compared": 16,
+   "identical_to_stored": true
+  },
+  {
+   "run": "final-d-P1-r3-20261030-232952",
+   "core_snapshot_id": "cs-core-9ec4e836cb48",
+   "verdict": "PASS",
+   "compared": 16,
+   "identical_to_stored": true
+  },
+  {
+   "run": "final-d-T-r1-20261030-232545",
+   "core_snapshot_id": "cs-core-9ec4e836cb48",
+   "verdict": "PASS",
+   "compared": 24,
+   "identical_to_stored": true
+  },
+  {
+   "run": "final-d-T-r2-20261030-232743",
+   "core_snapshot_id": "cs-core-9ec4e836cb48",
+   "verdict": "PASS",
+   "compared": 24,
+   "identical_to_stored": true
+  },
+  {
+   "run": "final-d-T-r3-20261030-232941",
+   "core_snapshot_id": "cs-core-9ec4e836cb48",
+   "verdict": "PASS",
+   "compared": 24,
+   "identical_to_stored": true
+  },
+  {
+   "run": "final-d-contract_CT1-r1-20261030-232408",
+   "core_snapshot_id": "cs-core-9ec4e836cb48",
+   "verdict": "PASS",
+   "compared": 8,
+   "identical_to_stored": true
+  },
+  {
+   "run": "final-d-contract_CT1-r2-20261030-232608",
+   "core_snapshot_id": "cs-core-9ec4e836cb48",
+   "verdict": "PASS",
+   "compared": 8,
+   "identical_to_stored": true
+  },
+  {
+   "run": "final-d-contract_CT1-r3-20261030-232807",
+   "core_snapshot_id": "cs-core-9ec4e836cb48",
+   "verdict": "PASS",
+   "compared": 8,
+   "identical_to_stored": true
+  },
+  {
+   "run": "final-d-contract_CT2-r1-20261030-232419",
+   "core_snapshot_id": "cs-core-9ec4e836cb48",
+   "verdict": "PASS",
+   "compared": 4,
+   "identical_to_stored": true
+  },
+  {
+   "run": "final-d-contract_CT2-r2-20261030-232619",
+   "core_snapshot_id": "cs-core-9ec4e836cb48",
+   "verdict": "PASS",
+   "compared": 4,
+   "identical_to_stored": true
+  },
+  {
+   "run": "final-d-contract_CT2-r3-20261030-232817",
+   "core_snapshot_id": "cs-core-9ec4e836cb48",
+   "verdict": "PASS",
+   "compared": 4,
+   "identical_to_stored": true
+  },
+  {
+   "run": "final-d-contract_CT3-r1-20261030-232429",
+   "core_snapshot_id": "cs-core-9ec4e836cb48",
+   "verdict": "PASS",
+   "compared": 10,
+   "identical_to_stored": true
+  },
+  {
+   "run": "final-d-contract_CT3-r2-20261030-232629",
+   "core_snapshot_id": "cs-core-9ec4e836cb48",
+   "verdict": "PASS",
+   "compared": 10,
+   "identical_to_stored": true
+  },
+  {
+   "run": "final-d-contract_CT3-r3-20261030-232827",
+   "core_snapshot_id": "cs-core-9ec4e836cb48",
+   "verdict": "PASS",
+   "compared": 10,
+   "identical_to_stored": true
+  },
+  {
+   "run": "final-d-contract_CT4-r1-20261030-232441",
+   "core_snapshot_id": "cs-core-9ec4e836cb48",
+   "verdict": "PASS",
+   "compared": 6,
+   "identical_to_stored": true
+  },
+  {
+   "run": "final-d-contract_CT4-r2-20261030-232640",
+   "core_snapshot_id": "cs-core-9ec4e836cb48",
+   "verdict": "PASS",
+   "compared": 6,
+   "identical_to_stored": true
+  },
+  {
+   "run": "final-d-contract_CT4-r3-20261030-232838",
+   "core_snapshot_id": "cs-core-9ec4e836cb48",
+   "verdict": "PASS",
+   "compared": 6,
+   "identical_to_stored": true
+  },
+  {
+   "run": "final-d-contract_CT5-r1-20261030-232451",
+   "core_snapshot_id": "cs-core-9ec4e836cb48",
+   "verdict": "PASS",
+   "compared": 8,
+   "identical_to_stored": true,
+   "entries": "PASS",
+   "entries_identical_to_stored": true
+  },
+  {
+   "run": "final-d-contract_CT5-r2-20261030-232650",
+   "core_snapshot_id": "cs-core-9ec4e836cb48",
+   "verdict": "PASS",
+   "compared": 8,
+   "identical_to_stored": true,
+   "entries": "PASS",
+   "entries_identical_to_stored": true
+  },
+  {
+   "run": "final-d-contract_CT5-r3-20261030-232848",
+   "core_snapshot_id": "cs-core-9ec4e836cb48",
+   "verdict": "PASS",
+   "compared": 8,
+   "identical_to_stored": true,
+   "entries": "PASS",
+   "entries_identical_to_stored": true
+  },
+  {
+   "run": "final-d-contract_CT6-r1-20261030-232501",
+   "core_snapshot_id": "cs-core-9ec4e836cb48",
+   "verdict": "PASS",
+   "compared": 6,
+   "identical_to_stored": true
+  },
+  {
+   "run": "final-d-contract_CT6-r2-20261030-232700",
+   "core_snapshot_id": "cs-core-9ec4e836cb48",
+   "verdict": "PASS",
+   "compared": 6,
+   "identical_to_stored": true
+  },
+  {
+   "run": "final-d-contract_CT6-r3-20261030-232858",
+   "core_snapshot_id": "cs-core-9ec4e836cb48",
+   "verdict": "PASS",
+   "compared": 6,
+   "identical_to_stored": true
+  },
+  {
+   "run": "final-d-contract_CT7-cfg0-r1-20261030-232512",
+   "core_snapshot_id": "cs-core-9ec4e836cb48",
+   "verdict": "PASS",
+   "compared": 6,
+   "identical_to_stored": true
+  },
+  {
+   "run": "final-d-contract_CT7-cfg0-r2-20261030-232711",
+   "core_snapshot_id": "cs-core-9ec4e836cb48",
+   "verdict": "PASS",
+   "compared": 6,
+   "identical_to_stored": true
+  },
+  {
+   "run": "final-d-contract_CT7-cfg0-r3-20261030-232909",
+   "core_snapshot_id": "cs-core-9ec4e836cb48",
+   "verdict": "PASS",
+   "compared": 6,
+   "identical_to_stored": true
+  },
+  {
+   "run": "final-d-contract_CT7-cfg1-r1-20261030-232522",
+   "core_snapshot_id": "cs-core-9ec4e836cb48",
+   "verdict": "PASS",
+   "compared": 6,
+   "identical_to_stored": true
+  },
+  {
+   "run": "final-d-contract_CT7-cfg1-r2-20261030-232721",
+   "core_snapshot_id": "cs-core-9ec4e836cb48",
+   "verdict": "PASS",
+   "compared": 6,
+   "identical_to_stored": true
+  },
+  {
+   "run": "final-d-contract_CT7-cfg1-r3-20261030-232919",
+   "core_snapshot_id": "cs-core-9ec4e836cb48",
+   "verdict": "PASS",
+   "compared": 6,
+   "identical_to_stored": true
+  }
+ ]
+}

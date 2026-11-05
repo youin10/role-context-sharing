@@ -1,0 +1,5 @@
+--- d/M1.org
++++ d/M2.org
+@@ -6 +6 @@
+-      $robot == logistics:Biped && $battery <= 30 || $robot == logistics:Wheeled && $battery <= 20;
++      $robot == logistics:Biped && $battery <= 30 || $robot == logistics:Wheeled && $battery <= 30;

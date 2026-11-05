@@ -1,0 +1,3 @@
+plans: plans/v1
+targets:
+  manager1: {roles: [Manager, Dispatcher]}

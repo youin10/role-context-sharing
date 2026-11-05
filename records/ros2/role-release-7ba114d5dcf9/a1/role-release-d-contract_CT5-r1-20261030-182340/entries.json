@@ -1,0 +1,51 @@
+{
+ "run": "role-release-d-contract_CT5-r1-20261030-182340",
+ "arm": "d",
+ "table": "CT5-entries.yml",
+ "pass": true,
+ "rows": [
+  {
+   "step": "c1",
+   "what": "entries",
+   "expected": [
+    "RobotStatus"
+   ],
+   "observed": [
+    "RobotStatus"
+   ],
+   "ok": true
+  },
+  {
+   "step": "c1",
+   "what": "alternatives",
+   "expected": {
+    "RobotStatus": 1
+   },
+   "observed": {
+    "RobotStatus": 1
+   },
+   "ok": true
+  },
+  {
+   "step": "c2",
+   "what": "entries",
+   "expected": [],
+   "observed": [],
+   "ok": true
+  },
+  {
+   "step": "c2",
+   "what": "alternatives",
+   "expected": {},
+   "observed": {},
+   "ok": true
+  },
+  {
+   "step": "c2",
+   "what": "agent_kept",
+   "expected": true,
+   "observed": true,
+   "ok": true
+  }
+ ]
+}

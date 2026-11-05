@@ -1,0 +1,4 @@
+role: Manager
+subscribe:
+- (rule (fact (RobotStatus $robot $battery $zone)) --> (notify (RobotStatus $robot $battery $zone)))
+- (rule (fact (RobotStopped $robot $elapsed)) --> (notify (RobotStopped $robot $elapsed)))

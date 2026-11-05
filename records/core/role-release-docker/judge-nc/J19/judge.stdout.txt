@@ -1,0 +1,12 @@
+FAIL s02 calls:manager1 expected [["deliver", "RobotStatus", "biped1", {"battery": 30, "zone": "storage"}]] observed []
+FAIL s03 calls:manager1 expected [["deliver", "RobotStatus", "biped1", {"battery": 29, "zone": "storage"}]] observed []
+FAIL s04 calls:manager1 expected [["revoke", "RobotStatus", "biped1", null]] observed []
+FAIL s06 calls:manager1 expected [["deliver", "RobotStatus", "wheeled1", {"battery": 20, "zone": "storage"}]] observed []
+FAIL s07 calls:manager1 expected [["deliver", "RobotStatus", "wheeled1", {"battery": 19, "zone": "storage"}]] observed []
+FAIL s08 calls:manager1 expected [["revoke", "RobotStatus", "wheeled1", null]] observed []
+FAIL s09 calls:manager1 expected [["deliver", "RobotStatus", "humanoid1", {"battery": 30, "zone": "storage"}]] observed []
+FAIL s11 calls:manager1 expected [["deliver", "RobotStatus", "diff1", {"battery": 20, "zone": "storage"}]] observed []
+FAIL s12 calls:manager1 expected [["deliver", "RobotStatus", "biped1", {"battery": 29, "zone": "storage"}]] observed []
+FAIL s13 calls:manager1 expected [["delete", "RobotStatus", "biped1", null]] observed []
+FAIL s15 calls:manager1 expected [["revoke", "RobotStatus", "diff1", null]] observed []
+FAIL 50 rows, 11 failing

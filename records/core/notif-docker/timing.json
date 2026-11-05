@@ -1,0 +1,34 @@
+{
+ "cold": {
+  "D_generate_M1": {
+   "n": 7,
+   "median_s": 0.051696792000029745,
+   "min_s": 0.049502416999985144,
+   "max_s": 0.0575584580000168,
+   "includes": "interpreter start, imports, ontology/type loading, parse+check+generate or plan load"
+  },
+  "A_load_initial_v1": {
+   "n": 7,
+   "median_s": 0.051042291999976896,
+   "min_s": 0.05028870899997173,
+   "max_s": 0.051222291000044606,
+   "includes": "interpreter start, imports, ontology/type loading, parse+check+generate or plan load"
+  }
+ },
+ "warm": {
+  "D_generate_M1": {
+   "n": 200,
+   "mean_ms": 0.9371147950000136
+  },
+  "D_report_route_notify": {
+   "n": 2000,
+   "mean_us": 7.282104000012168
+  },
+  "A_report_bus_ltm_agent": {
+   "n": 2000,
+   "mean_us": 30.210833499978662
+  }
+ },
+ "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+ "note": "core harness only; D report = SM routing + AgentCore; A report = in-process bus + LTM + agents. Not a ROS/distributed measurement and not a superiority claim."
+}

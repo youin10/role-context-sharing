@@ -1,0 +1,9 @@
+schema: rcs-d-binding/1
+cfg: res2
+agents:
+  manager1: [Manager, SafetyOfficer, Dispatcher]
+  biped1: [Robot]
+  humanoid1: [Robot]
+  wheeled1: [Robot]
+  diff1: [Robot]
+  cam1: [Observer]

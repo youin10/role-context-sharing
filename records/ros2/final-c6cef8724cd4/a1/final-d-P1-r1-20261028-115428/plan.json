@@ -1,0 +1,46 @@
+{
+ "arm": "d",
+ "a_variant": null,
+ "scenario": "P1",
+ "scenario_path": "/cs/inputs/scenarios/P1.yml",
+ "observed": [
+  "manager1"
+ ],
+ "agents": [
+  "auditor1",
+  "biped1",
+  "cam1",
+  "diff1",
+  "humanoid1",
+  "hybrid1",
+  "manager1",
+  "tech1",
+  "watch1",
+  "wheeled1"
+ ],
+ "producers": [
+  "biped1",
+  "cam1",
+  "diff1",
+  "humanoid1",
+  "wheeled1"
+ ],
+ "procs": {
+  "driver": [],
+  "d-producer": [
+   "auditor1",
+   "biped1",
+   "cam1",
+   "diff1",
+   "humanoid1",
+   "hybrid1",
+   "tech1",
+   "watch1",
+   "wheeled1"
+  ],
+  "d-sm": [],
+  "d-agent-manager1": [
+   "manager1"
+  ]
+ }
+}

@@ -1,0 +1,7 @@
+plans: contract/plans/ct7-0
+agents:
+  manager1: [Manager]
+  biped1: [Robot]
+  hum1: [Robot]
+  wheel1: [Robot]
+  observer1: [Observer]

@@ -1,0 +1,402 @@
+# conditional-sharing experiment input, derived from rcs-experiments 7bef3ecd arms/d/ontology/logistics.ttl
+# (generated from domain/logistics/needs.yml; enums become xsd:string). Edits for this experiment:
+#   1. CargoCarriedBy argument 1 (robot): xsd:string -> :Robot (an entity-valued, non-key argument)
+#   2. new predicate RobotStopped(robot :Robot, elapsedSeconds xsd:integer): elapsed stop time in
+#      seconds, computed and re-reported by the observing agent (no central timer).
+#   3. new predicate BipedBalance(robot :Biped, tilt xsd:integer): a
+#      signature narrower than Robot, for the class-compatibility check (Biped vs Wheeled via hybrid1).
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rule: <http://ai.uos.ac.kr/rule#> .
+@prefix : <http://ai.uos.ac.kr/logistics-ontology#> .
+
+:var_cargo a rule:Variable ; rule:variableName "?cargo" .
+:var_weight a rule:Variable ; rule:variableName "?weight" .
+:var_priority a rule:Variable ; rule:variableName "?priority" .
+:var_robot a rule:Variable ; rule:variableName "?robot" .
+:var_node a rule:Variable ; rule:variableName "?node" .
+:var_status a rule:Variable ; rule:variableName "?status" .
+:var_decision a rule:Variable ; rule:variableName "?decision" .
+:var_arm a rule:Variable ; rule:variableName "?arm" .
+:var_bay a rule:Variable ; rule:variableName "?bay" .
+:var_battery a rule:Variable ; rule:variableName "?battery" .
+:var_zone a rule:Variable ; rule:variableName "?zone" .
+:var_congestion a rule:Variable ; rule:variableName "?congestion" .
+:var_access a rule:Variable ; rule:variableName "?access" .
+:var_kind a rule:Variable ; rule:variableName "?kind" .
+:var_severity a rule:Variable ; rule:variableName "?severity" .
+:var_checked_at a rule:Variable ; rule:variableName "?checked_at" .
+:var_charger a rule:Variable ; rule:variableName "?charger" .
+:var_occupancy a rule:Variable ; rule:variableName "?occupancy" .
+:var_elapsedSeconds a rule:Variable ; rule:variableName "?elapsedSeconds" .
+:var_tilt a rule:Variable ; rule:variableName "?tilt" .
+
+:const_type a rule:ConstantURI ; rule:uriValue "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" .
+:const_Cargo_class a rule:ConstantURI ; rule:uriValue "http://ai.uos.ac.kr/logistics-ontology#Cargo" .
+:const_Cargo_weight a rule:ConstantURI ; rule:uriValue "http://ai.uos.ac.kr/logistics-ontology#Cargo_weight" .
+:const_Cargo_priority a rule:ConstantURI ; rule:uriValue "http://ai.uos.ac.kr/logistics-ontology#Cargo_priority" .
+
+:Rule_Cargo a rule:Rule ;
+    rule:ruleName "Cargo" ;
+    rule:hasBody [ a rule:Body ;
+        rule:hasPattern [ a rule:TriplePattern ;
+            rule:subject :var_cargo ; rule:predicate :const_type ; rule:object :const_Cargo_class ;
+            rule:isMutable false ] ;
+        rule:hasPattern [ a rule:TriplePattern ;
+            rule:subject :var_cargo ; rule:predicate :const_Cargo_weight ; rule:object :var_weight ;
+            rule:isMutable true ] ;
+        rule:hasPattern [ a rule:TriplePattern ;
+            rule:subject :var_cargo ; rule:predicate :const_Cargo_priority ; rule:object :var_priority ;
+            rule:isMutable true ]
+    ] ;
+    rule:hasHead [ a rule:Head ;
+        rule:hasPattern [ a rule:PredicatePattern ;
+            rule:predicateName "Cargo" ;
+            rule:hasArgument [ a rule:Argument ; rule:argumentIndex 0 ;
+                rule:hasTerm :var_cargo ; rule:argumentType :Cargo ] ;
+            rule:hasArgument [ a rule:Argument ; rule:argumentIndex 1 ;
+                rule:hasTerm :var_weight ; rule:argumentType xsd:integer ] ;
+            rule:hasArgument [ a rule:Argument ; rule:argumentIndex 2 ;
+                rule:hasTerm :var_priority ; rule:argumentType xsd:string ]
+        ]
+    ] .
+
+:const_CargoCarriedBy_class a rule:ConstantURI ; rule:uriValue "http://ai.uos.ac.kr/logistics-ontology#Cargo" .
+:const_CargoCarriedBy_robot a rule:ConstantURI ; rule:uriValue "http://ai.uos.ac.kr/logistics-ontology#CargoCarriedBy_robot" .
+
+:Rule_CargoCarriedBy a rule:Rule ;
+    rule:ruleName "CargoCarriedBy" ;
+    rule:hasBody [ a rule:Body ;
+        rule:hasPattern [ a rule:TriplePattern ;
+            rule:subject :var_cargo ; rule:predicate :const_type ; rule:object :const_CargoCarriedBy_class ;
+            rule:isMutable false ] ;
+        rule:hasPattern [ a rule:TriplePattern ;
+            rule:subject :var_cargo ; rule:predicate :const_CargoCarriedBy_robot ; rule:object :var_robot ;
+            rule:isMutable true ]
+    ] ;
+    rule:hasHead [ a rule:Head ;
+        rule:hasPattern [ a rule:PredicatePattern ;
+            rule:predicateName "CargoCarriedBy" ;
+            rule:hasArgument [ a rule:Argument ; rule:argumentIndex 0 ;
+                rule:hasTerm :var_cargo ; rule:argumentType :Cargo ] ;
+            rule:hasArgument [ a rule:Argument ; rule:argumentIndex 1 ;
+                rule:hasTerm :var_robot ; rule:argumentType :Robot ]
+        ]
+    ] .
+
+:const_CargoStoredAt_class a rule:ConstantURI ; rule:uriValue "http://ai.uos.ac.kr/logistics-ontology#Cargo" .
+:const_CargoStoredAt_node a rule:ConstantURI ; rule:uriValue "http://ai.uos.ac.kr/logistics-ontology#CargoStoredAt_node" .
+
+:Rule_CargoStoredAt a rule:Rule ;
+    rule:ruleName "CargoStoredAt" ;
+    rule:hasBody [ a rule:Body ;
+        rule:hasPattern [ a rule:TriplePattern ;
+            rule:subject :var_cargo ; rule:predicate :const_type ; rule:object :const_CargoStoredAt_class ;
+            rule:isMutable false ] ;
+        rule:hasPattern [ a rule:TriplePattern ;
+            rule:subject :var_cargo ; rule:predicate :const_CargoStoredAt_node ; rule:object :var_node ;
+            rule:isMutable true ]
+    ] ;
+    rule:hasHead [ a rule:Head ;
+        rule:hasPattern [ a rule:PredicatePattern ;
+            rule:predicateName "CargoStoredAt" ;
+            rule:hasArgument [ a rule:Argument ; rule:argumentIndex 0 ;
+                rule:hasTerm :var_cargo ; rule:argumentType :Cargo ] ;
+            rule:hasArgument [ a rule:Argument ; rule:argumentIndex 1 ;
+                rule:hasTerm :var_node ; rule:argumentType xsd:string ]
+        ]
+    ] .
+
+:const_InspectionStatus_class a rule:ConstantURI ; rule:uriValue "http://ai.uos.ac.kr/logistics-ontology#Cargo" .
+:const_InspectionStatus_status a rule:ConstantURI ; rule:uriValue "http://ai.uos.ac.kr/logistics-ontology#InspectionStatus_status" .
+
+:Rule_InspectionStatus a rule:Rule ;
+    rule:ruleName "InspectionStatus" ;
+    rule:hasBody [ a rule:Body ;
+        rule:hasPattern [ a rule:TriplePattern ;
+            rule:subject :var_cargo ; rule:predicate :const_type ; rule:object :const_InspectionStatus_class ;
+            rule:isMutable false ] ;
+        rule:hasPattern [ a rule:TriplePattern ;
+            rule:subject :var_cargo ; rule:predicate :const_InspectionStatus_status ; rule:object :var_status ;
+            rule:isMutable true ]
+    ] ;
+    rule:hasHead [ a rule:Head ;
+        rule:hasPattern [ a rule:PredicatePattern ;
+            rule:predicateName "InspectionStatus" ;
+            rule:hasArgument [ a rule:Argument ; rule:argumentIndex 0 ;
+                rule:hasTerm :var_cargo ; rule:argumentType :Cargo ] ;
+            rule:hasArgument [ a rule:Argument ; rule:argumentIndex 1 ;
+                rule:hasTerm :var_status ; rule:argumentType xsd:string ]
+        ]
+    ] .
+
+:const_ShipmentDecision_class a rule:ConstantURI ; rule:uriValue "http://ai.uos.ac.kr/logistics-ontology#Cargo" .
+:const_ShipmentDecision_decision a rule:ConstantURI ; rule:uriValue "http://ai.uos.ac.kr/logistics-ontology#ShipmentDecision_decision" .
+
+:Rule_ShipmentDecision a rule:Rule ;
+    rule:ruleName "ShipmentDecision" ;
+    rule:hasBody [ a rule:Body ;
+        rule:hasPattern [ a rule:TriplePattern ;
+            rule:subject :var_cargo ; rule:predicate :const_type ; rule:object :const_ShipmentDecision_class ;
+            rule:isMutable false ] ;
+        rule:hasPattern [ a rule:TriplePattern ;
+            rule:subject :var_cargo ; rule:predicate :const_ShipmentDecision_decision ; rule:object :var_decision ;
+            rule:isMutable true ]
+    ] ;
+    rule:hasHead [ a rule:Head ;
+        rule:hasPattern [ a rule:PredicatePattern ;
+            rule:predicateName "ShipmentDecision" ;
+            rule:hasArgument [ a rule:Argument ; rule:argumentIndex 0 ;
+                rule:hasTerm :var_cargo ; rule:argumentType :Cargo ] ;
+            rule:hasArgument [ a rule:Argument ; rule:argumentIndex 1 ;
+                rule:hasTerm :var_decision ; rule:argumentType xsd:string ]
+        ]
+    ] .
+
+:const_ArmBusy_class a rule:ConstantURI ; rule:uriValue "http://ai.uos.ac.kr/logistics-ontology#Arm" .
+
+:Rule_ArmBusy a rule:Rule ;
+    rule:ruleName "ArmBusy" ;
+    rule:hasBody [ a rule:Body ;
+        rule:hasPattern [ a rule:TriplePattern ;
+            rule:subject :var_arm ; rule:predicate :const_type ; rule:object :const_ArmBusy_class ;
+            rule:isMutable false ]
+    ] ;
+    rule:hasHead [ a rule:Head ;
+        rule:hasPattern [ a rule:PredicatePattern ;
+            rule:predicateName "ArmBusy" ;
+            rule:hasArgument [ a rule:Argument ; rule:argumentIndex 0 ;
+                rule:hasTerm :var_arm ; rule:argumentType :Arm ]
+        ]
+    ] .
+
+:const_BayReserved_class a rule:ConstantURI ; rule:uriValue "http://ai.uos.ac.kr/logistics-ontology#Bay" .
+
+:Rule_BayReserved a rule:Rule ;
+    rule:ruleName "BayReserved" ;
+    rule:hasBody [ a rule:Body ;
+        rule:hasPattern [ a rule:TriplePattern ;
+            rule:subject :var_bay ; rule:predicate :const_type ; rule:object :const_BayReserved_class ;
+            rule:isMutable false ]
+    ] ;
+    rule:hasHead [ a rule:Head ;
+        rule:hasPattern [ a rule:PredicatePattern ;
+            rule:predicateName "BayReserved" ;
+            rule:hasArgument [ a rule:Argument ; rule:argumentIndex 0 ;
+                rule:hasTerm :var_bay ; rule:argumentType :Bay ]
+        ]
+    ] .
+
+:const_RobotLocatedAt_class a rule:ConstantURI ; rule:uriValue "http://ai.uos.ac.kr/logistics-ontology#Robot" .
+:const_RobotLocatedAt_node a rule:ConstantURI ; rule:uriValue "http://ai.uos.ac.kr/logistics-ontology#RobotLocatedAt_node" .
+
+:Rule_RobotLocatedAt a rule:Rule ;
+    rule:ruleName "RobotLocatedAt" ;
+    rule:hasBody [ a rule:Body ;
+        rule:hasPattern [ a rule:TriplePattern ;
+            rule:subject :var_robot ; rule:predicate :const_type ; rule:object :const_RobotLocatedAt_class ;
+            rule:isMutable false ] ;
+        rule:hasPattern [ a rule:TriplePattern ;
+            rule:subject :var_robot ; rule:predicate :const_RobotLocatedAt_node ; rule:object :var_node ;
+            rule:isMutable true ]
+    ] ;
+    rule:hasHead [ a rule:Head ;
+        rule:hasPattern [ a rule:PredicatePattern ;
+            rule:predicateName "RobotLocatedAt" ;
+            rule:hasArgument [ a rule:Argument ; rule:argumentIndex 0 ;
+                rule:hasTerm :var_robot ; rule:argumentType :Robot ] ;
+            rule:hasArgument [ a rule:Argument ; rule:argumentIndex 1 ;
+                rule:hasTerm :var_node ; rule:argumentType xsd:string ]
+        ]
+    ] .
+
+:const_RobotStatus_class a rule:ConstantURI ; rule:uriValue "http://ai.uos.ac.kr/logistics-ontology#Robot" .
+:const_RobotStatus_battery a rule:ConstantURI ; rule:uriValue "http://ai.uos.ac.kr/logistics-ontology#RobotStatus_battery" .
+:const_RobotStatus_zone a rule:ConstantURI ; rule:uriValue "http://ai.uos.ac.kr/logistics-ontology#RobotStatus_zone" .
+
+:Rule_RobotStatus a rule:Rule ;
+    rule:ruleName "RobotStatus" ;
+    rule:hasBody [ a rule:Body ;
+        rule:hasPattern [ a rule:TriplePattern ;
+            rule:subject :var_robot ; rule:predicate :const_type ; rule:object :const_RobotStatus_class ;
+            rule:isMutable false ] ;
+        rule:hasPattern [ a rule:TriplePattern ;
+            rule:subject :var_robot ; rule:predicate :const_RobotStatus_battery ; rule:object :var_battery ;
+            rule:isMutable true ] ;
+        rule:hasPattern [ a rule:TriplePattern ;
+            rule:subject :var_robot ; rule:predicate :const_RobotStatus_zone ; rule:object :var_zone ;
+            rule:isMutable true ]
+    ] ;
+    rule:hasHead [ a rule:Head ;
+        rule:hasPattern [ a rule:PredicatePattern ;
+            rule:predicateName "RobotStatus" ;
+            rule:hasArgument [ a rule:Argument ; rule:argumentIndex 0 ;
+                rule:hasTerm :var_robot ; rule:argumentType :Robot ] ;
+            rule:hasArgument [ a rule:Argument ; rule:argumentIndex 1 ;
+                rule:hasTerm :var_battery ; rule:argumentType xsd:integer ] ;
+            rule:hasArgument [ a rule:Argument ; rule:argumentIndex 2 ;
+                rule:hasTerm :var_zone ; rule:argumentType xsd:string ]
+        ]
+    ] .
+
+:const_ZoneStatus_class a rule:ConstantURI ; rule:uriValue "http://ai.uos.ac.kr/logistics-ontology#Zone" .
+:const_ZoneStatus_congestion a rule:ConstantURI ; rule:uriValue "http://ai.uos.ac.kr/logistics-ontology#ZoneStatus_congestion" .
+:const_ZoneStatus_access a rule:ConstantURI ; rule:uriValue "http://ai.uos.ac.kr/logistics-ontology#ZoneStatus_access" .
+
+:Rule_ZoneStatus a rule:Rule ;
+    rule:ruleName "ZoneStatus" ;
+    rule:hasBody [ a rule:Body ;
+        rule:hasPattern [ a rule:TriplePattern ;
+            rule:subject :var_zone ; rule:predicate :const_type ; rule:object :const_ZoneStatus_class ;
+            rule:isMutable false ] ;
+        rule:hasPattern [ a rule:TriplePattern ;
+            rule:subject :var_zone ; rule:predicate :const_ZoneStatus_congestion ; rule:object :var_congestion ;
+            rule:isMutable true ] ;
+        rule:hasPattern [ a rule:TriplePattern ;
+            rule:subject :var_zone ; rule:predicate :const_ZoneStatus_access ; rule:object :var_access ;
+            rule:isMutable true ]
+    ] ;
+    rule:hasHead [ a rule:Head ;
+        rule:hasPattern [ a rule:PredicatePattern ;
+            rule:predicateName "ZoneStatus" ;
+            rule:hasArgument [ a rule:Argument ; rule:argumentIndex 0 ;
+                rule:hasTerm :var_zone ; rule:argumentType :Zone ] ;
+            rule:hasArgument [ a rule:Argument ; rule:argumentIndex 1 ;
+                rule:hasTerm :var_congestion ; rule:argumentType xsd:integer ] ;
+            rule:hasArgument [ a rule:Argument ; rule:argumentIndex 2 ;
+                rule:hasTerm :var_access ; rule:argumentType xsd:string ]
+        ]
+    ] .
+
+:const_PatrolAlert_class a rule:ConstantURI ; rule:uriValue "http://ai.uos.ac.kr/logistics-ontology#Zone" .
+:const_PatrolAlert_kind a rule:ConstantURI ; rule:uriValue "http://ai.uos.ac.kr/logistics-ontology#PatrolAlert_kind" .
+:const_PatrolAlert_severity a rule:ConstantURI ; rule:uriValue "http://ai.uos.ac.kr/logistics-ontology#PatrolAlert_severity" .
+
+:Rule_PatrolAlert a rule:Rule ;
+    rule:ruleName "PatrolAlert" ;
+    rule:hasBody [ a rule:Body ;
+        rule:hasPattern [ a rule:TriplePattern ;
+            rule:subject :var_zone ; rule:predicate :const_type ; rule:object :const_PatrolAlert_class ;
+            rule:isMutable false ] ;
+        rule:hasPattern [ a rule:TriplePattern ;
+            rule:subject :var_zone ; rule:predicate :const_PatrolAlert_kind ; rule:object :var_kind ;
+            rule:isMutable true ] ;
+        rule:hasPattern [ a rule:TriplePattern ;
+            rule:subject :var_zone ; rule:predicate :const_PatrolAlert_severity ; rule:object :var_severity ;
+            rule:isMutable true ]
+    ] ;
+    rule:hasHead [ a rule:Head ;
+        rule:hasPattern [ a rule:PredicatePattern ;
+            rule:predicateName "PatrolAlert" ;
+            rule:hasArgument [ a rule:Argument ; rule:argumentIndex 0 ;
+                rule:hasTerm :var_zone ; rule:argumentType :Zone ] ;
+            rule:hasArgument [ a rule:Argument ; rule:argumentIndex 1 ;
+                rule:hasTerm :var_kind ; rule:argumentType xsd:string ] ;
+            rule:hasArgument [ a rule:Argument ; rule:argumentIndex 2 ;
+                rule:hasTerm :var_severity ; rule:argumentType xsd:string ]
+        ]
+    ] .
+
+:const_InventoryRecord_class a rule:ConstantURI ; rule:uriValue "http://ai.uos.ac.kr/logistics-ontology#Bay" .
+:const_InventoryRecord_status a rule:ConstantURI ; rule:uriValue "http://ai.uos.ac.kr/logistics-ontology#InventoryRecord_status" .
+:const_InventoryRecord_checked_at a rule:ConstantURI ; rule:uriValue "http://ai.uos.ac.kr/logistics-ontology#InventoryRecord_checked_at" .
+
+:Rule_InventoryRecord a rule:Rule ;
+    rule:ruleName "InventoryRecord" ;
+    rule:hasBody [ a rule:Body ;
+        rule:hasPattern [ a rule:TriplePattern ;
+            rule:subject :var_bay ; rule:predicate :const_type ; rule:object :const_InventoryRecord_class ;
+            rule:isMutable false ] ;
+        rule:hasPattern [ a rule:TriplePattern ;
+            rule:subject :var_bay ; rule:predicate :const_InventoryRecord_status ; rule:object :var_status ;
+            rule:isMutable true ] ;
+        rule:hasPattern [ a rule:TriplePattern ;
+            rule:subject :var_bay ; rule:predicate :const_InventoryRecord_checked_at ; rule:object :var_checked_at ;
+            rule:isMutable true ]
+    ] ;
+    rule:hasHead [ a rule:Head ;
+        rule:hasPattern [ a rule:PredicatePattern ;
+            rule:predicateName "InventoryRecord" ;
+            rule:hasArgument [ a rule:Argument ; rule:argumentIndex 0 ;
+                rule:hasTerm :var_bay ; rule:argumentType :Bay ] ;
+            rule:hasArgument [ a rule:Argument ; rule:argumentIndex 1 ;
+                rule:hasTerm :var_status ; rule:argumentType xsd:string ] ;
+            rule:hasArgument [ a rule:Argument ; rule:argumentIndex 2 ;
+                rule:hasTerm :var_checked_at ; rule:argumentType xsd:integer ]
+        ]
+    ] .
+
+:const_ChargerStatus_class a rule:ConstantURI ; rule:uriValue "http://ai.uos.ac.kr/logistics-ontology#Charger" .
+:const_ChargerStatus_occupancy a rule:ConstantURI ; rule:uriValue "http://ai.uos.ac.kr/logistics-ontology#ChargerStatus_occupancy" .
+:const_ChargerStatus_zone a rule:ConstantURI ; rule:uriValue "http://ai.uos.ac.kr/logistics-ontology#ChargerStatus_zone" .
+
+:Rule_ChargerStatus a rule:Rule ;
+    rule:ruleName "ChargerStatus" ;
+    rule:hasBody [ a rule:Body ;
+        rule:hasPattern [ a rule:TriplePattern ;
+            rule:subject :var_charger ; rule:predicate :const_type ; rule:object :const_ChargerStatus_class ;
+            rule:isMutable false ] ;
+        rule:hasPattern [ a rule:TriplePattern ;
+            rule:subject :var_charger ; rule:predicate :const_ChargerStatus_occupancy ; rule:object :var_occupancy ;
+            rule:isMutable true ] ;
+        rule:hasPattern [ a rule:TriplePattern ;
+            rule:subject :var_charger ; rule:predicate :const_ChargerStatus_zone ; rule:object :var_zone ;
+            rule:isMutable true ]
+    ] ;
+    rule:hasHead [ a rule:Head ;
+        rule:hasPattern [ a rule:PredicatePattern ;
+            rule:predicateName "ChargerStatus" ;
+            rule:hasArgument [ a rule:Argument ; rule:argumentIndex 0 ;
+                rule:hasTerm :var_charger ; rule:argumentType :Charger ] ;
+            rule:hasArgument [ a rule:Argument ; rule:argumentIndex 1 ;
+                rule:hasTerm :var_occupancy ; rule:argumentType xsd:string ] ;
+            rule:hasArgument [ a rule:Argument ; rule:argumentIndex 2 ;
+                rule:hasTerm :var_zone ; rule:argumentType xsd:string ]
+        ]
+    ] .
+
+:const_RobotStopped_class a rule:ConstantURI ; rule:uriValue "http://ai.uos.ac.kr/logistics-ontology#Robot" .
+:const_RobotStopped_elapsedSeconds a rule:ConstantURI ; rule:uriValue "http://ai.uos.ac.kr/logistics-ontology#RobotStopped_elapsedSeconds" .
+
+:Rule_RobotStopped a rule:Rule ;
+    rule:ruleName "RobotStopped" ;
+    rule:hasBody [ a rule:Body ;
+        rule:hasPattern [ a rule:TriplePattern ;
+            rule:subject :var_robot ; rule:predicate :const_type ; rule:object :const_RobotStopped_class ;
+            rule:isMutable false ] ;
+        rule:hasPattern [ a rule:TriplePattern ;
+            rule:subject :var_robot ; rule:predicate :const_RobotStopped_elapsedSeconds ; rule:object :var_elapsedSeconds ;
+            rule:isMutable true ]
+    ] ;
+    rule:hasHead [ a rule:Head ;
+        rule:hasPattern [ a rule:PredicatePattern ;
+            rule:predicateName "RobotStopped" ;
+            rule:hasArgument [ a rule:Argument ; rule:argumentIndex 0 ;
+                rule:hasTerm :var_robot ; rule:argumentType :Robot ] ;
+            rule:hasArgument [ a rule:Argument ; rule:argumentIndex 1 ;
+                rule:hasTerm :var_elapsedSeconds ; rule:argumentType xsd:integer ]
+        ]
+    ] .
+
+:const_BipedBalance_class a rule:ConstantURI ; rule:uriValue "http://ai.uos.ac.kr/logistics-ontology#Biped" .
+:const_BipedBalance_tilt a rule:ConstantURI ; rule:uriValue "http://ai.uos.ac.kr/logistics-ontology#BipedBalance_tilt" .
+
+:Rule_BipedBalance a rule:Rule ;
+    rule:ruleName "BipedBalance" ;
+    rule:hasBody [ a rule:Body ;
+        rule:hasPattern [ a rule:TriplePattern ;
+            rule:subject :var_robot ; rule:predicate :const_type ; rule:object :const_BipedBalance_class ;
+            rule:isMutable false ] ;
+        rule:hasPattern [ a rule:TriplePattern ;
+            rule:subject :var_robot ; rule:predicate :const_BipedBalance_tilt ; rule:object :var_tilt ;
+            rule:isMutable true ]
+    ] ;
+    rule:hasHead [ a rule:Head ;
+        rule:hasPattern [ a rule:PredicatePattern ;
+            rule:predicateName "BipedBalance" ;
+            rule:hasArgument [ a rule:Argument ; rule:argumentIndex 0 ;
+                rule:hasTerm :var_robot ; rule:argumentType :Biped ] ;
+            rule:hasArgument [ a rule:Argument ; rule:argumentIndex 1 ;
+                rule:hasTerm :var_tilt ; rule:argumentType xsd:integer ]
+        ]
+    ] .

@@ -1,0 +1,21 @@
+prefix logistics: <http://ai.uos.ac.kr/logistics-ontology#>;
+
+role Manager {
+  reads {
+  }
+}
+
+role Robot {
+  changes {
+    logistics:RobotStatus($robot, $battery, $zone);
+  }
+}
+
+role Observer {
+  changes {
+    logistics:RobotStopped($robot, $elapsed);
+  }
+}
+
+role Idle {
+}

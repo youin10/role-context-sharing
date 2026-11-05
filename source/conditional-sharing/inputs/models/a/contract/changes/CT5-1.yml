@@ -1,0 +1,3 @@
+plans: contract/plans/ct5
+targets:
+  manager1: {roles: [FleetMonitor]}

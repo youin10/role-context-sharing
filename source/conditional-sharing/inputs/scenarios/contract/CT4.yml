@@ -1,0 +1,10 @@
+id: CT4
+title: contract T4 model redeployment snapshot, no new reports
+d: {model: contract/CT4-0, binding: contract/b-ct}
+a: {initial: contract/initial-ct4-0}
+observe: [manager1]
+steps:
+- {id: s1, report: [biped1, RobotStatus, biped1, {battery: 25, zone: storage}]}
+- {id: s2, report: [wheel1, RobotStatus, wheel1, {battery: 25, zone: storage}]}
+- {id: c1, change: {id: CT4-1, d: {model: contract/CT4-1, binding: contract/b-ct}, a: contract/changes/CT4-1}}
+- {id: c2, change: {id: CT4-2, d: {model: contract/CT4-2, binding: contract/b-ct}, a: contract/changes/CT4-2}}

@@ -1,0 +1,3 @@
+plans: contract/plans/ct4-2
+targets:
+  manager1: {roles: [Manager]}

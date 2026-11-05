@@ -1,0 +1,23 @@
+PASS U01 subClassOf cycle refused error:ValueError
+PASS U02 undeclared class of an individual refused error:ValueError
+PASS U03 transitive membership ['A', 'B', 'C']
+PASS U04 multiple membership is a union ['A', 'B']
+PASS U05 oracle holds: humanoid1 30 under Biped<=30 (key visible) True
+PASS U06 oracle holds: diff1 25 under Biped<=30 False
+PASS U07 oracle holds: identity on the key True
+PASS U08 oracle holds without key keeps the old value-only behaviour True
+PASS U09 oracle holds: !isa on a registered non-Biped True
+PASS U10 oracle holds: unregistered individual is not treated as a value error:KeyError
+PASS N01 entry: first supply asserts ['assert:biped1']
+PASS N02 supplied fact updated inside the condition ['update:biped1']
+PASS N03 duplicate of the last message: no call []
+PASS N04 exit retracts; the stored value stays (['retract:biped1'], 45)
+PASS N05 re-entry asserts again ['assert:biped1']
+PASS N06 report outside the condition for an unsupplied fact: no call []
+PASS N07 redeploy that keeps the requirement (FleetMonitor remains): no call []
+PASS N08 last role released: retract, stored value stays (['retract:biped1'], 38)
+PASS N09 retransmitted transition batch after it was applied: no call []
+PASS N10 view after the release is empty {}
+PASS N11 restart resync: held fact updated, new eligible fact asserted, deleted held fact retracted ['update:biped1', 'assert:wheel1', 'retract:hum1']
+PASS N12 view after resync {'RobotStatus/biped1': {'battery': 28, 'zone': 'storage'}, 'RobotStatus/wheel1': {'battery': 20, 'zone': 'storage'}}
+PASS N13 A: duplicate notify of the same report changes nothing (['assert'], ['assert'])

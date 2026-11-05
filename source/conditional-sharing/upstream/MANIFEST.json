@@ -1,0 +1,25 @@
+{
+ "source_repo": "../rcs-experiments",
+ "commit": "7bef3ecdd7f59eedba03ed1b819c9770d86d92a7",
+ "method": "git show HEAD:<path> (tracked blob at commit)",
+ "files": {
+  "arms/d/__init__.py": "bc2304e87a84ffcfdf9243b7fdf1add4ab84a852b60cd8a887e947a109040536",
+  "arms/d/spec.py": "482a32fea7482626bf235bb0f4f990267e84bbf5f669941a432dfed11d4cfd27",
+  "arms/d/ontology.py": "7a749d472d85e894375427de64103eafd21b6ccde7d65bb155e2d2cc0bcf0f66",
+  "arms/d/checker.py": "f88fc5284696e0e2a3c54991ca3ebcf419e75ac17f1642298c1f3f6069e28e39",
+  "arms/d/generator.py": "a9815e69465523d237b6095b518e2bd0bda08207e0cafd0d2bb973f6b4bdcaf8",
+  "arms/d/smcore.py": "dc88b7fb6d84001e95c450a76a6183d2cffd1847016d0edd36cc4d617c59c49c",
+  "arms/d/ontology/logistics.ttl": "20f5ee1c536e70f28fd604086c7990cec68f80d1a21f3db1dac22a7a3efe808c",
+  "arms/a/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "arms/a/gl.py": "45fb8c0cfa3ac16f963bc47c6c8c2e17adea3c8c9253328c9aefdff8a46a88a2",
+  "arms/a/ltm.py": "a426808f12ba9b4615c78a3acad11ed238030a46d1a48b42145ee619ff3726b6",
+  "arms/a/agent.py": "e1f4850be54e7c877a8164bf7aa8d11ce12fd2395585f76ee3f0574b1d88804a",
+  "rcs/__init__.py": "ea1fb28dac3b929227ba92640787c19f89cacb0b17964cc1f45cbde5cff63d26",
+  "rcs/envelope.py": "fada331ccda439a8343ab3bf2e7d913ab717fee27dfae597686e84b753ae65a2",
+  "rcs/trace.py": "9a734395ce0422d98502e7678630be0377c65ba6292097dc2de0e959574bd1f9",
+  "rcs/timeline.py": "8f1b7902bf66e3868c79c57c1ba8a617582e719bea979d34b7ea0cb8929f293a",
+  "rcs/model.py": "44b9202d29d1e02099bf97a23aa32b91dcb0e025dec8713b7e74487507be3821",
+  "oracle/core.py": "47c3a4d71f823fda637d610b3e40399fcd8a1b80388cfc1ac7fb951967b51064",
+  "rcs/app.py": "ec12b8c5fbc5203fc688b8828d39711ae341cc80096f4de7a353fa1491607cd6"
+ }
+}

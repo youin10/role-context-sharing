@@ -1,0 +1,5 @@
+watcher1: [BalanceWheeledWatch]
+biped1: [Gyro]
+humanoid1: [Gyro]
+hybrid1: [Gyro]
+wheeled1: [Gyro]

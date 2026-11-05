@@ -1,0 +1,12 @@
+# Pre-specified. diff1 stays at 25 (no new report). Wheeled threshold 20 -> 30 -> 20.
+scenario: B2
+calls:
+  m01: {}
+  m02: {manager1: [[assert, RobotStatus, humanoid1, {battery: 29, zone: storage}]]}
+  m03: {manager1: [[assert, RobotStatus, diff1, {battery: 25, zone: storage}]]}   # gained by the model change
+  m04: {manager1: [[retract, RobotStatus, diff1, null]]}                           # lost by the model change
+views:
+  m03: {manager1: {RobotStatus/humanoid1: {battery: 29, zone: storage}, RobotStatus/diff1: {battery: 25, zone: storage}}}
+  m04: {manager1: {RobotStatus/humanoid1: {battery: 29, zone: storage}}}
+store:
+  m04: {RobotStatus/diff1: {battery: 25, zone: storage}}

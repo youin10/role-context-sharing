@@ -1,0 +1,109 @@
+{
+ "cases": [
+  {
+   "expected": "UNKNOWN_INDIVIDUAL",
+   "id": "AG01",
+   "observed": [
+    "UNKNOWN_INDIVIDUAL"
+   ],
+   "pass": true,
+   "rule": "(rule (fact (RobotStatus $robot $battery $zone)) (= $robot \"ghost9\") --> (notify (RobotStatus $robot $battery $zone)))"
+  },
+  {
+   "expected": "TYPE_MISMATCH",
+   "id": "AG02",
+   "observed": [
+    "TYPE_MISMATCH"
+   ],
+   "pass": true,
+   "rule": "(rule (fact (RobotStatus $robot $battery $zone)) (= $robot \"cargo1\") --> (notify (RobotStatus $robot $battery $zone)))"
+  },
+  {
+   "expected": "TYPE_MISMATCH",
+   "id": "AG03",
+   "observed": [
+    "TYPE_MISMATCH"
+   ],
+   "pass": true,
+   "rule": "(rule (fact (RobotStatus $robot $battery $zone)) (< $robot 3) --> (notify (RobotStatus $robot $battery $zone)))"
+  },
+  {
+   "expected": "TYPE_MISMATCH",
+   "id": "AG04",
+   "observed": [
+    "TYPE_MISMATCH"
+   ],
+   "pass": true,
+   "rule": "(rule (fact (RobotStatus $robot $battery $zone)) (<= $battery \"30\") --> (notify (RobotStatus $robot $battery $zone)))"
+  },
+  {
+   "expected": "ARITY",
+   "id": "AG05",
+   "observed": [
+    "ARITY"
+   ],
+   "pass": true,
+   "rule": "(rule (fact (RobotStatus $robot $battery)) --> (notify (RobotStatus $robot $battery)))"
+  },
+  {
+   "expected": "ok",
+   "id": "AG06",
+   "observed": [
+    "ok"
+   ],
+   "pass": true,
+   "rule": "(rule (fact (RobotStatus $robot $battery $zone)) (= $robot \"hum1\") (<= $battery 30) --> (notify (RobotStatus $robot $battery $zone)))"
+  },
+  {
+   "expected": "UNKNOWN_INDIVIDUAL",
+   "id": "AG07",
+   "observed": [
+    "UNKNOWN_INDIVIDUAL"
+   ],
+   "pass": true,
+   "rule": "(rule (fact (CargoCarriedBy $cargo $robot)) (= $robot \"ghost9\") --> (notify (CargoCarriedBy $cargo $robot)))"
+  }
+ ],
+ "d_models": {
+  "models/d/M-nocond.org": [],
+  "models/d/M1-strict.org": [],
+  "models/d/M1.org": [],
+  "models/d/M2.org": [],
+  "models/d/X2.org": [],
+  "models/d/contract/CT-typed.org": [],
+  "models/d/contract/CT2.org": [],
+  "models/d/contract/CT4-0.org": [],
+  "models/d/contract/CT4-1.org": [],
+  "models/d/contract/CT4-2.org": [],
+  "models/d/contract/CT5.org": [],
+  "models/d/contract/CT7-0.org": [],
+  "models/d/nc/CT-typed-stop299.org": [],
+  "models/d/nc/CT-typed-strict.org": [],
+  "models/d/nc/M1-stop299.org": []
+ },
+ "plan_dirs": {
+  "models/a-helper/contract/plans/ct2": [],
+  "models/a-helper/contract/plans/ct4-0": [],
+  "models/a-helper/contract/plans/ct4-1": [],
+  "models/a-helper/contract/plans/ct4-2": [],
+  "models/a-helper/contract/plans/ct5": [],
+  "models/a-helper/contract/plans/ct7-0": [],
+  "models/a-helper/contract/plans/typed": [],
+  "models/a-helper/plans/strict": [],
+  "models/a-helper/plans/v1": [],
+  "models/a-helper/plans/v2": [],
+  "models/a-helper/plans/x2": [],
+  "models/a/contract/plans/ct2": [],
+  "models/a/contract/plans/ct4-0": [],
+  "models/a/contract/plans/ct4-1": [],
+  "models/a/contract/plans/ct4-2": [],
+  "models/a/contract/plans/ct5": [],
+  "models/a/contract/plans/ct7-0": [],
+  "models/a/contract/plans/typed": [],
+  "models/a/plans/nocond": [],
+  "models/a/plans/strict": [],
+  "models/a/plans/v1": [],
+  "models/a/plans/v2": [],
+  "models/a/plans/x2": []
+ }
+}

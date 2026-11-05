@@ -1,0 +1,1480 @@
+{
+ "root": "live/runs/final-c6cef8724cd4/a1",
+ "runs": 66,
+ "pass": 66,
+ "nc_ok": 66,
+ "core_snapshots": [
+  "c6cef8724cd494454931b343ff1c4eb56622a960f21b7db3acff22e908946843"
+ ],
+ "live_snapshots": [
+  "ead7a9cb133af02bbfc7100812a254b3be7613738757b4276df5f5d19d3bd3c9"
+ ],
+ "environments": [
+  [
+   "sha256:c99b70591300f28b63b8ed3f77f753039def35d1b0e13f705ece01166ffa4498",
+   "rmw_fastrtps_cpp",
+   [
+    "3.12.3 6.0.1",
+    "ros-jazzy-fastrtps\t2.14.7-1noble.20260911.035410",
+    "ros-jazzy-rclpy\t7.1.12-1noble.20260911.111116",
+    "ros-jazzy-rmw-fastrtps-cpp\t8.4.4-1noble.20260911.054759",
+    "RMW=rmw_fastrtps_cpp"
+   ]
+  ]
+ ],
+ "disk_kib": 15048,
+ "rows": [
+  {
+   "scenario": "K",
+   "arm": "a",
+   "runs": 3,
+   "pass": 3,
+   "nc_ok": 3,
+   "nc_detected": [
+    "9/9",
+    "9/9",
+    "9/9"
+   ],
+   "exit_all_zero": true,
+   "reps_identical_observation": true,
+   "same_inputs": true,
+   "expected_positive_calls": 7,
+   "observed_calls": [
+    7,
+    7,
+    7
+   ],
+   "by_kind": {
+    "deliver": 5,
+    "delete": 1,
+    "current": 0,
+    "revoke": 1
+   },
+   "decisions": [
+    0,
+    0,
+    0
+   ],
+   "rejected": [
+    0,
+    0,
+    0
+   ],
+   "messages_sent": [
+    65,
+    65,
+    65
+   ],
+   "missing_dup_unsent": [
+    [
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0
+    ]
+   ],
+   "settle_dt_s_median": 0.12079999999999999,
+   "settle_dt_s_max": 0.1275,
+   "wall_s": [
+    4.91,
+    4.95,
+    5.01
+   ]
+  },
+  {
+   "scenario": "K",
+   "arm": "d",
+   "runs": 3,
+   "pass": 3,
+   "nc_ok": 3,
+   "nc_detected": [
+    "9/9",
+    "9/9",
+    "9/9"
+   ],
+   "exit_all_zero": true,
+   "reps_identical_observation": true,
+   "same_inputs": true,
+   "expected_positive_calls": 7,
+   "observed_calls": [
+    7,
+    7,
+    7
+   ],
+   "by_kind": {
+    "deliver": 5,
+    "delete": 1,
+    "current": 0,
+    "revoke": 1
+   },
+   "decisions": [
+    0,
+    0,
+    0
+   ],
+   "rejected": [
+    0,
+    0,
+    0
+   ],
+   "messages_sent": [
+    16,
+    16,
+    16
+   ],
+   "missing_dup_unsent": [
+    [
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0
+    ]
+   ],
+   "settle_dt_s_median": 0.11779999999999999,
+   "settle_dt_s_max": 0.1257,
+   "wall_s": [
+    4.91,
+    4.85,
+    4.91
+   ]
+  },
+  {
+   "scenario": "P1",
+   "arm": "a",
+   "runs": 3,
+   "pass": 3,
+   "nc_ok": 3,
+   "nc_detected": [
+    "9/9",
+    "9/9",
+    "9/9"
+   ],
+   "exit_all_zero": true,
+   "reps_identical_observation": true,
+   "same_inputs": true,
+   "expected_positive_calls": 7,
+   "observed_calls": [
+    7,
+    7,
+    7
+   ],
+   "by_kind": {
+    "deliver": 3,
+    "delete": 1,
+    "current": 1,
+    "revoke": 2
+   },
+   "decisions": [
+    5,
+    5,
+    5
+   ],
+   "rejected": [
+    0,
+    0,
+    0
+   ],
+   "messages_sent": [
+    91,
+    91,
+    91
+   ],
+   "missing_dup_unsent": [
+    [
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0
+    ]
+   ],
+   "settle_dt_s_median": 0.1147,
+   "settle_dt_s_max": 0.1324,
+   "wall_s": [
+    5.17,
+    5.22,
+    5.23
+   ]
+  },
+  {
+   "scenario": "P1",
+   "arm": "d",
+   "runs": 3,
+   "pass": 3,
+   "nc_ok": 3,
+   "nc_detected": [
+    "9/9",
+    "9/9",
+    "9/9"
+   ],
+   "exit_all_zero": true,
+   "reps_identical_observation": true,
+   "same_inputs": true,
+   "expected_positive_calls": 7,
+   "observed_calls": [
+    7,
+    7,
+    7
+   ],
+   "by_kind": {
+    "deliver": 3,
+    "delete": 1,
+    "current": 1,
+    "revoke": 2
+   },
+   "decisions": [
+    5,
+    5,
+    5
+   ],
+   "rejected": [
+    0,
+    0,
+    0
+   ],
+   "messages_sent": [
+    44,
+    44,
+    44
+   ],
+   "missing_dup_unsent": [
+    [
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0
+    ]
+   ],
+   "settle_dt_s_median": 0.1143,
+   "settle_dt_s_max": 0.1204,
+   "wall_s": [
+    5.16,
+    5.11,
+    5.13
+   ]
+  },
+  {
+   "scenario": "T",
+   "arm": "a",
+   "runs": 3,
+   "pass": 3,
+   "nc_ok": 3,
+   "nc_detected": [
+    "9/9",
+    "9/9",
+    "9/9"
+   ],
+   "exit_all_zero": true,
+   "reps_identical_observation": true,
+   "same_inputs": true,
+   "expected_positive_calls": 2,
+   "observed_calls": [
+    2,
+    2,
+    2
+   ],
+   "by_kind": {
+    "deliver": 2,
+    "delete": 0,
+    "current": 0,
+    "revoke": 0
+   },
+   "decisions": [
+    0,
+    0,
+    0
+   ],
+   "rejected": [
+    5,
+    5,
+    5
+   ],
+   "messages_sent": [
+    51,
+    51,
+    51
+   ],
+   "missing_dup_unsent": [
+    [
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0
+    ]
+   ],
+   "settle_dt_s_median": 0.1183,
+   "settle_dt_s_max": 0.1243,
+   "wall_s": [
+    4.55,
+    4.52,
+    4.47
+   ]
+  },
+  {
+   "scenario": "T",
+   "arm": "d",
+   "runs": 3,
+   "pass": 3,
+   "nc_ok": 3,
+   "nc_detected": [
+    "9/9",
+    "9/9",
+    "9/9"
+   ],
+   "exit_all_zero": true,
+   "reps_identical_observation": true,
+   "same_inputs": true,
+   "expected_positive_calls": 2,
+   "observed_calls": [
+    2,
+    2,
+    2
+   ],
+   "by_kind": {
+    "deliver": 2,
+    "delete": 0,
+    "current": 0,
+    "revoke": 0
+   },
+   "decisions": [
+    0,
+    0,
+    0
+   ],
+   "rejected": [
+    5,
+    5,
+    5
+   ],
+   "messages_sent": [
+    11,
+    11,
+    11
+   ],
+   "missing_dup_unsent": [
+    [
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0
+    ]
+   ],
+   "settle_dt_s_median": 0.11904999999999999,
+   "settle_dt_s_max": 0.1252,
+   "wall_s": [
+    4.48,
+    4.47,
+    4.47
+   ]
+  },
+  {
+   "scenario": "contract/CT1",
+   "arm": "a",
+   "runs": 3,
+   "pass": 3,
+   "nc_ok": 3,
+   "nc_detected": [
+    "9/9",
+    "9/9",
+    "9/9"
+   ],
+   "exit_all_zero": true,
+   "reps_identical_observation": true,
+   "same_inputs": true,
+   "expected_positive_calls": 3,
+   "observed_calls": [
+    3,
+    3,
+    3
+   ],
+   "by_kind": {
+    "deliver": 3,
+    "delete": 0,
+    "current": 0,
+    "revoke": 0
+   },
+   "decisions": [
+    0,
+    0,
+    0
+   ],
+   "rejected": [
+    0,
+    0,
+    0
+   ],
+   "messages_sent": [
+    32,
+    32,
+    32
+   ],
+   "missing_dup_unsent": [
+    [
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0
+    ]
+   ],
+   "settle_dt_s_median": 0.11699999999999999,
+   "settle_dt_s_max": 0.1197,
+   "wall_s": [
+    4.13,
+    4.19,
+    4.12
+   ]
+  },
+  {
+   "scenario": "contract/CT1",
+   "arm": "d",
+   "runs": 3,
+   "pass": 3,
+   "nc_ok": 3,
+   "nc_detected": [
+    "9/9",
+    "9/9",
+    "9/9"
+   ],
+   "exit_all_zero": true,
+   "reps_identical_observation": true,
+   "same_inputs": true,
+   "expected_positive_calls": 3,
+   "observed_calls": [
+    3,
+    3,
+    3
+   ],
+   "by_kind": {
+    "deliver": 3,
+    "delete": 0,
+    "current": 0,
+    "revoke": 0
+   },
+   "decisions": [
+    0,
+    0,
+    0
+   ],
+   "rejected": [
+    0,
+    0,
+    0
+   ],
+   "messages_sent": [
+    8,
+    8,
+    8
+   ],
+   "missing_dup_unsent": [
+    [
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0
+    ]
+   ],
+   "settle_dt_s_median": 0.115,
+   "settle_dt_s_max": 0.1191,
+   "wall_s": [
+    4.07,
+    4.12,
+    4.09
+   ]
+  },
+  {
+   "scenario": "contract/CT2",
+   "arm": "a",
+   "runs": 3,
+   "pass": 3,
+   "nc_ok": 3,
+   "nc_detected": [
+    "9/9",
+    "9/9",
+    "9/9"
+   ],
+   "exit_all_zero": true,
+   "reps_identical_observation": true,
+   "same_inputs": true,
+   "expected_positive_calls": 2,
+   "observed_calls": [
+    2,
+    2,
+    2
+   ],
+   "by_kind": {
+    "deliver": 1,
+    "delete": 0,
+    "current": 0,
+    "revoke": 1
+   },
+   "decisions": [
+    0,
+    0,
+    0
+   ],
+   "rejected": [
+    0,
+    0,
+    0
+   ],
+   "messages_sent": [
+    13,
+    13,
+    13
+   ],
+   "missing_dup_unsent": [
+    [
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0
+    ]
+   ],
+   "settle_dt_s_median": 0.11565,
+   "settle_dt_s_max": 0.121,
+   "wall_s": [
+    3.9,
+    3.91,
+    3.86
+   ]
+  },
+  {
+   "scenario": "contract/CT2",
+   "arm": "d",
+   "runs": 3,
+   "pass": 3,
+   "nc_ok": 3,
+   "nc_detected": [
+    "9/9",
+    "9/9",
+    "9/9"
+   ],
+   "exit_all_zero": true,
+   "reps_identical_observation": true,
+   "same_inputs": true,
+   "expected_positive_calls": 2,
+   "observed_calls": [
+    2,
+    2,
+    2
+   ],
+   "by_kind": {
+    "deliver": 1,
+    "delete": 0,
+    "current": 0,
+    "revoke": 1
+   },
+   "decisions": [
+    0,
+    0,
+    0
+   ],
+   "rejected": [
+    0,
+    0,
+    0
+   ],
+   "messages_sent": [
+    5,
+    5,
+    5
+   ],
+   "missing_dup_unsent": [
+    [
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0
+    ]
+   ],
+   "settle_dt_s_median": 0.11485000000000001,
+   "settle_dt_s_max": 0.1196,
+   "wall_s": [
+    3.88,
+    3.85,
+    3.85
+   ]
+  },
+  {
+   "scenario": "contract/CT3",
+   "arm": "a",
+   "runs": 3,
+   "pass": 3,
+   "nc_ok": 3,
+   "nc_detected": [
+    "9/9",
+    "9/9",
+    "9/9"
+   ],
+   "exit_all_zero": true,
+   "reps_identical_observation": true,
+   "same_inputs": true,
+   "expected_positive_calls": 5,
+   "observed_calls": [
+    5,
+    5,
+    5
+   ],
+   "by_kind": {
+    "deliver": 3,
+    "delete": 1,
+    "current": 0,
+    "revoke": 1
+   },
+   "decisions": [
+    0,
+    0,
+    0
+   ],
+   "rejected": [
+    0,
+    0,
+    0
+   ],
+   "messages_sent": [
+    37,
+    37,
+    37
+   ],
+   "missing_dup_unsent": [
+    [
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0
+    ]
+   ],
+   "settle_dt_s_median": 0.11515,
+   "settle_dt_s_max": 0.1227,
+   "wall_s": [
+    4.36,
+    4.37,
+    4.4
+   ]
+  },
+  {
+   "scenario": "contract/CT3",
+   "arm": "d",
+   "runs": 3,
+   "pass": 3,
+   "nc_ok": 3,
+   "nc_detected": [
+    "9/9",
+    "9/9",
+    "9/9"
+   ],
+   "exit_all_zero": true,
+   "reps_identical_observation": true,
+   "same_inputs": true,
+   "expected_positive_calls": 5,
+   "observed_calls": [
+    5,
+    5,
+    5
+   ],
+   "by_kind": {
+    "deliver": 3,
+    "delete": 1,
+    "current": 0,
+    "revoke": 1
+   },
+   "decisions": [
+    0,
+    0,
+    0
+   ],
+   "rejected": [
+    0,
+    0,
+    0
+   ],
+   "messages_sent": [
+    12,
+    12,
+    12
+   ],
+   "missing_dup_unsent": [
+    [
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0
+    ]
+   ],
+   "settle_dt_s_median": 0.11565,
+   "settle_dt_s_max": 0.1209,
+   "wall_s": [
+    4.29,
+    4.34,
+    4.27
+   ]
+  },
+  {
+   "scenario": "contract/CT4",
+   "arm": "a",
+   "runs": 3,
+   "pass": 3,
+   "nc_ok": 3,
+   "nc_detected": [
+    "9/9",
+    "9/9",
+    "9/9"
+   ],
+   "exit_all_zero": true,
+   "reps_identical_observation": true,
+   "same_inputs": true,
+   "expected_positive_calls": 2,
+   "observed_calls": [
+    2,
+    2,
+    2
+   ],
+   "by_kind": {
+    "deliver": 0,
+    "delete": 0,
+    "current": 1,
+    "revoke": 1
+   },
+   "decisions": [
+    0,
+    0,
+    0
+   ],
+   "rejected": [
+    0,
+    0,
+    0
+   ],
+   "messages_sent": [
+    30,
+    30,
+    30
+   ],
+   "missing_dup_unsent": [
+    [
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0
+    ]
+   ],
+   "settle_dt_s_median": 0.1164,
+   "settle_dt_s_max": 0.1211,
+   "wall_s": [
+    4.06,
+    4.09,
+    4.04
+   ]
+  },
+  {
+   "scenario": "contract/CT4",
+   "arm": "d",
+   "runs": 3,
+   "pass": 3,
+   "nc_ok": 3,
+   "nc_detected": [
+    "9/9",
+    "9/9",
+    "9/9"
+   ],
+   "exit_all_zero": true,
+   "reps_identical_observation": true,
+   "same_inputs": true,
+   "expected_positive_calls": 2,
+   "observed_calls": [
+    2,
+    2,
+    2
+   ],
+   "by_kind": {
+    "deliver": 0,
+    "delete": 0,
+    "current": 1,
+    "revoke": 1
+   },
+   "decisions": [
+    0,
+    0,
+    0
+   ],
+   "rejected": [
+    0,
+    0,
+    0
+   ],
+   "messages_sent": [
+    26,
+    26,
+    26
+   ],
+   "missing_dup_unsent": [
+    [
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0
+    ]
+   ],
+   "settle_dt_s_median": 0.1142,
+   "settle_dt_s_max": 0.1232,
+   "wall_s": [
+    4.03,
+    3.97,
+    4.01
+   ]
+  },
+  {
+   "scenario": "contract/CT5",
+   "arm": "a",
+   "runs": 3,
+   "pass": 3,
+   "nc_ok": 3,
+   "nc_detected": [
+    "9/9",
+    "9/9",
+    "9/9"
+   ],
+   "exit_all_zero": true,
+   "reps_identical_observation": true,
+   "same_inputs": true,
+   "expected_positive_calls": 2,
+   "observed_calls": [
+    2,
+    2,
+    2
+   ],
+   "by_kind": {
+    "deliver": 1,
+    "delete": 0,
+    "current": 0,
+    "revoke": 1
+   },
+   "decisions": [
+    0,
+    0,
+    0
+   ],
+   "rejected": [
+    0,
+    0,
+    0
+   ],
+   "messages_sent": [
+    37,
+    37,
+    37
+   ],
+   "missing_dup_unsent": [
+    [
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0
+    ]
+   ],
+   "settle_dt_s_median": 0.1159,
+   "settle_dt_s_max": 0.1174,
+   "wall_s": [
+    3.91,
+    3.94,
+    3.84
+   ]
+  },
+  {
+   "scenario": "contract/CT5",
+   "arm": "d",
+   "runs": 3,
+   "pass": 3,
+   "nc_ok": 3,
+   "nc_detected": [
+    "9/9",
+    "9/9",
+    "9/9"
+   ],
+   "exit_all_zero": true,
+   "reps_identical_observation": true,
+   "same_inputs": true,
+   "expected_positive_calls": 2,
+   "observed_calls": [
+    2,
+    2,
+    2
+   ],
+   "by_kind": {
+    "deliver": 1,
+    "delete": 0,
+    "current": 0,
+    "revoke": 1
+   },
+   "decisions": [
+    0,
+    0,
+    0
+   ],
+   "rejected": [
+    0,
+    0,
+    0
+   ],
+   "messages_sent": [
+    25,
+    25,
+    25
+   ],
+   "missing_dup_unsent": [
+    [
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0
+    ]
+   ],
+   "settle_dt_s_median": 0.1137,
+   "settle_dt_s_max": 0.1161,
+   "wall_s": [
+    3.9,
+    3.91,
+    3.92
+   ]
+  },
+  {
+   "scenario": "contract/CT6",
+   "arm": "a",
+   "runs": 3,
+   "pass": 3,
+   "nc_ok": 3,
+   "nc_detected": [
+    "9/9",
+    "9/9",
+    "9/9"
+   ],
+   "exit_all_zero": true,
+   "reps_identical_observation": true,
+   "same_inputs": true,
+   "expected_positive_calls": 3,
+   "observed_calls": [
+    3,
+    3,
+    3
+   ],
+   "by_kind": {
+    "deliver": 2,
+    "delete": 1,
+    "current": 0,
+    "revoke": 0
+   },
+   "decisions": [
+    0,
+    0,
+    0
+   ],
+   "rejected": [
+    0,
+    0,
+    0
+   ],
+   "messages_sent": [
+    28,
+    28,
+    28
+   ],
+   "missing_dup_unsent": [
+    [
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0
+    ]
+   ],
+   "settle_dt_s_median": 0.11545,
+   "settle_dt_s_max": 0.1218,
+   "wall_s": [
+    4.12,
+    4.13,
+    4.16
+   ]
+  },
+  {
+   "scenario": "contract/CT6",
+   "arm": "d",
+   "runs": 3,
+   "pass": 3,
+   "nc_ok": 3,
+   "nc_detected": [
+    "9/9",
+    "9/9",
+    "9/9"
+   ],
+   "exit_all_zero": true,
+   "reps_identical_observation": true,
+   "same_inputs": true,
+   "expected_positive_calls": 3,
+   "observed_calls": [
+    3,
+    3,
+    3
+   ],
+   "by_kind": {
+    "deliver": 2,
+    "delete": 1,
+    "current": 0,
+    "revoke": 0
+   },
+   "decisions": [
+    0,
+    0,
+    0
+   ],
+   "rejected": [
+    0,
+    0,
+    0
+   ],
+   "messages_sent": [
+    8,
+    8,
+    8
+   ],
+   "missing_dup_unsent": [
+    [
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0
+    ]
+   ],
+   "settle_dt_s_median": 0.11465,
+   "settle_dt_s_max": 0.1223,
+   "wall_s": [
+    4.1,
+    4.09,
+    4.04
+   ]
+  },
+  {
+   "scenario": "contract/CT7-cfg0",
+   "arm": "a",
+   "runs": 3,
+   "pass": 3,
+   "nc_ok": 3,
+   "nc_detected": [
+    "5/5",
+    "5/5",
+    "5/5"
+   ],
+   "exit_all_zero": true,
+   "reps_identical_observation": true,
+   "same_inputs": true,
+   "expected_positive_calls": 0,
+   "observed_calls": [
+    0,
+    0,
+    0
+   ],
+   "by_kind": {
+    "deliver": 0,
+    "delete": 0,
+    "current": 0,
+    "revoke": 0
+   },
+   "decisions": [
+    3,
+    3,
+    3
+   ],
+   "rejected": [
+    0,
+    0,
+    0
+   ],
+   "messages_sent": [
+    3,
+    3,
+    3
+   ],
+   "missing_dup_unsent": [
+    [
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0
+    ]
+   ],
+   "settle_dt_s_median": 0.0605,
+   "settle_dt_s_max": 0.1176,
+   "wall_s": [
+    4.04,
+    4.01,
+    4.05
+   ]
+  },
+  {
+   "scenario": "contract/CT7-cfg0",
+   "arm": "d",
+   "runs": 3,
+   "pass": 3,
+   "nc_ok": 3,
+   "nc_detected": [
+    "5/5",
+    "5/5",
+    "5/5"
+   ],
+   "exit_all_zero": true,
+   "reps_identical_observation": true,
+   "same_inputs": true,
+   "expected_positive_calls": 0,
+   "observed_calls": [
+    0,
+    0,
+    0
+   ],
+   "by_kind": {
+    "deliver": 0,
+    "delete": 0,
+    "current": 0,
+    "revoke": 0
+   },
+   "decisions": [
+    3,
+    3,
+    3
+   ],
+   "rejected": [
+    0,
+    0,
+    0
+   ],
+   "messages_sent": [
+    3,
+    3,
+    3
+   ],
+   "missing_dup_unsent": [
+    [
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0
+    ]
+   ],
+   "settle_dt_s_median": 0.0617,
+   "settle_dt_s_max": 0.1191,
+   "wall_s": [
+    4.02,
+    4.02,
+    4.03
+   ]
+  },
+  {
+   "scenario": "contract/CT7-cfg1",
+   "arm": "a",
+   "runs": 3,
+   "pass": 3,
+   "nc_ok": 3,
+   "nc_detected": [
+    "9/9",
+    "9/9",
+    "9/9"
+   ],
+   "exit_all_zero": true,
+   "reps_identical_observation": true,
+   "same_inputs": true,
+   "expected_positive_calls": 3,
+   "observed_calls": [
+    3,
+    3,
+    3
+   ],
+   "by_kind": {
+    "deliver": 2,
+    "delete": 0,
+    "current": 0,
+    "revoke": 1
+   },
+   "decisions": [
+    3,
+    3,
+    3
+   ],
+   "rejected": [
+    0,
+    0,
+    0
+   ],
+   "messages_sent": [
+    28,
+    28,
+    28
+   ],
+   "missing_dup_unsent": [
+    [
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0
+    ]
+   ],
+   "settle_dt_s_median": 0.112,
+   "settle_dt_s_max": 0.1188,
+   "wall_s": [
+    4.09,
+    4.05,
+    4.06
+   ]
+  },
+  {
+   "scenario": "contract/CT7-cfg1",
+   "arm": "d",
+   "runs": 3,
+   "pass": 3,
+   "nc_ok": 3,
+   "nc_detected": [
+    "9/9",
+    "9/9",
+    "9/9"
+   ],
+   "exit_all_zero": true,
+   "reps_identical_observation": true,
+   "same_inputs": true,
+   "expected_positive_calls": 3,
+   "observed_calls": [
+    3,
+    3,
+    3
+   ],
+   "by_kind": {
+    "deliver": 2,
+    "delete": 0,
+    "current": 0,
+    "revoke": 1
+   },
+   "decisions": [
+    3,
+    3,
+    3
+   ],
+   "rejected": [
+    0,
+    0,
+    0
+   ],
+   "messages_sent": [
+    6,
+    6,
+    6
+   ],
+   "missing_dup_unsent": [
+    [
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0
+    ]
+   ],
+   "settle_dt_s_median": 0.0605,
+   "settle_dt_s_max": 0.1169,
+   "wall_s": [
+    4.01,
+    4.05,
+    4.03
+   ]
+  }
+ ]
+}

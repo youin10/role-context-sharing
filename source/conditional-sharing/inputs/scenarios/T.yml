@@ -1,0 +1,13 @@
+id: T
+title: unknown individual, wrongly typed individual, ill-typed value, missing field
+d: {model: M1, binding: b-main}
+a: {initial: initial-main-v1}
+observe: [manager1, auditor1]
+steps:
+- {id: t01, report: [biped1, RobotStatus, biped1, {battery: 29, zone: storage}]}
+- {id: t02, report: [wheeled1, RobotStatus, ghost9, {battery: 10, zone: storage}]}
+- {id: t03, report: [wheeled1, RobotStatus, cargo1, {battery: 10, zone: storage}]}
+- {id: t04, report: [biped1, RobotStatus, biped1, {battery: "29", zone: storage}]}
+- {id: t05, report: [biped1, RobotStatus, biped1, {battery: 28}]}
+- {id: t06, report: [wheeled1, CargoCarriedBy, cargo1, {robot: ghost9}]}
+- {id: t07, report: [biped1, RobotStatus, biped1, {battery: 28, zone: storage}]}

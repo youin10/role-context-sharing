@@ -1,0 +1,8 @@
+roles:
+  Manager:
+  - {context: RobotStatus, field: robot, class: Biped, conds: [["<=", battery, 30]]}
+  - {context: RobotStatus, field: robot, class: Wheeled, conds: [["<=", battery, 20]]}
+  - {context: RobotStopped, conds: [[">=", elapsedSeconds, 300]]}
+  Robot: []
+  Observer: []
+  Idle: []

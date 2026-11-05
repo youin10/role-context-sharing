@@ -1,0 +1,21 @@
+# Pre-specified. Decisions are flags of the fixed plan per robot; no task is reclaimed or reassigned.
+# low_power_excluded = registered on the low-power exclusion list; stop_suspect = stop anomaly suspected.
+scenario: P1
+calls:
+  q01: {}
+  q02: {}
+  q03: {manager1: [[assert, RobotStatus, diff1, {battery: 19, zone: storage}]]}
+  q04: {}
+  q05: {manager1: [[assert, RobotStatus, biped1, {battery: 30, zone: storage}]]}
+  q06: {}
+  q07: {manager1: [[assert, RobotStatus, wheeled1, {battery: 25, zone: storage}]]}
+  q08: {manager1: [[assert, RobotStopped, wheeled1, {elapsedSeconds: 300}]]}
+  q09: {manager1: [[retract, RobotStatus, biped1, null]]}
+  q10: {manager1: [[retract, RobotStopped, wheeled1, null]]}
+  q11: {manager1: [[retract, RobotStatus, diff1, null]]}
+decisions:
+  D1: {biped1: [], humanoid1: [], wheeled1: [], diff1: [low_power_excluded]}
+  D2: {biped1: [low_power_excluded], humanoid1: [], wheeled1: [], diff1: [low_power_excluded]}
+  D3: {biped1: [low_power_excluded], humanoid1: [], wheeled1: [low_power_excluded], diff1: [low_power_excluded]}
+  D4: {biped1: [], humanoid1: [], wheeled1: [low_power_excluded, stop_suspect], diff1: [low_power_excluded]}
+  D5: {biped1: [], humanoid1: [], wheeled1: [low_power_excluded], diff1: []}

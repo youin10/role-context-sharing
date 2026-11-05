@@ -1,0 +1,195 @@
+{
+ "schema": "cslive-judge/2",
+ "verdict": "PASS",
+ "arm": "a",
+ "scenario": "CT5",
+ "roster": [
+  "driver",
+  "a-ltm",
+  "a-producer",
+  "a-agent-manager1"
+ ],
+ "hosts": {
+  "driver": "driver",
+  "a-ltm": "a-ltm",
+  "a-producer": "a-producer",
+  "a-agent-manager1": "a-agent-manager1"
+ },
+ "problems": [],
+ "compared": 8,
+ "mismatches": [],
+ "rows": [
+  {
+   "item": "calls",
+   "step": "s1",
+   "agent": "manager1",
+   "ok": true,
+   "want": [
+    [
+     "assert",
+     "RobotStatus",
+     "biped1",
+     {
+      "battery": 28,
+      "zone": "storage"
+     }
+    ]
+   ],
+   "got": [
+    [
+     "assert",
+     "RobotStatus",
+     "biped1",
+     {
+      "battery": 28,
+      "zone": "storage"
+     }
+    ]
+   ]
+  },
+  {
+   "item": "calls",
+   "step": "c1",
+   "agent": "manager1",
+   "ok": true,
+   "want": [],
+   "got": []
+  },
+  {
+   "item": "calls",
+   "step": "c2",
+   "agent": "manager1",
+   "ok": true,
+   "want": [
+    [
+     "retract",
+     "RobotStatus",
+     "biped1",
+     null
+    ]
+   ],
+   "got": [
+    [
+     "retract",
+     "RobotStatus",
+     "biped1",
+     null
+    ]
+   ]
+  },
+  {
+   "item": "view",
+   "step": "c1",
+   "agent": "manager1",
+   "ok": true,
+   "want": {
+    "RobotStatus/biped1": {
+     "battery": 28,
+     "zone": "storage"
+    }
+   },
+   "got": {
+    "RobotStatus/biped1": {
+     "battery": 28,
+     "zone": "storage"
+    }
+   }
+  },
+  {
+   "item": "view",
+   "step": "c2",
+   "agent": "manager1",
+   "ok": true,
+   "want": {},
+   "got": {}
+  },
+  {
+   "item": "store",
+   "step": "s1",
+   "key": "RobotStatus/biped1",
+   "ok": true,
+   "want": {
+    "battery": 28,
+    "zone": "storage"
+   },
+   "got": {
+    "battery": 28,
+    "zone": "storage"
+   }
+  },
+  {
+   "item": "store",
+   "step": "c1",
+   "key": "RobotStatus/biped1",
+   "ok": true,
+   "want": {
+    "battery": 28,
+    "zone": "storage"
+   },
+   "got": {
+    "battery": 28,
+    "zone": "storage"
+   }
+  },
+  {
+   "item": "store",
+   "step": "c2",
+   "key": "RobotStatus/biped1",
+   "ok": true,
+   "want": {
+    "battery": 28,
+    "zone": "storage"
+   },
+   "got": {
+    "battery": 28,
+    "zone": "storage"
+   }
+  }
+ ],
+ "stats": {
+  "expected_positive_calls": 2,
+  "observed_calls": 2,
+  "by_kind": {
+   "assert": 1,
+   "update": 0,
+   "retract": 1
+  },
+  "decisions": 0,
+  "rejected": 0,
+  "messages": {
+   "sent": 37,
+   "missing": 0,
+   "duplicate": 0,
+   "unsent": 0
+  },
+  "causes": {
+   "calls": 2,
+   "rx_ok": 2,
+   "cross_host": 2,
+   "same_step": 2,
+   "version_ok": 2
+  },
+  "settle": [
+   {
+    "step": "init",
+    "dt_s": 0.112,
+    "probes": 3
+   },
+   {
+    "step": "s1",
+    "dt_s": 0.1192,
+    "probes": 3
+   },
+   {
+    "step": "c1",
+    "dt_s": 0.1145,
+    "probes": 3
+   },
+   {
+    "step": "c2",
+    "dt_s": 0.1148,
+    "probes": 3
+   }
+  ]
+ }
+}

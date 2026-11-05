@@ -1,0 +1,26 @@
+{
+ "recorded_at": "2026-10-30T23:19:25.576488+09:00",
+ "note": "frozen hashes of the expected tables of this snapshot (history: results/expected-prerun-hashes.json, results/expected-metadata-supplements.json)",
+ "files": {
+  "inputs/expected/A-static.yml": "f450f37b85ab3d6e967142d76a350fea33ce78d427e3a6c478086d0816401c37",
+  "inputs/expected/B1.yml": "315135da389c48b35c4f8f2344918b0d0e1647324826ae36644c68c245f6fbf9",
+  "inputs/expected/B2.yml": "4f4b026cbf811577a40381e6d175a478054176a68fd49d88596338f1a99b007d",
+  "inputs/expected/B3.yml": "33aa1da41283190a6a5a7ce70e5c4f65278b3796dc260da9b5efe3300254d472",
+  "inputs/expected/G-grammar.yml": "113a9359e9b874a649246b48ee4f96c000b11e3e4460c52fc85d349281225000",
+  "inputs/expected/K.yml": "9a2f99a879c289638988d3e3a3a9159527ac56d55266eafffebc9c38ef3ffe79",
+  "inputs/expected/P1.yml": "9728aa92e888afbba614be0a90c4200498ad1d2fd847e05226b7bad3119a33bc",
+  "inputs/expected/S1.yml": "7e6ad03f2524267d919f0b78e365b4aa77bc9037edf826ed520d38a85fc2eda1",
+  "inputs/expected/T.yml": "2debc632f25305b9831a5303cbccd45bc83e13656bea37e20dfdcb953ed48a8c",
+  "inputs/expected/X1-truth.yml": "5eeecdf3c5dc14ddf822bf0b47ede93527e6449e3c80d22732f3ce5d56a35b46",
+  "inputs/expected/X2.yml": "b41de716e20308b2cf1bee0aea65a81301b0340c1e7872cc69dce953eda0d8cb",
+  "inputs/expected/contract/CT1.yml": "203609129bb7f9ba57de399dc8aa74e8d97bd6f2fe4b7097277064210459555a",
+  "inputs/expected/contract/CT2.yml": "51b3b47dc04d90f57bf0b5d5c795e0b7f2c19eecd305538b745b289e15a237db",
+  "inputs/expected/contract/CT3.yml": "6d62e34ff422e1ba2a36a86750bcd253f0e124766e5e5646e78c9a00b332a385",
+  "inputs/expected/contract/CT4.yml": "18894131e4d8e70e44a4bb51765ab9561fee2649d08cb267cc4efe5c0f45658c",
+  "inputs/expected/contract/CT5-entries.yml": "f8c359ace538f1c9463753fdfb29033063ec24364fb2da6d31d7f85d9d707ad1",
+  "inputs/expected/contract/CT5.yml": "c9fdf9f5403a39d546079d719cbc0273c0fc6cba01bc7904379d6883c33b3e17",
+  "inputs/expected/contract/CT6.yml": "b867b3ed53d93ae682471186fdaa515a03b8978061232971715847517fb44810",
+  "inputs/expected/contract/CT7-cfg0.yml": "4f49f29f2ac72913b7007d4e0a0c23255dcc0a7f76a682e191e71b37abe2f29b",
+  "inputs/expected/contract/CT7-cfg1.yml": "bdba1077eb4b2f1fc1dc8c8961cb7140e144849665aa06af6d51741ae9cc5fa4"
+ }
+}

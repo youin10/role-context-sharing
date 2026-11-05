@@ -1,0 +1,6 @@
+role: Mgr57
+subscribe:
+- (rule (fact (RobotStatus $robot $battery $zone)) (= $robot "r001") (<= $battery -27) --> (notify (RobotStatus $robot $battery $zone)))
+- (rule (fact (RobotStatus $robot $battery $zone)) (= $robot "r003") (<= $battery -27) --> (notify (RobotStatus $robot $battery $zone)))
+- (rule (fact (RobotStatus $robot $battery $zone)) (= $robot "r002") (<= $battery -37) --> (notify (RobotStatus $robot $battery $zone)))
+- (rule (fact (RobotStatus $robot $battery $zone)) (= $robot "r004") (<= $battery -37) --> (notify (RobotStatus $robot $battery $zone)))

@@ -1,0 +1,12 @@
+# Pre-specified. Manager reads RobotStopped with elapsedSeconds >= 300 (provisional threshold).
+scenario: S1
+calls:
+  p01: {}
+  p02: {manager1: [[assert, RobotStopped, biped1, {elapsedSeconds: 300}]]}
+  p03: {manager1: [[update, RobotStopped, biped1, {elapsedSeconds: 301}]]}
+  p04: {manager1: [[retract, RobotStopped, biped1, null]]}
+  p05: {}
+  p06: {}
+views:
+  p03: {manager1: {RobotStopped/biped1: {elapsedSeconds: 301}}}
+  p04: {manager1: {}}

@@ -1,0 +1,4252 @@
+[
+ {
+  "arm": "D",
+  "breaks": null,
+  "expected": "inputs/expected/B1.yml",
+  "expected_positive_calls": 11,
+  "failing": [],
+  "kind": "main",
+  "n_fail": 0,
+  "n_rows": 50,
+  "pass": true,
+  "raw": "raw/main/B1__D__main.jsonl",
+  "scenario": "B1",
+  "variant": "main"
+ },
+ {
+  "arm": "A",
+  "breaks": null,
+  "expected": "inputs/expected/B1.yml",
+  "expected_positive_calls": 11,
+  "failing": [],
+  "kind": "main",
+  "n_fail": 0,
+  "n_rows": 50,
+  "pass": true,
+  "raw": "raw/main/B1__A__main.jsonl",
+  "scenario": "B1",
+  "variant": "main"
+ },
+ {
+  "arm": "A",
+  "breaks": null,
+  "expected": "inputs/expected/B1.yml",
+  "expected_positive_calls": 11,
+  "failing": [],
+  "kind": "main",
+  "n_fail": 0,
+  "n_rows": 50,
+  "pass": true,
+  "raw": "raw/main/B1__A__helper.jsonl",
+  "scenario": "B1",
+  "variant": "helper"
+ },
+ {
+  "arm": "D",
+  "breaks": null,
+  "expected": "inputs/expected/T.yml",
+  "expected_positive_calls": 2,
+  "failing": [],
+  "kind": "main",
+  "n_fail": 0,
+  "n_rows": 35,
+  "pass": true,
+  "raw": "raw/main/T__D__main.jsonl",
+  "scenario": "T",
+  "variant": "main"
+ },
+ {
+  "arm": "A",
+  "breaks": null,
+  "expected": "inputs/expected/T.yml",
+  "expected_positive_calls": 2,
+  "failing": [],
+  "kind": "main",
+  "n_fail": 0,
+  "n_rows": 35,
+  "pass": true,
+  "raw": "raw/main/T__A__main.jsonl",
+  "scenario": "T",
+  "variant": "main"
+ },
+ {
+  "arm": "A",
+  "breaks": null,
+  "expected": "inputs/expected/T.yml",
+  "expected_positive_calls": 2,
+  "failing": [],
+  "kind": "main",
+  "n_fail": 0,
+  "n_rows": 35,
+  "pass": true,
+  "raw": "raw/main/T__A__helper.jsonl",
+  "scenario": "T",
+  "variant": "helper"
+ },
+ {
+  "arm": "D",
+  "breaks": null,
+  "expected": "inputs/expected/B2.yml",
+  "expected_positive_calls": 3,
+  "failing": [],
+  "kind": "main",
+  "n_fail": 0,
+  "n_rows": 22,
+  "pass": true,
+  "raw": "raw/main/B2__D__main.jsonl",
+  "scenario": "B2",
+  "variant": "main"
+ },
+ {
+  "arm": "A",
+  "breaks": null,
+  "expected": "inputs/expected/B2.yml",
+  "expected_positive_calls": 3,
+  "failing": [],
+  "kind": "main",
+  "n_fail": 0,
+  "n_rows": 22,
+  "pass": true,
+  "raw": "raw/main/B2__A__main.jsonl",
+  "scenario": "B2",
+  "variant": "main"
+ },
+ {
+  "arm": "A",
+  "breaks": null,
+  "expected": "inputs/expected/B2.yml",
+  "expected_positive_calls": 3,
+  "failing": [],
+  "kind": "main",
+  "n_fail": 0,
+  "n_rows": 22,
+  "pass": true,
+  "raw": "raw/main/B2__A__helper.jsonl",
+  "scenario": "B2",
+  "variant": "helper"
+ },
+ {
+  "arm": "D",
+  "breaks": null,
+  "expected": "inputs/expected/B3.yml",
+  "expected_positive_calls": 5,
+  "failing": [],
+  "kind": "main",
+  "n_fail": 0,
+  "n_rows": 24,
+  "pass": true,
+  "raw": "raw/main/B3__D__main.jsonl",
+  "scenario": "B3",
+  "variant": "main"
+ },
+ {
+  "arm": "A",
+  "breaks": null,
+  "expected": "inputs/expected/B3.yml",
+  "expected_positive_calls": 5,
+  "failing": [],
+  "kind": "main",
+  "n_fail": 0,
+  "n_rows": 24,
+  "pass": true,
+  "raw": "raw/main/B3__A__main.jsonl",
+  "scenario": "B3",
+  "variant": "main"
+ },
+ {
+  "arm": "A",
+  "breaks": null,
+  "expected": "inputs/expected/B3.yml",
+  "expected_positive_calls": 5,
+  "failing": [],
+  "kind": "main",
+  "n_fail": 0,
+  "n_rows": 24,
+  "pass": true,
+  "raw": "raw/main/B3__A__helper.jsonl",
+  "scenario": "B3",
+  "variant": "helper"
+ },
+ {
+  "arm": "D",
+  "breaks": null,
+  "expected": "inputs/expected/K.yml",
+  "expected_positive_calls": 7,
+  "failing": [],
+  "kind": "main",
+  "n_fail": 0,
+  "n_rows": 51,
+  "pass": true,
+  "raw": "raw/main/K__D__main.jsonl",
+  "scenario": "K",
+  "variant": "main"
+ },
+ {
+  "arm": "A",
+  "breaks": null,
+  "expected": "inputs/expected/K.yml",
+  "expected_positive_calls": 7,
+  "failing": [],
+  "kind": "main",
+  "n_fail": 0,
+  "n_rows": 51,
+  "pass": true,
+  "raw": "raw/main/K__A__main.jsonl",
+  "scenario": "K",
+  "variant": "main"
+ },
+ {
+  "arm": "A",
+  "breaks": null,
+  "expected": "inputs/expected/K.yml",
+  "expected_positive_calls": 7,
+  "failing": [],
+  "kind": "main",
+  "n_fail": 0,
+  "n_rows": 51,
+  "pass": true,
+  "raw": "raw/main/K__A__helper.jsonl",
+  "scenario": "K",
+  "variant": "helper"
+ },
+ {
+  "arm": "D",
+  "breaks": null,
+  "expected": "inputs/expected/S1.yml",
+  "expected_positive_calls": 3,
+  "failing": [],
+  "kind": "main",
+  "n_fail": 0,
+  "n_rows": 25,
+  "pass": true,
+  "raw": "raw/main/S1__D__main.jsonl",
+  "scenario": "S1",
+  "variant": "main"
+ },
+ {
+  "arm": "A",
+  "breaks": null,
+  "expected": "inputs/expected/S1.yml",
+  "expected_positive_calls": 3,
+  "failing": [],
+  "kind": "main",
+  "n_fail": 0,
+  "n_rows": 25,
+  "pass": true,
+  "raw": "raw/main/S1__A__main.jsonl",
+  "scenario": "S1",
+  "variant": "main"
+ },
+ {
+  "arm": "A",
+  "breaks": null,
+  "expected": "inputs/expected/S1.yml",
+  "expected_positive_calls": 3,
+  "failing": [],
+  "kind": "main",
+  "n_fail": 0,
+  "n_rows": 25,
+  "pass": true,
+  "raw": "raw/main/S1__A__helper.jsonl",
+  "scenario": "S1",
+  "variant": "helper"
+ },
+ {
+  "arm": "D",
+  "breaks": null,
+  "expected": "inputs/expected/P1.yml",
+  "expected_positive_calls": 7,
+  "failing": [],
+  "kind": "main",
+  "n_fail": 0,
+  "n_rows": 38,
+  "pass": true,
+  "raw": "raw/main/P1__D__main.jsonl",
+  "scenario": "P1",
+  "variant": "main"
+ },
+ {
+  "arm": "A",
+  "breaks": null,
+  "expected": "inputs/expected/P1.yml",
+  "expected_positive_calls": 7,
+  "failing": [],
+  "kind": "main",
+  "n_fail": 0,
+  "n_rows": 38,
+  "pass": true,
+  "raw": "raw/main/P1__A__main.jsonl",
+  "scenario": "P1",
+  "variant": "main"
+ },
+ {
+  "arm": "A",
+  "breaks": null,
+  "expected": "inputs/expected/P1.yml",
+  "expected_positive_calls": 7,
+  "failing": [],
+  "kind": "main",
+  "n_fail": 0,
+  "n_rows": 38,
+  "pass": true,
+  "raw": "raw/main/P1__A__helper.jsonl",
+  "scenario": "P1",
+  "variant": "helper"
+ },
+ {
+  "arm": "D",
+  "breaks": null,
+  "expected": "inputs/expected/X2.yml",
+  "expected_positive_calls": 2,
+  "failing": [],
+  "kind": "main",
+  "n_fail": 0,
+  "n_rows": 23,
+  "pass": true,
+  "raw": "raw/main/X2__D__main.jsonl",
+  "scenario": "X2",
+  "variant": "main"
+ },
+ {
+  "arm": "A",
+  "breaks": null,
+  "expected": "inputs/expected/X2.yml",
+  "expected_positive_calls": 2,
+  "failing": [],
+  "kind": "main",
+  "n_fail": 0,
+  "n_rows": 23,
+  "pass": true,
+  "raw": "raw/main/X2__A__main.jsonl",
+  "scenario": "X2",
+  "variant": "main"
+ },
+ {
+  "arm": "A",
+  "breaks": null,
+  "expected": "inputs/expected/X2.yml",
+  "expected_positive_calls": 2,
+  "failing": [],
+  "kind": "main",
+  "n_fail": 0,
+  "n_rows": 23,
+  "pass": true,
+  "raw": "raw/main/X2__A__helper.jsonl",
+  "scenario": "X2",
+  "variant": "helper"
+ },
+ {
+  "arm": "D",
+  "breaks": null,
+  "expected": "inputs/expected/contract/CT1.yml",
+  "expected_positive_calls": 3,
+  "failing": [],
+  "kind": "main",
+  "n_fail": 0,
+  "n_rows": 24,
+  "pass": true,
+  "raw": "raw/main/CT1__D__main.jsonl",
+  "scenario": "CT1",
+  "variant": "main"
+ },
+ {
+  "arm": "A",
+  "breaks": null,
+  "expected": "inputs/expected/contract/CT1.yml",
+  "expected_positive_calls": 3,
+  "failing": [],
+  "kind": "main",
+  "n_fail": 0,
+  "n_rows": 24,
+  "pass": true,
+  "raw": "raw/main/CT1__A__main.jsonl",
+  "scenario": "CT1",
+  "variant": "main"
+ },
+ {
+  "arm": "A",
+  "breaks": null,
+  "expected": "inputs/expected/contract/CT1.yml",
+  "expected_positive_calls": 3,
+  "failing": [],
+  "kind": "main",
+  "n_fail": 0,
+  "n_rows": 24,
+  "pass": true,
+  "raw": "raw/main/CT1__A__helper.jsonl",
+  "scenario": "CT1",
+  "variant": "helper"
+ },
+ {
+  "arm": "D",
+  "breaks": null,
+  "expected": "inputs/expected/contract/CT2.yml",
+  "expected_positive_calls": 2,
+  "failing": [],
+  "kind": "main",
+  "n_fail": 0,
+  "n_rows": 18,
+  "pass": true,
+  "raw": "raw/main/CT2__D__main.jsonl",
+  "scenario": "CT2",
+  "variant": "main"
+ },
+ {
+  "arm": "A",
+  "breaks": null,
+  "expected": "inputs/expected/contract/CT2.yml",
+  "expected_positive_calls": 2,
+  "failing": [],
+  "kind": "main",
+  "n_fail": 0,
+  "n_rows": 18,
+  "pass": true,
+  "raw": "raw/main/CT2__A__main.jsonl",
+  "scenario": "CT2",
+  "variant": "main"
+ },
+ {
+  "arm": "A",
+  "breaks": null,
+  "expected": "inputs/expected/contract/CT2.yml",
+  "expected_positive_calls": 2,
+  "failing": [],
+  "kind": "main",
+  "n_fail": 0,
+  "n_rows": 18,
+  "pass": true,
+  "raw": "raw/main/CT2__A__helper.jsonl",
+  "scenario": "CT2",
+  "variant": "helper"
+ },
+ {
+  "arm": "D",
+  "breaks": null,
+  "expected": "inputs/expected/contract/CT3.yml",
+  "expected_positive_calls": 5,
+  "failing": [],
+  "kind": "main",
+  "n_fail": 0,
+  "n_rows": 28,
+  "pass": true,
+  "raw": "raw/main/CT3__D__main.jsonl",
+  "scenario": "CT3",
+  "variant": "main"
+ },
+ {
+  "arm": "A",
+  "breaks": null,
+  "expected": "inputs/expected/contract/CT3.yml",
+  "expected_positive_calls": 5,
+  "failing": [],
+  "kind": "main",
+  "n_fail": 0,
+  "n_rows": 28,
+  "pass": true,
+  "raw": "raw/main/CT3__A__main.jsonl",
+  "scenario": "CT3",
+  "variant": "main"
+ },
+ {
+  "arm": "A",
+  "breaks": null,
+  "expected": "inputs/expected/contract/CT3.yml",
+  "expected_positive_calls": 5,
+  "failing": [],
+  "kind": "main",
+  "n_fail": 0,
+  "n_rows": 28,
+  "pass": true,
+  "raw": "raw/main/CT3__A__helper.jsonl",
+  "scenario": "CT3",
+  "variant": "helper"
+ },
+ {
+  "arm": "D",
+  "breaks": null,
+  "expected": "inputs/expected/contract/CT4.yml",
+  "expected_positive_calls": 2,
+  "failing": [],
+  "kind": "main",
+  "n_fail": 0,
+  "n_rows": 21,
+  "pass": true,
+  "raw": "raw/main/CT4__D__main.jsonl",
+  "scenario": "CT4",
+  "variant": "main"
+ },
+ {
+  "arm": "A",
+  "breaks": null,
+  "expected": "inputs/expected/contract/CT4.yml",
+  "expected_positive_calls": 2,
+  "failing": [],
+  "kind": "main",
+  "n_fail": 0,
+  "n_rows": 21,
+  "pass": true,
+  "raw": "raw/main/CT4__A__main.jsonl",
+  "scenario": "CT4",
+  "variant": "main"
+ },
+ {
+  "arm": "A",
+  "breaks": null,
+  "expected": "inputs/expected/contract/CT4.yml",
+  "expected_positive_calls": 2,
+  "failing": [],
+  "kind": "main",
+  "n_fail": 0,
+  "n_rows": 21,
+  "pass": true,
+  "raw": "raw/main/CT4__A__helper.jsonl",
+  "scenario": "CT4",
+  "variant": "helper"
+ },
+ {
+  "arm": "D",
+  "breaks": null,
+  "expected": "inputs/expected/contract/CT5.yml",
+  "expected_positive_calls": 2,
+  "failing": [],
+  "kind": "main",
+  "n_fail": 0,
+  "n_rows": 22,
+  "pass": true,
+  "raw": "raw/main/CT5__D__main.jsonl",
+  "scenario": "CT5",
+  "variant": "main"
+ },
+ {
+  "arm": "A",
+  "breaks": null,
+  "expected": "inputs/expected/contract/CT5.yml",
+  "expected_positive_calls": 2,
+  "failing": [],
+  "kind": "main",
+  "n_fail": 0,
+  "n_rows": 22,
+  "pass": true,
+  "raw": "raw/main/CT5__A__main.jsonl",
+  "scenario": "CT5",
+  "variant": "main"
+ },
+ {
+  "arm": "A",
+  "breaks": null,
+  "expected": "inputs/expected/contract/CT5.yml",
+  "expected_positive_calls": 2,
+  "failing": [],
+  "kind": "main",
+  "n_fail": 0,
+  "n_rows": 22,
+  "pass": true,
+  "raw": "raw/main/CT5__A__helper.jsonl",
+  "scenario": "CT5",
+  "variant": "helper"
+ },
+ {
+  "arm": "D",
+  "breaks": null,
+  "expected": "inputs/expected/contract/CT6.yml",
+  "expected_positive_calls": 3,
+  "failing": [],
+  "kind": "main",
+  "n_fail": 0,
+  "n_rows": 22,
+  "pass": true,
+  "raw": "raw/main/CT6__D__main.jsonl",
+  "scenario": "CT6",
+  "variant": "main"
+ },
+ {
+  "arm": "A",
+  "breaks": null,
+  "expected": "inputs/expected/contract/CT6.yml",
+  "expected_positive_calls": 3,
+  "failing": [],
+  "kind": "main",
+  "n_fail": 0,
+  "n_rows": 22,
+  "pass": true,
+  "raw": "raw/main/CT6__A__main.jsonl",
+  "scenario": "CT6",
+  "variant": "main"
+ },
+ {
+  "arm": "A",
+  "breaks": null,
+  "expected": "inputs/expected/contract/CT6.yml",
+  "expected_positive_calls": 3,
+  "failing": [],
+  "kind": "main",
+  "n_fail": 0,
+  "n_rows": 22,
+  "pass": true,
+  "raw": "raw/main/CT6__A__helper.jsonl",
+  "scenario": "CT6",
+  "variant": "helper"
+ },
+ {
+  "arm": "D",
+  "breaks": null,
+  "expected": "inputs/expected/contract/CT7-cfg1.yml",
+  "expected_positive_calls": 3,
+  "failing": [],
+  "kind": "main",
+  "n_fail": 0,
+  "n_rows": 20,
+  "pass": true,
+  "raw": "raw/main/CT7-cfg1__D__main.jsonl",
+  "scenario": "CT7-cfg1",
+  "variant": "main"
+ },
+ {
+  "arm": "A",
+  "breaks": null,
+  "expected": "inputs/expected/contract/CT7-cfg1.yml",
+  "expected_positive_calls": 3,
+  "failing": [],
+  "kind": "main",
+  "n_fail": 0,
+  "n_rows": 20,
+  "pass": true,
+  "raw": "raw/main/CT7-cfg1__A__main.jsonl",
+  "scenario": "CT7-cfg1",
+  "variant": "main"
+ },
+ {
+  "arm": "A",
+  "breaks": null,
+  "expected": "inputs/expected/contract/CT7-cfg1.yml",
+  "expected_positive_calls": 3,
+  "failing": [],
+  "kind": "main",
+  "n_fail": 0,
+  "n_rows": 20,
+  "pass": true,
+  "raw": "raw/main/CT7-cfg1__A__helper.jsonl",
+  "scenario": "CT7-cfg1",
+  "variant": "helper"
+ },
+ {
+  "arm": "D",
+  "breaks": null,
+  "expected": "inputs/expected/contract/CT7-cfg0.yml",
+  "expected_positive_calls": 0,
+  "failing": [],
+  "kind": "main",
+  "n_fail": 0,
+  "n_rows": 19,
+  "pass": true,
+  "raw": "raw/main/CT7-cfg0__D__main.jsonl",
+  "scenario": "CT7-cfg0",
+  "variant": "main"
+ },
+ {
+  "arm": "A",
+  "breaks": null,
+  "expected": "inputs/expected/contract/CT7-cfg0.yml",
+  "expected_positive_calls": 0,
+  "failing": [],
+  "kind": "main",
+  "n_fail": 0,
+  "n_rows": 19,
+  "pass": true,
+  "raw": "raw/main/CT7-cfg0__A__main.jsonl",
+  "scenario": "CT7-cfg0",
+  "variant": "main"
+ },
+ {
+  "arm": "A",
+  "breaks": null,
+  "expected": "inputs/expected/contract/CT7-cfg0.yml",
+  "expected_positive_calls": 0,
+  "failing": [],
+  "kind": "main",
+  "n_fail": 0,
+  "n_rows": 19,
+  "pass": true,
+  "raw": "raw/main/CT7-cfg0__A__helper.jsonl",
+  "scenario": "CT7-cfg0",
+  "variant": "helper"
+ },
+ {
+  "arm": "D",
+  "breaks": "fixed plan without the model update",
+  "expect_error": null,
+  "expected": "inputs/expected/P1.yml",
+  "expected_positive_calls": 7,
+  "failing": [
+   {
+    "expected": [
+     [
+      "assert",
+      "RobotStatus",
+      "wheeled1",
+      {
+       "battery": 25,
+       "zone": "storage"
+      }
+     ]
+    ],
+    "observed": [],
+    "ok": false,
+    "step": "q07",
+    "what": "calls:manager1"
+   },
+   {
+    "expected": {
+     "biped1": [
+      "low_power_excluded"
+     ],
+     "diff1": [
+      "low_power_excluded"
+     ],
+     "humanoid1": [],
+     "wheeled1": [
+      "low_power_excluded"
+     ]
+    },
+    "observed": {
+     "biped1": [
+      "low_power_excluded"
+     ],
+     "diff1": [
+      "low_power_excluded"
+     ],
+     "humanoid1": [],
+     "wheeled1": []
+    },
+    "ok": false,
+    "step": "D3",
+    "what": "decision"
+   },
+   {
+    "expected": {
+     "biped1": [],
+     "diff1": [
+      "low_power_excluded"
+     ],
+     "humanoid1": [],
+     "wheeled1": [
+      "low_power_excluded",
+      "stop_suspect"
+     ]
+    },
+    "observed": {
+     "biped1": [],
+     "diff1": [
+      "low_power_excluded"
+     ],
+     "humanoid1": [],
+     "wheeled1": [
+      "stop_suspect"
+     ]
+    },
+    "ok": false,
+    "step": "D4",
+    "what": "decision"
+   },
+   {
+    "expected": {
+     "biped1": [],
+     "diff1": [],
+     "humanoid1": [],
+     "wheeled1": [
+      "low_power_excluded"
+     ]
+    },
+    "observed": {
+     "biped1": [],
+     "diff1": [],
+     "humanoid1": [],
+     "wheeled1": []
+    },
+    "ok": false,
+    "step": "D5",
+    "what": "decision"
+   }
+  ],
+  "fails_for_declared_reason": true,
+  "kind": "contrast",
+  "n_fail": 4,
+  "n_rows": 38,
+  "pass": false,
+  "raw": "raw/contrast/P1__D__noupdate.jsonl",
+  "run_error": null,
+  "scenario": "P1",
+  "variant": "noupdate"
+ },
+ {
+  "arm": "D",
+  "breaks": "fixed plan without data conditions",
+  "expect_error": null,
+  "expected": "inputs/expected/P1.yml",
+  "expected_positive_calls": 7,
+  "failing": [
+   {
+    "expected": [],
+    "observed": [
+     [
+      "assert",
+      "RobotStatus",
+      "biped1",
+      {
+       "battery": 31,
+       "zone": "storage"
+      }
+     ]
+    ],
+    "ok": false,
+    "step": "q01",
+    "what": "calls:manager1"
+   },
+   {
+    "expected": [],
+    "observed": [
+     [
+      "assert",
+      "RobotStatus",
+      "wheeled1",
+      {
+       "battery": 25,
+       "zone": "storage"
+      }
+     ]
+    ],
+    "ok": false,
+    "step": "q02",
+    "what": "calls:manager1"
+   },
+   {
+    "expected": [],
+    "observed": [
+     [
+      "assert",
+      "RobotStatus",
+      "humanoid1",
+      {
+       "battery": 45,
+       "zone": "storage"
+      }
+     ]
+    ],
+    "ok": false,
+    "step": "q04",
+    "what": "calls:manager1"
+   },
+   {
+    "expected": [
+     [
+      "assert",
+      "RobotStatus",
+      "biped1",
+      {
+       "battery": 30,
+       "zone": "storage"
+      }
+     ]
+    ],
+    "observed": [
+     [
+      "update",
+      "RobotStatus",
+      "biped1",
+      {
+       "battery": 30,
+       "zone": "storage"
+      }
+     ]
+    ],
+    "ok": false,
+    "step": "q05",
+    "what": "calls:manager1"
+   },
+   {
+    "expected": [],
+    "observed": [
+     [
+      "assert",
+      "RobotStopped",
+      "wheeled1",
+      {
+       "elapsedSeconds": 299
+      }
+     ]
+    ],
+    "ok": false,
+    "step": "q06",
+    "what": "calls:manager1"
+   },
+   {
+    "expected": [
+     [
+      "assert",
+      "RobotStatus",
+      "wheeled1",
+      {
+       "battery": 25,
+       "zone": "storage"
+      }
+     ]
+    ],
+    "observed": [],
+    "ok": false,
+    "step": "q07",
+    "what": "calls:manager1"
+   },
+   {
+    "expected": [
+     [
+      "assert",
+      "RobotStopped",
+      "wheeled1",
+      {
+       "elapsedSeconds": 300
+      }
+     ]
+    ],
+    "observed": [
+     [
+      "update",
+      "RobotStopped",
+      "wheeled1",
+      {
+       "elapsedSeconds": 300
+      }
+     ]
+    ],
+    "ok": false,
+    "step": "q08",
+    "what": "calls:manager1"
+   },
+   {
+    "expected": [
+     [
+      "retract",
+      "RobotStatus",
+      "biped1",
+      null
+     ]
+    ],
+    "observed": [
+     [
+      "update",
+      "RobotStatus",
+      "biped1",
+      {
+       "battery": 31,
+       "zone": "storage"
+      }
+     ]
+    ],
+    "ok": false,
+    "step": "q09",
+    "what": "calls:manager1"
+   },
+   {
+    "expected": [
+     [
+      "retract",
+      "RobotStatus",
+      "diff1",
+      null
+     ]
+    ],
+    "observed": [
+     [
+      "update",
+      "RobotStatus",
+      "diff1",
+      {
+       "battery": 31,
+       "zone": "storage"
+      }
+     ]
+    ],
+    "ok": false,
+    "step": "q11",
+    "what": "calls:manager1"
+   },
+   {
+    "expected": {
+     "biped1": [],
+     "diff1": [
+      "low_power_excluded"
+     ],
+     "humanoid1": [],
+     "wheeled1": []
+    },
+    "observed": {
+     "biped1": [
+      "low_power_excluded"
+     ],
+     "diff1": [
+      "low_power_excluded"
+     ],
+     "humanoid1": [
+      "low_power_excluded"
+     ],
+     "wheeled1": [
+      "low_power_excluded"
+     ]
+    },
+    "ok": false,
+    "step": "D1",
+    "what": "decision"
+   },
+   {
+    "expected": {
+     "biped1": [
+      "low_power_excluded"
+     ],
+     "diff1": [
+      "low_power_excluded"
+     ],
+     "humanoid1": [],
+     "wheeled1": []
+    },
+    "observed": {
+     "biped1": [
+      "low_power_excluded"
+     ],
+     "diff1": [
+      "low_power_excluded"
+     ],
+     "humanoid1": [
+      "low_power_excluded"
+     ],
+     "wheeled1": [
+      "low_power_excluded",
+      "stop_suspect"
+     ]
+    },
+    "ok": false,
+    "step": "D2",
+    "what": "decision"
+   },
+   {
+    "expected": {
+     "biped1": [
+      "low_power_excluded"
+     ],
+     "diff1": [
+      "low_power_excluded"
+     ],
+     "humanoid1": [],
+     "wheeled1": [
+      "low_power_excluded"
+     ]
+    },
+    "observed": {
+     "biped1": [
+      "low_power_excluded"
+     ],
+     "diff1": [
+      "low_power_excluded"
+     ],
+     "humanoid1": [
+      "low_power_excluded"
+     ],
+     "wheeled1": [
+      "low_power_excluded",
+      "stop_suspect"
+     ]
+    },
+    "ok": false,
+    "step": "D3",
+    "what": "decision"
+   },
+   {
+    "expected": {
+     "biped1": [],
+     "diff1": [
+      "low_power_excluded"
+     ],
+     "humanoid1": [],
+     "wheeled1": [
+      "low_power_excluded",
+      "stop_suspect"
+     ]
+    },
+    "observed": {
+     "biped1": [
+      "low_power_excluded"
+     ],
+     "diff1": [
+      "low_power_excluded"
+     ],
+     "humanoid1": [
+      "low_power_excluded"
+     ],
+     "wheeled1": [
+      "low_power_excluded",
+      "stop_suspect"
+     ]
+    },
+    "ok": false,
+    "step": "D4",
+    "what": "decision"
+   },
+   {
+    "expected": {
+     "biped1": [],
+     "diff1": [],
+     "humanoid1": [],
+     "wheeled1": [
+      "low_power_excluded"
+     ]
+    },
+    "observed": {
+     "biped1": [
+      "low_power_excluded"
+     ],
+     "diff1": [
+      "low_power_excluded"
+     ],
+     "humanoid1": [
+      "low_power_excluded"
+     ],
+     "wheeled1": [
+      "low_power_excluded"
+     ]
+    },
+    "ok": false,
+    "step": "D5",
+    "what": "decision"
+   }
+  ],
+  "fails_for_declared_reason": true,
+  "kind": "contrast",
+  "n_fail": 14,
+  "n_rows": 38,
+  "pass": false,
+  "raw": "raw/contrast/P1__D__nocond.jsonl",
+  "run_error": null,
+  "scenario": "P1",
+  "variant": "nocond"
+ },
+ {
+  "arm": "A",
+  "breaks": "fixed plan without the plan update",
+  "expect_error": null,
+  "expected": "inputs/expected/P1.yml",
+  "expected_positive_calls": 7,
+  "failing": [
+   {
+    "expected": [
+     [
+      "assert",
+      "RobotStatus",
+      "wheeled1",
+      {
+       "battery": 25,
+       "zone": "storage"
+      }
+     ]
+    ],
+    "observed": [],
+    "ok": false,
+    "step": "q07",
+    "what": "calls:manager1"
+   },
+   {
+    "expected": {
+     "biped1": [
+      "low_power_excluded"
+     ],
+     "diff1": [
+      "low_power_excluded"
+     ],
+     "humanoid1": [],
+     "wheeled1": [
+      "low_power_excluded"
+     ]
+    },
+    "observed": {
+     "biped1": [
+      "low_power_excluded"
+     ],
+     "diff1": [
+      "low_power_excluded"
+     ],
+     "humanoid1": [],
+     "wheeled1": []
+    },
+    "ok": false,
+    "step": "D3",
+    "what": "decision"
+   },
+   {
+    "expected": {
+     "biped1": [],
+     "diff1": [
+      "low_power_excluded"
+     ],
+     "humanoid1": [],
+     "wheeled1": [
+      "low_power_excluded",
+      "stop_suspect"
+     ]
+    },
+    "observed": {
+     "biped1": [],
+     "diff1": [
+      "low_power_excluded"
+     ],
+     "humanoid1": [],
+     "wheeled1": [
+      "stop_suspect"
+     ]
+    },
+    "ok": false,
+    "step": "D4",
+    "what": "decision"
+   },
+   {
+    "expected": {
+     "biped1": [],
+     "diff1": [],
+     "humanoid1": [],
+     "wheeled1": [
+      "low_power_excluded"
+     ]
+    },
+    "observed": {
+     "biped1": [],
+     "diff1": [],
+     "humanoid1": [],
+     "wheeled1": []
+    },
+    "ok": false,
+    "step": "D5",
+    "what": "decision"
+   }
+  ],
+  "fails_for_declared_reason": true,
+  "kind": "contrast",
+  "n_fail": 4,
+  "n_rows": 38,
+  "pass": false,
+  "raw": "raw/contrast/P1__A__noupdate.jsonl",
+  "run_error": null,
+  "scenario": "P1",
+  "variant": "noupdate"
+ },
+ {
+  "arm": "A",
+  "breaks": "fixed plan with unconditional rules",
+  "expect_error": null,
+  "expected": "inputs/expected/P1.yml",
+  "expected_positive_calls": 7,
+  "failing": [
+   {
+    "expected": [],
+    "observed": [
+     [
+      "assert",
+      "RobotStatus",
+      "biped1",
+      {
+       "battery": 31,
+       "zone": "storage"
+      }
+     ]
+    ],
+    "ok": false,
+    "step": "q01",
+    "what": "calls:manager1"
+   },
+   {
+    "expected": [],
+    "observed": [
+     [
+      "assert",
+      "RobotStatus",
+      "wheeled1",
+      {
+       "battery": 25,
+       "zone": "storage"
+      }
+     ]
+    ],
+    "ok": false,
+    "step": "q02",
+    "what": "calls:manager1"
+   },
+   {
+    "expected": [],
+    "observed": [
+     [
+      "assert",
+      "RobotStatus",
+      "humanoid1",
+      {
+       "battery": 45,
+       "zone": "storage"
+      }
+     ]
+    ],
+    "ok": false,
+    "step": "q04",
+    "what": "calls:manager1"
+   },
+   {
+    "expected": [
+     [
+      "assert",
+      "RobotStatus",
+      "biped1",
+      {
+       "battery": 30,
+       "zone": "storage"
+      }
+     ]
+    ],
+    "observed": [
+     [
+      "update",
+      "RobotStatus",
+      "biped1",
+      {
+       "battery": 30,
+       "zone": "storage"
+      }
+     ]
+    ],
+    "ok": false,
+    "step": "q05",
+    "what": "calls:manager1"
+   },
+   {
+    "expected": [],
+    "observed": [
+     [
+      "assert",
+      "RobotStopped",
+      "wheeled1",
+      {
+       "elapsedSeconds": 299
+      }
+     ]
+    ],
+    "ok": false,
+    "step": "q06",
+    "what": "calls:manager1"
+   },
+   {
+    "expected": [
+     [
+      "assert",
+      "RobotStatus",
+      "wheeled1",
+      {
+       "battery": 25,
+       "zone": "storage"
+      }
+     ]
+    ],
+    "observed": [],
+    "ok": false,
+    "step": "q07",
+    "what": "calls:manager1"
+   },
+   {
+    "expected": [
+     [
+      "assert",
+      "RobotStopped",
+      "wheeled1",
+      {
+       "elapsedSeconds": 300
+      }
+     ]
+    ],
+    "observed": [
+     [
+      "update",
+      "RobotStopped",
+      "wheeled1",
+      {
+       "elapsedSeconds": 300
+      }
+     ]
+    ],
+    "ok": false,
+    "step": "q08",
+    "what": "calls:manager1"
+   },
+   {
+    "expected": [
+     [
+      "retract",
+      "RobotStatus",
+      "biped1",
+      null
+     ]
+    ],
+    "observed": [
+     [
+      "update",
+      "RobotStatus",
+      "biped1",
+      {
+       "battery": 31,
+       "zone": "storage"
+      }
+     ]
+    ],
+    "ok": false,
+    "step": "q09",
+    "what": "calls:manager1"
+   },
+   {
+    "expected": [
+     [
+      "retract",
+      "RobotStatus",
+      "diff1",
+      null
+     ]
+    ],
+    "observed": [
+     [
+      "update",
+      "RobotStatus",
+      "diff1",
+      {
+       "battery": 31,
+       "zone": "storage"
+      }
+     ]
+    ],
+    "ok": false,
+    "step": "q11",
+    "what": "calls:manager1"
+   },
+   {
+    "expected": {
+     "biped1": [],
+     "diff1": [
+      "low_power_excluded"
+     ],
+     "humanoid1": [],
+     "wheeled1": []
+    },
+    "observed": {
+     "biped1": [
+      "low_power_excluded"
+     ],
+     "diff1": [
+      "low_power_excluded"
+     ],
+     "humanoid1": [
+      "low_power_excluded"
+     ],
+     "wheeled1": [
+      "low_power_excluded"
+     ]
+    },
+    "ok": false,
+    "step": "D1",
+    "what": "decision"
+   },
+   {
+    "expected": {
+     "biped1": [
+      "low_power_excluded"
+     ],
+     "diff1": [
+      "low_power_excluded"
+     ],
+     "humanoid1": [],
+     "wheeled1": []
+    },
+    "observed": {
+     "biped1": [
+      "low_power_excluded"
+     ],
+     "diff1": [
+      "low_power_excluded"
+     ],
+     "humanoid1": [
+      "low_power_excluded"
+     ],
+     "wheeled1": [
+      "low_power_excluded",
+      "stop_suspect"
+     ]
+    },
+    "ok": false,
+    "step": "D2",
+    "what": "decision"
+   },
+   {
+    "expected": {
+     "biped1": [
+      "low_power_excluded"
+     ],
+     "diff1": [
+      "low_power_excluded"
+     ],
+     "humanoid1": [],
+     "wheeled1": [
+      "low_power_excluded"
+     ]
+    },
+    "observed": {
+     "biped1": [
+      "low_power_excluded"
+     ],
+     "diff1": [
+      "low_power_excluded"
+     ],
+     "humanoid1": [
+      "low_power_excluded"
+     ],
+     "wheeled1": [
+      "low_power_excluded",
+      "stop_suspect"
+     ]
+    },
+    "ok": false,
+    "step": "D3",
+    "what": "decision"
+   },
+   {
+    "expected": {
+     "biped1": [],
+     "diff1": [
+      "low_power_excluded"
+     ],
+     "humanoid1": [],
+     "wheeled1": [
+      "low_power_excluded",
+      "stop_suspect"
+     ]
+    },
+    "observed": {
+     "biped1": [
+      "low_power_excluded"
+     ],
+     "diff1": [
+      "low_power_excluded"
+     ],
+     "humanoid1": [
+      "low_power_excluded"
+     ],
+     "wheeled1": [
+      "low_power_excluded",
+      "stop_suspect"
+     ]
+    },
+    "ok": false,
+    "step": "D4",
+    "what": "decision"
+   },
+   {
+    "expected": {
+     "biped1": [],
+     "diff1": [],
+     "humanoid1": [],
+     "wheeled1": [
+      "low_power_excluded"
+     ]
+    },
+    "observed": {
+     "biped1": [
+      "low_power_excluded"
+     ],
+     "diff1": [
+      "low_power_excluded"
+     ],
+     "humanoid1": [
+      "low_power_excluded"
+     ],
+     "wheeled1": [
+      "low_power_excluded"
+     ]
+    },
+    "ok": false,
+    "step": "D5",
+    "what": "decision"
+   }
+  ],
+  "fails_for_declared_reason": true,
+  "kind": "contrast",
+  "n_fail": 14,
+  "n_rows": 38,
+  "pass": false,
+  "raw": "raw/contrast/P1__A__nocond.jsonl",
+  "run_error": null,
+  "scenario": "P1",
+  "variant": "nocond"
+ },
+ {
+  "arm": "D",
+  "breaks": "boundary error (< instead of <=)",
+  "expect_error": null,
+  "expected": "inputs/expected/B1.yml",
+  "expected_positive_calls": 11,
+  "failing": [
+   {
+    "expected": [
+     [
+      "assert",
+      "RobotStatus",
+      "biped1",
+      {
+       "battery": 30,
+       "zone": "storage"
+      }
+     ]
+    ],
+    "observed": [],
+    "ok": false,
+    "step": "s02",
+    "what": "calls:manager1"
+   },
+   {
+    "expected": [
+     [
+      "update",
+      "RobotStatus",
+      "biped1",
+      {
+       "battery": 29,
+       "zone": "storage"
+      }
+     ]
+    ],
+    "observed": [
+     [
+      "assert",
+      "RobotStatus",
+      "biped1",
+      {
+       "battery": 29,
+       "zone": "storage"
+      }
+     ]
+    ],
+    "ok": false,
+    "step": "s03",
+    "what": "calls:manager1"
+   },
+   {
+    "expected": [
+     [
+      "assert",
+      "RobotStatus",
+      "wheeled1",
+      {
+       "battery": 20,
+       "zone": "storage"
+      }
+     ]
+    ],
+    "observed": [],
+    "ok": false,
+    "step": "s06",
+    "what": "calls:manager1"
+   },
+   {
+    "expected": [
+     [
+      "update",
+      "RobotStatus",
+      "wheeled1",
+      {
+       "battery": 19,
+       "zone": "storage"
+      }
+     ]
+    ],
+    "observed": [
+     [
+      "assert",
+      "RobotStatus",
+      "wheeled1",
+      {
+       "battery": 19,
+       "zone": "storage"
+      }
+     ]
+    ],
+    "ok": false,
+    "step": "s07",
+    "what": "calls:manager1"
+   },
+   {
+    "expected": [
+     [
+      "assert",
+      "RobotStatus",
+      "humanoid1",
+      {
+       "battery": 30,
+       "zone": "storage"
+      }
+     ]
+    ],
+    "observed": [],
+    "ok": false,
+    "step": "s09",
+    "what": "calls:manager1"
+   },
+   {
+    "expected": [
+     [
+      "assert",
+      "RobotStatus",
+      "diff1",
+      {
+       "battery": 20,
+       "zone": "storage"
+      }
+     ]
+    ],
+    "observed": [],
+    "ok": false,
+    "step": "s11",
+    "what": "calls:manager1"
+   },
+   {
+    "expected": [
+     [
+      "retract",
+      "RobotStatus",
+      "diff1",
+      null
+     ]
+    ],
+    "observed": [],
+    "ok": false,
+    "step": "s15",
+    "what": "calls:manager1"
+   },
+   {
+    "expected": {
+     "RobotStatus/diff1": {
+      "battery": 20,
+      "zone": "storage"
+     },
+     "RobotStatus/humanoid1": {
+      "battery": 30,
+      "zone": "storage"
+     }
+    },
+    "observed": {},
+    "ok": false,
+    "step": "s11",
+    "what": "view:manager1"
+   },
+   {
+    "expected": {
+     "RobotStatus/diff1": {
+      "battery": 20,
+      "zone": "storage"
+     },
+     "RobotStatus/humanoid1": {
+      "battery": 30,
+      "zone": "storage"
+     }
+    },
+    "observed": {},
+    "ok": false,
+    "step": "s13",
+    "what": "view:manager1"
+   },
+   {
+    "expected": {
+     "RobotStatus/humanoid1": {
+      "battery": 30,
+      "zone": "storage"
+     }
+    },
+    "observed": {},
+    "ok": false,
+    "step": "s15",
+    "what": "view:manager1"
+   }
+  ],
+  "fails_for_declared_reason": true,
+  "kind": "negative",
+  "n_fail": 10,
+  "n_rows": 50,
+  "pass": false,
+  "raw": "raw/negative/B1__D__boundary-lt.jsonl",
+  "run_error": null,
+  "scenario": "B1",
+  "variant": "boundary-lt"
+ },
+ {
+  "arm": "A",
+  "breaks": "boundary error (< instead of <=)",
+  "expect_error": null,
+  "expected": "inputs/expected/B1.yml",
+  "expected_positive_calls": 11,
+  "failing": [
+   {
+    "expected": [
+     [
+      "assert",
+      "RobotStatus",
+      "biped1",
+      {
+       "battery": 30,
+       "zone": "storage"
+      }
+     ]
+    ],
+    "observed": [],
+    "ok": false,
+    "step": "s02",
+    "what": "calls:manager1"
+   },
+   {
+    "expected": [
+     [
+      "update",
+      "RobotStatus",
+      "biped1",
+      {
+       "battery": 29,
+       "zone": "storage"
+      }
+     ]
+    ],
+    "observed": [
+     [
+      "assert",
+      "RobotStatus",
+      "biped1",
+      {
+       "battery": 29,
+       "zone": "storage"
+      }
+     ]
+    ],
+    "ok": false,
+    "step": "s03",
+    "what": "calls:manager1"
+   },
+   {
+    "expected": [
+     [
+      "assert",
+      "RobotStatus",
+      "wheeled1",
+      {
+       "battery": 20,
+       "zone": "storage"
+      }
+     ]
+    ],
+    "observed": [],
+    "ok": false,
+    "step": "s06",
+    "what": "calls:manager1"
+   },
+   {
+    "expected": [
+     [
+      "update",
+      "RobotStatus",
+      "wheeled1",
+      {
+       "battery": 19,
+       "zone": "storage"
+      }
+     ]
+    ],
+    "observed": [
+     [
+      "assert",
+      "RobotStatus",
+      "wheeled1",
+      {
+       "battery": 19,
+       "zone": "storage"
+      }
+     ]
+    ],
+    "ok": false,
+    "step": "s07",
+    "what": "calls:manager1"
+   },
+   {
+    "expected": [
+     [
+      "assert",
+      "RobotStatus",
+      "humanoid1",
+      {
+       "battery": 30,
+       "zone": "storage"
+      }
+     ]
+    ],
+    "observed": [],
+    "ok": false,
+    "step": "s09",
+    "what": "calls:manager1"
+   },
+   {
+    "expected": [
+     [
+      "assert",
+      "RobotStatus",
+      "diff1",
+      {
+       "battery": 20,
+       "zone": "storage"
+      }
+     ]
+    ],
+    "observed": [],
+    "ok": false,
+    "step": "s11",
+    "what": "calls:manager1"
+   },
+   {
+    "expected": [
+     [
+      "retract",
+      "RobotStatus",
+      "diff1",
+      null
+     ]
+    ],
+    "observed": [],
+    "ok": false,
+    "step": "s15",
+    "what": "calls:manager1"
+   },
+   {
+    "expected": {
+     "RobotStatus/diff1": {
+      "battery": 20,
+      "zone": "storage"
+     },
+     "RobotStatus/humanoid1": {
+      "battery": 30,
+      "zone": "storage"
+     }
+    },
+    "observed": {},
+    "ok": false,
+    "step": "s11",
+    "what": "view:manager1"
+   },
+   {
+    "expected": {
+     "RobotStatus/diff1": {
+      "battery": 20,
+      "zone": "storage"
+     },
+     "RobotStatus/humanoid1": {
+      "battery": 30,
+      "zone": "storage"
+     }
+    },
+    "observed": {},
+    "ok": false,
+    "step": "s13",
+    "what": "view:manager1"
+   },
+   {
+    "expected": {
+     "RobotStatus/humanoid1": {
+      "battery": 30,
+      "zone": "storage"
+     }
+    },
+    "observed": {},
+    "ok": false,
+    "step": "s15",
+    "what": "view:manager1"
+   }
+  ],
+  "fails_for_declared_reason": true,
+  "kind": "negative",
+  "n_fail": 10,
+  "n_rows": 50,
+  "pass": false,
+  "raw": "raw/negative/B1__A__boundary-lt.jsonl",
+  "run_error": null,
+  "scenario": "B1",
+  "variant": "boundary-lt"
+ },
+ {
+  "arm": "D",
+  "breaks": "boundary error (< instead of <=)",
+  "expect_error": null,
+  "expected": "inputs/expected/contract/CT1.yml",
+  "expected_positive_calls": 3,
+  "failing": [
+   {
+    "expected": [
+     [
+      "assert",
+      "RobotStatus",
+      "biped1",
+      {
+       "battery": 30,
+       "zone": "storage"
+      }
+     ]
+    ],
+    "observed": [],
+    "ok": false,
+    "step": "e2",
+    "what": "calls:manager1"
+   },
+   {
+    "expected": [
+     [
+      "assert",
+      "RobotStatus",
+      "wheel1",
+      {
+       "battery": 20,
+       "zone": "storage"
+      }
+     ]
+    ],
+    "observed": [],
+    "ok": false,
+    "step": "e5",
+    "what": "calls:manager1"
+   },
+   {
+    "expected": {
+     "RobotStatus/biped1": {
+      "battery": 30,
+      "zone": "storage"
+     }
+    },
+    "observed": {},
+    "ok": false,
+    "step": "e2",
+    "what": "view:manager1"
+   },
+   {
+    "expected": {
+     "RobotStatus/biped1": {
+      "battery": 30,
+      "zone": "storage"
+     },
+     "RobotStatus/hum1": {
+      "battery": 25,
+      "zone": "storage"
+     }
+    },
+    "observed": {
+     "RobotStatus/hum1": {
+      "battery": 25,
+      "zone": "storage"
+     }
+    },
+    "ok": false,
+    "step": "e3",
+    "what": "view:manager1"
+   },
+   {
+    "expected": {
+     "RobotStatus/biped1": {
+      "battery": 30,
+      "zone": "storage"
+     },
+     "RobotStatus/hum1": {
+      "battery": 25,
+      "zone": "storage"
+     },
+     "RobotStatus/wheel1": {
+      "battery": 20,
+      "zone": "storage"
+     }
+    },
+    "observed": {
+     "RobotStatus/hum1": {
+      "battery": 25,
+      "zone": "storage"
+     }
+    },
+    "ok": false,
+    "step": "e5",
+    "what": "view:manager1"
+   }
+  ],
+  "fails_for_declared_reason": true,
+  "kind": "negative",
+  "n_fail": 5,
+  "n_rows": 24,
+  "pass": false,
+  "raw": "raw/negative/CT1__D__boundary-lt.jsonl",
+  "run_error": null,
+  "scenario": "CT1",
+  "variant": "boundary-lt"
+ },
+ {
+  "arm": "D",
+  "breaks": "retract omission on condition exit",
+  "expect_error": null,
+  "expected": "inputs/expected/B1.yml",
+  "expected_positive_calls": 11,
+  "failing": [
+   {
+    "expected": [
+     [
+      "retract",
+      "RobotStatus",
+      "biped1",
+      null
+     ]
+    ],
+    "observed": [],
+    "ok": false,
+    "step": "s04",
+    "what": "calls:manager1"
+   },
+   {
+    "expected": [
+     [
+      "retract",
+      "RobotStatus",
+      "wheeled1",
+      null
+     ]
+    ],
+    "observed": [],
+    "ok": false,
+    "step": "s08",
+    "what": "calls:manager1"
+   },
+   {
+    "expected": [
+     [
+      "retract",
+      "RobotStatus",
+      "diff1",
+      null
+     ]
+    ],
+    "observed": [],
+    "ok": false,
+    "step": "s15",
+    "what": "calls:manager1"
+   },
+   {
+    "expected": {},
+    "observed": {
+     "RobotStatus/biped1": {
+      "battery": 29,
+      "zone": "storage"
+     }
+    },
+    "ok": false,
+    "step": "s04",
+    "what": "view:manager1"
+   },
+   {
+    "expected": {},
+    "observed": {
+     "RobotStatus/biped1": {
+      "battery": 29,
+      "zone": "storage"
+     },
+     "RobotStatus/wheeled1": {
+      "battery": 19,
+      "zone": "storage"
+     }
+    },
+    "ok": false,
+    "step": "s08",
+    "what": "view:manager1"
+   },
+   {
+    "expected": {
+     "RobotStatus/diff1": {
+      "battery": 20,
+      "zone": "storage"
+     },
+     "RobotStatus/humanoid1": {
+      "battery": 30,
+      "zone": "storage"
+     }
+    },
+    "observed": {
+     "RobotStatus/biped1": {
+      "battery": 29,
+      "zone": "storage"
+     },
+     "RobotStatus/diff1": {
+      "battery": 20,
+      "zone": "storage"
+     },
+     "RobotStatus/humanoid1": {
+      "battery": 30,
+      "zone": "storage"
+     },
+     "RobotStatus/wheeled1": {
+      "battery": 19,
+      "zone": "storage"
+     }
+    },
+    "ok": false,
+    "step": "s11",
+    "what": "view:manager1"
+   },
+   {
+    "expected": {
+     "RobotStatus/diff1": {
+      "battery": 20,
+      "zone": "storage"
+     },
+     "RobotStatus/humanoid1": {
+      "battery": 30,
+      "zone": "storage"
+     }
+    },
+    "observed": {
+     "RobotStatus/diff1": {
+      "battery": 20,
+      "zone": "storage"
+     },
+     "RobotStatus/humanoid1": {
+      "battery": 30,
+      "zone": "storage"
+     },
+     "RobotStatus/wheeled1": {
+      "battery": 19,
+      "zone": "storage"
+     }
+    },
+    "ok": false,
+    "step": "s13",
+    "what": "view:manager1"
+   },
+   {
+    "expected": {
+     "RobotStatus/humanoid1": {
+      "battery": 30,
+      "zone": "storage"
+     }
+    },
+    "observed": {
+     "RobotStatus/diff1": {
+      "battery": 20,
+      "zone": "storage"
+     },
+     "RobotStatus/humanoid1": {
+      "battery": 30,
+      "zone": "storage"
+     },
+     "RobotStatus/wheeled1": {
+      "battery": 19,
+      "zone": "storage"
+     }
+    },
+    "ok": false,
+    "step": "s15",
+    "what": "view:manager1"
+   }
+  ],
+  "fails_for_declared_reason": true,
+  "kind": "negative",
+  "n_fail": 8,
+  "n_rows": 50,
+  "pass": false,
+  "raw": "raw/negative/B1__D__no-retract.jsonl",
+  "run_error": null,
+  "scenario": "B1",
+  "variant": "no-retract"
+ },
+ {
+  "arm": "D",
+  "breaks": "retract omission on condition exit",
+  "expect_error": null,
+  "expected": "inputs/expected/contract/CT3.yml",
+  "expected_positive_calls": 5,
+  "failing": [
+   {
+    "expected": [
+     [
+      "retract",
+      "RobotStatus",
+      "biped1",
+      null
+     ]
+    ],
+    "observed": [],
+    "ok": false,
+    "step": "e3",
+    "what": "calls:manager1"
+   },
+   {
+    "expected": {},
+    "observed": {
+     "RobotStatus/biped1": {
+      "battery": 29,
+      "zone": "storage"
+     }
+    },
+    "ok": false,
+    "step": "e3",
+    "what": "view:manager1"
+   }
+  ],
+  "fails_for_declared_reason": true,
+  "kind": "negative",
+  "n_fail": 2,
+  "n_rows": 28,
+  "pass": false,
+  "raw": "raw/negative/CT3__D__no-retract.jsonl",
+  "run_error": null,
+  "scenario": "CT3",
+  "variant": "no-retract"
+ },
+ {
+  "arm": "A",
+  "breaks": "retract omission (A-asis: no exit watch, no tombstones)",
+  "expect_error": null,
+  "expected": "inputs/expected/B1.yml",
+  "expected_positive_calls": 11,
+  "failing": [
+   {
+    "expected": [
+     [
+      "retract",
+      "RobotStatus",
+      "biped1",
+      null
+     ]
+    ],
+    "observed": [],
+    "ok": false,
+    "step": "s04",
+    "what": "calls:manager1"
+   },
+   {
+    "expected": [
+     [
+      "retract",
+      "RobotStatus",
+      "wheeled1",
+      null
+     ]
+    ],
+    "observed": [],
+    "ok": false,
+    "step": "s08",
+    "what": "calls:manager1"
+   },
+   {
+    "expected": [
+     [
+      "assert",
+      "RobotStatus",
+      "biped1",
+      {
+       "battery": 29,
+       "zone": "storage"
+      }
+     ]
+    ],
+    "observed": [
+     [
+      "update",
+      "RobotStatus",
+      "biped1",
+      {
+       "battery": 29,
+       "zone": "storage"
+      }
+     ]
+    ],
+    "ok": false,
+    "step": "s12",
+    "what": "calls:manager1"
+   },
+   {
+    "expected": [
+     [
+      "retract",
+      "RobotStatus",
+      "biped1",
+      null
+     ]
+    ],
+    "observed": [],
+    "ok": false,
+    "step": "s13",
+    "what": "calls:manager1"
+   },
+   {
+    "expected": [
+     [
+      "retract",
+      "RobotStatus",
+      "diff1",
+      null
+     ]
+    ],
+    "observed": [],
+    "ok": false,
+    "step": "s15",
+    "what": "calls:manager1"
+   },
+   {
+    "expected": {},
+    "observed": {
+     "RobotStatus/biped1": {
+      "battery": 29,
+      "zone": "storage"
+     }
+    },
+    "ok": false,
+    "step": "s04",
+    "what": "view:manager1"
+   },
+   {
+    "expected": {},
+    "observed": {
+     "RobotStatus/biped1": {
+      "battery": 29,
+      "zone": "storage"
+     },
+     "RobotStatus/wheeled1": {
+      "battery": 19,
+      "zone": "storage"
+     }
+    },
+    "ok": false,
+    "step": "s08",
+    "what": "view:manager1"
+   },
+   {
+    "expected": {
+     "RobotStatus/diff1": {
+      "battery": 20,
+      "zone": "storage"
+     },
+     "RobotStatus/humanoid1": {
+      "battery": 30,
+      "zone": "storage"
+     }
+    },
+    "observed": {
+     "RobotStatus/biped1": {
+      "battery": 29,
+      "zone": "storage"
+     },
+     "RobotStatus/diff1": {
+      "battery": 20,
+      "zone": "storage"
+     },
+     "RobotStatus/humanoid1": {
+      "battery": 30,
+      "zone": "storage"
+     },
+     "RobotStatus/wheeled1": {
+      "battery": 19,
+      "zone": "storage"
+     }
+    },
+    "ok": false,
+    "step": "s11",
+    "what": "view:manager1"
+   },
+   {
+    "expected": {
+     "RobotStatus/diff1": {
+      "battery": 20,
+      "zone": "storage"
+     },
+     "RobotStatus/humanoid1": {
+      "battery": 30,
+      "zone": "storage"
+     }
+    },
+    "observed": {
+     "RobotStatus/biped1": {
+      "battery": 29,
+      "zone": "storage"
+     },
+     "RobotStatus/diff1": {
+      "battery": 20,
+      "zone": "storage"
+     },
+     "RobotStatus/humanoid1": {
+      "battery": 30,
+      "zone": "storage"
+     },
+     "RobotStatus/wheeled1": {
+      "battery": 19,
+      "zone": "storage"
+     }
+    },
+    "ok": false,
+    "step": "s13",
+    "what": "view:manager1"
+   },
+   {
+    "expected": {
+     "RobotStatus/humanoid1": {
+      "battery": 30,
+      "zone": "storage"
+     }
+    },
+    "observed": {
+     "RobotStatus/biped1": {
+      "battery": 29,
+      "zone": "storage"
+     },
+     "RobotStatus/diff1": {
+      "battery": 20,
+      "zone": "storage"
+     },
+     "RobotStatus/humanoid1": {
+      "battery": 30,
+      "zone": "storage"
+     },
+     "RobotStatus/wheeled1": {
+      "battery": 19,
+      "zone": "storage"
+     }
+    },
+    "ok": false,
+    "step": "s15",
+    "what": "view:manager1"
+   }
+  ],
+  "fails_for_declared_reason": true,
+  "kind": "negative",
+  "n_fail": 10,
+  "n_rows": 50,
+  "pass": false,
+  "raw": "raw/negative/B1__A__asis.jsonl",
+  "run_error": null,
+  "scenario": "B1",
+  "variant": "asis"
+ },
+ {
+  "arm": "A",
+  "breaks": "retract omission (A-asis: no exit watch, no tombstones)",
+  "expect_error": null,
+  "expected": "inputs/expected/contract/CT3.yml",
+  "expected_positive_calls": 5,
+  "failing": [
+   {
+    "expected": [
+     [
+      "retract",
+      "RobotStatus",
+      "biped1",
+      null
+     ]
+    ],
+    "observed": [],
+    "ok": false,
+    "step": "e3",
+    "what": "calls:manager1"
+   },
+   {
+    "expected": [
+     [
+      "assert",
+      "RobotStatus",
+      "biped1",
+      {
+       "battery": 28,
+       "zone": "storage"
+      }
+     ]
+    ],
+    "observed": [
+     [
+      "update",
+      "RobotStatus",
+      "biped1",
+      {
+       "battery": 28,
+       "zone": "storage"
+      }
+     ]
+    ],
+    "ok": false,
+    "step": "e4",
+    "what": "calls:manager1"
+   },
+   {
+    "expected": [
+     [
+      "retract",
+      "RobotStatus",
+      "biped1",
+      null
+     ]
+    ],
+    "observed": [],
+    "ok": false,
+    "step": "e5",
+    "what": "calls:manager1"
+   },
+   {
+    "expected": {},
+    "observed": {
+     "RobotStatus/biped1": {
+      "battery": 29,
+      "zone": "storage"
+     }
+    },
+    "ok": false,
+    "step": "e3",
+    "what": "view:manager1"
+   },
+   {
+    "expected": {},
+    "observed": {
+     "RobotStatus/biped1": {
+      "battery": 28,
+      "zone": "storage"
+     }
+    },
+    "ok": false,
+    "step": "e5",
+    "what": "view:manager1"
+   }
+  ],
+  "fails_for_declared_reason": true,
+  "kind": "negative",
+  "n_fail": 5,
+  "n_rows": 28,
+  "pass": false,
+  "raw": "raw/negative/CT3__A__asis.jsonl",
+  "run_error": null,
+  "scenario": "CT3",
+  "variant": "asis"
+ },
+ {
+  "arm": "D",
+  "breaks": "wrong-type reception",
+  "expect_error": null,
+  "expected": "inputs/expected/B1.yml",
+  "expected_positive_calls": 11,
+  "failing": [
+   {
+    "expected": [],
+    "observed": [
+     [
+      "assert",
+      "RobotStatus",
+      "wheeled1",
+      {
+       "battery": 21,
+       "zone": "storage"
+      }
+     ]
+    ],
+    "ok": false,
+    "step": "s05",
+    "what": "calls:manager1"
+   },
+   {
+    "expected": [
+     [
+      "assert",
+      "RobotStatus",
+      "wheeled1",
+      {
+       "battery": 20,
+       "zone": "storage"
+      }
+     ]
+    ],
+    "observed": [
+     [
+      "update",
+      "RobotStatus",
+      "wheeled1",
+      {
+       "battery": 20,
+       "zone": "storage"
+      }
+     ]
+    ],
+    "ok": false,
+    "step": "s06",
+    "what": "calls:manager1"
+   },
+   {
+    "expected": [
+     [
+      "retract",
+      "RobotStatus",
+      "wheeled1",
+      null
+     ]
+    ],
+    "observed": [
+     [
+      "update",
+      "RobotStatus",
+      "wheeled1",
+      {
+       "battery": 21,
+       "zone": "storage"
+      }
+     ]
+    ],
+    "ok": false,
+    "step": "s08",
+    "what": "calls:manager1"
+   },
+   {
+    "expected": [],
+    "observed": [
+     [
+      "assert",
+      "RobotStatus",
+      "diff1",
+      {
+       "battery": 25,
+       "zone": "storage"
+      }
+     ]
+    ],
+    "ok": false,
+    "step": "s10",
+    "what": "calls:manager1"
+   },
+   {
+    "expected": [
+     [
+      "assert",
+      "RobotStatus",
+      "diff1",
+      {
+       "battery": 20,
+       "zone": "storage"
+      }
+     ]
+    ],
+    "observed": [
+     [
+      "update",
+      "RobotStatus",
+      "diff1",
+      {
+       "battery": 20,
+       "zone": "storage"
+      }
+     ]
+    ],
+    "ok": false,
+    "step": "s11",
+    "what": "calls:manager1"
+   },
+   {
+    "expected": [],
+    "observed": [
+     [
+      "retract",
+      "RobotStatus",
+      "wheeled1",
+      null
+     ]
+    ],
+    "ok": false,
+    "step": "s14",
+    "what": "calls:manager1"
+   },
+   {
+    "expected": [
+     [
+      "retract",
+      "RobotStatus",
+      "diff1",
+      null
+     ]
+    ],
+    "observed": [
+     [
+      "update",
+      "RobotStatus",
+      "diff1",
+      {
+       "battery": 21,
+       "zone": "storage"
+      }
+     ]
+    ],
+    "ok": false,
+    "step": "s15",
+    "what": "calls:manager1"
+   },
+   {
+    "expected": {},
+    "observed": {
+     "RobotStatus/wheeled1": {
+      "battery": 21,
+      "zone": "storage"
+     }
+    },
+    "ok": false,
+    "step": "s08",
+    "what": "view:manager1"
+   },
+   {
+    "expected": {
+     "RobotStatus/diff1": {
+      "battery": 20,
+      "zone": "storage"
+     },
+     "RobotStatus/humanoid1": {
+      "battery": 30,
+      "zone": "storage"
+     }
+    },
+    "observed": {
+     "RobotStatus/diff1": {
+      "battery": 20,
+      "zone": "storage"
+     },
+     "RobotStatus/humanoid1": {
+      "battery": 30,
+      "zone": "storage"
+     },
+     "RobotStatus/wheeled1": {
+      "battery": 21,
+      "zone": "storage"
+     }
+    },
+    "ok": false,
+    "step": "s11",
+    "what": "view:manager1"
+   },
+   {
+    "expected": {
+     "RobotStatus/diff1": {
+      "battery": 20,
+      "zone": "storage"
+     },
+     "RobotStatus/humanoid1": {
+      "battery": 30,
+      "zone": "storage"
+     }
+    },
+    "observed": {
+     "RobotStatus/diff1": {
+      "battery": 20,
+      "zone": "storage"
+     },
+     "RobotStatus/humanoid1": {
+      "battery": 30,
+      "zone": "storage"
+     },
+     "RobotStatus/wheeled1": {
+      "battery": 21,
+      "zone": "storage"
+     }
+    },
+    "ok": false,
+    "step": "s13",
+    "what": "view:manager1"
+   },
+   {
+    "expected": {
+     "RobotStatus/humanoid1": {
+      "battery": 30,
+      "zone": "storage"
+     }
+    },
+    "observed": {
+     "RobotStatus/diff1": {
+      "battery": 21,
+      "zone": "storage"
+     },
+     "RobotStatus/humanoid1": {
+      "battery": 30,
+      "zone": "storage"
+     }
+    },
+    "ok": false,
+    "step": "s15",
+    "what": "view:manager1"
+   }
+  ],
+  "fails_for_declared_reason": true,
+  "kind": "negative",
+  "n_fail": 11,
+  "n_rows": 50,
+  "pass": false,
+  "raw": "raw/negative/B1__D__signature-as-type.jsonl",
+  "run_error": null,
+  "scenario": "B1",
+  "variant": "signature-as-type"
+ },
+ {
+  "arm": "D",
+  "breaks": "wrong-type reception",
+  "expect_error": null,
+  "expected": "inputs/expected/contract/CT1.yml",
+  "expected_positive_calls": 3,
+  "failing": [
+   {
+    "expected": [],
+    "observed": [
+     [
+      "assert",
+      "RobotStatus",
+      "wheel1",
+      {
+       "battery": 25,
+       "zone": "storage"
+      }
+     ]
+    ],
+    "ok": false,
+    "step": "e4",
+    "what": "calls:manager1"
+   },
+   {
+    "expected": [
+     [
+      "assert",
+      "RobotStatus",
+      "wheel1",
+      {
+       "battery": 20,
+       "zone": "storage"
+      }
+     ]
+    ],
+    "observed": [
+     [
+      "update",
+      "RobotStatus",
+      "wheel1",
+      {
+       "battery": 20,
+       "zone": "storage"
+      }
+     ]
+    ],
+    "ok": false,
+    "step": "e5",
+    "what": "calls:manager1"
+   }
+  ],
+  "fails_for_declared_reason": true,
+  "kind": "negative",
+  "n_fail": 2,
+  "n_rows": 24,
+  "pass": false,
+  "raw": "raw/negative/CT1__D__signature-as-type.jsonl",
+  "run_error": null,
+  "scenario": "CT1",
+  "variant": "signature-as-type"
+ },
+ {
+  "arm": "D",
+  "breaks": "subclass missing",
+  "expect_error": null,
+  "expected": "inputs/expected/B1.yml",
+  "expected_positive_calls": 11,
+  "failing": [
+   {
+    "expected": [
+     [
+      "assert",
+      "RobotStatus",
+      "humanoid1",
+      {
+       "battery": 30,
+       "zone": "storage"
+      }
+     ]
+    ],
+    "observed": [],
+    "ok": false,
+    "step": "s09",
+    "what": "calls:manager1"
+   },
+   {
+    "expected": [
+     [
+      "assert",
+      "RobotStatus",
+      "diff1",
+      {
+       "battery": 20,
+       "zone": "storage"
+      }
+     ]
+    ],
+    "observed": [],
+    "ok": false,
+    "step": "s11",
+    "what": "calls:manager1"
+   },
+   {
+    "expected": [
+     [
+      "retract",
+      "RobotStatus",
+      "diff1",
+      null
+     ]
+    ],
+    "observed": [],
+    "ok": false,
+    "step": "s15",
+    "what": "calls:manager1"
+   },
+   {
+    "expected": {
+     "RobotStatus/diff1": {
+      "battery": 20,
+      "zone": "storage"
+     },
+     "RobotStatus/humanoid1": {
+      "battery": 30,
+      "zone": "storage"
+     }
+    },
+    "observed": {},
+    "ok": false,
+    "step": "s11",
+    "what": "view:manager1"
+   },
+   {
+    "expected": {
+     "RobotStatus/diff1": {
+      "battery": 20,
+      "zone": "storage"
+     },
+     "RobotStatus/humanoid1": {
+      "battery": 30,
+      "zone": "storage"
+     }
+    },
+    "observed": {},
+    "ok": false,
+    "step": "s13",
+    "what": "view:manager1"
+   },
+   {
+    "expected": {
+     "RobotStatus/humanoid1": {
+      "battery": 30,
+      "zone": "storage"
+     }
+    },
+    "observed": {},
+    "ok": false,
+    "step": "s15",
+    "what": "view:manager1"
+   }
+  ],
+  "fails_for_declared_reason": true,
+  "kind": "negative",
+  "n_fail": 6,
+  "n_rows": 50,
+  "pass": false,
+  "raw": "raw/negative/B1__D__non-transitive.jsonl",
+  "run_error": null,
+  "scenario": "B1",
+  "variant": "non-transitive"
+ },
+ {
+  "arm": "D",
+  "breaks": "subclass missing",
+  "expect_error": null,
+  "expected": "inputs/expected/contract/CT1.yml",
+  "expected_positive_calls": 3,
+  "failing": [
+   {
+    "expected": [
+     [
+      "assert",
+      "RobotStatus",
+      "hum1",
+      {
+       "battery": 25,
+       "zone": "storage"
+      }
+     ]
+    ],
+    "observed": [],
+    "ok": false,
+    "step": "e3",
+    "what": "calls:manager1"
+   },
+   {
+    "expected": {
+     "RobotStatus/biped1": {
+      "battery": 30,
+      "zone": "storage"
+     },
+     "RobotStatus/hum1": {
+      "battery": 25,
+      "zone": "storage"
+     }
+    },
+    "observed": {
+     "RobotStatus/biped1": {
+      "battery": 30,
+      "zone": "storage"
+     }
+    },
+    "ok": false,
+    "step": "e3",
+    "what": "view:manager1"
+   },
+   {
+    "expected": {
+     "RobotStatus/biped1": {
+      "battery": 30,
+      "zone": "storage"
+     },
+     "RobotStatus/hum1": {
+      "battery": 25,
+      "zone": "storage"
+     },
+     "RobotStatus/wheel1": {
+      "battery": 20,
+      "zone": "storage"
+     }
+    },
+    "observed": {
+     "RobotStatus/biped1": {
+      "battery": 30,
+      "zone": "storage"
+     },
+     "RobotStatus/wheel1": {
+      "battery": 20,
+      "zone": "storage"
+     }
+    },
+    "ok": false,
+    "step": "e5",
+    "what": "view:manager1"
+   }
+  ],
+  "fails_for_declared_reason": true,
+  "kind": "negative",
+  "n_fail": 3,
+  "n_rows": 24,
+  "pass": false,
+  "raw": "raw/negative/CT1__D__non-transitive.jsonl",
+  "run_error": null,
+  "scenario": "CT1",
+  "variant": "non-transitive"
+ },
+ {
+  "arm": "D",
+  "breaks": "residual-support mistake",
+  "expect_error": null,
+  "expected": "inputs/expected/B3.yml",
+  "expected_positive_calls": 5,
+  "failing": [
+   {
+    "expected": [
+     [
+      "retract",
+      "RobotStatus",
+      "wheeled1",
+      null
+     ]
+    ],
+    "observed": [
+     [
+      "retract",
+      "RobotStatus",
+      "biped1",
+      null
+     ],
+     [
+      "retract",
+      "RobotStatus",
+      "wheeled1",
+      null
+     ]
+    ],
+    "ok": false,
+    "step": "r03",
+    "what": "calls:manager1"
+   },
+   {
+    "expected": [
+     [
+      "retract",
+      "RobotStatus",
+      "biped1",
+      null
+     ]
+    ],
+    "observed": [],
+    "ok": false,
+    "step": "r04",
+    "what": "calls:manager1"
+   },
+   {
+    "expected": {
+     "RobotStatus/biped1": {
+      "battery": 25,
+      "zone": "storage"
+     }
+    },
+    "observed": {},
+    "ok": false,
+    "step": "r03",
+    "what": "view:manager1"
+   }
+  ],
+  "fails_for_declared_reason": true,
+  "kind": "negative",
+  "n_fail": 3,
+  "n_rows": 24,
+  "pass": false,
+  "raw": "raw/negative/B3__D__per-role-retract.jsonl",
+  "run_error": null,
+  "scenario": "B3",
+  "variant": "per-role-retract"
+ },
+ {
+  "arm": "D",
+  "breaks": "residual-support mistake",
+  "expect_error": null,
+  "expected": "inputs/expected/contract/CT5.yml",
+  "expected_positive_calls": 2,
+  "failing": [
+   {
+    "expected": [],
+    "observed": [
+     [
+      "retract",
+      "RobotStatus",
+      "biped1",
+      null
+     ]
+    ],
+    "ok": false,
+    "step": "c1",
+    "what": "calls:manager1"
+   },
+   {
+    "expected": [
+     [
+      "retract",
+      "RobotStatus",
+      "biped1",
+      null
+     ]
+    ],
+    "observed": [],
+    "ok": false,
+    "step": "c2",
+    "what": "calls:manager1"
+   },
+   {
+    "expected": {
+     "RobotStatus/biped1": {
+      "battery": 28,
+      "zone": "storage"
+     }
+    },
+    "observed": {},
+    "ok": false,
+    "step": "c1",
+    "what": "view:manager1"
+   }
+  ],
+  "fails_for_declared_reason": true,
+  "kind": "negative",
+  "n_fail": 3,
+  "n_rows": 22,
+  "pass": false,
+  "raw": "raw/negative/CT5__D__per-role-retract.jsonl",
+  "run_error": null,
+  "scenario": "CT5",
+  "variant": "per-role-retract"
+ },
+ {
+  "arm": "D",
+  "breaks": "model not updated",
+  "expect_error": null,
+  "expected": "inputs/expected/B2.yml",
+  "expected_positive_calls": 3,
+  "failing": [
+   {
+    "expected": [
+     [
+      "assert",
+      "RobotStatus",
+      "diff1",
+      {
+       "battery": 25,
+       "zone": "storage"
+      }
+     ]
+    ],
+    "observed": [],
+    "ok": false,
+    "step": "m03",
+    "what": "calls:manager1"
+   },
+   {
+    "expected": [
+     [
+      "retract",
+      "RobotStatus",
+      "diff1",
+      null
+     ]
+    ],
+    "observed": [],
+    "ok": false,
+    "step": "m04",
+    "what": "calls:manager1"
+   },
+   {
+    "expected": {
+     "RobotStatus/diff1": {
+      "battery": 25,
+      "zone": "storage"
+     },
+     "RobotStatus/humanoid1": {
+      "battery": 29,
+      "zone": "storage"
+     }
+    },
+    "observed": {
+     "RobotStatus/humanoid1": {
+      "battery": 29,
+      "zone": "storage"
+     }
+    },
+    "ok": false,
+    "step": "m03",
+    "what": "view:manager1"
+   }
+  ],
+  "fails_for_declared_reason": true,
+  "kind": "negative",
+  "n_fail": 3,
+  "n_rows": 22,
+  "pass": false,
+  "raw": "raw/negative/B2__D__stale-model.jsonl",
+  "run_error": null,
+  "scenario": "B2",
+  "variant": "stale-model"
+ },
+ {
+  "arm": "A",
+  "breaks": "plan not updated",
+  "expect_error": null,
+  "expected": "inputs/expected/B2.yml",
+  "expected_positive_calls": 3,
+  "failing": [
+   {
+    "expected": [
+     [
+      "assert",
+      "RobotStatus",
+      "diff1",
+      {
+       "battery": 25,
+       "zone": "storage"
+      }
+     ]
+    ],
+    "observed": [],
+    "ok": false,
+    "step": "m03",
+    "what": "calls:manager1"
+   },
+   {
+    "expected": [
+     [
+      "retract",
+      "RobotStatus",
+      "diff1",
+      null
+     ]
+    ],
+    "observed": [],
+    "ok": false,
+    "step": "m04",
+    "what": "calls:manager1"
+   },
+   {
+    "expected": {
+     "RobotStatus/diff1": {
+      "battery": 25,
+      "zone": "storage"
+     },
+     "RobotStatus/humanoid1": {
+      "battery": 29,
+      "zone": "storage"
+     }
+    },
+    "observed": {
+     "RobotStatus/humanoid1": {
+      "battery": 29,
+      "zone": "storage"
+     }
+    },
+    "ok": false,
+    "step": "m03",
+    "what": "view:manager1"
+   }
+  ],
+  "fails_for_declared_reason": true,
+  "kind": "negative",
+  "n_fail": 3,
+  "n_rows": 22,
+  "pass": false,
+  "raw": "raw/negative/B2__A__stale-model.jsonl",
+  "run_error": null,
+  "scenario": "B2",
+  "variant": "stale-model"
+ },
+ {
+  "arm": "D",
+  "breaks": "model not updated",
+  "expect_error": null,
+  "expected": "inputs/expected/contract/CT4.yml",
+  "expected_positive_calls": 2,
+  "failing": [
+   {
+    "expected": [
+     [
+      "assert",
+      "RobotStatus",
+      "biped1",
+      {
+       "battery": 25,
+       "zone": "storage"
+      }
+     ]
+    ],
+    "observed": [],
+    "ok": false,
+    "step": "c1",
+    "what": "calls:manager1"
+   },
+   {
+    "expected": [
+     [
+      "retract",
+      "RobotStatus",
+      "biped1",
+      null
+     ]
+    ],
+    "observed": [],
+    "ok": false,
+    "step": "c2",
+    "what": "calls:manager1"
+   },
+   {
+    "expected": {
+     "RobotStatus/biped1": {
+      "battery": 25,
+      "zone": "storage"
+     }
+    },
+    "observed": {},
+    "ok": false,
+    "step": "c1",
+    "what": "view:manager1"
+   }
+  ],
+  "fails_for_declared_reason": true,
+  "kind": "negative",
+  "n_fail": 3,
+  "n_rows": 21,
+  "pass": false,
+  "raw": "raw/negative/CT4__D__stale-model.jsonl",
+  "run_error": null,
+  "scenario": "CT4",
+  "variant": "stale-model"
+ },
+ {
+  "arm": "A",
+  "breaks": "plan not updated",
+  "expect_error": null,
+  "expected": "inputs/expected/contract/CT4.yml",
+  "expected_positive_calls": 2,
+  "failing": [
+   {
+    "expected": [
+     [
+      "assert",
+      "RobotStatus",
+      "biped1",
+      {
+       "battery": 25,
+       "zone": "storage"
+      }
+     ]
+    ],
+    "observed": [],
+    "ok": false,
+    "step": "c1",
+    "what": "calls:manager1"
+   },
+   {
+    "expected": [
+     [
+      "retract",
+      "RobotStatus",
+      "biped1",
+      null
+     ]
+    ],
+    "observed": [],
+    "ok": false,
+    "step": "c2",
+    "what": "calls:manager1"
+   },
+   {
+    "expected": {
+     "RobotStatus/biped1": {
+      "battery": 25,
+      "zone": "storage"
+     }
+    },
+    "observed": {},
+    "ok": false,
+    "step": "c1",
+    "what": "view:manager1"
+   }
+  ],
+  "fails_for_declared_reason": true,
+  "kind": "negative",
+  "n_fail": 3,
+  "n_rows": 21,
+  "pass": false,
+  "raw": "raw/negative/CT4__A__stale-model.jsonl",
+  "run_error": null,
+  "scenario": "CT4",
+  "variant": "stale-model"
+ },
+ {
+  "arm": "D",
+  "breaks": "RobotStopped early entry at 299 s",
+  "expect_error": null,
+  "expected": "inputs/expected/S1.yml",
+  "expected_positive_calls": 3,
+  "failing": [
+   {
+    "expected": [],
+    "observed": [
+     [
+      "assert",
+      "RobotStopped",
+      "biped1",
+      {
+       "elapsedSeconds": 299
+      }
+     ]
+    ],
+    "ok": false,
+    "step": "p01",
+    "what": "calls:manager1"
+   },
+   {
+    "expected": [
+     [
+      "assert",
+      "RobotStopped",
+      "biped1",
+      {
+       "elapsedSeconds": 300
+      }
+     ]
+    ],
+    "observed": [
+     [
+      "update",
+      "RobotStopped",
+      "biped1",
+      {
+       "elapsedSeconds": 300
+      }
+     ]
+    ],
+    "ok": false,
+    "step": "p02",
+    "what": "calls:manager1"
+   },
+   {
+    "expected": [],
+    "observed": [
+     [
+      "assert",
+      "RobotStopped",
+      "wheeled1",
+      {
+       "elapsedSeconds": 299
+      }
+     ]
+    ],
+    "ok": false,
+    "step": "p05",
+    "what": "calls:manager1"
+   },
+   {
+    "expected": [],
+    "observed": [
+     [
+      "retract",
+      "RobotStopped",
+      "wheeled1",
+      null
+     ]
+    ],
+    "ok": false,
+    "step": "p06",
+    "what": "calls:manager1"
+   }
+  ],
+  "fails_for_declared_reason": true,
+  "kind": "negative",
+  "n_fail": 4,
+  "n_rows": 25,
+  "pass": false,
+  "raw": "raw/negative/S1__D__stop-299.jsonl",
+  "run_error": null,
+  "scenario": "S1",
+  "variant": "stop-299"
+ },
+ {
+  "arm": "D",
+  "breaks": "RobotStopped early entry at 299 s",
+  "expect_error": null,
+  "expected": "inputs/expected/contract/CT6.yml",
+  "expected_positive_calls": 3,
+  "failing": [
+   {
+    "expected": [],
+    "observed": [
+     [
+      "assert",
+      "RobotStopped",
+      "wheel1",
+      {
+       "elapsedSeconds": 299
+      }
+     ]
+    ],
+    "ok": false,
+    "step": "e2",
+    "what": "calls:manager1"
+   },
+   {
+    "expected": [
+     [
+      "assert",
+      "RobotStopped",
+      "wheel1",
+      {
+       "elapsedSeconds": 300
+      }
+     ]
+    ],
+    "observed": [
+     [
+      "update",
+      "RobotStopped",
+      "wheel1",
+      {
+       "elapsedSeconds": 300
+      }
+     ]
+    ],
+    "ok": false,
+    "step": "e3",
+    "what": "calls:manager1"
+   }
+  ],
+  "fails_for_declared_reason": true,
+  "kind": "negative",
+  "n_fail": 2,
+  "n_rows": 22,
+  "pass": false,
+  "raw": "raw/negative/CT6__D__stop-299.jsonl",
+  "run_error": null,
+  "scenario": "CT6",
+  "variant": "stop-299"
+ },
+ {
+  "arm": "D",
+  "breaks": "unknown / ill-typed values not detected (crashes on the unregistered individual)",
+  "expect_error": "KeyError: 'ghost9'",
+  "expected": "inputs/expected/T.yml",
+  "expected_positive_calls": 2,
+  "failing": [
+   {
+    "expected": 0,
+    "observed": 1,
+    "ok": false,
+    "step": "-",
+    "what": "error-records"
+   },
+   {
+    "expected": null,
+    "observed": "KeyError: 'ghost9'",
+    "ok": false,
+    "step": "-",
+    "what": "end-error"
+   },
+   {
+    "expected": [
+     "t01",
+     "t02",
+     "t03",
+     "t04",
+     "t05",
+     "t06",
+     "t07"
+    ],
+    "observed": [
+     "t01"
+    ],
+    "ok": false,
+    "step": "-",
+    "what": "step-order"
+   },
+   {
+    "expected": {
+     "RobotStatus/biped1": {
+      "battery": 29,
+      "zone": "storage"
+     }
+    },
+    "observed": null,
+    "ok": false,
+    "step": "t06",
+    "what": "view:manager1"
+   },
+   {
+    "expected": {},
+    "observed": null,
+    "ok": false,
+    "step": "t06",
+    "what": "view:auditor1"
+   },
+   {
+    "expected": {
+     "battery": 29,
+     "zone": "storage"
+    },
+    "observed": null,
+    "ok": false,
+    "step": "t06",
+    "what": "store:RobotStatus/biped1"
+   },
+   {
+    "expected": 2,
+    "observed": 1,
+    "ok": false,
+    "step": "-",
+    "what": "positive-calls-compared"
+   }
+  ],
+  "fails_for_declared_reason": true,
+  "kind": "negative",
+  "n_fail": 7,
+  "n_rows": 17,
+  "pass": false,
+  "raw": "raw/negative/T__D__no-validation.jsonl",
+  "run_error": "KeyError: 'ghost9'",
+  "scenario": "T",
+  "variant": "no-validation"
+ },
+ {
+  "arm": "A",
+  "breaks": "unknown / ill-typed values not detected (A without the catalogue helper)",
+  "expect_error": null,
+  "expected": "inputs/expected/T.yml",
+  "expected_positive_calls": 2,
+  "failing": [
+   {
+    "expected": [
+     "UNKNOWN_INDIVIDUAL"
+    ],
+    "observed": [],
+    "ok": false,
+    "step": "t02",
+    "what": "rejected"
+   },
+   {
+    "expected": [
+     "TYPE_MISMATCH"
+    ],
+    "observed": [],
+    "ok": false,
+    "step": "t03",
+    "what": "rejected"
+   },
+   {
+    "expected": [],
+    "observed": [
+     [
+      "retract",
+      "RobotStatus",
+      "biped1",
+      null
+     ]
+    ],
+    "ok": false,
+    "step": "t04",
+    "what": "calls:manager1"
+   },
+   {
+    "expected": [
+     "TYPE_MISMATCH"
+    ],
+    "observed": [],
+    "ok": false,
+    "step": "t04",
+    "what": "rejected"
+   },
+   {
+    "expected": [],
+    "observed": [
+     [
+      "assert",
+      "RobotStatus",
+      "biped1",
+      {
+       "battery": 28
+      }
+     ]
+    ],
+    "ok": false,
+    "step": "t05",
+    "what": "calls:manager1"
+   },
+   {
+    "expected": [
+     "BAD_FIELDS"
+    ],
+    "observed": [],
+    "ok": false,
+    "step": "t05",
+    "what": "rejected"
+   },
+   {
+    "expected": [
+     "UNKNOWN_INDIVIDUAL"
+    ],
+    "observed": [],
+    "ok": false,
+    "step": "t06",
+    "what": "rejected"
+   },
+   {
+    "expected": {
+     "RobotStatus/biped1": {
+      "battery": 29,
+      "zone": "storage"
+     }
+    },
+    "observed": {
+     "RobotStatus/biped1": {
+      "battery": 28
+     }
+    },
+    "ok": false,
+    "step": "t06",
+    "what": "view:manager1"
+   },
+   {
+    "expected": {
+     "battery": 29,
+     "zone": "storage"
+    },
+    "observed": {
+     "battery": 28
+    },
+    "ok": false,
+    "step": "t06",
+    "what": "store:RobotStatus/biped1"
+   }
+  ],
+  "fails_for_declared_reason": true,
+  "kind": "negative",
+  "n_fail": 9,
+  "n_rows": 35,
+  "pass": false,
+  "raw": "raw/negative/T__A__no-guard.jsonl",
+  "run_error": null,
+  "scenario": "T",
+  "variant": "no-guard"
+ },
+ {
+  "arm": "D",
+  "breaks": "class compatibility limited to the subclass relation (refuses a valid Biped/Wheeled condition)",
+  "expect_error": "TYPE_MISMATCH",
+  "expected": "inputs/expected/X2.yml",
+  "expected_positive_calls": 2,
+  "failing": [
+   {
+    "expected": "start",
+    "observed": "error",
+    "ok": false,
+    "step": "-",
+    "what": "first-record-is-start"
+   },
+   {
+    "expected": 1,
+    "observed": 0,
+    "ok": false,
+    "step": "-",
+    "what": "start-count"
+   },
+   {
+    "expected": 0,
+    "observed": 1,
+    "ok": false,
+    "step": "-",
+    "what": "error-records"
+   },
+   {
+    "expected": "X2",
+    "observed": null,
+    "ok": false,
+    "step": "-",
+    "what": "start-scenario"
+   },
+   {
+    "expected": null,
+    "observed": "GenerationError: TYPE_MISMATCH roles.BalanceWheeledWatch.reads.BipedBalance: no declared subclass and no registered individual is both http://ai.uos.ac.kr/logistics-ontology#Wheeled and argumentType http://ai.uos.ac.kr/logistics-ontology#Biped of robot (fixed catalogue)",
+    "ok": false,
+    "step": "-",
+    "what": "end-error"
+   },
+   {
+    "expected": [
+     "x01",
+     "x02",
+     "x03",
+     "x04",
+     "x05"
+    ],
+    "observed": [],
+    "ok": false,
+    "step": "-",
+    "what": "step-order"
+   },
+   {
+    "expected": {
+     "BipedBalance/hybrid1": {
+      "tilt": 7
+     }
+    },
+    "observed": null,
+    "ok": false,
+    "step": "x04",
+    "what": "view:watcher1"
+   },
+   {
+    "expected": {},
+    "observed": null,
+    "ok": false,
+    "step": "x05",
+    "what": "view:watcher1"
+   },
+   {
+    "expected": 2,
+    "observed": 0,
+    "ok": false,
+    "step": "-",
+    "what": "positive-calls-compared"
+   }
+  ],
+  "fails_for_declared_reason": true,
+  "kind": "negative",
+  "n_fail": 9,
+  "n_rows": 13,
+  "pass": false,
+  "raw": "raw/negative/X2__D__relation-only-check.jsonl",
+  "run_error": "GenerationError: TYPE_MISMATCH roles.BalanceWheeledWatch.reads.BipedBalance: no declared subclass and no registered individual is both http://ai.uos.ac.kr/logistics-ontology#Wheeled and argumentType http://ai.uos.ac.kr/logistics-ontology#Biped of robot (fixed catalogue)",
+  "scenario": "X2",
+  "variant": "relation-only-check"
+ },
+ {
+  "arm": "A",
+  "breaks": "helper A with a boundary error (< instead of <=)",
+  "expect_error": null,
+  "expected": "inputs/expected/B1.yml",
+  "expected_positive_calls": 11,
+  "failing": [
+   {
+    "expected": [
+     [
+      "assert",
+      "RobotStatus",
+      "biped1",
+      {
+       "battery": 30,
+       "zone": "storage"
+      }
+     ]
+    ],
+    "observed": [],
+    "ok": false,
+    "step": "s02",
+    "what": "calls:manager1"
+   },
+   {
+    "expected": [
+     [
+      "update",
+      "RobotStatus",
+      "biped1",
+      {
+       "battery": 29,
+       "zone": "storage"
+      }
+     ]
+    ],
+    "observed": [
+     [
+      "assert",
+      "RobotStatus",
+      "biped1",
+      {
+       "battery": 29,
+       "zone": "storage"
+      }
+     ]
+    ],
+    "ok": false,
+    "step": "s03",
+    "what": "calls:manager1"
+   },
+   {
+    "expected": [
+     [
+      "assert",
+      "RobotStatus",
+      "wheeled1",
+      {
+       "battery": 20,
+       "zone": "storage"
+      }
+     ]
+    ],
+    "observed": [],
+    "ok": false,
+    "step": "s06",
+    "what": "calls:manager1"
+   },
+   {
+    "expected": [
+     [
+      "update",
+      "RobotStatus",
+      "wheeled1",
+      {
+       "battery": 19,
+       "zone": "storage"
+      }
+     ]
+    ],
+    "observed": [
+     [
+      "assert",
+      "RobotStatus",
+      "wheeled1",
+      {
+       "battery": 19,
+       "zone": "storage"
+      }
+     ]
+    ],
+    "ok": false,
+    "step": "s07",
+    "what": "calls:manager1"
+   },
+   {
+    "expected": [
+     [
+      "assert",
+      "RobotStatus",
+      "humanoid1",
+      {
+       "battery": 30,
+       "zone": "storage"
+      }
+     ]
+    ],
+    "observed": [],
+    "ok": false,
+    "step": "s09",
+    "what": "calls:manager1"
+   },
+   {
+    "expected": [
+     [
+      "assert",
+      "RobotStatus",
+      "diff1",
+      {
+       "battery": 20,
+       "zone": "storage"
+      }
+     ]
+    ],
+    "observed": [],
+    "ok": false,
+    "step": "s11",
+    "what": "calls:manager1"
+   },
+   {
+    "expected": [
+     [
+      "retract",
+      "RobotStatus",
+      "diff1",
+      null
+     ]
+    ],
+    "observed": [],
+    "ok": false,
+    "step": "s15",
+    "what": "calls:manager1"
+   },
+   {
+    "expected": {
+     "RobotStatus/diff1": {
+      "battery": 20,
+      "zone": "storage"
+     },
+     "RobotStatus/humanoid1": {
+      "battery": 30,
+      "zone": "storage"
+     }
+    },
+    "observed": {},
+    "ok": false,
+    "step": "s11",
+    "what": "view:manager1"
+   },
+   {
+    "expected": {
+     "RobotStatus/diff1": {
+      "battery": 20,
+      "zone": "storage"
+     },
+     "RobotStatus/humanoid1": {
+      "battery": 30,
+      "zone": "storage"
+     }
+    },
+    "observed": {},
+    "ok": false,
+    "step": "s13",
+    "what": "view:manager1"
+   },
+   {
+    "expected": {
+     "RobotStatus/humanoid1": {
+      "battery": 30,
+      "zone": "storage"
+     }
+    },
+    "observed": {},
+    "ok": false,
+    "step": "s15",
+    "what": "view:manager1"
+   }
+  ],
+  "fails_for_declared_reason": true,
+  "kind": "negative",
+  "n_fail": 10,
+  "n_rows": 50,
+  "pass": false,
+  "raw": "raw/negative/B1__A__helper-boundary-lt.jsonl",
+  "run_error": null,
+  "scenario": "B1",
+  "variant": "helper-boundary-lt"
+ },
+ {
+  "arm": "A",
+  "breaks": "helper A plan not updated",
+  "expect_error": null,
+  "expected": "inputs/expected/B2.yml",
+  "expected_positive_calls": 3,
+  "failing": [
+   {
+    "expected": [
+     [
+      "assert",
+      "RobotStatus",
+      "diff1",
+      {
+       "battery": 25,
+       "zone": "storage"
+      }
+     ]
+    ],
+    "observed": [],
+    "ok": false,
+    "step": "m03",
+    "what": "calls:manager1"
+   },
+   {
+    "expected": [
+     [
+      "retract",
+      "RobotStatus",
+      "diff1",
+      null
+     ]
+    ],
+    "observed": [],
+    "ok": false,
+    "step": "m04",
+    "what": "calls:manager1"
+   },
+   {
+    "expected": {
+     "RobotStatus/diff1": {
+      "battery": 25,
+      "zone": "storage"
+     },
+     "RobotStatus/humanoid1": {
+      "battery": 29,
+      "zone": "storage"
+     }
+    },
+    "observed": {
+     "RobotStatus/humanoid1": {
+      "battery": 29,
+      "zone": "storage"
+     }
+    },
+    "ok": false,
+    "step": "m03",
+    "what": "view:manager1"
+   }
+  ],
+  "fails_for_declared_reason": true,
+  "kind": "negative",
+  "n_fail": 3,
+  "n_rows": 22,
+  "pass": false,
+  "raw": "raw/negative/B2__A__helper-stale-model.jsonl",
+  "run_error": null,
+  "scenario": "B2",
+  "variant": "helper-stale-model"
+ }
+]
