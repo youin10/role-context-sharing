@@ -4,7 +4,7 @@ Reproducibility package for the conditional context sharing, multi-role support,
 
 Repository: https://github.com/youin10/role-context-sharing
 
-Status: public reproducibility materials. An open-source license has not yet been selected.
+License: [MIT](LICENSE).
 
 ## Layout
 
