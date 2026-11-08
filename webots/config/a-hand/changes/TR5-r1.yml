@@ -1,0 +1,3 @@
+plans: plans/congestion-r1
+targets:
+  manager1: {roles: [ApronCoordinator]}

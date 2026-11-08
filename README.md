@@ -1,4 +1,4 @@
-# Conditional context sharing — reproducibility package
+# Role context sharing — code and reproducibility materials
 
 Reproducibility package for the conditional context sharing, multi-role support, and configuration redeployment evaluation. It packages the cleaned public source snapshot `cs-core-a255c156de6c`, derived from the execution-time snapshot `cs-core-9ec4e836cb48` by the same removal of non-semantic authoring comments and internal workspace references used for the earlier public snapshots. In this version consumers receive the knowledge notifications assert (add a fact), update (revise a supplied fact) and retract (remove a supplied fact), decided by Shared Memory. The evidence of record is the full core run `records/core/notif-host` (Linux container rerun `records/core/notif-docker`) and the 66 ROS 2 runs `records/ros2/final-9ec4e836cb48/a2`, all executed against `cs-core-9ec4e836cb48`. Records of earlier implementation versions are kept for lineage and are not combined with the current records (Provenance notes 3 and 4, `traceability/EVIDENCE-INDEX.md` Section 0). Earlier datasets (the 18-run submission set and the 242-run set) are separate evaluations.
 
@@ -6,10 +6,18 @@ Repository: https://github.com/youin10/role-context-sharing
 
 License: [MIT](LICENSE).
 
+
+## Webots logistics scenarios
+
+[`webots/`](webots/README.md) contains the containerized Webots evaluation used in the revised paper: simulator world and controllers, role permissions, role-agent bindings, ontology additions, explicit-rule and helper baselines, scenario scripts, expected outcomes, judges, and recorded results. The [scenario descriptions](webots/DESIGN.md) and [results](webots/RESULTS.md) explain TR1–TR7, C1/C2, and N1/N2. Run `cd webots && ./setup.sh` to prepare the environment; see the package README for execution commands.
+
+The Webots records, controlled checks, ROS 2 executions, editing comparison, and processing measurements are separate evaluations. The directories below retain their respective source snapshots and records.
+
 ## Layout
 
 | Path | Content |
 |---|---|
+| `webots/` | Webots source, full scenario specifications, Docker setup, expected outcomes and recorded results |
 | `source/conditional-sharing/` | Exact extraction of `snapshots/cs-core-a255c156de6c.tar.gz` (296 files: `src/`, `runner/`, `inputs/`, `tools/`, `upstream/`, `run.sh`, `README.md`, `expected-hashes.json`) plus `live/` extracted from `snapshots/live-snapshot-notif.tar.gz` (with an internal report path removed from `live/README.md`), and `snapshots/` (current core snapshot copy used by `tools/snapshot.py verify`, and the per-file manifests of the execution-time snapshots) |
 | `snapshots/` | Frozen archives and hashes. Current: public core archive `cs-core-a255c156de6c.tar.gz` + `.sha256` + `.json`, execution-time manifest `cs-core-9ec4e836cb48.json`, live archive `live-snapshot-notif.tar.gz` + `.sha256`, `core-tree-notif.json`. Earlier versions: `cs-core-486f4f7b6ca3.*` / `cs-core-7ba114d5dcf9.json` / `live-snapshot-role-release.tar.gz` / `core-tree-role-release.json`, and `cs-core-8174f3ee50f2.*` / `cs-core-c6cef8724cd4.json` / `live-snapshot.tar.gz` / `core-tree.json`; each archive contains the judge, inputs and expected tables of its version |
 | `records/core/notif-host/` | Core run of record (raw JSONL, judgments, grammar, x1, a_static, NC, judge NC, unit checks, consumer-entry check, edit diffs, timing, sweep, manifest) |

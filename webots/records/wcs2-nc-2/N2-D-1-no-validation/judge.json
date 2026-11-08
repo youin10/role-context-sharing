@@ -1,0 +1,221 @@
+{
+ "run": "N2-D-1-no-validation",
+ "pass": false,
+ "fails": [
+  {
+   "code": "STATUS",
+   "detail": "sim-timeout"
+  },
+  {
+   "code": "OUTSIDE_REPORT_CFG",
+   "detail": 1
+  },
+  {
+   "code": "REJECTED",
+   "detail": []
+  },
+  {
+   "code": "REPORTS",
+   "detail": {
+    "RobotLocatedAt/biped1": [
+     "bay_sw"
+    ],
+    "RobotLocatedAt/diff1": [
+     "bay_se"
+    ],
+    "RobotLocatedAt/humanoid1": [
+     "bay_sw"
+    ],
+    "RobotLocatedAt/hybrid1": [
+     "bay_nw"
+    ],
+    "RobotLocatedAt/wheel1": [
+     "bay_sw",
+     "aisle_w",
+     "t_w",
+     "t_e",
+     "aisle_e"
+    ],
+    "RobotLocatedAt/wheeled1": [
+     "hold_n"
+    ]
+   }
+  },
+  {
+   "code": "NOTIFICATIONS",
+   "detail": {
+    "manager1": [
+     [
+      "assert",
+      "wheel1",
+      "t_w"
+     ],
+     [
+      "assert",
+      "ghost9",
+      "t_e"
+     ],
+     [
+      "assert",
+      "cargo1",
+      "t_e"
+     ],
+     [
+      "retract",
+      "wheel1",
+      null
+     ],
+     [
+      "assert",
+      "wheel1",
+      "t_e"
+     ],
+     [
+      "retract",
+      "wheel1",
+      null
+     ]
+    ]
+   }
+  },
+  {
+   "code": "DECISIONS",
+   "detail": [
+    [
+     "south",
+     "hold",
+     {
+      "wheel1": "t_w"
+     }
+    ],
+    [
+     "south",
+     "hold",
+     {
+      "ghost9": "t_e",
+      "wheel1": "t_w"
+     }
+    ],
+    [
+     "south",
+     "hold",
+     {
+      "cargo1": "t_e",
+      "ghost9": "t_e",
+      "wheel1": "t_w"
+     }
+    ],
+    [
+     "south",
+     "hold",
+     {
+      "cargo1": "t_e",
+      "ghost9": "t_e"
+     }
+    ],
+    [
+     "south",
+     "hold",
+     {
+      "cargo1": "t_e",
+      "ghost9": "t_e",
+      "wheel1": "t_e"
+     }
+    ],
+    [
+     "south",
+     "hold",
+     {
+      "cargo1": "t_e",
+      "ghost9": "t_e"
+     }
+    ]
+   ]
+  },
+  {
+   "code": "COMMANDS",
+   "detail": [
+    [
+     "wheel1",
+     "park"
+    ],
+    [
+     "wheel1",
+     "clear"
+    ]
+   ]
+  },
+  {
+   "code": "RESPONSE",
+   "detail": "south"
+  },
+  {
+   "code": "ARRIVAL",
+   "detail": "south"
+  },
+  {
+   "code": "HELD",
+   "detail": "south: missing hold or release"
+  },
+  {
+   "code": "TIMELINE",
+   "detail": [
+    "decision",
+    "south",
+    "release"
+   ]
+  },
+  {
+   "code": "TIMELINE",
+   "detail": [
+    "arrived",
+    "south"
+   ]
+  },
+  {
+   "code": "FINAL_STORE",
+   "detail": {
+    "CargoCarriedBy/cargo1": {
+     "robot": "ghost9"
+    },
+    "RobotLocatedAt/biped1": {
+     "node": "bay_sw"
+    },
+    "RobotLocatedAt/cargo1": {
+     "node": "t_e"
+    },
+    "RobotLocatedAt/diff1": {
+     "node": "bay_se"
+    },
+    "RobotLocatedAt/ghost9": {
+     "node": "t_e"
+    },
+    "RobotLocatedAt/humanoid1": {
+     "node": "bay_sw"
+    },
+    "RobotLocatedAt/hybrid1": {
+     "node": "bay_nw"
+    },
+    "RobotLocatedAt/wheel1": {
+     "node": "aisle_e"
+    },
+    "RobotLocatedAt/wheeled1": {
+     "node": "hold_n"
+    }
+   }
+  },
+  {
+   "code": "FINAL_VIEWS",
+   "detail": {
+    "manager1": {
+     "RobotLocatedAt/cargo1": {
+      "node": "t_e"
+     },
+     "RobotLocatedAt/ghost9": {
+      "node": "t_e"
+     }
+    }
+   }
+  }
+ ]
+}

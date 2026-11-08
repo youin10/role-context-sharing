@@ -1,0 +1,4 @@
+plans: plans/r0
+targets:
+  manager1: {roles: [TransitCoordinator]}
+  manager2: {roles: []}

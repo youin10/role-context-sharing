@@ -1,0 +1,13 @@
+schema: rcs-d-binding/1
+cfg: custody
+agents:
+  manager1: [DockCoordinator]
+  auditor1: [CarryAuditor]
+  tech1: [BipedTech]
+  watch1: [NonBipedWatch]
+  wheel1: [Carrier]
+  wheeled1: [Carrier]
+  diff1: [Carrier]
+  humanoid1: [Carrier]
+  biped1: [Carrier]
+  hybrid1: [Carrier]

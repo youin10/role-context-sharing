@@ -1,0 +1,48 @@
+scenario: C2
+reports:
+  RobotLocatedAt/wheel1: [bay_sw, aisle_w, t_w, t_e, aisle_e]
+  RobotLocatedAt/wheeled1: [hold_n]
+  RobotLocatedAt/diff1: [bay_se]
+  RobotLocatedAt/humanoid1: [bay_sw]
+  RobotLocatedAt/biped1: [bay_sw]
+  RobotLocatedAt/hybrid1: [bay_nw]
+notifications:
+  manager1:
+  - [assert, biped1, bay_sw]
+  - [assert, diff1, bay_se]
+  - [assert, humanoid1, bay_sw]
+  - [assert, hybrid1, bay_nw]
+  - [assert, wheel1, bay_sw]
+  - [assert, wheeled1, hold_n]
+  - [update, wheel1, aisle_w]
+  - [update, wheel1, t_w]
+  - [update, wheel1, t_e]
+  - [update, wheel1, aisle_e]
+decisions:
+- [cross, hold, {biped1: bay_sw, diff1: bay_se, humanoid1: bay_sw, hybrid1: bay_nw, wheel1: t_w}]
+- [cross, hold, {biped1: bay_sw, diff1: bay_se, humanoid1: bay_sw, hybrid1: bay_nw, wheel1: t_e}]
+- [cross, hold, {biped1: bay_sw, diff1: bay_se, humanoid1: bay_sw, hybrid1: bay_nw, wheel1: aisle_e}]
+commands: [[wheel1, pass]]
+arrivals:
+  pass: [wheel1, 9, 0]
+held: []
+never_released: [{robot: wheeled1, task: cross}]
+timeline:
+- [decision, cross, hold]
+- [arrived, pass]
+changes: []
+final_store:
+  RobotLocatedAt/wheel1: {node: aisle_e}
+  RobotLocatedAt/wheeled1: {node: hold_n}
+  RobotLocatedAt/diff1: {node: bay_se}
+  RobotLocatedAt/humanoid1: {node: bay_sw}
+  RobotLocatedAt/biped1: {node: bay_sw}
+  RobotLocatedAt/hybrid1: {node: bay_nw}
+final_views:
+  manager1:
+    RobotLocatedAt/wheel1: {node: aisle_e}
+    RobotLocatedAt/wheeled1: {node: hold_n}
+    RobotLocatedAt/diff1: {node: bay_se}
+    RobotLocatedAt/humanoid1: {node: bay_sw}
+    RobotLocatedAt/biped1: {node: bay_sw}
+    RobotLocatedAt/hybrid1: {node: bay_nw}

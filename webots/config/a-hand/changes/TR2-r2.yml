@@ -1,0 +1,3 @@
+plans: plans/class-r2
+targets:
+  manager1: {roles: [TransitCoordinator]}

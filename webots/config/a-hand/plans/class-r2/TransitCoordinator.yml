@@ -1,0 +1,11 @@
+role: TransitCoordinator
+subscribe:
+- (rule (fact (RobotLocatedAt $robot $node)) (= $node "t_w") --> (notify (RobotLocatedAt $robot $node)))
+- (rule (fact (RobotLocatedAt $robot $node)) (= $node "t_e") --> (notify (RobotLocatedAt $robot $node)))
+- (rule (fact (RobotLocatedAt $robot $node)) (= $robot "diff1") (= $node "apron") --> (notify (RobotLocatedAt $robot $node)))
+- (rule (fact (RobotLocatedAt $robot $node)) (= $robot "hybrid1") (= $node "apron") --> (notify (RobotLocatedAt $robot $node)))
+- (rule (fact (RobotLocatedAt $robot $node)) (= $robot "wheel1") (= $node "apron") --> (notify (RobotLocatedAt $robot $node)))
+- (rule (fact (RobotLocatedAt $robot $node)) (= $robot "wheeled1") (= $node "apron") --> (notify (RobotLocatedAt $robot $node)))
+- (rule (fact (RobotLocatedAt $robot $node)) (= $robot "biped1") (= $node "apron") --> (notify (RobotLocatedAt $robot $node)))
+- (rule (fact (RobotLocatedAt $robot $node)) (= $robot "hum1") (= $node "apron") --> (notify (RobotLocatedAt $robot $node)))
+- (rule (fact (RobotLocatedAt $robot $node)) (= $robot "humanoid1") (= $node "apron") --> (notify (RobotLocatedAt $robot $node)))

@@ -1,0 +1,11 @@
+schema: rcs-d-binding/1
+cfg: congestion
+agents:
+  manager1: [ApronCoordinator]
+  cam1: [ZoneMonitor]
+  wheel1: [Carrier]
+  wheeled1: [Carrier]
+  diff1: [Carrier]
+  humanoid1: [Carrier]
+  biped1: [Carrier]
+  hybrid1: [Carrier]

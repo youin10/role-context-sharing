@@ -1,0 +1,28 @@
+id: TR2
+purpose: "requirement revisions over stored locations: class branches added and removed"
+d: {model: transit-r0, binding: b-transit}
+a: {initial: initial-r0}
+consumers: [manager1]
+reporters: [location]
+limit_sim_s: 90
+steps:
+- {id: m1, move: {task: park, robot: diff1, path: [[7, 0], [7, 5]]}}
+- {id: m2, move: {task: park2, robot: humanoid1, path: [[-12, 4], [10, 4]]}}
+- {id: w1, wait: {arrived: park}}
+- {id: w2, wait: {arrived: park2}}
+- {id: r1, request: {task: south, robot: wheeled1, path: [[1.5, -6]]}}
+- {id: w3, wait: {arrived: south}}
+- {id: q1, wait: {quiet: [[diff1, humanoid1], 1.0]}}
+- {id: c1, change: {id: TR2-r1, d: {model: class-r1, binding: b-transit}, a: TR2-r1}}
+- {id: r2, request: {task: north, robot: wheeled1, path: [[1.5, 6]]}}
+- {id: q2, wait: {quiet: [[diff1, humanoid1], 1.0]}}
+- {id: c2, change: {id: TR2-r2, d: {model: class-r2, binding: b-transit}, a: TR2-r2}}
+- {id: w4, wait: {dwell: 3.0}}
+- {id: s1, shot: hold}
+- {id: q3, wait: {quiet: [[diff1, humanoid1], 1.0]}}
+- {id: c3, change: {id: TR2-r1b, d: {model: class-r1, binding: b-transit}, a: TR2-r1b}}
+- {id: q4, wait: {quiet: [[diff1, humanoid1], 1.0]}}
+- {id: c4, change: {id: TR2-r0, d: {model: transit-r0, binding: b-transit}, a: TR2-r0}}
+- {id: w5, wait: {cell: [wheeled1, t_e]}}
+- {id: s2, shot: released}
+- {id: w6, wait: {arrived: north}}

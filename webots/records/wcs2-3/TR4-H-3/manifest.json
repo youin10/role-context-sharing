@@ -1,0 +1,21 @@
+{
+ "arm": "H",
+ "compose_project": "wcs-wcs2-3-tr4-h-3",
+ "config_sha256": "4eb563d46dd23747b94d85795835918fea96f5a34d54bde17d55ed7d08238c6a",
+ "core_tree_sha256": "15f4cdd579ffdfc2aedbdbd0626ea3e299ec5b477a96f8cd0edad0f3682a69cf",
+ "fault": null,
+ "finished_utc": "2026-11-06T09:11:39Z",
+ "images": {
+  "eclipse-mosquitto:2": "sha256:6f8d8a947c506f8a2290ec65cd4bd2bc7cb4d43fb5f6271f861cb013e2ef9797",
+  "wcs-webots:R2025a": "sha256:06266f7fc7dfb579ef983767d485aa276ac1a3295ae541b34a5b606294bf02b8"
+ },
+ "label": "wcs2-3",
+ "python": "3.14.7",
+ "rep": 3,
+ "run": "TR4-H-3",
+ "scenario": "TR4",
+ "sim_sha256": "8282624a90a1f1b01fc448856304dedecdba6a5fe3648d43846ff4c1524c0da9",
+ "started_utc": "2026-11-06T09:10:57Z",
+ "status": "ok",
+ "wcs_sha256": "8f1366c9e2d4421def2ebdbe3f17c955a08bfb34ff49346e264445913db6fc9a"
+}

@@ -1,0 +1,60 @@
+scenario: TR1
+reports:
+  RobotLocatedAt/wheel1: [bay_sw, aisle_w, t_w, t_e, aisle_e, t_e, t_w, aisle_w]
+  RobotLocatedAt/wheeled1: [hold_n, t_e, hold_s, t_e, hold_n]
+  RobotLocatedAt/diff1: [bay_se]
+  RobotLocatedAt/humanoid1: [bay_sw]
+  RobotLocatedAt/biped1: [bay_sw]
+  RobotLocatedAt/hybrid1: [bay_nw]
+notifications:
+  manager1:
+  - [assert, wheel1, t_w]
+  - [update, wheel1, t_e]
+  - [retract, wheel1, null]
+  - [assert, wheeled1, t_e]
+  - [retract, wheeled1, null]
+  - [assert, wheel1, t_e]
+  - [update, wheel1, t_w]
+  - [retract, wheel1, null]
+  - [assert, wheeled1, t_e]
+  - [retract, wheeled1, null]
+decisions:
+- [cross, hold, {wheel1: t_w}]
+- [cross, hold, {wheel1: t_e}]
+- [cross, release, {}]
+- [north, hold, {wheel1: t_e}]
+- [north, hold, {wheel1: t_w}]
+- [north, release, {}]
+commands: [[wheel1, pass], [wheeled1, cross], [wheel1, back], [wheeled1, north]]
+arrivals:
+  pass: [wheel1, 9, 0]
+  cross: [wheeled1, 1.5, -6]
+  back: [wheel1, -9, 0]
+  north: [wheeled1, 1.5, 6]
+held:
+- {robot: wheeled1, task: cross, min_sim_s: 2.5}
+- {robot: wheeled1, task: north, min_sim_s: 2.5}
+co_occupied: {robots: [wheel1, wheeled1], cells: [t_w, t_e], expected: false}
+timeline:
+- [notify, manager1, assert, wheel1]
+- [decision, cross, hold]
+- [notify, manager1, update, wheel1]
+- [notify, manager1, retract, wheel1]
+- [decision, cross, release]
+- [command, wheeled1, cross]
+- [arrived, cross]
+- [command, wheel1, back]
+- [notify, manager1, assert, wheel1]
+- [decision, north, hold]
+- [notify, manager1, retract, wheel1]
+- [decision, north, release]
+- [arrived, north]
+changes: []
+final_store:
+  RobotLocatedAt/wheel1: {node: aisle_w}
+  RobotLocatedAt/wheeled1: {node: hold_n}
+  RobotLocatedAt/diff1: {node: bay_se}
+  RobotLocatedAt/humanoid1: {node: bay_sw}
+  RobotLocatedAt/biped1: {node: bay_sw}
+  RobotLocatedAt/hybrid1: {node: bay_nw}
+final_views: {manager1: {}}

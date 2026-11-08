@@ -1,0 +1,3 @@
+plans: plans/apron
+targets:
+  manager1: {roles: [TransitCoordinator, ApronInspector]}

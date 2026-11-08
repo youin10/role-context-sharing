@@ -1,0 +1,21 @@
+prefix logistics: <http://ai.uos.ac.kr/logistics-ontology#>;
+
+role ApronCoordinator {
+  reads {
+    logistics:ZoneStatus($zone, $congestion, $access) {
+      $zone == "apron_zone" && $congestion > 2;
+    }
+  }
+}
+
+role Carrier {
+  changes {
+    logistics:RobotLocatedAt($robot, $node);
+  }
+}
+
+role ZoneMonitor {
+  changes {
+    logistics:ZoneStatus($zone, $congestion, $access);
+  }
+}

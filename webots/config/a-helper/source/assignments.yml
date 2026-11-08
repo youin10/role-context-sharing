@@ -1,0 +1,10 @@
+carriers: &c {wheel1: [Carrier], wheeled1: [Carrier], diff1: [Carrier], humanoid1: [Carrier], biped1: [Carrier], hybrid1: [Carrier]}
+transit: {manager1: [TransitCoordinator], <<: *c}
+tr3-0: {manager1: [TransitCoordinator, ApronSupervisor, ApronInspector], <<: *c}
+tr3-1: {manager1: [TransitCoordinator, ApronInspector], <<: *c}
+tr3-2: {manager1: [TransitCoordinator], <<: *c}
+tr4-0: {manager1: [TransitCoordinator], manager2: [], <<: *c}
+tr4-1: {manager1: [], manager2: [TransitCoordinator], <<: *c}
+congestion: {manager1: [ApronCoordinator], cam1: [ZoneMonitor], <<: *c}
+stop: {manager1: [TrafficManager], watch1: [ShortStopWatch], cam1: [Observer], <<: *c}
+custody: {manager1: [DockCoordinator], auditor1: [CarryAuditor], tech1: [BipedTech], watch1: [NonBipedWatch], <<: *c}

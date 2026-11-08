@@ -1,0 +1,59 @@
+r0:
+  TransitCoordinator:
+  - &t_w {context: RobotLocatedAt, conds: [["=", node, t_w]]}
+  - &t_e {context: RobotLocatedAt, conds: [["=", node, t_e]]}
+  Carrier: []
+class-r1:
+  TransitCoordinator:
+  - *t_w
+  - *t_e
+  - &wa {context: RobotLocatedAt, field: robot, class: Wheeled, conds: [["=", node, apron]]}
+  Carrier: []
+class-r2:
+  TransitCoordinator:
+  - *t_w
+  - *t_e
+  - *wa
+  - {context: RobotLocatedAt, field: robot, class: Biped, conds: [["=", node, apron]]}
+  Carrier: []
+apron:
+  TransitCoordinator: [*t_w, *t_e]
+  ApronSupervisor:
+  - {context: RobotLocatedAt, conds: [["=", node, apron]]}
+  ApronInspector: [*wa]
+  Carrier: []
+none:
+  TransitCoordinator: []
+  Carrier: []
+all:
+  TransitCoordinator:
+  - {context: RobotLocatedAt}
+  Carrier: []
+congestion-r0:
+  ApronCoordinator:
+  - {context: ZoneStatus, conds: [["=", zone, apron_zone], [">=", congestion, 2]]}
+  Carrier: []
+  ZoneMonitor: []
+congestion-r1:
+  ApronCoordinator:
+  - {context: ZoneStatus, conds: [["=", zone, apron_zone], [">=", congestion, 1]]}
+  Carrier: []
+  ZoneMonitor: []
+stop:
+  TrafficManager:
+  - {context: RobotStopped, field: robot, class: Biped, conds: [[">=", elapsedSeconds, 3]]}
+  - {context: RobotStopped, field: robot, class: Wheeled, conds: [[">=", elapsedSeconds, 5]]}
+  ShortStopWatch:
+  - {context: RobotStopped, conds: [[">=", elapsedSeconds, 2], ["<=", elapsedSeconds, 4]]}
+  Carrier: []
+  Observer: []
+custody:
+  DockCoordinator:
+  - {context: CargoCarriedBy}
+  CarryAuditor:
+  - {context: CargoCarriedBy, field: robot, class: Biped}
+  BipedTech:
+  - {context: RobotLocatedAt, conds: [["=", robot, biped1]]}
+  NonBipedWatch:
+  - {context: RobotLocatedAt, field: robot, not_class: Biped, conds: [["=", node, hold_s]]}
+  Carrier: []

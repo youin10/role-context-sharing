@@ -1,0 +1,9 @@
+# Half-open bands: lower bound included, upper bound excluded. The y band is resolved first.
+x_bands: [[-15, -3], [-3, 0], [0, 3], [3, 15]]
+y_bands:
+  - range: [1.5, 10]
+    cells: [bay_nw, hold_n, hold_n, apron]
+  - range: [-1.5, 1.5]
+    cells: [aisle_w, t_w, t_e, aisle_e]
+  - range: [-10, -1.5]
+    cells: [bay_sw, hold_s, hold_s, bay_se]

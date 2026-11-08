@@ -1,0 +1,394 @@
+{
+ "run": "TR6-D-1-non-transitive",
+ "pass": false,
+ "fails": [
+  {
+   "code": "REPORTS",
+   "detail": {
+    "RobotLocatedAt/biped1": [
+     "bay_sw"
+    ],
+    "RobotLocatedAt/diff1": [
+     "bay_se",
+     "aisle_e",
+     "t_e",
+     "t_w",
+     "aisle_w"
+    ],
+    "RobotLocatedAt/humanoid1": [
+     "bay_sw",
+     "aisle_w",
+     "t_w",
+     "t_e",
+     "aisle_e"
+    ],
+    "RobotLocatedAt/hybrid1": [
+     "bay_nw",
+     "aisle_w"
+    ],
+    "RobotLocatedAt/wheel1": [
+     "bay_sw",
+     "aisle_w"
+    ],
+    "RobotLocatedAt/wheeled1": [
+     "hold_n",
+     "t_e",
+     "hold_s",
+     "t_e",
+     "hold_n"
+    ],
+    "RobotStopped/humanoid1": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     "DELETE"
+    ],
+    "RobotStopped/diff1": [
+     1,
+     2,
+     3,
+     4,
+     "DELETE"
+    ],
+    "RobotStopped/hybrid1": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     "DELETE"
+    ],
+    "RobotStopped/wheel1": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     "DELETE"
+    ]
+   }
+  },
+  {
+   "code": "NOTIFICATIONS",
+   "detail": {
+    "manager1": [
+     [
+      "assert",
+      "hybrid1",
+      3
+     ],
+     [
+      "update",
+      "hybrid1",
+      4
+     ],
+     [
+      "update",
+      "hybrid1",
+      5
+     ],
+     [
+      "update",
+      "hybrid1",
+      6
+     ],
+     [
+      "retract",
+      "hybrid1",
+      null
+     ],
+     [
+      "assert",
+      "wheel1",
+      5
+     ],
+     [
+      "update",
+      "wheel1",
+      6
+     ],
+     [
+      "retract",
+      "wheel1",
+      null
+     ]
+    ],
+    "watch1": [
+     [
+      "assert",
+      "humanoid1",
+      2
+     ],
+     [
+      "update",
+      "humanoid1",
+      3
+     ],
+     [
+      "update",
+      "humanoid1",
+      4
+     ],
+     [
+      "retract",
+      "humanoid1",
+      null
+     ],
+     [
+      "assert",
+      "diff1",
+      2
+     ],
+     [
+      "update",
+      "diff1",
+      3
+     ],
+     [
+      "update",
+      "diff1",
+      4
+     ],
+     [
+      "retract",
+      "diff1",
+      null
+     ],
+     [
+      "assert",
+      "hybrid1",
+      2
+     ],
+     [
+      "update",
+      "hybrid1",
+      3
+     ],
+     [
+      "update",
+      "hybrid1",
+      4
+     ],
+     [
+      "retract",
+      "hybrid1",
+      null
+     ],
+     [
+      "assert",
+      "wheel1",
+      2
+     ],
+     [
+      "update",
+      "wheel1",
+      3
+     ],
+     [
+      "update",
+      "wheel1",
+      4
+     ],
+     [
+      "retract",
+      "wheel1",
+      null
+     ]
+    ]
+   }
+  },
+  {
+   "code": "DECISIONS",
+   "detail": [
+    [
+     "cross",
+     "release",
+     {}
+    ],
+    [
+     "north",
+     "release",
+     {}
+    ]
+   ]
+  },
+  {
+   "code": "CHECKPOINT_VIEW",
+   "detail": "exit-keeps-fact"
+  },
+  {
+   "code": "TIMELINE",
+   "detail": [
+    "notify",
+    "manager1",
+    "assert",
+    "humanoid1"
+   ]
+  },
+  {
+   "code": "TIMELINE",
+   "detail": [
+    "decision",
+    "cross",
+    "detour"
+   ]
+  },
+  {
+   "code": "TIMELINE",
+   "detail": [
+    "report",
+    "RobotStopped",
+    "humanoid1",
+    5
+   ]
+  },
+  {
+   "code": "TIMELINE",
+   "detail": [
+    "notify",
+    "watch1",
+    "retract",
+    "humanoid1"
+   ]
+  },
+  {
+   "code": "TIMELINE",
+   "detail": [
+    "report",
+    "RobotStopped",
+    "humanoid1",
+    "DELETE"
+   ]
+  },
+  {
+   "code": "TIMELINE",
+   "detail": [
+    "notify",
+    "manager1",
+    "retract",
+    "humanoid1"
+   ]
+  },
+  {
+   "code": "TIMELINE",
+   "detail": [
+    "report",
+    "RobotLocatedAt",
+    "wheeled1",
+    "t_w"
+   ]
+  },
+  {
+   "code": "TIMELINE",
+   "detail": [
+    "decision",
+    "north",
+    "release"
+   ]
+  },
+  {
+   "code": "TIMELINE",
+   "detail": [
+    "report",
+    "RobotLocatedAt",
+    "wheeled1",
+    "t_e"
+   ]
+  },
+  {
+   "code": "TIMELINE",
+   "detail": [
+    "report",
+    "RobotStopped",
+    "diff1",
+    "DELETE"
+   ]
+  },
+  {
+   "code": "TIMELINE",
+   "detail": [
+    "notify",
+    "watch1",
+    "retract",
+    "diff1"
+   ]
+  },
+  {
+   "code": "TIMELINE",
+   "detail": [
+    "report",
+    "RobotStopped",
+    "hybrid1",
+    "DELETE"
+   ]
+  },
+  {
+   "code": "TIMELINE",
+   "detail": [
+    "notify",
+    "manager1",
+    "retract",
+    "hybrid1"
+   ]
+  },
+  {
+   "code": "TIMELINE",
+   "detail": [
+    "report",
+    "RobotStopped",
+    "wheel1",
+    4
+   ]
+  },
+  {
+   "code": "TIMELINE",
+   "detail": [
+    "report",
+    "RobotStopped",
+    "wheel1",
+    5
+   ]
+  },
+  {
+   "code": "TIMELINE",
+   "detail": [
+    "notify",
+    "manager1",
+    "assert",
+    "wheel1"
+   ]
+  },
+  {
+   "code": "TIMELINE",
+   "detail": [
+    "notify",
+    "watch1",
+    "retract",
+    "wheel1"
+   ]
+  },
+  {
+   "code": "TIMELINE",
+   "detail": [
+    "report",
+    "RobotStopped",
+    "wheel1",
+    "DELETE"
+   ]
+  },
+  {
+   "code": "TIMELINE",
+   "detail": [
+    "notify",
+    "manager1",
+    "retract",
+    "wheel1"
+   ]
+  }
+ ]
+}

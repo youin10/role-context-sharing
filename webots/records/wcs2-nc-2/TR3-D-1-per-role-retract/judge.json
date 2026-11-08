@@ -1,0 +1,212 @@
+{
+ "run": "TR3-D-1-per-role-retract",
+ "pass": false,
+ "fails": [
+  {
+   "code": "NOTIFICATIONS",
+   "detail": {
+    "manager1": [
+     [
+      "assert",
+      "diff1",
+      "apron"
+     ],
+     [
+      "assert",
+      "humanoid1",
+      "apron"
+     ],
+     [
+      "retract",
+      "diff1",
+      null
+     ],
+     [
+      "retract",
+      "humanoid1",
+      null
+     ],
+     [
+      "assert",
+      "wheeled1",
+      "t_e"
+     ],
+     [
+      "retract",
+      "wheeled1",
+      null
+     ],
+     [
+      "assert",
+      "diff1",
+      "apron"
+     ],
+     [
+      "retract",
+      "diff1",
+      null
+     ],
+     [
+      "assert",
+      "wheeled1",
+      "t_e"
+     ],
+     [
+      "retract",
+      "wheeled1",
+      null
+     ]
+    ]
+   }
+  },
+  {
+   "code": "DECISIONS",
+   "detail": [
+    [
+     "south",
+     "hold",
+     {
+      "diff1": "apron",
+      "humanoid1": "apron"
+     }
+    ],
+    [
+     "south",
+     "release",
+     {}
+    ],
+    [
+     "north",
+     "hold",
+     {
+      "diff1": "apron"
+     }
+    ],
+    [
+     "north",
+     "release",
+     {}
+    ]
+   ]
+  },
+  {
+   "code": "HELD_SHORT",
+   "detail": 2.048000000000002
+  },
+  {
+   "code": "TIMELINE",
+   "detail": [
+    "decision",
+    "south",
+    "release"
+   ]
+  },
+  {
+   "code": "TIMELINE",
+   "detail": [
+    "arrived",
+    "south"
+   ]
+  },
+  {
+   "code": "TIMELINE",
+   "detail": [
+    "change",
+    "TR3-3"
+   ]
+  },
+  {
+   "code": "TIMELINE",
+   "detail": [
+    "notify",
+    "manager1",
+    "assert",
+    "diff1"
+   ]
+  },
+  {
+   "code": "TIMELINE",
+   "detail": [
+    "decision",
+    "north",
+    "hold"
+   ]
+  },
+  {
+   "code": "TIMELINE",
+   "detail": [
+    "command",
+    "diff1",
+    "leave"
+   ]
+  },
+  {
+   "code": "TIMELINE",
+   "detail": [
+    "report",
+    "RobotLocatedAt",
+    "diff1",
+    "aisle_e"
+   ]
+  },
+  {
+   "code": "TIMELINE",
+   "detail": [
+    "notify",
+    "manager1",
+    "retract",
+    "diff1"
+   ]
+  },
+  {
+   "code": "TIMELINE",
+   "detail": [
+    "decision",
+    "north",
+    "release"
+   ]
+  },
+  {
+   "code": "TIMELINE",
+   "detail": [
+    "arrived",
+    "north"
+   ]
+  },
+  {
+   "code": "CHANGE_NOTIFICATIONS",
+   "detail": {
+    "TR3-1": {
+     "manager1": [
+      [
+       "retract",
+       "diff1",
+       null
+      ],
+      [
+       "retract",
+       "humanoid1",
+       null
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "code": "CHANGE_VIEW",
+   "detail": {
+    "TR3-1": {
+     "manager1": {}
+    }
+   }
+  },
+  {
+   "code": "CHANGE_NOTIFICATIONS",
+   "detail": {
+    "TR3-2": {
+     "manager1": []
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,227 @@
+#VRML_SIM R2025a utf8
+
+WorldInfo {
+  basicTimeStep 32
+  coordinateSystem "ENU"
+}
+Viewpoint {
+  orientation -0.5773 0.5773 0.5773 2.0944
+  position 0 0 38
+}
+Background {
+  skyColor [0.75 0.8 0.85]
+}
+DirectionalLight {
+  direction -0.2 0.3 -1
+  intensity 2
+}
+Solid {
+  translation 0 0 -0.02
+  name "floor"
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.55 0.55 0.55
+        metalness 0
+        roughness 1
+      }
+      geometry Box {
+        size 30 20 0.02
+      }
+    }
+  ]
+}
+DEF SUPERVISOR Robot {
+  name "supervisor"
+  controller "<extern>"
+  supervisor TRUE
+}
+DEF OBSERVER Robot {
+  name "observer"
+  controller "<extern>"
+  supervisor TRUE
+}
+Solid {
+  translation -1.5 0 0.0
+  name "cell_t_w"
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.95 0.72 0.20
+        metalness 0
+        roughness 1
+      }
+      geometry Box {
+        size 3 3 0.01
+      }
+    }
+  ]
+}
+Solid {
+  translation 1.5 0 0.0
+  name "cell_t_e"
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.95 0.55 0.15
+        metalness 0
+        roughness 1
+      }
+      geometry Box {
+        size 3 3 0.01
+      }
+    }
+  ]
+}
+Solid {
+  translation 9 5.75 0.0
+  name "cell_apron"
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.35 0.55 0.85
+        metalness 0
+        roughness 1
+      }
+      geometry Box {
+        size 12 8.5 0.01
+      }
+    }
+  ]
+}
+Solid {
+  translation 0 5.75 0.0
+  name "cell_hold_n"
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.45 0.75 0.50
+        metalness 0
+        roughness 1
+      }
+      geometry Box {
+        size 6 8.5 0.01
+      }
+    }
+  ]
+}
+Solid {
+  translation 0 -5.75 0.0
+  name "cell_hold_s"
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.45 0.75 0.50
+        metalness 0
+        roughness 1
+      }
+      geometry Box {
+        size 6 8.5 0.01
+      }
+    }
+  ]
+}
+DEF ROBOT_wheel1 Robot {
+  translation -9 -5 0.2
+  name "wheel1"
+  controller "<none>"
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.15 0.35 0.85
+      }
+      geometry Box {
+        size 1.2 0.8 0.4
+      }
+    }
+  ]
+}
+DEF ROBOT_wheeled1 Robot {
+  translation 1.5 6 0.2
+  name "wheeled1"
+  controller "<none>"
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.85 0.20 0.20
+      }
+      geometry Box {
+        size 1.2 0.8 0.4
+      }
+    }
+  ]
+}
+DEF ROBOT_diff1 Robot {
+  translation 7 -5 0.2
+  name "diff1"
+  controller "<none>"
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.20 0.70 0.35
+      }
+      geometry Box {
+        size 1.2 0.8 0.4
+      }
+    }
+  ]
+}
+DEF ROBOT_humanoid1 Robot {
+  translation -12 -5 0.2
+  name "humanoid1"
+  controller "<none>"
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.60 0.25 0.75
+      }
+      geometry Box {
+        size 1.2 0.8 0.4
+      }
+    }
+  ]
+}
+DEF ROBOT_biped1 Robot {
+  translation -6 -5 0.2
+  name "biped1"
+  controller "<none>"
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.95 0.45 0.65
+      }
+      geometry Box {
+        size 1.2 0.8 0.4
+      }
+    }
+  ]
+}
+DEF ROBOT_hybrid1 Robot {
+  translation -12 5 0.2
+  name "hybrid1"
+  controller "<none>"
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.10 0.65 0.70
+      }
+      geometry Box {
+        size 1.2 0.8 0.4
+      }
+    }
+  ]
+}
+DEF CARGO_cargo1 Solid {
+  translation -9 -8 0.1
+  name "cargo1"
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.72 0.55 0.30
+      }
+      geometry Box {
+        size 0.7 0.7 0.3
+      }
+    }
+  ]
+}

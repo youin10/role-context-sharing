@@ -1,0 +1,271 @@
+{
+ "run": "TR5-D-1-boundary",
+ "pass": false,
+ "fails": [
+  {
+   "code": "REPORTS",
+   "detail": {
+    "RobotLocatedAt/biped1": [
+     "bay_sw",
+     "aisle_w",
+     "bay_nw",
+     "hold_n",
+     "apron",
+     "hold_n",
+     "bay_nw"
+    ],
+    "RobotLocatedAt/diff1": [
+     "bay_se",
+     "aisle_e",
+     "apron"
+    ],
+    "RobotLocatedAt/humanoid1": [
+     "bay_sw",
+     "aisle_w",
+     "bay_nw",
+     "hold_n",
+     "apron",
+     "hold_n",
+     "bay_nw"
+    ],
+    "RobotLocatedAt/hybrid1": [
+     "bay_nw"
+    ],
+    "RobotLocatedAt/wheel1": [
+     "bay_sw"
+    ],
+    "RobotLocatedAt/wheeled1": [
+     "hold_n",
+     "apron",
+     "hold_n",
+     "apron"
+    ],
+    "ZoneStatus/apron_zone": [
+     0,
+     1,
+     2,
+     3,
+     2,
+     3,
+     2,
+     1,
+     2
+    ]
+   }
+  },
+  {
+   "code": "NOTIFICATIONS",
+   "detail": {
+    "manager1": [
+     [
+      "assert",
+      "apron_zone",
+      3
+     ],
+     [
+      "retract",
+      "apron_zone",
+      null
+     ],
+     [
+      "assert",
+      "apron_zone",
+      3
+     ],
+     [
+      "retract",
+      "apron_zone",
+      null
+     ],
+     [
+      "assert",
+      "apron_zone",
+      1
+     ],
+     [
+      "retract",
+      "apron_zone",
+      null
+     ]
+    ]
+   }
+  },
+  {
+   "code": "DECISIONS",
+   "detail": [
+    [
+     "enter",
+     "hold",
+     {
+      "apron_zone": 3
+     }
+    ],
+    [
+     "enter",
+     "release",
+     {}
+    ],
+    [
+     "enter2",
+     "hold",
+     {
+      "apron_zone": 1
+     }
+    ],
+    [
+     "enter2",
+     "release",
+     {}
+    ]
+   ]
+  },
+  {
+   "code": "COMMANDS",
+   "detail": [
+    [
+     "diff1",
+     "park"
+    ],
+    [
+     "humanoid1",
+     "park2"
+    ],
+    [
+     "biped1",
+     "park3"
+    ],
+    [
+     "humanoid1",
+     "leave1"
+    ],
+    [
+     "wheeled1",
+     "enter"
+    ],
+    [
+     "biped1",
+     "leave2"
+    ],
+    [
+     "wheeled1",
+     "back"
+    ],
+    [
+     "wheeled1",
+     "enter2"
+    ]
+   ]
+  },
+  {
+   "code": "TIMELINE",
+   "detail": [
+    "notify",
+    "manager1",
+    "update",
+    "apron_zone"
+   ]
+  },
+  {
+   "code": "TIMELINE",
+   "detail": [
+    "decision",
+    "enter",
+    "hold"
+   ]
+  },
+  {
+   "code": "TIMELINE",
+   "detail": [
+    "report",
+    "ZoneStatus",
+    "apron_zone",
+    1
+   ]
+  },
+  {
+   "code": "TIMELINE",
+   "detail": [
+    "notify",
+    "manager1",
+    "retract",
+    "apron_zone"
+   ]
+  },
+  {
+   "code": "TIMELINE",
+   "detail": [
+    "decision",
+    "enter",
+    "release"
+   ]
+  },
+  {
+   "code": "TIMELINE",
+   "detail": [
+    "arrived",
+    "enter"
+   ]
+  },
+  {
+   "code": "TIMELINE",
+   "detail": [
+    "change",
+    "TR5-r1"
+   ]
+  },
+  {
+   "code": "TIMELINE",
+   "detail": [
+    "notify",
+    "manager1",
+    "assert",
+    "apron_zone"
+   ]
+  },
+  {
+   "code": "TIMELINE",
+   "detail": [
+    "decision",
+    "enter2",
+    "hold"
+   ]
+  },
+  {
+   "code": "TIMELINE",
+   "detail": [
+    "change",
+    "TR5-r0"
+   ]
+  },
+  {
+   "code": "TIMELINE",
+   "detail": [
+    "notify",
+    "manager1",
+    "retract",
+    "apron_zone"
+   ]
+  },
+  {
+   "code": "TIMELINE",
+   "detail": [
+    "decision",
+    "enter2",
+    "release"
+   ]
+  },
+  {
+   "code": "TIMELINE",
+   "detail": [
+    "arrived",
+    "enter2"
+   ]
+  },
+  {
+   "code": "FINAL_VIEWS",
+   "detail": {
+    "manager1": {}
+   }
+  }
+ ]
+}

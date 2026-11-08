@@ -1,0 +1,5 @@
+schema: rcs-d-binding/1
+cfg: unknown-role
+agents:
+  manager1: [TransitCoordinator, Dispatcher]
+  wheel1: [Carrier]

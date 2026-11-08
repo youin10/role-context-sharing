@@ -1,0 +1,41 @@
+id: TR6
+purpose: "observed stops on a lane: typed thresholds, condition exit, deletion on resume, detour"
+d: {model: stop, binding: b-stop}
+a: {initial: initial-stop}
+consumers: [manager1, watch1]
+reporters: [location, stop]
+limit_sim_s: 120
+steps:
+- {id: m1, move: {task: lane, robot: humanoid1, path: [[-12, 0], [9, 0]]}}
+- {id: w1, wait: {cell: [humanoid1, t_e]}}
+- {id: x1, cancel: humanoid1}
+- {id: w2, wait: {stopped: [humanoid1, 4]}}
+- {id: r1, request: {task: cross, robot: wheeled1, path: [[1.5, -6]], alt: [[-1.5, 6], [-1.5, -6], [1.5, -6]], blocks: [RobotStopped], policy: detour}}
+- {id: s1, shot: detour}
+- {id: w3, wait: {stopped: [humanoid1, 5]}}
+- {id: k1, checkpoint: exit-keeps-fact}
+- {id: w4, wait: {stopped: [humanoid1, 6]}}
+- {id: m2, move: {task: lane2, robot: humanoid1, path: [[9, 0]]}}
+- {id: w5, wait: {arrived: cross}}
+- {id: w6, wait: {arrived: lane2}}
+- {id: r2, request: {task: north, robot: wheeled1, path: [[1.5, 6]], alt: [[-1.5, -6], [-1.5, 6], [1.5, 6]], blocks: [RobotStopped], policy: detour}}
+- {id: w7, wait: {arrived: north}}
+- {id: m3, move: {task: d1, robot: diff1, path: [[7, 0], [-9, 0]]}}
+- {id: w8, wait: {cell: [diff1, aisle_e]}}
+- {id: x2, cancel: diff1}
+- {id: w9, wait: {stopped: [diff1, 4]}}
+- {id: m4, move: {task: d2, robot: diff1, path: [[-9, 0]]}}
+- {id: k2, checkpoint: before-delete}
+- {id: w10, wait: {arrived: d2}}
+- {id: m5, move: {task: h1, robot: hybrid1, path: [[-12, 0], [-6, 0]]}}
+- {id: w11, wait: {cell: [hybrid1, aisle_w]}}
+- {id: x3, cancel: hybrid1}
+- {id: w12, wait: {stopped: [hybrid1, 6]}}
+- {id: m6, move: {task: h2, robot: hybrid1, path: [[-6, 0]]}}
+- {id: w13, wait: {arrived: h2}}
+- {id: m7, move: {task: w1, robot: wheel1, path: [[-7.5, 0], [-3.5, 0]]}}
+- {id: w14, wait: {cell: [wheel1, aisle_w]}}
+- {id: x4, cancel: wheel1}
+- {id: w15, wait: {stopped: [wheel1, 6]}}
+- {id: m8, move: {task: w2, robot: wheel1, path: [[-3.5, 0]]}}
+- {id: w16, wait: {arrived: w2}}

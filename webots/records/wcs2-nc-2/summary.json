@@ -1,0 +1,475 @@
+{
+ "label": "wcs2-nc-2",
+ "negative": true,
+ "runs": 22,
+ "passed": 0,
+ "unchanged_inputs": true,
+ "before": {
+  "core_snapshot_ok": true,
+  "hashes": {
+   "config": "4eb563d46dd23747b94d85795835918fea96f5a34d54bde17d55ed7d08238c6a",
+   "sim": "8282624a90a1f1b01fc448856304dedecdba6a5fe3648d43846ff4c1524c0da9",
+   "wcs": "8f1366c9e2d4421def2ebdbe3f17c955a08bfb34ff49346e264445913db6fc9a",
+   "tools": "dea1af42839f4d458a87336e7448fbc75f0d06f7cf9e8d3e6cfdcea6a36ee2ae"
+  },
+  "utc": "2026-11-06T09:16:11Z"
+ },
+ "after": {
+  "core_snapshot_ok": true,
+  "hashes": {
+   "config": "4eb563d46dd23747b94d85795835918fea96f5a34d54bde17d55ed7d08238c6a",
+   "sim": "8282624a90a1f1b01fc448856304dedecdba6a5fe3648d43846ff4c1524c0da9",
+   "wcs": "8f1366c9e2d4421def2ebdbe3f17c955a08bfb34ff49346e264445913db6fc9a",
+   "tools": "dea1af42839f4d458a87336e7448fbc75f0d06f7cf9e8d3e6cfdcea6a36ee2ae"
+  },
+  "utc": "2026-11-06T09:24:09Z"
+ },
+ "rows": [
+  {
+   "run": "N2-A-1-no-validation",
+   "scenario": "N2",
+   "arm": "A",
+   "rep": 1,
+   "fault": "no-validation",
+   "pass": false,
+   "fail_codes": [
+    "ARRIVAL",
+    "COMMANDS",
+    "DECISIONS",
+    "FINAL_STORE",
+    "FINAL_VIEWS",
+    "HELD",
+    "NOTIFICATIONS",
+    "REJECTED",
+    "REPORTS",
+    "RESPONSE",
+    "STATUS",
+    "TIMELINE"
+   ],
+   "rc": 0,
+   "stdout": "N2-A-1-no-validation sim-timeout",
+   "stderr": ""
+  },
+  {
+   "run": "N2-D-1-no-validation",
+   "scenario": "N2",
+   "arm": "D",
+   "rep": 1,
+   "fault": "no-validation",
+   "pass": false,
+   "fail_codes": [
+    "ARRIVAL",
+    "COMMANDS",
+    "DECISIONS",
+    "FINAL_STORE",
+    "FINAL_VIEWS",
+    "HELD",
+    "NOTIFICATIONS",
+    "OUTSIDE_REPORT_CFG",
+    "REJECTED",
+    "REPORTS",
+    "RESPONSE",
+    "STATUS",
+    "TIMELINE"
+   ],
+   "rc": 0,
+   "stdout": "N2-D-1-no-validation sim-timeout",
+   "stderr": ""
+  },
+  {
+   "run": "TR1-A-1-drop-retract",
+   "scenario": "TR1",
+   "arm": "A",
+   "rep": 1,
+   "fault": "drop-retract",
+   "pass": false,
+   "fail_codes": [
+    "ARRIVAL",
+    "COMMANDS",
+    "DECISIONS",
+    "FINAL_STORE",
+    "FINAL_VIEWS",
+    "HELD",
+    "NOTIFICATIONS",
+    "REPORTS",
+    "RESPONSE",
+    "STATUS",
+    "TIMELINE"
+   ],
+   "rc": 0,
+   "stdout": "TR1-A-1-drop-retract sim-timeout",
+   "stderr": ""
+  },
+  {
+   "run": "TR1-D-1-drop-retract",
+   "scenario": "TR1",
+   "arm": "D",
+   "rep": 1,
+   "fault": "drop-retract",
+   "pass": false,
+   "fail_codes": [
+    "ARRIVAL",
+    "COMMANDS",
+    "DECISIONS",
+    "FINAL_STORE",
+    "FINAL_VIEWS",
+    "HELD",
+    "NOTIFICATIONS",
+    "REPORTS",
+    "RESPONSE",
+    "STATUS",
+    "TIMELINE"
+   ],
+   "rc": 0,
+   "stdout": "TR1-D-1-drop-retract sim-timeout",
+   "stderr": ""
+  },
+  {
+   "run": "TR1-H-1-drop-retract",
+   "scenario": "TR1",
+   "arm": "H",
+   "rep": 1,
+   "fault": "drop-retract",
+   "pass": false,
+   "fail_codes": [
+    "ARRIVAL",
+    "COMMANDS",
+    "DECISIONS",
+    "FINAL_STORE",
+    "FINAL_VIEWS",
+    "HELD",
+    "NOTIFICATIONS",
+    "REPORTS",
+    "RESPONSE",
+    "STATUS",
+    "TIMELINE"
+   ],
+   "rc": 0,
+   "stdout": "TR1-H-1-drop-retract sim-timeout",
+   "stderr": ""
+  },
+  {
+   "run": "TR2-A-1-stale-config",
+   "scenario": "TR2",
+   "arm": "A",
+   "rep": 1,
+   "fault": "stale-config",
+   "pass": false,
+   "fail_codes": [
+    "CHANGE_NOT_APPLIED",
+    "DECISIONS",
+    "HELD",
+    "NOTIFICATIONS",
+    "TIMELINE"
+   ],
+   "rc": 0,
+   "stdout": "TR2-A-1-stale-config ok",
+   "stderr": ""
+  },
+  {
+   "run": "TR2-D-1-stale-config",
+   "scenario": "TR2",
+   "arm": "D",
+   "rep": 1,
+   "fault": "stale-config",
+   "pass": false,
+   "fail_codes": [
+    "CHANGE_NOT_APPLIED",
+    "DECISIONS",
+    "HELD",
+    "NOTIFICATIONS",
+    "TIMELINE"
+   ],
+   "rc": 0,
+   "stdout": "TR2-D-1-stale-config ok",
+   "stderr": ""
+  },
+  {
+   "run": "TR2-H-1-stale-config",
+   "scenario": "TR2",
+   "arm": "H",
+   "rep": 1,
+   "fault": "stale-config",
+   "pass": false,
+   "fail_codes": [
+    "CHANGE_NOT_APPLIED",
+    "DECISIONS",
+    "HELD",
+    "NOTIFICATIONS",
+    "TIMELINE"
+   ],
+   "rc": 0,
+   "stdout": "TR2-H-1-stale-config ok",
+   "stderr": ""
+  },
+  {
+   "run": "TR3-A-1-stale-config",
+   "scenario": "TR3",
+   "arm": "A",
+   "rep": 1,
+   "fault": "stale-config",
+   "pass": false,
+   "fail_codes": [
+    "ARRIVAL",
+    "CHANGE_NOT_APPLIED",
+    "COMMANDS",
+    "DECISIONS",
+    "FINAL_STORE",
+    "FINAL_VIEWS",
+    "HELD",
+    "NOTIFICATIONS",
+    "REPORTS",
+    "RESPONSE",
+    "STATUS",
+    "TIMELINE"
+   ],
+   "rc": 0,
+   "stdout": "TR3-A-1-stale-config sim-timeout",
+   "stderr": ""
+  },
+  {
+   "run": "TR3-D-1-per-role-retract",
+   "scenario": "TR3",
+   "arm": "D",
+   "rep": 1,
+   "fault": "per-role-retract",
+   "pass": false,
+   "fail_codes": [
+    "CHANGE_NOTIFICATIONS",
+    "CHANGE_VIEW",
+    "DECISIONS",
+    "HELD_SHORT",
+    "NOTIFICATIONS",
+    "TIMELINE"
+   ],
+   "rc": 0,
+   "stdout": "TR3-D-1-per-role-retract ok",
+   "stderr": ""
+  },
+  {
+   "run": "TR3-D-1-stale-config",
+   "scenario": "TR3",
+   "arm": "D",
+   "rep": 1,
+   "fault": "stale-config",
+   "pass": false,
+   "fail_codes": [
+    "ARRIVAL",
+    "CHANGE_NOT_APPLIED",
+    "COMMANDS",
+    "DECISIONS",
+    "FINAL_STORE",
+    "FINAL_VIEWS",
+    "HELD",
+    "NOTIFICATIONS",
+    "REPORTS",
+    "RESPONSE",
+    "STATUS",
+    "TIMELINE"
+   ],
+   "rc": 0,
+   "stdout": "TR3-D-1-stale-config sim-timeout",
+   "stderr": ""
+  },
+  {
+   "run": "TR3-H-1-stale-config",
+   "scenario": "TR3",
+   "arm": "H",
+   "rep": 1,
+   "fault": "stale-config",
+   "pass": false,
+   "fail_codes": [
+    "ARRIVAL",
+    "CHANGE_NOT_APPLIED",
+    "COMMANDS",
+    "DECISIONS",
+    "FINAL_STORE",
+    "FINAL_VIEWS",
+    "HELD",
+    "NOTIFICATIONS",
+    "REPORTS",
+    "RESPONSE",
+    "STATUS",
+    "TIMELINE"
+   ],
+   "rc": 0,
+   "stdout": "TR3-H-1-stale-config sim-timeout",
+   "stderr": ""
+  },
+  {
+   "run": "TR4-A-1-stale-config",
+   "scenario": "TR4",
+   "arm": "A",
+   "rep": 1,
+   "fault": "stale-config",
+   "pass": false,
+   "fail_codes": [
+    "CHANGE_NOT_APPLIED",
+    "NOTIFICATIONS",
+    "OWNERS",
+    "TIMELINE"
+   ],
+   "rc": 0,
+   "stdout": "TR4-A-1-stale-config ok",
+   "stderr": ""
+  },
+  {
+   "run": "TR4-D-1-stale-config",
+   "scenario": "TR4",
+   "arm": "D",
+   "rep": 1,
+   "fault": "stale-config",
+   "pass": false,
+   "fail_codes": [
+    "CHANGE_NOT_APPLIED",
+    "NOTIFICATIONS",
+    "OWNERS",
+    "TIMELINE"
+   ],
+   "rc": 0,
+   "stdout": "TR4-D-1-stale-config ok",
+   "stderr": ""
+  },
+  {
+   "run": "TR4-H-1-stale-config",
+   "scenario": "TR4",
+   "arm": "H",
+   "rep": 1,
+   "fault": "stale-config",
+   "pass": false,
+   "fail_codes": [
+    "CHANGE_NOT_APPLIED",
+    "NOTIFICATIONS",
+    "OWNERS",
+    "TIMELINE"
+   ],
+   "rc": 0,
+   "stdout": "TR4-H-1-stale-config ok",
+   "stderr": ""
+  },
+  {
+   "run": "TR5-A-1-boundary",
+   "scenario": "TR5",
+   "arm": "A",
+   "rep": 1,
+   "fault": "boundary",
+   "pass": false,
+   "fail_codes": [
+    "COMMANDS",
+    "DECISIONS",
+    "FINAL_VIEWS",
+    "NOTIFICATIONS",
+    "REPORTS",
+    "TIMELINE"
+   ],
+   "rc": 0,
+   "stdout": "TR5-A-1-boundary ok",
+   "stderr": ""
+  },
+  {
+   "run": "TR5-A-1-stale-config",
+   "scenario": "TR5",
+   "arm": "A",
+   "rep": 1,
+   "fault": "stale-config",
+   "pass": false,
+   "fail_codes": [
+    "CHANGE_NOT_APPLIED",
+    "DECISIONS",
+    "HELD",
+    "NOTIFICATIONS",
+    "TIMELINE"
+   ],
+   "rc": 0,
+   "stdout": "TR5-A-1-stale-config ok",
+   "stderr": ""
+  },
+  {
+   "run": "TR5-D-1-boundary",
+   "scenario": "TR5",
+   "arm": "D",
+   "rep": 1,
+   "fault": "boundary",
+   "pass": false,
+   "fail_codes": [
+    "COMMANDS",
+    "DECISIONS",
+    "FINAL_VIEWS",
+    "NOTIFICATIONS",
+    "REPORTS",
+    "TIMELINE"
+   ],
+   "rc": 0,
+   "stdout": "TR5-D-1-boundary ok",
+   "stderr": ""
+  },
+  {
+   "run": "TR5-D-1-stale-config",
+   "scenario": "TR5",
+   "arm": "D",
+   "rep": 1,
+   "fault": "stale-config",
+   "pass": false,
+   "fail_codes": [
+    "CHANGE_NOT_APPLIED",
+    "DECISIONS",
+    "HELD",
+    "NOTIFICATIONS",
+    "TIMELINE"
+   ],
+   "rc": 0,
+   "stdout": "TR5-D-1-stale-config ok",
+   "stderr": ""
+  },
+  {
+   "run": "TR5-H-1-stale-config",
+   "scenario": "TR5",
+   "arm": "H",
+   "rep": 1,
+   "fault": "stale-config",
+   "pass": false,
+   "fail_codes": [
+    "CHANGE_NOT_APPLIED",
+    "DECISIONS",
+    "HELD",
+    "NOTIFICATIONS",
+    "TIMELINE"
+   ],
+   "rc": 0,
+   "stdout": "TR5-H-1-stale-config ok",
+   "stderr": ""
+  },
+  {
+   "run": "TR6-D-1-dup-branch",
+   "scenario": "TR6",
+   "arm": "D",
+   "rep": 1,
+   "fault": "dup-branch",
+   "pass": false,
+   "fail_codes": [
+    "NOTIFICATIONS"
+   ],
+   "rc": 0,
+   "stdout": "TR6-D-1-dup-branch ok",
+   "stderr": ""
+  },
+  {
+   "run": "TR6-D-1-non-transitive",
+   "scenario": "TR6",
+   "arm": "D",
+   "rep": 1,
+   "fault": "non-transitive",
+   "pass": false,
+   "fail_codes": [
+    "CHECKPOINT_VIEW",
+    "DECISIONS",
+    "NOTIFICATIONS",
+    "REPORTS",
+    "TIMELINE"
+   ],
+   "rc": 0,
+   "stdout": "TR6-D-1-non-transitive ok",
+   "stderr": ""
+  }
+ ]
+}

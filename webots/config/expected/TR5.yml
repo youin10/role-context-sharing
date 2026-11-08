@@ -1,0 +1,69 @@
+scenario: TR5
+reports:
+  RobotLocatedAt/wheel1: [bay_sw]
+  RobotLocatedAt/wheeled1: [hold_n, apron, hold_n, apron]
+  RobotLocatedAt/diff1: [bay_se, aisle_e, apron]
+  RobotLocatedAt/humanoid1: [bay_sw, aisle_w, bay_nw, hold_n, apron, hold_n, bay_nw]
+  RobotLocatedAt/biped1: [bay_sw, aisle_w, bay_nw, hold_n, apron, hold_n, bay_nw]
+  RobotLocatedAt/hybrid1: [bay_nw]
+  ZoneStatus/apron_zone: [0, 1, 2, 3, 2, 1, 2, 1, 2]
+notifications:
+  manager1:
+  - [assert, apron_zone, 2]
+  - [update, apron_zone, 3]
+  - [update, apron_zone, 2]
+  - [retract, apron_zone, null]
+  - [assert, apron_zone, 2]
+  - [retract, apron_zone, null]
+  - [assert, apron_zone, 1]
+  - [retract, apron_zone, null]
+  - [assert, apron_zone, 2]
+decisions:
+- [enter, hold, {apron_zone: 3}]
+- [enter, hold, {apron_zone: 2}]
+- [enter, release, {}]
+- [enter2, hold, {apron_zone: 1}]
+- [enter2, release, {}]
+commands: [[diff1, park], [humanoid1, park2], [biped1, park3], [humanoid1, leave1], [biped1, leave2], [wheeled1, enter], [wheeled1, back], [wheeled1, enter2]]
+arrivals:
+  park: [diff1, 7, 5]
+  park2: [humanoid1, 10, 4]
+  park3: [biped1, 12, 4]
+  leave1: [humanoid1, -12, 4]
+  leave2: [biped1, -6, 4]
+  enter: [wheeled1, 5, 6]
+  back: [wheeled1, 1.5, 6]
+  enter2: [wheeled1, 5, 6]
+held:
+- {robot: wheeled1, task: enter, min_sim_s: 3.0}
+- {robot: wheeled1, task: enter2, min_sim_s: 2.0}
+timeline:
+- [report, ZoneStatus, apron_zone, 1]
+- [report, ZoneStatus, apron_zone, 2]
+- [notify, manager1, assert, apron_zone]
+- [report, ZoneStatus, apron_zone, 3]
+- [notify, manager1, update, apron_zone]
+- [decision, enter, hold]
+- [report, ZoneStatus, apron_zone, 1]
+- [notify, manager1, retract, apron_zone]
+- [decision, enter, release]
+- [arrived, enter]
+- [change, TR5-r1]
+- [notify, manager1, assert, apron_zone]
+- [decision, enter2, hold]
+- [change, TR5-r0]
+- [notify, manager1, retract, apron_zone]
+- [decision, enter2, release]
+- [arrived, enter2]
+changes:
+- {id: TR5-r1, notifications: {manager1: [[assert, apron_zone, 1]]}, views: {manager1: {ZoneStatus/apron_zone: {access: open, congestion: 1}}}, no_reports_since_quiet: [diff1, wheeled1]}
+- {id: TR5-r0, notifications: {manager1: [[retract, apron_zone, null]]}, views: {manager1: {}}, no_reports_since_quiet: [diff1, wheeled1]}
+final_store:
+  RobotLocatedAt/wheel1: {node: bay_sw}
+  RobotLocatedAt/wheeled1: {node: apron}
+  RobotLocatedAt/diff1: {node: apron}
+  RobotLocatedAt/humanoid1: {node: bay_nw}
+  RobotLocatedAt/biped1: {node: bay_nw}
+  RobotLocatedAt/hybrid1: {node: bay_nw}
+  ZoneStatus/apron_zone: {access: open, congestion: 2}
+final_views: {manager1: {ZoneStatus/apron_zone: {access: open, congestion: 2}}}

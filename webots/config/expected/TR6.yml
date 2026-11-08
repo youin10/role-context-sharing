@@ -1,0 +1,96 @@
+scenario: TR6
+reports:
+  RobotLocatedAt/wheel1: [bay_sw, aisle_w]
+  RobotLocatedAt/wheeled1: [hold_n, t_w, hold_s, t_e, hold_n]
+  RobotLocatedAt/diff1: [bay_se, aisle_e, t_e, t_w, aisle_w]
+  RobotLocatedAt/humanoid1: [bay_sw, aisle_w, t_w, t_e, aisle_e]
+  RobotLocatedAt/biped1: [bay_sw]
+  RobotLocatedAt/hybrid1: [bay_nw, aisle_w]
+  RobotStopped/humanoid1: [1, 2, 3, 4, 5, 6, DELETE]
+  RobotStopped/diff1: [1, 2, 3, 4, DELETE]
+  RobotStopped/hybrid1: [1, 2, 3, 4, 5, 6, DELETE]
+  RobotStopped/wheel1: [1, 2, 3, 4, 5, 6, DELETE]
+notifications:
+  manager1:
+  - [assert, humanoid1, 3]
+  - [update, humanoid1, 4]
+  - [update, humanoid1, 5]
+  - [update, humanoid1, 6]
+  - [retract, humanoid1, null]
+  - [assert, hybrid1, 3]
+  - [update, hybrid1, 4]
+  - [update, hybrid1, 5]
+  - [update, hybrid1, 6]
+  - [retract, hybrid1, null]
+  - [assert, wheel1, 5]
+  - [update, wheel1, 6]
+  - [retract, wheel1, null]
+  watch1:
+  - [assert, humanoid1, 2]
+  - [update, humanoid1, 3]
+  - [update, humanoid1, 4]
+  - [retract, humanoid1, null]
+  - [assert, diff1, 2]
+  - [update, diff1, 3]
+  - [update, diff1, 4]
+  - [retract, diff1, null]
+  - [assert, hybrid1, 2]
+  - [update, hybrid1, 3]
+  - [update, hybrid1, 4]
+  - [retract, hybrid1, null]
+  - [assert, wheel1, 2]
+  - [update, wheel1, 3]
+  - [update, wheel1, 4]
+  - [retract, wheel1, null]
+decisions:
+- [cross, detour, {humanoid1: 4}]
+- [north, release, {}]
+commands: [[humanoid1, lane], [wheeled1, cross], [humanoid1, lane2], [wheeled1, north], [diff1, d1], [diff1, d2], [hybrid1, h1], [hybrid1, h2], [wheel1, w1], [wheel1, w2]]
+arrivals:
+  cross: [wheeled1, 1.5, -6]
+  lane2: [humanoid1, 9, 0]
+  north: [wheeled1, 1.5, 6]
+  d2: [diff1, -9, 0]
+  h2: [hybrid1, -6, 0]
+  w2: [wheel1, -3.5, 0]
+held: []
+checkpoints:
+  exit-keeps-fact:
+    store: {RobotStopped/humanoid1: {elapsedSeconds: 5}}
+    views: {watch1: {}, manager1: {RobotStopped/humanoid1: {elapsedSeconds: 5}}}
+  before-delete:
+    store: {RobotStopped/diff1: {elapsedSeconds: 4}}
+    views: {watch1: {RobotStopped/diff1: {elapsedSeconds: 4}}, manager1: {}}
+absent_at_end: [RobotStopped/humanoid1, RobotStopped/diff1, RobotStopped/hybrid1, RobotStopped/wheel1]
+timeline:
+- [report, RobotStopped, humanoid1, 2]
+- [notify, watch1, assert, humanoid1]
+- [report, RobotStopped, humanoid1, 3]
+- [notify, manager1, assert, humanoid1]
+- [decision, cross, detour]
+- [report, RobotStopped, humanoid1, 5]
+- [notify, watch1, retract, humanoid1]
+- [report, RobotStopped, humanoid1, DELETE]
+- [notify, manager1, retract, humanoid1]
+- [report, RobotLocatedAt, wheeled1, t_w]
+- [decision, north, release]
+- [report, RobotLocatedAt, wheeled1, t_e]
+- [report, RobotStopped, diff1, DELETE]
+- [notify, watch1, retract, diff1]
+- [report, RobotStopped, hybrid1, DELETE]
+- [notify, manager1, retract, hybrid1]
+- [report, RobotStopped, wheel1, 4]
+- [report, RobotStopped, wheel1, 5]
+- [notify, manager1, assert, wheel1]
+- [notify, watch1, retract, wheel1]
+- [report, RobotStopped, wheel1, DELETE]
+- [notify, manager1, retract, wheel1]
+changes: []
+final_store:
+  RobotLocatedAt/wheel1: {node: aisle_w}
+  RobotLocatedAt/wheeled1: {node: hold_n}
+  RobotLocatedAt/diff1: {node: aisle_w}
+  RobotLocatedAt/humanoid1: {node: aisle_e}
+  RobotLocatedAt/biped1: {node: bay_sw}
+  RobotLocatedAt/hybrid1: {node: aisle_w}
+final_views: {manager1: {}, watch1: {}}

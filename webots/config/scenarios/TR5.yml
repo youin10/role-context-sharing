@@ -1,0 +1,33 @@
+id: TR5
+purpose: "apron entry limited by observed congestion, threshold boundary and revision"
+d: {model: congestion-r0, binding: b-congestion}
+a: {initial: initial-congestion}
+consumers: [manager1]
+reporters: [location, zone]
+limit_sim_s: 90
+steps:
+- {id: m1, move: {task: park, robot: diff1, path: [[7, 0], [7, 5]]}}
+- {id: w1, wait: {arrived: park}}
+- {id: m2, move: {task: park2, robot: humanoid1, path: [[-12, 4], [10, 4]]}}
+- {id: w2, wait: {arrived: park2}}
+- {id: m3, move: {task: park3, robot: biped1, path: [[-6, 4], [12, 4]]}}
+- {id: w3, wait: {arrived: park3}}
+- {id: r1, request: {task: enter, robot: wheeled1, path: [[5, 6]], blocks: [ZoneStatus]}}
+- {id: w4, wait: {dwell: 2.0}}
+- {id: s1, shot: hold}
+- {id: m4, move: {task: leave1, robot: humanoid1, path: [[-12, 4]]}}
+- {id: w5, wait: {cell: [humanoid1, hold_n]}}
+- {id: m5, move: {task: leave2, robot: biped1, path: [[-6, 4]]}}
+- {id: w6, wait: {arrived: enter}}
+- {id: s2, shot: released}
+- {id: w7, wait: {arrived: leave1}}
+- {id: w8, wait: {arrived: leave2}}
+- {id: m6, move: {task: back, robot: wheeled1, path: [[1.5, 6]]}}
+- {id: w9, wait: {arrived: back}}
+- {id: q1, wait: {quiet: [[diff1, wheeled1], 1.0]}}
+- {id: c1, change: {id: TR5-r1, d: {model: congestion-r1, binding: b-congestion}, a: TR5-r1}}
+- {id: r2, request: {task: enter2, robot: wheeled1, path: [[5, 6]], blocks: [ZoneStatus]}}
+- {id: w10, wait: {dwell: 2.0}}
+- {id: q2, wait: {quiet: [[diff1, wheeled1], 1.0]}}
+- {id: c2, change: {id: TR5-r0, d: {model: congestion-r0, binding: b-congestion}, a: TR5-r0}}
+- {id: w11, wait: {arrived: enter2}}

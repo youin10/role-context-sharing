@@ -1,0 +1,38 @@
+prefix logistics: <http://ai.uos.ac.kr/logistics-ontology#>;
+
+role DockCoordinator {
+  reads {
+    logistics:CargoCarriedBy($cargo, $robot);
+  }
+}
+
+role CarryAuditor {
+  reads {
+    logistics:CargoCarriedBy($cargo, $robot) {
+      $robot == logistics:Biped;
+    }
+  }
+}
+
+role BipedTech {
+  reads {
+    logistics:RobotLocatedAt($robot, $node) {
+      $robot == "biped1";
+    }
+  }
+}
+
+role NonBipedWatch {
+  reads {
+    logistics:RobotLocatedAt($robot, $node) {
+      $robot != logistics:Biped && $node == "hold_s";
+    }
+  }
+}
+
+role Carrier {
+  changes {
+    logistics:RobotLocatedAt($robot, $node);
+    logistics:CargoCarriedBy($cargo, $robot);
+  }
+}

@@ -1,0 +1,4 @@
+schema: rcs-d-binding/1
+cfg: no-carrier
+agents:
+  manager1: [TransitCoordinator]

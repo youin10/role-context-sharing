@@ -1,0 +1,30 @@
+id: TR4
+purpose: "coordination reassigned between consumers, including an empty role list"
+d: {model: transit-r0, binding: b-tr4-0}
+a: {initial: initial-tr4}
+consumers: [manager1, manager2]
+reporters: [location]
+limit_sim_s: 90
+steps:
+- {id: m1, move: {task: park, robot: wheel1, path: [[-9, 0], [-1.5, 0]]}}
+- {id: w1, wait: {arrived: park}}
+- {id: r1, request: {task: south, robot: wheeled1, path: [[1.5, -6]]}}
+- {id: w2, wait: {dwell: 2.0}}
+- {id: q1, wait: {quiet: [[wheel1], 1.0]}}
+- {id: c1, change: {id: TR4-1, owner: manager2, d: {model: transit-r0, binding: b-tr4-1}, a: TR4-1}}
+- {id: w3, wait: {dwell: 2.0}}
+- {id: s1, shot: hold}
+- {id: m2, move: {task: clear, robot: wheel1, path: [[9, 0]]}}
+- {id: w4, wait: {arrived: south}}
+- {id: w5, wait: {arrived: clear}}
+- {id: m3, move: {task: return, robot: wheel1, path: [[-1.5, 0]]}}
+- {id: w6, wait: {arrived: return}}
+- {id: q2, wait: {quiet: [[wheel1], 1.0]}}
+- {id: c2, change: {id: TR4-2, owner: manager1, d: {model: transit-r0, binding: b-tr4-0}, a: TR4-2}}
+- {id: r2, request: {task: north, robot: wheeled1, path: [[1.5, 6]]}}
+- {id: w7, wait: {dwell: 2.0}}
+- {id: m4, move: {task: west, robot: wheel1, path: [[-9, 0]]}}
+- {id: w8, wait: {cell: [wheeled1, t_e]}}
+- {id: s2, shot: released}
+- {id: w9, wait: {arrived: north}}
+- {id: w10, wait: {arrived: west}}

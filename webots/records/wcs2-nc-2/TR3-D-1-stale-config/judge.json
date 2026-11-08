@@ -1,0 +1,267 @@
+{
+ "run": "TR3-D-1-stale-config",
+ "pass": false,
+ "fails": [
+  {
+   "code": "STATUS",
+   "detail": "sim-timeout"
+  },
+  {
+   "code": "REPORTS",
+   "detail": {
+    "RobotLocatedAt/biped1": [
+     "bay_sw"
+    ],
+    "RobotLocatedAt/diff1": [
+     "bay_se",
+     "aisle_e",
+     "apron"
+    ],
+    "RobotLocatedAt/humanoid1": [
+     "bay_sw",
+     "aisle_w",
+     "bay_nw",
+     "hold_n",
+     "apron"
+    ],
+    "RobotLocatedAt/hybrid1": [
+     "bay_nw"
+    ],
+    "RobotLocatedAt/wheel1": [
+     "bay_sw"
+    ],
+    "RobotLocatedAt/wheeled1": [
+     "hold_n"
+    ]
+   }
+  },
+  {
+   "code": "NOTIFICATIONS",
+   "detail": {
+    "manager1": [
+     [
+      "assert",
+      "diff1",
+      "apron"
+     ],
+     [
+      "assert",
+      "humanoid1",
+      "apron"
+     ]
+    ]
+   }
+  },
+  {
+   "code": "DECISIONS",
+   "detail": [
+    [
+     "south",
+     "hold",
+     {
+      "diff1": "apron",
+      "humanoid1": "apron"
+     }
+    ]
+   ]
+  },
+  {
+   "code": "COMMANDS",
+   "detail": [
+    [
+     "diff1",
+     "park"
+    ],
+    [
+     "humanoid1",
+     "park2"
+    ]
+   ]
+  },
+  {
+   "code": "RESPONSE",
+   "detail": "south"
+  },
+  {
+   "code": "ARRIVAL",
+   "detail": "south"
+  },
+  {
+   "code": "RESPONSE",
+   "detail": "leave"
+  },
+  {
+   "code": "ARRIVAL",
+   "detail": "leave"
+  },
+  {
+   "code": "RESPONSE",
+   "detail": "north"
+  },
+  {
+   "code": "ARRIVAL",
+   "detail": "north"
+  },
+  {
+   "code": "HELD",
+   "detail": "south: missing hold or release"
+  },
+  {
+   "code": "HELD",
+   "detail": "north: missing hold or release"
+  },
+  {
+   "code": "TIMELINE",
+   "detail": [
+    "notify",
+    "manager1",
+    "retract",
+    "humanoid1"
+   ]
+  },
+  {
+   "code": "TIMELINE",
+   "detail": [
+    "change",
+    "TR3-2"
+   ]
+  },
+  {
+   "code": "TIMELINE",
+   "detail": [
+    "notify",
+    "manager1",
+    "retract",
+    "diff1"
+   ]
+  },
+  {
+   "code": "TIMELINE",
+   "detail": [
+    "decision",
+    "south",
+    "release"
+   ]
+  },
+  {
+   "code": "TIMELINE",
+   "detail": [
+    "arrived",
+    "south"
+   ]
+  },
+  {
+   "code": "TIMELINE",
+   "detail": [
+    "change",
+    "TR3-3"
+   ]
+  },
+  {
+   "code": "TIMELINE",
+   "detail": [
+    "notify",
+    "manager1",
+    "assert",
+    "diff1"
+   ]
+  },
+  {
+   "code": "TIMELINE",
+   "detail": [
+    "decision",
+    "north",
+    "hold"
+   ]
+  },
+  {
+   "code": "TIMELINE",
+   "detail": [
+    "command",
+    "diff1",
+    "leave"
+   ]
+  },
+  {
+   "code": "TIMELINE",
+   "detail": [
+    "report",
+    "RobotLocatedAt",
+    "diff1",
+    "aisle_e"
+   ]
+  },
+  {
+   "code": "TIMELINE",
+   "detail": [
+    "notify",
+    "manager1",
+    "retract",
+    "diff1"
+   ]
+  },
+  {
+   "code": "TIMELINE",
+   "detail": [
+    "decision",
+    "north",
+    "release"
+   ]
+  },
+  {
+   "code": "TIMELINE",
+   "detail": [
+    "arrived",
+    "north"
+   ]
+  },
+  {
+   "code": "CHANGE_NOT_APPLIED",
+   "detail": "TR3-1"
+  },
+  {
+   "code": "CHANGE_NOT_APPLIED",
+   "detail": "TR3-2"
+  },
+  {
+   "code": "CHANGE_NOT_APPLIED",
+   "detail": "TR3-3"
+  },
+  {
+   "code": "FINAL_STORE",
+   "detail": {
+    "RobotLocatedAt/biped1": {
+     "node": "bay_sw"
+    },
+    "RobotLocatedAt/diff1": {
+     "node": "apron"
+    },
+    "RobotLocatedAt/humanoid1": {
+     "node": "apron"
+    },
+    "RobotLocatedAt/hybrid1": {
+     "node": "bay_nw"
+    },
+    "RobotLocatedAt/wheel1": {
+     "node": "bay_sw"
+    },
+    "RobotLocatedAt/wheeled1": {
+     "node": "hold_n"
+    }
+   }
+  },
+  {
+   "code": "FINAL_VIEWS",
+   "detail": {
+    "manager1": {
+     "RobotLocatedAt/diff1": {
+      "node": "apron"
+     },
+     "RobotLocatedAt/humanoid1": {
+      "node": "apron"
+     }
+    }
+   }
+  }
+ ]
+}

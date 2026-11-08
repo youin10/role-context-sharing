@@ -1,0 +1,73 @@
+name: ${WCS_PROJECT:?}
+
+x-controller: &controller
+  image: ${WCS_IMAGE:-wcs-webots:R2025a}
+  platform: linux/amd64
+  depends_on:
+    sim: {condition: service_healthy}
+    mqtt: {condition: service_healthy}
+  restart: "no"
+
+services:
+  mqtt:
+    image: eclipse-mosquitto:2
+    ports:
+      - "127.0.0.1:${WCS_MQTT_PORT:?}:1883"
+    volumes:
+      - ./mosquitto.conf:/mosquitto/config/mosquitto.conf:ro
+    healthcheck:
+      test: ["CMD-SHELL", "mosquitto_pub -h localhost -p 1883 -t test -m ok || exit 1"]
+      interval: 2s
+      timeout: 3s
+      retries: 10
+
+  sim:
+    image: ${WCS_IMAGE:-wcs-webots:R2025a}
+    platform: linux/amd64
+    entrypoint: ["/bin/bash", "-c"]
+    command:
+      - |
+        rm -f /tmp/.X99-lock
+        Xvfb :99 -screen 0 1280x900x24 +extension GLX +render -noreset &
+        sleep 2
+        exec /usr/local/webots/webots --batch --stdout --stderr --port=1234 --mode=realtime /wcs/worlds/wcs.wbt
+    environment:
+      DISPLAY: ":99"
+      LIBGL_ALWAYS_SOFTWARE: "1"
+    volumes:
+      - ./worlds:/wcs/worlds:ro
+      - ${WCS_OUT:?}:/out
+    healthcheck:
+      test: ["CMD-SHELL", "bash -c '</dev/tcp/localhost/1234' 2>/dev/null || exit 1"]
+      interval: 2s
+      timeout: 2s
+      retries: 60
+      start_period: 5s
+
+  carrier:
+    <<: *controller
+    command:
+      - /bin/bash
+      - -c
+      - exec /usr/local/webots/webots-controller --protocol=tcp --ip-address=sim --port=1234 --robot-name=supervisor /wcs/carrier/carrier.py
+    environment:
+      ROBOTS: wheel1,wheeled1,diff1,humanoid1,biped1,hybrid1
+      CARGO: cargo1
+      MQTT_BROKER_HOST: mqtt
+      PYTHONDONTWRITEBYTECODE: "1"
+    volumes:
+      - ./carrier:/wcs/carrier:ro
+
+  observer:
+    <<: *controller
+    command:
+      - /bin/bash
+      - -c
+      - exec /usr/local/webots/webots-controller --protocol=tcp --ip-address=sim --port=1234 --robot-name=observer /wcs/observer/observer.py
+    environment:
+      ROBOTS: wheel1,wheeled1,diff1,humanoid1,biped1,hybrid1
+      CARGO: cargo1
+      MQTT_BROKER_HOST: mqtt
+      PYTHONDONTWRITEBYTECODE: "1"
+    volumes:
+      - ./observer:/wcs/observer:ro

@@ -1,0 +1,163 @@
+{
+ "run": "TR4-A-1-stale-config",
+ "pass": false,
+ "fails": [
+  {
+   "code": "NOTIFICATIONS",
+   "detail": {
+    "manager1": [
+     [
+      "assert",
+      "wheel1",
+      "t_w"
+     ],
+     [
+      "update",
+      "wheel1",
+      "t_e"
+     ],
+     [
+      "retract",
+      "wheel1",
+      null
+     ],
+     [
+      "assert",
+      "wheeled1",
+      "t_e"
+     ],
+     [
+      "retract",
+      "wheeled1",
+      null
+     ],
+     [
+      "assert",
+      "wheel1",
+      "t_e"
+     ],
+     [
+      "update",
+      "wheel1",
+      "t_w"
+     ],
+     [
+      "retract",
+      "wheel1",
+      null
+     ],
+     [
+      "assert",
+      "wheeled1",
+      "t_e"
+     ],
+     [
+      "retract",
+      "wheeled1",
+      null
+     ]
+    ],
+    "manager2": []
+   }
+  },
+  {
+   "code": "OWNERS",
+   "detail": [
+    "manager1",
+    "manager1",
+    "manager1",
+    "manager1",
+    "manager1"
+   ]
+  },
+  {
+   "code": "TIMELINE",
+   "detail": [
+    "notify",
+    "manager2",
+    "assert",
+    "wheel1"
+   ]
+  },
+  {
+   "code": "TIMELINE",
+   "detail": [
+    "notify",
+    "manager2",
+    "retract",
+    "wheel1"
+   ]
+  },
+  {
+   "code": "TIMELINE",
+   "detail": [
+    "decision",
+    "south",
+    "release"
+   ]
+  },
+  {
+   "code": "TIMELINE",
+   "detail": [
+    "arrived",
+    "south"
+   ]
+  },
+  {
+   "code": "TIMELINE",
+   "detail": [
+    "change",
+    "TR4-2"
+   ]
+  },
+  {
+   "code": "TIMELINE",
+   "detail": [
+    "notify",
+    "manager1",
+    "assert",
+    "wheel1"
+   ]
+  },
+  {
+   "code": "TIMELINE",
+   "detail": [
+    "decision",
+    "north",
+    "hold"
+   ]
+  },
+  {
+   "code": "TIMELINE",
+   "detail": [
+    "notify",
+    "manager1",
+    "retract",
+    "wheel1"
+   ]
+  },
+  {
+   "code": "TIMELINE",
+   "detail": [
+    "decision",
+    "north",
+    "release"
+   ]
+  },
+  {
+   "code": "TIMELINE",
+   "detail": [
+    "arrived",
+    "north"
+   ]
+  },
+  {
+   "code": "CHANGE_NOT_APPLIED",
+   "detail": "TR4-1"
+  },
+  {
+   "code": "CHANGE_NOT_APPLIED",
+   "detail": "TR4-2"
+  }
+ ]
+}

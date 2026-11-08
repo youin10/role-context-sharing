@@ -1,0 +1,41 @@
+scenario: N2
+reports:
+  RobotLocatedAt/wheel1: [bay_sw, aisle_w, t_w, t_e, aisle_e]
+  RobotLocatedAt/wheeled1: [hold_n, t_e, hold_s]
+  RobotLocatedAt/diff1: [bay_se]
+  RobotLocatedAt/humanoid1: [bay_sw]
+  RobotLocatedAt/biped1: [bay_sw]
+  RobotLocatedAt/hybrid1: [bay_nw]
+notifications:
+  manager1:
+  - [assert, wheel1, t_w]
+  - [update, wheel1, t_e]
+  - [retract, wheel1, null]
+  - [assert, wheeled1, t_e]
+  - [retract, wheeled1, null]
+decisions:
+- [south, hold, {wheel1: t_w}]
+- [south, hold, {wheel1: t_e}]
+- [south, release, {}]
+commands: [[wheel1, park], [wheel1, clear], [wheeled1, south]]
+arrivals:
+  park: [wheel1, -1.5, 0]
+  clear: [wheel1, 9, 0]
+  south: [wheeled1, 1.5, -6]
+held:
+- {robot: wheeled1, task: south, min_sim_s: 2.0}
+changes: []
+final_store:
+  RobotLocatedAt/wheel1: {node: aisle_e}
+  RobotLocatedAt/wheeled1: {node: hold_s}
+  RobotLocatedAt/diff1: {node: bay_se}
+  RobotLocatedAt/humanoid1: {node: bay_sw}
+  RobotLocatedAt/biped1: {node: bay_sw}
+  RobotLocatedAt/hybrid1: {node: bay_nw}
+final_views: {manager1: {}}
+timeline:
+- [decision, south, hold]
+- [notify, manager1, retract, wheel1]
+- [decision, south, release]
+- [arrived, south]
+rejected: [UNKNOWN_INDIVIDUAL, TYPE_MISMATCH, TYPE_MISMATCH, BAD_FIELDS, UNKNOWN_INDIVIDUAL]

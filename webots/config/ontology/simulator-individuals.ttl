@@ -1,0 +1,4 @@
+# Added to the core's fixed individuals. The simulated zone has no individual in the core file.
+@prefix : <http://ai.uos.ac.kr/logistics-ontology#> .
+
+:apron_zone a :Zone .

@@ -1,0 +1,36 @@
+id: TR7
+purpose: "cargo custody handed between carriers, delivery withdraws the carried-by fact"
+d: {model: custody, binding: b-custody}
+a: {initial: initial-custody}
+consumers: [manager1, auditor1, tech1, watch1]
+reporters: [location, cargo]
+limit_sim_s: 90
+steps:
+- {id: m1, move: {task: fetch, robot: wheel1, path: [[-9, -8]]}}
+- {id: w1, wait: {arrived: fetch}}
+- {id: l1, lift: {task: lift1, robot: wheel1}}
+- {id: w2, wait: {holder: [cargo1, wheel1]}}
+- {id: m2, move: {task: come1, robot: humanoid1, path: [[-10, -8]]}}
+- {id: w3, wait: {arrived: come1}}
+- {id: l2, lift: {task: lift2, robot: humanoid1}}
+- {id: w4, wait: {holder: [cargo1, humanoid1]}}
+- {id: m3, move: {task: carry1, robot: humanoid1, path: [[-7, -8]]}}
+- {id: w5, wait: {arrived: carry1}}
+- {id: m4, move: {task: come2, robot: biped1, path: [[-6, -8]]}}
+- {id: w6, wait: {arrived: come2}}
+- {id: l3, lift: {task: lift3, robot: biped1}}
+- {id: w7, wait: {holder: [cargo1, biped1]}}
+- {id: r1, request: {task: dock, robot: wheeled1, path: [[1.5, -6]], blocks: [CargoCarriedBy]}}
+- {id: m5, move: {task: carry2, robot: biped1, path: [[0, -8]]}}
+- {id: w8, wait: {arrived: carry2}}
+- {id: m6, move: {task: come3, robot: diff1, path: [[1, -8]]}}
+- {id: w9, wait: {arrived: come3}}
+- {id: s1, shot: hold}
+- {id: l4, lift: {task: lift4, robot: diff1}}
+- {id: w10, wait: {holder: [cargo1, diff1]}}
+- {id: m7, move: {task: carry3, robot: diff1, path: [[7, -8]]}}
+- {id: w11, wait: {arrived: carry3}}
+- {id: l5, lower: {task: lower1, robot: diff1}}
+- {id: w12, wait: {holder: [cargo1, null]}}
+- {id: s2, shot: released}
+- {id: w13, wait: {arrived: dock}}

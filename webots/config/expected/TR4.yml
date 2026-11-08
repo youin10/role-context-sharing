@@ -1,0 +1,68 @@
+scenario: TR4
+reports:
+  RobotLocatedAt/wheel1: [bay_sw, aisle_w, t_w, t_e, aisle_e, t_e, t_w, aisle_w]
+  RobotLocatedAt/wheeled1: [hold_n, t_e, hold_s, t_e, hold_n]
+  RobotLocatedAt/diff1: [bay_se]
+  RobotLocatedAt/humanoid1: [bay_sw]
+  RobotLocatedAt/biped1: [bay_sw]
+  RobotLocatedAt/hybrid1: [bay_nw]
+notifications:
+  manager1:
+  - [assert, wheel1, t_w]
+  - [retract, wheel1, null]
+  - [assert, wheel1, t_w]
+  - [retract, wheel1, null]
+  - [assert, wheeled1, t_e]
+  - [retract, wheeled1, null]
+  manager2:
+  - [assert, wheel1, t_w]
+  - [update, wheel1, t_e]
+  - [retract, wheel1, null]
+  - [assert, wheeled1, t_e]
+  - [retract, wheeled1, null]
+  - [assert, wheel1, t_e]
+  - [update, wheel1, t_w]
+  - [retract, wheel1, null]
+decisions:
+- [south, hold, {wheel1: t_w}]
+- [south, hold, {wheel1: t_e}]
+- [south, release, {}]
+- [north, hold, {wheel1: t_w}]
+- [north, release, {}]
+decision_owners: [manager1, manager2, manager2, manager1, manager1]
+commands: [[wheel1, park], [wheel1, clear], [wheeled1, south], [wheel1, return], [wheel1, west], [wheeled1, north]]
+arrivals:
+  park: [wheel1, -1.5, 0]
+  south: [wheeled1, 1.5, -6]
+  clear: [wheel1, 9, 0]
+  return: [wheel1, -1.5, 0]
+  west: [wheel1, -9, 0]
+  north: [wheeled1, 1.5, 6]
+held:
+- {robot: wheeled1, task: south, min_sim_s: 4.0}
+- {robot: wheeled1, task: north, min_sim_s: 2.0}
+timeline:
+- [notify, manager1, assert, wheel1]
+- [decision, south, hold]
+- [change, TR4-1]
+- [notify, manager2, assert, wheel1]
+- [notify, manager2, retract, wheel1]
+- [decision, south, release]
+- [arrived, south]
+- [change, TR4-2]
+- [notify, manager1, assert, wheel1]
+- [decision, north, hold]
+- [notify, manager1, retract, wheel1]
+- [decision, north, release]
+- [arrived, north]
+changes:
+- {id: TR4-1, notifications: {manager1: [[retract, wheel1, null]], manager2: [[assert, wheel1, t_w]]}, views: {manager1: {}, manager2: {RobotLocatedAt/wheel1: {node: t_w}}}, no_reports_since_quiet: [wheel1]}
+- {id: TR4-2, notifications: {manager1: [[assert, wheel1, t_w]], manager2: [[retract, wheel1, null]]}, views: {manager1: {RobotLocatedAt/wheel1: {node: t_w}}, manager2: {}}, no_reports_since_quiet: [wheel1]}
+final_store:
+  RobotLocatedAt/wheel1: {node: aisle_w}
+  RobotLocatedAt/wheeled1: {node: hold_n}
+  RobotLocatedAt/diff1: {node: bay_se}
+  RobotLocatedAt/humanoid1: {node: bay_sw}
+  RobotLocatedAt/biped1: {node: bay_sw}
+  RobotLocatedAt/hybrid1: {node: bay_nw}
+final_views: {manager1: {}, manager2: {}}

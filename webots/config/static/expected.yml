@@ -1,0 +1,28 @@
+# Decisions follow the manuscript's validation scope; code names are the checker vocabulary.
+d_generation:
+  - {id: V0, model: d/transit-r0.org, binding: d/b-transit.yml, expect: accept, consumers: {manager1: [RobotLocatedAt]}, producers: {wheel1: [RobotLocatedAt], wheeled1: [RobotLocatedAt], diff1: [RobotLocatedAt], humanoid1: [RobotLocatedAt], biped1: [RobotLocatedAt], hybrid1: [RobotLocatedAt], manager1: []}}
+  - {id: V1, model: d/apron-roles.org, binding: d/b-tr3-0.yml, expect: accept, alternatives: 4}
+  - {id: V3, model: d/custody.org, binding: d/b-custody.yml, expect: accept, consumers: {manager1: [CargoCarriedBy], auditor1: [CargoCarriedBy], tech1: [RobotLocatedAt], watch1: [RobotLocatedAt]}}
+  - {id: V2, model: d/apron-roles.org, binding: d/b-tr3-2.yml, expect: accept, alternatives: 2}
+  - {id: M1, model: static/sourceless.org, binding: d/b-no-carrier.yml, expect: refuse, code: SOURCELESS}
+  - {id: M2, model: d/transit-r0.org, binding: d/b-no-carrier.yml, expect: refuse, code: INCOMPLETE_BINDING}
+  - {id: M3, model: d/transit-r0.org, binding: static/b-unknown-role.yml, expect: refuse, code: UNKNOWN_ROLE}
+  - {id: M4, model: static/unknown-individual.org, binding: d/b-transit.yml, expect: refuse, code: UNKNOWN_INDIVIDUAL}
+  - {id: M5, model: static/ordered-string.org, binding: d/b-transit.yml, expect: refuse, code: TYPE_MISMATCH}
+  - {id: M6, model: static/class-mismatch.org, binding: d/b-transit.yml, expect: refuse, code: TYPE_MISMATCH}
+  - {id: M7, model: static/unsatisfiable.org, binding: d/b-transit.yml, expect: refuse, code: UNSATISFIABLE}
+  - {id: M8, model: static/arity.org, binding: d/b-transit.yml, expect: refuse, code: ARITY_MISMATCH}
+  - {id: M9, model: static/unknown-predicate.org, binding: d/b-transit.yml, expect: refuse, code: UNKNOWN_CONTEXT}
+a_rules:
+  valid_plan_dirs: [a-hand/plans/r0, a-hand/plans/class-r1, a-hand/plans/class-r2, a-hand/plans/apron, a-hand/plans/congestion-r0, a-hand/plans/stop, a-hand/plans/custody, a-helper/plans/r0, a-helper/plans/class-r2, a-helper/plans/apron, a-helper/plans/congestion-r0, a-helper/plans/stop, a-helper/plans/custody]
+  bad_rules: static/plans-bad.yml
+reports:
+  - {id: R1, instance: robot9, value: {node: t_e}, code: UNKNOWN_INDIVIDUAL}
+  - {id: R2, instance: cargo1, value: {node: t_e}, code: TYPE_MISMATCH}
+  - {id: R3, instance: wheel1, value: {node: 5}, code: TYPE_MISMATCH}
+  - {id: R4, instance: wheel1, value: {place: t_e}, code: BAD_FIELDS}
+outside_report_configuration:
+  producer: manager1
+  instance: wheel1
+  value: {node: t_e}
+  d_outside_report_cfg: 1

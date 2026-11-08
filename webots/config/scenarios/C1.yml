@@ -1,0 +1,13 @@
+id: C1
+purpose: "contrast: no reads declared, same trace as the first crossing of TR1"
+d: {model: transit-none, binding: b-transit}
+a: {initial: initial-none}
+consumers: [manager1]
+reporters: [location]
+limit_sim_s: 60
+steps:
+- {id: m1, move: {task: pass, robot: wheel1, path: [[-9, 0], [-1.5, 0], [1.5, 0], [9, 0]]}}
+- {id: w1, wait: {cell: [wheel1, t_w]}}
+- {id: r1, request: {task: cross, robot: wheeled1, path: [[1.5, -6]]}}
+- {id: w2, wait: {arrived: pass}}
+- {id: w3, wait: {arrived: cross}}

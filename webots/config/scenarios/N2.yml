@@ -1,0 +1,20 @@
+id: N2
+purpose: "negative test: injected malformed reports during a hold are refused and the task continues"
+d: {model: transit-r0, binding: b-transit}
+a: {initial: initial-r0}
+consumers: [manager1]
+reporters: [location]
+limit_sim_s: 60
+steps:
+- {id: m1, move: {task: park, robot: wheel1, path: [[-9, 0], [-1.5, 0]]}}
+- {id: w1, wait: {arrived: park}}
+- {id: r1, request: {task: south, robot: wheeled1, path: [[1.5, -6]]}}
+- {id: i1, inject: {producer: wheel1, instance: ghost9, value: {node: t_e}}}
+- {id: i2, inject: {producer: wheel1, instance: cargo1, value: {node: t_e}}}
+- {id: i3, inject: {producer: wheel1, instance: wheel1, value: {node: 5}}}
+- {id: i4, inject: {producer: wheel1, instance: wheel1, value: {place: t_e}}}
+- {id: i5, inject: {producer: wheel1, context: CargoCarriedBy, instance: cargo1, value: {robot: ghost9}}}
+- {id: w2, wait: {dwell: 2.0}}
+- {id: m2, move: {task: clear, robot: wheel1, path: [[9, 0]]}}
+- {id: w3, wait: {arrived: south}}
+- {id: w4, wait: {arrived: clear}}

@@ -1,0 +1,3 @@
+role: DockCoordinator
+subscribe:
+- (rule (fact (CargoCarriedBy $cargo $robot)) --> (notify (CargoCarriedBy $cargo $robot)))

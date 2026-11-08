@@ -1,0 +1,72 @@
+scenario: TR7
+reports:
+  RobotLocatedAt/wheel1: [bay_sw]
+  RobotLocatedAt/wheeled1: [hold_n, t_e, hold_s]
+  RobotLocatedAt/diff1: [bay_se, hold_s, bay_se]
+  RobotLocatedAt/humanoid1: [bay_sw]
+  RobotLocatedAt/biped1: [bay_sw, hold_s]
+  RobotLocatedAt/hybrid1: [bay_nw]
+  CargoCarriedBy/cargo1: [wheel1, humanoid1, biped1, diff1, DELETE]
+notifications:
+  manager1:
+  - [assert, cargo1, wheel1]
+  - [update, cargo1, humanoid1]
+  - [update, cargo1, biped1]
+  - [update, cargo1, diff1]
+  - [retract, cargo1, null]
+  auditor1:
+  - [assert, cargo1, humanoid1]
+  - [update, cargo1, biped1]
+  - [retract, cargo1, null]
+  tech1:
+  - [assert, biped1, bay_sw]
+  - [update, biped1, hold_s]
+  watch1:
+  - [assert, diff1, hold_s]
+  - [retract, diff1, null]
+  - [assert, wheeled1, hold_s]
+decisions:
+- [dock, hold, {cargo1: biped1}]
+- [dock, hold, {cargo1: diff1}]
+- [dock, release, {}]
+commands: [[wheel1, fetch], [humanoid1, come1], [humanoid1, carry1], [biped1, come2], [biped1, carry2], [diff1, come3], [diff1, carry3], [wheeled1, dock]]
+arrivals:
+  fetch: [wheel1, -9, -8]
+  come1: [humanoid1, -10, -8]
+  carry1: [humanoid1, -7, -8]
+  come2: [biped1, -6, -8]
+  carry2: [biped1, 0, -8]
+  come3: [diff1, 1, -8]
+  carry3: [diff1, 7, -8]
+  dock: [wheeled1, 1.5, -6]
+held:
+- {robot: wheeled1, task: dock, min_sim_s: 3.0}
+absent_at_end: [CargoCarriedBy/cargo1]
+timeline:
+- [report, CargoCarriedBy, cargo1, wheel1]
+- [notify, manager1, assert, cargo1]
+- [report, CargoCarriedBy, cargo1, humanoid1]
+- [notify, auditor1, assert, cargo1]
+- [report, CargoCarriedBy, cargo1, biped1]
+- [notify, auditor1, update, cargo1]
+- [decision, dock, hold]
+- [report, CargoCarriedBy, cargo1, diff1]
+- [notify, auditor1, retract, cargo1]
+- [report, CargoCarriedBy, cargo1, DELETE]
+- [notify, manager1, retract, cargo1]
+- [decision, dock, release]
+- [command, wheeled1, dock]
+- [arrived, dock]
+changes: []
+final_store:
+  RobotLocatedAt/wheel1: {node: bay_sw}
+  RobotLocatedAt/wheeled1: {node: hold_s}
+  RobotLocatedAt/diff1: {node: bay_se}
+  RobotLocatedAt/humanoid1: {node: bay_sw}
+  RobotLocatedAt/biped1: {node: hold_s}
+  RobotLocatedAt/hybrid1: {node: bay_nw}
+final_views:
+  manager1: {}
+  auditor1: {}
+  tech1: {RobotLocatedAt/biped1: {node: hold_s}}
+  watch1: {RobotLocatedAt/wheeled1: {node: hold_s}}

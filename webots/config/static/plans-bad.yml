@@ -1,0 +1,9 @@
+# A arm: each rule is checked alone with the core's plan checker.
+- code: UNKNOWN_INDIVIDUAL
+  rule: (rule (fact (RobotLocatedAt $robot $node)) (= $robot "robot9") --> (notify (RobotLocatedAt $robot $node)))
+- code: TYPE_MISMATCH
+  rule: (rule (fact (RobotLocatedAt $robot $node)) (< $node 3) --> (notify (RobotLocatedAt $robot $node)))
+- code: ARITY
+  rule: (rule (fact (RobotLocatedAt $robot)) --> (notify (RobotLocatedAt $robot)))
+- code: UNKNOWN_CONTEXT
+  rule: (rule (fact (RobotAt $robot $node)) --> (notify (RobotAt $robot $node)))

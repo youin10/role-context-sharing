@@ -1,0 +1,14 @@
+prefix logistics: <http://ai.uos.ac.kr/logistics-ontology#>;
+
+role TransitCoordinator {
+  reads {
+    logistics:RobotLocatedAt($robot, $node) {
+      $robot == logistics:Cargo;
+    }
+  }
+}
+role Carrier {
+  changes {
+    logistics:RobotLocatedAt($robot, $node);
+  }
+}

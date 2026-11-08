@@ -1,0 +1,22 @@
+id: TR1
+purpose: "transit zone hold and release with re-entry"
+d: {model: transit-r0, binding: b-transit}
+a: {initial: initial-r0}
+consumers: [manager1]
+reporters: [location]
+limit_sim_s: 60
+steps:
+- {id: m1, move: {task: pass, robot: wheel1, path: [[-9, 0], [-1.5, 0], [1.5, 0], [9, 0]]}}
+- {id: w1, wait: {cell: [wheel1, t_w]}}
+- {id: r1, request: {task: cross, robot: wheeled1, path: [[1.5, -6]]}}
+- {id: w2, wait: {cell: [wheel1, t_e]}}
+- {id: s1, shot: hold}
+- {id: w3, wait: {cell: [wheeled1, t_e]}}
+- {id: s2, shot: released}
+- {id: w4, wait: {arrived: pass}}
+- {id: w5, wait: {arrived: cross}}
+- {id: m2, move: {task: back, robot: wheel1, path: [[-9, 0]]}}
+- {id: w6, wait: {cell: [wheel1, t_e]}}
+- {id: r2, request: {task: north, robot: wheeled1, path: [[1.5, 6]]}}
+- {id: w7, wait: {arrived: back}}
+- {id: w8, wait: {arrived: north}}

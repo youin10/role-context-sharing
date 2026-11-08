@@ -1,0 +1,21 @@
+initials:
+  initial-r0: {assign: transit, plans: r0}
+  initial-none: {assign: transit, plans: none}
+  initial-all: {assign: transit, plans: all}
+  initial-tr3: {assign: tr3-0, plans: apron}
+  initial-tr4: {assign: tr4-0, plans: r0}
+  initial-congestion: {assign: congestion, plans: congestion-r0}
+  initial-stop: {assign: stop, plans: stop}
+  initial-custody: {assign: custody, plans: custody}
+changes:
+  TR2-r1: {from: [transit, r0], to: [transit, class-r1]}
+  TR2-r2: {from: [transit, class-r1], to: [transit, class-r2]}
+  TR2-r1b: {from: [transit, class-r2], to: [transit, class-r1]}
+  TR2-r0: {from: [transit, class-r1], to: [transit, r0]}
+  TR3-1: {from: [tr3-0, apron], to: [tr3-1, apron]}
+  TR3-2: {from: [tr3-1, apron], to: [tr3-2, apron]}
+  TR3-3: {from: [tr3-2, apron], to: [tr3-1, apron]}
+  TR4-1: {from: [tr4-0, r0], to: [tr4-1, r0]}
+  TR4-2: {from: [tr4-1, r0], to: [tr4-0, r0]}
+  TR5-r1: {from: [congestion, congestion-r0], to: [congestion, congestion-r1]}
+  TR5-r0: {from: [congestion, congestion-r1], to: [congestion, congestion-r0]}

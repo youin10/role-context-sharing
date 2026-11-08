@@ -1,0 +1,9 @@
+plans: plans/apron
+agents:
+  manager1: [TransitCoordinator, ApronSupervisor, ApronInspector]
+  wheel1: [Carrier]
+  wheeled1: [Carrier]
+  diff1: [Carrier]
+  humanoid1: [Carrier]
+  biped1: [Carrier]
+  hybrid1: [Carrier]

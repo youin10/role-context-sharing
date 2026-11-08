@@ -1,0 +1,17 @@
+id: N1
+purpose: "negative test: invalid redeployments refused during a hold, active configuration keeps working"
+d: {model: transit-r0, binding: b-transit}
+a: {initial: initial-r0}
+consumers: [manager1]
+reporters: [location]
+limit_sim_s: 60
+steps:
+- {id: m1, move: {task: park, robot: wheel1, path: [[-9, 0], [-1.5, 0]]}}
+- {id: w1, wait: {arrived: park}}
+- {id: r1, request: {task: south, robot: wheeled1, path: [[1.5, -6]]}}
+- {id: b1, invalid_change: {id: N1-bad-condition, d: {model: invalid-individual, binding: b-transit}, a: plans/invalid, helper: invalid.yml}}
+- {id: b2, invalid_change: {id: N1-unbound-source, arms: [D], d: {model: transit-r0, binding: b-no-carrier}}}
+- {id: w2, wait: {dwell: 2.0}}
+- {id: m2, move: {task: clear, robot: wheel1, path: [[9, 0]]}}
+- {id: w3, wait: {arrived: south}}
+- {id: w4, wait: {arrived: clear}}

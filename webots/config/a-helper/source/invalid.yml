@@ -1,0 +1,2 @@
+TransitCoordinator:
+- {context: RobotLocatedAt, field: robot, ids: [ghost9]}

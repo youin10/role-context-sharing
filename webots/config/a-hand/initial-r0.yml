@@ -1,0 +1,9 @@
+plans: plans/r0
+agents:
+  manager1: [TransitCoordinator]
+  wheel1: [Carrier]
+  wheeled1: [Carrier]
+  diff1: [Carrier]
+  humanoid1: [Carrier]
+  biped1: [Carrier]
+  hybrid1: [Carrier]

@@ -1,0 +1,3 @@
+role: ShortStopWatch
+subscribe:
+- (rule (fact (RobotStopped $robot $elapsedSeconds)) (>= $elapsedSeconds 2) (<= $elapsedSeconds 4) --> (notify (RobotStopped $robot $elapsedSeconds)))

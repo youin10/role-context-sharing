@@ -1,0 +1,154 @@
+observer-1  | 2026-11-06T09:23:03.727820055Z The Webots simulation world is not yet ready, pending until loading is done...
+carrier-1   | 2026-11-06T09:23:04.116995291Z The Webots simulation world is not yet ready, pending until loading is done...
+sim-1       | 2026-11-06T09:23:01.428294263Z WARNING: It is not recommended to run Webots as root.
+sim-1       | 2026-11-06T09:23:02.553932888Z WARNING: System below the minimal requirements.
+sim-1       | 2026-11-06T09:23:02.553944472Z 
+sim-1       | 2026-11-06T09:23:02.553945805Z Webots has detected that your GPU vendor is 'Mesa'. A recent NVIDIA or AMD graphics adapter is highly recommended to run Webots smoothly. Webots has detected that your computer uses a slow 3D software rendering system. It is strongly recommended to install the latest graphics drivers provided by your GPU manufacturer. Webots will run much faster after the installation of the correct driver.
+sim-1       | 2026-11-06T09:23:02.553947388Z 
+sim-1       | 2026-11-06T09:23:02.553948138Z  - Shadows have been deactivated.
+sim-1       | 2026-11-06T09:23:02.553948930Z  - Anti-aliasing has been deactivated.
+sim-1       | 2026-11-06T09:23:02.553949763Z  - Main 3D view global ambient occlusion has been de-activated.
+sim-1       | 2026-11-06T09:23:02.553950888Z  - Texture quality has been reduced.
+sim-1       | 2026-11-06T09:23:02.553951597Z 
+sim-1       | 2026-11-06T09:23:02.553963847Z You can try to re-activate some OpenGL features from the Webots preferences.
+sim-1       | 2026-11-06T09:23:05.186035208Z WARNING: System below the minimal requirements.
+sim-1       | 2026-11-06T09:23:05.186053625Z 
+sim-1       | 2026-11-06T09:23:05.186055083Z Webots has detected that your GPU vendor is 'Mesa'. A recent NVIDIA or AMD graphics adapter is highly recommended to run Webots smoothly. Webots has detected that your computer uses a slow 3D software rendering system. It is strongly recommended to install the latest graphics drivers provided by your GPU manufacturer. Webots will run much faster after the installation of the correct driver.
+sim-1       | 2026-11-06T09:23:05.186056667Z 
+sim-1       | 2026-11-06T09:23:05.186057500Z  - Shadows have been deactivated.
+sim-1       | 2026-11-06T09:23:05.186058292Z  - Anti-aliasing has been deactivated.
+sim-1       | 2026-11-06T09:23:05.186059208Z  - Main 3D view global ambient occlusion has been de-activated.
+sim-1       | 2026-11-06T09:23:05.186059958Z  - Texture quality has been reduced.
+sim-1       | 2026-11-06T09:23:05.186060708Z 
+sim-1       | 2026-11-06T09:23:05.186061458Z You can try to re-activate some OpenGL features from the Webots preferences.
+sim-1       | 2026-11-06T09:23:05.193802458Z WARNING: WARNING: System below the minimal requirements.
+sim-1       | 2026-11-06T09:23:05.193812792Z 
+sim-1       | 2026-11-06T09:23:05.193814125Z Webots has detected that your GPU vendor is 'Mesa'. A recent NVIDIA or AMD graphics adapter is highly recommended to run Webots smoothly. Webots has detected that your computer uses a slow 3D software rendering system. It is strongly recommended to install the latest graphics drivers provided by your GPU manufacturer. Webots will run much faster after the installation of the correct driver.
+sim-1       | 2026-11-06T09:23:05.193815583Z 
+sim-1       | 2026-11-06T09:23:05.193816333Z  - Shadows have been deactivated.
+sim-1       | 2026-11-06T09:23:05.193817500Z  - Anti-aliasing has been deactivated.
+sim-1       | 2026-11-06T09:23:05.193818333Z  - Main 3D view global ambient occlusion has been de-activated.
+sim-1       | 2026-11-06T09:23:05.193819083Z  - Texture quality has been reduced.
+sim-1       | 2026-11-06T09:23:05.193819833Z 
+sim-1       | 2026-11-06T09:23:05.193820583Z You can try to re-activate some OpenGL features from the Webots preferences.
+sim-1       | 2026-11-06T09:23:05.704914959Z INFO: 'supervisor' extern controller: Waiting for local or remote connection on port 1234 targeting robot named 'supervisor'.
+sim-1       | 2026-11-06T09:23:05.707089209Z INFO: 'observer' extern controller: Waiting for local or remote connection on port 1234 targeting robot named 'observer'.
+sim-1       | 2026-11-06T09:23:06.091993209Z INFO: 'observer' extern controller: connected.
+sim-1       | 2026-11-06T09:23:06.095975792Z INFO: 'supervisor' extern controller: connected.
+mqtt-1      | 2026-11-06T09:22:58.272418136Z 1793956978: Info: running mosquitto as user: mosquitto.
+mqtt-1      | 2026-11-06T09:22:58.272442678Z 1793956978: mosquitto version 2.1.2 starting
+mqtt-1      | 2026-11-06T09:22:58.272444386Z 1793956978: Config loaded from /mosquitto/config/mosquitto.conf.
+mqtt-1      | 2026-11-06T09:22:58.272445344Z 1793956978: Bridge support available.
+mqtt-1      | 2026-11-06T09:22:58.272449761Z 1793956978: Persistence support available.
+mqtt-1      | 2026-11-06T09:22:58.272450636Z 1793956978: TLS support available.
+mqtt-1      | 2026-11-06T09:22:58.272451511Z 1793956978: TLS-PSK support available.
+mqtt-1      | 2026-11-06T09:22:58.272452511Z 1793956978: Websockets support available.
+mqtt-1      | 2026-11-06T09:22:58.272593594Z 1793956978: Opening ipv4 listen socket on port 1883.
+mqtt-1      | 2026-11-06T09:22:58.272597594Z 1793956978: Opening ipv6 listen socket on port 1883.
+mqtt-1      | 2026-11-06T09:22:58.272637511Z 1793956978: mosquitto version 2.1.2 running
+mqtt-1      | 2026-11-06T09:23:00.303754554Z 1793956980: New connection from ::1:59548 on port 1883.
+mqtt-1      | 2026-11-06T09:23:00.305058554Z 1793956980: New client connected from ::1:59548 as auto-B12B44C6-EC88-3A29-2FD5-29993B6C8239 (p4, c1, k60).
+mqtt-1      | 2026-11-06T09:23:00.305305595Z 1793956980: Client auto-B12B44C6-EC88-3A29-2FD5-29993B6C8239 [::1:59548] disconnected.
+mqtt-1      | 2026-11-06T09:23:02.326766680Z 1793956982: New connection from ::1:59582 on port 1883.
+mqtt-1      | 2026-11-06T09:23:02.326851180Z 1793956982: New client connected from ::1:59582 as auto-A61432B9-3F79-A131-4856-45108FA2C889 (p4, c1, k60).
+mqtt-1      | 2026-11-06T09:23:02.327040096Z 1793956982: Client auto-A61432B9-3F79-A131-4856-45108FA2C889 [::1:59582] disconnected.
+mqtt-1      | 2026-11-06T09:23:03.570178847Z 1793956983: New connection from 172.24.0.1:56626 on port 1883.
+mqtt-1      | 2026-11-06T09:23:03.570618680Z 1793956983: New client connected from 172.24.0.1:56626 as wcs-wcs2-nc-2-tr6-d-1-non-transitive (p4, c1, k30).
+mqtt-1      | 2026-11-06T09:23:04.352220500Z 1793956984: New connection from ::1:59596 on port 1883.
+mqtt-1      | 2026-11-06T09:23:04.352238916Z 1793956984: New client connected from ::1:59596 as auto-414D627C-DFE8-E645-346B-510CB807034D (p4, c1, k60).
+mqtt-1      | 2026-11-06T09:23:04.352310625Z 1793956984: Client auto-414D627C-DFE8-E645-346B-510CB807034D [::1:59596] disconnected.
+mqtt-1      | 2026-11-06T09:23:06.111614584Z 1793956986: New connection from 172.24.0.4:38225 on port 1883.
+mqtt-1      | 2026-11-06T09:23:06.112447126Z 1793956986: New client connected from 172.24.0.4:38225 as wcs-observer (p4, c1, k30).
+mqtt-1      | 2026-11-06T09:23:06.115077709Z 1793956986: New connection from 172.24.0.5:52483 on port 1883.
+mqtt-1      | 2026-11-06T09:23:06.115967292Z 1793956986: New client connected from 172.24.0.5:52483 as wcs-carrier (p4, c1, k30).
+mqtt-1      | 2026-11-06T09:23:06.381617834Z 1793956986: New connection from ::1:43764 on port 1883.
+mqtt-1      | 2026-11-06T09:23:06.381648792Z 1793956986: New client connected from ::1:43764 as auto-3E5C6D19-0CFF-B9C1-6EF5-D669FAC094E8 (p4, c1, k60).
+mqtt-1      | 2026-11-06T09:23:06.381732084Z 1793956986: Client auto-3E5C6D19-0CFF-B9C1-6EF5-D669FAC094E8 [::1:43764] disconnected.
+mqtt-1      | 2026-11-06T09:23:08.415430710Z 1793956988: New connection from ::1:43786 on port 1883.
+mqtt-1      | 2026-11-06T09:23:08.415449668Z 1793956988: New client connected from ::1:43786 as auto-1B33C86A-E0BF-0460-DBE5-704D1EDC9A41 (p4, c1, k60).
+mqtt-1      | 2026-11-06T09:23:08.415650752Z 1793956988: Client auto-1B33C86A-E0BF-0460-DBE5-704D1EDC9A41 [::1:43786] disconnected.
+mqtt-1      | 2026-11-06T09:23:10.441095794Z 1793956990: New connection from ::1:43802 on port 1883.
+mqtt-1      | 2026-11-06T09:23:10.441113961Z 1793956990: New client connected from ::1:43802 as auto-966A86C6-4236-A780-5C85-5E6ED405631C (p4, c1, k60).
+mqtt-1      | 2026-11-06T09:23:10.441117628Z 1793956990: Client auto-966A86C6-4236-A780-5C85-5E6ED405631C [::1:43802] disconnected.
+mqtt-1      | 2026-11-06T09:23:12.462717920Z 1793956992: New connection from ::1:43824 on port 1883.
+mqtt-1      | 2026-11-06T09:23:12.462797670Z 1793956992: New client connected from ::1:43824 as auto-75730206-660E-1EE7-BD4E-467874242897 (p4, c1, k60).
+mqtt-1      | 2026-11-06T09:23:12.462973087Z 1793956992: Client auto-75730206-660E-1EE7-BD4E-467874242897 [::1:43824] disconnected.
+mqtt-1      | 2026-11-06T09:23:14.495005255Z 1793956994: New connection from ::1:43834 on port 1883.
+mqtt-1      | 2026-11-06T09:23:14.495027046Z 1793956994: New client connected from ::1:43834 as auto-BDAAC67E-A307-084B-F2CF-84F4589A42E1 (p4, c1, k60).
+mqtt-1      | 2026-11-06T09:23:14.495029171Z 1793956994: Client auto-BDAAC67E-A307-084B-F2CF-84F4589A42E1 [::1:43834] disconnected.
+mqtt-1      | 2026-11-06T09:23:16.522391756Z 1793956996: New connection from ::1:39888 on port 1883.
+mqtt-1      | 2026-11-06T09:23:16.522409589Z 1793956996: New client connected from ::1:39888 as auto-D11AC5D1-6AF6-8BC9-4792-AA4DF64E21F9 (p4, c1, k60).
+mqtt-1      | 2026-11-06T09:23:16.522528047Z 1793956996: Client auto-D11AC5D1-6AF6-8BC9-4792-AA4DF64E21F9 [::1:39888] disconnected.
+mqtt-1      | 2026-11-06T09:23:18.554358590Z 1793956998: New connection from ::1:39896 on port 1883.
+mqtt-1      | 2026-11-06T09:23:18.554643757Z 1793956998: New client connected from ::1:39896 as auto-6CE65F7C-9438-07AC-22B4-7FEB11DAB431 (p4, c1, k60).
+mqtt-1      | 2026-11-06T09:23:18.554713798Z 1793956998: Client auto-6CE65F7C-9438-07AC-22B4-7FEB11DAB431 [::1:39896] disconnected.
+mqtt-1      | 2026-11-06T09:23:20.584503341Z 1793957000: New connection from ::1:39908 on port 1883.
+mqtt-1      | 2026-11-06T09:23:20.584530549Z 1793957000: New client connected from ::1:39908 as auto-5B43CE76-A54E-303D-BC63-C354791EAF19 (p4, c1, k60).
+mqtt-1      | 2026-11-06T09:23:20.584622799Z 1793957000: Client auto-5B43CE76-A54E-303D-BC63-C354791EAF19 [::1:39908] disconnected.
+mqtt-1      | 2026-11-06T09:23:22.606260508Z 1793957002: New connection from ::1:39926 on port 1883.
+mqtt-1      | 2026-11-06T09:23:22.606275342Z 1793957002: New client connected from ::1:39926 as auto-33B50340-20AF-785E-F693-4BBCED940968 (p4, c1, k60).
+mqtt-1      | 2026-11-06T09:23:22.606345383Z 1793957002: Client auto-33B50340-20AF-785E-F693-4BBCED940968 [::1:39926] disconnected.
+mqtt-1      | 2026-11-06T09:23:24.630998551Z 1793957004: New connection from ::1:39944 on port 1883.
+mqtt-1      | 2026-11-06T09:23:24.631013301Z 1793957004: New client connected from ::1:39944 as auto-0EFFB5B2-8BCA-F621-B22E-AC7F5C9A4FE9 (p4, c1, k60).
+mqtt-1      | 2026-11-06T09:23:24.631014759Z 1793957004: Client auto-0EFFB5B2-8BCA-F621-B22E-AC7F5C9A4FE9 [::1:39944] disconnected.
+mqtt-1      | 2026-11-06T09:23:26.653090885Z 1793957006: New connection from ::1:59466 on port 1883.
+mqtt-1      | 2026-11-06T09:23:26.653105635Z 1793957006: New client connected from ::1:59466 as auto-82D19C94-7E0C-002A-44B5-17D1F8700A05 (p4, c1, k60).
+mqtt-1      | 2026-11-06T09:23:26.653107135Z 1793957006: Client auto-82D19C94-7E0C-002A-44B5-17D1F8700A05 [::1:59466] disconnected.
+mqtt-1      | 2026-11-06T09:23:28.668277511Z 1793957008: New connection from ::1:59482 on port 1883.
+mqtt-1      | 2026-11-06T09:23:28.668296178Z 1793957008: New client connected from ::1:59482 as auto-C3A9A037-28A5-C1A0-B3C9-48C1434F4A36 (p4, c1, k60).
+mqtt-1      | 2026-11-06T09:23:28.668297511Z 1793957008: Client auto-C3A9A037-28A5-C1A0-B3C9-48C1434F4A36 [::1:59482] disconnected.
+mqtt-1      | 2026-11-06T09:23:30.691869804Z 1793957010: New connection from ::1:59498 on port 1883.
+mqtt-1      | 2026-11-06T09:23:30.691928929Z 1793957010: New client connected from ::1:59498 as auto-E7AA192D-41FE-682C-8867-B7033ED54F01 (p4, c1, k60).
+mqtt-1      | 2026-11-06T09:23:30.692584262Z 1793957010: Client auto-E7AA192D-41FE-682C-8867-B7033ED54F01 [::1:59498] disconnected.
+mqtt-1      | 2026-11-06T09:23:32.709333763Z 1793957012: New connection from ::1:59510 on port 1883.
+mqtt-1      | 2026-11-06T09:23:32.709357222Z 1793957012: New client connected from ::1:59510 as auto-B8DA5781-F855-750C-350B-27544B848121 (p4, c1, k60).
+mqtt-1      | 2026-11-06T09:23:32.709446347Z 1793957012: Client auto-B8DA5781-F855-750C-350B-27544B848121 [::1:59510] disconnected.
+mqtt-1      | 2026-11-06T09:23:34.730446500Z 1793957014: New connection from ::1:59518 on port 1883.
+mqtt-1      | 2026-11-06T09:23:34.730460833Z 1793957014: New client connected from ::1:59518 as auto-37C8C6BC-5BA1-8AA0-AF01-9ACB344F95C3 (p4, c1, k60).
+mqtt-1      | 2026-11-06T09:23:34.730462292Z 1793957014: Client auto-37C8C6BC-5BA1-8AA0-AF01-9ACB344F95C3 [::1:59518] disconnected.
+mqtt-1      | 2026-11-06T09:23:36.750313251Z 1793957016: New connection from ::1:56952 on port 1883.
+mqtt-1      | 2026-11-06T09:23:36.750408251Z 1793957016: New client connected from ::1:56952 as auto-9AE8060A-7643-B5CB-3159-8998462C3FCB (p4, c1, k60).
+mqtt-1      | 2026-11-06T09:23:36.750618209Z 1793957016: Client auto-9AE8060A-7643-B5CB-3159-8998462C3FCB [::1:56952] disconnected.
+mqtt-1      | 2026-11-06T09:23:38.771044460Z 1793957018: New connection from ::1:56956 on port 1883.
+mqtt-1      | 2026-11-06T09:23:38.771060085Z 1793957018: New client connected from ::1:56956 as auto-02845FED-FAEE-8C57-538F-B4028A52EB0C (p4, c1, k60).
+mqtt-1      | 2026-11-06T09:23:38.771378710Z 1793957018: Client auto-02845FED-FAEE-8C57-538F-B4028A52EB0C [::1:56956] disconnected.
+mqtt-1      | 2026-11-06T09:23:40.787464378Z 1793957020: New connection from ::1:56966 on port 1883.
+mqtt-1      | 2026-11-06T09:23:40.787485044Z 1793957020: New client connected from ::1:56966 as auto-97522760-6554-0042-27DB-1F48E9A0C881 (p4, c1, k60).
+mqtt-1      | 2026-11-06T09:23:40.787583461Z 1793957020: Client auto-97522760-6554-0042-27DB-1F48E9A0C881 [::1:56966] disconnected.
+mqtt-1      | 2026-11-06T09:23:42.804762545Z 1793957022: New connection from ::1:56970 on port 1883.
+mqtt-1      | 2026-11-06T09:23:42.804773962Z 1793957022: New client connected from ::1:56970 as auto-125165C4-7C29-79CC-3776-C23271995516 (p4, c1, k60).
+mqtt-1      | 2026-11-06T09:23:42.804775087Z 1793957022: Client auto-125165C4-7C29-79CC-3776-C23271995516 [::1:56970] disconnected.
+mqtt-1      | 2026-11-06T09:23:44.852827421Z 1793957024: New connection from ::1:56974 on port 1883.
+mqtt-1      | 2026-11-06T09:23:44.852861171Z 1793957024: New client connected from ::1:56974 as auto-D4B34741-9E0A-7CE8-399B-DD957DF5F14C (p4, c1, k60).
+mqtt-1      | 2026-11-06T09:23:44.852985921Z 1793957024: Client auto-D4B34741-9E0A-7CE8-399B-DD957DF5F14C [::1:56974] disconnected.
+mqtt-1      | 2026-11-06T09:23:46.881445797Z 1793957026: New connection from ::1:44180 on port 1883.
+mqtt-1      | 2026-11-06T09:23:46.881463506Z 1793957026: New client connected from ::1:44180 as auto-6C90294F-D983-8373-51EF-C5E8105EB969 (p4, c1, k60).
+mqtt-1      | 2026-11-06T09:23:46.881465131Z 1793957026: Client auto-6C90294F-D983-8373-51EF-C5E8105EB969 [::1:44180] disconnected.
+mqtt-1      | 2026-11-06T09:23:48.903686423Z 1793957028: New connection from ::1:44196 on port 1883.
+mqtt-1      | 2026-11-06T09:23:48.903700715Z 1793957028: New client connected from ::1:44196 as auto-02D9352B-4FE0-9D58-07D3-B261E3ABAC23 (p4, c1, k60).
+mqtt-1      | 2026-11-06T09:23:48.903810882Z 1793957028: Client auto-02D9352B-4FE0-9D58-07D3-B261E3ABAC23 [::1:44196] disconnected.
+mqtt-1      | 2026-11-06T09:23:50.922526841Z 1793957030: New connection from ::1:44210 on port 1883.
+mqtt-1      | 2026-11-06T09:23:50.922540299Z 1793957030: New client connected from ::1:44210 as auto-05C93C4C-8DEC-FC3F-E31F-63C70F1C6AAF (p4, c1, k60).
+mqtt-1      | 2026-11-06T09:23:50.922648008Z 1793957030: Client auto-05C93C4C-8DEC-FC3F-E31F-63C70F1C6AAF [::1:44210] disconnected.
+mqtt-1      | 2026-11-06T09:23:52.936143634Z 1793957032: New connection from ::1:44216 on port 1883.
+mqtt-1      | 2026-11-06T09:23:52.936166675Z 1793957032: New client connected from ::1:44216 as auto-D2FA7B78-1870-5B6B-D5D4-FA46AFE16204 (p4, c1, k60).
+mqtt-1      | 2026-11-06T09:23:52.936280259Z 1793957032: Client auto-D2FA7B78-1870-5B6B-D5D4-FA46AFE16204 [::1:44216] disconnected.
+mqtt-1      | 2026-11-06T09:23:54.954587426Z 1793957034: New connection from ::1:44226 on port 1883.
+mqtt-1      | 2026-11-06T09:23:54.954601843Z 1793957034: New client connected from ::1:44226 as auto-201D2D7B-D753-8C25-B1FA-AF1E518CCFD3 (p4, c1, k60).
+mqtt-1      | 2026-11-06T09:23:54.954652468Z 1793957034: Client auto-201D2D7B-D753-8C25-B1FA-AF1E518CCFD3 [::1:44226] disconnected.
+mqtt-1      | 2026-11-06T09:23:56.980384177Z 1793957036: New connection from ::1:36648 on port 1883.
+mqtt-1      | 2026-11-06T09:23:56.980503844Z 1793957036: New client connected from ::1:36648 as auto-34FBE70B-1741-6816-B5FB-58FC22714BA4 (p4, c1, k60).
+mqtt-1      | 2026-11-06T09:23:56.980722677Z 1793957036: Client auto-34FBE70B-1741-6816-B5FB-58FC22714BA4 [::1:36648] disconnected.
+mqtt-1      | 2026-11-06T09:23:59.003953137Z 1793957039: New connection from ::1:36654 on port 1883.
+mqtt-1      | 2026-11-06T09:23:59.003999428Z 1793957039: New client connected from ::1:36654 as auto-A37F50B0-0BDF-4BE4-F547-EF3B89A65E33 (p4, c1, k60).
+mqtt-1      | 2026-11-06T09:23:59.004081053Z 1793957039: Client auto-A37F50B0-0BDF-4BE4-F547-EF3B89A65E33 [::1:36654] disconnected.
+mqtt-1      | 2026-11-06T09:24:01.017613929Z 1793957041: New connection from ::1:36668 on port 1883.
+mqtt-1      | 2026-11-06T09:24:01.017624304Z 1793957041: New client connected from ::1:36668 as auto-3AC1774F-D2BB-2323-0F26-9D1736B586B5 (p4, c1, k60).
+mqtt-1      | 2026-11-06T09:24:01.017691096Z 1793957041: Client auto-3AC1774F-D2BB-2323-0F26-9D1736B586B5 [::1:36668] disconnected.
+mqtt-1      | 2026-11-06T09:24:03.029696388Z 1793957043: New connection from ::1:36678 on port 1883.
+mqtt-1      | 2026-11-06T09:24:03.029738138Z 1793957043: New client connected from ::1:36678 as auto-544E2469-0A21-B6FC-E5C1-3DB88EE4C316 (p4, c1, k60).
+mqtt-1      | 2026-11-06T09:24:03.029802472Z 1793957043: Client auto-544E2469-0A21-B6FC-E5C1-3DB88EE4C316 [::1:36678] disconnected.
+mqtt-1      | 2026-11-06T09:24:05.050219458Z 1793957045: New connection from ::1:36686 on port 1883.
+mqtt-1      | 2026-11-06T09:24:05.050295375Z 1793957045: New client connected from ::1:36686 as auto-0308A2EE-1371-2887-399B-200628777D9E (p4, c1, k60).
+mqtt-1      | 2026-11-06T09:24:05.050487417Z 1793957045: Client auto-0308A2EE-1371-2887-399B-200628777D9E [::1:36686] disconnected.
+mqtt-1      | 2026-11-06T09:24:05.962315334Z 1793957045: Client wcs-wcs2-nc-2-tr6-d-1-non-transitive [172.24.0.1:56626] disconnected.

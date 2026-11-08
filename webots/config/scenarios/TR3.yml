@@ -1,0 +1,30 @@
+id: TR3
+purpose: "overlapping roles: removal, last support, restoration"
+d: {model: apron-roles, binding: b-tr3-0}
+a: {initial: initial-tr3}
+consumers: [manager1]
+reporters: [location]
+limit_sim_s: 90
+steps:
+- {id: m1, move: {task: park, robot: diff1, path: [[7, 0], [7, 5]]}}
+- {id: m2, move: {task: park2, robot: humanoid1, path: [[-12, 4], [10, 4]]}}
+- {id: w1, wait: {arrived: park}}
+- {id: w2, wait: {arrived: park2}}
+- {id: r1, request: {task: south, robot: wheeled1, path: [[1.5, -6]]}}
+- {id: w3, wait: {dwell: 2.0}}
+- {id: q1, wait: {quiet: [[diff1, humanoid1], 1.0]}}
+- {id: c1, change: {id: TR3-1, d: {model: apron-roles, binding: b-tr3-1}, a: TR3-1}}
+- {id: w4, wait: {dwell: 2.0}}
+- {id: s1, shot: hold}
+- {id: q2, wait: {quiet: [[diff1, humanoid1], 1.0]}}
+- {id: c2, change: {id: TR3-2, d: {model: apron-roles, binding: b-tr3-2}, a: TR3-2}}
+- {id: w5, wait: {cell: [wheeled1, t_e]}}
+- {id: s2, shot: released}
+- {id: w6, wait: {arrived: south}}
+- {id: q3, wait: {quiet: [[diff1, humanoid1], 1.0]}}
+- {id: c3, change: {id: TR3-3, d: {model: apron-roles, binding: b-tr3-1}, a: TR3-3}}
+- {id: r2, request: {task: north, robot: wheeled1, path: [[1.5, 6]]}}
+- {id: w7, wait: {dwell: 2.0}}
+- {id: m3, move: {task: leave, robot: diff1, path: [[7, 0]]}}
+- {id: w8, wait: {arrived: north}}
+- {id: w9, wait: {arrived: leave}}

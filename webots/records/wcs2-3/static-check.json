@@ -1,0 +1,385 @@
+{
+ "pass": true,
+ "fails": [],
+ "cases": [
+  {
+   "id": "V0",
+   "ok": true,
+   "observed": {
+    "outcome": "accept",
+    "codes": [],
+    "consumers": {
+     "manager1": [
+      "RobotLocatedAt"
+     ]
+    },
+    "producers": {
+     "manager1": [],
+     "wheel1": [
+      "RobotLocatedAt"
+     ],
+     "wheeled1": [
+      "RobotLocatedAt"
+     ],
+     "diff1": [
+      "RobotLocatedAt"
+     ],
+     "humanoid1": [
+      "RobotLocatedAt"
+     ],
+     "biped1": [
+      "RobotLocatedAt"
+     ],
+     "hybrid1": [
+      "RobotLocatedAt"
+     ]
+    }
+   }
+  },
+  {
+   "id": "V1",
+   "ok": true,
+   "observed": {
+    "outcome": "accept",
+    "codes": [],
+    "alternatives": 4
+   }
+  },
+  {
+   "id": "V3",
+   "ok": true,
+   "observed": {
+    "outcome": "accept",
+    "codes": [],
+    "consumers": {
+     "manager1": [
+      "CargoCarriedBy"
+     ],
+     "auditor1": [
+      "CargoCarriedBy"
+     ],
+     "tech1": [
+      "RobotLocatedAt"
+     ],
+     "watch1": [
+      "RobotLocatedAt"
+     ]
+    },
+    "producers": {
+     "manager1": [],
+     "auditor1": [],
+     "tech1": [],
+     "watch1": [],
+     "wheel1": [
+      "CargoCarriedBy",
+      "RobotLocatedAt"
+     ],
+     "wheeled1": [
+      "CargoCarriedBy",
+      "RobotLocatedAt"
+     ],
+     "diff1": [
+      "CargoCarriedBy",
+      "RobotLocatedAt"
+     ],
+     "humanoid1": [
+      "CargoCarriedBy",
+      "RobotLocatedAt"
+     ],
+     "biped1": [
+      "CargoCarriedBy",
+      "RobotLocatedAt"
+     ],
+     "hybrid1": [
+      "CargoCarriedBy",
+      "RobotLocatedAt"
+     ]
+    }
+   }
+  },
+  {
+   "id": "V2",
+   "ok": true,
+   "observed": {
+    "outcome": "accept",
+    "codes": [],
+    "alternatives": 2
+   }
+  },
+  {
+   "id": "M1",
+   "ok": true,
+   "observed": {
+    "outcome": "refuse",
+    "codes": [
+     "SOURCELESS"
+    ]
+   }
+  },
+  {
+   "id": "M2",
+   "ok": true,
+   "observed": {
+    "outcome": "refuse",
+    "codes": [
+     "INCOMPLETE_BINDING"
+    ]
+   }
+  },
+  {
+   "id": "M3",
+   "ok": true,
+   "observed": {
+    "outcome": "refuse",
+    "codes": [
+     "UNKNOWN_ROLE"
+    ]
+   }
+  },
+  {
+   "id": "M4",
+   "ok": true,
+   "observed": {
+    "outcome": "refuse",
+    "codes": [
+     "UNKNOWN_INDIVIDUAL"
+    ]
+   }
+  },
+  {
+   "id": "M5",
+   "ok": true,
+   "observed": {
+    "outcome": "refuse",
+    "codes": [
+     "TYPE_MISMATCH"
+    ]
+   }
+  },
+  {
+   "id": "M6",
+   "ok": true,
+   "observed": {
+    "outcome": "refuse",
+    "codes": [
+     "TYPE_MISMATCH"
+    ]
+   }
+  },
+  {
+   "id": "M7",
+   "ok": true,
+   "observed": {
+    "outcome": "refuse",
+    "codes": [
+     "UNSATISFIABLE"
+    ]
+   }
+  },
+  {
+   "id": "M8",
+   "ok": true,
+   "observed": {
+    "outcome": "refuse",
+    "codes": [
+     "ARITY_MISMATCH"
+    ]
+   }
+  },
+  {
+   "id": "M9",
+   "ok": true,
+   "observed": {
+    "outcome": "refuse",
+    "codes": [
+     "UNKNOWN_CONTEXT"
+    ]
+   }
+  },
+  {
+   "id": "A-valid:a-hand/plans/r0",
+   "ok": true,
+   "observed": []
+  },
+  {
+   "id": "A-valid:a-hand/plans/class-r1",
+   "ok": true,
+   "observed": []
+  },
+  {
+   "id": "A-valid:a-hand/plans/class-r2",
+   "ok": true,
+   "observed": []
+  },
+  {
+   "id": "A-valid:a-hand/plans/apron",
+   "ok": true,
+   "observed": []
+  },
+  {
+   "id": "A-valid:a-hand/plans/congestion-r0",
+   "ok": true,
+   "observed": []
+  },
+  {
+   "id": "A-valid:a-hand/plans/stop",
+   "ok": true,
+   "observed": []
+  },
+  {
+   "id": "A-valid:a-hand/plans/custody",
+   "ok": true,
+   "observed": []
+  },
+  {
+   "id": "A-valid:a-helper/plans/r0",
+   "ok": true,
+   "observed": []
+  },
+  {
+   "id": "A-valid:a-helper/plans/class-r2",
+   "ok": true,
+   "observed": []
+  },
+  {
+   "id": "A-valid:a-helper/plans/apron",
+   "ok": true,
+   "observed": []
+  },
+  {
+   "id": "A-valid:a-helper/plans/congestion-r0",
+   "ok": true,
+   "observed": []
+  },
+  {
+   "id": "A-valid:a-helper/plans/stop",
+   "ok": true,
+   "observed": []
+  },
+  {
+   "id": "A-valid:a-helper/plans/custody",
+   "ok": true,
+   "observed": []
+  },
+  {
+   "id": "A-bad-1",
+   "ok": true,
+   "observed": [
+    "UNKNOWN_INDIVIDUAL"
+   ]
+  },
+  {
+   "id": "A-bad-2",
+   "ok": true,
+   "observed": [
+    "TYPE_MISMATCH"
+   ]
+  },
+  {
+   "id": "A-bad-3",
+   "ok": true,
+   "observed": [
+    "ARITY"
+   ]
+  },
+  {
+   "id": "A-bad-4",
+   "ok": true,
+   "observed": [
+    "UNKNOWN_CONTEXT"
+   ]
+  },
+  {
+   "id": "R1-D",
+   "ok": true,
+   "observed": {
+    "codes": [
+     "UNKNOWN_INDIVIDUAL"
+    ],
+    "store": {}
+   }
+  },
+  {
+   "id": "R1-A",
+   "ok": true,
+   "observed": {
+    "codes": [
+     "UNKNOWN_INDIVIDUAL"
+    ],
+    "store": {}
+   }
+  },
+  {
+   "id": "R2-D",
+   "ok": true,
+   "observed": {
+    "codes": [
+     "TYPE_MISMATCH"
+    ],
+    "store": {}
+   }
+  },
+  {
+   "id": "R2-A",
+   "ok": true,
+   "observed": {
+    "codes": [
+     "TYPE_MISMATCH"
+    ],
+    "store": {}
+   }
+  },
+  {
+   "id": "R3-D",
+   "ok": true,
+   "observed": {
+    "codes": [
+     "TYPE_MISMATCH"
+    ],
+    "store": {}
+   }
+  },
+  {
+   "id": "R3-A",
+   "ok": true,
+   "observed": {
+    "codes": [
+     "TYPE_MISMATCH"
+    ],
+    "store": {}
+   }
+  },
+  {
+   "id": "R4-D",
+   "ok": true,
+   "observed": {
+    "codes": [
+     "BAD_FIELDS"
+    ],
+    "store": {}
+   }
+  },
+  {
+   "id": "R4-A",
+   "ok": true,
+   "observed": {
+    "codes": [
+     "BAD_FIELDS"
+    ],
+    "store": {}
+   }
+  },
+  {
+   "id": "O1-D",
+   "ok": true,
+   "observed": {
+    "outside_report_cfg": 1,
+    "store": {
+     "RobotLocatedAt/wheel1": {
+      "node": "t_e"
+     }
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,12 @@
+schema: rcs-d-binding/1
+cfg: stop
+agents:
+  manager1: [TrafficManager]
+  watch1: [ShortStopWatch]
+  cam1: [Observer]
+  wheel1: [Carrier]
+  wheeled1: [Carrier]
+  diff1: [Carrier]
+  humanoid1: [Carrier]
+  biped1: [Carrier]
+  hybrid1: [Carrier]

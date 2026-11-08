@@ -1,0 +1,156 @@
+{
+ "run": "TR2-A-1-stale-config",
+ "pass": false,
+ "fails": [
+  {
+   "code": "NOTIFICATIONS",
+   "detail": {
+    "manager1": [
+     [
+      "assert",
+      "wheeled1",
+      "t_e"
+     ],
+     [
+      "retract",
+      "wheeled1",
+      null
+     ],
+     [
+      "assert",
+      "wheeled1",
+      "t_e"
+     ],
+     [
+      "retract",
+      "wheeled1",
+      null
+     ]
+    ]
+   }
+  },
+  {
+   "code": "DECISIONS",
+   "detail": [
+    [
+     "south",
+     "release",
+     {}
+    ],
+    [
+     "north",
+     "release",
+     {}
+    ]
+   ]
+  },
+  {
+   "code": "HELD",
+   "detail": "north: missing hold or release"
+  },
+  {
+   "code": "TIMELINE",
+   "detail": [
+    "notify",
+    "manager1",
+    "assert",
+    "diff1"
+   ]
+  },
+  {
+   "code": "TIMELINE",
+   "detail": [
+    "decision",
+    "north",
+    "hold"
+   ]
+  },
+  {
+   "code": "TIMELINE",
+   "detail": [
+    "change",
+    "TR2-r2"
+   ]
+  },
+  {
+   "code": "TIMELINE",
+   "detail": [
+    "notify",
+    "manager1",
+    "assert",
+    "humanoid1"
+   ]
+  },
+  {
+   "code": "TIMELINE",
+   "detail": [
+    "change",
+    "TR2-r1b"
+   ]
+  },
+  {
+   "code": "TIMELINE",
+   "detail": [
+    "notify",
+    "manager1",
+    "retract",
+    "humanoid1"
+   ]
+  },
+  {
+   "code": "TIMELINE",
+   "detail": [
+    "change",
+    "TR2-r0"
+   ]
+  },
+  {
+   "code": "TIMELINE",
+   "detail": [
+    "notify",
+    "manager1",
+    "retract",
+    "diff1"
+   ]
+  },
+  {
+   "code": "TIMELINE",
+   "detail": [
+    "decision",
+    "north",
+    "release"
+   ]
+  },
+  {
+   "code": "TIMELINE",
+   "detail": [
+    "command",
+    "wheeled1",
+    "north"
+   ]
+  },
+  {
+   "code": "TIMELINE",
+   "detail": [
+    "arrived",
+    "north"
+   ]
+  },
+  {
+   "code": "CHANGE_NOT_APPLIED",
+   "detail": "TR2-r1"
+  },
+  {
+   "code": "CHANGE_NOT_APPLIED",
+   "detail": "TR2-r2"
+  },
+  {
+   "code": "CHANGE_NOT_APPLIED",
+   "detail": "TR2-r1b"
+  },
+  {
+   "code": "CHANGE_NOT_APPLIED",
+   "detail": "TR2-r0"
+  }
+ ]
+}

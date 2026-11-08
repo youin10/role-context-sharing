@@ -1,0 +1,29 @@
+prefix logistics: <http://ai.uos.ac.kr/logistics-ontology#>;
+
+role TrafficManager {
+  reads {
+    logistics:RobotStopped($robot, $elapsedSeconds) {
+      $robot == logistics:Biped && $elapsedSeconds >= 3 || $robot == logistics:Wheeled && $elapsedSeconds >= 5;
+    }
+  }
+}
+
+role ShortStopWatch {
+  reads {
+    logistics:RobotStopped($robot, $elapsedSeconds) {
+      $elapsedSeconds >= 2 && $elapsedSeconds <= 4;
+    }
+  }
+}
+
+role Carrier {
+  changes {
+    logistics:RobotLocatedAt($robot, $node);
+  }
+}
+
+role Observer {
+  changes {
+    logistics:RobotStopped($robot, $elapsedSeconds);
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "date": "2026-11-08",
+  "source_archive": "wcs-v2-522e80149f03",
+  "source_archive_matches_recorded_runs": true,
+  "core_snapshot_verified": true,
+  "setup_from_published_directory": "pass",
+  "static_cases": 39,
+  "static_pass": true,
+  "recorded_main_rejudgment": {
+    "runs": 99,
+    "all_match": true
+  },
+  "recorded_negative_rejudgment": {
+    "runs": 22,
+    "all_match": true
+  },
+  "fresh_container_smoke": {
+    "scenario": "TR1",
+    "arm": "D",
+    "pass": true,
+    "included_in_paper_results": false
+  },
+  "credential_and_private_path_scan": "no findings",
+  "source_or_record_changes": "none; README wording updated"
+}

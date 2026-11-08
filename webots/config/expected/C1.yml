@@ -1,0 +1,31 @@
+scenario: C1
+reports:
+  RobotLocatedAt/wheel1: [bay_sw, aisle_w, t_w, t_e, aisle_e]
+  RobotLocatedAt/wheeled1: [hold_n, t_e, hold_s]
+  RobotLocatedAt/diff1: [bay_se]
+  RobotLocatedAt/humanoid1: [bay_sw]
+  RobotLocatedAt/biped1: [bay_sw]
+  RobotLocatedAt/hybrid1: [bay_nw]
+notifications: {manager1: []}
+decisions:
+- [cross, release, {}]
+commands: [[wheel1, pass], [wheeled1, cross]]
+arrivals:
+  pass: [wheel1, 9, 0]
+  cross: [wheeled1, 1.5, -6]
+held: []
+co_occupied: {robots: [wheel1, wheeled1], cells: [t_w, t_e], expected: true}
+timeline:
+- [report, RobotLocatedAt, wheel1, t_w]
+- [decision, cross, release]
+- [command, wheeled1, cross]
+- [arrived, cross]
+changes: []
+final_store:
+  RobotLocatedAt/wheel1: {node: aisle_e}
+  RobotLocatedAt/wheeled1: {node: hold_s}
+  RobotLocatedAt/diff1: {node: bay_se}
+  RobotLocatedAt/humanoid1: {node: bay_sw}
+  RobotLocatedAt/biped1: {node: bay_sw}
+  RobotLocatedAt/hybrid1: {node: bay_nw}
+final_views: {manager1: {}}

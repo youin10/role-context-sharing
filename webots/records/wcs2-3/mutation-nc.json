@@ -1,0 +1,3543 @@
+{
+ "label": "wcs2-3",
+ "rep": 1,
+ "rows": [
+  {
+   "run": "TR1-D",
+   "mutation": "drop_retract",
+   "result": "detected",
+   "codes": [
+    "NOTIFICATIONS",
+    "TIMELINE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR1-D",
+   "mutation": "assert_as_update",
+   "result": "detected",
+   "codes": [
+    "NOTIFICATIONS",
+    "TIMELINE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR1-D",
+   "mutation": "drop_decision",
+   "result": "detected",
+   "codes": [
+    "DECISIONS",
+    "HELD_SHORT",
+    "TIMELINE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR1-D",
+   "mutation": "flip_decision",
+   "result": "detected",
+   "codes": [
+    "DECISIONS",
+    "HELD",
+    "TIMELINE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR1-D",
+   "mutation": "drop_arrival",
+   "result": "detected",
+   "codes": [
+    "ARRIVAL"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR1-D",
+   "mutation": "alter_store",
+   "result": "detected",
+   "codes": [
+    "FINAL_STORE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR1-D",
+   "mutation": "view_leak",
+   "result": "detected",
+   "codes": [
+    "FINAL_VIEWS"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR1-D",
+   "mutation": "unobserved_report",
+   "result": "detected",
+   "codes": [
+    "REPORTS",
+    "REPORT_NOT_OBSERVED"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR1-D",
+   "mutation": "moved_while_held",
+   "result": "detected",
+   "codes": [
+    "HELD_MOVED"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR1-D",
+   "mutation": "report_during_change",
+   "result": "not-applicable"
+  },
+  {
+   "run": "TR1-D",
+   "mutation": "drop_rejection",
+   "result": "not-applicable"
+  },
+  {
+   "run": "TR1-D",
+   "mutation": "accept_refused",
+   "result": "not-applicable"
+  },
+  {
+   "run": "TR1-D",
+   "mutation": "stop_while_moving",
+   "result": "not-applicable"
+  },
+  {
+   "run": "TR1-A",
+   "mutation": "drop_retract",
+   "result": "detected",
+   "codes": [
+    "NOTIFICATIONS",
+    "TIMELINE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR1-A",
+   "mutation": "assert_as_update",
+   "result": "detected",
+   "codes": [
+    "NOTIFICATIONS",
+    "TIMELINE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR1-A",
+   "mutation": "drop_decision",
+   "result": "detected",
+   "codes": [
+    "DECISIONS",
+    "HELD_SHORT",
+    "TIMELINE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR1-A",
+   "mutation": "flip_decision",
+   "result": "detected",
+   "codes": [
+    "DECISIONS",
+    "HELD",
+    "TIMELINE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR1-A",
+   "mutation": "drop_arrival",
+   "result": "detected",
+   "codes": [
+    "ARRIVAL"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR1-A",
+   "mutation": "alter_store",
+   "result": "detected",
+   "codes": [
+    "FINAL_STORE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR1-A",
+   "mutation": "view_leak",
+   "result": "detected",
+   "codes": [
+    "FINAL_VIEWS"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR1-A",
+   "mutation": "unobserved_report",
+   "result": "detected",
+   "codes": [
+    "REPORTS",
+    "REPORT_NOT_OBSERVED"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR1-A",
+   "mutation": "moved_while_held",
+   "result": "detected",
+   "codes": [
+    "HELD_MOVED"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR1-A",
+   "mutation": "report_during_change",
+   "result": "not-applicable"
+  },
+  {
+   "run": "TR1-A",
+   "mutation": "drop_rejection",
+   "result": "not-applicable"
+  },
+  {
+   "run": "TR1-A",
+   "mutation": "accept_refused",
+   "result": "not-applicable"
+  },
+  {
+   "run": "TR1-A",
+   "mutation": "stop_while_moving",
+   "result": "not-applicable"
+  },
+  {
+   "run": "TR1-H",
+   "mutation": "drop_retract",
+   "result": "detected",
+   "codes": [
+    "NOTIFICATIONS",
+    "TIMELINE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR1-H",
+   "mutation": "assert_as_update",
+   "result": "detected",
+   "codes": [
+    "NOTIFICATIONS",
+    "TIMELINE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR1-H",
+   "mutation": "drop_decision",
+   "result": "detected",
+   "codes": [
+    "DECISIONS",
+    "HELD_SHORT",
+    "TIMELINE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR1-H",
+   "mutation": "flip_decision",
+   "result": "detected",
+   "codes": [
+    "DECISIONS",
+    "HELD",
+    "TIMELINE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR1-H",
+   "mutation": "drop_arrival",
+   "result": "detected",
+   "codes": [
+    "ARRIVAL"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR1-H",
+   "mutation": "alter_store",
+   "result": "detected",
+   "codes": [
+    "FINAL_STORE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR1-H",
+   "mutation": "view_leak",
+   "result": "detected",
+   "codes": [
+    "FINAL_VIEWS"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR1-H",
+   "mutation": "unobserved_report",
+   "result": "detected",
+   "codes": [
+    "REPORTS",
+    "REPORT_NOT_OBSERVED"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR1-H",
+   "mutation": "moved_while_held",
+   "result": "detected",
+   "codes": [
+    "HELD_MOVED"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR1-H",
+   "mutation": "report_during_change",
+   "result": "not-applicable"
+  },
+  {
+   "run": "TR1-H",
+   "mutation": "drop_rejection",
+   "result": "not-applicable"
+  },
+  {
+   "run": "TR1-H",
+   "mutation": "accept_refused",
+   "result": "not-applicable"
+  },
+  {
+   "run": "TR1-H",
+   "mutation": "stop_while_moving",
+   "result": "not-applicable"
+  },
+  {
+   "run": "TR2-D",
+   "mutation": "drop_retract",
+   "result": "detected",
+   "codes": [
+    "NOTIFICATIONS"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR2-D",
+   "mutation": "assert_as_update",
+   "result": "detected",
+   "codes": [
+    "NOTIFICATIONS"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR2-D",
+   "mutation": "drop_decision",
+   "result": "detected",
+   "codes": [
+    "DECISIONS",
+    "TIMELINE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR2-D",
+   "mutation": "flip_decision",
+   "result": "detected",
+   "codes": [
+    "DECISIONS",
+    "TIMELINE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR2-D",
+   "mutation": "drop_arrival",
+   "result": "detected",
+   "codes": [
+    "ARRIVAL"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR2-D",
+   "mutation": "alter_store",
+   "result": "detected",
+   "codes": [
+    "FINAL_STORE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR2-D",
+   "mutation": "view_leak",
+   "result": "detected",
+   "codes": [
+    "FINAL_VIEWS"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR2-D",
+   "mutation": "unobserved_report",
+   "result": "detected",
+   "codes": [
+    "REPORTS",
+    "REPORT_NOT_OBSERVED"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR2-D",
+   "mutation": "moved_while_held",
+   "result": "detected",
+   "codes": [
+    "HELD_MOVED"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR2-D",
+   "mutation": "report_during_change",
+   "result": "detected",
+   "codes": [
+    "REPORTS",
+    "REPORT_IN_WINDOW"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR2-D",
+   "mutation": "drop_rejection",
+   "result": "not-applicable"
+  },
+  {
+   "run": "TR2-D",
+   "mutation": "accept_refused",
+   "result": "not-applicable"
+  },
+  {
+   "run": "TR2-D",
+   "mutation": "stop_while_moving",
+   "result": "not-applicable"
+  },
+  {
+   "run": "TR2-A",
+   "mutation": "drop_retract",
+   "result": "detected",
+   "codes": [
+    "NOTIFICATIONS"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR2-A",
+   "mutation": "assert_as_update",
+   "result": "detected",
+   "codes": [
+    "NOTIFICATIONS"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR2-A",
+   "mutation": "drop_decision",
+   "result": "detected",
+   "codes": [
+    "DECISIONS",
+    "TIMELINE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR2-A",
+   "mutation": "flip_decision",
+   "result": "detected",
+   "codes": [
+    "DECISIONS",
+    "TIMELINE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR2-A",
+   "mutation": "drop_arrival",
+   "result": "detected",
+   "codes": [
+    "ARRIVAL"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR2-A",
+   "mutation": "alter_store",
+   "result": "detected",
+   "codes": [
+    "FINAL_STORE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR2-A",
+   "mutation": "view_leak",
+   "result": "detected",
+   "codes": [
+    "FINAL_VIEWS"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR2-A",
+   "mutation": "unobserved_report",
+   "result": "detected",
+   "codes": [
+    "REPORTS",
+    "REPORT_NOT_OBSERVED"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR2-A",
+   "mutation": "moved_while_held",
+   "result": "detected",
+   "codes": [
+    "HELD_MOVED"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR2-A",
+   "mutation": "report_during_change",
+   "result": "detected",
+   "codes": [
+    "REPORTS",
+    "REPORT_IN_WINDOW"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR2-A",
+   "mutation": "drop_rejection",
+   "result": "not-applicable"
+  },
+  {
+   "run": "TR2-A",
+   "mutation": "accept_refused",
+   "result": "not-applicable"
+  },
+  {
+   "run": "TR2-A",
+   "mutation": "stop_while_moving",
+   "result": "not-applicable"
+  },
+  {
+   "run": "TR2-H",
+   "mutation": "drop_retract",
+   "result": "detected",
+   "codes": [
+    "NOTIFICATIONS"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR2-H",
+   "mutation": "assert_as_update",
+   "result": "detected",
+   "codes": [
+    "NOTIFICATIONS"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR2-H",
+   "mutation": "drop_decision",
+   "result": "detected",
+   "codes": [
+    "DECISIONS",
+    "TIMELINE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR2-H",
+   "mutation": "flip_decision",
+   "result": "detected",
+   "codes": [
+    "DECISIONS",
+    "TIMELINE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR2-H",
+   "mutation": "drop_arrival",
+   "result": "detected",
+   "codes": [
+    "ARRIVAL"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR2-H",
+   "mutation": "alter_store",
+   "result": "detected",
+   "codes": [
+    "FINAL_STORE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR2-H",
+   "mutation": "view_leak",
+   "result": "detected",
+   "codes": [
+    "FINAL_VIEWS"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR2-H",
+   "mutation": "unobserved_report",
+   "result": "detected",
+   "codes": [
+    "REPORTS",
+    "REPORT_NOT_OBSERVED"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR2-H",
+   "mutation": "moved_while_held",
+   "result": "detected",
+   "codes": [
+    "HELD_MOVED"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR2-H",
+   "mutation": "report_during_change",
+   "result": "detected",
+   "codes": [
+    "REPORTS",
+    "REPORT_IN_WINDOW"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR2-H",
+   "mutation": "drop_rejection",
+   "result": "not-applicable"
+  },
+  {
+   "run": "TR2-H",
+   "mutation": "accept_refused",
+   "result": "not-applicable"
+  },
+  {
+   "run": "TR2-H",
+   "mutation": "stop_while_moving",
+   "result": "not-applicable"
+  },
+  {
+   "run": "TR3-D",
+   "mutation": "drop_retract",
+   "result": "detected",
+   "codes": [
+    "CHANGE_NOTIFICATIONS",
+    "NOTIFICATIONS",
+    "TIMELINE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR3-D",
+   "mutation": "assert_as_update",
+   "result": "detected",
+   "codes": [
+    "NOTIFICATIONS",
+    "TIMELINE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR3-D",
+   "mutation": "drop_decision",
+   "result": "detected",
+   "codes": [
+    "DECISIONS",
+    "HELD_SHORT",
+    "TIMELINE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR3-D",
+   "mutation": "flip_decision",
+   "result": "detected",
+   "codes": [
+    "DECISIONS",
+    "HELD",
+    "TIMELINE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR3-D",
+   "mutation": "drop_arrival",
+   "result": "detected",
+   "codes": [
+    "ARRIVAL"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR3-D",
+   "mutation": "alter_store",
+   "result": "detected",
+   "codes": [
+    "FINAL_STORE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR3-D",
+   "mutation": "view_leak",
+   "result": "detected",
+   "codes": [
+    "FINAL_VIEWS"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR3-D",
+   "mutation": "unobserved_report",
+   "result": "detected",
+   "codes": [
+    "REPORTS",
+    "REPORT_NOT_OBSERVED"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR3-D",
+   "mutation": "moved_while_held",
+   "result": "detected",
+   "codes": [
+    "HELD_MOVED"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR3-D",
+   "mutation": "report_during_change",
+   "result": "detected",
+   "codes": [
+    "REPORTS",
+    "REPORT_IN_WINDOW"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR3-D",
+   "mutation": "drop_rejection",
+   "result": "not-applicable"
+  },
+  {
+   "run": "TR3-D",
+   "mutation": "accept_refused",
+   "result": "not-applicable"
+  },
+  {
+   "run": "TR3-D",
+   "mutation": "stop_while_moving",
+   "result": "not-applicable"
+  },
+  {
+   "run": "TR3-A",
+   "mutation": "drop_retract",
+   "result": "detected",
+   "codes": [
+    "CHANGE_NOTIFICATIONS",
+    "NOTIFICATIONS",
+    "TIMELINE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR3-A",
+   "mutation": "assert_as_update",
+   "result": "detected",
+   "codes": [
+    "NOTIFICATIONS",
+    "TIMELINE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR3-A",
+   "mutation": "drop_decision",
+   "result": "detected",
+   "codes": [
+    "DECISIONS",
+    "HELD_SHORT",
+    "TIMELINE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR3-A",
+   "mutation": "flip_decision",
+   "result": "detected",
+   "codes": [
+    "DECISIONS",
+    "HELD",
+    "TIMELINE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR3-A",
+   "mutation": "drop_arrival",
+   "result": "detected",
+   "codes": [
+    "ARRIVAL"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR3-A",
+   "mutation": "alter_store",
+   "result": "detected",
+   "codes": [
+    "FINAL_STORE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR3-A",
+   "mutation": "view_leak",
+   "result": "detected",
+   "codes": [
+    "FINAL_VIEWS"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR3-A",
+   "mutation": "unobserved_report",
+   "result": "detected",
+   "codes": [
+    "REPORTS",
+    "REPORT_NOT_OBSERVED"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR3-A",
+   "mutation": "moved_while_held",
+   "result": "detected",
+   "codes": [
+    "HELD_MOVED"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR3-A",
+   "mutation": "report_during_change",
+   "result": "detected",
+   "codes": [
+    "REPORTS",
+    "REPORT_IN_WINDOW"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR3-A",
+   "mutation": "drop_rejection",
+   "result": "not-applicable"
+  },
+  {
+   "run": "TR3-A",
+   "mutation": "accept_refused",
+   "result": "not-applicable"
+  },
+  {
+   "run": "TR3-A",
+   "mutation": "stop_while_moving",
+   "result": "not-applicable"
+  },
+  {
+   "run": "TR3-H",
+   "mutation": "drop_retract",
+   "result": "detected",
+   "codes": [
+    "CHANGE_NOTIFICATIONS",
+    "NOTIFICATIONS",
+    "TIMELINE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR3-H",
+   "mutation": "assert_as_update",
+   "result": "detected",
+   "codes": [
+    "NOTIFICATIONS",
+    "TIMELINE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR3-H",
+   "mutation": "drop_decision",
+   "result": "detected",
+   "codes": [
+    "DECISIONS",
+    "HELD_SHORT",
+    "TIMELINE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR3-H",
+   "mutation": "flip_decision",
+   "result": "detected",
+   "codes": [
+    "DECISIONS",
+    "HELD",
+    "TIMELINE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR3-H",
+   "mutation": "drop_arrival",
+   "result": "detected",
+   "codes": [
+    "ARRIVAL"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR3-H",
+   "mutation": "alter_store",
+   "result": "detected",
+   "codes": [
+    "FINAL_STORE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR3-H",
+   "mutation": "view_leak",
+   "result": "detected",
+   "codes": [
+    "FINAL_VIEWS"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR3-H",
+   "mutation": "unobserved_report",
+   "result": "detected",
+   "codes": [
+    "REPORTS",
+    "REPORT_NOT_OBSERVED"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR3-H",
+   "mutation": "moved_while_held",
+   "result": "detected",
+   "codes": [
+    "HELD_MOVED"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR3-H",
+   "mutation": "report_during_change",
+   "result": "detected",
+   "codes": [
+    "REPORTS",
+    "REPORT_IN_WINDOW"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR3-H",
+   "mutation": "drop_rejection",
+   "result": "not-applicable"
+  },
+  {
+   "run": "TR3-H",
+   "mutation": "accept_refused",
+   "result": "not-applicable"
+  },
+  {
+   "run": "TR3-H",
+   "mutation": "stop_while_moving",
+   "result": "not-applicable"
+  },
+  {
+   "run": "TR4-D",
+   "mutation": "drop_retract",
+   "result": "detected",
+   "codes": [
+    "CHANGE_NOTIFICATIONS",
+    "NOTIFICATIONS"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR4-D",
+   "mutation": "assert_as_update",
+   "result": "detected",
+   "codes": [
+    "NOTIFICATIONS",
+    "TIMELINE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR4-D",
+   "mutation": "drop_decision",
+   "result": "detected",
+   "codes": [
+    "DECISIONS",
+    "HELD_SHORT",
+    "OWNERS",
+    "TIMELINE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR4-D",
+   "mutation": "flip_decision",
+   "result": "detected",
+   "codes": [
+    "DECISIONS",
+    "HELD",
+    "TIMELINE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR4-D",
+   "mutation": "drop_arrival",
+   "result": "detected",
+   "codes": [
+    "ARRIVAL"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR4-D",
+   "mutation": "alter_store",
+   "result": "detected",
+   "codes": [
+    "FINAL_STORE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR4-D",
+   "mutation": "view_leak",
+   "result": "detected",
+   "codes": [
+    "FINAL_VIEWS"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR4-D",
+   "mutation": "unobserved_report",
+   "result": "detected",
+   "codes": [
+    "REPORTS",
+    "REPORT_NOT_OBSERVED"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR4-D",
+   "mutation": "moved_while_held",
+   "result": "detected",
+   "codes": [
+    "HELD_MOVED"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR4-D",
+   "mutation": "report_during_change",
+   "result": "detected",
+   "codes": [
+    "REPORTS",
+    "REPORT_IN_WINDOW",
+    "REPORT_NOT_OBSERVED"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR4-D",
+   "mutation": "drop_rejection",
+   "result": "not-applicable"
+  },
+  {
+   "run": "TR4-D",
+   "mutation": "accept_refused",
+   "result": "not-applicable"
+  },
+  {
+   "run": "TR4-D",
+   "mutation": "stop_while_moving",
+   "result": "not-applicable"
+  },
+  {
+   "run": "TR4-A",
+   "mutation": "drop_retract",
+   "result": "detected",
+   "codes": [
+    "CHANGE_NOTIFICATIONS",
+    "NOTIFICATIONS"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR4-A",
+   "mutation": "assert_as_update",
+   "result": "detected",
+   "codes": [
+    "NOTIFICATIONS",
+    "TIMELINE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR4-A",
+   "mutation": "drop_decision",
+   "result": "detected",
+   "codes": [
+    "DECISIONS",
+    "HELD_SHORT",
+    "OWNERS",
+    "TIMELINE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR4-A",
+   "mutation": "flip_decision",
+   "result": "detected",
+   "codes": [
+    "DECISIONS",
+    "HELD",
+    "TIMELINE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR4-A",
+   "mutation": "drop_arrival",
+   "result": "detected",
+   "codes": [
+    "ARRIVAL"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR4-A",
+   "mutation": "alter_store",
+   "result": "detected",
+   "codes": [
+    "FINAL_STORE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR4-A",
+   "mutation": "view_leak",
+   "result": "detected",
+   "codes": [
+    "FINAL_VIEWS"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR4-A",
+   "mutation": "unobserved_report",
+   "result": "detected",
+   "codes": [
+    "REPORTS",
+    "REPORT_NOT_OBSERVED"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR4-A",
+   "mutation": "moved_while_held",
+   "result": "detected",
+   "codes": [
+    "HELD_MOVED"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR4-A",
+   "mutation": "report_during_change",
+   "result": "detected",
+   "codes": [
+    "REPORTS",
+    "REPORT_IN_WINDOW",
+    "REPORT_NOT_OBSERVED"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR4-A",
+   "mutation": "drop_rejection",
+   "result": "not-applicable"
+  },
+  {
+   "run": "TR4-A",
+   "mutation": "accept_refused",
+   "result": "not-applicable"
+  },
+  {
+   "run": "TR4-A",
+   "mutation": "stop_while_moving",
+   "result": "not-applicable"
+  },
+  {
+   "run": "TR4-H",
+   "mutation": "drop_retract",
+   "result": "detected",
+   "codes": [
+    "CHANGE_NOTIFICATIONS",
+    "NOTIFICATIONS"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR4-H",
+   "mutation": "assert_as_update",
+   "result": "detected",
+   "codes": [
+    "NOTIFICATIONS",
+    "TIMELINE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR4-H",
+   "mutation": "drop_decision",
+   "result": "detected",
+   "codes": [
+    "DECISIONS",
+    "HELD_SHORT",
+    "OWNERS",
+    "TIMELINE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR4-H",
+   "mutation": "flip_decision",
+   "result": "detected",
+   "codes": [
+    "DECISIONS",
+    "HELD",
+    "TIMELINE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR4-H",
+   "mutation": "drop_arrival",
+   "result": "detected",
+   "codes": [
+    "ARRIVAL"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR4-H",
+   "mutation": "alter_store",
+   "result": "detected",
+   "codes": [
+    "FINAL_STORE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR4-H",
+   "mutation": "view_leak",
+   "result": "detected",
+   "codes": [
+    "FINAL_VIEWS"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR4-H",
+   "mutation": "unobserved_report",
+   "result": "detected",
+   "codes": [
+    "REPORTS",
+    "REPORT_NOT_OBSERVED"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR4-H",
+   "mutation": "moved_while_held",
+   "result": "detected",
+   "codes": [
+    "HELD_MOVED"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR4-H",
+   "mutation": "report_during_change",
+   "result": "detected",
+   "codes": [
+    "REPORTS",
+    "REPORT_IN_WINDOW",
+    "REPORT_NOT_OBSERVED"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR4-H",
+   "mutation": "drop_rejection",
+   "result": "not-applicable"
+  },
+  {
+   "run": "TR4-H",
+   "mutation": "accept_refused",
+   "result": "not-applicable"
+  },
+  {
+   "run": "TR4-H",
+   "mutation": "stop_while_moving",
+   "result": "not-applicable"
+  },
+  {
+   "run": "TR5-D",
+   "mutation": "drop_retract",
+   "result": "detected",
+   "codes": [
+    "NOTIFICATIONS",
+    "TIMELINE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR5-D",
+   "mutation": "assert_as_update",
+   "result": "detected",
+   "codes": [
+    "NOTIFICATIONS",
+    "TIMELINE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR5-D",
+   "mutation": "drop_decision",
+   "result": "detected",
+   "codes": [
+    "DECISIONS"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR5-D",
+   "mutation": "flip_decision",
+   "result": "detected",
+   "codes": [
+    "DECISIONS",
+    "HELD",
+    "TIMELINE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR5-D",
+   "mutation": "drop_arrival",
+   "result": "detected",
+   "codes": [
+    "ARRIVAL"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR5-D",
+   "mutation": "alter_store",
+   "result": "detected",
+   "codes": [
+    "FINAL_STORE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR5-D",
+   "mutation": "view_leak",
+   "result": "detected",
+   "codes": [
+    "FINAL_VIEWS"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR5-D",
+   "mutation": "unobserved_report",
+   "result": "detected",
+   "codes": [
+    "REPORTS",
+    "REPORT_NOT_OBSERVED"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR5-D",
+   "mutation": "moved_while_held",
+   "result": "detected",
+   "codes": [
+    "HELD_MOVED"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR5-D",
+   "mutation": "report_during_change",
+   "result": "detected",
+   "codes": [
+    "REPORTS",
+    "REPORT_IN_WINDOW"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR5-D",
+   "mutation": "drop_rejection",
+   "result": "not-applicable"
+  },
+  {
+   "run": "TR5-D",
+   "mutation": "accept_refused",
+   "result": "not-applicable"
+  },
+  {
+   "run": "TR5-D",
+   "mutation": "stop_while_moving",
+   "result": "not-applicable"
+  },
+  {
+   "run": "TR5-A",
+   "mutation": "drop_retract",
+   "result": "detected",
+   "codes": [
+    "NOTIFICATIONS",
+    "TIMELINE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR5-A",
+   "mutation": "assert_as_update",
+   "result": "detected",
+   "codes": [
+    "NOTIFICATIONS",
+    "TIMELINE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR5-A",
+   "mutation": "drop_decision",
+   "result": "detected",
+   "codes": [
+    "DECISIONS"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR5-A",
+   "mutation": "flip_decision",
+   "result": "detected",
+   "codes": [
+    "DECISIONS",
+    "HELD",
+    "TIMELINE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR5-A",
+   "mutation": "drop_arrival",
+   "result": "detected",
+   "codes": [
+    "ARRIVAL"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR5-A",
+   "mutation": "alter_store",
+   "result": "detected",
+   "codes": [
+    "FINAL_STORE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR5-A",
+   "mutation": "view_leak",
+   "result": "detected",
+   "codes": [
+    "FINAL_VIEWS"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR5-A",
+   "mutation": "unobserved_report",
+   "result": "detected",
+   "codes": [
+    "REPORTS",
+    "REPORT_NOT_OBSERVED"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR5-A",
+   "mutation": "moved_while_held",
+   "result": "detected",
+   "codes": [
+    "HELD_MOVED"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR5-A",
+   "mutation": "report_during_change",
+   "result": "detected",
+   "codes": [
+    "REPORTS",
+    "REPORT_IN_WINDOW"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR5-A",
+   "mutation": "drop_rejection",
+   "result": "not-applicable"
+  },
+  {
+   "run": "TR5-A",
+   "mutation": "accept_refused",
+   "result": "not-applicable"
+  },
+  {
+   "run": "TR5-A",
+   "mutation": "stop_while_moving",
+   "result": "not-applicable"
+  },
+  {
+   "run": "TR5-H",
+   "mutation": "drop_retract",
+   "result": "detected",
+   "codes": [
+    "NOTIFICATIONS",
+    "TIMELINE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR5-H",
+   "mutation": "assert_as_update",
+   "result": "detected",
+   "codes": [
+    "NOTIFICATIONS",
+    "TIMELINE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR5-H",
+   "mutation": "drop_decision",
+   "result": "detected",
+   "codes": [
+    "DECISIONS"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR5-H",
+   "mutation": "flip_decision",
+   "result": "detected",
+   "codes": [
+    "DECISIONS",
+    "HELD",
+    "TIMELINE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR5-H",
+   "mutation": "drop_arrival",
+   "result": "detected",
+   "codes": [
+    "ARRIVAL"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR5-H",
+   "mutation": "alter_store",
+   "result": "detected",
+   "codes": [
+    "FINAL_STORE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR5-H",
+   "mutation": "view_leak",
+   "result": "detected",
+   "codes": [
+    "FINAL_VIEWS"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR5-H",
+   "mutation": "unobserved_report",
+   "result": "detected",
+   "codes": [
+    "REPORTS",
+    "REPORT_NOT_OBSERVED"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR5-H",
+   "mutation": "moved_while_held",
+   "result": "detected",
+   "codes": [
+    "HELD_MOVED"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR5-H",
+   "mutation": "report_during_change",
+   "result": "detected",
+   "codes": [
+    "REPORTS",
+    "REPORT_IN_WINDOW"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR5-H",
+   "mutation": "drop_rejection",
+   "result": "not-applicable"
+  },
+  {
+   "run": "TR5-H",
+   "mutation": "accept_refused",
+   "result": "not-applicable"
+  },
+  {
+   "run": "TR5-H",
+   "mutation": "stop_while_moving",
+   "result": "not-applicable"
+  },
+  {
+   "run": "TR6-D",
+   "mutation": "drop_retract",
+   "result": "detected",
+   "codes": [
+    "NOTIFICATIONS",
+    "TIMELINE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR6-D",
+   "mutation": "assert_as_update",
+   "result": "detected",
+   "codes": [
+    "NOTIFICATIONS",
+    "TIMELINE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR6-D",
+   "mutation": "drop_decision",
+   "result": "detected",
+   "codes": [
+    "DECISIONS",
+    "TIMELINE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR6-D",
+   "mutation": "flip_decision",
+   "result": "detected",
+   "codes": [
+    "DECISIONS",
+    "TIMELINE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR6-D",
+   "mutation": "drop_arrival",
+   "result": "detected",
+   "codes": [
+    "ARRIVAL"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR6-D",
+   "mutation": "alter_store",
+   "result": "detected",
+   "codes": [
+    "FINAL_STORE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR6-D",
+   "mutation": "view_leak",
+   "result": "detected",
+   "codes": [
+    "FINAL_VIEWS"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR6-D",
+   "mutation": "unobserved_report",
+   "result": "detected",
+   "codes": [
+    "REPORTS",
+    "REPORT_NOT_OBSERVED"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR6-D",
+   "mutation": "moved_while_held",
+   "result": "not-applicable"
+  },
+  {
+   "run": "TR6-D",
+   "mutation": "report_during_change",
+   "result": "not-applicable"
+  },
+  {
+   "run": "TR6-D",
+   "mutation": "drop_rejection",
+   "result": "not-applicable"
+  },
+  {
+   "run": "TR6-D",
+   "mutation": "accept_refused",
+   "result": "not-applicable"
+  },
+  {
+   "run": "TR6-D",
+   "mutation": "stop_while_moving",
+   "result": "detected",
+   "codes": [
+    "REPORT_NOT_OBSERVED"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR6-A",
+   "mutation": "drop_retract",
+   "result": "detected",
+   "codes": [
+    "NOTIFICATIONS",
+    "TIMELINE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR6-A",
+   "mutation": "assert_as_update",
+   "result": "detected",
+   "codes": [
+    "NOTIFICATIONS",
+    "TIMELINE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR6-A",
+   "mutation": "drop_decision",
+   "result": "detected",
+   "codes": [
+    "DECISIONS",
+    "TIMELINE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR6-A",
+   "mutation": "flip_decision",
+   "result": "detected",
+   "codes": [
+    "DECISIONS",
+    "TIMELINE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR6-A",
+   "mutation": "drop_arrival",
+   "result": "detected",
+   "codes": [
+    "ARRIVAL"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR6-A",
+   "mutation": "alter_store",
+   "result": "detected",
+   "codes": [
+    "FINAL_STORE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR6-A",
+   "mutation": "view_leak",
+   "result": "detected",
+   "codes": [
+    "FINAL_VIEWS"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR6-A",
+   "mutation": "unobserved_report",
+   "result": "detected",
+   "codes": [
+    "REPORTS",
+    "REPORT_NOT_OBSERVED"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR6-A",
+   "mutation": "moved_while_held",
+   "result": "not-applicable"
+  },
+  {
+   "run": "TR6-A",
+   "mutation": "report_during_change",
+   "result": "not-applicable"
+  },
+  {
+   "run": "TR6-A",
+   "mutation": "drop_rejection",
+   "result": "not-applicable"
+  },
+  {
+   "run": "TR6-A",
+   "mutation": "accept_refused",
+   "result": "not-applicable"
+  },
+  {
+   "run": "TR6-A",
+   "mutation": "stop_while_moving",
+   "result": "detected",
+   "codes": [
+    "REPORT_NOT_OBSERVED"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR6-H",
+   "mutation": "drop_retract",
+   "result": "detected",
+   "codes": [
+    "NOTIFICATIONS",
+    "TIMELINE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR6-H",
+   "mutation": "assert_as_update",
+   "result": "detected",
+   "codes": [
+    "NOTIFICATIONS",
+    "TIMELINE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR6-H",
+   "mutation": "drop_decision",
+   "result": "detected",
+   "codes": [
+    "DECISIONS",
+    "TIMELINE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR6-H",
+   "mutation": "flip_decision",
+   "result": "detected",
+   "codes": [
+    "DECISIONS",
+    "TIMELINE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR6-H",
+   "mutation": "drop_arrival",
+   "result": "detected",
+   "codes": [
+    "ARRIVAL"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR6-H",
+   "mutation": "alter_store",
+   "result": "detected",
+   "codes": [
+    "FINAL_STORE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR6-H",
+   "mutation": "view_leak",
+   "result": "detected",
+   "codes": [
+    "FINAL_VIEWS"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR6-H",
+   "mutation": "unobserved_report",
+   "result": "detected",
+   "codes": [
+    "REPORTS",
+    "REPORT_NOT_OBSERVED"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR6-H",
+   "mutation": "moved_while_held",
+   "result": "not-applicable"
+  },
+  {
+   "run": "TR6-H",
+   "mutation": "report_during_change",
+   "result": "not-applicable"
+  },
+  {
+   "run": "TR6-H",
+   "mutation": "drop_rejection",
+   "result": "not-applicable"
+  },
+  {
+   "run": "TR6-H",
+   "mutation": "accept_refused",
+   "result": "not-applicable"
+  },
+  {
+   "run": "TR6-H",
+   "mutation": "stop_while_moving",
+   "result": "detected",
+   "codes": [
+    "REPORT_NOT_OBSERVED"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR7-D",
+   "mutation": "drop_retract",
+   "result": "detected",
+   "codes": [
+    "NOTIFICATIONS",
+    "TIMELINE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR7-D",
+   "mutation": "assert_as_update",
+   "result": "detected",
+   "codes": [
+    "NOTIFICATIONS"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR7-D",
+   "mutation": "drop_decision",
+   "result": "detected",
+   "codes": [
+    "DECISIONS",
+    "TIMELINE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR7-D",
+   "mutation": "flip_decision",
+   "result": "detected",
+   "codes": [
+    "DECISIONS",
+    "HELD",
+    "TIMELINE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR7-D",
+   "mutation": "drop_arrival",
+   "result": "detected",
+   "codes": [
+    "ARRIVAL"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR7-D",
+   "mutation": "alter_store",
+   "result": "detected",
+   "codes": [
+    "FINAL_STORE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR7-D",
+   "mutation": "view_leak",
+   "result": "detected",
+   "codes": [
+    "FINAL_VIEWS"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR7-D",
+   "mutation": "unobserved_report",
+   "result": "detected",
+   "codes": [
+    "REPORTS",
+    "REPORT_NOT_OBSERVED"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR7-D",
+   "mutation": "moved_while_held",
+   "result": "detected",
+   "codes": [
+    "HELD_MOVED"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR7-D",
+   "mutation": "report_during_change",
+   "result": "not-applicable"
+  },
+  {
+   "run": "TR7-D",
+   "mutation": "drop_rejection",
+   "result": "not-applicable"
+  },
+  {
+   "run": "TR7-D",
+   "mutation": "accept_refused",
+   "result": "not-applicable"
+  },
+  {
+   "run": "TR7-D",
+   "mutation": "stop_while_moving",
+   "result": "not-applicable"
+  },
+  {
+   "run": "TR7-A",
+   "mutation": "drop_retract",
+   "result": "detected",
+   "codes": [
+    "NOTIFICATIONS",
+    "TIMELINE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR7-A",
+   "mutation": "assert_as_update",
+   "result": "detected",
+   "codes": [
+    "NOTIFICATIONS"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR7-A",
+   "mutation": "drop_decision",
+   "result": "detected",
+   "codes": [
+    "DECISIONS",
+    "TIMELINE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR7-A",
+   "mutation": "flip_decision",
+   "result": "detected",
+   "codes": [
+    "DECISIONS",
+    "HELD",
+    "TIMELINE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR7-A",
+   "mutation": "drop_arrival",
+   "result": "detected",
+   "codes": [
+    "ARRIVAL"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR7-A",
+   "mutation": "alter_store",
+   "result": "detected",
+   "codes": [
+    "FINAL_STORE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR7-A",
+   "mutation": "view_leak",
+   "result": "detected",
+   "codes": [
+    "FINAL_VIEWS"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR7-A",
+   "mutation": "unobserved_report",
+   "result": "detected",
+   "codes": [
+    "REPORTS",
+    "REPORT_NOT_OBSERVED"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR7-A",
+   "mutation": "moved_while_held",
+   "result": "detected",
+   "codes": [
+    "HELD_MOVED"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR7-A",
+   "mutation": "report_during_change",
+   "result": "not-applicable"
+  },
+  {
+   "run": "TR7-A",
+   "mutation": "drop_rejection",
+   "result": "not-applicable"
+  },
+  {
+   "run": "TR7-A",
+   "mutation": "accept_refused",
+   "result": "not-applicable"
+  },
+  {
+   "run": "TR7-A",
+   "mutation": "stop_while_moving",
+   "result": "not-applicable"
+  },
+  {
+   "run": "TR7-H",
+   "mutation": "drop_retract",
+   "result": "detected",
+   "codes": [
+    "NOTIFICATIONS",
+    "TIMELINE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR7-H",
+   "mutation": "assert_as_update",
+   "result": "detected",
+   "codes": [
+    "NOTIFICATIONS"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR7-H",
+   "mutation": "drop_decision",
+   "result": "detected",
+   "codes": [
+    "DECISIONS",
+    "TIMELINE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR7-H",
+   "mutation": "flip_decision",
+   "result": "detected",
+   "codes": [
+    "DECISIONS",
+    "HELD",
+    "TIMELINE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR7-H",
+   "mutation": "drop_arrival",
+   "result": "detected",
+   "codes": [
+    "ARRIVAL"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR7-H",
+   "mutation": "alter_store",
+   "result": "detected",
+   "codes": [
+    "FINAL_STORE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR7-H",
+   "mutation": "view_leak",
+   "result": "detected",
+   "codes": [
+    "FINAL_VIEWS"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR7-H",
+   "mutation": "unobserved_report",
+   "result": "detected",
+   "codes": [
+    "REPORTS",
+    "REPORT_NOT_OBSERVED"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR7-H",
+   "mutation": "moved_while_held",
+   "result": "detected",
+   "codes": [
+    "HELD_MOVED"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "TR7-H",
+   "mutation": "report_during_change",
+   "result": "not-applicable"
+  },
+  {
+   "run": "TR7-H",
+   "mutation": "drop_rejection",
+   "result": "not-applicable"
+  },
+  {
+   "run": "TR7-H",
+   "mutation": "accept_refused",
+   "result": "not-applicable"
+  },
+  {
+   "run": "TR7-H",
+   "mutation": "stop_while_moving",
+   "result": "not-applicable"
+  },
+  {
+   "run": "C1-D",
+   "mutation": "drop_retract",
+   "result": "not-applicable"
+  },
+  {
+   "run": "C1-D",
+   "mutation": "assert_as_update",
+   "result": "not-applicable"
+  },
+  {
+   "run": "C1-D",
+   "mutation": "drop_decision",
+   "result": "detected",
+   "codes": [
+    "DECISIONS",
+    "TIMELINE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "C1-D",
+   "mutation": "flip_decision",
+   "result": "detected",
+   "codes": [
+    "DECISIONS",
+    "TIMELINE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "C1-D",
+   "mutation": "drop_arrival",
+   "result": "detected",
+   "codes": [
+    "ARRIVAL"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "C1-D",
+   "mutation": "alter_store",
+   "result": "detected",
+   "codes": [
+    "FINAL_STORE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "C1-D",
+   "mutation": "view_leak",
+   "result": "detected",
+   "codes": [
+    "FINAL_VIEWS"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "C1-D",
+   "mutation": "unobserved_report",
+   "result": "detected",
+   "codes": [
+    "REPORTS",
+    "REPORT_NOT_OBSERVED"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "C1-D",
+   "mutation": "moved_while_held",
+   "result": "not-applicable"
+  },
+  {
+   "run": "C1-D",
+   "mutation": "report_during_change",
+   "result": "not-applicable"
+  },
+  {
+   "run": "C1-D",
+   "mutation": "drop_rejection",
+   "result": "not-applicable"
+  },
+  {
+   "run": "C1-D",
+   "mutation": "accept_refused",
+   "result": "not-applicable"
+  },
+  {
+   "run": "C1-D",
+   "mutation": "stop_while_moving",
+   "result": "not-applicable"
+  },
+  {
+   "run": "C1-A",
+   "mutation": "drop_retract",
+   "result": "not-applicable"
+  },
+  {
+   "run": "C1-A",
+   "mutation": "assert_as_update",
+   "result": "not-applicable"
+  },
+  {
+   "run": "C1-A",
+   "mutation": "drop_decision",
+   "result": "detected",
+   "codes": [
+    "DECISIONS",
+    "TIMELINE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "C1-A",
+   "mutation": "flip_decision",
+   "result": "detected",
+   "codes": [
+    "DECISIONS",
+    "TIMELINE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "C1-A",
+   "mutation": "drop_arrival",
+   "result": "detected",
+   "codes": [
+    "ARRIVAL"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "C1-A",
+   "mutation": "alter_store",
+   "result": "detected",
+   "codes": [
+    "FINAL_STORE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "C1-A",
+   "mutation": "view_leak",
+   "result": "detected",
+   "codes": [
+    "FINAL_VIEWS"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "C1-A",
+   "mutation": "unobserved_report",
+   "result": "detected",
+   "codes": [
+    "REPORTS",
+    "REPORT_NOT_OBSERVED"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "C1-A",
+   "mutation": "moved_while_held",
+   "result": "not-applicable"
+  },
+  {
+   "run": "C1-A",
+   "mutation": "report_during_change",
+   "result": "not-applicable"
+  },
+  {
+   "run": "C1-A",
+   "mutation": "drop_rejection",
+   "result": "not-applicable"
+  },
+  {
+   "run": "C1-A",
+   "mutation": "accept_refused",
+   "result": "not-applicable"
+  },
+  {
+   "run": "C1-A",
+   "mutation": "stop_while_moving",
+   "result": "not-applicable"
+  },
+  {
+   "run": "C1-H",
+   "mutation": "drop_retract",
+   "result": "not-applicable"
+  },
+  {
+   "run": "C1-H",
+   "mutation": "assert_as_update",
+   "result": "not-applicable"
+  },
+  {
+   "run": "C1-H",
+   "mutation": "drop_decision",
+   "result": "detected",
+   "codes": [
+    "DECISIONS",
+    "TIMELINE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "C1-H",
+   "mutation": "flip_decision",
+   "result": "detected",
+   "codes": [
+    "DECISIONS",
+    "TIMELINE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "C1-H",
+   "mutation": "drop_arrival",
+   "result": "detected",
+   "codes": [
+    "ARRIVAL"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "C1-H",
+   "mutation": "alter_store",
+   "result": "detected",
+   "codes": [
+    "FINAL_STORE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "C1-H",
+   "mutation": "view_leak",
+   "result": "detected",
+   "codes": [
+    "FINAL_VIEWS"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "C1-H",
+   "mutation": "unobserved_report",
+   "result": "detected",
+   "codes": [
+    "REPORTS",
+    "REPORT_NOT_OBSERVED"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "C1-H",
+   "mutation": "moved_while_held",
+   "result": "not-applicable"
+  },
+  {
+   "run": "C1-H",
+   "mutation": "report_during_change",
+   "result": "not-applicable"
+  },
+  {
+   "run": "C1-H",
+   "mutation": "drop_rejection",
+   "result": "not-applicable"
+  },
+  {
+   "run": "C1-H",
+   "mutation": "accept_refused",
+   "result": "not-applicable"
+  },
+  {
+   "run": "C1-H",
+   "mutation": "stop_while_moving",
+   "result": "not-applicable"
+  },
+  {
+   "run": "C2-D",
+   "mutation": "drop_retract",
+   "result": "not-applicable"
+  },
+  {
+   "run": "C2-D",
+   "mutation": "assert_as_update",
+   "result": "detected",
+   "codes": [
+    "NOTIFICATIONS"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "C2-D",
+   "mutation": "drop_decision",
+   "result": "detected",
+   "codes": [
+    "DECISIONS"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "C2-D",
+   "mutation": "flip_decision",
+   "result": "not-applicable"
+  },
+  {
+   "run": "C2-D",
+   "mutation": "drop_arrival",
+   "result": "detected",
+   "codes": [
+    "ARRIVAL",
+    "TIMELINE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "C2-D",
+   "mutation": "alter_store",
+   "result": "detected",
+   "codes": [
+    "FINAL_STORE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "C2-D",
+   "mutation": "view_leak",
+   "result": "detected",
+   "codes": [
+    "FINAL_VIEWS"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "C2-D",
+   "mutation": "unobserved_report",
+   "result": "detected",
+   "codes": [
+    "REPORTS",
+    "REPORT_NOT_OBSERVED"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "C2-D",
+   "mutation": "moved_while_held",
+   "result": "detected",
+   "codes": [
+    "HELD_MOVED"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "C2-D",
+   "mutation": "report_during_change",
+   "result": "not-applicable"
+  },
+  {
+   "run": "C2-D",
+   "mutation": "drop_rejection",
+   "result": "not-applicable"
+  },
+  {
+   "run": "C2-D",
+   "mutation": "accept_refused",
+   "result": "not-applicable"
+  },
+  {
+   "run": "C2-D",
+   "mutation": "stop_while_moving",
+   "result": "not-applicable"
+  },
+  {
+   "run": "C2-A",
+   "mutation": "drop_retract",
+   "result": "not-applicable"
+  },
+  {
+   "run": "C2-A",
+   "mutation": "assert_as_update",
+   "result": "detected",
+   "codes": [
+    "NOTIFICATIONS"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "C2-A",
+   "mutation": "drop_decision",
+   "result": "detected",
+   "codes": [
+    "DECISIONS"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "C2-A",
+   "mutation": "flip_decision",
+   "result": "not-applicable"
+  },
+  {
+   "run": "C2-A",
+   "mutation": "drop_arrival",
+   "result": "detected",
+   "codes": [
+    "ARRIVAL",
+    "TIMELINE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "C2-A",
+   "mutation": "alter_store",
+   "result": "detected",
+   "codes": [
+    "FINAL_STORE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "C2-A",
+   "mutation": "view_leak",
+   "result": "detected",
+   "codes": [
+    "FINAL_VIEWS"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "C2-A",
+   "mutation": "unobserved_report",
+   "result": "detected",
+   "codes": [
+    "REPORTS",
+    "REPORT_NOT_OBSERVED"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "C2-A",
+   "mutation": "moved_while_held",
+   "result": "detected",
+   "codes": [
+    "HELD_MOVED"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "C2-A",
+   "mutation": "report_during_change",
+   "result": "not-applicable"
+  },
+  {
+   "run": "C2-A",
+   "mutation": "drop_rejection",
+   "result": "not-applicable"
+  },
+  {
+   "run": "C2-A",
+   "mutation": "accept_refused",
+   "result": "not-applicable"
+  },
+  {
+   "run": "C2-A",
+   "mutation": "stop_while_moving",
+   "result": "not-applicable"
+  },
+  {
+   "run": "C2-H",
+   "mutation": "drop_retract",
+   "result": "not-applicable"
+  },
+  {
+   "run": "C2-H",
+   "mutation": "assert_as_update",
+   "result": "detected",
+   "codes": [
+    "NOTIFICATIONS"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "C2-H",
+   "mutation": "drop_decision",
+   "result": "detected",
+   "codes": [
+    "DECISIONS"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "C2-H",
+   "mutation": "flip_decision",
+   "result": "not-applicable"
+  },
+  {
+   "run": "C2-H",
+   "mutation": "drop_arrival",
+   "result": "detected",
+   "codes": [
+    "ARRIVAL",
+    "TIMELINE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "C2-H",
+   "mutation": "alter_store",
+   "result": "detected",
+   "codes": [
+    "FINAL_STORE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "C2-H",
+   "mutation": "view_leak",
+   "result": "detected",
+   "codes": [
+    "FINAL_VIEWS"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "C2-H",
+   "mutation": "unobserved_report",
+   "result": "detected",
+   "codes": [
+    "REPORTS",
+    "REPORT_NOT_OBSERVED"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "C2-H",
+   "mutation": "moved_while_held",
+   "result": "detected",
+   "codes": [
+    "HELD_MOVED"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "C2-H",
+   "mutation": "report_during_change",
+   "result": "not-applicable"
+  },
+  {
+   "run": "C2-H",
+   "mutation": "drop_rejection",
+   "result": "not-applicable"
+  },
+  {
+   "run": "C2-H",
+   "mutation": "accept_refused",
+   "result": "not-applicable"
+  },
+  {
+   "run": "C2-H",
+   "mutation": "stop_while_moving",
+   "result": "not-applicable"
+  },
+  {
+   "run": "N1-D",
+   "mutation": "drop_retract",
+   "result": "detected",
+   "codes": [
+    "NOTIFICATIONS",
+    "TIMELINE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "N1-D",
+   "mutation": "assert_as_update",
+   "result": "detected",
+   "codes": [
+    "NOTIFICATIONS"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "N1-D",
+   "mutation": "drop_decision",
+   "result": "detected",
+   "codes": [
+    "DECISIONS",
+    "HELD_SHORT",
+    "TIMELINE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "N1-D",
+   "mutation": "flip_decision",
+   "result": "detected",
+   "codes": [
+    "DECISIONS",
+    "HELD",
+    "TIMELINE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "N1-D",
+   "mutation": "drop_arrival",
+   "result": "detected",
+   "codes": [
+    "ARRIVAL"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "N1-D",
+   "mutation": "alter_store",
+   "result": "detected",
+   "codes": [
+    "FINAL_STORE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "N1-D",
+   "mutation": "view_leak",
+   "result": "detected",
+   "codes": [
+    "FINAL_VIEWS"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "N1-D",
+   "mutation": "unobserved_report",
+   "result": "detected",
+   "codes": [
+    "REPORTS",
+    "REPORT_NOT_OBSERVED"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "N1-D",
+   "mutation": "moved_while_held",
+   "result": "detected",
+   "codes": [
+    "HELD_MOVED"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "N1-D",
+   "mutation": "report_during_change",
+   "result": "not-applicable"
+  },
+  {
+   "run": "N1-D",
+   "mutation": "drop_rejection",
+   "result": "not-applicable"
+  },
+  {
+   "run": "N1-D",
+   "mutation": "accept_refused",
+   "result": "detected",
+   "codes": [
+    "REFUSED",
+    "TIMELINE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "N1-D",
+   "mutation": "stop_while_moving",
+   "result": "not-applicable"
+  },
+  {
+   "run": "N1-A",
+   "mutation": "drop_retract",
+   "result": "detected",
+   "codes": [
+    "NOTIFICATIONS",
+    "TIMELINE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "N1-A",
+   "mutation": "assert_as_update",
+   "result": "detected",
+   "codes": [
+    "NOTIFICATIONS"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "N1-A",
+   "mutation": "drop_decision",
+   "result": "detected",
+   "codes": [
+    "DECISIONS",
+    "HELD_SHORT",
+    "TIMELINE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "N1-A",
+   "mutation": "flip_decision",
+   "result": "detected",
+   "codes": [
+    "DECISIONS",
+    "HELD",
+    "TIMELINE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "N1-A",
+   "mutation": "drop_arrival",
+   "result": "detected",
+   "codes": [
+    "ARRIVAL"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "N1-A",
+   "mutation": "alter_store",
+   "result": "detected",
+   "codes": [
+    "FINAL_STORE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "N1-A",
+   "mutation": "view_leak",
+   "result": "detected",
+   "codes": [
+    "FINAL_VIEWS"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "N1-A",
+   "mutation": "unobserved_report",
+   "result": "detected",
+   "codes": [
+    "REPORTS",
+    "REPORT_NOT_OBSERVED"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "N1-A",
+   "mutation": "moved_while_held",
+   "result": "detected",
+   "codes": [
+    "HELD_MOVED"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "N1-A",
+   "mutation": "report_during_change",
+   "result": "not-applicable"
+  },
+  {
+   "run": "N1-A",
+   "mutation": "drop_rejection",
+   "result": "not-applicable"
+  },
+  {
+   "run": "N1-A",
+   "mutation": "accept_refused",
+   "result": "detected",
+   "codes": [
+    "REFUSED",
+    "TIMELINE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "N1-A",
+   "mutation": "stop_while_moving",
+   "result": "not-applicable"
+  },
+  {
+   "run": "N1-H",
+   "mutation": "drop_retract",
+   "result": "detected",
+   "codes": [
+    "NOTIFICATIONS",
+    "TIMELINE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "N1-H",
+   "mutation": "assert_as_update",
+   "result": "detected",
+   "codes": [
+    "NOTIFICATIONS"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "N1-H",
+   "mutation": "drop_decision",
+   "result": "detected",
+   "codes": [
+    "DECISIONS",
+    "HELD_SHORT",
+    "TIMELINE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "N1-H",
+   "mutation": "flip_decision",
+   "result": "detected",
+   "codes": [
+    "DECISIONS",
+    "HELD",
+    "TIMELINE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "N1-H",
+   "mutation": "drop_arrival",
+   "result": "detected",
+   "codes": [
+    "ARRIVAL"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "N1-H",
+   "mutation": "alter_store",
+   "result": "detected",
+   "codes": [
+    "FINAL_STORE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "N1-H",
+   "mutation": "view_leak",
+   "result": "detected",
+   "codes": [
+    "FINAL_VIEWS"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "N1-H",
+   "mutation": "unobserved_report",
+   "result": "detected",
+   "codes": [
+    "REPORTS",
+    "REPORT_NOT_OBSERVED"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "N1-H",
+   "mutation": "moved_while_held",
+   "result": "detected",
+   "codes": [
+    "HELD_MOVED"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "N1-H",
+   "mutation": "report_during_change",
+   "result": "not-applicable"
+  },
+  {
+   "run": "N1-H",
+   "mutation": "drop_rejection",
+   "result": "not-applicable"
+  },
+  {
+   "run": "N1-H",
+   "mutation": "accept_refused",
+   "result": "detected",
+   "codes": [
+    "REFUSED",
+    "TIMELINE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "N1-H",
+   "mutation": "stop_while_moving",
+   "result": "not-applicable"
+  },
+  {
+   "run": "N2-D",
+   "mutation": "drop_retract",
+   "result": "detected",
+   "codes": [
+    "NOTIFICATIONS",
+    "TIMELINE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "N2-D",
+   "mutation": "assert_as_update",
+   "result": "detected",
+   "codes": [
+    "NOTIFICATIONS"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "N2-D",
+   "mutation": "drop_decision",
+   "result": "detected",
+   "codes": [
+    "DECISIONS",
+    "HELD_SHORT"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "N2-D",
+   "mutation": "flip_decision",
+   "result": "detected",
+   "codes": [
+    "DECISIONS",
+    "HELD",
+    "TIMELINE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "N2-D",
+   "mutation": "drop_arrival",
+   "result": "detected",
+   "codes": [
+    "ARRIVAL"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "N2-D",
+   "mutation": "alter_store",
+   "result": "detected",
+   "codes": [
+    "FINAL_STORE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "N2-D",
+   "mutation": "view_leak",
+   "result": "detected",
+   "codes": [
+    "FINAL_VIEWS"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "N2-D",
+   "mutation": "unobserved_report",
+   "result": "detected",
+   "codes": [
+    "REPORTS",
+    "REPORT_NOT_OBSERVED"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "N2-D",
+   "mutation": "moved_while_held",
+   "result": "detected",
+   "codes": [
+    "HELD_MOVED"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "N2-D",
+   "mutation": "report_during_change",
+   "result": "not-applicable"
+  },
+  {
+   "run": "N2-D",
+   "mutation": "drop_rejection",
+   "result": "detected",
+   "codes": [
+    "REJECTED"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "N2-D",
+   "mutation": "accept_refused",
+   "result": "not-applicable"
+  },
+  {
+   "run": "N2-D",
+   "mutation": "stop_while_moving",
+   "result": "not-applicable"
+  },
+  {
+   "run": "N2-A",
+   "mutation": "drop_retract",
+   "result": "detected",
+   "codes": [
+    "NOTIFICATIONS",
+    "TIMELINE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "N2-A",
+   "mutation": "assert_as_update",
+   "result": "detected",
+   "codes": [
+    "NOTIFICATIONS"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "N2-A",
+   "mutation": "drop_decision",
+   "result": "detected",
+   "codes": [
+    "DECISIONS",
+    "HELD_SHORT"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "N2-A",
+   "mutation": "flip_decision",
+   "result": "detected",
+   "codes": [
+    "DECISIONS",
+    "HELD",
+    "TIMELINE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "N2-A",
+   "mutation": "drop_arrival",
+   "result": "detected",
+   "codes": [
+    "ARRIVAL"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "N2-A",
+   "mutation": "alter_store",
+   "result": "detected",
+   "codes": [
+    "FINAL_STORE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "N2-A",
+   "mutation": "view_leak",
+   "result": "detected",
+   "codes": [
+    "FINAL_VIEWS"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "N2-A",
+   "mutation": "unobserved_report",
+   "result": "detected",
+   "codes": [
+    "REPORTS",
+    "REPORT_NOT_OBSERVED"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "N2-A",
+   "mutation": "moved_while_held",
+   "result": "detected",
+   "codes": [
+    "HELD_MOVED"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "N2-A",
+   "mutation": "report_during_change",
+   "result": "not-applicable"
+  },
+  {
+   "run": "N2-A",
+   "mutation": "drop_rejection",
+   "result": "detected",
+   "codes": [
+    "REJECTED"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "N2-A",
+   "mutation": "accept_refused",
+   "result": "not-applicable"
+  },
+  {
+   "run": "N2-A",
+   "mutation": "stop_while_moving",
+   "result": "not-applicable"
+  },
+  {
+   "run": "N2-H",
+   "mutation": "drop_retract",
+   "result": "detected",
+   "codes": [
+    "NOTIFICATIONS",
+    "TIMELINE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "N2-H",
+   "mutation": "assert_as_update",
+   "result": "detected",
+   "codes": [
+    "NOTIFICATIONS"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "N2-H",
+   "mutation": "drop_decision",
+   "result": "detected",
+   "codes": [
+    "DECISIONS",
+    "HELD_SHORT"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "N2-H",
+   "mutation": "flip_decision",
+   "result": "detected",
+   "codes": [
+    "DECISIONS",
+    "HELD",
+    "TIMELINE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "N2-H",
+   "mutation": "drop_arrival",
+   "result": "detected",
+   "codes": [
+    "ARRIVAL"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "N2-H",
+   "mutation": "alter_store",
+   "result": "detected",
+   "codes": [
+    "FINAL_STORE"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "N2-H",
+   "mutation": "view_leak",
+   "result": "detected",
+   "codes": [
+    "FINAL_VIEWS"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "N2-H",
+   "mutation": "unobserved_report",
+   "result": "detected",
+   "codes": [
+    "REPORTS",
+    "REPORT_NOT_OBSERVED"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "N2-H",
+   "mutation": "moved_while_held",
+   "result": "detected",
+   "codes": [
+    "HELD_MOVED"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "N2-H",
+   "mutation": "report_during_change",
+   "result": "not-applicable"
+  },
+  {
+   "run": "N2-H",
+   "mutation": "drop_rejection",
+   "result": "detected",
+   "codes": [
+    "REJECTED"
+   ],
+   "clean_pass": true
+  },
+  {
+   "run": "N2-H",
+   "mutation": "accept_refused",
+   "result": "not-applicable"
+  },
+  {
+   "run": "N2-H",
+   "mutation": "stop_while_moving",
+   "result": "not-applicable"
+  }
+ ],
+ "detected": 300,
+ "missed": 0,
+ "not_applicable": 129
+}

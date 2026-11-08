@@ -1,0 +1,3 @@
+role: TransitCoordinator
+subscribe:
+- (rule (fact (RobotLocatedAt $robot $node)) --> (notify (RobotLocatedAt $robot $node)))

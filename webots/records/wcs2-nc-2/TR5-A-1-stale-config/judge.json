@@ -1,0 +1,128 @@
+{
+ "run": "TR5-A-1-stale-config",
+ "pass": false,
+ "fails": [
+  {
+   "code": "NOTIFICATIONS",
+   "detail": {
+    "manager1": [
+     [
+      "assert",
+      "apron_zone",
+      2
+     ],
+     [
+      "update",
+      "apron_zone",
+      3
+     ],
+     [
+      "update",
+      "apron_zone",
+      2
+     ],
+     [
+      "retract",
+      "apron_zone",
+      null
+     ],
+     [
+      "assert",
+      "apron_zone",
+      2
+     ],
+     [
+      "retract",
+      "apron_zone",
+      null
+     ],
+     [
+      "assert",
+      "apron_zone",
+      2
+     ]
+    ]
+   }
+  },
+  {
+   "code": "DECISIONS",
+   "detail": [
+    [
+     "enter",
+     "hold",
+     {
+      "apron_zone": 3
+     }
+    ],
+    [
+     "enter",
+     "hold",
+     {
+      "apron_zone": 2
+     }
+    ],
+    [
+     "enter",
+     "release",
+     {}
+    ],
+    [
+     "enter2",
+     "release",
+     {}
+    ]
+   ]
+  },
+  {
+   "code": "HELD",
+   "detail": "enter2: missing hold or release"
+  },
+  {
+   "code": "TIMELINE",
+   "detail": [
+    "decision",
+    "enter2",
+    "hold"
+   ]
+  },
+  {
+   "code": "TIMELINE",
+   "detail": [
+    "change",
+    "TR5-r0"
+   ]
+  },
+  {
+   "code": "TIMELINE",
+   "detail": [
+    "notify",
+    "manager1",
+    "retract",
+    "apron_zone"
+   ]
+  },
+  {
+   "code": "TIMELINE",
+   "detail": [
+    "decision",
+    "enter2",
+    "release"
+   ]
+  },
+  {
+   "code": "TIMELINE",
+   "detail": [
+    "arrived",
+    "enter2"
+   ]
+  },
+  {
+   "code": "CHANGE_NOT_APPLIED",
+   "detail": "TR5-r1"
+  },
+  {
+   "code": "CHANGE_NOT_APPLIED",
+   "detail": "TR5-r0"
+  }
+ ]
+}
