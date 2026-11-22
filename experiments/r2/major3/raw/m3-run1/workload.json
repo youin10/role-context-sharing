@@ -1,0 +1,389 @@
+{
+ "events": [
+  {
+   "schema": "rcs-env/1",
+   "event_id": "sw:0:r001",
+   "producer": "r001",
+   "pv": {
+    "n": 1,
+    "ts": 1
+   },
+   "context": "RobotStatus",
+   "instance": "r001",
+   "op": "upsert",
+   "value": {
+    "battery": 31,
+    "zone": "storage"
+   }
+  },
+  {
+   "schema": "rcs-env/1",
+   "event_id": "sw:0:r002",
+   "producer": "r002",
+   "pv": {
+    "n": 1,
+    "ts": 2
+   },
+   "context": "RobotStatus",
+   "instance": "r002",
+   "op": "upsert",
+   "value": {
+    "battery": 21,
+    "zone": "storage"
+   }
+  },
+  {
+   "schema": "rcs-env/1",
+   "event_id": "sw:0:r003",
+   "producer": "r003",
+   "pv": {
+    "n": 1,
+    "ts": 3
+   },
+   "context": "RobotStatus",
+   "instance": "r003",
+   "op": "upsert",
+   "value": {
+    "battery": 31,
+    "zone": "storage"
+   }
+  },
+  {
+   "schema": "rcs-env/1",
+   "event_id": "sw:0:r004",
+   "producer": "r004",
+   "pv": {
+    "n": 1,
+    "ts": 4
+   },
+   "context": "RobotStatus",
+   "instance": "r004",
+   "op": "upsert",
+   "value": {
+    "battery": 21,
+    "zone": "storage"
+   }
+  },
+  {
+   "schema": "rcs-env/1",
+   "event_id": "sw:1:r001",
+   "producer": "r001",
+   "pv": {
+    "n": 2,
+    "ts": 5
+   },
+   "context": "RobotStatus",
+   "instance": "r001",
+   "op": "upsert",
+   "value": {
+    "battery": 30,
+    "zone": "storage"
+   }
+  },
+  {
+   "schema": "rcs-env/1",
+   "event_id": "sw:1:r002",
+   "producer": "r002",
+   "pv": {
+    "n": 2,
+    "ts": 6
+   },
+   "context": "RobotStatus",
+   "instance": "r002",
+   "op": "upsert",
+   "value": {
+    "battery": 20,
+    "zone": "storage"
+   }
+  },
+  {
+   "schema": "rcs-env/1",
+   "event_id": "sw:1:r003",
+   "producer": "r003",
+   "pv": {
+    "n": 2,
+    "ts": 7
+   },
+   "context": "RobotStatus",
+   "instance": "r003",
+   "op": "upsert",
+   "value": {
+    "battery": 30,
+    "zone": "storage"
+   }
+  },
+  {
+   "schema": "rcs-env/1",
+   "event_id": "sw:1:r004",
+   "producer": "r004",
+   "pv": {
+    "n": 2,
+    "ts": 8
+   },
+   "context": "RobotStatus",
+   "instance": "r004",
+   "op": "upsert",
+   "value": {
+    "battery": 20,
+    "zone": "storage"
+   }
+  },
+  {
+   "schema": "rcs-env/1",
+   "event_id": "sw:2:r001",
+   "producer": "r001",
+   "pv": {
+    "n": 3,
+    "ts": 9
+   },
+   "context": "RobotStatus",
+   "instance": "r001",
+   "op": "upsert",
+   "value": {
+    "battery": 29,
+    "zone": "storage"
+   }
+  },
+  {
+   "schema": "rcs-env/1",
+   "event_id": "sw:2:r002",
+   "producer": "r002",
+   "pv": {
+    "n": 3,
+    "ts": 10
+   },
+   "context": "RobotStatus",
+   "instance": "r002",
+   "op": "upsert",
+   "value": {
+    "battery": 19,
+    "zone": "storage"
+   }
+  },
+  {
+   "schema": "rcs-env/1",
+   "event_id": "sw:2:r003",
+   "producer": "r003",
+   "pv": {
+    "n": 3,
+    "ts": 11
+   },
+   "context": "RobotStatus",
+   "instance": "r003",
+   "op": "upsert",
+   "value": {
+    "battery": 29,
+    "zone": "storage"
+   }
+  },
+  {
+   "schema": "rcs-env/1",
+   "event_id": "sw:2:r004",
+   "producer": "r004",
+   "pv": {
+    "n": 3,
+    "ts": 12
+   },
+   "context": "RobotStatus",
+   "instance": "r004",
+   "op": "upsert",
+   "value": {
+    "battery": 19,
+    "zone": "storage"
+   }
+  },
+  {
+   "schema": "rcs-env/1",
+   "event_id": "sw:3:r001",
+   "producer": "r001",
+   "pv": {
+    "n": 4,
+    "ts": 13
+   },
+   "context": "RobotStatus",
+   "instance": "r001",
+   "op": "upsert",
+   "value": {
+    "battery": 31,
+    "zone": "storage"
+   }
+  },
+  {
+   "schema": "rcs-env/1",
+   "event_id": "sw:3:r002",
+   "producer": "r002",
+   "pv": {
+    "n": 4,
+    "ts": 14
+   },
+   "context": "RobotStatus",
+   "instance": "r002",
+   "op": "upsert",
+   "value": {
+    "battery": 25,
+    "zone": "storage"
+   }
+  },
+  {
+   "schema": "rcs-env/1",
+   "event_id": "sw:3:r003",
+   "producer": "r003",
+   "pv": {
+    "n": 4,
+    "ts": 15
+   },
+   "context": "RobotStatus",
+   "instance": "r003",
+   "op": "upsert",
+   "value": {
+    "battery": 31,
+    "zone": "storage"
+   }
+  },
+  {
+   "schema": "rcs-env/1",
+   "event_id": "sw:3:r004",
+   "producer": "r004",
+   "pv": {
+    "n": 4,
+    "ts": 16
+   },
+   "context": "RobotStatus",
+   "instance": "r004",
+   "op": "upsert",
+   "value": {
+    "battery": 25,
+    "zone": "storage"
+   }
+  }
+ ],
+ "expected_per_consumer_by_round": [
+  [],
+  [
+   [
+    "assert",
+    "RobotStatus",
+    "r001",
+    {
+     "battery": 30,
+     "zone": "storage"
+    }
+   ],
+   [
+    "assert",
+    "RobotStatus",
+    "r002",
+    {
+     "battery": 20,
+     "zone": "storage"
+    }
+   ],
+   [
+    "assert",
+    "RobotStatus",
+    "r003",
+    {
+     "battery": 30,
+     "zone": "storage"
+    }
+   ],
+   [
+    "assert",
+    "RobotStatus",
+    "r004",
+    {
+     "battery": 20,
+     "zone": "storage"
+    }
+   ]
+  ],
+  [
+   [
+    "update",
+    "RobotStatus",
+    "r001",
+    {
+     "battery": 29,
+     "zone": "storage"
+    }
+   ],
+   [
+    "update",
+    "RobotStatus",
+    "r002",
+    {
+     "battery": 19,
+     "zone": "storage"
+    }
+   ],
+   [
+    "update",
+    "RobotStatus",
+    "r003",
+    {
+     "battery": 29,
+     "zone": "storage"
+    }
+   ],
+   [
+    "update",
+    "RobotStatus",
+    "r004",
+    {
+     "battery": 19,
+     "zone": "storage"
+    }
+   ]
+  ],
+  [
+   [
+    "retract",
+    "RobotStatus",
+    "r001",
+    null
+   ],
+   [
+    "retract",
+    "RobotStatus",
+    "r002",
+    null
+   ],
+   [
+    "retract",
+    "RobotStatus",
+    "r003",
+    null
+   ],
+   [
+    "retract",
+    "RobotStatus",
+    "r004",
+    null
+   ]
+  ]
+ ],
+ "robots": [
+  [
+   "r001",
+   "Biped"
+  ],
+  [
+   "r002",
+   "Wheeled"
+  ],
+  [
+   "r003",
+   "Biped"
+  ],
+  [
+   "r004",
+   "Wheeled"
+  ]
+ ],
+ "consumers": [
+  "c001",
+  "c002",
+  "c003",
+  "c004"
+ ]
+}

@@ -1,0 +1,1 @@
+{"config": "OR-m12", "family": "OR", "gc_enabled": true, "kind": "start", "m": 12, "org_sha256": "759a286b4dfc670859a1bb36280905c156dbb27341f5a8279f6334e4133d5aba", "per_call_s": 120.0, "pid": 30915, "python": "3.14.7 (main, Aug  5 2026, 10:29:49) [Clang 21.0.0 (clang-2100.1.1.101)]", "reps": 5, "t_wall": 1795271149.449331}

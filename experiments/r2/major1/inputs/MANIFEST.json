@@ -1,0 +1,454 @@
+{
+ "schema": "r2-major1-inputs/1",
+ "robots": {
+  "r001": [
+   "Humanoid"
+  ],
+  "r002": [
+   "DifferentialDrive"
+  ],
+  "r003": [
+   "Biped",
+   "Wheeled"
+  ],
+  "r004": [
+   "Wheeled"
+  ]
+ },
+ "consumers": [
+  "c001",
+  "c002",
+  "c003",
+  "c004"
+ ],
+ "configs": [
+  {
+   "name": "REF-m00",
+   "family": "REF",
+   "m": 0,
+   "expected": {
+    "lines": 1,
+    "atoms": 4,
+    "expanded_reads_per_role": 2,
+    "expanded_reads_total": 2,
+    "final_alternatives_per_consumer": 2,
+    "flows": 2
+   },
+   "org_sha256": "fe7316bc3d87939a028cc00dfac767677a726233922bd05345bd97988d3d0ee4",
+   "org_bytes": 332
+  },
+  {
+   "name": "OR-m01",
+   "family": "OR",
+   "m": 1,
+   "expected": {
+    "lines": 1,
+    "atoms": 2,
+    "expanded_reads_per_role": 2,
+    "expanded_reads_total": 2,
+    "final_alternatives_per_consumer": 2,
+    "flows": 2
+   },
+   "org_sha256": "5e70abd336015578ea65862b3348a9d63a39d5cf1b02dcd26ea662f8b2896d31",
+   "org_bytes": 282
+  },
+  {
+   "name": "OR-m02",
+   "family": "OR",
+   "m": 2,
+   "expected": {
+    "lines": 2,
+    "atoms": 4,
+    "expanded_reads_per_role": 4,
+    "expanded_reads_total": 4,
+    "final_alternatives_per_consumer": 4,
+    "flows": 4
+   },
+   "org_sha256": "0ba3cd5be09d81aeb0036e7bbeab124073e6d982c5c5de5a455ded5d49e57ad8",
+   "org_bytes": 321
+  },
+  {
+   "name": "OR-m04",
+   "family": "OR",
+   "m": 4,
+   "expected": {
+    "lines": 4,
+    "atoms": 8,
+    "expanded_reads_per_role": 16,
+    "expanded_reads_total": 16,
+    "final_alternatives_per_consumer": 16,
+    "flows": 16
+   },
+   "org_sha256": "d2fcd7582c4a6c3286b4e7fa2ca0937bd4c536cd5d83708af69529c7a115c700",
+   "org_bytes": 403
+  },
+  {
+   "name": "OR-m08",
+   "family": "OR",
+   "m": 8,
+   "expected": {
+    "lines": 8,
+    "atoms": 16,
+    "expanded_reads_per_role": 256,
+    "expanded_reads_total": 256,
+    "final_alternatives_per_consumer": 256,
+    "flows": 256
+   },
+   "org_sha256": "c5f34d4878675868a4e1fe212a9ef158f7459a6822ebc1a491027e3e1db51867",
+   "org_bytes": 590
+  },
+  {
+   "name": "OR-m10",
+   "family": "OR",
+   "m": 10,
+   "expected": {
+    "lines": 10,
+    "atoms": 20,
+    "expanded_reads_per_role": 1024,
+    "expanded_reads_total": 1024,
+    "final_alternatives_per_consumer": 1024,
+    "flows": 1024
+   },
+   "org_sha256": "dc22be0bfb29e51bb88d34610af225d25355810ff4c74bf8c1ff2973e3fd123f",
+   "org_bytes": 691
+  },
+  {
+   "name": "OR-m12",
+   "family": "OR",
+   "m": 12,
+   "expected": {
+    "lines": 12,
+    "atoms": 24,
+    "expanded_reads_per_role": 4096,
+    "expanded_reads_total": 4096,
+    "final_alternatives_per_consumer": 4096,
+    "flows": 4096
+   },
+   "org_sha256": "759a286b4dfc670859a1bb36280905c156dbb27341f5a8279f6334e4133d5aba",
+   "org_bytes": 782
+  },
+  {
+   "name": "OR-m14",
+   "family": "OR",
+   "m": 14,
+   "expected": {
+    "lines": 14,
+    "atoms": 28,
+    "expanded_reads_per_role": 16384,
+    "expanded_reads_total": 16384,
+    "final_alternatives_per_consumer": 16384,
+    "flows": 16384
+   },
+   "org_sha256": "252408b20ac9680e913bf83d323e1c2ca16368ef1a30b1afb78c7c818124ea53",
+   "org_bytes": 866
+  },
+  {
+   "name": "OR-m16",
+   "family": "OR",
+   "m": 16,
+   "expected": {
+    "lines": 16,
+    "atoms": 32,
+    "expanded_reads_per_role": 65536,
+    "expanded_reads_total": 65536,
+    "final_alternatives_per_consumer": 65536,
+    "flows": 65536
+   },
+   "org_sha256": "ad253c01bf6b1ac6565c3c26f6c388fc6ced4ba84cc2344864bd72452535ffe6",
+   "org_bytes": 973
+  },
+  {
+   "name": "OR-m18",
+   "family": "OR",
+   "m": 18,
+   "expected": {
+    "lines": 18,
+    "atoms": 36,
+    "expanded_reads_per_role": 262144,
+    "expanded_reads_total": 262144,
+    "final_alternatives_per_consumer": 262144,
+    "flows": 262144
+   },
+   "org_sha256": "2049e3bdc63a0207de01462fcbe7f01b8b73b7e9163bbf6d5548b76834c7159d",
+   "org_bytes": 1057
+  },
+  {
+   "name": "OR-m20",
+   "family": "OR",
+   "m": 20,
+   "expected": {
+    "lines": 20,
+    "atoms": 40,
+    "expanded_reads_per_role": 1048576,
+    "expanded_reads_total": 1048576,
+    "final_alternatives_per_consumer": 1048576,
+    "flows": 1048576
+   },
+   "org_sha256": "3c764a1e2518c43d6ea32b2ccf4ef6fc5e1af0211e2ae4023e44a7b9e0474d34",
+   "org_bytes": 1160
+  },
+  {
+   "name": "AND-m01",
+   "family": "AND",
+   "m": 1,
+   "expected": {
+    "lines": 1,
+    "atoms": 2,
+    "expanded_reads_per_role": 1,
+    "expanded_reads_total": 1,
+    "final_alternatives_per_consumer": 1,
+    "flows": 1
+   },
+   "org_sha256": "41b9dba92a6aecab595b8f86fb1b1c8754198d8c0e743b6fd1677fd0ef54170d",
+   "org_bytes": 282
+  },
+  {
+   "name": "AND-m02",
+   "family": "AND",
+   "m": 2,
+   "expected": {
+    "lines": 2,
+    "atoms": 4,
+    "expanded_reads_per_role": 1,
+    "expanded_reads_total": 1,
+    "final_alternatives_per_consumer": 1,
+    "flows": 1
+   },
+   "org_sha256": "5bbb816b29036a019474b485de40c174da15b651817bc8e0f572887e45687db4",
+   "org_bytes": 321
+  },
+  {
+   "name": "AND-m04",
+   "family": "AND",
+   "m": 4,
+   "expected": {
+    "lines": 4,
+    "atoms": 8,
+    "expanded_reads_per_role": 1,
+    "expanded_reads_total": 1,
+    "final_alternatives_per_consumer": 1,
+    "flows": 1
+   },
+   "org_sha256": "b0813e05bfdaebf75d33d75d5e0e45611e0b4506b0861cc11fa9aa51963db4b7",
+   "org_bytes": 403
+  },
+  {
+   "name": "AND-m08",
+   "family": "AND",
+   "m": 8,
+   "expected": {
+    "lines": 8,
+    "atoms": 16,
+    "expanded_reads_per_role": 1,
+    "expanded_reads_total": 1,
+    "final_alternatives_per_consumer": 1,
+    "flows": 1
+   },
+   "org_sha256": "39809cff2d8a5e35763cd0dd763256c295de7a2edaa700cd49f39841b309cdb1",
+   "org_bytes": 590
+  },
+  {
+   "name": "AND-m10",
+   "family": "AND",
+   "m": 10,
+   "expected": {
+    "lines": 10,
+    "atoms": 20,
+    "expanded_reads_per_role": 1,
+    "expanded_reads_total": 1,
+    "final_alternatives_per_consumer": 1,
+    "flows": 1
+   },
+   "org_sha256": "f6f8e8642bc4ccd7b6d312bfe7ca8f1ef242179c63e2ad39f0cff0b1e612f764",
+   "org_bytes": 691
+  },
+  {
+   "name": "AND-m12",
+   "family": "AND",
+   "m": 12,
+   "expected": {
+    "lines": 12,
+    "atoms": 24,
+    "expanded_reads_per_role": 1,
+    "expanded_reads_total": 1,
+    "final_alternatives_per_consumer": 1,
+    "flows": 1
+   },
+   "org_sha256": "5794fd9ecf19e01dc9f3ec6c9a689beca2c6606cbf83b3c2dfb7139f9a7b67fe",
+   "org_bytes": 782
+  },
+  {
+   "name": "AND-m14",
+   "family": "AND",
+   "m": 14,
+   "expected": {
+    "lines": 14,
+    "atoms": 28,
+    "expanded_reads_per_role": 1,
+    "expanded_reads_total": 1,
+    "final_alternatives_per_consumer": 1,
+    "flows": 1
+   },
+   "org_sha256": "2bb5784907497044310acc21018b49e9cc9864c7b26e1825a0d9e646dd4ccf89",
+   "org_bytes": 866
+  },
+  {
+   "name": "AND-m16",
+   "family": "AND",
+   "m": 16,
+   "expected": {
+    "lines": 16,
+    "atoms": 32,
+    "expanded_reads_per_role": 1,
+    "expanded_reads_total": 1,
+    "final_alternatives_per_consumer": 1,
+    "flows": 1
+   },
+   "org_sha256": "ea2357bbef9f1cb467dccced2ea4ebbba481c0696dff3888ebd85d395361fce2",
+   "org_bytes": 973
+  },
+  {
+   "name": "AND-m18",
+   "family": "AND",
+   "m": 18,
+   "expected": {
+    "lines": 18,
+    "atoms": 36,
+    "expanded_reads_per_role": 1,
+    "expanded_reads_total": 1,
+    "final_alternatives_per_consumer": 1,
+    "flows": 1
+   },
+   "org_sha256": "451951da88be71aee8ea836867e779fdd4833921725653298d8b87e971381fba",
+   "org_bytes": 1057
+  },
+  {
+   "name": "AND-m20",
+   "family": "AND",
+   "m": 20,
+   "expected": {
+    "lines": 20,
+    "atoms": 40,
+    "expanded_reads_per_role": 1,
+    "expanded_reads_total": 1,
+    "final_alternatives_per_consumer": 1,
+    "flows": 1
+   },
+   "org_sha256": "8fdbea860c1b6c3bb9017be73970836cb526bae3e77a783b1be9e243d113a768",
+   "org_bytes": 1160
+  },
+  {
+   "name": "DUP-m01",
+   "family": "DUP",
+   "m": 1,
+   "expected": {
+    "lines": 1,
+    "atoms": 2,
+    "expanded_reads_per_role": 2,
+    "expanded_reads_total": 4,
+    "final_alternatives_per_consumer": 2,
+    "flows": 4
+   },
+   "org_sha256": "a0266834213d573bd45990d4582c9b65f7aaa00c3db5b5755953b8506d8ba4ba",
+   "org_bytes": 421
+  },
+  {
+   "name": "DUP-m02",
+   "family": "DUP",
+   "m": 2,
+   "expected": {
+    "lines": 2,
+    "atoms": 4,
+    "expanded_reads_per_role": 4,
+    "expanded_reads_total": 8,
+    "final_alternatives_per_consumer": 4,
+    "flows": 8
+   },
+   "org_sha256": "25b98c45d55748ddb962d3fdcbeacb0762d2648a66f5f93d7b78894d18541388",
+   "org_bytes": 499
+  },
+  {
+   "name": "DUP-m04",
+   "family": "DUP",
+   "m": 4,
+   "expected": {
+    "lines": 4,
+    "atoms": 8,
+    "expanded_reads_per_role": 16,
+    "expanded_reads_total": 32,
+    "final_alternatives_per_consumer": 16,
+    "flows": 32
+   },
+   "org_sha256": "18d233238c1f07bd2d0693df56efdfeef909056eaedc25e09e0df5952f89521b",
+   "org_bytes": 663
+  },
+  {
+   "name": "DUP-m08",
+   "family": "DUP",
+   "m": 8,
+   "expected": {
+    "lines": 8,
+    "atoms": 16,
+    "expanded_reads_per_role": 256,
+    "expanded_reads_total": 512,
+    "final_alternatives_per_consumer": 256,
+    "flows": 512
+   },
+   "org_sha256": "ae5d88db93a583569fedcb3f73cc5f55c4bfff3a92f4098c1487a9bccbd739fc",
+   "org_bytes": 1037
+  }
+ ],
+ "files": {
+  "AND-m01.json": "48a0d0a65b677cfd53974e2c59ac7447a27377437920b09f356dcc5d36789c7b",
+  "AND-m01.org": "41b9dba92a6aecab595b8f86fb1b1c8754198d8c0e743b6fd1677fd0ef54170d",
+  "AND-m02.json": "a3a419d2616648721d34af517b3373c1727ca45a7fd8314b846b5867b043700c",
+  "AND-m02.org": "5bbb816b29036a019474b485de40c174da15b651817bc8e0f572887e45687db4",
+  "AND-m04.json": "a3cb7abd07c54388a7c7596a8198b9065147a52f476ecad4086f3a950b7a9ddc",
+  "AND-m04.org": "b0813e05bfdaebf75d33d75d5e0e45611e0b4506b0861cc11fa9aa51963db4b7",
+  "AND-m08.json": "4b6e4e5322beb2641485aaaa7e4d525aa6759116db4b52e357ac8eda3915adf1",
+  "AND-m08.org": "39809cff2d8a5e35763cd0dd763256c295de7a2edaa700cd49f39841b309cdb1",
+  "AND-m10.json": "ccdef5d9575f7626757c3d5e650ce7663fa2382770f71c1b05e8741afa6452c4",
+  "AND-m10.org": "f6f8e8642bc4ccd7b6d312bfe7ca8f1ef242179c63e2ad39f0cff0b1e612f764",
+  "AND-m12.json": "d8f11293ab1ccb4882223c59a36dc0732979200f39f0a3a629da993e4b905daa",
+  "AND-m12.org": "5794fd9ecf19e01dc9f3ec6c9a689beca2c6606cbf83b3c2dfb7139f9a7b67fe",
+  "AND-m14.json": "0b3e6dcb642f95fb1a16bde3691b57e783383177a6ddbc40b389665020a9eabc",
+  "AND-m14.org": "2bb5784907497044310acc21018b49e9cc9864c7b26e1825a0d9e646dd4ccf89",
+  "AND-m16.json": "ff665a383b853434aef576bd2e93ae91135c2089b87a9a5264884fcc7747a0e8",
+  "AND-m16.org": "ea2357bbef9f1cb467dccced2ea4ebbba481c0696dff3888ebd85d395361fce2",
+  "AND-m18.json": "613cbee3677af65cc4df999ad239eb7672a0c4dd6fc937cb9a069b12c6d82de8",
+  "AND-m18.org": "451951da88be71aee8ea836867e779fdd4833921725653298d8b87e971381fba",
+  "AND-m20.json": "5f0281818c77a3fa691135edb0e2928c81d18219b1b79ce6a452edf5f4fb1ebd",
+  "AND-m20.org": "8fdbea860c1b6c3bb9017be73970836cb526bae3e77a783b1be9e243d113a768",
+  "DUP-m01.json": "744b413ed8c00dff0b91be922388f2130f1d39b6913a502eec037636e01a7760",
+  "DUP-m01.org": "a0266834213d573bd45990d4582c9b65f7aaa00c3db5b5755953b8506d8ba4ba",
+  "DUP-m02.json": "b7b999b62a52fcc87e65c386e2438b2362a905a82b8ec4e01f27a33f2d0476f9",
+  "DUP-m02.org": "25b98c45d55748ddb962d3fdcbeacb0762d2648a66f5f93d7b78894d18541388",
+  "DUP-m04.json": "8dfcb1d5ab11ea0e037861f89f5d07476d5df850ac38fab8bae2daa9a69b9e65",
+  "DUP-m04.org": "18d233238c1f07bd2d0693df56efdfeef909056eaedc25e09e0df5952f89521b",
+  "DUP-m08.json": "56a204958d59518f7c46fe3917401b5003c4c07c4063e231184179c47e3d13db",
+  "DUP-m08.org": "ae5d88db93a583569fedcb3f73cc5f55c4bfff3a92f4098c1487a9bccbd739fc",
+  "OR-m01.json": "43a6e7a5a30da900996566969b43bc73ca9134d7567bdfed5cfbded3d580062b",
+  "OR-m01.org": "5e70abd336015578ea65862b3348a9d63a39d5cf1b02dcd26ea662f8b2896d31",
+  "OR-m02.json": "6583b656ab2044143237bf8a50e56a0ae98ec5fea62b76c29beaa9578634023f",
+  "OR-m02.org": "0ba3cd5be09d81aeb0036e7bbeab124073e6d982c5c5de5a455ded5d49e57ad8",
+  "OR-m04.json": "8c9284428d28ec33b280e78a4f7fd70670ba504efee6a5cba02353a888281fbf",
+  "OR-m04.org": "d2fcd7582c4a6c3286b4e7fa2ca0937bd4c536cd5d83708af69529c7a115c700",
+  "OR-m08.json": "7dce90afa9215f39307cc5afba25b1b062261dc3969d7dcc1c798367809aa19b",
+  "OR-m08.org": "c5f34d4878675868a4e1fe212a9ef158f7459a6822ebc1a491027e3e1db51867",
+  "OR-m10.json": "8799765041423f7a74b30da8c9dbef81f9d5d84a5a0045b41b5b011291fad3e7",
+  "OR-m10.org": "dc22be0bfb29e51bb88d34610af225d25355810ff4c74bf8c1ff2973e3fd123f",
+  "OR-m12.json": "eed21c8dcda7cafc17329edd1e6f533e20915856bc3630477c67b60b64cfb087",
+  "OR-m12.org": "759a286b4dfc670859a1bb36280905c156dbb27341f5a8279f6334e4133d5aba",
+  "OR-m14.json": "7ef14af412cc33a61bb7c7713b035879d7870195326acdc18274abfafdf01599",
+  "OR-m14.org": "252408b20ac9680e913bf83d323e1c2ca16368ef1a30b1afb78c7c818124ea53",
+  "OR-m16.json": "41c61b8cd29f74dba549f205512a8bf9bca9120cfafc15886789a4e3d29ec18d",
+  "OR-m16.org": "ad253c01bf6b1ac6565c3c26f6c388fc6ced4ba84cc2344864bd72452535ffe6",
+  "OR-m18.json": "9591dae5fa9ffcae3c4144a7a4297e6d715692bf56158c595e73114303571444",
+  "OR-m18.org": "2049e3bdc63a0207de01462fcbe7f01b8b73b7e9163bbf6d5548b76834c7159d",
+  "OR-m20.json": "c5a5c3c3e80a3ac5f9f099199e9e55b9213bf5a0526df322dc9d5f8961691633",
+  "OR-m20.org": "3c764a1e2518c43d6ea32b2ccf4ef6fc5e1af0211e2ae4023e44a7b9e0474d34",
+  "REF-m00.json": "05fc7acd589dd60bc1c98ed6ca81b0ed40871dc60e707d0bc15b4902533779da",
+  "REF-m00.org": "fe7316bc3d87939a028cc00dfac767677a726233922bd05345bd97988d3d0ee4",
+  "individuals.ttl": "4daee7f8b36d4f02eb1e5e6d5338a0c3cafbc82b68aef5d477a28086469f6d01"
+ }
+}

@@ -1,0 +1,37 @@
+prefix logistics: <http://ai.uos.ac.kr/logistics-ontology#>;
+
+role MgrA {
+  reads {
+    logistics:RobotStatus($robot, $battery, $zone) {
+      $robot == logistics:Biped || $zone != "z0";
+      $battery <= 40 || $zone != "z1";
+      $zone == "storage" || $zone != "z2";
+      $battery >= 20 || $zone != "z3";
+      $robot != logistics:Wheeled || $zone != "z4";
+      $robot == logistics:Humanoid || $zone != "z5";
+      $battery <= 41 || $zone != "z6";
+      $zone == "storage" || $zone != "z7";
+    }
+  }
+}
+
+role MgrB {
+  reads {
+    logistics:RobotStatus($robot, $battery, $zone) {
+      $robot == logistics:Biped || $zone != "z0";
+      $battery <= 40 || $zone != "z1";
+      $zone == "storage" || $zone != "z2";
+      $battery >= 20 || $zone != "z3";
+      $robot != logistics:Wheeled || $zone != "z4";
+      $robot == logistics:Humanoid || $zone != "z5";
+      $battery <= 41 || $zone != "z6";
+      $zone == "storage" || $zone != "z7";
+    }
+  }
+}
+
+role Robot {
+  changes {
+    logistics:RobotStatus($robot, $battery, $zone);
+  }
+}

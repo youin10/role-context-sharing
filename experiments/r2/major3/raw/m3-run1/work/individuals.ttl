@@ -1,0 +1,5 @@
+@prefix : <http://ai.uos.ac.kr/logistics-ontology#> .
+:r001 a :Biped .
+:r002 a :Wheeled .
+:r003 a :Biped .
+:r004 a :Wheeled .

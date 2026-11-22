@@ -1,0 +1,27 @@
+{
+ "schema": "r2-major1-budget/1",
+ "written_before_measurement": "2026-11-21T14:22Z (UTC), before any Major 1 measurement run",
+ "fixed": {
+  "N_robots": 4, "K_consumers": 4, "Q_condition_roles_per_consumer": 1,
+  "binding": "c001..c004 -> [Mgr]; r001..r004 -> [Robot] (same for every m and every family)",
+  "robot_types": {"r001": ["Humanoid"], "r002": ["DifferentialDrive"], "r003": ["Biped", "Wheeled"], "r004": ["Wheeled"]}
+ },
+ "families": {
+  "OR": "m lines; line j = A_j || B_j (one atom each); 2m atoms; expected clauses before/after dedup = 2^m / 2^m",
+  "AND": "same m lines and atoms with || replaced by &&; 2m atoms; 1 clause",
+  "DUP": "OR body in two identical roles MgrA, MgrB, consumers bound to both (Q=2, separate family); expanded reads 2*2^m, final alternatives per consumer 2^m",
+  "REF": "existing sweep threshold condition (Biped && battery<=30 || Wheeled && battery<=20): 4 atoms, 2 clauses"
+ },
+ "m_sequence": {"required": [1, 2, 4, 8], "extension": [10, 12, 14, 16, 18, 20], "DUP": [1, 2, 4, 8]},
+ "repetitions": {"warmup": 1, "measured": 5},
+ "stop_rules": {
+  "per_call_s": 120,
+  "per_config_wall_s": 1200,
+  "total_wall_s": 7200,
+  "peak_rss_bytes": 4294967296,
+  "rule": "Configs run in increasing m. A config whose child process exceeds per_config_wall_s or peak_rss_bytes is killed by the parent watchdog and recorded as status=aborted with reason, elapsed and last RSS. A config whose warm-up full pipeline (parse+check+generate) or any single timed call exceeds per_call_s is recorded as status=stopped (the observed call time is kept, remaining repetitions are not run). After an aborted or stopped config, no larger m of the same family is started. If the next extension step's projected time (from the quadratic growth of check/generate in clause count, i.e. x16 per +2 lines) exceeds per_config_wall_s, the step is still attempted once and stopped by the rules above, so the stop point is observed, not projected.",
+  "application": "parent driver (major1/driver.py) launches one child per config, polls child RSS with `ps -o rss=` every 0.1 s and kills on RSS or wall overrun; per_call_s is enforced inside the child by checking each timed call after it returns (a call is not interrupted mid-way; the per-config wall limit bounds it). A deliberate-overrun dry run (tiny limits) proves both kill paths before measurement.",
+  "note": "These are measurement budget limits of this experiment, not input limits supported or recommended by the product."
+ },
+ "semantic_cases": "per config: every robot x battery set x zone set (battery set = 0, 30, 100 and for every threshold index k the four boundary values 40+k, 41+k, 20-k, 19-k; zones = storage, dock0, dock<kmax>, yard) plus, for every line j, one case that falsifies exactly line j (all other lines true) -- included in the per-config wall budget"
+}

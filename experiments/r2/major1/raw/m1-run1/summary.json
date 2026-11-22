@@ -1,0 +1,4415 @@
+{
+ "run_dir": "m1-run1",
+ "configs": [
+  {
+   "config": "REF-m00",
+   "family": "REF",
+   "m": 0,
+   "driver_status": "ok",
+   "driver_reason": null,
+   "elapsed_s": 0.113,
+   "peak_rss_polled_bytes": 4177920,
+   "measured_reps": 5,
+   "warmup_ms": {
+    "F.parse": 0.06387499161064625,
+    "F.check": 0.4081670049345121,
+    "F.generate": 0.0407920015277341,
+    "I.parse": 0.16854199930094182,
+    "I.product": 0.0004999892553314567,
+    "I.readdecl": 0.014833000022917986
+   },
+   "ms": {
+    "F.parse": {
+     "median": 0.036124998587183654,
+     "min": 0.03283300611656159,
+     "max": 0.04687499313149601,
+     "values": [
+      0.04687499313149601,
+      0.03395900421310216,
+      0.036124998587183654,
+      0.03283300611656159,
+      0.03616700996644795
+     ]
+    },
+    "F.check": {
+     "median": 0.0154590088641271,
+     "min": 0.014500008546747267,
+     "max": 0.019208004232496023,
+     "values": [
+      0.019208004232496023,
+      0.0154590088641271,
+      0.016541991499252617,
+      0.015457990230061114,
+      0.014500008546747267
+     ]
+    },
+    "F.generate": {
+     "median": 0.024583001504652202,
+     "min": 0.022833002731204033,
+     "max": 0.028750000637955964,
+     "values": [
+      0.028750000637955964,
+      0.02520799171179533,
+      0.024583001504652202,
+      0.023833999875932932,
+      0.022833002731204033
+     ]
+    },
+    "I.parse": {
+     "median": 0.03729200398083776,
+     "min": 0.03300000389572233,
+     "max": 0.04091700247954577,
+     "values": [
+      0.03737499355338514,
+      0.04091700247954577,
+      0.03300000389572233,
+      0.03729200398083776,
+      0.033541000448167324
+     ]
+    },
+    "I.product": {
+     "median": 0.0002500019036233425,
+     "min": 0.0002090091584250331,
+     "max": 0.0004169996827840805,
+     "values": [
+      0.0002910092007368803,
+      0.0004169996827840805,
+      0.0002090091584250331,
+      0.00024998735170811415,
+      0.0002500019036233425
+     ]
+    },
+    "I.readdecl": {
+     "median": 0.0006259942892938852,
+     "min": 0.0005420006345957518,
+     "max": 0.0007920025382190943,
+     "values": [
+      0.0007500057108700275,
+      0.0007920025382190943,
+      0.0006259942892938852,
+      0.0006250047590583563,
+      0.0005420006345957518
+     ]
+    }
+   },
+   "overhead_ratio_I_over_F_parse": {
+    "median": 0.9273921310963563,
+    "min": 0.7973333126372731,
+    "max": 1.2048940605790512,
+    "values": [
+     0.7973333126372731,
+     1.2048940605790512,
+     0.913494953254614,
+     1.1358083950170792,
+     0.9273921310963563
+    ]
+   },
+   "overhead_by_order": {
+    "F_first": {
+     "median": 0.913494953254614,
+     "min": 0.7973333126372731,
+     "max": 0.9273921310963563,
+     "values": [
+      0.7973333126372731,
+      0.913494953254614,
+      0.9273921310963563
+     ]
+    },
+    "I_first": {
+     "median": 1.1703512277980652,
+     "min": 1.1358083950170792,
+     "max": 1.2048940605790512,
+     "values": [
+      1.2048940605790512,
+      1.1358083950170792
+     ]
+    },
+    "balanced": 1.0339777270951602
+   },
+   "product_share_of_I_parse": {
+    "median": 0.0074536209499678945,
+    "min": 0.0063336101136680836,
+    "max": 0.010191354632894646,
+    "values": [
+     0.007786200693819864,
+     0.010191354632894646,
+     0.0063336101136680836,
+     0.006703510807211337,
+     0.0074536209499678945
+    ]
+   },
+   "maxrss_bytes": 26935296,
+   "expected": {
+    "atoms": 4,
+    "expanded_reads_per_role": 2,
+    "expanded_reads_total": 2,
+    "final_alternatives_per_consumer": 2,
+    "flows": 2,
+    "lines": 1
+   },
+   "counts": {
+    "I.product_calls": 1,
+    "atoms_in_text": 4,
+    "check_errors": 0,
+    "check_warnings": 0,
+    "expanded_reads_per_role": {
+     "Mgr": 2
+    },
+    "expanded_reads_total": 2,
+    "final_alternatives_per_consumer": {
+     "c001": 2,
+     "c002": 2,
+     "c003": 2,
+     "c004": 2
+    },
+    "flows": 2
+   },
+   "checks": {
+    "atoms": true,
+    "expanded_reads_per_role": true,
+    "expanded_reads_total": true,
+    "final_alternatives_per_consumer": true,
+    "flows": true,
+    "identity": true,
+    "no_check_errors": true,
+    "oracle_has_true_and_false": true,
+    "selection_matches_oracle": true
+   },
+   "ok": true,
+   "identity": true,
+   "selection": {
+    "cases": 120,
+    "consumers": 4,
+    "expected_kinds": {
+     "assert": 4,
+     "none": 62,
+     "retract": 4,
+     "update": 50
+    },
+    "line_false_cases": 0,
+    "line_false_cases_all_false": null,
+    "mismatches": 0,
+    "oracle_false": 66,
+    "oracle_true": 54,
+    "sm_rejected": 0,
+    "sm_stale": 0
+   }
+  },
+  {
+   "config": "OR-m01",
+   "family": "OR",
+   "m": 1,
+   "driver_status": "ok",
+   "driver_reason": null,
+   "elapsed_s": 0.11,
+   "peak_rss_polled_bytes": 4210688,
+   "measured_reps": 5,
+   "warmup_ms": {
+    "F.parse": 0.04016701132059097,
+    "F.check": 0.42137499258387834,
+    "F.generate": 0.03762499545700848,
+    "I.parse": 0.12416600657161325,
+    "I.product": 0.0005829933797940612,
+    "I.readdecl": 0.0016239937394857407
+   },
+   "ms": {
+    "F.parse": {
+     "median": 0.030291004804894328,
+     "min": 0.02762500662356615,
+     "max": 0.0399169948650524,
+     "values": [
+      0.0399169948650524,
+      0.027916001272387803,
+      0.03200001083314419,
+      0.02762500662356615,
+      0.030291004804894328
+     ]
+    },
+    "F.check": {
+     "median": 0.013625001884065568,
+     "min": 0.012832999345846474,
+     "max": 0.015291996533051133,
+     "values": [
+      0.015291996533051133,
+      0.014000004739500582,
+      0.012916993000544608,
+      0.012832999345846474,
+      0.013625001884065568
+     ]
+    },
+    "F.generate": {
+     "median": 0.021458006813190877,
+     "min": 0.021249987185001373,
+     "max": 0.025708999601192772,
+     "values": [
+      0.025708999601192772,
+      0.02433299960102886,
+      0.021458006813190877,
+      0.021249987185001373,
+      0.02145799226127565
+     ]
+    },
+    "I.parse": {
+     "median": 0.0320410035783425,
+     "min": 0.028541995561681688,
+     "max": 0.03412499791011214,
+     "values": [
+      0.03287498839199543,
+      0.03412499791011214,
+      0.029333008569665253,
+      0.0320410035783425,
+      0.028541995561681688
+     ]
+    },
+    "I.product": {
+     "median": 0.0002500019036233425,
+     "min": 0.000166997779160738,
+     "max": 0.000333995558321476,
+     "values": [
+      0.000333995558321476,
+      0.00033300602808594704,
+      0.0002500019036233425,
+      0.0002079905243590474,
+      0.000166997779160738
+     ]
+    },
+    "I.readdecl": {
+     "median": 0.0005830079317092896,
+     "min": 0.00045899651013314724,
+     "max": 0.0007079797796905041,
+     "values": [
+      0.0007079797796905041,
+      0.0006250047590583563,
+      0.0005420006345957518,
+      0.0005830079317092896,
+      0.00045899651013314724
+     ]
+    }
+   },
+   "overhead_ratio_I_over_F_parse": {
+    "median": 0.9422597812625205,
+    "min": 0.8235837518113795,
+    "max": 1.2224171211750792,
+    "values": [
+     0.8235837518113795,
+     1.2224171211750792,
+     0.9166562074811371,
+     1.1598550550575861,
+     0.9422597812625205
+    ]
+   },
+   "overhead_by_order": {
+    "F_first": {
+     "median": 0.9166562074811371,
+     "min": 0.8235837518113795,
+     "max": 0.9422597812625205,
+     "values": [
+      0.8235837518113795,
+      0.9166562074811371,
+      0.9422597812625205
+     ]
+    },
+    "I_first": {
+     "median": 1.1911360881163326,
+     "min": 1.1598550550575861,
+     "max": 1.2224171211750792,
+     "values": [
+      1.2224171211750792,
+      1.1598550550575861
+     ]
+    },
+    "balanced": 1.0449221450072894
+   },
+   "product_share_of_I_parse": {
+    "median": 0.008522886530019362,
+    "min": 0.005850949657666422,
+    "max": 0.010159564296691856,
+    "values": [
+     0.010159564296691856,
+     0.009758419003075412,
+     0.008522886530019362,
+     0.006491386071927991,
+     0.005850949657666422
+    ]
+   },
+   "maxrss_bytes": 27049984,
+   "expected": {
+    "atoms": 2,
+    "expanded_reads_per_role": 2,
+    "expanded_reads_total": 2,
+    "final_alternatives_per_consumer": 2,
+    "flows": 2,
+    "lines": 1
+   },
+   "counts": {
+    "I.product_calls": 1,
+    "atoms_in_text": 2,
+    "check_errors": 0,
+    "check_warnings": 0,
+    "expanded_reads_per_role": {
+     "Mgr": 2
+    },
+    "expanded_reads_total": 2,
+    "final_alternatives_per_consumer": {
+     "c001": 2,
+     "c002": 2,
+     "c003": 2,
+     "c004": 2
+    },
+    "flows": 2
+   },
+   "checks": {
+    "atoms": true,
+    "expanded_reads_per_role": true,
+    "expanded_reads_total": true,
+    "final_alternatives_per_consumer": true,
+    "flows": true,
+    "identity": true,
+    "no_check_errors": true,
+    "oracle_has_true_and_false": true,
+    "selection_matches_oracle": true
+   },
+   "ok": true,
+   "identity": true,
+   "selection": {
+    "cases": 122,
+    "consumers": 4,
+    "expected_kinds": {
+     "assert": 22,
+     "none": 1,
+     "retract": 20,
+     "update": 79
+    },
+    "line_false_cases": 1,
+    "line_false_cases_all_false": true,
+    "mismatches": 0,
+    "oracle_false": 21,
+    "oracle_true": 101,
+    "sm_rejected": 0,
+    "sm_stale": 0
+   }
+  },
+  {
+   "config": "OR-m02",
+   "family": "OR",
+   "m": 2,
+   "driver_status": "ok",
+   "driver_reason": null,
+   "elapsed_s": 0.114,
+   "peak_rss_polled_bytes": 3309568,
+   "measured_reps": 5,
+   "warmup_ms": {
+    "F.parse": 0.046667002607136965,
+    "F.check": 0.42004199349321425,
+    "F.generate": 0.043624997488223016,
+    "I.parse": 0.14891699538566172,
+    "I.product": 0.001167005393654108,
+    "I.readdecl": 0.002042012056335807
+   },
+   "ms": {
+    "F.parse": {
+     "median": 0.0373330112779513,
+     "min": 0.03408400516491383,
+     "max": 0.04733398964162916,
+     "values": [
+      0.04733398964162916,
+      0.03408400516491383,
+      0.03862498851958662,
+      0.034540993510745466,
+      0.0373330112779513
+     ]
+    },
+    "F.check": {
+     "median": 0.019916013116016984,
+     "min": 0.019041995983570814,
+     "max": 0.02274999860674143,
+     "values": [
+      0.02274999860674143,
+      0.020167004549875855,
+      0.019916013116016984,
+      0.019041995983570814,
+      0.01925000105984509
+     ]
+    },
+    "F.generate": {
+     "median": 0.030000010156072676,
+     "min": 0.028999987989664078,
+     "max": 0.034540993510745466,
+     "values": [
+      0.034540993510745466,
+      0.031000003218650818,
+      0.030000010156072676,
+      0.029332994017750025,
+      0.028999987989664078
+     ]
+    },
+    "I.parse": {
+     "median": 0.03920801100321114,
+     "min": 0.03512500552460551,
+     "max": 0.041459003114141524,
+     "values": [
+      0.03954200656153262,
+      0.041459003114141524,
+      0.035500008380040526,
+      0.03920801100321114,
+      0.03512500552460551
+     ]
+    },
+    "I.product": {
+     "median": 0.0005829933797940612,
+     "min": 0.0004169996827840805,
+     "max": 0.0006250047590583563,
+     "values": [
+      0.0006250047590583563,
+      0.0005829933797940612,
+      0.000500003807246685,
+      0.0005829933797940612,
+      0.0004169996827840805
+     ]
+    },
+    "I.readdecl": {
+     "median": 0.0007920025382190943,
+     "min": 0.0007909839041531086,
+     "max": 0.0010410003596916795,
+     "values": [
+      0.0007920025382190943,
+      0.0010410003596916795,
+      0.0007920025382190943,
+      0.0008329952834174037,
+      0.0007909839041531086
+     ]
+    }
+   },
+   "overhead_ratio_I_over_F_parse": {
+    "median": 0.9408564785490576,
+    "min": 0.8353829216786816,
+    "max": 1.2163770928194653,
+    "values": [
+     0.8353829216786816,
+     1.2163770928194653,
+     0.9190943412718058,
+     1.1351153229282127,
+     0.9408564785490576
+    ]
+   },
+   "overhead_by_order": {
+    "F_first": {
+     "median": 0.9190943412718058,
+     "min": 0.8353829216786816,
+     "max": 0.9408564785490576,
+     "values": [
+      0.8353829216786816,
+      0.9190943412718058,
+      0.9408564785490576
+     ]
+    },
+    "I_first": {
+     "median": 1.175746207873839,
+     "min": 1.1351153229282127,
+     "max": 1.2163770928194653,
+     "values": [
+      1.2163770928194653,
+      1.1351153229282127
+     ]
+    },
+    "balanced": 1.039529550531696
+   },
+   "product_share_of_I_parse": {
+    "median": 0.014084610963861249,
+    "min": 0.011871875222680519,
+    "max": 0.01580609618497144,
+    "values": [
+     0.01580609618497144,
+     0.014061924696766386,
+     0.014084610963861249,
+     0.014869241384020066,
+     0.011871875222680519
+    ]
+   },
+   "maxrss_bytes": 26918912,
+   "expected": {
+    "atoms": 4,
+    "expanded_reads_per_role": 4,
+    "expanded_reads_total": 4,
+    "final_alternatives_per_consumer": 4,
+    "flows": 4,
+    "lines": 2
+   },
+   "counts": {
+    "I.product_calls": 2,
+    "atoms_in_text": 4,
+    "check_errors": 0,
+    "check_warnings": 0,
+    "expanded_reads_per_role": {
+     "Mgr": 4
+    },
+    "expanded_reads_total": 4,
+    "final_alternatives_per_consumer": {
+     "c001": 4,
+     "c002": 4,
+     "c003": 4,
+     "c004": 4
+    },
+    "flows": 4
+   },
+   "checks": {
+    "atoms": true,
+    "expanded_reads_per_role": true,
+    "expanded_reads_total": true,
+    "final_alternatives_per_consumer": true,
+    "flows": true,
+    "identity": true,
+    "no_check_errors": true,
+    "oracle_has_true_and_false": true,
+    "selection_matches_oracle": true
+   },
+   "ok": true,
+   "identity": true,
+   "selection": {
+    "cases": 164,
+    "consumers": 4,
+    "expected_kinds": {
+     "assert": 26,
+     "none": 5,
+     "retract": 25,
+     "update": 108
+    },
+    "line_false_cases": 2,
+    "line_false_cases_all_false": true,
+    "mismatches": 0,
+    "oracle_false": 30,
+    "oracle_true": 134,
+    "sm_rejected": 0,
+    "sm_stale": 0
+   }
+  },
+  {
+   "config": "OR-m04",
+   "family": "OR",
+   "m": 4,
+   "driver_status": "ok",
+   "driver_reason": null,
+   "elapsed_s": 0.114,
+   "peak_rss_polled_bytes": 3129344,
+   "measured_reps": 5,
+   "warmup_ms": {
+    "F.parse": 0.06012499216012657,
+    "F.check": 0.4665000014938414,
+    "F.generate": 0.10758399730548263,
+    "I.parse": 0.17487499280832708,
+    "I.product": 0.002540997229516506,
+    "I.readdecl": 0.0032080133678391576
+   },
+   "ms": {
+    "F.parse": {
+     "median": 0.04774999979417771,
+     "min": 0.04345799970906228,
+     "max": 0.05708300159312785,
+     "values": [
+      0.05708300159312785,
+      0.04504200478550047,
+      0.050458009354770184,
+      0.04345799970906228,
+      0.04774999979417771
+     ]
+    },
+    "F.check": {
+     "median": 0.06379200203809887,
+     "min": 0.06291600584518164,
+     "max": 0.06616699101869017,
+     "values": [
+      0.06616699101869017,
+      0.06470800144597888,
+      0.06379200203809887,
+      0.06299999949987978,
+      0.06291600584518164
+     ]
+    },
+    "F.generate": {
+     "median": 0.0939579913392663,
+     "min": 0.09241700172424316,
+     "max": 0.09808300819713622,
+     "values": [
+      0.09808300819713622,
+      0.09466700430493802,
+      0.0939579913392663,
+      0.09241700172424316,
+      0.09291700553148985
+     ]
+    },
+    "I.parse": {
+     "median": 0.05004199920222163,
+     "min": 0.045374996261671185,
+     "max": 0.054042000556364655,
+     "values": [
+      0.050417002057656646,
+      0.054042000556364655,
+      0.04699999408330768,
+      0.05004199920222163,
+      0.045374996261671185
+     ]
+    },
+    "I.product": {
+     "median": 0.0013330281944945455,
+     "min": 0.001166015863418579,
+     "max": 0.0014589750207960606,
+     "values": [
+      0.0014589750207960606,
+      0.0013330281944945455,
+      0.001166015863418579,
+      0.0013760145520791411,
+      0.0012080126907676458
+     ]
+    },
+    "I.readdecl": {
+     "median": 0.0015830009942874312,
+     "min": 0.0014160177670419216,
+     "max": 0.0017510028555989265,
+     "values": [
+      0.0017510028555989265,
+      0.001667009200900793,
+      0.0015419936971738935,
+      0.0015830009942874312,
+      0.0014160177670419216
+     ]
+    }
+   },
+   "overhead_ratio_I_over_F_parse": {
+    "median": 0.9502617059111251,
+    "min": 0.8832226871497642,
+    "max": 1.1998133922707053,
+    "values": [
+     0.8832226871497642,
+     1.1998133922707053,
+     0.9314674654097191,
+     1.1515025895631914,
+     0.9502617059111251
+    ]
+   },
+   "overhead_by_order": {
+    "F_first": {
+     "median": 0.9314674654097191,
+     "min": 0.8832226871497642,
+     "max": 0.9502617059111251,
+     "values": [
+      0.8832226871497642,
+      0.9314674654097191,
+      0.9502617059111251
+     ]
+    },
+    "I_first": {
+     "median": 1.1756579909169482,
+     "min": 1.1515025895631914,
+     "max": 1.1998133922707053,
+     "values": [
+      1.1998133922707053,
+      1.1515025895631914
+     ]
+    },
+    "balanced": 1.0464641269475472
+   },
+   "product_share_of_I_parse": {
+    "median": 0.026622871411409215,
+    "min": 0.024666521978664084,
+    "max": 0.028938155012223528,
+    "values": [
+     0.028938155012223528,
+     0.024666521978664084,
+     0.02480885128095572,
+     0.027497193837492658,
+     0.026622871411409215
+    ]
+   },
+   "maxrss_bytes": 26869760,
+   "expected": {
+    "atoms": 8,
+    "expanded_reads_per_role": 16,
+    "expanded_reads_total": 16,
+    "final_alternatives_per_consumer": 16,
+    "flows": 16,
+    "lines": 4
+   },
+   "counts": {
+    "I.product_calls": 4,
+    "atoms_in_text": 8,
+    "check_errors": 0,
+    "check_warnings": 0,
+    "expanded_reads_per_role": {
+     "Mgr": 16
+    },
+    "expanded_reads_total": 16,
+    "final_alternatives_per_consumer": {
+     "c001": 16,
+     "c002": 16,
+     "c003": 16,
+     "c004": 16
+    },
+    "flows": 16
+   },
+   "checks": {
+    "atoms": true,
+    "expanded_reads_per_role": true,
+    "expanded_reads_total": true,
+    "final_alternatives_per_consumer": true,
+    "flows": true,
+    "identity": true,
+    "no_check_errors": true,
+    "oracle_has_true_and_false": true,
+    "selection_matches_oracle": true
+   },
+   "ok": true,
+   "identity": true,
+   "selection": {
+    "cases": 168,
+    "consumers": 4,
+    "expected_kinds": {
+     "assert": 31,
+     "none": 4,
+     "retract": 28,
+     "update": 105
+    },
+    "line_false_cases": 4,
+    "line_false_cases_all_false": true,
+    "mismatches": 0,
+    "oracle_false": 32,
+    "oracle_true": 136,
+    "sm_rejected": 0,
+    "sm_stale": 0
+   }
+  },
+  {
+   "config": "OR-m08",
+   "family": "OR",
+   "m": 8,
+   "driver_status": "ok",
+   "driver_reason": null,
+   "elapsed_s": 0.434,
+   "peak_rss_polled_bytes": 28475392,
+   "measured_reps": 5,
+   "warmup_ms": {
+    "F.parse": 0.11029199231415987,
+    "F.check": 2.4219579936470836,
+    "F.generate": 5.074665998108685,
+    "I.parse": 0.2279579930473119,
+    "I.product": 0.022500011255033314,
+    "I.readdecl": 0.02433299960102886
+   },
+   "ms": {
+    "F.parse": {
+     "median": 0.10112499876413494,
+     "min": 0.09358400711789727,
+     "max": 0.11383299715816975,
+     "values": [
+      0.11383299715816975,
+      0.09358400711789727,
+      0.10558399662841111,
+      0.09633299487177283,
+      0.10112499876413494
+     ]
+    },
+    "F.check": {
+     "median": 2.0217080018483102,
+     "min": 1.9842909969156608,
+     "max": 2.0357089961180463,
+     "values": [
+      2.0217080018483102,
+      2.0075420034117997,
+      1.9842909969156608,
+      2.0317910093581304,
+      2.0357089961180463
+     ]
+    },
+    "F.generate": {
+     "median": 4.956959004630335,
+     "min": 4.911832991638221,
+     "max": 5.753542005550116,
+     "values": [
+      5.753542005550116,
+      4.956959004630335,
+      4.950875008944422,
+      4.911832991638221,
+      4.972832990461029
+     ]
+    },
+    "I.parse": {
+     "median": 0.10766700142994523,
+     "min": 0.09970799146685749,
+     "max": 0.13549999857787043,
+     "values": [
+      0.10766700142994523,
+      0.10904199734795839,
+      0.10200000542681664,
+      0.13549999857787043,
+      0.09970799146685749
+     ]
+    },
+    "I.product": {
+     "median": 0.014750970876775682,
+     "min": 0.01433301076758653,
+     "max": 0.015666009858250618,
+     "values": [
+      0.015208017430268228,
+      0.014415985788218677,
+      0.014750970876775682,
+      0.015666009858250618,
+      0.01433301076758653
+     ]
+    },
+    "I.readdecl": {
+     "median": 0.018416991224512458,
+     "min": 0.01808301021810621,
+     "max": 0.02341700019314885,
+     "values": [
+      0.018416991224512458,
+      0.018542006728239357,
+      0.018373990315012634,
+      0.02341700019314885,
+      0.01808301021810621
+     ]
+    }
+   },
+   "overhead_ratio_I_over_F_parse": {
+    "median": 0.9859875667283567,
+    "min": 0.9458329668711355,
+    "max": 1.4065793216356672,
+    "values": [
+     0.9458329668711355,
+     1.165177691211567,
+     0.9660555451958515,
+     1.4065793216356672,
+     0.9859875667283567
+    ]
+   },
+   "overhead_by_order": {
+    "F_first": {
+     "median": 0.9660555451958515,
+     "min": 0.9458329668711355,
+     "max": 0.9859875667283567,
+     "values": [
+      0.9458329668711355,
+      0.9660555451958515,
+      0.9859875667283567
+     ]
+    },
+    "I_first": {
+     "median": 1.2858785064236171,
+     "min": 1.165177691211567,
+     "max": 1.4065793216356672,
+     "values": [
+      1.165177691211567,
+      1.4065793216356672
+     ]
+    },
+    "balanced": 1.1145537499729183
+   },
+   "product_share_of_I_parse": {
+    "median": 0.14125049670082526,
+    "min": 0.1156163101304206,
+    "max": 0.14461735384278254,
+    "values": [
+     0.14125049670082526,
+     0.1322058118783037,
+     0.14461735384278254,
+     0.1156163101304206,
+     0.1437498695613657
+    ]
+   },
+   "maxrss_bytes": 29540352,
+   "expected": {
+    "atoms": 16,
+    "expanded_reads_per_role": 256,
+    "expanded_reads_total": 256,
+    "final_alternatives_per_consumer": 256,
+    "flows": 256,
+    "lines": 8
+   },
+   "counts": {
+    "I.product_calls": 8,
+    "atoms_in_text": 16,
+    "check_errors": 0,
+    "check_warnings": 0,
+    "expanded_reads_per_role": {
+     "Mgr": 256
+    },
+    "expanded_reads_total": 256,
+    "final_alternatives_per_consumer": {
+     "c001": 256,
+     "c002": 256,
+     "c003": 256,
+     "c004": 256
+    },
+    "flows": 256
+   },
+   "checks": {
+    "atoms": true,
+    "expanded_reads_per_role": true,
+    "expanded_reads_total": true,
+    "final_alternatives_per_consumer": true,
+    "flows": true,
+    "identity": true,
+    "no_check_errors": true,
+    "oracle_has_true_and_false": true,
+    "selection_matches_oracle": true
+   },
+   "ok": true,
+   "identity": true,
+   "selection": {
+    "cases": 208,
+    "consumers": 4,
+    "expected_kinds": {
+     "assert": 54,
+     "none": 27,
+     "retract": 53,
+     "update": 74
+    },
+    "line_false_cases": 8,
+    "line_false_cases_all_false": true,
+    "mismatches": 0,
+    "oracle_false": 80,
+    "oracle_true": 128,
+    "sm_rejected": 0,
+    "sm_stale": 0
+   }
+  },
+  {
+   "config": "OR-m10",
+   "family": "OR",
+   "m": 10,
+   "driver_status": "ok",
+   "driver_reason": null,
+   "elapsed_s": 1.523,
+   "peak_rss_polled_bytes": 35110912,
+   "measured_reps": 5,
+   "warmup_ms": {
+    "F.parse": 0.2100409910781309,
+    "F.check": 17.157666996354237,
+    "F.generate": 60.933250002563,
+    "I.parse": 0.42208399099763483,
+    "I.product": 0.13254396617412567,
+    "I.readdecl": 0.08195800182875246
+   },
+   "ms": {
+    "F.parse": {
+     "median": 0.21612498676404357,
+     "min": 0.19666599109768867,
+     "max": 0.2227079967269674,
+     "values": [
+      0.2227079967269674,
+      0.20024999685119838,
+      0.217709006392397,
+      0.19666599109768867,
+      0.21612498676404357
+     ]
+    },
+    "F.check": {
+     "median": 16.79254201008007,
+     "min": 16.63579100568313,
+     "max": 16.883375006727874,
+     "values": [
+      16.63579100568313,
+      16.883375006727874,
+      16.851958993356675,
+      16.740417006076314,
+      16.79254201008007
+     ]
+    },
+    "F.generate": {
+     "median": 60.21383299957961,
+     "min": 59.92754199542105,
+     "max": 60.59524999000132,
+     "values": [
+      60.05254099727608,
+      59.92754199542105,
+      60.371542000211775,
+      60.59524999000132,
+      60.21383299957961
+     ]
+    },
+    "I.parse": {
+     "median": 0.3277079958934337,
+     "min": 0.22695799998473376,
+     "max": 0.3452079981798306,
+     "values": [
+      0.3277079958934337,
+      0.2392919996054843,
+      0.3452079981798306,
+      0.22695799998473376,
+      0.3362080024089664
+     ]
+    },
+    "I.product": {
+     "median": 0.056666001910343766,
+     "min": 0.055209980928339064,
+     "max": 0.16162499377969652,
+     "values": [
+      0.16162499377969652,
+      0.055372976930812,
+      0.055209980928339064,
+      0.056666001910343766,
+      0.057788973208516836
+     ]
+    },
+    "I.readdecl": {
+     "median": 0.06874999962747097,
+     "min": 0.06666801346000284,
+     "max": 0.19195800996385515,
+     "values": [
+      0.06808299804106355,
+      0.06874999962747097,
+      0.19195800996385515,
+      0.06666801346000284,
+      0.18266699044033885
+     ]
+    }
+   },
+   "overhead_ratio_I_over_F_parse": {
+    "median": 1.4714693711478748,
+    "min": 1.1540276929324214,
+    "max": 1.5856394914486471,
+    "values": [
+     1.4714693711478748,
+     1.1949663089547873,
+     1.5856394914486471,
+     1.1540276929324214,
+     1.5556183828759447
+    ]
+   },
+   "overhead_by_order": {
+    "F_first": {
+     "median": 1.5556183828759447,
+     "min": 1.4714693711478748,
+     "max": 1.5856394914486471,
+     "values": [
+      1.4714693711478748,
+      1.5856394914486471,
+      1.5556183828759447
+     ]
+    },
+    "I_first": {
+     "median": 1.1744970009436044,
+     "min": 1.1540276929324214,
+     "max": 1.1949663089547873,
+     "values": [
+      1.1949663089547873,
+      1.1540276929324214
+     ]
+    },
+    "balanced": 1.3516912093006068
+   },
+   "product_share_of_I_parse": {
+    "median": 0.231403377555891,
+    "min": 0.15993250799356712,
+    "max": 0.4931982002424342,
+    "values": [
+     0.4931982002424342,
+     0.231403377555891,
+     0.15993250799356712,
+     0.2496761599686082,
+     0.1718845857161419
+    ]
+   },
+   "maxrss_bytes": 42827776,
+   "expected": {
+    "atoms": 20,
+    "expanded_reads_per_role": 1024,
+    "expanded_reads_total": 1024,
+    "final_alternatives_per_consumer": 1024,
+    "flows": 1024,
+    "lines": 10
+   },
+   "counts": {
+    "I.product_calls": 10,
+    "atoms_in_text": 20,
+    "check_errors": 0,
+    "check_warnings": 0,
+    "expanded_reads_per_role": {
+     "Mgr": 1024
+    },
+    "expanded_reads_total": 1024,
+    "final_alternatives_per_consumer": {
+     "c001": 1024,
+     "c002": 1024,
+     "c003": 1024,
+     "c004": 1024
+    },
+    "flows": 1024
+   },
+   "checks": {
+    "atoms": true,
+    "expanded_reads_per_role": true,
+    "expanded_reads_total": true,
+    "final_alternatives_per_consumer": true,
+    "flows": true,
+    "identity": true,
+    "no_check_errors": true,
+    "oracle_has_true_and_false": true,
+    "selection_matches_oracle": true
+   },
+   "ok": true,
+   "identity": true,
+   "selection": {
+    "cases": 212,
+    "consumers": 4,
+    "expected_kinds": {
+     "assert": 33,
+     "none": 16,
+     "retract": 30,
+     "update": 133
+    },
+    "line_false_cases": 10,
+    "line_false_cases_all_false": true,
+    "mismatches": 0,
+    "oracle_false": 46,
+    "oracle_true": 166,
+    "sm_rejected": 0,
+    "sm_stale": 0
+   }
+  },
+  {
+   "config": "OR-m12",
+   "family": "OR",
+   "m": 12,
+   "driver_status": "ok",
+   "driver_reason": null,
+   "elapsed_s": 11.555,
+   "peak_rss_polled_bytes": 80609280,
+   "measured_reps": 5,
+   "warmup_ms": {
+    "F.parse": 0.8803329983493313,
+    "F.check": 187.80504100141115,
+    "F.generate": 867.001042002812,
+    "I.parse": 2.031750002061017,
+    "I.product": 1.3336670235730708,
+    "I.readdecl": 0.3901249874616042
+   },
+   "ms": {
+    "F.parse": {
+     "median": 0.9057499992195517,
+     "min": 0.8674999990034848,
+     "max": 1.1632500099949539,
+     "values": [
+      0.9057499992195517,
+      0.8674999990034848,
+      0.939666002523154,
+      0.901624996913597,
+      1.1632500099949539
+     ]
+    },
+    "F.check": {
+     "median": 189.18400000256952,
+     "min": 187.69766700279433,
+     "max": 190.55408300482668,
+     "values": [
+      187.69766700279433,
+      188.55900000198744,
+      190.55408300482668,
+      189.55787499726284,
+      189.18400000256952
+     ]
+    },
+    "F.generate": {
+     "median": 870.0997920095688,
+     "min": 866.8196669896133,
+     "max": 870.6071249907836,
+     "values": [
+      866.8196669896133,
+      870.6071249907836,
+      870.2035839960445,
+      870.0997920095688,
+      869.3040840007598
+     ]
+    },
+    "I.parse": {
+     "median": 1.029582999763079,
+     "min": 0.9792089986149222,
+     "max": 1.3730409991694614,
+     "values": [
+      1.3730409991694614,
+      0.9877909906208515,
+      1.3196250074543059,
+      1.029582999763079,
+      0.9792089986149222
+     ]
+    },
+    "I.product": {
+     "median": 0.44741596502717584,
+     "min": 0.4247929755365476,
+     "max": 0.8420850208494812,
+     "values": [
+      0.8420850208494812,
+      0.4247929755365476,
+      0.7637899980181828,
+      0.44741596502717584,
+      0.43003901373595
+     ]
+    },
+    "I.readdecl": {
+     "median": 0.35879199276678264,
+     "min": 0.346208005794324,
+     "max": 0.3641670191427693,
+     "values": [
+      0.346208005794324,
+      0.3527080116327852,
+      0.35879199276678264,
+      0.3631250001490116,
+      0.3641670191427693
+     ]
+    }
+   },
+   "overhead_ratio_I_over_F_parse": {
+    "median": 1.1419193159988934,
+    "min": 0.8417872256189965,
+    "max": 1.5159160920260066,
+    "values": [
+     1.5159160920260066,
+     1.1386639674415533,
+     1.4043553814982142,
+     1.1419193159988934,
+     0.8417872256189965
+    ]
+   },
+   "overhead_by_order": {
+    "F_first": {
+     "median": 1.4043553814982142,
+     "min": 0.8417872256189965,
+     "max": 1.5159160920260066,
+     "values": [
+      1.5159160920260066,
+      1.4043553814982142,
+      0.8417872256189965
+     ]
+    },
+    "I_first": {
+     "median": 1.1402916417202233,
+     "min": 1.1386639674415533,
+     "max": 1.1419193159988934,
+     "values": [
+      1.1386639674415533,
+      1.1419193159988934
+     ]
+    },
+    "balanced": 1.2654543466783894
+   },
+   "product_share_of_I_parse": {
+    "median": 0.43916979352133645,
+    "min": 0.430043379186476,
+    "max": 0.6132992542530412,
+    "values": [
+     0.6132992542530412,
+     0.430043379186476,
+     0.5787932129989058,
+     0.43456036582784713,
+     0.43916979352133645
+    ]
+   },
+   "maxrss_bytes": 90406912,
+   "expected": {
+    "atoms": 24,
+    "expanded_reads_per_role": 4096,
+    "expanded_reads_total": 4096,
+    "final_alternatives_per_consumer": 4096,
+    "flows": 4096,
+    "lines": 12
+   },
+   "counts": {
+    "I.product_calls": 12,
+    "atoms_in_text": 24,
+    "check_errors": 0,
+    "check_warnings": 0,
+    "expanded_reads_per_role": {
+     "Mgr": 4096
+    },
+    "expanded_reads_total": 4096,
+    "final_alternatives_per_consumer": {
+     "c001": 4096,
+     "c002": 4096,
+     "c003": 4096,
+     "c004": 4096
+    },
+    "flows": 4096
+   },
+   "checks": {
+    "atoms": true,
+    "expanded_reads_per_role": true,
+    "expanded_reads_total": true,
+    "final_alternatives_per_consumer": true,
+    "flows": true,
+    "identity": true,
+    "no_check_errors": true,
+    "oracle_has_true_and_false": true,
+    "selection_matches_oracle": true
+   },
+   "ok": true,
+   "identity": true,
+   "selection": {
+    "cases": 248,
+    "consumers": 4,
+    "expected_kinds": {
+     "assert": 40,
+     "none": 9,
+     "retract": 39,
+     "update": 160
+    },
+    "line_false_cases": 12,
+    "line_false_cases_all_false": true,
+    "mismatches": 0,
+    "oracle_false": 48,
+    "oracle_true": 200,
+    "sm_rejected": 0,
+    "sm_stale": 0
+   }
+  },
+  {
+   "config": "OR-m14",
+   "family": "OR",
+   "m": 14,
+   "driver_status": "ok",
+   "driver_reason": null,
+   "elapsed_s": 127.375,
+   "peak_rss_polled_bytes": 298647552,
+   "measured_reps": 5,
+   "warmup_ms": {
+    "F.parse": 4.767958002048545,
+    "F.check": 2532.9778749874095,
+    "F.generate": 13311.037291001412,
+    "I.parse": 6.148708998807706,
+    "I.product": 4.047581984195858,
+    "I.readdecl": 1.4695830031996593
+   },
+   "ms": {
+    "F.parse": {
+     "median": 5.087917001219466,
+     "min": 4.657208992284723,
+     "max": 6.091540999477729,
+     "values": [
+      5.100416994537227,
+      4.8363329988205805,
+      5.087917001219466,
+      6.091540999477729,
+      4.657208992284723
+     ]
+    },
+    "F.check": {
+     "median": 2540.3116670058807,
+     "min": 2531.6080410120776,
+     "max": 2546.096417005174,
+     "values": [
+      2540.3116670058807,
+      2531.6080410120776,
+      2536.854583013337,
+      2546.096417005174,
+      2543.175375001738
+     ]
+    },
+    "F.generate": {
+     "median": 13398.685374995694,
+     "min": 13356.466750003165,
+     "max": 13405.42979199381,
+     "values": [
+      13398.685374995694,
+      13405.42979199381,
+      13356.466750003165,
+      13362.80058400007,
+      13399.252040995634
+     ]
+    },
+    "I.parse": {
+     "median": 5.2053339895792305,
+     "min": 5.076208006357774,
+     "max": 8.186459002899937,
+     "values": [
+      8.186459002899937,
+      5.078208996565081,
+      5.076208006357774,
+      5.2053339895792305,
+      5.570249995798804
+     ]
+    },
+    "I.product": {
+     "median": 2.8227070142747834,
+     "min": 2.2550010035047308,
+     "max": 6.169749976834282,
+     "values": [
+      6.169749976834282,
+      2.2550010035047308,
+      3.1402070017065853,
+      2.2820830199634656,
+      2.8227070142747834
+     ]
+    },
+    "I.readdecl": {
+     "median": 2.2219170059543103,
+     "min": 1.4337920147227123,
+     "max": 2.3356250021606684,
+     "values": [
+      1.4954170037526637,
+      2.2219170059543103,
+      1.4337920147227123,
+      2.3356250021606684,
+      2.2295829985523596
+     ]
+    }
+   },
+   "overhead_ratio_I_over_F_parse": {
+    "median": 1.050012271240108,
+    "min": 0.8545184198917024,
+    "max": 1.6050568045059843,
+    "values": [
+     1.6050568045059843,
+     1.050012271240108,
+     0.9976986662992172,
+     0.8545184198917024,
+     1.1960489651691932
+    ]
+   },
+   "overhead_by_order": {
+    "F_first": {
+     "median": 1.1960489651691932,
+     "min": 0.9976986662992172,
+     "max": 1.6050568045059843,
+     "values": [
+      1.6050568045059843,
+      0.9976986662992172,
+      1.1960489651691932
+     ]
+    },
+    "I_first": {
+     "median": 0.9522653455659053,
+     "min": 0.8545184198917024,
+     "max": 1.050012271240108,
+     "values": [
+      1.050012271240108,
+      0.8545184198917024
+     ]
+    },
+    "balanced": 1.0672188065858779
+   },
+   "product_share_of_I_parse": {
+    "median": 0.5067469173562634,
+    "min": 0.43841241014160864,
+    "max": 0.7536530720606719,
+    "values": [
+     0.7536530720606719,
+     0.44405439103235445,
+     0.6186127514423335,
+     0.43841241014160864,
+     0.5067469173562634
+    ]
+   },
+   "maxrss_bytes": 301875200,
+   "expected": {
+    "atoms": 28,
+    "expanded_reads_per_role": 16384,
+    "expanded_reads_total": 16384,
+    "final_alternatives_per_consumer": 16384,
+    "flows": 16384,
+    "lines": 14
+   },
+   "counts": {
+    "I.product_calls": 14,
+    "atoms_in_text": 28,
+    "check_errors": 0,
+    "check_warnings": 0,
+    "expanded_reads_per_role": {
+     "Mgr": 16384
+    },
+    "expanded_reads_total": 16384,
+    "final_alternatives_per_consumer": {
+     "c001": 16384,
+     "c002": 16384,
+     "c003": 16384,
+     "c004": 16384
+    },
+    "flows": 16384
+   },
+   "checks": {
+    "atoms": true,
+    "expanded_reads_per_role": true,
+    "expanded_reads_total": true,
+    "final_alternatives_per_consumer": true,
+    "flows": true,
+    "identity": true,
+    "no_check_errors": true,
+    "oracle_has_true_and_false": true,
+    "selection_matches_oracle": true
+   },
+   "ok": true,
+   "identity": true,
+   "selection": {
+    "cases": 252,
+    "consumers": 4,
+    "expected_kinds": {
+     "assert": 45,
+     "none": 8,
+     "retract": 42,
+     "update": 157
+    },
+    "line_false_cases": 14,
+    "line_false_cases_all_false": true,
+    "mismatches": 0,
+    "oracle_false": 50,
+    "oracle_true": 202,
+    "sm_rejected": 0,
+    "sm_stale": 0
+   }
+  },
+  {
+   "config": "OR-m16",
+   "family": "OR",
+   "m": 16,
+   "driver_status": "stopped",
+   "driver_reason": null,
+   "elapsed_s": 251.237,
+   "peak_rss_polled_bytes": 126550016,
+   "measured_reps": 0,
+   "warmup_ms": null,
+   "ms": {
+    "F.parse": null,
+    "F.check": null,
+    "F.generate": null,
+    "I.parse": null,
+    "I.product": null,
+    "I.readdecl": null
+   },
+   "overhead_ratio_I_over_F_parse": null,
+   "overhead_by_order": null,
+   "product_share_of_I_parse": null,
+   "maxrss_bytes": 126582784,
+   "stopped": {
+    "rep": 0,
+    "reason": "per_call_s 120.0 exceeded by ['F.generate']",
+    "times_ms": {
+     "F.check": 38279.00879200024,
+     "F.generate": 212820.65383299778,
+     "F.parse": 25.2745410107309,
+     "I.parse": 25.395958000444807
+    },
+    "maxrss_bytes": 126582784
+   }
+  },
+  {
+   "config": "OR-m18",
+   "family": "OR",
+   "m": 18,
+   "driver_status": "not_started",
+   "driver_reason": "OR stopped at a smaller m",
+   "elapsed_s": null,
+   "peak_rss_polled_bytes": null,
+   "measured_reps": 0,
+   "warmup_ms": null,
+   "ms": {
+    "F.parse": null,
+    "F.check": null,
+    "F.generate": null,
+    "I.parse": null,
+    "I.product": null,
+    "I.readdecl": null
+   },
+   "overhead_ratio_I_over_F_parse": null,
+   "overhead_by_order": null,
+   "product_share_of_I_parse": null,
+   "maxrss_bytes": null
+  },
+  {
+   "config": "OR-m20",
+   "family": "OR",
+   "m": 20,
+   "driver_status": "not_started",
+   "driver_reason": "OR stopped at a smaller m",
+   "elapsed_s": null,
+   "peak_rss_polled_bytes": null,
+   "measured_reps": 0,
+   "warmup_ms": null,
+   "ms": {
+    "F.parse": null,
+    "F.check": null,
+    "F.generate": null,
+    "I.parse": null,
+    "I.product": null,
+    "I.readdecl": null
+   },
+   "overhead_ratio_I_over_F_parse": null,
+   "overhead_by_order": null,
+   "product_share_of_I_parse": null,
+   "maxrss_bytes": null
+  },
+  {
+   "config": "AND-m01",
+   "family": "AND",
+   "m": 1,
+   "driver_status": "ok",
+   "driver_reason": null,
+   "elapsed_s": 0.113,
+   "peak_rss_polled_bytes": 1114112,
+   "measured_reps": 5,
+   "warmup_ms": {
+    "F.parse": 0.04270899808034301,
+    "F.check": 0.4504999960772693,
+    "F.generate": 0.03854199894703925,
+    "I.parse": 0.14629100041929632,
+    "I.product": 0.0004579924279823899,
+    "I.readdecl": 0.0016660051187500358
+   },
+   "ms": {
+    "F.parse": {
+     "median": 0.0321669940603897,
+     "min": 0.02895800571423024,
+     "max": 0.04283300950191915,
+     "values": [
+      0.04283300950191915,
+      0.02995898830704391,
+      0.03291599568910897,
+      0.02895800571423024,
+      0.0321669940603897
+     ]
+    },
+    "F.check": {
+     "median": 0.012499993317760527,
+     "min": 0.012167001841589808,
+     "max": 0.016249992768280208,
+     "values": [
+      0.016249992768280208,
+      0.012499993317760527,
+      0.012249991414137185,
+      0.012167001841589808,
+      0.013208002201281488
+     ]
+    },
+    "F.generate": {
+     "median": 0.02141600998584181,
+     "min": 0.020916995708830655,
+     "max": 0.025957997422665358,
+     "values": [
+      0.025957997422665358,
+      0.022207997972145677,
+      0.021208004909567535,
+      0.020916995708830655,
+      0.02141600998584181
+     ]
+    },
+    "I.parse": {
+     "median": 0.032625001040287316,
+     "min": 0.0296669895760715,
+     "max": 0.03700000524986535,
+     "values": [
+      0.033917007385753095,
+      0.03700000524986535,
+      0.030416005756706,
+      0.032625001040287316,
+      0.0296669895760715
+     ]
+    },
+    "I.product": {
+     "median": 0.0002500019036233425,
+     "min": 0.000166997779160738,
+     "max": 0.00029099464882165194,
+     "values": [
+      0.00029099464882165194,
+      0.0002500019036233425,
+      0.0002500019036233425,
+      0.00020800507627427578,
+      0.000166997779160738
+     ]
+    },
+    "I.readdecl": {
+     "median": 0.00045899651013314724,
+     "min": 0.0004159810487180948,
+     "max": 0.0007489870768040419,
+     "values": [
+      0.000500993337482214,
+      0.0007489870768040419,
+      0.00041601015254855156,
+      0.00045899651013314724,
+      0.0004159810487180948
+     ]
+    }
+   },
+   "overhead_ratio_I_over_F_parse": {
+    "median": 0.9240493905754719,
+    "min": 0.7918427348476046,
+    "max": 1.2350218528963466,
+    "values": [
+     0.7918427348476046,
+     1.2350218528963466,
+     0.9240493905754719,
+     1.126631487065944,
+     0.922280444370253
+    ]
+   },
+   "overhead_by_order": {
+    "F_first": {
+     "median": 0.922280444370253,
+     "min": 0.7918427348476046,
+     "max": 0.9240493905754719,
+     "values": [
+      0.7918427348476046,
+      0.9240493905754719,
+      0.922280444370253
+     ]
+    },
+    "I_first": {
+     "median": 1.1808266699811454,
+     "min": 1.126631487065944,
+     "max": 1.2350218528963466,
+     "values": [
+      1.2350218528963466,
+      1.126631487065944
+     ]
+    },
+    "balanced": 1.0435771873294553
+   },
+   "product_share_of_I_parse": {
+    "median": 0.006756807247324709,
+    "min": 0.005629077353215284,
+    "max": 0.008579608616763896,
+    "values": [
+     0.008579608616763896,
+     0.006756807247324709,
+     0.008219419263103706,
+     0.006375634318522123,
+     0.005629077353215284
+    ]
+   },
+   "maxrss_bytes": 26869760,
+   "expected": {
+    "atoms": 2,
+    "expanded_reads_per_role": 1,
+    "expanded_reads_total": 1,
+    "final_alternatives_per_consumer": 1,
+    "flows": 1,
+    "lines": 1
+   },
+   "counts": {
+    "I.product_calls": 1,
+    "atoms_in_text": 2,
+    "check_errors": 0,
+    "check_warnings": 0,
+    "expanded_reads_per_role": {
+     "Mgr": 1
+    },
+    "expanded_reads_total": 1,
+    "final_alternatives_per_consumer": {
+     "c001": 1,
+     "c002": 1,
+     "c003": 1,
+     "c004": 1
+    },
+    "flows": 1
+   },
+   "checks": {
+    "atoms": true,
+    "expanded_reads_per_role": true,
+    "expanded_reads_total": true,
+    "final_alternatives_per_consumer": true,
+    "flows": true,
+    "identity": true,
+    "no_check_errors": true,
+    "oracle_has_true_and_false": true,
+    "selection_matches_oracle": true
+   },
+   "ok": true,
+   "identity": true,
+   "selection": {
+    "cases": 122,
+    "consumers": 4,
+    "expected_kinds": {
+     "assert": 20,
+     "none": 62,
+     "retract": 20,
+     "update": 20
+    },
+    "line_false_cases": 1,
+    "line_false_cases_all_false": null,
+    "mismatches": 0,
+    "oracle_false": 82,
+    "oracle_true": 40,
+    "sm_rejected": 0,
+    "sm_stale": 0
+   }
+  },
+  {
+   "config": "AND-m02",
+   "family": "AND",
+   "m": 2,
+   "driver_status": "ok",
+   "driver_reason": null,
+   "elapsed_s": 0.114,
+   "peak_rss_polled_bytes": 3342336,
+   "measured_reps": 5,
+   "warmup_ms": {
+    "F.parse": 0.048417001380585134,
+    "F.check": 0.4273749946150929,
+    "F.generate": 0.03999999898951501,
+    "I.parse": 0.15324998821597546,
+    "I.product": 0.00100000761449337,
+    "I.readdecl": 0.0012920063454657793
+   },
+   "ms": {
+    "F.parse": {
+     "median": 0.03791700873989612,
+     "min": 0.03358299727551639,
+     "max": 0.04687499313149601,
+     "values": [
+      0.04687499313149601,
+      0.03441699664108455,
+      0.03820900747086853,
+      0.03358299727551639,
+      0.03791700873989612
+     ]
+    },
+    "F.check": {
+     "median": 0.014917008229531348,
+     "min": 0.013291995855979621,
+     "max": 0.01691699435468763,
+     "values": [
+      0.01691699435468763,
+      0.015708006685599685,
+      0.013834011042490602,
+      0.014917008229531348,
+      0.013291995855979621
+     ]
+    },
+    "F.generate": {
+     "median": 0.02358399797230959,
+     "min": 0.022541004000231624,
+     "max": 0.027292000595480204,
+     "values": [
+      0.027292000595480204,
+      0.024500011932104826,
+      0.023208005586639047,
+      0.02358399797230959,
+      0.022541004000231624
+     ]
+    },
+    "I.parse": {
+     "median": 0.03825000021606684,
+     "min": 0.03500000457279384,
+     "max": 0.04137499490752816,
+     "values": [
+      0.03879200085066259,
+      0.04137499490752816,
+      0.03500000457279384,
+      0.03825000021606684,
+      0.035375007428228855
+     ]
+    },
+    "I.product": {
+     "median": 0.0004169996827840805,
+     "min": 0.000333995558321476,
+     "max": 0.0005420151865109801,
+     "values": [
+      0.0004579924279823899,
+      0.0005420151865109801,
+      0.000333995558321476,
+      0.0004169996827840805,
+      0.00033401011023670435
+     ]
+    },
+    "I.readdecl": {
+     "median": 0.0005000183591619134,
+     "min": 0.00041701423469930887,
+     "max": 0.0007079943316057324,
+     "values": [
+      0.000500003807246685,
+      0.0007079943316057324,
+      0.00041701423469930887,
+      0.000500993337482214,
+      0.0005000183591619134
+     ]
+    }
+   },
+   "overhead_ratio_I_over_F_parse": {
+    "median": 0.9329588119910793,
+    "min": 0.8275628060753285,
+    "max": 1.202167502847638,
+    "values": [
+     0.8275628060753285,
+     1.202167502847638,
+     0.9160144921188725,
+     1.1389692201164223,
+     0.9329588119910793
+    ]
+   },
+   "overhead_by_order": {
+    "F_first": {
+     "median": 0.9160144921188725,
+     "min": 0.8275628060753285,
+     "max": 0.9329588119910793,
+     "values": [
+      0.8275628060753285,
+      0.9160144921188725,
+      0.9329588119910793
+     ]
+    },
+    "I_first": {
+     "median": 1.1705683614820301,
+     "min": 1.1389692201164223,
+     "max": 1.202167502847638,
+     "values": [
+      1.202167502847638,
+      1.1389692201164223
+     ]
+    },
+    "balanced": 1.0354987122799248
+   },
+   "product_share_of_I_parse": {
+    "median": 0.010901952429504055,
+    "min": 0.009441979932141811,
+    "max": 0.01310006654314683,
+    "values": [
+     0.011806362598967802,
+     0.01310006654314683,
+     0.009542728990986961,
+     0.010901952429504055,
+     0.009441979932141811
+    ]
+   },
+   "maxrss_bytes": 27099136,
+   "expected": {
+    "atoms": 4,
+    "expanded_reads_per_role": 1,
+    "expanded_reads_total": 1,
+    "final_alternatives_per_consumer": 1,
+    "flows": 1,
+    "lines": 2
+   },
+   "counts": {
+    "I.product_calls": 2,
+    "atoms_in_text": 4,
+    "check_errors": 0,
+    "check_warnings": 0,
+    "expanded_reads_per_role": {
+     "Mgr": 1
+    },
+    "expanded_reads_total": 1,
+    "final_alternatives_per_consumer": {
+     "c001": 1,
+     "c002": 1,
+     "c003": 1,
+     "c004": 1
+    },
+    "flows": 1
+   },
+   "checks": {
+    "atoms": true,
+    "expanded_reads_per_role": true,
+    "expanded_reads_total": true,
+    "final_alternatives_per_consumer": true,
+    "flows": true,
+    "identity": true,
+    "no_check_errors": true,
+    "oracle_has_true_and_false": true,
+    "selection_matches_oracle": true
+   },
+   "ok": true,
+   "identity": true,
+   "selection": {
+    "cases": 164,
+    "consumers": 4,
+    "expected_kinds": {
+     "assert": 16,
+     "none": 116,
+     "retract": 16,
+     "update": 16
+    },
+    "line_false_cases": 2,
+    "line_false_cases_all_false": null,
+    "mismatches": 0,
+    "oracle_false": 132,
+    "oracle_true": 32,
+    "sm_rejected": 0,
+    "sm_stale": 0
+   }
+  },
+  {
+   "config": "AND-m04",
+   "family": "AND",
+   "m": 4,
+   "driver_status": "ok",
+   "driver_reason": null,
+   "elapsed_s": 0.114,
+   "peak_rss_polled_bytes": 4046848,
+   "measured_reps": 5,
+   "warmup_ms": {
+    "F.parse": 0.060000005760230124,
+    "F.check": 0.4155829956289381,
+    "F.generate": 0.04266700125299394,
+    "I.parse": 0.16733299707993865,
+    "I.product": 0.0012899981811642647,
+    "I.readdecl": 0.0014590041246265173
+   },
+   "ms": {
+    "F.parse": {
+     "median": 0.04691698995884508,
+     "min": 0.044208005419932306,
+     "max": 0.057249999372288585,
+     "values": [
+      0.057249999372288585,
+      0.045209002564661205,
+      0.04950001311954111,
+      0.044208005419932306,
+      0.04691698995884508
+     ]
+    },
+    "F.check": {
+     "median": 0.016874997527338564,
+     "min": 0.015959012671373785,
+     "max": 0.02083300205413252,
+     "values": [
+      0.02083300205413252,
+      0.017124999430961907,
+      0.016834004782140255,
+      0.015959012671373785,
+      0.016874997527338564
+     ]
+    },
+    "F.generate": {
+     "median": 0.02566599869169295,
+     "min": 0.02474999928381294,
+     "max": 0.03012499655596912,
+     "values": [
+      0.03012499655596912,
+      0.02579099964350462,
+      0.02566599869169295,
+      0.02474999928381294,
+      0.02533399674575776
+     ]
+    },
+    "I.parse": {
+     "median": 0.04941600491292775,
+     "min": 0.04470800922717899,
+     "max": 0.052750008762814105,
+     "values": [
+      0.04941600491292775,
+      0.052750008762814105,
+      0.04558400542009622,
+      0.05066700396127999,
+      0.04470800922717899
+     ]
+    },
+    "I.product": {
+     "median": 0.0006669724825769663,
+     "min": 0.00045898195821791887,
+     "max": 0.0007509952411055565,
+     "values": [
+      0.0007509952411055565,
+      0.0007500057108700275,
+      0.000500003807246685,
+      0.0006669724825769663,
+      0.00045898195821791887
+     ]
+    },
+    "I.readdecl": {
+     "median": 0.0004580069798976183,
+     "min": 0.0004159956006333232,
+     "max": 0.0007079943316057324,
+     "values": [
+      0.0004580069798976183,
+      0.0007079943316057324,
+      0.0004169996827840805,
+      0.000500003807246685,
+      0.0004159956006333232
+     ]
+    }
+   },
+   "overhead_ratio_I_over_F_parse": {
+    "median": 0.9529172537794139,
+    "min": 0.863161667331776,
+    "max": 1.16680319782254,
+    "values": [
+     0.863161667331776,
+     1.16680319782254,
+     0.9208887543122899,
+     1.146104726508097,
+     0.9529172537794139
+    ]
+   },
+   "overhead_by_order": {
+    "F_first": {
+     "median": 0.9208887543122899,
+     "min": 0.863161667331776,
+     "max": 0.9529172537794139,
+     "values": [
+      0.863161667331776,
+      0.9208887543122899,
+      0.9529172537794139
+     ]
+    },
+    "I_first": {
+     "median": 1.1564539621653185,
+     "min": 1.146104726508097,
+     "max": 1.16680319782254,
+     "values": [
+      1.16680319782254,
+      1.146104726508097
+     ]
+    },
+    "balanced": 1.0319716317021181
+   },
+   "product_share_of_I_parse": {
+    "median": 0.013163842943756264,
+    "min": 0.010266213283746339,
+    "max": 0.015197409066735142,
+    "values": [
+     0.015197409066735142,
+     0.014218115379702854,
+     0.01096884318608502,
+     0.013163842943756264,
+     0.010266213283746339
+    ]
+   },
+   "maxrss_bytes": 27049984,
+   "expected": {
+    "atoms": 8,
+    "expanded_reads_per_role": 1,
+    "expanded_reads_total": 1,
+    "final_alternatives_per_consumer": 1,
+    "flows": 1,
+    "lines": 4
+   },
+   "counts": {
+    "I.product_calls": 4,
+    "atoms_in_text": 8,
+    "check_errors": 0,
+    "check_warnings": 0,
+    "expanded_reads_per_role": {
+     "Mgr": 1
+    },
+    "expanded_reads_total": 1,
+    "final_alternatives_per_consumer": {
+     "c001": 1,
+     "c002": 1,
+     "c003": 1,
+     "c004": 1
+    },
+    "flows": 1
+   },
+   "checks": {
+    "atoms": true,
+    "expanded_reads_per_role": true,
+    "expanded_reads_total": true,
+    "final_alternatives_per_consumer": true,
+    "flows": true,
+    "identity": true,
+    "no_check_errors": true,
+    "oracle_has_true_and_false": true,
+    "selection_matches_oracle": true
+   },
+   "ok": true,
+   "identity": true,
+   "selection": {
+    "cases": 168,
+    "consumers": 4,
+    "expected_kinds": {
+     "assert": 13,
+     "none": 142,
+     "retract": 13,
+     "update": 0
+    },
+    "line_false_cases": 4,
+    "line_false_cases_all_false": null,
+    "mismatches": 0,
+    "oracle_false": 155,
+    "oracle_true": 13,
+    "sm_rejected": 0,
+    "sm_stale": 0
+   }
+  },
+  {
+   "config": "AND-m08",
+   "family": "AND",
+   "m": 8,
+   "driver_status": "ok",
+   "driver_reason": null,
+   "elapsed_s": 0.114,
+   "peak_rss_polled_bytes": 3178496,
+   "measured_reps": 5,
+   "warmup_ms": {
+    "F.parse": 0.07495800673495978,
+    "F.check": 0.4347500071162358,
+    "F.generate": 0.04758300201501697,
+    "I.parse": 0.1850830012699589,
+    "I.product": 0.001958003849722445,
+    "I.readdecl": 0.0014159886632114649
+   },
+   "ms": {
+    "F.parse": {
+     "median": 0.06533300620503724,
+     "min": 0.06133400893304497,
+     "max": 0.07333299436140805,
+     "values": [
+      0.07333299436140805,
+      0.061749989981763065,
+      0.06587500683963299,
+      0.06133400893304497,
+      0.06533300620503724
+     ]
+    },
+    "F.check": {
+     "median": 0.02083400613628328,
+     "min": 0.019750004867091775,
+     "max": 0.023375003365799785,
+     "values": [
+      0.023375003365799785,
+      0.02112500078510493,
+      0.02029100141953677,
+      0.02083400613628328,
+      0.019750004867091775
+     ]
+    },
+    "F.generate": {
+     "median": 0.030916999094188213,
+     "min": 0.02995799877680838,
+     "max": 0.035958000808022916,
+     "values": [
+      0.035958000808022916,
+      0.031082992791198194,
+      0.0305419962387532,
+      0.030916999094188213,
+      0.02995799877680838
+     ]
+    },
+    "I.parse": {
+     "median": 0.06804199074395001,
+     "min": 0.06262499664444476,
+     "max": 0.07758400170132518,
+     "values": [
+      0.06804199074395001,
+      0.07758400170132518,
+      0.06262499664444476,
+      0.06812499486841261,
+      0.0628749985480681
+     ]
+    },
+    "I.product": {
+     "median": 0.0011249794624745846,
+     "min": 0.0009179784683510661,
+     "max": 0.0011669908417388797,
+     "values": [
+      0.0011249794624745846,
+      0.0011669908417388797,
+      0.0010020012268796563,
+      0.001124994014389813,
+      0.0009179784683510661
+     ]
+    },
+    "I.readdecl": {
+     "median": 0.000500993337482214,
+     "min": 0.0003740133251994848,
+     "max": 0.0006660120561718941,
+     "values": [
+      0.0005420006345957518,
+      0.0006660120561718941,
+      0.0003740133251994848,
+      0.000500993337482214,
+      0.000500003807246685
+     ]
+    }
+   },
+   "overhead_ratio_I_over_F_parse": {
+    "median": 0.9623772454422951,
+    "min": 0.927849617167106,
+    "max": 1.2564212840235027,
+    "values": [
+     0.927849617167106,
+     1.2564212840235027,
+     0.9506639869791574,
+     1.11072137715278,
+     0.9623772454422951
+    ]
+   },
+   "overhead_by_order": {
+    "F_first": {
+     "median": 0.9506639869791574,
+     "min": 0.927849617167106,
+     "max": 0.9623772454422951,
+     "values": [
+      0.927849617167106,
+      0.9506639869791574,
+      0.9623772454422951
+     ]
+    },
+    "I_first": {
+     "median": 1.1835713305881415,
+     "min": 1.11072137715278,
+     "max": 1.2564212840235027,
+     "values": [
+      1.2564212840235027,
+      1.11072137715278
+     ]
+    },
+    "balanced": 1.0607443801459187
+   },
+   "product_share_of_I_parse": {
+    "median": 0.016000020448201337,
+    "min": 0.014600055499790892,
+    "max": 0.01653360594207207,
+    "values": [
+     0.01653360594207207,
+     0.01504164281486072,
+     0.016000020448201337,
+     0.01651367484963198,
+     0.014600055499790892
+    ]
+   },
+   "maxrss_bytes": 27033600,
+   "expected": {
+    "atoms": 16,
+    "expanded_reads_per_role": 1,
+    "expanded_reads_total": 1,
+    "final_alternatives_per_consumer": 1,
+    "flows": 1,
+    "lines": 8
+   },
+   "counts": {
+    "I.product_calls": 8,
+    "atoms_in_text": 16,
+    "check_errors": 0,
+    "check_warnings": 0,
+    "expanded_reads_per_role": {
+     "Mgr": 1
+    },
+    "expanded_reads_total": 1,
+    "final_alternatives_per_consumer": {
+     "c001": 1,
+     "c002": 1,
+     "c003": 1,
+     "c004": 1
+    },
+    "flows": 1
+   },
+   "checks": {
+    "atoms": true,
+    "expanded_reads_per_role": true,
+    "expanded_reads_total": true,
+    "final_alternatives_per_consumer": true,
+    "flows": true,
+    "identity": true,
+    "no_check_errors": true,
+    "oracle_has_true_and_false": true,
+    "selection_matches_oracle": true
+   },
+   "ok": true,
+   "identity": true,
+   "selection": {
+    "cases": 208,
+    "consumers": 4,
+    "expected_kinds": {
+     "assert": 8,
+     "none": 193,
+     "retract": 7,
+     "update": 0
+    },
+    "line_false_cases": 8,
+    "line_false_cases_all_false": null,
+    "mismatches": 0,
+    "oracle_false": 200,
+    "oracle_true": 8,
+    "sm_rejected": 0,
+    "sm_stale": 0
+   }
+  },
+  {
+   "config": "AND-m10",
+   "family": "AND",
+   "m": 10,
+   "driver_status": "ok",
+   "driver_reason": null,
+   "elapsed_s": 0.114,
+   "peak_rss_polled_bytes": 2998272,
+   "measured_reps": 5,
+   "warmup_ms": {
+    "F.parse": 0.08579199493397027,
+    "F.check": 0.41791699186433107,
+    "F.generate": 0.050749993533827364,
+    "I.parse": 0.19874999998137355,
+    "I.product": 0.002125991159118712,
+    "I.readdecl": 0.0014170072972774506
+   },
+   "ms": {
+    "F.parse": {
+     "median": 0.07479199848603457,
+     "min": 0.07079199713189155,
+     "max": 0.08275000436697155,
+     "values": [
+      0.08275000436697155,
+      0.07108300633262843,
+      0.07479199848603457,
+      0.07079199713189155,
+      0.07487498805858195
+     ]
+    },
+    "F.check": {
+     "median": 0.022792009986005723,
+     "min": 0.02229199162684381,
+     "max": 0.02591600059531629,
+     "values": [
+      0.02591600059531629,
+      0.022792009986005723,
+      0.02320799103472382,
+      0.02245799987576902,
+      0.02229199162684381
+     ]
+    },
+    "F.generate": {
+     "median": 0.032916999771259725,
+     "min": 0.03199999628122896,
+     "max": 0.037542005884461105,
+     "values": [
+      0.037542005884461105,
+      0.033541000448167324,
+      0.032916999771259725,
+      0.03199999628122896,
+      0.03241701051592827
+     ]
+    },
+    "I.parse": {
+     "median": 0.07433300197590142,
+     "min": 0.07191699114628136,
+     "max": 0.08266700024250895,
+     "values": [
+      0.07433300197590142,
+      0.08266700024250895,
+      0.07241599087137729,
+      0.0804579904070124,
+      0.07191699114628136
+     ]
+    },
+    "I.product": {
+     "median": 0.0013320095604285598,
+     "min": 0.001250024070031941,
+     "max": 0.0014179677236825228,
+     "values": [
+      0.0014160032151266932,
+      0.0014179677236825228,
+      0.001250024070031941,
+      0.0013320095604285598,
+      0.001330990926362574
+     ]
+    },
+    "I.readdecl": {
+     "median": 0.000500003807246685,
+     "min": 0.00041601015254855156,
+     "max": 0.0007500057108700275,
+     "values": [
+      0.0004580069798976183,
+      0.0007500057108700275,
+      0.000500003807246685,
+      0.0005420006345957518,
+      0.00041601015254855156
+     ]
+    }
+   },
+   "overhead_ratio_I_over_F_parse": {
+    "median": 0.9682317940053314,
+    "min": 0.898283964388168,
+    "max": 1.162964321678714,
+    "values": [
+     0.898283964388168,
+     1.162964321678714,
+     0.9682317940053314,
+     1.1365407626106703,
+     0.9604941918656967
+    ]
+   },
+   "overhead_by_order": {
+    "F_first": {
+     "median": 0.9604941918656967,
+     "min": 0.898283964388168,
+     "max": 0.9682317940053314,
+     "values": [
+      0.898283964388168,
+      0.9682317940053314,
+      0.9604941918656967
+     ]
+    },
+    "I_first": {
+     "median": 1.1497525421446921,
+     "min": 1.1365407626106703,
+     "max": 1.162964321678714,
+     "values": [
+      1.162964321678714,
+      1.1365407626106703
+     ]
+    },
+    "balanced": 1.0508713712023925
+   },
+   "product_share_of_I_parse": {
+    "median": 0.017261713262367553,
+    "min": 0.01655534215669979,
+    "max": 0.019049455524287287,
+    "values": [
+     0.019049455524287287,
+     0.0171527661524287,
+     0.017261713262367553,
+     0.01655534215669979,
+     0.018507322193934642
+    ]
+   },
+   "maxrss_bytes": 26902528,
+   "expected": {
+    "atoms": 20,
+    "expanded_reads_per_role": 1,
+    "expanded_reads_total": 1,
+    "final_alternatives_per_consumer": 1,
+    "flows": 1,
+    "lines": 10
+   },
+   "counts": {
+    "I.product_calls": 10,
+    "atoms_in_text": 20,
+    "check_errors": 0,
+    "check_warnings": 0,
+    "expanded_reads_per_role": {
+     "Mgr": 1
+    },
+    "expanded_reads_total": 1,
+    "final_alternatives_per_consumer": {
+     "c001": 1,
+     "c002": 1,
+     "c003": 1,
+     "c004": 1
+    },
+    "flows": 1
+   },
+   "checks": {
+    "atoms": true,
+    "expanded_reads_per_role": true,
+    "expanded_reads_total": true,
+    "final_alternatives_per_consumer": true,
+    "flows": true,
+    "identity": true,
+    "no_check_errors": true,
+    "oracle_has_true_and_false": true,
+    "selection_matches_oracle": true
+   },
+   "ok": true,
+   "identity": true,
+   "selection": {
+    "cases": 212,
+    "consumers": 4,
+    "expected_kinds": {
+     "assert": 8,
+     "none": 196,
+     "retract": 8,
+     "update": 0
+    },
+    "line_false_cases": 10,
+    "line_false_cases_all_false": null,
+    "mismatches": 0,
+    "oracle_false": 204,
+    "oracle_true": 8,
+    "sm_rejected": 0,
+    "sm_stale": 0
+   }
+  },
+  {
+   "config": "AND-m12",
+   "family": "AND",
+   "m": 12,
+   "driver_status": "ok",
+   "driver_reason": null,
+   "elapsed_s": 0.114,
+   "peak_rss_polled_bytes": 3407872,
+   "measured_reps": 5,
+   "warmup_ms": {
+    "F.parse": 0.09787500312086195,
+    "F.check": 0.45445900468621403,
+    "F.generate": 0.05337499896995723,
+    "I.parse": 0.21220900816842914,
+    "I.product": 0.0025830231606960297,
+    "I.readdecl": 0.0014170072972774506
+   },
+   "ms": {
+    "F.parse": {
+     "median": 0.08549999620299786,
+     "min": 0.08137499389704317,
+     "max": 0.09445799514651299,
+     "values": [
+      0.09445799514651299,
+      0.08137499389704317,
+      0.08549999620299786,
+      0.08250000246334821,
+      0.08579099085181952
+     ]
+    },
+    "F.check": {
+     "median": 0.02470900653861463,
+     "min": 0.024416993255726993,
+     "max": 0.028624999686144292,
+     "values": [
+      0.028624999686144292,
+      0.025291999918408692,
+      0.02470900653861463,
+      0.024708002456463873,
+      0.024416993255726993
+     ]
+    },
+    "F.generate": {
+     "median": 0.03616699541453272,
+     "min": 0.03574999573174864,
+     "max": 0.040458005969412625,
+     "values": [
+      0.040458005969412625,
+      0.03720899985637516,
+      0.03616699541453272,
+      0.03574999573174864,
+      0.03574999573174864
+     ]
+    },
+    "I.parse": {
+     "median": 0.08637500286567956,
+     "min": 0.08345799869857728,
+     "max": 0.09741701069287956,
+     "values": [
+      0.08637500286567956,
+      0.09741701069287956,
+      0.08345799869857728,
+      0.09037500421982259,
+      0.08404099207837135
+     ]
+    },
+    "I.product": {
+     "median": 0.0016250123735517263,
+     "min": 0.0015010155038908124,
+     "max": 0.001831984263844788,
+     "values": [
+      0.001667009200900793,
+      0.001831984263844788,
+      0.0015010155038908124,
+      0.0016250123735517263,
+      0.0015430123312398791
+     ]
+    },
+    "I.readdecl": {
+     "median": 0.000500003807246685,
+     "min": 0.0004579924279823899,
+     "max": 0.0006659975042566657,
+     "values": [
+      0.0004580069798976183,
+      0.0006659975042566657,
+      0.0004579924279823899,
+      0.0005429901648312807,
+      0.000500003807246685
+     ]
+    }
+   },
+   "overhead_ratio_I_over_F_parse": {
+    "median": 0.9796016020321899,
+    "min": 0.9144276536009899,
+    "max": 1.1971369339349258,
+    "values": [
+     0.9144276536009899,
+     1.1971369339349258,
+     0.9761169871917611,
+     1.0954545638949884,
+     0.9796016020321899
+    ]
+   },
+   "overhead_by_order": {
+    "F_first": {
+     "median": 0.9761169871917611,
+     "min": 0.9144276536009899,
+     "max": 0.9796016020321899,
+     "values": [
+      0.9144276536009899,
+      0.9761169871917611,
+      0.9796016020321899
+     ]
+    },
+    "I_first": {
+     "median": 1.146295748914957,
+     "min": 1.0954545638949884,
+     "max": 1.1971369339349258,
+     "values": [
+      1.1971369339349258,
+      1.0954545638949884
+     ]
+    },
+    "balanced": 1.0577895598187719
+   },
+   "product_share_of_I_parse": {
+    "median": 0.018360234607903758,
+    "min": 0.017980772311768266,
+    "max": 0.019299671729020182,
+    "values": [
+     0.019299671729020182,
+     0.018805588991232434,
+     0.01798528034816632,
+     0.017980772311768266,
+     0.018360234607903758
+    ]
+   },
+   "maxrss_bytes": 27164672,
+   "expected": {
+    "atoms": 24,
+    "expanded_reads_per_role": 1,
+    "expanded_reads_total": 1,
+    "final_alternatives_per_consumer": 1,
+    "flows": 1,
+    "lines": 12
+   },
+   "counts": {
+    "I.product_calls": 12,
+    "atoms_in_text": 24,
+    "check_errors": 0,
+    "check_warnings": 0,
+    "expanded_reads_per_role": {
+     "Mgr": 1
+    },
+    "expanded_reads_total": 1,
+    "final_alternatives_per_consumer": {
+     "c001": 1,
+     "c002": 1,
+     "c003": 1,
+     "c004": 1
+    },
+    "flows": 1
+   },
+   "checks": {
+    "atoms": true,
+    "expanded_reads_per_role": true,
+    "expanded_reads_total": true,
+    "final_alternatives_per_consumer": true,
+    "flows": true,
+    "identity": true,
+    "no_check_errors": true,
+    "oracle_has_true_and_false": true,
+    "selection_matches_oracle": true
+   },
+   "ok": true,
+   "identity": true,
+   "selection": {
+    "cases": 248,
+    "consumers": 4,
+    "expected_kinds": {
+     "assert": 8,
+     "none": 232,
+     "retract": 8,
+     "update": 0
+    },
+    "line_false_cases": 12,
+    "line_false_cases_all_false": null,
+    "mismatches": 0,
+    "oracle_false": 240,
+    "oracle_true": 8,
+    "sm_rejected": 0,
+    "sm_stale": 0
+   }
+  },
+  {
+   "config": "AND-m14",
+   "family": "AND",
+   "m": 14,
+   "driver_status": "ok",
+   "driver_reason": null,
+   "elapsed_s": 0.114,
+   "peak_rss_polled_bytes": 4014080,
+   "measured_reps": 5,
+   "warmup_ms": {
+    "F.parse": 0.11012499453499913,
+    "F.check": 0.43579100747592747,
+    "F.generate": 0.0568750110687688,
+    "I.parse": 0.225124997086823,
+    "I.product": 0.0027509959181770682,
+    "I.readdecl": 0.0018330174498260021
+   },
+   "ms": {
+    "F.parse": {
+     "median": 0.09383399446960539,
+     "min": 0.09045799379236996,
+     "max": 0.10375000420026481,
+     "values": [
+      0.10375000420026481,
+      0.09062500612344593,
+      0.09383399446960539,
+      0.09045799379236996,
+      0.09479199070483446
+     ]
+    },
+    "F.check": {
+     "median": 0.026583002181723714,
+     "min": 0.026292007532902062,
+     "max": 0.029791000997647643,
+     "values": [
+      0.029791000997647643,
+      0.026583002181723714,
+      0.02633300027810037,
+      0.026292007532902062,
+      0.029584000003524125
+     ]
+    },
+    "F.generate": {
+     "median": 0.03875000402331352,
+     "min": 0.037874997360631824,
+     "max": 0.04258300759829581,
+     "values": [
+      0.04258300759829581,
+      0.03962499613407999,
+      0.03875000402331352,
+      0.03837500116787851,
+      0.037874997360631824
+     ]
+    },
+    "I.parse": {
+     "median": 0.09779199899639934,
+     "min": 0.09137499728240073,
+     "max": 0.10137500066775829,
+     "values": [
+      0.09779199899639934,
+      0.10137500066775829,
+      0.09137499728240073,
+      0.0983749923761934,
+      0.09299999510403723
+     ]
+    },
+    "I.product": {
+     "median": 0.002082990249618888,
+     "min": 0.0019160070223733783,
+     "max": 0.002167042111977935,
+     "values": [
+      0.002082990249618888,
+      0.002167042111977935,
+      0.0019160070223733783,
+      0.002085012965835631,
+      0.0019169674487784505
+     ]
+    },
+    "I.readdecl": {
+     "median": 0.0005409965524449944,
+     "min": 0.0004999892553314567,
+     "max": 0.0007080088835209608,
+     "values": [
+      0.0005409965524449944,
+      0.0007080088835209608,
+      0.0004999892553314567,
+      0.000500003807246685,
+      0.0005410111043602228
+     ]
+    }
+   },
+   "overhead_ratio_I_over_F_parse": {
+    "median": 0.9810954956481799,
+    "min": 0.9425734461430484,
+    "max": 1.1186206214393974,
+    "values": [
+     0.9425734461430484,
+     1.1186206214393974,
+     0.9737941755426263,
+     1.0875212709447823,
+     0.9810954956481799
+    ]
+   },
+   "overhead_by_order": {
+    "F_first": {
+     "median": 0.9737941755426263,
+     "min": 0.9425734461430484,
+     "max": 0.9810954956481799,
+     "values": [
+      0.9425734461430484,
+      0.9737941755426263,
+      0.9810954956481799
+     ]
+    },
+    "I_first": {
+     "median": 1.1030709461920898,
+     "min": 1.0875212709447823,
+     "max": 1.1186206214393974,
+     "values": [
+      1.1186206214393974,
+      1.0875212709447823
+     ]
+    },
+    "balanced": 1.0364188644617343
+   },
+   "product_share_of_I_parse": {
+    "median": 0.0211945425912958,
+    "min": 0.020612554297814504,
+    "max": 0.021376494182033082,
+    "values": [
+     0.02130021137716576,
+     0.021376494182033082,
+     0.020968613727580493,
+     0.0211945425912958,
+     0.020612554297814504
+    ]
+   },
+   "maxrss_bytes": 27049984,
+   "expected": {
+    "atoms": 28,
+    "expanded_reads_per_role": 1,
+    "expanded_reads_total": 1,
+    "final_alternatives_per_consumer": 1,
+    "flows": 1,
+    "lines": 14
+   },
+   "counts": {
+    "I.product_calls": 14,
+    "atoms_in_text": 28,
+    "check_errors": 0,
+    "check_warnings": 0,
+    "expanded_reads_per_role": {
+     "Mgr": 1
+    },
+    "expanded_reads_total": 1,
+    "final_alternatives_per_consumer": {
+     "c001": 1,
+     "c002": 1,
+     "c003": 1,
+     "c004": 1
+    },
+    "flows": 1
+   },
+   "checks": {
+    "atoms": true,
+    "expanded_reads_per_role": true,
+    "expanded_reads_total": true,
+    "final_alternatives_per_consumer": true,
+    "flows": true,
+    "identity": true,
+    "no_check_errors": true,
+    "oracle_has_true_and_false": true,
+    "selection_matches_oracle": true
+   },
+   "ok": true,
+   "identity": true,
+   "selection": {
+    "cases": 252,
+    "consumers": 4,
+    "expected_kinds": {
+     "assert": 9,
+     "none": 234,
+     "retract": 9,
+     "update": 0
+    },
+    "line_false_cases": 14,
+    "line_false_cases_all_false": null,
+    "mismatches": 0,
+    "oracle_false": 243,
+    "oracle_true": 9,
+    "sm_rejected": 0,
+    "sm_stale": 0
+   }
+  },
+  {
+   "config": "AND-m16",
+   "family": "AND",
+   "m": 16,
+   "driver_status": "ok",
+   "driver_reason": null,
+   "elapsed_s": 0.114,
+   "peak_rss_polled_bytes": 3964928,
+   "measured_reps": 5,
+   "warmup_ms": {
+    "F.parse": 0.12158301251474768,
+    "F.check": 0.4777919966727495,
+    "F.generate": 0.059874990256503224,
+    "I.parse": 0.2356670011067763,
+    "I.product": 0.0032930256566032767,
+    "I.readdecl": 0.0013749959180131555
+   },
+   "ms": {
+    "F.parse": {
+     "median": 0.10704199667088687,
+     "min": 0.10312499944120646,
+     "max": 0.11620900477282703,
+     "values": [
+      0.11620900477282703,
+      0.10312499944120646,
+      0.10704199667088687,
+      0.10554099571891129,
+      0.10912500147242099
+     ]
+    },
+    "F.check": {
+     "median": 0.029999995604157448,
+     "min": 0.028916008886881173,
+     "max": 0.03237499913666397,
+     "values": [
+      0.03237499913666397,
+      0.030208000680431724,
+      0.02995799877680838,
+      0.029999995604157448,
+      0.028916008886881173
+     ]
+    },
+    "F.generate": {
+     "median": 0.0415419926866889,
+     "min": 0.04058401100337505,
+     "max": 0.046542001655325294,
+     "values": [
+      0.046542001655325294,
+      0.042207990190945566,
+      0.0415419926866889,
+      0.041040999349206686,
+      0.04058401100337505
+     ]
+    },
+    "I.parse": {
+     "median": 0.10929099516943097,
+     "min": 0.1042500080075115,
+     "max": 0.11574999371077865,
+     "values": [
+      0.10929099516943097,
+      0.11574999371077865,
+      0.1042500080075115,
+      0.11216699203941971,
+      0.10708399349823594
+     ]
+    },
+    "I.product": {
+     "median": 0.0022909953258931637,
+     "min": 0.002249988028779626,
+     "max": 0.0024570035748183727,
+     "values": [
+      0.002330983988940716,
+      0.0024570035748183727,
+      0.0022500171326100826,
+      0.0022909953258931637,
+      0.002249988028779626
+     ]
+    },
+    "I.readdecl": {
+     "median": 0.0005830079317092896,
+     "min": 0.0004579924279823899,
+     "max": 0.0007089838618412614,
+     "values": [
+      0.0005830079317092896,
+      0.0007089838618412614,
+      0.0004579924279823899,
+      0.0005830079317092896,
+      0.0005410111043602228
+     ]
+    }
+   },
+   "overhead_ratio_I_over_F_parse": {
+    "median": 0.9812966052999241,
+    "min": 0.9404692466223264,
+    "max": 1.122424187519826,
+    "values": [
+     0.9404692466223264,
+     1.122424187519826,
+     0.973916885426197,
+     1.062781256471708,
+     0.9812966052999241
+    ]
+   },
+   "overhead_by_order": {
+    "F_first": {
+     "median": 0.973916885426197,
+     "min": 0.9404692466223264,
+     "max": 0.9812966052999241,
+     "values": [
+      0.9404692466223264,
+      0.973916885426197,
+      0.9812966052999241
+     ]
+    },
+    "I_first": {
+     "median": 1.092602721995767,
+     "min": 1.062781256471708,
+     "max": 1.122424187519826,
+     "values": [
+      1.122424187519826,
+      1.062781256471708
+     ]
+    },
+    "balanced": 1.0315542836003844
+   },
+   "product_share_of_I_parse": {
+    "median": 0.02122681389476029,
+    "min": 0.02042486193342888,
+    "max": 0.021582896496736604,
+    "values": [
+     0.021328234639341075,
+     0.02122681389476029,
+     0.021582896496736604,
+     0.02042486193342888,
+     0.021011431823531043
+    ]
+   },
+   "maxrss_bytes": 27164672,
+   "expected": {
+    "atoms": 32,
+    "expanded_reads_per_role": 1,
+    "expanded_reads_total": 1,
+    "final_alternatives_per_consumer": 1,
+    "flows": 1,
+    "lines": 16
+   },
+   "counts": {
+    "I.product_calls": 16,
+    "atoms_in_text": 32,
+    "check_errors": 0,
+    "check_warnings": 0,
+    "expanded_reads_per_role": {
+     "Mgr": 1
+    },
+    "expanded_reads_total": 1,
+    "final_alternatives_per_consumer": {
+     "c001": 1,
+     "c002": 1,
+     "c003": 1,
+     "c004": 1
+    },
+    "flows": 1
+   },
+   "checks": {
+    "atoms": true,
+    "expanded_reads_per_role": true,
+    "expanded_reads_total": true,
+    "final_alternatives_per_consumer": true,
+    "flows": true,
+    "identity": true,
+    "no_check_errors": true,
+    "oracle_has_true_and_false": true,
+    "selection_matches_oracle": true
+   },
+   "ok": true,
+   "identity": true,
+   "selection": {
+    "cases": 288,
+    "consumers": 4,
+    "expected_kinds": {
+     "assert": 9,
+     "none": 270,
+     "retract": 9,
+     "update": 0
+    },
+    "line_false_cases": 16,
+    "line_false_cases_all_false": null,
+    "mismatches": 0,
+    "oracle_false": 279,
+    "oracle_true": 9,
+    "sm_rejected": 0,
+    "sm_stale": 0
+   }
+  },
+  {
+   "config": "AND-m18",
+   "family": "AND",
+   "m": 18,
+   "driver_status": "ok",
+   "driver_reason": null,
+   "elapsed_s": 0.106,
+   "peak_rss_polled_bytes": 4259840,
+   "measured_reps": 5,
+   "warmup_ms": {
+    "F.parse": 0.12170801346655935,
+    "F.check": 0.4379579913802445,
+    "F.generate": 0.06054199184291065,
+    "I.parse": 0.24066699552349746,
+    "I.product": 0.0035829725675284863,
+    "I.readdecl": 0.0014170072972774506
+   },
+   "ms": {
+    "F.parse": {
+     "median": 0.11062499834224582,
+     "min": 0.10674999793991446,
+     "max": 0.11954100045841187,
+     "values": [
+      0.11954100045841187,
+      0.10674999793991446,
+      0.11070800246670842,
+      0.1078750065062195,
+      0.11062499834224582
+     ]
+    },
+    "F.check": {
+     "median": 0.029791990527883172,
+     "min": 0.02937499084509909,
+     "max": 0.03275000199209899,
+     "values": [
+      0.03275000199209899,
+      0.030957991839386523,
+      0.029791990527883172,
+      0.0296669895760715,
+      0.02937499084509909
+     ]
+    },
+    "F.generate": {
+     "median": 0.04225000157020986,
+     "min": 0.041749997762963176,
+     "max": 0.04620799154508859,
+     "values": [
+      0.04620799154508859,
+      0.04300000728107989,
+      0.041916006011888385,
+      0.04225000157020986,
+      0.041749997762963176
+     ]
+    },
+    "I.parse": {
+     "median": 0.11516700033098459,
+     "min": 0.10962499072775245,
+     "max": 0.11995800014119595,
+     "values": [
+      0.11533399811014533,
+      0.11995800014119595,
+      0.10962499072775245,
+      0.11516700033098459,
+      0.10966700210701674
+     ]
+    },
+    "I.product": {
+     "median": 0.002496992237865925,
+     "min": 0.0023750326363369823,
+     "max": 0.002621993189677596,
+     "values": [
+      0.002496992237865925,
+      0.002541986759752035,
+      0.0024569890229031444,
+      0.002621993189677596,
+      0.0023750326363369823
+     ]
+    },
+    "I.readdecl": {
+     "median": 0.0004989997250959277,
+     "min": 0.0004579924279823899,
+     "max": 0.000667001586407423,
+     "values": [
+      0.0004989997250959277,
+      0.000667001586407423,
+      0.00045899651013314724,
+      0.0005839974619448185,
+      0.0004579924279823899
+     ]
+    }
+   },
+   "overhead_ratio_I_over_F_parse": {
+    "median": 0.9913401468964069,
+    "min": 0.9648070341377964,
+    "max": 1.1237283602451755,
+    "values": [
+     0.9648070341377964,
+     1.1237283602451755,
+     0.9902174033057669,
+     1.0675966941827686,
+     0.9913401468964069
+    ]
+   },
+   "overhead_by_order": {
+    "F_first": {
+     "median": 0.9902174033057669,
+     "min": 0.9648070341377964,
+     "max": 0.9913401468964069,
+     "values": [
+      0.9648070341377964,
+      0.9902174033057669,
+      0.9913401468964069
+     ]
+    },
+    "I_first": {
+     "median": 1.095662527213972,
+     "min": 1.0675966941827686,
+     "max": 1.1237283602451755,
+     "values": [
+      1.1237283602451755,
+      1.0675966941827686
+     ]
+    },
+    "balanced": 1.0416065008424504
+   },
+   "product_share_of_I_parse": {
+    "median": 0.02165676630805815,
+    "min": 0.021190639696893936,
+    "max": 0.022766879246156536,
+    "values": [
+     0.02165009692529056,
+     0.021190639696893936,
+     0.02241267257212308,
+     0.022766879246156536,
+     0.02165676630805815
+    ]
+   },
+   "maxrss_bytes": 26886144,
+   "expected": {
+    "atoms": 36,
+    "expanded_reads_per_role": 1,
+    "expanded_reads_total": 1,
+    "final_alternatives_per_consumer": 1,
+    "flows": 1,
+    "lines": 18
+   },
+   "counts": {
+    "I.product_calls": 18,
+    "atoms_in_text": 36,
+    "check_errors": 0,
+    "check_warnings": 0,
+    "expanded_reads_per_role": {
+     "Mgr": 1
+    },
+    "expanded_reads_total": 1,
+    "final_alternatives_per_consumer": {
+     "c001": 1,
+     "c002": 1,
+     "c003": 1,
+     "c004": 1
+    },
+    "flows": 1
+   },
+   "checks": {
+    "atoms": true,
+    "expanded_reads_per_role": true,
+    "expanded_reads_total": true,
+    "final_alternatives_per_consumer": true,
+    "flows": true,
+    "identity": true,
+    "no_check_errors": true,
+    "oracle_has_true_and_false": true,
+    "selection_matches_oracle": true
+   },
+   "ok": true,
+   "identity": true,
+   "selection": {
+    "cases": 292,
+    "consumers": 4,
+    "expected_kinds": {
+     "assert": 10,
+     "none": 273,
+     "retract": 9,
+     "update": 0
+    },
+    "line_false_cases": 18,
+    "line_false_cases_all_false": null,
+    "mismatches": 0,
+    "oracle_false": 282,
+    "oracle_true": 10,
+    "sm_rejected": 0,
+    "sm_stale": 0
+   }
+  },
+  {
+   "config": "AND-m20",
+   "family": "AND",
+   "m": 20,
+   "driver_status": "ok",
+   "driver_reason": null,
+   "elapsed_s": 0.111,
+   "peak_rss_polled_bytes": 3375104,
+   "measured_reps": 5,
+   "warmup_ms": {
+    "F.parse": 0.1324159966316074,
+    "F.check": 0.4466659884201363,
+    "F.generate": 0.062292005168274045,
+    "I.parse": 0.2661659964360297,
+    "I.product": 0.004083049134351313,
+    "I.readdecl": 0.0014999968698248267
+   },
+   "ms": {
+    "F.parse": {
+     "median": 0.12191700807306916,
+     "min": 0.11970799823757261,
+     "max": 0.13054200098849833,
+     "values": [
+      0.13054200098849833,
+      0.11970799823757261,
+      0.12170900299679488,
+      0.12224999954923987,
+      0.12191700807306916
+     ]
+    },
+    "F.check": {
+     "median": 0.03254199691582471,
+     "min": 0.03195799945387989,
+     "max": 0.03529099922161549,
+     "values": [
+      0.03529099922161549,
+      0.032625001040287316,
+      0.03254199691582471,
+      0.03195799945387989,
+      0.03225001273676753
+     ]
+    },
+    "F.generate": {
+     "median": 0.044666012399829924,
+     "min": 0.044167012674733996,
+     "max": 0.050040995120070875,
+     "values": [
+      0.050040995120070875,
+      0.04599998646881431,
+      0.044666012399829924,
+      0.044375003199093044,
+      0.044167012674733996
+     ]
+    },
+    "I.parse": {
+     "median": 0.12516700371634215,
+     "min": 0.11912500485777855,
+     "max": 0.12933299876749516,
+     "values": [
+      0.1259580021724105,
+      0.12933299876749516,
+      0.11912500485777855,
+      0.12516700371634215,
+      0.12100000458303839
+     ]
+    },
+    "I.product": {
+     "median": 0.0027900096029043198,
+     "min": 0.0026250199880450964,
+     "max": 0.0029570073820650578,
+     "values": [
+      0.0029570073820650578,
+      0.0028329959604889154,
+      0.0026250199880450964,
+      0.0027900096029043198,
+      0.002663990017026663
+     ]
+    },
+    "I.readdecl": {
+     "median": 0.0004989997250959277,
+     "min": 0.00045899651013314724,
+     "max": 0.000667001586407423,
+     "values": [
+      0.0005830079317092896,
+      0.000667001586407423,
+      0.00045899651013314724,
+      0.0004989997250959277,
+      0.00045899651013314724
+     ]
+    }
+   },
+   "overhead_ratio_I_over_F_parse": {
+    "median": 0.9924784613359182,
+    "min": 0.9648848739763708,
+    "max": 1.0804039886359202,
+    "values": [
+     0.9648848739763708,
+     1.0804039886359202,
+     0.9787690468626682,
+     1.023860974870003,
+     0.9924784613359182
+    ]
+   },
+   "overhead_by_order": {
+    "F_first": {
+     "median": 0.9787690468626682,
+     "min": 0.9648848739763708,
+     "max": 0.9924784613359182,
+     "values": [
+      0.9648848739763708,
+      0.9787690468626682,
+      0.9924784613359182
+     ]
+    },
+    "I_first": {
+     "median": 1.0521324817529616,
+     "min": 1.023860974870003,
+     "max": 1.0804039886359202,
+     "values": [
+      1.0804039886359202,
+      1.023860974870003
+     ]
+    },
+    "balanced": 1.0147880105414135
+   },
+   "product_share_of_I_parse": {
+    "median": 0.022035843701992425,
+    "min": 0.021904664605990123,
+    "max": 0.023476137530488342,
+    "values": [
+     0.023476137530488342,
+     0.021904664605990123,
+     0.022035843701992425,
+     0.0222902963246379,
+     0.022016445587805352
+    ]
+   },
+   "maxrss_bytes": 27131904,
+   "expected": {
+    "atoms": 40,
+    "expanded_reads_per_role": 1,
+    "expanded_reads_total": 1,
+    "final_alternatives_per_consumer": 1,
+    "flows": 1,
+    "lines": 20
+   },
+   "counts": {
+    "I.product_calls": 20,
+    "atoms_in_text": 40,
+    "check_errors": 0,
+    "check_warnings": 0,
+    "expanded_reads_per_role": {
+     "Mgr": 1
+    },
+    "expanded_reads_total": 1,
+    "final_alternatives_per_consumer": {
+     "c001": 1,
+     "c002": 1,
+     "c003": 1,
+     "c004": 1
+    },
+    "flows": 1
+   },
+   "checks": {
+    "atoms": true,
+    "expanded_reads_per_role": true,
+    "expanded_reads_total": true,
+    "final_alternatives_per_consumer": true,
+    "flows": true,
+    "identity": true,
+    "no_check_errors": true,
+    "oracle_has_true_and_false": true,
+    "selection_matches_oracle": true
+   },
+   "ok": true,
+   "identity": true,
+   "selection": {
+    "cases": 296,
+    "consumers": 4,
+    "expected_kinds": {
+     "assert": 10,
+     "none": 276,
+     "retract": 10,
+     "update": 0
+    },
+    "line_false_cases": 20,
+    "line_false_cases_all_false": null,
+    "mismatches": 0,
+    "oracle_false": 286,
+    "oracle_true": 10,
+    "sm_rejected": 0,
+    "sm_stale": 0
+   }
+  },
+  {
+   "config": "DUP-m01",
+   "family": "DUP",
+   "m": 1,
+   "driver_status": "ok",
+   "driver_reason": null,
+   "elapsed_s": 0.105,
+   "peak_rss_polled_bytes": 3178496,
+   "measured_reps": 5,
+   "warmup_ms": {
+    "F.parse": 0.0560000044060871,
+    "F.check": 0.44662499567493796,
+    "F.generate": 0.041207997128367424,
+    "I.parse": 0.1455830060876906,
+    "I.product": 0.0008749775588512421,
+    "I.readdecl": 0.002125001628883183
+   },
+   "ms": {
+    "F.parse": {
+     "median": 0.04462499055080116,
+     "min": 0.0414160022046417,
+     "max": 0.05308400432113558,
+     "values": [
+      0.05308400432113558,
+      0.0414160022046417,
+      0.04595900827553123,
+      0.041624996811151505,
+      0.04462499055080116
+     ]
+    },
+    "F.check": {
+     "median": 0.016874997527338564,
+     "min": 0.01591700129210949,
+     "max": 0.019917002646252513,
+     "values": [
+      0.019917002646252513,
+      0.017332989955320954,
+      0.016874997527338564,
+      0.01591700129210949,
+      0.0160830095410347
+     ]
+    },
+    "F.generate": {
+     "median": 0.027457994292490184,
+     "min": 0.026416993932798505,
+     "max": 0.03154198930133134,
+     "values": [
+      0.03154198930133134,
+      0.028166992706246674,
+      0.027457994292490184,
+      0.026708003133535385,
+      0.026416993932798505
+     ]
+    },
+    "I.parse": {
+     "median": 0.045415989006869495,
+     "min": 0.042750005377456546,
+     "max": 0.05054099892731756,
+     "values": [
+      0.045415989006869495,
+      0.05054099892731756,
+      0.042750005377456546,
+      0.04629199975170195,
+      0.04295799590181559
+     ]
+    },
+    "I.product": {
+     "median": 0.00033401011023670435,
+     "min": 0.00029199873097240925,
+     "max": 0.00045899651013314724,
+     "values": [
+      0.00045899651013314724,
+      0.00045899651013314724,
+      0.00029301736503839493,
+      0.00033401011023670435,
+      0.00029199873097240925
+     ]
+    },
+    "I.readdecl": {
+     "median": 0.000833999365568161,
+     "min": 0.0007910130079835653,
+     "max": 0.0011239899322390556,
+     "values": [
+      0.000833999365568161,
+      0.0011239899322390556,
+      0.0008330098353326321,
+      0.0008749921107664704,
+      0.0007910130079835653
+     ]
+    }
+   },
+   "overhead_ratio_I_over_F_parse": {
+    "median": 0.9626443697038355,
+    "min": 0.8555494180906575,
+    "max": 1.2203253872159872,
+    "values": [
+     0.8555494180906575,
+     1.2203253872159872,
+     0.9301768463140844,
+     1.112120199353388,
+     0.9626443697038355
+    ]
+   },
+   "overhead_by_order": {
+    "F_first": {
+     "median": 0.9301768463140844,
+     "min": 0.8555494180906575,
+     "max": 0.9626443697038355,
+     "values": [
+      0.8555494180906575,
+      0.9301768463140844,
+      0.9626443697038355
+     ]
+    },
+    "I_first": {
+     "median": 1.1662227932846876,
+     "min": 1.112120199353388,
+     "max": 1.2203253872159872,
+     "values": [
+      1.2203253872159872,
+      1.112120199353388
+     ]
+    },
+    "balanced": 1.041534176086965
+   },
+   "product_share_of_I_parse": {
+    "median": 0.007215287998536384,
+    "min": 0.006797308041087366,
+    "max": 0.010106495975761328,
+    "values": [
+     0.010106495975761328,
+     0.009081666763120866,
+     0.006854206507139118,
+     0.007215287998536384,
+     0.006797308041087366
+    ]
+   },
+   "maxrss_bytes": 27049984,
+   "expected": {
+    "atoms": 2,
+    "expanded_reads_per_role": 2,
+    "expanded_reads_total": 4,
+    "final_alternatives_per_consumer": 2,
+    "flows": 4,
+    "lines": 1
+   },
+   "counts": {
+    "I.product_calls": 2,
+    "atoms_in_text": 4,
+    "check_errors": 0,
+    "check_warnings": 0,
+    "expanded_reads_per_role": {
+     "MgrA": 2,
+     "MgrB": 2
+    },
+    "expanded_reads_total": 4,
+    "final_alternatives_per_consumer": {
+     "c001": 2,
+     "c002": 2,
+     "c003": 2,
+     "c004": 2
+    },
+    "flows": 4
+   },
+   "checks": {
+    "atoms": true,
+    "expanded_reads_per_role": true,
+    "expanded_reads_total": true,
+    "final_alternatives_per_consumer": true,
+    "flows": true,
+    "identity": true,
+    "no_check_errors": true,
+    "oracle_has_true_and_false": true,
+    "selection_matches_oracle": true
+   },
+   "ok": true,
+   "identity": true,
+   "selection": {
+    "cases": 122,
+    "consumers": 4,
+    "expected_kinds": {
+     "assert": 22,
+     "none": 1,
+     "retract": 20,
+     "update": 79
+    },
+    "line_false_cases": 1,
+    "line_false_cases_all_false": true,
+    "mismatches": 0,
+    "oracle_false": 21,
+    "oracle_true": 101,
+    "sm_rejected": 0,
+    "sm_stale": 0
+   }
+  },
+  {
+   "config": "DUP-m02",
+   "family": "DUP",
+   "m": 2,
+   "driver_status": "ok",
+   "driver_reason": null,
+   "elapsed_s": 0.113,
+   "peak_rss_polled_bytes": 2228224,
+   "measured_reps": 5,
+   "warmup_ms": {
+    "F.parse": 0.06720799137838185,
+    "F.check": 0.4289579956093803,
+    "F.generate": 0.059084006352350116,
+    "I.parse": 0.17854200268629938,
+    "I.product": 0.00191599247045815,
+    "I.readdecl": 0.002542015863582492
+   },
+   "ms": {
+    "F.parse": {
+     "median": 0.0558749889023602,
+     "min": 0.05095799861010164,
+     "max": 0.0652919989079237,
+     "values": [
+      0.0652919989079237,
+      0.05095799861010164,
+      0.05758300540037453,
+      0.05137499829288572,
+      0.0558749889023602
+     ]
+    },
+    "F.check": {
+     "median": 0.02995799877680838,
+     "min": 0.02920901170000434,
+     "max": 0.03195799945387989,
+     "values": [
+      0.03195799945387989,
+      0.02995799877680838,
+      0.03012499655596912,
+      0.029666000045835972,
+      0.02920901170000434
+     ]
+    },
+    "F.generate": {
+     "median": 0.04370900569483638,
+     "min": 0.04233299114275724,
+     "max": 0.04745900514535606,
+     "values": [
+      0.04745900514535606,
+      0.04370900569483638,
+      0.04374999844003469,
+      0.043042004108428955,
+      0.04233299114275724
+     ]
+    },
+    "I.parse": {
+     "median": 0.058707999414764345,
+     "min": 0.051875002100132406,
+     "max": 0.06066699279472232,
+     "values": [
+      0.058707999414764345,
+      0.06066699279472232,
+      0.05387500277720392,
+      0.05875001079402864,
+      0.051875002100132406
+     ]
+    },
+    "I.product": {
+     "median": 0.000833999365568161,
+     "min": 0.0006650079740211368,
+     "max": 0.0010829971870407462,
+     "values": [
+      0.000833999365568161,
+      0.0010829971870407462,
+      0.0006650079740211368,
+      0.0009990035323426127,
+      0.0006659975042566657
+     ]
+    },
+    "I.readdecl": {
+     "median": 0.0010829971870407462,
+     "min": 0.0009590148692950606,
+     "max": 0.0014999968698248267,
+     "values": [
+      0.0012509990483522415,
+      0.0014999968698248267,
+      0.0009590148692950606,
+      0.0010829971870407462,
+      0.0009999930625781417
+     ]
+    }
+   },
+   "overhead_ratio_I_over_F_parse": {
+    "median": 0.9356059553094028,
+    "min": 0.8991606995760038,
+    "max": 1.190529346705858,
+    "values": [
+     0.8991606995760038,
+     1.190529346705858,
+     0.9356059553094028,
+     1.1435525595368086,
+     0.9284118550928459
+    ]
+   },
+   "overhead_by_order": {
+    "F_first": {
+     "median": 0.9284118550928459,
+     "min": 0.8991606995760038,
+     "max": 0.9356059553094028,
+     "values": [
+      0.8991606995760038,
+      0.9356059553094028,
+      0.9284118550928459
+     ]
+    },
+    "I_first": {
+     "median": 1.1670409531213333,
+     "min": 1.1435525595368086,
+     "max": 1.190529346705858,
+     "values": [
+      1.190529346705858,
+      1.1435525595368086
+     ]
+    },
+    "balanced": 1.040910493873849
+   },
+   "product_share_of_I_parse": {
+    "median": 0.014205889723409998,
+    "min": 0.01234353484437352,
+    "max": 0.017851506019183477,
+    "values": [
+     0.014205889723409998,
+     0.017851506019183477,
+     0.01234353484437352,
+     0.017004312319958786,
+     0.012838505586392367
+    ]
+   },
+   "maxrss_bytes": 26968064,
+   "expected": {
+    "atoms": 4,
+    "expanded_reads_per_role": 4,
+    "expanded_reads_total": 8,
+    "final_alternatives_per_consumer": 4,
+    "flows": 8,
+    "lines": 2
+   },
+   "counts": {
+    "I.product_calls": 4,
+    "atoms_in_text": 8,
+    "check_errors": 0,
+    "check_warnings": 0,
+    "expanded_reads_per_role": {
+     "MgrA": 4,
+     "MgrB": 4
+    },
+    "expanded_reads_total": 8,
+    "final_alternatives_per_consumer": {
+     "c001": 4,
+     "c002": 4,
+     "c003": 4,
+     "c004": 4
+    },
+    "flows": 8
+   },
+   "checks": {
+    "atoms": true,
+    "expanded_reads_per_role": true,
+    "expanded_reads_total": true,
+    "final_alternatives_per_consumer": true,
+    "flows": true,
+    "identity": true,
+    "no_check_errors": true,
+    "oracle_has_true_and_false": true,
+    "selection_matches_oracle": true
+   },
+   "ok": true,
+   "identity": true,
+   "selection": {
+    "cases": 164,
+    "consumers": 4,
+    "expected_kinds": {
+     "assert": 26,
+     "none": 5,
+     "retract": 25,
+     "update": 108
+    },
+    "line_false_cases": 2,
+    "line_false_cases_all_false": true,
+    "mismatches": 0,
+    "oracle_false": 30,
+    "oracle_true": 134,
+    "sm_rejected": 0,
+    "sm_stale": 0
+   }
+  },
+  {
+   "config": "DUP-m04",
+   "family": "DUP",
+   "m": 4,
+   "driver_status": "ok",
+   "driver_reason": null,
+   "elapsed_s": 0.114,
+   "peak_rss_polled_bytes": 4014080,
+   "measured_reps": 5,
+   "warmup_ms": {
+    "F.parse": 0.09054200199898332,
+    "F.check": 0.5427919968497008,
+    "F.generate": 0.207582997973077,
+    "I.parse": 0.21025000023655593,
+    "I.product": 0.003958979505114257,
+    "I.readdecl": 0.006707996362820268
+   },
+   "ms": {
+    "F.parse": {
+     "median": 0.07804199412930757,
+     "min": 0.07370799721684307,
+     "max": 0.0882090098457411,
+     "values": [
+      0.0882090098457411,
+      0.07370799721684307,
+      0.08662499021738768,
+      0.07495799218304455,
+      0.07804199412930757
+     ]
+    },
+    "F.check": {
+     "median": 0.11787500989157706,
+     "min": 0.11633300164248794,
+     "max": 0.11962499411311,
+     "values": [
+      0.11962499411311,
+      0.11895799252670258,
+      0.11779200576711446,
+      0.11633300164248794,
+      0.11787500989157706
+     ]
+    },
+    "F.generate": {
+     "median": 0.1937909983098507,
+     "min": 0.19166700076311827,
+     "max": 0.20037499780301005,
+     "values": [
+      0.19620799866970628,
+      0.1937909983098507,
+      0.20037499780301005,
+      0.19179200171492994,
+      0.19166700076311827
+     ]
+    },
+    "I.parse": {
+     "median": 0.0821249996079132,
+     "min": 0.07650000043213367,
+     "max": 0.08508299652021378,
+     "values": [
+      0.0821249996079132,
+      0.08508299652021378,
+      0.07866699888836592,
+      0.08250000246334821,
+      0.07650000043213367
+     ]
+    },
+    "I.product": {
+     "median": 0.0023740140022709966,
+     "min": 0.0021240266505628824,
+     "max": 0.002541986759752035,
+     "values": [
+      0.002541986759752035,
+      0.0024999899324029684,
+      0.0023740140022709966,
+      0.0023330067051574588,
+      0.0021240266505628824
+     ]
+    },
+    "I.readdecl": {
+     "median": 0.00291600008495152,
+     "min": 0.002791013685055077,
+     "max": 0.002999018761329353,
+     "values": [
+      0.00291600008495152,
+      0.00291600008495152,
+      0.002999018761329353,
+      0.0029600050766021013,
+      0.002791013685055077
+     ]
+    }
+   },
+   "overhead_ratio_I_over_F_parse": {
+    "median": 0.9802414877480069,
+    "min": 0.9081328458560173,
+    "max": 1.1543251713909193,
+    "values": [
+     0.9310273378142715,
+     1.1543251713909193,
+     0.9081328458560173,
+     1.1006164927935418,
+     0.9802414877480069
+    ]
+   },
+   "overhead_by_order": {
+    "F_first": {
+     "median": 0.9310273378142715,
+     "min": 0.9081328458560173,
+     "max": 0.9802414877480069,
+     "values": [
+      0.9310273378142715,
+      0.9081328458560173,
+      0.9802414877480069
+     ]
+    },
+    "I_first": {
+     "median": 1.1274708320922304,
+     "min": 1.1006164927935418,
+     "max": 1.1543251713909193,
+     "values": [
+      1.1543251713909193,
+      1.1006164927935418
+     ]
+    },
+    "balanced": 1.0245516908707295
+   },
+   "product_share_of_I_parse": {
+    "median": 0.02938295587425659,
+    "min": 0.027765054098884544,
+    "max": 0.03095265475662907,
+    "values": [
+     0.03095265475662907,
+     0.02938295587425659,
+     0.030178016650157097,
+     0.028278868309051627,
+     0.027765054098884544
+    ]
+   },
+   "maxrss_bytes": 26968064,
+   "expected": {
+    "atoms": 8,
+    "expanded_reads_per_role": 16,
+    "expanded_reads_total": 32,
+    "final_alternatives_per_consumer": 16,
+    "flows": 32,
+    "lines": 4
+   },
+   "counts": {
+    "I.product_calls": 8,
+    "atoms_in_text": 16,
+    "check_errors": 0,
+    "check_warnings": 0,
+    "expanded_reads_per_role": {
+     "MgrA": 16,
+     "MgrB": 16
+    },
+    "expanded_reads_total": 32,
+    "final_alternatives_per_consumer": {
+     "c001": 16,
+     "c002": 16,
+     "c003": 16,
+     "c004": 16
+    },
+    "flows": 32
+   },
+   "checks": {
+    "atoms": true,
+    "expanded_reads_per_role": true,
+    "expanded_reads_total": true,
+    "final_alternatives_per_consumer": true,
+    "flows": true,
+    "identity": true,
+    "no_check_errors": true,
+    "oracle_has_true_and_false": true,
+    "selection_matches_oracle": true
+   },
+   "ok": true,
+   "identity": true,
+   "selection": {
+    "cases": 168,
+    "consumers": 4,
+    "expected_kinds": {
+     "assert": 31,
+     "none": 4,
+     "retract": 28,
+     "update": 105
+    },
+    "line_false_cases": 4,
+    "line_false_cases_all_false": true,
+    "mismatches": 0,
+    "oracle_false": 32,
+    "oracle_true": 136,
+    "sm_rejected": 0,
+    "sm_stale": 0
+   }
+  },
+  {
+   "config": "DUP-m08",
+   "family": "DUP",
+   "m": 8,
+   "driver_status": "ok",
+   "driver_reason": null,
+   "elapsed_s": 0.556,
+   "peak_rss_polled_bytes": 28884992,
+   "measured_reps": 5,
+   "warmup_ms": {
+    "F.parse": 0.18929199723061174,
+    "F.check": 4.645374996471219,
+    "F.generate": 14.065750001464039,
+    "I.parse": 0.33083300513681024,
+    "I.product": 0.0390410132240504,
+    "I.readdecl": 0.044374988647177815
+   },
+   "ms": {
+    "F.parse": {
+     "median": 0.18770901078823954,
+     "min": 0.17333400319330394,
+     "max": 0.19725000311154872,
+     "values": [
+      0.19725000311154872,
+      0.17333400319330394,
+      0.18770901078823954,
+      0.17491600010544062,
+      0.18816700321622193
+     ]
+    },
+    "F.check": {
+     "median": 4.173082998022437,
+     "min": 4.130540997721255,
+     "max": 4.214875007164665,
+     "values": [
+      4.173082998022437,
+      4.177499999059364,
+      4.214875007164665,
+      4.150415988988243,
+      4.130540997721255
+     ]
+    },
+    "F.generate": {
+     "median": 14.26549999450799,
+     "min": 14.11262500914745,
+     "max": 15.092125002411194,
+     "values": [
+      15.092125002411194,
+      14.156541001284495,
+      14.26549999450799,
+      14.281833005952649,
+      14.11262500914745
+     ]
+    },
+    "I.parse": {
+     "median": 0.206666998565197,
+     "min": 0.1888330007204786,
+     "max": 0.2122919977409765,
+     "values": [
+      0.206666998565197,
+      0.2122919977409765,
+      0.18966700008604676,
+      0.2105839957948774,
+      0.1888330007204786
+     ]
+    },
+    "I.product": {
+     "median": 0.030374008929356933,
+     "min": 0.029623988666571677,
+     "max": 0.03295901115052402,
+     "values": [
+      0.03295901115052402,
+      0.03062700852751732,
+      0.029623988666571677,
+      0.030374008929356933,
+      0.029750983230769634
+     ]
+    },
+    "I.readdecl": {
+     "median": 0.03700000524986535,
+     "min": 0.03654097963590175,
+     "max": 0.038583006244152784,
+     "values": [
+      0.038583006244152784,
+      0.03775001096073538,
+      0.03700000524986535,
+      0.03679198562167585,
+      0.03654097963590175
+     ]
+    }
+   },
+   "overhead_ratio_I_over_F_parse": {
+    "median": 1.0477414210651381,
+    "min": 1.003539395817934,
+    "max": 1.2247567922620826,
+    "values": [
+     1.0477414210651381,
+     1.2247567922620826,
+     1.0104309819202877,
+     1.2039149973011953,
+     1.003539395817934
+    ]
+   },
+   "overhead_by_order": {
+    "F_first": {
+     "median": 1.0104309819202877,
+     "min": 1.003539395817934,
+     "max": 1.0477414210651381,
+     "values": [
+      1.0477414210651381,
+      1.0104309819202877,
+      1.003539395817934
+     ]
+    },
+    "I_first": {
+     "median": 1.214335894781639,
+     "min": 1.2039149973011953,
+     "max": 1.2247567922620826,
+     "values": [
+      1.2247567922620826,
+      1.2039149973011953
+     ]
+    },
+    "balanced": 1.1077014988458138
+   },
+   "product_share_of_I_parse": {
+    "median": 0.15618947235487501,
+    "min": 0.14423702435081157,
+    "max": 0.15947883009549046,
+    "values": [
+     0.15947883009549046,
+     0.14426831370670035,
+     0.15618947235487501,
+     0.14423702435081157,
+     0.15755182154208702
+    ]
+   },
+   "maxrss_bytes": 30343168,
+   "expected": {
+    "atoms": 16,
+    "expanded_reads_per_role": 256,
+    "expanded_reads_total": 512,
+    "final_alternatives_per_consumer": 256,
+    "flows": 512,
+    "lines": 8
+   },
+   "counts": {
+    "I.product_calls": 16,
+    "atoms_in_text": 32,
+    "check_errors": 0,
+    "check_warnings": 0,
+    "expanded_reads_per_role": {
+     "MgrA": 256,
+     "MgrB": 256
+    },
+    "expanded_reads_total": 512,
+    "final_alternatives_per_consumer": {
+     "c001": 256,
+     "c002": 256,
+     "c003": 256,
+     "c004": 256
+    },
+    "flows": 512
+   },
+   "checks": {
+    "atoms": true,
+    "expanded_reads_per_role": true,
+    "expanded_reads_total": true,
+    "final_alternatives_per_consumer": true,
+    "flows": true,
+    "identity": true,
+    "no_check_errors": true,
+    "oracle_has_true_and_false": true,
+    "selection_matches_oracle": true
+   },
+   "ok": true,
+   "identity": true,
+   "selection": {
+    "cases": 208,
+    "consumers": 4,
+    "expected_kinds": {
+     "assert": 54,
+     "none": 27,
+     "retract": 53,
+     "update": 74
+    },
+    "line_false_cases": 8,
+    "line_false_cases_all_false": true,
+    "mismatches": 0,
+    "oracle_false": 80,
+    "oracle_true": 128,
+    "sm_rejected": 0,
+    "sm_stale": 0
+   }
+  }
+ ],
+ "or_and_parse_contrast": [
+  {
+   "m": 1,
+   "OR_F.parse_median_ms": 0.030291004804894328,
+   "AND_F.parse_median_ms": 0.0321669940603897,
+   "contrast_difference_estimate_ms": -0.0018759892554953694,
+   "OR_I.product_median_ms": 0.0002500019036233425,
+   "AND_I.product_median_ms": 0.0002500019036233425
+  },
+  {
+   "m": 2,
+   "OR_F.parse_median_ms": 0.0373330112779513,
+   "AND_F.parse_median_ms": 0.03791700873989612,
+   "contrast_difference_estimate_ms": -0.0005839974619448185,
+   "OR_I.product_median_ms": 0.0005829933797940612,
+   "AND_I.product_median_ms": 0.0004169996827840805
+  },
+  {
+   "m": 4,
+   "OR_F.parse_median_ms": 0.04774999979417771,
+   "AND_F.parse_median_ms": 0.04691698995884508,
+   "contrast_difference_estimate_ms": 0.0008330098353326321,
+   "OR_I.product_median_ms": 0.0013330281944945455,
+   "AND_I.product_median_ms": 0.0006669724825769663
+  },
+  {
+   "m": 8,
+   "OR_F.parse_median_ms": 0.10112499876413494,
+   "AND_F.parse_median_ms": 0.06533300620503724,
+   "contrast_difference_estimate_ms": 0.03579199255909771,
+   "OR_I.product_median_ms": 0.014750970876775682,
+   "AND_I.product_median_ms": 0.0011249794624745846
+  },
+  {
+   "m": 10,
+   "OR_F.parse_median_ms": 0.21612498676404357,
+   "AND_F.parse_median_ms": 0.07479199848603457,
+   "contrast_difference_estimate_ms": 0.141332988278009,
+   "OR_I.product_median_ms": 0.056666001910343766,
+   "AND_I.product_median_ms": 0.0013320095604285598
+  },
+  {
+   "m": 12,
+   "OR_F.parse_median_ms": 0.9057499992195517,
+   "AND_F.parse_median_ms": 0.08549999620299786,
+   "contrast_difference_estimate_ms": 0.8202500030165538,
+   "OR_I.product_median_ms": 0.44741596502717584,
+   "AND_I.product_median_ms": 0.0016250123735517263
+  },
+  {
+   "m": 14,
+   "OR_F.parse_median_ms": 5.087917001219466,
+   "AND_F.parse_median_ms": 0.09383399446960539,
+   "contrast_difference_estimate_ms": 4.994083006749861,
+   "OR_I.product_median_ms": 2.8227070142747834,
+   "AND_I.product_median_ms": 0.002082990249618888
+  }
+ ]
+}

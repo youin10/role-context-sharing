@@ -1,0 +1,31 @@
+--- frozen/src/arms/d/spec.py
++++ instrumented/spec_instrumented.py
+@@ -5,6 +5,8 @@
+ from dataclasses import dataclass, field
+ 
+ import yaml
++from time import perf_counter as _pc
++SPAN = {'product_s': 0.0, 'product_calls': 0, 'readdecl_s': 0.0}  # instrumentation (r2 major1)
+ 
+ OPS = ("<=", ">=", "!=", "=", "<", ">")
+ _COND = re.compile(r"^\s*([A-Za-z_][A-Za-z0-9_]*)\s*(<=|>=|!=|=|<|>)\s*([^<>=!\s].*?)\s*$")
+@@ -245,12 +247,18 @@
+             self.pop('{')
+             while self.peek() != '}':
+                 line = self.line(bound)
++                _t0 = _pc()
+                 alts = [a + b for a in alts for b in line]
++                SPAN['product_s'] += _pc() - _t0
++                SPAN['product_calls'] += 1
+             self.pop('}')
+         else:
+             self.pop(';')
+         self.group += 1
+-        return [ReadDecl(name, a, None, self.group) for a in alts]
++        _t1 = _pc()
++        _out = [ReadDecl(name, a, None, self.group) for a in alts]
++        SPAN['readdecl_s'] += _pc() - _t1
++        return _out
+ 
+     def parse(self):
+         roles = {}

@@ -1,0 +1,71 @@
+{
+ "family": "DUP",
+ "m": 2,
+ "formula": {
+  "kind": "cnf2",
+  "lines": [
+   [
+    [
+     "robot",
+     "isa",
+     "Biped"
+    ],
+    [
+     "zone",
+     "!=",
+     "z0"
+    ]
+   ],
+   [
+    [
+     "battery",
+     "<=",
+     40
+    ],
+    [
+     "zone",
+     "!=",
+     "z1"
+    ]
+   ]
+  ]
+ },
+ "binding": {
+  "c001": [
+   "MgrA",
+   "MgrB"
+  ],
+  "c002": [
+   "MgrA",
+   "MgrB"
+  ],
+  "c003": [
+   "MgrA",
+   "MgrB"
+  ],
+  "c004": [
+   "MgrA",
+   "MgrB"
+  ],
+  "r001": [
+   "Robot"
+  ],
+  "r002": [
+   "Robot"
+  ],
+  "r003": [
+   "Robot"
+  ],
+  "r004": [
+   "Robot"
+  ]
+ },
+ "expected": {
+  "lines": 2,
+  "atoms": 4,
+  "expanded_reads_per_role": 4,
+  "expanded_reads_total": 8,
+  "final_alternatives_per_consumer": 4,
+  "flows": 8
+ }
+}

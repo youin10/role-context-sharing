@@ -1,0 +1,23 @@
+prefix logistics: <http://ai.uos.ac.kr/logistics-ontology#>;
+
+role MgrA {
+  reads {
+    logistics:RobotStatus($robot, $battery, $zone) {
+      $robot == logistics:Biped || $zone != "z0";
+    }
+  }
+}
+
+role MgrB {
+  reads {
+    logistics:RobotStatus($robot, $battery, $zone) {
+      $robot == logistics:Biped || $zone != "z0";
+    }
+  }
+}
+
+role Robot {
+  changes {
+    logistics:RobotStatus($robot, $battery, $zone);
+  }
+}

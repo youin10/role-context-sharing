@@ -1,0 +1,23 @@
+{
+ "python": "3.14.7 (main, Aug  5 2026, 10:29:49) [Clang 21.0.0 (clang-2100.1.1.101)]",
+ "platform": "macOS-26.7.3-arm64-arm-64bit-Mach-O",
+ "reps": 20,
+ "warmup": 1,
+ "cfg": {
+  "R": 4,
+  "M": 4,
+  "C": 4
+ },
+ "perf_counter": {
+  "implementation": "mach_absolute_time()",
+  "resolution": 4.166666666666666e-08,
+  "monotonic": true
+ },
+ "argv": [
+  "run_rounds.py",
+  "raw/m3-run1",
+  "20"
+ ],
+ "core": "source/conditional-sharing",
+ "sweep_py": "source/conditional-sharing/tools/sweep.py"
+}

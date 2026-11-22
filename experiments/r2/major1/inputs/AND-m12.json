@@ -1,0 +1,187 @@
+{
+ "family": "AND",
+ "m": 12,
+ "formula": {
+  "kind": "and",
+  "lines": [
+   [
+    [
+     "robot",
+     "isa",
+     "Biped"
+    ],
+    [
+     "zone",
+     "!=",
+     "z0"
+    ]
+   ],
+   [
+    [
+     "battery",
+     "<=",
+     40
+    ],
+    [
+     "zone",
+     "!=",
+     "z1"
+    ]
+   ],
+   [
+    [
+     "zone",
+     "=",
+     "storage"
+    ],
+    [
+     "zone",
+     "!=",
+     "z2"
+    ]
+   ],
+   [
+    [
+     "battery",
+     ">=",
+     20
+    ],
+    [
+     "zone",
+     "!=",
+     "z3"
+    ]
+   ],
+   [
+    [
+     "robot",
+     "!isa",
+     "Wheeled"
+    ],
+    [
+     "zone",
+     "!=",
+     "z4"
+    ]
+   ],
+   [
+    [
+     "robot",
+     "isa",
+     "Humanoid"
+    ],
+    [
+     "zone",
+     "!=",
+     "z5"
+    ]
+   ],
+   [
+    [
+     "battery",
+     "<=",
+     41
+    ],
+    [
+     "zone",
+     "!=",
+     "z6"
+    ]
+   ],
+   [
+    [
+     "zone",
+     "=",
+     "storage"
+    ],
+    [
+     "zone",
+     "!=",
+     "z7"
+    ]
+   ],
+   [
+    [
+     "battery",
+     ">=",
+     19
+    ],
+    [
+     "zone",
+     "!=",
+     "z8"
+    ]
+   ],
+   [
+    [
+     "robot",
+     "!isa",
+     "DifferentialDrive"
+    ],
+    [
+     "zone",
+     "!=",
+     "z9"
+    ]
+   ],
+   [
+    [
+     "robot",
+     "isa",
+     "Biped"
+    ],
+    [
+     "zone",
+     "!=",
+     "z10"
+    ]
+   ],
+   [
+    [
+     "battery",
+     "<=",
+     42
+    ],
+    [
+     "zone",
+     "!=",
+     "z11"
+    ]
+   ]
+  ]
+ },
+ "binding": {
+  "c001": [
+   "Mgr"
+  ],
+  "c002": [
+   "Mgr"
+  ],
+  "c003": [
+   "Mgr"
+  ],
+  "c004": [
+   "Mgr"
+  ],
+  "r001": [
+   "Robot"
+  ],
+  "r002": [
+   "Robot"
+  ],
+  "r003": [
+   "Robot"
+  ],
+  "r004": [
+   "Robot"
+  ]
+ },
+ "expected": {
+  "lines": 12,
+  "atoms": 24,
+  "expanded_reads_per_role": 1,
+  "expanded_reads_total": 1,
+  "final_alternatives_per_consumer": 1,
+  "flows": 1
+ }
+}
